@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- =====================================================================
-     MemoNote Mobile  v1.0.0
+     MemoNote Mobile  v1.1.0
      スマホで書いた勉強ノートを、会社の MemoNote へメールで送るためのアプリです。
      書いた内容は端末の中だけに残り、送信するときだけ外に出ます。
      ===================================================================== -->
@@ -157,6 +157,7 @@ input,textarea,select{font:inherit;color:inherit}
     <b id="topttl">MemoNote</b>
     <span class="sp"></span>
     <button class="icb" id="backbtn" style="display:none">←</button>
+    <button class="icb" id="delbtn" style="display:none">🗑</button>
     <button class="icb" id="menubtn">⋯</button>
   </header>
 
@@ -186,9 +187,14 @@ input,textarea,select{font:inherit;color:inherit}
         <button data-add="text">＋ 文章</button>
         <button data-add="heading">＋ 見出し</button>
         <button data-add="image">＋ 写真</button>
+        <button data-add="paste">＋ 貼り付け</button>
         <button data-add="formula">＋ 式</button>
         <button data-add="qa">＋ 問い</button>
       </div>
+
+      <div class="sec">要約</div>
+      <textarea class="ed" id="esummary" placeholder="3行以内。空でも構いません"></textarea>
+      <button class="chip" id="aibtn" style="margin-top:9px">AI に要約してもらう</button>
 
       <div class="sec">業務でどう使うか</div>
       <textarea class="ed" id="eapplied" placeholder="1行でよいので書いておくと、会社で ToDo にできます"></textarea>
@@ -209,12 +215,20 @@ input,textarea,select{font:inherit;color:inherit}
    1. 保存（端末の中だけ）
    ===================================================================== */
 const KEY = "mnm_drafts_v1";
-const APP_VERSION = "1.0.0";
+const SKEY = "mnm_settings_v1";
+let SET = {mailTo:""};        /* 送り先の会社アドレス */
+function loadSet(){
+  try{ SET = Object.assign({mailTo:""}, JSON.parse(localStorage.getItem(SKEY) || "{}")); }
+  catch(_){ SET = {mailTo:""}; }
+}
+function saveSet(){ try{ localStorage.setItem(SKEY, JSON.stringify(SET)); }catch(_){} }
+const APP_VERSION = "1.1.0";
 let D = [];            /* 下書きの配列 */
 let cur = null;        /* 編集中の下書き */
 let picked = new Set();/* 一覧で選んだもの */
 
 function load(){
+  loadSet();
   try{ D = JSON.parse(localStorage.getItem(KEY) || "[]"); }
   catch(_){ D = []; }
   if(!Array.isArray(D)) D = [];
@@ -274,12 +288,23 @@ function go(v){
   view = v;
   document.querySelectorAll(".view").forEach(x => x.classList.toggle("on", x.id === "v-"+v));
   $("#backbtn").style.display = v === "edit" ? "" : "none";
+  $("#delbtn").style.display = v === "edit" ? "" : "none";
   $("#topttl").textContent = v === "edit" ? "下書き" : "MemoNote";
   $("#main").scrollTop = 0;
   renderBottom();
   if(v === "list") renderList();
 }
 $("#backbtn").onclick = () => { saveNow(); go("list"); };
+$("#aibtn").onclick = () => { if(cur) openAI(); };
+$("#delbtn").onclick = () => {
+  if(!cur) return;
+  const nm = cur.title ? "「" + cur.title + "」" : "この下書き";
+  if(!confirm(nm + "を消します。元に戻せません。")) return;
+  D = D.filter(x => x.id !== cur.id);
+  picked.delete(cur.id);
+  cur = null; saveNow(); go("list");
+  toast("消しました");
+};
 
 /* =====================================================================
    4. 一覧
@@ -350,7 +375,7 @@ function newDraft(prefill){
   const d = Object.assign({
     id: uid(), createdAt: nowISO(), updatedAt: nowISO(),
     title: "", field: "技術", topic: "", source: "", level: 0, tags: [],
-    applied: "", sentAt: null,
+    summary: "", applied: "", sentAt: null,
     blocks: [{type:"heading", text:"要点"}, {type:"text", text:""},
              {type:"heading", text:"自分の言葉で"}, {type:"text", text:""}]
   }, prefill || {});
@@ -412,6 +437,10 @@ function renderEdit(){
     if(v && v.trim()){ d.tags = [...(d.tags||[]), v.trim().replace(/^#/,"")]; touch(); renderEdit(); }
   };
   tg.appendChild(at);
+
+  const sm = $("#esummary"); sm.value = d.summary || "";
+  sm.oninput = () => { d.summary = sm.value; touch(); autoGrow(sm); };
+  autoGrow(sm);
 
   const ap = $("#eapplied"); ap.value = d.applied || "";
   ap.oninput = () => { d.applied = ap.value; touch(); autoGrow(ap); };
@@ -483,6 +512,7 @@ function blockEl(b, i){
 document.querySelectorAll("[data-add]").forEach(b => b.onclick = () => {
   const t = b.dataset.add;
   if(t === "image"){ $("#filepick").click(); return; }
+  if(t === "paste"){ pasteImage(); return; }
   const nb = {type:t};
   if(t === "text" || t === "heading") nb.text = "";
   if(t === "formula"){ nb.expr = ""; nb.symbols = [["","",""]]; }
@@ -507,6 +537,47 @@ $("#filepick").onchange = e => {
     toast("写真を入れました（約" + Math.round(data.length/1365) + "KB）");
   }).catch(() => toast("写真を読めませんでした", true));
 };
+/* クリップボードにある画像を貼ります。
+   スクリーンショットを撮って「コピー」した直後などに使えます。 */
+async function pasteImage(){
+  if(!navigator.clipboard || !navigator.clipboard.read){
+    toast("この端末では貼り付けが使えません。「＋ 写真」を使ってください", true);
+    return;
+  }
+  try{
+    const items = await navigator.clipboard.read();
+    for(const it of items){
+      const type = (it.types||[]).find(t => t.startsWith("image/"));
+      if(!type) continue;
+      const blob = await it.getType(type);
+      const data = await shrink(blob, 1600, 0.72);
+      cur.blocks.push({type:"image", data:data, caption:""});
+      touch(); renderBlocks();
+      toast("貼り付けました（約" + Math.round(data.length/1365) + "KB）");
+      return;
+    }
+    toast("クリップボードに画像がありません", true);
+  }catch(e){
+    if(e && e.name === "NotAllowedError")
+      toast("貼り付けの許可を出してください。もう一度押すと聞かれます", true);
+    else
+      toast("貼り付けられませんでした。「＋ 写真」を使ってください", true);
+  }
+}
+/* キーボードや外部から貼られたときも拾います */
+document.addEventListener("paste", e => {
+  if(view !== "edit" || !cur) return;
+  const items = [...((e.clipboardData && e.clipboardData.items) || [])]
+    .filter(i => i.type && i.type.startsWith("image/"));
+  if(!items.length) return;
+  e.preventDefault();
+  const f = items[0].getAsFile();
+  if(!f) return;
+  shrink(f, 1600, 0.72).then(data => {
+    cur.blocks.push({type:"image", data:data, caption:""});
+    touch(); renderBlocks(); toast("貼り付けました");
+  }).catch(() => toast("貼り付けられませんでした", true));
+});
 function shrink(file, maxSide, quality){
   return new Promise((res, rej) => {
     const r = new FileReader();
@@ -529,6 +600,57 @@ function shrink(file, maxSide, quality){
   });
 }
 
+/* --- AI に要約してもらう。鍵を持たないので、コピーと貼り戻しで橋渡しします --- */
+function aiPromptFor(d){
+  const body = (d.blocks||[]).map(b => {
+    if(b.type === "heading") return "\n## " + (b.text||"");
+    if(b.type === "text")    return b.text || "";
+    if(b.type === "formula") return "【式】" + (b.expr||"") + "\n" +
+      (b.symbols||[]).filter(r => r[0]).map(r => "  " + r[0] + " = " + r[1] + " [" + r[2] + "]").join("\n");
+    if(b.type === "qa")      return "【問い】" + (b.q||"") + "\n【答え】" + (b.a||"");
+    if(b.type === "image")   return "【写真】" + (b.caption || "説明なし");
+    return "";
+  }).filter(x => x && x.trim()).join("\n");
+  return [
+"次の勉強メモを、3行以内の日本語で要約してください。",
+"前置きや見出しは付けず、要約の本文だけを返してください。",
+"数値と固有名詞はメモの表記のまま使い、書かれていないことを足さないでください。",
+"",
+"題名: " + (d.title || "なし"),
+"分野: " + (d.field || "") + " / テーマ: " + (d.topic || "なし"),
+"出典: " + (d.source || "なし"),
+"---",
+body || "（本文なし）"
+].join("\n");
+}
+function openAI(){
+  const d = cur;
+  SIN.innerHTML = "";
+  SIN.appendChild(el("h3", null, "AI に要約してもらう"));
+  SIN.appendChild(el("p", null,
+    "依頼文をコピーして、好きな AI アプリに貼り付けてください。返ってきた文を下に貼れば保存されます。"));
+  const b1 = el("button","big","① 依頼文をコピー");
+  b1.style.cssText = "width:100%;margin-bottom:10px";
+  b1.onclick = async () => {
+    const t = aiPromptFor(d);
+    try{ await navigator.clipboard.writeText(t); toast("コピーしました。AI アプリに貼ってください"); }
+    catch(_){ toast("コピーできませんでした", true); }
+  };
+  SIN.appendChild(b1);
+  SIN.appendChild(el("label", null, "② 返ってきた要約を貼る"));
+  const ta = el("textarea"); ta.className = "ed"; ta.style.minHeight = "110px";
+  ta.placeholder = "ここに長押しで貼り付け";
+  ta.value = d.summary || "";
+  SIN.appendChild(ta);
+  const btns = el("div","btns");
+  const cancel = el("button","big ghost","閉じる"); cancel.onclick = closeSheet;
+  const ok = el("button","big","保存する");
+  ok.onclick = () => { d.summary = ta.value.trim(); touch(); closeSheet(); renderEdit();
+    toast("要約を保存しました"); };
+  btns.append(cancel, ok); SIN.appendChild(btns);
+  SHEET.classList.add("on");
+}
+
 /* =====================================================================
    8. 会社に送る
    ===================================================================== */
@@ -539,45 +661,126 @@ function buildPackage(ids){
     drafts: D.filter(d => ids.includes(d.id)).map(d => ({
       id: d.id, createdAt: d.createdAt, kind: "study",
       title: d.title, field: d.field, topic: d.topic, source: d.source,
-      level: d.level, tags: d.tags || [], applied: d.applied || "",
+      level: d.level, tags: d.tags || [], summary: d.summary || "",
+      applied: d.applied || "",
       blocks: d.blocks || []
     }))
   };
 }
-async function share(){
+/* 送り方を選ぶ画面。写真の有無と大きさで、使える手段が変わります。 */
+function share(){
   const ids = [...picked];
   if(!ids.length){ toast("送るものを選んでください", true); return; }
   const pkg = buildPackage(ids);
   const text = JSON.stringify(pkg);
   const kb = Math.round(text.length/1024);
+  const hasImg = pkg.drafts.some(d => (d.blocks||[]).some(b => b.type === "image"));
+  /* メールの本文に入れられる長さの目安。これを超えると途中で切られることがあります */
+  const canMail = !hasImg && text.length < 1800;
+
+  SIN.innerHTML = "";
+  SIN.appendChild(el("h3", null, "会社に送る"));
+  SIN.appendChild(el("p", null,
+    ids.length + "件 ・ " + kb + "KB" + (hasImg ? " ・ 写真あり" : "")));
+
+  const mk = (label, sub, cls, fn) => {
+    const b = el("button","big" + (cls||""), label);
+    b.style.cssText = "width:100%;margin-bottom:10px;text-align:left;padding:14px 16px";
+    if(sub){ const s2 = el("div");
+      s2.style.cssText = "font-size:12px;color:var(--tx-faint);font-weight:400;margin-top:2px";
+      s2.textContent = sub; b.appendChild(s2); }
+    b.onclick = fn;
+    SIN.appendChild(b);
+    return b;
+  };
+
+  if(canMail && SET.mailTo){
+    mk("メールを開いて送る", "宛先も中身も入った状態で開きます。送信を押すだけです", "", () => {
+      closeSheet();
+      const url = "mailto:" + encodeURIComponent(SET.mailTo) +
+        "?subject=" + encodeURIComponent("MemoNote# 勉強ノート " + ids.length + "件") +
+        "&body=" + encodeURIComponent(text);
+      location.href = url;
+      markSent(ids, kb);
+    });
+  } else if(canMail && !SET.mailTo){
+    mk("会社アドレスを登録する", "登録すると、写真なしのノートは1タップで送れます", " ghost", () => {
+      closeSheet(); openMailSetting();
+    });
+  }
+
+  mk(hasImg ? "共有して送る（写真も送れる）" : "共有して送る",
+     SET.mailTo ? "メールアプリを選びます。宛先はコピーしてあるので長押しで貼れます"
+                : "メールアプリを選びます", hasImg ? "" : " ghost",
+     () => { closeSheet(); shareFile(ids, pkg, text, kb); });
+
+  mk("ファイルに保存する", "あとから手で添付します", " ghost", () => {
+    closeSheet(); saveFile(pkg, text); markSent(ids, kb);
+  });
+
+  const c = el("button","big ghost","やめる");
+  c.style.cssText = "width:100%;margin-top:4px";
+  c.onclick = closeSheet;
+  SIN.appendChild(c);
+  SHEET.classList.add("on");
+}
+function pkgFile(pkg, text){
   /* 社内のメールで .json が落とされることがあるので .txt で送ります */
   const name = "MemoNote_" + pkg.sentAt.replace(/[-:T]/g,"").slice(0,12) + ".txt";
-  const file = new File([text], name, {type:"text/plain"});
+  return new File([text], name, {type:"text/plain"});
+}
+async function shareFile(ids, pkg, text, kb){
+  const file = pkgFile(pkg, text);
   const subject = "MemoNote# 勉強ノート " + ids.length + "件";
-
-  let done = false;
+  if(SET.mailTo){
+    try{ await navigator.clipboard.writeText(SET.mailTo); }catch(_){}
+  }
   try{
     if(navigator.canShare && navigator.canShare({files:[file]})){
       await navigator.share({files:[file], title:subject, text:subject});
-      done = true;
+      markSent(ids, kb);
+      return;
     }
   }catch(e){
-    if(e && e.name === "AbortError"){ return; }   /* 本人が取り消した */
+    if(e && e.name === "AbortError") return;   /* 本人が取り消した */
   }
-  if(!done){
-    /* 共有が使えない端末では、いったん保存してから添付してもらいます */
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(file);
-    a.download = name;
-    a.click();
-    setTimeout(() => URL.revokeObjectURL(a.href), 4000);
-    toast("保存しました。メールに添付して送ってください");
-  }
+  saveFile(pkg, text);
+  markSent(ids, kb);
+}
+function saveFile(pkg, text){
+  const file = pkgFile(pkg, text);
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(file);
+  a.download = file.name;
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+  toast("保存しました。メールに添付して送ってください");
+}
+function markSent(ids, kb){
   const t = nowISO();
   D.forEach(d => { if(ids.includes(d.id)) d.sentAt = t; });
   picked = new Set(); saveNow();
-  toast(ids.length + "件を送りました（" + kb + "KB）");
+  toast(ids.length + "件を送信にまわしました（" + kb + "KB）");
   go("list");
+}
+function openMailSetting(){
+  SIN.innerHTML = "";
+  SIN.appendChild(el("h3", null, "会社アドレス"));
+  SIN.appendChild(el("p", null,
+    "送り先を登録しておくと、写真なしのノートはメールアプリが宛先入りで開きます。" +
+    "この端末の中にだけ保存されます。"));
+  SIN.appendChild(el("label", null, "メールアドレス"));
+  const inp = el("input"); inp.className = "fld"; inp.type = "email";
+  inp.placeholder = "例: yourname@example.co.jp";
+  inp.value = SET.mailTo || "";
+  SIN.appendChild(inp);
+  const btns = el("div","btns");
+  const c = el("button","big ghost","やめる"); c.onclick = closeSheet;
+  const ok = el("button","big","保存");
+  ok.onclick = () => { SET.mailTo = inp.value.trim(); saveSet(); closeSheet();
+    toast(SET.mailTo ? "登録しました" : "宛先を空にしました"); };
+  btns.append(c, ok); SIN.appendChild(btns);
+  SHEET.classList.add("on");
 }
 
 /* =====================================================================
@@ -618,6 +821,15 @@ $("#menubtn").onclick = () => {
     toast("書き出しました");
   });
   mk("書き出したものを読み込む", "新しい端末で使います", () => $("#restorepick").click());
+  mk("会社アドレスを決める", SET.mailTo || "まだ登録されていません", openMailSetting);
+  mk("選んだものを消す", "一覧でチェックしたものを消します", () => {
+    if(!picked.size){ toast("一覧でチェックを入れてください", true); return; }
+    const nn = picked.size;
+    if(!confirm(nn + "件を消します。元に戻せません。")) return;
+    D = D.filter(d => !picked.has(d.id));
+    picked = new Set(); saveNow(); renderList(); renderBottom();
+    toast(nn + "件を消しました");
+  });
   mk("使い方", "", showHelp);
   const ver = el("p", null, "MemoNote Mobile " + APP_VERSION + " ・ 下書き " + D.length + "件");
   ver.style.cssText = "font-size:11.5px;color:var(--tx-faint);margin:14px 0 0;text-align:center";
@@ -651,7 +863,10 @@ function showHelp(){
    ["話して入れる","キーボードのマイクを押すと、話した内容が文字になります。"],
    ["写真","「＋ 写真」で撮るか選びます。自動で縮めるのでメールが重くなりません。"],
    ["共有から作る","他のアプリの共有先に MemoNote が出ます。記事の題名とURLが入った下書きができます。"],
-   ["送る","一覧で送るものにチェックを入れて「会社に送る」。メールアプリを選んで、自分の会社アドレス宛に送ります。"],
+   ["貼り付け","スクリーンショットをコピーしたあと「＋ 貼り付け」で入ります。"],
+   ["要約","「AI に要約してもらう」で依頼文をコピーし、AI アプリに貼って、返ってきた文を戻します。"],
+   ["消す","下書きを開いて右上のごみ箱。まとめて消すときは一覧でチェックしてメニューから。"],
+   ["送る","一覧で送るものにチェックを入れて「会社に送る」。写真が無ければ、宛先入りでメールアプリが開きます。"],
    ["会社側","MemoNote を開いて取り込むと、勉強ノートになります。同じものを二度送っても増えません。"],
    ["機種変更","メニューの「全部を書き出す」でファイルを保存し、新しい端末で「読み込む」を押します。"]
   ].forEach(([a,b]) => {
