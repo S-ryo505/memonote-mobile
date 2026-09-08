@@ -1,0 +1,46 @@
+{
+  "name": "MemoNote Mobile",
+  "short_name": "MemoNote",
+  "description": "スマホで書いた勉強ノートを、会社の MemoNote に送ります。",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0E1420",
+  "theme_color": "#0E1420",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "share_target": {
+    "action": "./index.html",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "shortcuts": [
+    {
+      "name": "新しい下書き",
+      "short_name": "新規",
+      "url": "./index.html?new=1"
+    }
+  ]
+}
