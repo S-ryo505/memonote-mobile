@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- =====================================================================
-     MemoNote Mobile  v1.1.0
+     MemoNote Mobile  v1.2.0
      スマホで書いた勉強ノートを、会社の MemoNote へメールで送るためのアプリです。
      書いた内容は端末の中だけに残り、送信するときだけ外に出ます。
      ===================================================================== -->
@@ -216,13 +216,14 @@ input,textarea,select{font:inherit;color:inherit}
    ===================================================================== */
 const KEY = "mnm_drafts_v1";
 const SKEY = "mnm_settings_v1";
-let SET = {mailTo:""};        /* 送り先の会社アドレス */
+let SET = {mailTo:"", fields:[]};   /* 送り先と、分野の一覧。空なら既定の分野を使います */
 function loadSet(){
-  try{ SET = Object.assign({mailTo:""}, JSON.parse(localStorage.getItem(SKEY) || "{}")); }
-  catch(_){ SET = {mailTo:""}; }
+  try{ SET = Object.assign({mailTo:"", fields:[]},
+                           JSON.parse(localStorage.getItem(SKEY) || "{}")); }
+  catch(_){ SET = {mailTo:"", fields:[]}; }
 }
 function saveSet(){ try{ localStorage.setItem(SKEY, JSON.stringify(SET)); }catch(_){} }
-const APP_VERSION = "1.1.0";
+const APP_VERSION = "1.2.0";
 let D = [];            /* 下書きの配列 */
 let cur = null;        /* 編集中の下書き */
 let picked = new Set();/* 一覧で選んだもの */
@@ -257,7 +258,13 @@ const nowISO = () => { const d = new Date();
          pad(d.getHours())+":"+pad(d.getMinutes())+":"+pad(d.getSeconds()); };
 const shortDate = s => { const d = new Date(s); return isNaN(d) ? ""
   : (d.getMonth()+1)+"/"+d.getDate()+" "+pad(d.getHours())+":"+pad(d.getMinutes()); };
-const FIELDS = ["技術","マネジメント","その他"];
+/* 分野は設定で足したり並べ替えたりできます。会社の MemoNote と揃えておくと、
+   取り込んだときにそのまま同じ分野になります。 */
+const DEFAULT_FIELDS = ["技術","マネジメント","その他"];
+function FIELDS(){
+  const a = (SET.fields || []).filter(x => x && x.trim());
+  return a.length ? a : DEFAULT_FIELDS.slice();
+}
 
 function toast(msg, bad){
   const t = $("#toast");
@@ -374,7 +381,7 @@ function renderBottom(){
 function newDraft(prefill){
   const d = Object.assign({
     id: uid(), createdAt: nowISO(), updatedAt: nowISO(),
-    title: "", field: "技術", topic: "", source: "", level: 0, tags: [],
+    title: "", field: FIELDS()[0], topic: "", source: "", level: 0, tags: [],
     summary: "", applied: "", sentAt: null,
     blocks: [{type:"heading", text:"要点"}, {type:"text", text:""},
              {type:"heading", text:"自分の言葉で"}, {type:"text", text:""}]
@@ -400,7 +407,7 @@ function renderEdit(){
   ti.oninput = () => { d.title = ti.value; touch(); };
 
   const fb = $("#efields"); fb.innerHTML = "";
-  FIELDS.forEach(f => {
+  FIELDS().forEach(f => {
     const b = el("button","chip" + (d.field === f ? " on" : ""), f);
     b.onclick = () => { d.field = f; touch(); renderEdit(); };
     fb.appendChild(b);
@@ -763,6 +770,35 @@ function markSent(ids, kb){
   toast(ids.length + "件を送信にまわしました（" + kb + "KB）");
   go("list");
 }
+/* 分野の並び。左から順に、下書きの画面にボタンとして出ます。 */
+function openFieldSetting(){
+  SIN.innerHTML = "";
+  SIN.appendChild(el("h3", null, "分野"));
+  SIN.appendChild(el("p", null,
+    "下書きの上に出るボタンです。カンマで区切って並べてください。" +
+    "会社の MemoNote 側と同じ言葉にしておくと、取り込んだときにそのまま揃います。"));
+  SIN.appendChild(el("label", null, "分野（カンマ区切り）"));
+  const inp = el("input"); inp.className = "fld";
+  inp.placeholder = "技術, マネジメント, 品質, その他";
+  inp.value = FIELDS().join(", ");
+  SIN.appendChild(inp);
+  const note = el("p");
+  note.style.cssText = "font-size:12px;color:var(--tx-faint);margin:12px 0 0";
+  note.textContent = "いま使っている分野を消しても、その下書きの分野はそのまま残ります。";
+  SIN.appendChild(note);
+  const btns = el("div","btns");
+  const c = el("button","big ghost","やめる"); c.onclick = closeSheet;
+  const ok = el("button","big","保存");
+  ok.onclick = () => {
+    const a = inp.value.split(/[,、]/).map(x => x.trim()).filter(Boolean);
+    SET.fields = a;   /* 空にすると既定に戻ります */
+    saveSet(); closeSheet();
+    if(view === "edit") renderEdit();
+    toast("分野を変えました");
+  };
+  btns.append(c, ok); SIN.appendChild(btns);
+  SHEET.classList.add("on");
+}
 function openMailSetting(){
   SIN.innerHTML = "";
   SIN.appendChild(el("h3", null, "会社アドレス"));
@@ -822,6 +858,7 @@ $("#menubtn").onclick = () => {
   });
   mk("書き出したものを読み込む", "新しい端末で使います", () => $("#restorepick").click());
   mk("会社アドレスを決める", SET.mailTo || "まだ登録されていません", openMailSetting);
+  mk("分野を編集する", FIELDS().join(" / "), openFieldSetting);
   mk("選んだものを消す", "一覧でチェックしたものを消します", () => {
     if(!picked.size){ toast("一覧でチェックを入れてください", true); return; }
     const nn = picked.size;
@@ -866,6 +903,7 @@ function showHelp(){
    ["貼り付け","スクリーンショットをコピーしたあと「＋ 貼り付け」で入ります。"],
    ["要約","「AI に要約してもらう」で依頼文をコピーし、AI アプリに貼って、返ってきた文を戻します。"],
    ["消す","下書きを開いて右上のごみ箱。まとめて消すときは一覧でチェックしてメニューから。"],
+   ["分野","⋯ の「分野を編集する」で、技術・マネジメント以外も足せます。会社側と同じ言葉にしておくと揃います。"],
    ["送る","一覧で送るものにチェックを入れて「会社に送る」。写真が無ければ、宛先入りでメールアプリが開きます。"],
    ["会社側","MemoNote を開いて取り込むと、勉強ノートになります。同じものを二度送っても増えません。"],
    ["機種変更","メニューの「全部を書き出す」でファイルを保存し、新しい端末で「読み込む」を押します。"]
