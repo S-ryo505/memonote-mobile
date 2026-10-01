@@ -1,6 +1,93 @@
 {
- "updated": "2026-10-01T23:55:00+09:00",
+ "updated": "2026-10-02T07:00:00+09:00",
  "items": [
+  {
+   "id": "2026-10-02-valeo-wayve-nissan",
+   "date": "2026-10-01",
+   "kind": "flash",
+   "cat": "supplier",
+   "region": "JP",
+   "tags": [
+    "ADAS",
+    "制御",
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "primary",
+   "ja": {
+    "title": "Valeo、日産の次世代ProPilotにWayveのAI運転ソフトを統合",
+    "summary": "Valeoが日産の次世代ProPilotのシステム供給を担い、自社のセンサー（360度検知）と中央ドメインコントローラーにWayveの「AI Driver」を判断層として組み込む。統合・検証・量産化までValeoが受け持つ。適用車種、投入時期、自動化レベルは未公表。",
+    "note": "End-to-end方式は、センサー入力から走行軌跡（または加減速・操舵指令）までを1つの学習モデルで出力する。従来のルールベース（認識→計画→制御を個別に設計）と比べ、車両運動制御側との境界（目標加速度・目標曲率の受け渡し）がどう定義されるかは未公表で要確認。"
+   },
+   "en": {
+    "title": "Valeo to integrate Wayve's AI Driver into Nissan's next-generation ProPilot",
+    "summary": "Valeo will act as system supplier for Nissan's next ProPilot, combining its own 360-degree sensor set and central domain controller with Wayve's AI Driver as the decision-making layer. Valeo is responsible for integration, validation and industrialisation. Models, launch timing and automation level have not been disclosed.",
+    "note": "An end-to-end approach uses a single learned model to map sensor input to a trajectory (or acceleration and steering commands). How the interface to the vehicle motion controller (e.g. target acceleration and target curvature) is defined, compared with a rule-based perceive-plan-control stack, has not been disclosed and needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Automotive World",
+     "url": "https://www.automotiveworld.com/news/valeo-to-integrate-wayve-ai-driver-into-nissan-propilot/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-02-vw-wayve",
+   "date": "2026-10-01",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "ADAS",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "rumor",
+   "ja": {
+    "title": "VWグループ、自動運転ソフトでWayveを選定と報道（契約は未締結）",
+    "summary": "Der Spiegelが関係者3人の話として、VWグループがWayveのAIソフトを乗用車とMOIAのレベル4ロボタクシーに使う方針と報じた。統合はCariadが担い、Audi A6 e-tronで試験済みとされる。最終契約は未締結で、VW・Cariad・Wayveはいずれもコメントを控えた。",
+    "note": "報道ではCariadは5年間で投資を61億ユーロ削減し、約4,000人のうち約1,000人を削減する計画とされる（報道ベース、要確認）。"
+   },
+   "en": {
+    "title": "VW Group reportedly picks Wayve for automated-driving software (contract not yet signed)",
+    "summary": "Der Spiegel, citing three insiders, reports that VW Group plans to use Wayve's AI software in passenger cars and in MOIA's Level 4 robotaxis. Cariad would handle integration, and the software has reportedly been tested on an Audi A6 e-tron. No final contract has been signed, and VW, Cariad and Wayve all declined to comment.",
+    "note": "The report also says Cariad plans to cut investment by EUR 6.1 billion over five years and eliminate about 1,000 of its roughly 4,000 jobs (press report, needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/01/volkswagen-announce-autonomous-driving-partnership-with-wayve/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-02-vw-tarif",
+   "date": "2026-10-01",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "VW、労働協約約10本を2026年末で解約通知",
+    "summary": "組合側によると、手当・Tarif Plus・研修に関する協約や、労働時間・残業を定める基本協約など約10本が12月31日付で解約対象。解約後も当面は現行条件が維持され、2030年末までの経営理由による解雇禁止は対象外とされる。IG Metallは5%の賃上げを要求しており、10月下旬に交渉を再開する。",
+    "note": ""
+   },
+   "en": {
+    "title": "VW gives notice to terminate about ten collective agreements at end-2026",
+    "summary": "According to union representatives, around ten agreements, covering allowances, Tarif Plus rules, training and the framework agreement on working hours and overtime, will be terminated as of 31 December. Current conditions stay in effect for now, and the ban on operational redundancies until the end of 2030 is not affected. IG Metall is demanding a 5% pay rise, and talks resume in late October.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/01/volkswagen-terminates-multiple-collective-bargaining-agreements-at-year-end/"
+    }
+   ]
+  },
   {
    "id": "2026-10-01-amg-x591",
    "date": "2026-09-25",
