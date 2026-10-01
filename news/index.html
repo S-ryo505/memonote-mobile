@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+     業界ニュース（MemoNote Mobile 付属ページ）  v1.0.0
+     データ: 同じフォルダの items.json（Claude の定期実行タスクが更新）
+     外部ライブラリ・CDN は使っていません（会社 PC でもそのまま開けるように）
+     ===================================================================== -->
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0E1420">
+<link rel="icon" href="../icon-192.png">
+<title>業界ニュース</title>
+<style>
+:root{
+  --ink:#0E1420; --panel:#161E2C; --raise:#1D2739;
+  --line:#2A3547; --line-soft:#212B3C;
+  --tx:#E4E9F2; --tx-dim:#8494AC; --tx-faint:#5B6B85;
+  --teal:#37C2D0; --amber:#E8A33D; --coral:#E8654F; --violet:#9B87F5; --green:#4FBE8A;
+  --sans:"BIZ UDPGothic","Hiragino Sans","Noto Sans JP","Yu Gothic UI",system-ui,sans-serif;
+  --mono:"Roboto Mono",ui-monospace,Consolas,monospace;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--ink);color:var(--tx);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+button,select,input{font:inherit;color:inherit}
+button{background:none;border:none;padding:0;cursor:pointer}
+a{color:var(--teal)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:10px;padding:10px 16px;
+  padding-top:calc(10px + env(safe-area-inset-top,0px));background:var(--panel);border-bottom:1px solid var(--line)}
+.top b{font-size:15px}
+.top .sp{margin-left:auto}
+.icb{min-width:40px;height:40px;padding:0 10px;border-radius:10px;border:1px solid var(--line);display:grid;place-items:center;
+  font-size:14px;color:var(--tx-dim);text-decoration:none;flex:none}
+.icb:active{background:var(--raise)}
+.lang{color:var(--teal);border-color:var(--teal);font-weight:700;letter-spacing:.04em}
+
+.wrap{max-width:820px;margin:0 auto;padding:12px 16px 80px}
+.meta{color:var(--tx-dim);font-size:13px;margin:4px 0 10px}
+
+.filters{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.row{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.row::-webkit-scrollbar{display:none}
+.chip{flex:none;padding:5px 12px;border-radius:999px;border:1px solid var(--line);font-size:13px;color:var(--tx-dim);white-space:nowrap}
+.chip.on{background:var(--teal);border-color:var(--teal);color:#04141A;font-weight:700}
+.chip.focus.on{background:var(--amber);border-color:var(--amber);color:#2A1802}
+.srch{display:flex;gap:6px}
+.srch input{flex:1;min-width:0;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel)}
+.srch select{padding:8px;border-radius:10px;border:1px solid var(--line);background:var(--panel)}
+
+.wk{font-size:13px;color:var(--tx-faint);margin:18px 2px 8px;letter-spacing:.04em}
+.card{border:1px solid var(--line);border-radius:13px;background:var(--panel);padding:13px 15px;margin-bottom:11px}
+.card.read{opacity:.6}
+.badges{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:6px;align-items:center}
+.bd{font-size:11px;padding:1px 8px;border-radius:6px;border:1px solid var(--line);color:var(--tx-dim);line-height:1.7}
+.bd.cat{border-color:var(--violet);color:var(--violet)}
+.bd.tag{border-color:var(--line-soft)}
+.bd.tag.hot{border-color:var(--amber);color:var(--amber)}
+.bd.flash{background:var(--coral);border-color:var(--coral);color:#2A0C06;font-weight:700}
+.bd.c-primary{border-color:var(--green);color:var(--green)}
+.bd.c-report{border-color:var(--teal);color:var(--teal)}
+.bd.c-rumor{border-color:var(--coral);color:var(--coral)}
+.prio{margin-left:auto;color:var(--amber);font-size:12px;letter-spacing:1px}
+.date{font-size:12px;color:var(--tx-faint);font-family:var(--mono)}
+.card h3{font-size:16px;line-height:1.5;margin:2px 0 6px;font-weight:700}
+.card p{margin:0 0 6px;font-size:14.5px;color:var(--tx)}
+details{margin:6px 0 4px;border-left:2px solid var(--amber);padding-left:10px}
+details summary{font-size:13px;color:var(--amber);cursor:pointer}
+details p{font-size:13.5px;color:var(--tx-dim);font-family:var(--sans)}
+.src{font-size:12.5px;color:var(--tx-dim);margin:4px 0 8px;word-break:break-all}
+.src a{margin-right:10px}
+.acts{display:flex;gap:8px;flex-wrap:wrap}
+.btn{padding:6px 12px;border-radius:9px;border:1px solid var(--line);font-size:13px;color:var(--tx-dim)}
+.btn:active{background:var(--raise)}
+.btn.on{color:var(--amber);border-color:var(--amber)}
+.btn.note{color:var(--teal);border-color:var(--teal)}
+.empty{color:var(--tx-dim);text-align:center;padding:40px 0}
+.legend{font-size:12px;color:var(--tx-faint);margin-top:24px;line-height:1.8}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--raise);border:1px solid var(--line);
+  padding:8px 16px;border-radius:10px;font-size:13px;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="icb" href="../index.html" id="back" aria-label="MemoNoteへ戻る">←</a>
+  <b id="ttl">業界ニュース</b>
+  <span class="sp"></span>
+  <button class="icb lang" id="lang" aria-label="言語切替">EN</button>
+</header>
+
+<div class="wrap">
+  <div class="meta" id="meta">読み込み中…</div>
+
+  <div class="filters">
+    <div class="row" id="catRow"></div>
+    <div class="row" id="tagRow"></div>
+    <div class="srch">
+      <input id="q" type="search" placeholder="キーワード">
+      <select id="region"></select>
+      <select id="conf"></select>
+    </div>
+  </div>
+
+  <div id="list"></div>
+
+  <div class="legend" id="legend"></div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ---------- 文言（日本語 / 英語） ---------- */
+const L = {
+  ja: {
+    title:"業界ニュース", updated:"最終更新", items:"件", search:"キーワード",
+    all:"すべて", focus:"★重点（PT・4WD・制御）", starOnly:"保存のみ", unread:"未読のみ",
+    regionAll:"地域：全部", confAll:"確度：全部",
+    cat:{new:"新車", oem:"OEM戦略", supplier:"Supplier", reg:"規制", tech:"新技術"},
+    conf:{primary:"一次情報", report:"報道", rumor:"噂・推測"},
+    flash:"速報", note:"技術メモ", src:"出典",
+    star:"☆ 保存", starred:"★ 保存済", read:"既読にする", unreadBtn:"未読に戻す", toNote:"ノートへ",
+    week:"週", empty:"条件に合う記事がありません", toastNote:"MemoNote に下書きを作ります",
+    back:"MemoNoteへ戻る",
+    legend:"確度：一次情報＝公式発表・公的文書／報道＝報道機関の記事／噂・推測＝スクープ・未確認。<br>要約はClaudeが作成しています。判断に使う前に出典を確認してください。"
+  },
+  en: {
+    title:"Industry News", updated:"Updated", items:"items", search:"Keyword",
+    all:"All", focus:"★Focus (PT, AWD, control)", starOnly:"Saved", unread:"Unread",
+    regionAll:"Region: all", confAll:"Confidence: all",
+    cat:{new:"New cars", oem:"OEM strategy", supplier:"Supplier", reg:"Regulation", tech:"Technology"},
+    conf:{primary:"Primary", report:"Reported", rumor:"Rumor"},
+    flash:"Flash", note:"Tech note", src:"Sources",
+    star:"☆ Save", starred:"★ Saved", read:"Mark read", unreadBtn:"Mark unread", toNote:"To note",
+    week:"Week", empty:"No matching articles", toastNote:"Creating a MemoNote draft",
+    back:"Back to MemoNote",
+    legend:"Confidence: Primary = official release or document / Reported = news article / Rumor = scoop or unconfirmed.<br>Summaries are written by Claude. Check the sources before relying on them."
+  }
+};
+const TAG_EN = {"PT":"PT","4WD":"AWD","制御":"Control","シャシー":"Chassis","電池":"Battery","ADAS":"ADAS","規制":"Regulation","品質":"Quality","戦略":"Strategy"};
+const FOCUS = ["PT","4WD","制御"];
+const REGIONS = ["JP","US","EU","CN","KR","IN","Global"];
+
+/* ---------- 端末に残す設定（★・既読・言語） ---------- */
+const KEY = "mn-news-v1";
+function loadState(){ try{ return JSON.parse(localStorage.getItem(KEY)) || {}; }catch(_){ return {}; } }
+function saveState(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(_){} }
+const S = Object.assign({lang:"ja", star:{}, read:{}}, loadState());
+const F = {cat:"all", focus:false, starOnly:false, unread:false, tag:null, q:"", region:"", conf:""};
+let DATA = {updated:"", items:[]};
+
+const $ = id => document.getElementById(id);
+function el(tag, cls, txt){ const e = document.createElement(tag); if(cls) e.className = cls; if(txt != null) e.textContent = txt; return e; }
+function toast(t){ const e = $("toast"); e.textContent = t; e.classList.add("on"); setTimeout(() => e.classList.remove("on"), 1600); }
+function t(){ return L[S.lang]; }
+function tagName(g){ return S.lang === "en" ? (TAG_EN[g] || g) : g; }
+
+/* 週の始まり（月曜）を返す */
+function weekStart(ds){
+  const d = new Date(ds + "T00:00:00");
+  const k = (d.getDay() + 6) % 7;
+  d.setDate(d.getDate() - k);
+  const z = n => String(n).padStart(2, "0");
+  return d.getFullYear() + "-" + z(d.getMonth() + 1) + "-" + z(d.getDate());
+}
+
+/* ---------- 絞り込み欄を作る ---------- */
+function chip(label, on, cls, fn){
+  const b = el("button", "chip" + (cls ? " " + cls : "") + (on ? " on" : ""), label);
+  b.onclick = fn; return b;
+}
+function buildFilters(){
+  const T = t();
+  const cr = $("catRow"); cr.innerHTML = "";
+  cr.append(chip(T.all, F.cat === "all", "", () => { F.cat = "all"; render(); }));
+  for(const c of ["new","oem","supplier","reg","tech"]){
+    cr.append(chip(T.cat[c], F.cat === c, "", () => { F.cat = c; render(); }));
+  }
+  const tr = $("tagRow"); tr.innerHTML = "";
+  tr.append(chip(T.focus, F.focus, "focus", () => { F.focus = !F.focus; render(); }));
+  tr.append(chip(T.starOnly, F.starOnly, "", () => { F.starOnly = !F.starOnly; render(); }));
+  tr.append(chip(T.unread, F.unread, "", () => { F.unread = !F.unread; render(); }));
+  const tags = [...new Set(DATA.items.flatMap(i => i.tags || []))];
+  for(const g of tags){
+    tr.append(chip("#" + tagName(g), F.tag === g, "", () => { F.tag = F.tag === g ? null : g; render(); }));
+  }
+  const rg = $("region"); rg.innerHTML = "";
+  rg.append(new Option(T.regionAll, ""));
+  for(const r of REGIONS) rg.append(new Option(r, r));
+  rg.value = F.region;
+  const cf = $("conf"); cf.innerHTML = "";
+  cf.append(new Option(T.confAll, ""));
+  for(const c of ["primary","report","rumor"]) cf.append(new Option(T.conf[c], c));
+  cf.value = F.conf;
+  $("q").placeholder = T.search;
+}
+
+/* ---------- 1件分のカード ---------- */
+function card(it){
+  const T = t(), tx = it[S.lang] || it.ja;
+  const c = el("article", "card" + (S.read[it.id] ? " read" : ""));
+  const b = el("div", "badges");
+  if(it.kind === "flash") b.append(el("span", "bd flash", T.flash));
+  b.append(el("span", "bd cat", T.cat[it.cat] || it.cat));
+  b.append(el("span", "bd", it.region));
+  b.append(el("span", "bd c-" + it.conf, T.conf[it.conf] || it.conf));
+  for(const g of it.tags || []) b.append(el("span", "bd tag" + (FOCUS.includes(g) ? " hot" : ""), "#" + tagName(g)));
+  b.append(el("span", "prio", "●".repeat(it.prio || 1) + "○".repeat(3 - (it.prio || 1))));
+  c.append(b);
+  c.append(el("div", "date", it.date));
+  c.append(el("h3", null, tx.title));
+  c.append(el("p", null, tx.summary));
+  if(tx.note){
+    const d = el("details"); d.append(el("summary", null, T.note)); d.append(el("p", null, tx.note));
+    if(FOCUS.some(g => (it.tags || []).includes(g))) d.open = true;
+    c.append(d);
+  }
+  const s = el("div", "src"); s.append(T.src + "：");
+  for(const x of it.src || []){ const a = el("a", null, x.name); a.href = x.url; a.target = "_blank"; a.rel = "noopener"; s.append(a); }
+  c.append(s);
+
+  const acts = el("div", "acts");
+  const st = el("button", "btn" + (S.star[it.id] ? " on" : ""), S.star[it.id] ? T.starred : T.star);
+  st.onclick = () => { if(S.star[it.id]) delete S.star[it.id]; else S.star[it.id] = 1; saveState(); render(); };
+  const rd = el("button", "btn", S.read[it.id] ? T.unreadBtn : T.read);
+  rd.onclick = () => { if(S.read[it.id]) delete S.read[it.id]; else S.read[it.id] = 1; saveState(); render(); };
+  const nt = el("button", "btn note", T.toNote);
+  nt.onclick = () => toNote(it);
+  acts.append(st, rd, nt);
+  c.append(acts);
+  return c;
+}
+
+/* MemoNote Mobile の「共有から下書き」を使って、そのままノートにする */
+function toNote(it){
+  const ja = it.ja, en = it.en || {};
+  const text = ja.summary + (ja.note ? "\n\n【技術メモ】" + ja.note : "")
+    + (en.title ? "\n\n【English】" + en.title + "\n" + (en.summary || "") : "")
+    + "\n\n出典：" + (it.src || []).map(x => x.name + " " + x.url).join(" / ");
+  const p = new URLSearchParams({title: ja.title, text: text, url: (it.src && it.src[0]) ? it.src[0].url : ""});
+  S.read[it.id] = 1; saveState();
+  toast(t().toastNote);
+  setTimeout(() => { location.href = "../index.html?" + p.toString(); }, 300);
+}
+
+/* ---------- 一覧を描く ---------- */
+function pass(it){
+  if(F.cat !== "all" && it.cat !== F.cat) return false;
+  if(F.focus && !FOCUS.some(g => (it.tags || []).includes(g))) return false;
+  if(F.starOnly && !S.star[it.id]) return false;
+  if(F.unread && S.read[it.id]) return false;
+  if(F.tag && !(it.tags || []).includes(F.tag)) return false;
+  if(F.region && it.region !== F.region) return false;
+  if(F.conf && it.conf !== F.conf) return false;
+  if(F.q){
+    const h = [it.ja.title, it.ja.summary, it.ja.note, it.en && it.en.title, it.en && it.en.summary, (it.tags || []).join(" ")].join(" ").toLowerCase();
+    if(!F.q.toLowerCase().split(/\s+/).filter(Boolean).every(w => h.includes(w))) return false;
+  }
+  return true;
+}
+function render(){
+  const T = t();
+  document.documentElement.lang = S.lang;
+  document.title = T.title;
+  $("ttl").textContent = T.title;
+  $("lang").textContent = S.lang === "ja" ? "EN" : "JA";
+  $("back").setAttribute("aria-label", T.back);
+  $("legend").innerHTML = T.legend;
+  const up = DATA.updated ? DATA.updated.replace("T", " ").slice(0,16) : "-";
+  $("meta").textContent = T.updated + "：" + up + "　/　" + DATA.items.length + " " + T.items;
+  buildFilters();
+
+  const list = $("list"); list.innerHTML = "";
+  const rows = DATA.items.filter(pass).sort((a,b) => {
+    /* 新しい順。同じ日なら速報→重要度の高い順 */
+    if(a.date !== b.date) return a.date < b.date ? 1 : -1;
+    if((a.kind === "flash") !== (b.kind === "flash")) return a.kind === "flash" ? -1 : 1;
+    return (b.prio || 0) - (a.prio || 0);
+  });
+  if(!rows.length){ list.append(el("div", "empty", T.empty)); return; }
+  let wk = "";
+  for(const it of rows){
+    const w = weekStart(it.date);
+    if(w !== wk){ wk = w; list.append(el("div", "wk", T.week + " " + w + " 〜")); }
+    list.append(card(it));
+  }
+}
+
+/* ---------- 操作 ---------- */
+$("lang").onclick = () => { S.lang = S.lang === "ja" ? "en" : "ja"; saveState(); render(); };
+$("q").oninput = e => { F.q = e.target.value; renderList(); };
+$("region").onchange = e => { F.region = e.target.value; render(); };
+$("conf").onchange = e => { F.conf = e.target.value; render(); };
+/* キーワード入力中は絞り込み欄を作り直さない（入力欄のフォーカスが外れないように） */
+function renderList(){
+  const q = $("q"), pos = q.selectionStart;
+  render(); q.focus(); try{ q.setSelectionRange(pos, pos); }catch(_){}
+}
+
+/* ---------- データ読み込み ---------- */
+fetch("./items.json", {cache:"no-store"})
+  .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(d => { DATA = d; render(); })
+  .catch(e => { $("meta").textContent = "読み込みに失敗しました（" + e.message + "）。電波を確認して再読み込みしてください。"; });
+</script>
+</body>
+</html>

@@ -1,0 +1,620 @@
+{
+ "updated": "2026-10-01T23:55:00+09:00",
+ "items": [
+  {
+   "id": "2026-10-01-amg-x591",
+   "date": "2026-09-25",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "4WD",
+    "制御",
+    "シャシー"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "Mercedes-AMG 初の専用EV SUV（X591）、10月17日に公開予定",
+    "summary": "AMG.EAプラットフォーム（800V）にYASA製アキシャルフラックスモーターを搭載。3モーター版は最高1,153 hp / 2,000 Nm、2モーター版は805 hp / 1,800 Nm、0-100 km/hは約2.5秒と報じられている。電池は106 kWhで600 kW急速充電対応、エアサスに半能動ロール制御とリア操舵を組み合わせる。",
+    "note": "3モーター＝前1＋後2の構成なら、後輪左右を独立したモーターで駆動するため、差動装置なしでトルクベクタリングが可能。左右駆動力差によるヨーモーメントは Mz = (T_R − T_L)·t / (2·r_w)（t：トレッド、r_w：タイヤ動半径）。モーター配置は報道ベースで、公式発表前のため要確認。"
+   },
+   "en": {
+    "title": "Mercedes-AMG's first dedicated EV SUV (X591) to be revealed Oct 17",
+    "summary": "Built on the 800 V AMG.EA platform with YASA axial-flux motors. Reports cite up to 1,153 hp / 2,000 Nm for the tri-motor and 805 hp / 1,800 Nm for the dual-motor, with 0-100 km/h in about 2.5 s. 106 kWh battery with 600 kW DC charging; air suspension with semi-active roll stabilisation and rear-axle steering.",
+    "note": "If the tri-motor layout is one front plus two rear motors, the rear wheels can be torque-vectored without a differential. Yaw moment from a left/right torque split: Mz = (T_R − T_L)·t / (2·r_w), where t is track width and r_w is the dynamic tyre radius. The motor layout is based on press reports and not yet official."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/09/amg-suv-scoop-new/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-gr-celica-wrc",
+   "date": "2026-09-30",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "4WD",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "rumor",
+   "ja": {
+    "title": "トヨタ、GR Yaris Rally1後継とみられるWRCプロトタイプをスペインで走行テスト",
+    "summary": "2ドアクーペのプロトタイプがスペイン・タラゴナで目撃され、ドライバーはオット・タナックだった。WRC規則により競技車は1.6Lターボと共通パイプフレームを使用する。市販版は2.0Lターボ4気筒＋AWDになると報じられている。",
+    "note": "「Celica」という車名はトヨタの公式発表ではなく、スクープ記事による推測。市販AWDの方式（電子制御カップリング型か、GR-FOURのような前後トルク配分可変型か）は未公表。"
+   },
+   "en": {
+    "title": "Toyota tests apparent GR Yaris Rally1 successor WRC prototype in Spain",
+    "summary": "A two-door coupe prototype was spotted in Tarragona, Spain, driven by Ott Tänak. WRC rules require a 1.6 L turbo and a common tubular spaceframe. The road car is reported to use a 2.0 L turbo four-cylinder with AWD.",
+    "note": "The 'Celica' name is speculation from spy-shot reporting, not a Toyota announcement. The road car's AWD type (electronically controlled coupling vs. a variable front/rear split like GR-FOUR) has not been disclosed."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/09/toyota-celica-wrc-scoop/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-us-cafe",
+   "date": "2026-09-29",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "US",
+   "tags": [
+    "PT",
+    "規制"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "米運輸省、新CAFE基準を採択：2031年までに34.9 mpg、旧基準50.4 mpgから大幅緩和",
+    "summary": "新基準ではフリート平均燃費を2031年までに34.9 mpgとし、バイデン政権時の50.4 mpgから引き下げた。2028年モデルイヤーからはCAFEクレジット取引制度を廃止する。2025年9月のEV税額控除終了に続く措置で、Ford・GM・StellantisはICE車中心のポートフォリオへ回帰している。",
+    "note": "換算式：km/L = mpg × 1.609 / 3.785 = mpg × 0.4251。34.9 mpg ≈ 14.8 km/L、50.4 mpg ≈ 21.4 km/L。記事は14.7 km/Lと記載しており、丸め方の差とみられる。Federal Registerの原文は未確認。"
+   },
+   "en": {
+    "title": "US DOT adopts new CAFE standard: 34.9 mpg by 2031, down from 50.4 mpg",
+    "summary": "The new standard sets a fleet average of 34.9 mpg by 2031, versus 50.4 mpg under the Biden-era rule. CAFE credit trading will be abolished from model year 2028. This follows the end of EV tax credits in September 2025, and Ford, GM and Stellantis are shifting their portfolios back toward ICE.",
+    "note": "Conversion: km/L = mpg × 1.609 / 3.785 = mpg × 0.4251, so 34.9 mpg ≈ 14.8 km/L and 50.4 mpg ≈ 21.4 km/L. The article states 14.7 km/L, likely a rounding difference. Federal Register text not yet checked."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/09/29/new-fuel-consumption-regulation-sees-us-ev-adoption-slow/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-cn-gb44721",
+   "date": "2026-09-30",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "CN",
+   "tags": [
+    "ADAS",
+    "規制",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "中国、L3/L4自動運転の強制国家標準 GB 44721-2026 を正式発行（2027年7月1日施行）",
+    "summary": "対象はL3/L4自動運転システムを搭載したM類・N類車両。設計から生産、市販後までの安全管理体制、走行継続が困難な場合のミニマムリスク戦略の作動条件、システム状態のHMI通知、L3でのドライバー引継ぎ能力の監視などを義務化する。適合確認は企業内試験、文書審査、実車・公道・シミュレーションでの確認試験で行う。",
+    "note": "承認は2026年8月4日。報道では、2026年6月に採択されたUN GTR（自動運転システム）と整合しつつ、それより厳しい内容とされる。"
+   },
+   "en": {
+    "title": "China issues mandatory national standard GB 44721-2026 for L3/L4 automated driving (effective Jul 1, 2027)",
+    "summary": "Applies to M and N category vehicles with L3/L4 systems. It mandates safety management from design through manufacturing to post-deployment, trigger conditions for minimum risk strategies, HMI status notification, and driver-takeover monitoring for L3. Compliance is verified through in-house tests, document review, and confirmatory field, road and simulation tests.",
+    "note": "Approved on Aug 4, 2026. Reported to align with, but go beyond, the UN GTR on ADS adopted in June 2026."
+   },
+   "src": [
+    {
+     "name": "Automotive World",
+     "url": "https://www.automotiveworld.com/news/china-issues-mandatory-standard-for-automated-driving/"
+    },
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/08/04/china-sets-safety-baseline-l3-l4-autonomous-driving/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-vw-recall",
+   "date": "2026-09-28",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "シャシー",
+    "品質"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "VWグループ、ステアリングラック固定ボルトの腐食で世界約400万台のリコールへ",
+    "summary": "右側ステアリングラック取付ボルトが、融雪塩を使う地域で水分により腐食・破断しやすく、最悪の場合は操舵不能に至るおそれがある。内訳はVW約200万台、Skoda 100万台超、Audi約70万台、Seat約20万台で、米国は208,274台。対象は2016年4月〜2024年9月生産のGolf、Tiguan、Touran、Caddy、Atlas、Audi Q3など。",
+    "note": "対策は防錆コーティングを改良したボルトへの交換。MQBプラットフォームで共通の部品とみられる（推測）。"
+   },
+   "en": {
+    "title": "VW Group to recall about 4 million vehicles worldwide over corroding steering-rack bolts",
+    "summary": "The right-hand steering-rack mounting bolt can corrode and break in road-salt regions, potentially causing total loss of steering. Roughly 2 million VW, over 1 million Skoda, about 700,000 Audi and about 200,000 Seat vehicles are affected, including 208,274 in the US. Models built April 2016 to September 2024 include the Golf, Tiguan, Touran, Caddy, Atlas and Audi Q3.",
+    "note": "The remedy is a bolt with an improved corrosion-resistant coating. Likely a shared MQB part (inference)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/09/vw-is-about-to-issue-its-largest-recall-since-dieselgate/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-gm-cvt",
+   "date": "2026-10-01",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "PT",
+    "品質"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "GMのCVTに集団訴訟：Malibu、Trailblazer、Equinox、Terrain が対象",
+    "summary": "デラウェア州で提訴された。対象は2019-25年式Malibu、2021-25年式Trailblazer、2024年式以降のEquinoxとTerrain。クラッチレギュレーター、バルブボディ、チェーン、プーリー、ベアリングの不具合で、滑り・ジャダー・駆動力の喪失が起きると主張している。NHTSAへの苦情は358件。",
+    "note": "チェーン式CVTの変速比は i = R_driven / R_drive（プーリー有効半径の比）。挟圧が不足するとチェーンが滑り、伝達トルクの上限は T_max ≈ 2μ·F_clamp·R / cos(α)（α：シーブ半角）で決まる。ジャダーとの因果関係は訴状上の主張であり、確定した事実ではない。"
+   },
+   "en": {
+    "title": "Class action targets GM CVTs in Malibu, Trailblazer, Equinox and Terrain",
+    "summary": "Filed in Delaware, covering the 2019-25 Malibu, 2021-25 Trailblazer, and 2024+ Equinox and Terrain. It alleges defects in the clutch regulator, valve body, chain, pulleys and bearings causing slipping, judder and loss of motive power. NHTSA has logged 358 complaints.",
+    "note": "Chain CVT ratio: i = R_driven / R_drive (ratio of effective pulley radii). Insufficient clamp force lets the chain slip; the transmittable torque limit is roughly T_max ≈ 2μ·F_clamp·R / cos(α), where α is the sheave half-angle. The causal link to judder is the plaintiffs' allegation, not an established fact."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/10/gm-cvt-class-action-lawsuit/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-bmw-cmd",
+   "date": "2026-09-30",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BMW、Capital Market Dayで管理職ポスト20%削減と収益回復計画を発表",
+    "summary": "2027年半ばまでに組織と管理職ポストを20%削減する。長期目標は自動車事業のEBITマージン8〜10%、フリーキャッシュフローは70億ユーロ以上。2 Series Active Tourerは廃止、欧州では2027年半ばからエージェンシー販売へ移行、2028年に欧州向け小型Neue Klasse EVを投入する。",
+    "note": "報道では2028年のEBIT目標が3〜5%とされているが、長期目標との関係が記事から読み取れないため、一次資料（IR資料）での確認が必要。"
+   },
+   "en": {
+    "title": "BMW Capital Market Day: 20% cut in management roles and margin recovery plan",
+    "summary": "BMW will cut divisions and management roles by 20% by mid-2027. Long-term targets are an 8-10% automotive EBIT margin and at least €7bn of free cash flow. The 2 Series Active Tourer will be discontinued, Europe moves to an agency sales model from mid-2027, and a compact Neue Klasse EV for Europe arrives in 2028.",
+    "note": "The reported 2028 EBIT target of 3-5% is unclear relative to the long-term target and should be checked against BMW's IR materials."
+   },
+   "src": [
+    {
+     "name": "Automotive World",
+     "url": "https://www.automotiveworld.com/news/bmw-to-cut-management-roles-20-in-margin-recovery-plan/"
+    },
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/01/bmw-plans-new-entry-level-electric-vehicle-for-2028/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-gac-faw-toyota",
+   "date": "2026-09-29",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "広汽集団（GAC）、一汽トヨタの株式50%を取得へ",
+    "summary": "FAWグループ子会社から、新規A株の発行（1株5.75元）を対価に取得する。取引額は監査・評価後に決まる予定。これによりFAW子会社がGACの第2位株主となり、トヨタの中国2合弁（一汽トヨタ・広汽トヨタ）が株主レベルで近づく。",
+    "note": "背景として、トヨタの2025年の中国BEV販売は約10万台（VWは約8.5万台）、うち広汽トヨタのbZ3Xが約7万台を占めた。"
+   },
+   "en": {
+    "title": "GAC to acquire 50% of FAW Toyota",
+    "summary": "GAC will buy the stake from an FAW Group subsidiary by issuing new A-shares at 5.75 yuan each. The deal value will be set after audits and valuation. The FAW subsidiary becomes GAC's second-largest shareholder, bringing Toyota's two Chinese JVs closer at shareholder level.",
+    "note": "Context: Toyota sold about 100,000 BEVs in China in 2025 (VW about 85,000), with GAC Toyota's bZ3X at about 70,000."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/09/29/gac-to-acquire-50-per-cent-stake-in-faw-toyota/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-mazda-changan",
+   "date": "2026-10-01",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "戦略",
+    "PT"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "マツダ、長安汽車ベースのEVを拡大する方向で協議",
+    "summary": "現行の6e（EZ-6、Deepal L07ベース）とCX-6e（EZ-60、Deepal S07ベース）に続き、Deepal S05ベースの小型電動SUVが候補に挙がっている。マツダ・オーストラリアのMDは「他の機会について話し始めた」と述べた。燃料価格の上昇によるEV需要の増加が背景にある。",
+    "note": "現行2車種は量産済み。追加車種は協議段階で、正式発表はない。"
+   },
+   "en": {
+    "title": "Mazda in talks to expand Changan-based EVs",
+    "summary": "After the 6e (EZ-6, Deepal L07-based) and CX-6e (EZ-60, Deepal S07-based), a smaller electric SUV based on the Deepal S05 is a candidate. Mazda Australia's MD said they have started discussing other opportunities. Rising fuel prices are driving EV demand.",
+    "note": "The two current models are in production; additional models are at the discussion stage with no formal announcement."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/10/mazda-poised-to-build-more-chinese-based-evs/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-stellantis-acc",
+   "date": "2026-09-30",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "EU",
+   "tags": [
+    "電池",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "Stellantis、ACCの電池供給不足で仏工場のEV生産を一時停止",
+    "summary": "ソショー工場（Peugeot 3008/5008）は10月23〜30日、レンヌ工場（Citroën C5 Aircross）は10月22〜30日に停止する。原因はACC（Stellantis・Mercedes・TotalEnergiesの合弁）ドゥヴラン工場の立ち上げ遅れと高い不良率。対象はSTLA Medium用の97 kWh高ニッケル電池。",
+    "note": "2026年初頭の時点で、長距離版電池搭載車は月約1,000台にとどまっていたと報じられている。個人顧客の納期は2027年Q1〜Q2までずれ込む見込み。"
+   },
+   "en": {
+    "title": "Stellantis pauses EV output in France due to ACC battery shortage",
+    "summary": "Sochaux (Peugeot 3008/5008) stops Oct 23-30 and Rennes (Citroën C5 Aircross) Oct 22-30. The cause is the slow ramp-up and high defect rates at ACC's Douvrin plant (a Stellantis, Mercedes and TotalEnergies JV). Affected: the 97 kWh high-nickel long-range pack for STLA Medium.",
+    "note": "Reports say only about 1,000 long-range vehicles per month were built in early 2026. Private customer deliveries are slipping to Q1-Q2 2027."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/09/30/battery-shortage-stellantis-pauses-ev-production-in-france/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-ultium-lmr",
+   "date": "2026-09-30",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "US",
+   "tags": [
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "Ultium Cells（GM×LGES）、テネシー工場をLMRセル生産向けに改修",
+    "summary": "スプリングヒル工場を2026年末から改修し、2028年にLMR（リチウムマンガンリッチ）正極セルの生産を始める。LFPと同程度のコストで、エネルギー密度は約33%高いとしている。投資額は2030年までに約10億ドル、新規雇用は500人。",
+    "note": "33%がセル単位かパック単位かは記事に記載がない。LMRは高電圧化に伴う電圧フェード（サイクルごとの平均放電電圧の低下）が課題とされる。"
+   },
+   "en": {
+    "title": "Ultium Cells (GM x LGES) retrofits Tennessee plant for LMR cells",
+    "summary": "The Spring Hill plant will be retrofitted from late 2026, with lithium-manganese-rich (LMR) cell production starting in 2028. The claim is about 33% higher energy density than LFP at similar cost. Investment is about $1bn by 2030, with 500 new jobs.",
+    "note": "The article does not say whether the 33% is cell- or pack-level. LMR's known challenge is voltage fade (average discharge voltage dropping with cycling)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/09/30/ultium-cells-retrofits-tennessee-plant-for-lmr-cell-production/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-gotion-ssb",
+   "date": "2026-09-30",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "CN",
+   "tags": [
+    "電池"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "Gotion（国軒高科）、硫化物系全固体電池の目標を400 Wh/kgに引き上げ",
+    "summary": "従来目標は350 Wh/kgで、0.2 GWhのパイロットラインで350 Wh/kgを達成し、車両に搭載して走行試験を行ったとしている。2027年に小規模生産、2030年に量産を目指し、2 GWhラインの設計は2026年3月に完了した。長期コスト目標は約150ドル/kWh。",
+    "note": "筆頭株主はVolkswagen。釘刺し・高温試験で発煙・発火なしと報じられているが、試験条件は公開されていない。"
+   },
+   "en": {
+    "title": "Gotion raises its sulfide solid-state battery target to 400 Wh/kg",
+    "summary": "The previous target was 350 Wh/kg, which Gotion says it reached on its 0.2 GWh pilot line, with cells road-tested in vehicles. Small-scale production is planned for 2027 and mass production for 2030; a 2 GWh line design was finalized in March 2026. Long-term cost target is about $150/kWh.",
+    "note": "Volkswagen is the largest shareholder. No smoke or fire was reported in nail and high-temperature tests, but test conditions were not published."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/09/30/gotion-targets-400-wh-kg-solid-state-batteries/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-mb-prologium",
+   "date": "2026-09-25",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "EU",
+   "tags": [
+    "電池"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "Mercedes、ProLogium（台湾）の第4世代固体電池セルの優先評価権を獲得",
+    "summary": "セラミックセパレーターと不燃性無機電解質を使う第4世代セルについて、電気・熱・安全性の評価をMercedes社内と第三者機関で行う。ProLogiumの仏ダンケルク工場は計画容量44 GWh。Mercedesは別途Factorial製固体電池を積んだEQSで1,205 kmを走行している。",
+    "note": "一部の固体電池は12か月以内に市場投入される可能性があると報じられているが、Mercedesの搭載計画とは明示的に結び付けられていない。"
+   },
+   "en": {
+    "title": "Mercedes gains priority testing access to ProLogium's Gen4 solid-state cells",
+    "summary": "The Gen4 cells use a ceramic separator and a non-flammable inorganic electrolyte; electrical, thermal and safety tests will run at Mercedes and third-party labs. ProLogium's Dunkirk plant has a planned 44 GWh capacity. Separately, a Mercedes EQS with Factorial solid-state cells covered 1,205 km.",
+    "note": "Reports say some solid-state cells may reach market within 12 months, but this is not explicitly tied to a Mercedes production plan."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/09/mercedes-signs-huge-deal-to-help-make-solid-state-batteries-a-reality/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-momenta-stla",
+   "date": "2026-09-29",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "CN",
+   "tags": [
+    "ADAS",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "Momenta、Peugeot・Jeep向けにADASを開発、2027年以降の電動車に搭載",
+    "summary": "上海で契約し、「R7 World Model」ベースの運転支援をDongfeng Stellantis Automotive Technology経由で供給する。2027年以降のBEV/PHEVに搭載し、中国・欧州などで展開する。将来はL3機能も開発する計画。",
+    "note": "Jeepはオフロード性能、Peugeotは運動性能と、ブランドごとに制御キャラクターを合わせるとしている。Momentaは中国でMercedes、Audi、BMWとも取引がある。"
+   },
+   "en": {
+    "title": "Momenta to develop ADAS for Peugeot and Jeep electrified models from 2027",
+    "summary": "Signed in Shanghai, Momenta will supply driver assistance based on its 'R7 World Model' via Dongfeng Stellantis Automotive Technology. It will appear in BEVs and PHEVs from 2027 in China, Europe and other markets, with L3 functions planned later.",
+    "note": "Control character will be tuned per brand: off-road for Jeep, driving dynamics for Peugeot. Momenta already works with Mercedes, Audi and BMW in China."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/09/29/momenta-develops-driver-assistance-systems-for-peugeot-and-jeep/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-xiaomi-nomad",
+   "date": "2026-09-30",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT",
+    "4WD"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "Xiaomi、初のレンジエクステンダーSUV「Sky Nomad」シリーズを発売（20.99万元〜）",
+    "summary": "発電用エンジンは1.5Lターボ。N70 Proは前輪駆動210 kW、52 kWh LFPでEV航続351 km（CLTC）。N70 MaxとN90 Maxはデュアルモーター4WDでシステム出力310 kW、76 kWh三元系電池、EV航続はそれぞれ505 kmと464 km。最上位のN90 Max Explorerはポップアップルーフ付きで29.99万元。",
+    "note": "EREVでは、エンジンは発電専用で駆動は全てモーターが担う。4WDの前後トルク配分は前後モーターの独立指令で決まり、機械式カップリングは不要。配分ロジックの詳細は未公表。"
+   },
+   "en": {
+    "title": "Xiaomi launches its first range-extender SUV series 'Sky Nomad' (from 209,900 yuan)",
+    "summary": "The range extender is a 1.5 L turbo. N70 Pro: FWD, 210 kW, 52 kWh LFP, 351 km EV range (CLTC). N70 Max and N90 Max: dual-motor AWD, 310 kW system output, 76 kWh NMC, 505 km and 464 km EV range. The top N90 Max Explorer has a pop-up roof at 299,900 yuan.",
+    "note": "In an EREV the engine only generates power and all traction comes from the motors. Front/rear torque split is set by independent motor commands, so no mechanical coupling is needed. Split logic is undisclosed."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/09/30/xiaomi-officially-launches-sky-nomad-series-in-china/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-leapmotor-c10",
+   "date": "2026-09-30",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT",
+    "ADAS"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "Leapmotor C10の2027年モデル、新しい3.5 E/Eアーキテクチャに移行",
+    "summary": "センサーは前方カメラ1＋レーダー5に増え（前方コーナー2個と前方レーダーを追加）、運転支援機能は22種類になった。BEVは69.9 kWh・165 kW・360 km、81.9 kWh RWD・220 kW・510 km、デュアルモーター420 kWで0-100 km/h 5.0秒。レンジエクステンダー版は総航続986 km。",
+    "note": "Stellantisとの提携車種のため、欧州仕様への展開が注目点。"
+   },
+   "en": {
+    "title": "Leapmotor C10 moves to its 3.5 E/E architecture for MY2027",
+    "summary": "Sensors grow to one front camera plus five radars (two front-corner and one forward radar added), with 22 ADAS functions. BEVs: 69.9 kWh / 165 kW / 360 km, 81.9 kWh RWD / 220 kW / 510 km, and a dual-motor 420 kW version doing 0-100 km/h in 5.0 s. The range-extender version offers 986 km combined.",
+    "note": "Worth watching for the European spec, given the Stellantis partnership."
+   },
+   "src": [
+    {
+     "name": "Automotive World",
+     "url": "https://www.automotiveworld.com/topics/software-defined-vehicle/leapmotor-shifts-c10-to-its-3-5-architecture-for-2027/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-bmw-x3m50",
+   "date": "2026-09-30",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "BMW 2027年モデル：X3 M50が44 hp向上、iX3に40 xDriveを追加",
+    "summary": "X3 M50の3.0L直6は393 hpから437 hpに上がり、M350 xDriveと同じ仕様になった。iX3 40 xDriveは275 kW、82.6 kWh、300 kW充電に対応。M5には高圧真空鋳造（1本0.05秒）による最大20%軽量の20/21インチホイールを設定した。",
+    "note": "新しい加速タイムは未公表。M350の0-100 km/h 4.1秒が参考値になる。"
+   },
+   "en": {
+    "title": "BMW MY2027: X3 M50 gains 44 hp, iX3 adds a 40 xDrive",
+    "summary": "The X3 M50's 3.0 L straight-six rises from 393 hp to 437 hp, matching the M350 xDrive. The iX3 40 xDrive has 275 kW, 82.6 kWh and 300 kW charging. The M5 gets 20/21-inch wheels made by high-pressure vacuum casting (0.05 s per wheel), up to 20% lighter.",
+    "note": "New acceleration figures were not published; the M350's 0-100 km/h of 4.1 s is a reference."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/09/bmw-gives-the-x3-m50-a-44-hp-boost-and-the-m5-some-very-complicated-wheels/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-civic-typer",
+   "date": "2026-10-01",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "シャシー",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "2027年型Civic Type R（北米）：+Rモードのダンパーを再調整、欧州向けは2026年で終了",
+    "summary": "パワートレインは315 hp / 420 Nm、6速MT、FF＋LSDで変更なし。+Rモードのダンパー制御を見直して跳ねと突き上げを減らし、ブレーキペダルにヨークスプリングを追加してリンクのガタを抑えた。レブマッチ制御も見直した。北米価格は49,990ドル。",
+    "note": "欧州販売の終了は排出ガス規制が理由と報じられている。現行FL5のLSDはヘリカル式とされる（Claudeの記憶に基づくため要確認）。"
+   },
+   "en": {
+    "title": "2027 Civic Type R (North America): retuned +R dampers; Europe ends after 2026",
+    "summary": "Powertrain unchanged: 315 hp / 420 Nm, 6-speed manual, FWD with LSD. Damper control in +R mode is retuned to reduce bounce and impact harshness, a yoke spring is added to the brake pedal to cut linkage play, and rev-matching is recalibrated. US price is $49,990.",
+    "note": "Europe's discontinuation is reportedly due to emissions rules. The FL5's LSD is believed to be helical (from memory; verify)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/10/2027-honda-civic-type-r-gets-even-sharper-for-2027/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-baby-defender",
+   "date": "2026-09-25",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "4WD",
+    "PT"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "Land Rover「小型Defender」の試作車がニュル周辺でテスト中、2027年デビュー予定",
+    "summary": "EMAプラットフォーム（800V）を使い、ハイブリッドとBEVを用意する。PHEVは設定しない。米国はハイブリッド、欧州はEVを重視する方針と報じられている。リアゲートに装着された箱の用途は不明。",
+    "note": "4WD方式（BEVは前後モーター、ハイブリッドは後輪eモーターの有無など）は未公表。"
+   },
+   "en": {
+    "title": "Land Rover's 'baby Defender' prototype testing near the Nürburgring, debut in 2027",
+    "summary": "It uses the 800 V EMA platform with hybrid and BEV powertrains, and no PHEV. Reports say the US will focus on the hybrid and Europe on the EV. The purpose of the box on the tailgate is unknown.",
+    "note": "AWD layout (front/rear motors for the BEV, whether the hybrid has a rear e-motor) is undisclosed."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/09/land-rovers-baby-defender-is-testing-something-strange/"
+    }
+   ]
+  },
+  {
+   "id": "2026-04-01-audi-rs5-dtc",
+   "date": "2026-04-01",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "EU",
+   "tags": [
+    "4WD",
+    "制御",
+    "PT"
+   ],
+   "prio": 3,
+   "conf": "primary",
+   "ja": {
+    "title": "【参考・4月発表】Audi RS 5のリア電動トルクベクタリング「Dynamic Torque Control」",
+    "summary": "8 kW / 40 Nmの水冷400Vモーターと増速ギアを、差動制限の弱い通常のデフに組み合わせ、後輪左右間で最大2,000 Nmのトルクを15 msで移動させる。クラッチ式と違い、アクセルオフや制動中でもヨーモーメントを発生できる点を「量産初」としている。制御はHCP1統合ECUが担う。",
+    "note": "ギア比の概算：2,000 Nm / 40 Nm = 50（効率は無視）。ヨーモーメントは Mz = ΔT·t / (2·r_w)。t = 1.6 m、r_w = 0.35 mと仮定すると、Mz ≈ 2,000 × 1.6 / 0.70 ≈ 4,600 Nm（トレッドと動半径は仮定値で、公表値ではない）。クラッチ式は「速い輪から遅い輪へ」しかトルクを送れないが、モーター式は向きを問わず送れる。"
+   },
+   "en": {
+    "title": "[Reference, April] Audi RS 5 rear electric torque vectoring 'Dynamic Torque Control'",
+    "summary": "An 8 kW / 40 Nm water-cooled 400 V motor and step-up gearing work with a low-lock conventional differential to shift up to 2,000 Nm between the rear wheels in 15 ms. Unlike clutch systems, it can create yaw moment off-throttle and under braking, which Audi calls a production first. Control runs on the HCP1 integrated ECU.",
+    "note": "Approximate ratio: 2,000 Nm / 40 Nm = 50 (ignoring efficiency). Yaw moment: Mz = ΔT·t / (2·r_w). Assuming t = 1.6 m and r_w = 0.35 m gives Mz ≈ 2,000 × 1.6 / 0.70 ≈ 4,600 Nm (track and radius are assumptions, not published). Clutch systems can only send torque from the faster to the slower wheel; a motor can send it either way."
+   },
+   "src": [
+    {
+     "name": "Automotive World",
+     "url": "https://www.automotiveworld.com/news/audi-introduces-torque-vectoring-world-first-in-rs-5/"
+    }
+   ]
+  },
+  {
+   "id": "2026-02-01-cn-emb",
+   "date": "2026-02-01",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "CN",
+   "tags": [
+    "制御",
+    "シャシー"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "【参考・2月記事】中国でEMB（電動機械式ブレーキ）の小規模量産が2026年に開始",
+    "summary": "油圧回路を持たないEMBの小規模量産が2026年に始まり、最初の量産車はChery Exeed EX7とされる。サプライヤーはOrient-Motion、Jiongyi（ISO 26262認証取得）、Watson、Beijing West Industriesなど。2026年中にデュアルモーターEMBの搭載も計画されている。",
+    "note": "EMBは各輪のクランプ力を個別のモーターで直接指令でき、ESCやトルクベクタリングとの協調制御の応答性が上がる。一方で、電源冗長化と機能安全（ASIL D相当）の設計が課題になる。Li Auto L9が候補とする記述は未確認情報。"
+   },
+   "en": {
+    "title": "[Reference, February] China starts small-series EMB (electro-mechanical brake) production in 2026",
+    "summary": "Small-series production of hydraulic-free EMB began in 2026, with the Chery Exeed EX7 cited as the first production model. Suppliers include Orient-Motion, Jiongyi (ISO 26262 certified), Watson and Beijing West Industries. Dual-motor EMB integration is planned during 2026.",
+    "note": "EMB lets each wheel's clamp force be commanded directly by its own motor, improving response when coordinating with ESC and torque vectoring. Power-supply redundancy and functional safety (around ASIL D) are the key design challenges. The mention of Li Auto L9 as a candidate is unconfirmed."
+   },
+   "src": [
+    {
+     "name": "All About Industries",
+     "url": "https://www.all-about-industries.com/brake-by-wire-in-small-series-still-in-2026-a-5b91ecee02502169d8c356b12d6a9ce5/"
+    }
+   ]
+  }
+ ]
+}
