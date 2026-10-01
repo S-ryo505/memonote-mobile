@@ -1,0 +1,323 @@
+{
+  "updated": "2026-10-02T00:20:00+09:00",
+  "items": [
+    {
+      "id": "2026-09-30-gemini-4-argon",
+      "date": "2026-09-30",
+      "kind": "weekly",
+      "cat": "model",
+      "level": "all",
+      "tags": ["モデル", "料金"],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "Google「Gemini 4 Argon」発表：公開ベンチマーク18項目中13項目で首位または同率、ただし限定公開",
+        "summary": "最初はサイバー防御の関係者と米政府の事前評価向けに限定し、有料APIとGoogle AI Ultra契約者には順次広げるとしている。出力上限は100万トークン（従来は64,000）。API価格は導入期間中が入力100万トークンあたり2ドル・出力10ドル、通常価格は4ドル・20ドル。",
+        "note": "仕事目線では、長い出力（大きなコードや長文レポートを一度に生成）に強いのが特徴。ベンチマーク値はGoogleの公表値を記事が引用したもので、第三者評価ではない。一般のGeminiアプリでいつ使えるようになるかは未定。"
+      },
+      "en": {
+        "title": "Google unveils Gemini 4 Argon: leads or ties 13 of 18 disclosed benchmarks, but in limited release",
+        "summary": "Initial access goes to cyber defenders and the US government's pre-release review, with paid API customers and Google AI Ultra subscribers to follow. Output limit rises to 1 million tokens (from 64,000). API pricing is $2 input / $10 output per million tokens during the intro period, then $4 / $20.",
+        "note": "For work, the standout is very long outputs (large code or long reports in one go). Benchmarks are Google's own figures as quoted by the article, not third-party results. Timing for the consumer Gemini app is unclear."
+      },
+      "src": [
+        { "name": "VentureBeat", "url": "https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release" },
+        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/" }
+      ]
+    },
+    {
+      "id": "2026-09-29-gpt-6-1-sol",
+      "date": "2026-09-29",
+      "kind": "weekly",
+      "cat": "model",
+      "level": "all",
+      "tags": ["モデル", "料金"],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "OpenAI「GPT-6.1 Sol」発表：上位モデルGPT-6 Astraに近い性能を約1/5の価格で",
+        "summary": "API価格は入力100万トークンあたり2ドル・出力10ドル。最大毎秒300トークンで出力する「Ultrafast」版（通常料金の6倍）も用意する。提供はAPI、ChatGPT Work、Codexで、通常のChatGPTでは選べない。",
+        "note": "「性能ほぼ同等・価格1/5」は特定ベンチマーク（DeepSWE、OSWorld等）での比較。社内で大量の文書処理をAPIで回す場合は、上位モデルと安価モデルを用途で使い分けると費用が数分の一になる、という流れが各社で進んでいる。"
+      },
+      "en": {
+        "title": "OpenAI launches GPT-6.1 Sol: near GPT-6 Astra performance at about one-fifth the price",
+        "summary": "API pricing is $2 input / $10 output per million tokens. An 'Ultrafast' tier (6x standard price) outputs up to 300 tokens per second. Available via the API, ChatGPT Work and Codex, but not regular ChatGPT.",
+        "note": "'Near-equal at one-fifth the price' refers to specific benchmarks (DeepSWE, OSWorld, etc.). Across vendors, the trend is to route bulk document processing to cheaper models and reserve top models for hard tasks, cutting cost several-fold."
+      },
+      "src": [{ "name": "VentureBeat", "url": "https://venturebeat.com/technology/openais-gpt-6-1-sol-offers-astra-like-performance-at-1-5th-price-a-new-ultrafast-tier-clocks-at-300-tokens-per-second" }]
+    },
+    {
+      "id": "2026-09-28-claude-sonnet-5-5",
+      "date": "2026-09-28",
+      "kind": "weekly",
+      "cat": "model",
+      "level": "all",
+      "tags": ["モデル", "料金"],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Anthropic「Claude Sonnet 5.5」発表：出力が30%以上高速、タスク当たりコスト最大30%減",
+        "summary": "価格は前世代Sonnet 5と同じで、入力100万トークンあたり2ドル・出力10ドル。ベンチマークでは上位モデルOpus 5.5にほぼ並ぶ（GDPval-AA 1844対1846、OSWorld 2.1 80.1%対81.8%）。AWS、Google Cloud、Azureでも提供され、Haiku 5.5は数週間後とされる。",
+        "note": "このページを作っているClaude（Anthropic製）自身の関連記事のため、他社記事と同じ基準（数値は記事掲載値、評価は書かない）で扱っています。"
+      },
+      "en": {
+        "title": "Anthropic launches Claude Sonnet 5.5: 30%+ faster output, up to 30% lower cost per task",
+        "summary": "Pricing is unchanged from Sonnet 5 at $2 input / $10 output per million tokens. Benchmarks are close to the top-tier Opus 5.5 (GDPval-AA 1844 vs 1846; OSWorld 2.1 80.1% vs 81.8%). Also available on AWS, Google Cloud and Azure; Haiku 5.5 is expected in the following weeks.",
+        "note": "This page is produced by Claude (an Anthropic model), so Anthropic news is handled with the same rules as other vendors: article figures only, no evaluative wording."
+      },
+      "src": [{ "name": "VentureBeat", "url": "https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-5-with-30-cost-reduction-per-task-due-to-faster-speeds-and-fewer-tool-calls" }]
+    },
+    {
+      "id": "2026-09-29-openai-pages-space",
+      "date": "2026-09-29",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": ["仕事で使える", "資料作成", "エージェント"],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "OpenAI、ChatGPT内のオフィス機能「Space」「Pages」「Slides」を発表",
+        "summary": "Spaceはファイルとページを置くチーム共有の作業場所、Pagesは人とAIが同時に編集できる文書ツールで、グラフや画像の生成もできる。Slidesは会話からスライドを作る機能で、数週間以内に提供開始。SpaceはPro・Business・Enterprise向けで、従来のLibraryを置き換える。",
+        "note": "Microsoft Officeファイル（docx/pptx）との互換性は記事に記載がない。会社で使うにはBusiness/Enterprise契約と社内ルール（情報区分）の確認が前提になる。"
+      },
+      "en": {
+        "title": "OpenAI announces in-ChatGPT office tools: Space, Pages and Slides",
+        "summary": "Space is a shared team workspace for files and pages; Pages is a document tool that people and AI edit together, with chart and image generation. Slides builds decks from conversation and arrives in the coming weeks. Space is for Pro, Business and Enterprise and replaces the old Library.",
+        "note": "Compatibility with Microsoft Office files (docx/pptx) is not mentioned. Company use requires a Business/Enterprise plan and a check against internal data-classification rules."
+      },
+      "src": [{ "name": "TechCrunch", "url": "https://techcrunch.com/2026/09/29/openai-takes-on-microsoft-with-the-launch-of-what-feels-a-whole-lot-like-chatgpts-own-office-suite/" }]
+    },
+    {
+      "id": "2026-09-29-openai-dots",
+      "date": "2026-09-29",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": ["エージェント", "仕事で使える"],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "OpenAI「Dots」：チャットを閉じても動き続ける常駐型AIエージェント",
+        "summary": "Dotは専用のクラウドPCとブラウザ上で動き、プロジェクトを監視してソフトを操作し、完成した作業を人の承認に回す。ChatGPT、Slack、Microsoft Teams経由でやり取りでき、4,000以上のアプリと連携する。Pro・Business Premiumは1体まで無料で、Enterprise等はベータ。",
+        "note": "使い方のイメージは「週次の進捗表を毎週更新して、遅れているタスクをTeamsで知らせる」ような定型業務の代行。今回のニュースページの定期実行と考え方は同じ。"
+      },
+      "en": {
+        "title": "OpenAI 'Dots': always-on AI agents that keep working after you close the chat",
+        "summary": "Each Dot runs on its own cloud computer and browser, monitors projects, operates software and sends finished work back for approval. They communicate via ChatGPT, Slack and Microsoft Teams and connect to 4,000+ apps. One Dot is free for Pro and Business Premium; Enterprise and others get a beta.",
+        "note": "Think of routine delegation such as updating a weekly progress sheet and flagging late tasks in Teams. The concept is the same as the scheduled runs behind this news page."
+      },
+      "src": [{ "name": "VentureBeat", "url": "https://venturebeat.com/technology/openai-launches-dots-always-on-ai-agent-coworkers-and-chatgpt-space-where-they-can-collaborate-with-human-teams" }]
+    },
+    {
+      "id": "2026-09-11-m365-copilot-button",
+      "date": "2026-09-11",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": ["仕事で使える", "資料作成"],
+      "prio": 3,
+      "conf": "primary",
+      "ja": {
+        "title": "Microsoft 365 Copilot：Word・Excel・PowerPointのCopilotボタンから直接指示できるように",
+        "summary": "Copilotのボタン自体に入力欄が付き、ペインを開かずに文字入力や音声で指示できる。文字を選択すると、その内容に合った候補の指示が表示される。ショートカットはWindowsがAlt＋C、MacがCommand＋Control＋I。2026年9月から順次提供し、12月までに完了する予定。",
+        "note": "管理者の作業は不要で、既存のCopilot設定がそのまま適用される。会社にCopilotライセンスがあれば、今年中に手元に来る可能性が高い機能（メッセージセンター MC1470885）。"
+      },
+      "en": {
+        "title": "Microsoft 365 Copilot: prompt directly from the Copilot button in Word, Excel and PowerPoint",
+        "summary": "The Copilot button gets its own input field, so you can type or dictate without opening the pane. Selecting content shows contextual prompt suggestions. Shortcuts are Alt+C on Windows and Command+Control+I on Mac. Rollout starts September 2026 and should finish by December.",
+        "note": "No admin action is needed and existing Copilot controls still apply. If your company has Copilot licences, expect it this year (Message Center MC1470885)."
+      },
+      "src": [{ "name": "M365 Message Center (merill.net)", "url": "https://mc.merill.net/message/MC1470885" }]
+    },
+    {
+      "id": "2026-09-14-m365-copilot-sep",
+      "date": "2026-09-14",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": ["仕事で使える", "資料作成", "会議", "メール・英語"],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Microsoft Copilot 9月の新機能：PowerPointの一括翻訳、Excelの変更履歴の説明、Planner Agent",
+        "summary": "PowerPointではレイアウトとノートを保ったままデッキ全体を他言語に翻訳できる。Excelでは編集箇所と版の履歴を、変更理由の説明付きで表示できる。Planner Agentはチャットの指示からプロジェクト計画とタスク割り当てを作成・更新する。",
+        "note": "海外拠点向けの説明資料を日英で作る場面で、一括翻訳がそのまま効く。一部の機能は段階的な提供のため、テナントによってはまだ表示されない。"
+      },
+      "en": {
+        "title": "Microsoft Copilot September features: full-deck translation in PowerPoint, change explanations in Excel, Planner Agent",
+        "summary": "PowerPoint can translate a whole deck while keeping layouts and speaker notes. Excel can show edits and version history with explanations of the changes. Planner Agent creates and updates project plans and task assignments from chat prompts.",
+        "note": "Full-deck translation is directly useful for preparing Japanese/English material for overseas sites. Some features are in staged rollout and may not yet appear in every tenant."
+      },
+      "src": [{ "name": "HubSite 365", "url": "https://www.hubsite365.com/en-ww/crm-pages/6-new-microsoft-copilot-features-youll-want-to-try-september-2026.htm" }]
+    },
+    {
+      "id": "2026-09-29-codex-env",
+      "date": "2026-09-29",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "advanced",
+      "tags": ["コーディング", "エージェント"],
+      "prio": 1,
+      "conf": "report",
+      "ja": {
+        "title": "OpenAI Codex：使い回せるクラウド開発環境と、スマホからの操作に対応",
+        "summary": "これまでタスクごとに使い捨てだったクラウド環境を、承認済みの設定と権限で継続利用できるようにした。PC、リモート、スマホのどれからでも作業を始められる。CLIの音声指示、複数タスクを管理する/agents画面、リポジトリを走査して修正案を作るCodex Security Cloudも発表した。",
+        "note": "提供開始日と価格は記事に記載がない。"
+      },
+      "en": {
+        "title": "OpenAI Codex adds reusable cloud environments and phone access",
+        "summary": "Cloud environments that used to be throwaway per task can now persist with approved settings and permissions. Work can start from a computer, remotely or from a phone. Also announced: voice commands in the CLI, an /agents view for multiple tasks, and Codex Security Cloud for repo scanning and fix preparation.",
+        "note": "General availability date and pricing are not stated in the article."
+      },
+      "src": [{ "name": "TechCrunch", "url": "https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/" }]
+    },
+    {
+      "id": "2026-09-28-nvidia-openshell",
+      "date": "2026-09-28",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "advanced",
+      "tags": ["セキュリティ", "エージェント"],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Nvidia「OpenShell」：AIエージェントが触れるファイル・ネットワークを強制的に制限するOSS",
+        "summary": "エージェントとファイル、API、認証情報、ネットワークの間に入るサンドボックスで、Linuxカーネルの機能で隔離し、通信はポリシー用のプロキシで制御する。判断はすべて監査ログに残る。Apache 2.0ライセンスで無料。Anthropic、Salesforce、SAP、Red Hatなどが組み込みを表明した。",
+        "note": "エージェントが指示を無視しても、アクセスできる範囲そのものを狭める考え方。社内でエージェントを使う際のセキュリティ審査で、今後よく出てくる論点になるとみられる（推測）。"
+      },
+      "en": {
+        "title": "Nvidia 'OpenShell': open-source sandbox that hard-limits what AI agents can access",
+        "summary": "It sits between agents and files, APIs, credentials and networks, isolating them with Linux kernel controls and a policy proxy for network access. Every decision is audit-logged. Free under Apache 2.0, with Anthropic, Salesforce, SAP and Red Hat among integrators.",
+        "note": "The idea is to shrink what an agent can reach even if it ignores instructions. Likely to become a common point in corporate security reviews of agents (inference)."
+      },
+      "src": [{ "name": "VentureBeat", "url": "https://venturebeat.com/infrastructure/nvidias-openshell-controls-what-ai-agents-can-access-even-when-they-ignore-instructions" }]
+    },
+    {
+      "id": "2026-09-30-safeguard-false-positive",
+      "date": "2026-09-30",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "intermediate",
+      "tags": ["セキュリティ", "仕事で使える"],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "OpenAIやAnthropicの安全機能が通常業務を誤ブロック、開発者の時間を奪っていると報道",
+        "summary": "衛星制御のシミュレーション、ロボットのUI作成、ハードのカメラやセンサーのパラメータ操作、OSSの脆弱性レビューなどが止められた事例が挙がった。一部の開発者はオープンモデルに移っている。OpenAIは正当な作業を遅らせることがあると認め、Anthropicは誤検知を認めたうえで、Fable 5.1で介入を約60%減らすとしている。",
+        "note": "車両制御やECU関連の質問でも同様の誤ブロックが起きうる。対処法は、目的（設計・検証・教育）と立場を最初に一文で書くこと。それでも止まる業務は、社内の承認済みツールに回すのが無難。"
+      },
+      "en": {
+        "title": "Report: OpenAI and Anthropic safeguards are blocking routine work and costing developers time",
+        "summary": "Cited cases include simulated satellite control, robotics UIs, camera and sensor parameter access on hardware, and open-source vulnerability review. Some developers have moved to open models. OpenAI admits safeguards can slow legitimate work; Anthropic acknowledged false positives and says Fable 5.1 aims for about 60% fewer interventions.",
+        "note": "Vehicle-control and ECU questions can hit similar false blocks. A practical fix is stating your purpose (design, validation, training) and role in the first sentence; route anything still blocked to approved internal tools."
+      },
+      "src": [{ "name": "VentureBeat", "url": "https://venturebeat.com/technology/developers-say-openai-and-anthropic-safeguards-are-flagging-routine-work-and-costing-them-time" }]
+    },
+    {
+      "id": "2026-05-07-eu-ai-act-delay",
+      "date": "2026-05-07",
+      "kind": "weekly",
+      "cat": "reg",
+      "level": "all",
+      "tags": ["規制"],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "【参考・5月】EU AI法の高リスク規定を延期することでEU立法機関が暫定合意（Digital Omnibus）",
+        "summary": "単体の高リスクAI（附属書III）の義務は2026年8月2日から2027年12月2日へ、規制製品に組み込まれるAI（附属書I）は2027年8月2日から2028年8月2日へ延期する。AI生成物の透かし義務は2026年12月2日に延期、機械規則は高リスク分類から外れる。",
+        "note": "5月時点では暫定合意で、その後の正式採択状況は未確認（要確認）。車載AIは型式認証の枠組みで扱われる部分があり、附属書Iとの関係は法務確認が必要。"
+      },
+      "en": {
+        "title": "[Reference, May] EU lawmakers provisionally agree to delay AI Act high-risk rules (Digital Omnibus)",
+        "summary": "Obligations for standalone high-risk AI (Annex III) move from Aug 2, 2026 to Dec 2, 2027; AI embedded in regulated products (Annex I) moves from Aug 2, 2027 to Aug 2, 2028. Watermarking duties shift to Dec 2, 2026, and the Machinery Regulation is removed from high-risk classification.",
+        "note": "This was a provisional agreement in May; formal adoption since then is unverified. In-vehicle AI is partly handled under type approval, so its relation to Annex I needs legal review."
+      },
+      "src": [{ "name": "Hogan Lovells", "url": "https://www.hlc.com/en/publications/eu-legislators-agree-to-delay-for-highrisk-ai-rules" }]
+    },
+    {
+      "id": "2026-10-02-howto-meeting",
+      "date": "2026-10-02",
+      "kind": "weekly",
+      "cat": "howto",
+      "level": "beginner",
+      "tags": ["仕事で使える", "会議"],
+      "prio": 3,
+      "conf": "guide",
+      "ja": {
+        "title": "【使い方特集】会議メモから「決定・ToDo・ボール待ち」を一発で抜き出すプロンプト",
+        "summary": "会議メモを貼り付ける前に、次の指示を一緒に入れると表に整理される：「以下の会議メモから①決定事項②ToDo（担当・期限）③他部署からの回答待ち④未決の論点を表にして。メモにない内容は推測で埋めず『不明』と書いて」。最後の一文で、AIが期限や担当を作り話で埋めるのを防げる。",
+        "note": "MemoNote Mobileの「AIアプリ用にコピー」と組み合わせると、スマホのメモ→AI→整理結果をノートに戻す流れが作れる。社外秘の会議は、会社が契約しているAIだけを使うこと。"
+      },
+      "en": {
+        "title": "[How-to] One prompt to pull decisions, to-dos and pending items from meeting notes",
+        "summary": "Paste this with your notes: 'From the meeting notes below, make a table of (1) decisions, (2) to-dos with owner and due date, (3) items awaiting answers from other teams, (4) open issues. Do not guess anything not in the notes; write \"unknown\" instead.' The last sentence stops the AI from inventing owners or dates.",
+        "note": "Combined with MemoNote Mobile's 'copy for AI', you can go phone notes → AI → organised result back into a note. Use only company-approved AI for confidential meetings."
+      },
+      "src": []
+    },
+    {
+      "id": "2026-10-02-howto-data",
+      "date": "2026-10-02",
+      "kind": "weekly",
+      "cat": "howto",
+      "level": "intermediate",
+      "tags": ["仕事で使える", "データ分析"],
+      "prio": 2,
+      "conf": "guide",
+      "ja": {
+        "title": "【使い方特集】走行ログ・試験データの解析をAIに頼むとき、最初に伝える4項目",
+        "summary": "①各列の意味と単位（例：yaw_rate [deg/s]、符号は左旋回が正）②サンプリング周期（例：100 Hz）③比べたい条件と、見たい現象（例：LSD仕様A/Bで旋回立ち上がりのヨーレート応答）④出力形式（グラフ、表、Excel）。この4つがないと、AIは単位や符号を推測で決めてしまい、もっともらしいが間違った結論になりやすい。",
+        "note": "確認のために「計算に使った式と、仮定した値を全部書き出して」と最後に付けると、検算しやすくなる。データの社外持ち出し可否は、必ず事前に確認する。"
+      },
+      "en": {
+        "title": "[How-to] Four things to tell an AI before asking it to analyse test or driving logs",
+        "summary": "(1) Column meanings and units (e.g. yaw_rate [deg/s], left turn positive), (2) sampling rate (e.g. 100 Hz), (3) the conditions to compare and the phenomenon of interest (e.g. yaw-rate response at corner exit, LSD spec A vs B), (4) output format (chart, table, Excel). Without these, the AI guesses units and signs and can reach plausible but wrong conclusions.",
+        "note": "Ending with 'list every formula and assumed value you used' makes checking easy. Always confirm whether the data may leave the company first."
+      },
+      "src": []
+    },
+    {
+      "id": "2026-10-02-howto-english",
+      "date": "2026-10-02",
+      "kind": "weekly",
+      "cat": "howto",
+      "level": "beginner",
+      "tags": ["仕事で使える", "メール・英語"],
+      "prio": 2,
+      "conf": "guide",
+      "ja": {
+        "title": "【使い方特集】英文メールを「直す」だけでなく「英語の勉強」にする頼み方",
+        "summary": "自分で書いた英文を貼り、「①ネイティブが自然に書く版に直して ②直した箇所ごとに理由を日本語で一行 ③次から使える定型表現を3つ」と頼む。翻訳だけを頼むと、どこが違ったかが残らない。理由付きにすると、同じ間違いが減る。",
+        "note": "このニュースページの「EN」ボタンも同じ考え方で、日本語で内容を理解してから英語版を読むと、専門用語の英語表現（torque vectoring、yaw moment など）が覚えやすい。"
+      },
+      "en": {
+        "title": "[How-to] Turn English email fixes into English study",
+        "summary": "Paste your own draft and ask: '(1) rewrite it the way a native speaker would, (2) give a one-line reason in Japanese for each change, (3) list three reusable phrases.' Translation alone leaves no record of what was wrong; reasons reduce repeat mistakes.",
+        "note": "The EN button on this page works the same way: understand the content in Japanese, then read the English to pick up technical terms like torque vectoring and yaw moment."
+      },
+      "src": []
+    },
+    {
+      "id": "2026-10-02-tool-notebooklm",
+      "date": "2026-10-02",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": ["仕事で使える", "資料作成"],
+      "prio": 2,
+      "conf": "guide",
+      "ja": {
+        "title": "【こんなのもあるよ】手元の資料だけを根拠に答えるAI（NotebookLMなど）",
+        "summary": "規格書、社内標準、論文PDFなどをまとめて読み込ませると、その資料の範囲内だけで回答し、根拠のページを示してくれるタイプのツール。一般的なチャットAIより「資料に書いていないことを答える」失敗が起きにくい。Google NotebookLMが代表例で、Claude・ChatGPTのプロジェクト機能でも近いことができる。",
+        "note": "各サービスの現在の料金・機能・企業向けプランの条件は、このページ作成時点で再確認していない（要確認）。社内文書を入れる場合は、会社が契約しているサービスかどうかを先に確認すること。"
+      },
+      "en": {
+        "title": "[Worth a look] AI that answers only from your own documents (e.g. NotebookLM)",
+        "summary": "Load standards, internal specs or paper PDFs and the tool answers only within those sources, citing pages. This reduces the 'answers things the documents never said' failure of general chatbots. Google NotebookLM is the best-known example; Claude and ChatGPT projects can do something similar.",
+        "note": "Current pricing, features and enterprise terms were not re-checked for this page (verify). Before adding internal documents, confirm the service is company-approved."
+      },
+      "src": []
+    }
+  ]
+}
