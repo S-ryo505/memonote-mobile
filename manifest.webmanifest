@@ -1,7 +1,7 @@
 {
   "name": "MemoNote Mobile",
   "short_name": "MemoNote",
-  "description": "スマホで書いた勉強ノートを、会社の MemoNote に送ります。HTMLファイルの共有にも対応。",
+  "description": "スマホで書いた勉強ノートを、会社の MemoNote に送ります。",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
@@ -28,26 +28,12 @@
     }
   ],
   "share_target": {
-    "action": "./share-target",
-    "method": "POST",
-    "enctype": "multipart/form-data",
+    "action": "./index.html",
+    "method": "GET",
     "params": {
       "title": "title",
       "text": "text",
-      "url": "url",
-      "files": [
-        {
-          "name": "file",
-          "accept": [
-            "text/html",
-            ".html",
-            ".htm",
-            "application/xhtml+xml",
-            "text/plain",
-            ".txt"
-          ]
-        }
-      ]
+      "url": "url"
     }
   },
   "shortcuts": [
