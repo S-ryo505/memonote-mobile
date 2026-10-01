@@ -1,6 +1,69 @@
 {
-  "updated": "2026-10-02T00:20:00+09:00",
+  "updated": "2026-10-02T07:35:00+09:00",
   "items": [
+    {
+      "id": "2026-10-01-ftc-ai-probe",
+      "date": "2026-10-01",
+      "kind": "flash",
+      "cat": "reg",
+      "level": "all",
+      "tags": [
+        "規制",
+        "セキュリティ"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "米FTC、OpenAIとAnthropicを対象に消費者保護の調査を開始（報道）",
+        "summary": "米連邦取引委員会（FTC）が、OpenAIとAnthropicなどのAI企業について、不公正・欺瞞的な行為や消費者への害がないかを調べる調査を始めたと9月30日（米国時間）に報じられた。FTC幹部が匿名で事実を認めたが、FTCの正式発表はまだなく、両社もコメントしていない。調査の範囲や提出を求める資料の内容・期限は公表されていない。",
+        "note": "使いどころ：ChatGPT・Claudeを業務で使う部署は、利用規約や提供条件が今後変わる可能性に備え、契約・利用ガイドの見直し時期を決めておくと良い。注意点：一部メディアはAIエージェントの暴走事例が調査の中心と伝えているが、主要報道では確認できず要確認。調査開始＝違法認定ではない。"
+      },
+      "en": {
+        "title": "US FTC reportedly opens consumer-protection probe into OpenAI and Anthropic",
+        "summary": "News outlets reported on Sept. 30 (US time) that the Federal Trade Commission has begun investigating AI companies including OpenAI and Anthropic for possible unfair or deceptive practices and harm to consumers. A senior FTC official confirmed it anonymously, but the FTC has not announced it publicly and neither company has commented. The scope, the information requested, and any deadlines have not been disclosed.",
+        "note": "How to use it at work: teams using ChatGPT or Claude should plan when to review contracts and internal usage guides in case service terms change. Caution: some outlets say AI-agent incidents are the main focus, but major outlets have not confirmed this, so treat it as unverified. Opening a probe does not mean any law was broken."
+      },
+      "src": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/Politics/ftc-opens-probe-safety-ai-including-anthropic-open/story?id=136896227"
+        },
+        {
+          "name": "The Spokesman-Review",
+          "url": "https://www.spokesman.com/stories/2026/sep/30/ftc-launches-broad-investigation-into-anthropic-op/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-01-aws-strands-decider",
+      "date": "2026-10-01",
+      "kind": "flash",
+      "cat": "model",
+      "level": "advanced",
+      "tags": [
+        "エージェント",
+        "モデル",
+        "コーディング"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "AWS、選択肢から1つを選ぶ小型「判定モデル」Strands Decider 2Bをオープンソース公開",
+        "summary": "AWSのStrands Labsが10月1日、あらかじめ決めた選択肢の中から1つを選び、確信度（スコア）を返す専用モデル「Strands Decider 2B」をオープンソースで公開した。約20億パラメータの既存LLMをベースにしており、手元のPCでも動かせる大きさ。同じ週にOpenAIも同種のモデルを発表したと報じられている。",
+        "note": "使いどころ：問い合わせの振り分けや不具合報告の分類など、答えが決まった選択肢になる業務フローの1ステップを、大型LLMより低遅延・低コストで自動化する用途。注意点：ライセンス条件と精度は記事に記載がなく要確認。社内データで精度検証してから使うこと。"
+      },
+      "en": {
+        "title": "AWS open-sources Strands Decider 2B, a small model that picks from fixed options",
+        "summary": "On Oct. 1, AWS's Strands Labs open-sourced Strands Decider 2B, a model built to choose one answer from a predefined set of options and return a confidence score. It is based on an existing LLM of about 2 billion parameters and is small enough to run locally. OpenAI reportedly announced a similar model the same week.",
+        "note": "How to use it at work: automate one step of a workflow whose answer is a fixed choice, such as routing inquiries or classifying bug reports, with lower latency and cost than a large LLM. Caution: the article does not state the license or accuracy, so check those, and validate it on your own data before use."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/"
+        }
+      ]
+    },
     {
       "id": "2026-09-30-gemini-4-argon",
       "date": "2026-09-30",
