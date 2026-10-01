@@ -273,6 +273,7 @@ function render(){
   $("legend").innerHTML = T.legend;
   const up = DATA.updated ? DATA.updated.replace("T", " ").slice(0,16) : "-";
   $("meta").textContent = T.updated + "：" + up + "　/　" + DATA.items.length + " " + T.items;
+  if(!navigator.onLine) $("meta").textContent += S.lang === "en" ? "　(offline: last saved copy)" : "　（圏外：前回の控えを表示中）";
   buildFilters();
   saveFilter();
 

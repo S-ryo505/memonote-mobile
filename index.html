@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- =====================================================================
-     MemoNote Mobile  v1.5.0
+     MemoNote Mobile  v1.5.1
      スマホで書いた勉強ノートを、会社の MemoNote へメールで送るためのアプリです。
      書いた内容は端末の中だけに残り、送信するときだけ外に出ます。
      ===================================================================== -->
@@ -228,7 +228,7 @@ function loadSet(){
   catch(_){ SET = {mailTo:"", fields:[]}; }
 }
 function saveSet(){ try{ localStorage.setItem(SKEY, JSON.stringify(SET)); }catch(_){} }
-const APP_VERSION = "1.5.0";
+const APP_VERSION = "1.5.1";
 let D = [];            /* 下書きの配列 */
 let cur = null;        /* 編集中の下書き */
 let picked = new Set();/* 一覧で選んだもの */
@@ -1090,7 +1090,13 @@ function boot(){
 window.addEventListener("pagehide", saveNow);
 document.addEventListener("visibilitychange", () => { if(document.hidden) saveNow(); });
 if("serviceWorker" in navigator){
-  window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(() => {});
+    /* 電波があるうちに最新のニュースを控えに入れておく（圏外でも🚗/🤖が読めるように） */
+    if(navigator.onLine) setTimeout(() => {
+      ["./news/items.json", "./ai/items.json", "./news/", "./ai/"].forEach(u => fetch(u, {cache:"no-store"}).catch(() => {}));
+    }, 3000);
+  });
 }
 boot();
 </script>
