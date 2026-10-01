@@ -149,7 +149,9 @@ const KEY = "mn-ai-v1";
 function loadState(){ try{ return JSON.parse(localStorage.getItem(KEY)) || {}; }catch(_){ return {}; } }
 function saveState(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(_){} }
 const S = Object.assign({lang:"ja", star:{}, read:{}}, loadState());
-const F = {cat:"all", focus:false, starOnly:false, unread:false, tag:null, q:"", region:"", conf:""};
+/* 表示条件（キーワード以外）は前回の状態を覚えておく */
+const F = Object.assign({cat:"all", focus:false, starOnly:false, unread:false, tag:null, region:"", conf:""}, S.filter || {}, {q:""});
+function saveFilter(){ const {q, ...rest} = F; S.filter = rest; saveState(); }
 let DATA = {updated:"", items:[]};
 
 const $ = id => document.getElementById(id);
@@ -272,6 +274,7 @@ function render(){
   const up = DATA.updated ? DATA.updated.replace("T", " ").slice(0,16) : "-";
   $("meta").textContent = T.updated + "：" + up + "　/　" + DATA.items.length + " " + T.items;
   buildFilters();
+  saveFilter();
 
   const list = $("list"); list.innerHTML = "";
   const rows = DATA.items.filter(pass).sort((a,b) => {
@@ -280,7 +283,14 @@ function render(){
     if((a.kind === "flash") !== (b.kind === "flash")) return a.kind === "flash" ? -1 : 1;
     return (b.prio || 0) - (a.prio || 0);
   });
-  if(!rows.length){ list.append(el("div", "empty", T.empty)); return; }
+  if(!rows.length){
+    list.append(el("div", "empty", T.empty));
+    const rb = el("button", "btn", S.lang === "en" ? "Clear filters" : "表示条件をリセット");
+    rb.style.cssText = "display:block;margin:-20px auto 0";
+    rb.onclick = () => { Object.assign(F, {cat:"all", focus:false, starOnly:false, unread:false, tag:null, region:"", conf:"", q:""}); $("q").value = ""; render(); };
+    list.append(rb);
+    return;
+  }
   let wk = "";
   for(const it of rows){
     const w = weekStart(it.date);
