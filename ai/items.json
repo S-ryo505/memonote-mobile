@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T07:35:00+09:00",
+  "updated": "2026-10-03T07:30:00+09:00",
   "items": [
     {
       "id": "2026-10-01-ftc-ai-probe",
@@ -381,6 +381,458 @@
         "note": "Current pricing, features and enterprise terms were not re-checked for this page (verify). Before adding internal documents, confirm the service is company-approved."
       },
       "src": []
+    },
+    {
+      "id": "2026-09-30-m365-copilot-model-select",
+      "date": "2026-09-30",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える",
+        "モデル"
+      ],
+      "prio": 3,
+      "conf": "primary",
+      "ja": {
+        "title": "Microsoft 365 Copilot：Word・Excel・PowerPoint・チャットで「GPT-6.1 Sol」「Claude Sonnet 5.5」を選択可能に",
+        "summary": "Copilotのモデル選択メニューから、OpenAIのGPT-6.1 SolとAnthropicのClaude Sonnet 5.5を選べるようになる。Cowork と Copilot Studio では2026年9月30日から、Word・Excel・PowerPoint・Copilot Chat では翌週から段階的に展開（MC1483844）。対象のライセンス利用者には既定で有効。",
+        "note": "使いどころ：同じ依頼（例：試験報告書の要約）を2つのモデルで出させて比べ、結果の良い方を使う。注意点：Claude Sonnet 5.5はAnthropic、GPT-6.1 SolはOpenAIを「外部サブプロセッサ」として扱う設定が管理者側で有効な場合のみ使える。自社テナントで選べるかは情報システム部門に確認（要確認）。利用量の上限があり、超えると別モデルに切り替わる。"
+      },
+      "en": {
+        "title": "Microsoft 365 Copilot: GPT-6.1 Sol and Claude Sonnet 5.5 selectable in Word, Excel, PowerPoint and Chat",
+        "summary": "The Copilot model selector adds OpenAI's GPT-6.1 Sol and Anthropic's Claude Sonnet 5.5. Rollout starts on 30 Sep 2026 in Cowork and Copilot Studio, and in a phased rollout the following week in Word, Excel, PowerPoint and Copilot Chat (MC1483844). It is on by default for eligible licensed users.",
+        "note": "Use: run the same request (e.g. summarising a test report) on both models and keep the better answer. Caveats: each model works only if the admin has enabled the Anthropic or OpenAI subprocessor setting. Ask IT whether your tenant has them (verify). Usage limits apply, with fallback to another model when exceeded."
+      },
+      "src": [
+        {
+          "name": "Microsoft 365 Message Center (mc.merill.net)",
+          "url": "https://mc.merill.net/message/MC1483844"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-25-ms-copilot-autopilot",
+      "date": "2026-09-25",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "エージェント",
+        "料金"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Microsoft、Copilotを「Home」「Code」「Autopilot」の3画面に再編。常駐型エージェントAutopilotを発表",
+        "summary": "Homeはチャットと作業代行（Cowork）を統合した画面、Codeは文章の指示からアプリを生成する画面、Autopilot（旧称Scout）は専用の記憶・作業環境を持ち、継続案件の監視や定型作業を続ける常駐エージェント。料金は企業向けCopilotが1ユーザー月30ドルで、Cowork・Code・Autopilotの利用分はCopilot Creditsで別途課金。Microsoftが示した例では月73ドル（うち従量分39〜43ドル）。",
+        "note": "使いどころ（推測）：週次の不具合リストや部品納期の確認など、毎週同じ手順で追う作業。注意点：Home・CodeはFrontier（先行利用）プログラム参加組織から数週間以内、Autopilotは9月末から非公開プレビュー拡大の段階で、一般提供日は未発表。CodeとAutopilotの詳細な従量単価は公表されていない。"
+      },
+      "en": {
+        "title": "Microsoft reorganises Copilot into Home, Code and Autopilot, introducing the always-on Autopilot agent",
+        "summary": "Home merges chat with Cowork task delegation, Code builds apps from written instructions, and Autopilot (formerly Scout) is a persistent agent with its own memory and workspace that monitors ongoing projects and runs recurring tasks. Enterprise Copilot costs $30 per user per month, with Cowork, Code and Autopilot usage billed separately in Copilot Credits; Microsoft's example workload came to $73 a month ($39–43 of it usage-based).",
+        "note": "Use (speculative): work you track the same way every week, such as defect lists or parts delivery status. Caveats: Home and Code reach Frontier programme participants within weeks; Autopilot is expanding in private preview from end of September, with no GA date. Detailed usage rates for Code and Autopilot have not been published."
+      },
+      "src": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/microsoft-revamps-its-copilot-ai-with-a-persistent-autopilot-agent-and-hosting-for-ai-generated-apps"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-29-teams-copilot-refresh",
+      "date": "2026-09-29",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える",
+        "会議"
+      ],
+      "prio": 2,
+      "conf": "primary",
+      "ja": {
+        "title": "Teams内のCopilot画面を刷新、長時間の作業を追える「タスク」表示を追加（2026年10月一般提供）",
+        "summary": "Teamsのサイドパネルと全画面のCopilotで、メニュー構成とチャット画面の配置が変わり、エージェントを探しやすくなる。全画面版には、時間のかかる作業の進み具合を一覧できる「Tasks」表示と、Work IQの設定が追加される。当初9月予定だった一般提供は2026年10月に延期（MC1458472、9月29日更新）。",
+        "note": "使いどころ：Copilotに頼んだ長い調査や資料作成を、Tasks表示で進捗確認する。注意点：利用者側の設定変更は不要だが、画面が変わるため社内の操作マニュアルのスクリーンショットは差し替えが必要になる。ライセンス条件の変更はない。"
+      },
+      "en": {
+        "title": "Teams Copilot gets a redesigned layout and a Tasks view for long-running work (GA October 2026)",
+        "summary": "Copilot in the Teams side pane and full-screen view gets new navigation, an updated chat layout and easier agent discovery. The full-screen version adds a Tasks view for tracking long-running activities, plus Work IQ controls. General availability slipped from September to October 2026 (MC1458472, updated 29 Sep).",
+        "note": "Use: check progress of long research or document jobs you gave Copilot in the Tasks view. Caveats: no user action needed, but internal how-to guides will need new screenshots. No licensing change."
+      },
+      "src": [
+        {
+          "name": "Microsoft 365 Message Center (mc.merill.net)",
+          "url": "https://mc.merill.net/message/MC1458472"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-30-planner-copilot",
+      "date": "2026-09-30",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える",
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "primary",
+      "ja": {
+        "title": "Microsoft Planner：基本プランでもエージェント利用可能に。Copilotの初期タスク生成で30件上限を撤廃",
+        "summary": "Plannerの基本プランの中で、計画への質問、タスクの作成・更新、表示の絞り込みをエージェントに頼めるようになった。Copilotによる初期タスク一覧の生成は、従来の30件上限がなくなり、応答モードは「Quick」「Think Deeper」「Auto」の3種類。Copilot Chatから、Outlook・Excel・PowerPointと同じ会話の中でPlannerのタスク検索・更新もできる。",
+        "note": "使いどころ：例「来月の冬季試験に向けて、車両準備・計測器校正・試験計画書承認のタスクを担当者別に作って」と頼み、たたき台を作らせる。注意点：Copilot機能の利用にはライセンスが必要な場合がある（要確認）。担当者の割り当てはAIの提案なので、必ず人が確認してから確定する。"
+      },
+      "en": {
+        "title": "Microsoft Planner: agent available in basic plans; Copilot's 30-task limit for initial task lists removed",
+        "summary": "Inside basic Planner plans you can now ask an agent questions about the plan, create and update tasks, and filter views. Copilot's initial task-list generation no longer stops at 30 tasks, and offers three response modes: Quick, Think Deeper and Auto. From Copilot Chat you can also search and update Planner tasks in the same conversation as Outlook, Excel and PowerPoint.",
+        "note": "Use: e.g. 'Create tasks by owner for next month's winter test: vehicle prep, instrument calibration, test plan approval' to get a first draft. Caveats: Copilot features may require a licence (verify). Owner assignments are AI suggestions; have a person confirm them."
+      },
+      "src": [
+        {
+          "name": "Microsoft Tech Community",
+          "url": "https://techcommunity.microsoft.com/blog/plannerblog/whats-new-in-microsoft-planner--september-2026/4560866"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-30-edge-copilot-update",
+      "date": "2026-09-30",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える"
+      ],
+      "prio": 1,
+      "conf": "primary",
+      "ja": {
+        "title": "Microsoft EdgeのCopilot：アイコンとサイドパネルを刷新、音声・画像認識機能を追加（10月中旬展開）",
+        "summary": "Edgeに組み込まれたCopilotのアイコンが全入口で新デザインに変わり、サイドパネルの操作が簡素化される。音声で話しかける機能（Voice）と画面や画像を読み取る機能（Vision）が加わる。一般提供は2026年10月中旬に開始・完了予定で、セキュリティや管理者向け設定は変わらない（MC1484007）。",
+        "note": "使いどころ：社内ポータルや英語の技術資料をEdgeで開いたまま、サイドパネルで要約や翻訳を頼む。注意点：社外秘ページを画面読み取りさせる前に、会社の利用ルールを確認する。ネットワーク側で copilot.cloud.microsoft への接続許可が必要。"
+      },
+      "en": {
+        "title": "Copilot in Microsoft Edge: new icon and side pane, plus Voice and Vision (mid-October rollout)",
+        "summary": "Copilot in Edge gets a new icon at every entry point and a simplified side pane, and adds Voice (spoken requests) and Vision (reading the screen or images). General availability starts and completes in mid-October 2026; security and admin controls are unchanged (MC1484007).",
+        "note": "Use: summarise or translate an internal portal page or English technical document from the side pane while it is open. Caveats: check company rules before letting it read confidential pages. Networks must allow connections to copilot.cloud.microsoft."
+      },
+      "src": [
+        {
+          "name": "Microsoft 365 Message Center (mc.merill.net)",
+          "url": "https://mc.merill.net/message/MC1484007"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-29-chatgpt-plugins-meetings",
+      "date": "2026-09-29",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "仕事で使える",
+        "会議",
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "primary",
+      "ja": {
+        "title": "ChatGPT：プラグインがサイドバー表示・操作パネルに対応。Teams/Slackから@ChatGPTで呼び出し、会議メモのMeetingsプラグインも",
+        "summary": "OpenAIは9月29日のDevDay 2026で、プラグインにサイドバー上の専用表示、チャットしながら操作できるパネル、各種ファイルの閲覧機能を追加すると発表した。MCP Eventsという仕様に対応し、外部ツールの出来事をきっかけに自動処理を動かせる。同時に、SlackとMicrosoft Teamsの中でChatGPTを呼び出す連携と、会議の自動メモを取る「Meetings」プラグインも発表された。",
+        "note": "使いどころ：Teamsのチャンネルで@ChatGPTに過去のやり取りの要約を頼む、など。注意点：会社がChatGPTの企業向けプランを契約し、管理者がTeams/Slack連携を有効にしている必要がある（要確認）。会議の自動記録は参加者への事前告知が必要か、社内ルールを確認すること。提供時期と対象プランは記事では明記されていない。"
+      },
+      "en": {
+        "title": "ChatGPT plug-ins get sidebar homes and interactive panels; @ChatGPT in Teams/Slack and a Meetings note-taking plug-in",
+        "summary": "At DevDay 2026 on 29 Sep, OpenAI gave plug-ins dedicated sidebar homes, interactive panels you can use while chatting, and file viewers. Support for the MCP Events specification lets events in external tools trigger automations. OpenAI also announced ChatGPT inside Slack and Microsoft Teams and a 'Meetings' plug-in that takes notes automatically.",
+        "note": "Use: ask @ChatGPT in a Teams channel to summarise earlier discussion. Caveats: requires a company ChatGPT business plan and admin-enabled Teams/Slack integration (verify). Check whether your rules require telling participants before automatic meeting notes. Rollout dates and plans were not specified in the article."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/29/openai-expands-chatgpts-plugins-with-app-like-interfaces-and-automations/"
+        },
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/devday-2026-recap/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-02-macos-fda-ai-agents",
+      "date": "2026-10-02",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "エージェント"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "Apple、AIエージェント対策でmacOSの「フルディスクアクセス」許可を厳格化へ。Meta「Muse」の無断閲覧疑惑が契機",
+        "summary": "Appleは開発者向けブログで、ファイル・メッセージ・メール・閲覧履歴に広くアクセスできる「フルディスクアクセス」の付与に、利用者のより明示的な操作を求める方針を示した。直前に、記者がMetaのAIエージェント「Muse」のMac版が許可なくメッセージを読んだと報じ（Metaは否定）、ChatGPTのMacアプリの脆弱性も見つかっていた。対象のmacOSバージョンと実施時期は未発表。",
+        "note": "仕事での意味：パソコンを操作するAIエージェントは、与えた権限の範囲で社内ファイルやメールにも触れられる。注意点：会社PCにAIエージェント型アプリを入れる前に、情報システム部門の許可を取る。個人PCでも「フルディスクアクセス」をAIアプリに与えるのは必要最小限にする。Muse側の主張とMetaの反論はどちらも検証されていない。"
+      },
+      "en": {
+        "title": "Apple to tighten macOS Full Disk Access over AI agent risks, after claims Meta's Muse read messages",
+        "summary": "In a developer blog post, Apple said granting Full Disk Access, which covers files, messages, mail and browsing history, will require more explicit user action. It followed a journalist's report that Meta's Muse agent for Mac read his messages without permission (Meta denies this) and a vulnerability found in ChatGPT's Mac app. No macOS version or date was announced.",
+        "note": "Why it matters: AI agents that operate your computer can reach internal files and mail within whatever permissions you grant. Caveats: get IT approval before installing agent-style AI apps on a work PC, and grant Full Disk Access to AI apps only when necessary. Neither the journalist's claim nor Meta's rebuttal has been independently verified."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/30/meta-disputes-claim-that-muse-read-a-users-private-messages-without-permission/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-01-ca-sb1246-robotaxi",
+      "date": "2026-10-01",
+      "kind": "weekly",
+      "cat": "reg",
+      "level": "all",
+      "tags": [
+        "規制"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "米カリフォルニア州、ロボタクシー規制法SB 1246が成立：緊急車両の妨害が30分超で罰金、遠隔運転者は米国免許保持者に限定",
+        "summary": "ニューサム知事が署名。自動運転車の事業者に、米国内にいて米国の運転免許を持つ遠隔運転者の配置、事故や立ち往生に対応する現地技術者の確保、システム全体の障害時に車両の位置と状態を自治体へ通知することを義務付ける。緊急対応中の消防・警察などを30分を超えて妨げた場合に罰金を科す。施行は2028年7月で、罰金額はカリフォルニア州DMVが今後定める。",
+        "note": "仕事での意味：自動運転・遠隔監視の要件が州法レベルで具体化した例。米国向けのレベル4サービスや遠隔支援システムを検討している場合、「遠隔オペレーターの所在地・免許」「障害時の当局通知」が設計要件になる可能性がある（推測）。罰金額は未定。"
+      },
+      "en": {
+        "title": "California signs robotaxi law SB 1246: fines for blocking first responders over 30 minutes, US-licensed remote drivers required",
+        "summary": "Signed by Governor Newsom, the law requires AV operators to use remote drivers based in the US with US licences, provide local incident technicians for crashes and obstructions, and notify local authorities of vehicle locations and status during system-wide failures. Blocking first responders for more than 30 minutes during an emergency brings fines. It takes effect in July 2028; the California DMV will set the fine amounts.",
+        "note": "Why it matters: remote-operation requirements are becoming concrete in state law. For US Level 4 services or remote-assistance systems, operator location/licensing and outage reporting may become design requirements (speculative). Fine amounts are not yet set."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/01/robotaxi-operators-will-face-fines-for-blocking-first-responders/"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-28-meta-enterprise-platform",
+      "date": "2026-09-28",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "エージェント"
+      ],
+      "prio": 1,
+      "conf": "report",
+      "ja": {
+        "title": "Meta、企業向けAI基盤「Meta Enterprise Platform」を発表。MongoDB前CEOが統括",
+        "summary": "AIアシスタントのMuse、企業向けのMeta Business Agent、開発者向けのMuse APIとMuse Codeをまとめて企業に提供する。責任者には前MongoDB CEOのCJ Desai氏が就任し、発表後MongoDBの株価は17%超下落した。提供は今後数年かけて段階的に進めるとしている。",
+        "note": "仕事での意味：企業向けAIの選択肢がMicrosoft・Google・OpenAI・Anthropicに加えてMetaにも広がる。注意点：日本での提供時期・料金は未発表。現時点で業務導入を検討する段階ではない。"
+      },
+      "en": {
+        "title": "Meta launches 'Meta Enterprise Platform' for business AI, led by former MongoDB CEO",
+        "summary": "The platform bundles the Muse assistant, Meta Business Agent, Muse API and Muse Code for companies. Former MongoDB CEO CJ Desai will lead it; MongoDB's shares fell more than 17% after the news. Meta says the rollout will take place over the coming years.",
+        "note": "Why it matters: Meta joins Microsoft, Google, OpenAI and Anthropic as an enterprise AI vendor. Caveats: no Japan timing or pricing announced; not yet something to evaluate for work use."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-01-barclays-claude",
+      "date": "2026-10-01",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "メール・英語",
+        "コーディング"
+      ],
+      "prio": 2,
+      "conf": "primary",
+      "ja": {
+        "title": "英Barclays、Claudeの社内利用を拡大：1日12万件の問い合わせメールを分類、開発者の50%がClaude Codeを使う計画",
+        "summary": "Anthropicの発表によると、Barclaysでは社内知識検索アシスタントを1万6,000人以上が使い、2025年の導入以降の検索は100万回を超えた。Global Markets部門では1日約12万件の問い合わせメールをClaudeが分類・振り分けしている。2026年末までに開発者の50%がClaude Codeを使い、2027年には大半のエンジニアがClaudeを使う見込み。",
+        "note": "参考になる点：大量の問い合わせメールを「分類・必要情報の不足チェック→担当へ回す」使い方は、品質問い合わせや部品手配などの窓口業務にも応用できる。注意点：導入効果（時間削減など）の数値は発表に含まれていない。Anthropic自身による発表である点に留意。"
+      },
+      "en": {
+        "title": "Barclays expands Claude: 120,000 inquiry emails a day classified; 50% of developers to use Claude Code",
+        "summary": "According to Anthropic, more than 16,000 Barclays staff use an internal knowledge assistant, with over 1 million searches since its 2025 launch. In Global Markets, Claude classifies and routes about 120,000 inquiry emails a day. Barclays expects 50% of developers to use Claude Code by end-2026 and most engineers to use Claude by 2027.",
+        "note": "Takeaway: 'classify, check for missing information, route to the right team' for high-volume email could apply to quality inquiries or parts requests. Caveats: no figures on time saved were given, and this is Anthropic's own announcement."
+      },
+      "src": [
+        {
+          "name": "Anthropic",
+          "url": "https://www.anthropic.com/news/barclays-scales-claude"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-02-claude-frontier-academy",
+      "date": "2026-10-02",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "all",
+      "tags": [],
+      "prio": 1,
+      "conf": "primary",
+      "ja": {
+        "title": "Anthropic、企業内でAI導入を担う技術者の育成に1億ドル。2027年末までに1万人を目標",
+        "summary": "「Claude Frontier Academy」として、企業が推薦したソフトウェア技術者に、数日間の対面研修→自社で実案件を率いる12週間のレジデンシー→段階ごとの認定評価、という3段階の育成を行う。最初の参加組織はAccenture、Deloitte、McKinsey、Morgan Stanleyなどで、会場はサンフランシスコ・ニューヨーク・ロンドン。",
+        "note": "仕事での意味：AIの性能より「社内に導入できる人材」が不足しているとベンダー自身が見ている。注意点：日本での開催や参加条件・費用は発表に記載がない（要確認）。"
+      },
+      "en": {
+        "title": "Anthropic commits $100M to train 10,000 engineers who deploy AI inside companies by end-2027",
+        "summary": "The 'Claude Frontier Academy' takes software engineers nominated by their companies through three stages: multi-day in-person training, a 12-week residency leading a real project at their own organisation, and credential assessments at each stage. First participants include Accenture, Deloitte, McKinsey and Morgan Stanley, with sessions in San Francisco, New York and London.",
+        "note": "Why it matters: vendors see a shortage of people who can deploy AI internally, not just model capability. Caveats: no Japan sessions, eligibility details or fees were announced (verify)."
+      },
+      "src": [
+        {
+          "name": "Anthropic",
+          "url": "https://www.anthropic.com/news/claude-frontier-academy"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-03-howto-standards",
+      "date": "2026-10-03",
+      "kind": "weekly",
+      "cat": "howto",
+      "level": "intermediate",
+      "tags": [
+        "仕事で使える",
+        "規制"
+      ],
+      "prio": 3,
+      "conf": "guide",
+      "ja": {
+        "title": "【使い方特集】規格・法規の調査をAIに頼むとき「条番号と原文確認」を必ずセットにする頼み方",
+        "summary": "例文：「ISO 26262とUN-R79（操舵装置）で、電動パワーステアリングの故障時要件に関係する箇所を調べて。①規格名・版・条番号、②要旨（1行）、③自信度（高/中/低）を表にして。条番号が分からないものは『不明』と書き、推測で埋めないこと。最後に、私が原文で確認すべき条項を3つ挙げて」。条番号と版を出させると、手元の規格書で照合でき、AIの思い違いを見つけやすい。",
+        "note": "注意点：AIは規格の版違いや条番号の取り違えをよく起こすため、結果は「どこを読むかの地図」として使い、結論は必ず原文で確認する。規格本文（有償文書）を社外のAIに貼り付けるのは、ライセンス条件と社内ルールを確認してから。"
+      },
+      "en": {
+        "title": "[How-to] When asking AI about standards and regulations, always request clause numbers and a 'check the original' list",
+        "summary": "Example: 'Find the parts of ISO 26262 and UN R79 (steering equipment) relevant to EPS fault requirements. Table: (1) standard, edition, clause number, (2) one-line gist, (3) confidence high/medium/low. If you don't know a clause number, write \"unknown\" instead of guessing. Finally, list three clauses I should check in the original.' Clause numbers and editions let you cross-check against your copy and catch AI mistakes.",
+        "note": "Caveats: AI often mixes up editions and clause numbers, so use the result as a map of what to read and confirm conclusions in the original. Check licence terms and company rules before pasting paid standard text into external AI."
+      },
+      "src": []
+    },
+    {
+      "id": "2026-10-03-howto-spec-review",
+      "date": "2026-10-03",
+      "kind": "weekly",
+      "cat": "howto",
+      "level": "intermediate",
+      "tags": [
+        "仕事で使える",
+        "資料作成"
+      ],
+      "prio": 2,
+      "conf": "guide",
+      "ja": {
+        "title": "【使い方特集】制御仕様書の「あいまい表現」をAIに洗い出させるプロンプト",
+        "summary": "例文：「以下は車両運動制御の要求仕様の一部です。①『十分に』『速やかに』など数値のない表現、②単位や条件（車速・路面μ・温度）が抜けている要求、③互いに矛盾する要求、④試験で合否判定できない要求を、該当文・問題点・修正案の3列で表にして。修正案の数値はあなたが決めず『要決定』と書いて」。レビュー前の自己チェックに使うと、指摘のやり取りが減る。",
+        "note": "注意点：AIは「抜けている」ことは指摘できても、正しい数値は決められない（最後の一文はそのため）。仕様書は社外秘であることが多いので、会社が契約しているAI（例：社内のCopilot）でのみ使う。"
+      },
+      "en": {
+        "title": "[How-to] A prompt to flag vague wording in control specifications",
+        "summary": "Example: 'Below is part of a vehicle dynamics control requirements spec. In a table with columns sentence / problem / suggested fix, list: (1) wording without numbers such as \"sufficiently\" or \"promptly\", (2) requirements missing units or conditions (speed, road friction, temperature), (3) contradictory requirements, (4) requirements that cannot be pass/fail tested. Don't choose numbers yourself; write \"TBD\".' Using it before review cuts back-and-forth comments.",
+        "note": "Caveats: AI can spot what's missing but can't decide the right values (hence the last sentence). Specs are usually confidential, so use only company-approved AI (e.g. your corporate Copilot)."
+      },
+      "src": []
+    },
+    {
+      "id": "2026-10-03-howto-one-page-report",
+      "date": "2026-10-03",
+      "kind": "weekly",
+      "cat": "howto",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える",
+        "資料作成"
+      ],
+      "prio": 2,
+      "conf": "guide",
+      "ja": {
+        "title": "【使い方特集】上司・他部署向け「1枚報告」の骨子をAIに作らせる：結論→根拠→お願い",
+        "summary": "例文：「以下のメモから、部長向けの1枚報告の骨子を作って。構成は①結論（1文）②根拠（数値付き3点まで）③リスクと対策④相手にお願いしたいこと（期限付き）。専門用語は他部署の人にも分かる言い換えを括弧で付けて。メモにない数値は書かないこと」。まず骨子だけ作らせ、中身を自分で確認してからスライドや本文に広げると、手戻りが少ない。",
+        "note": "注意点：AIは文章を整える過程で数値を丸めたり、条件を落としたりすることがあるため、数値は元データと必ず照合する。PowerPointのCopilotやChatGPTのSlides機能に骨子を渡せばスライド化もできるが、社外秘の内容は会社が許可したツールだけで扱う。"
+      },
+      "en": {
+        "title": "[How-to] Have AI draft a one-page report outline for your boss or another team: conclusion → evidence → request",
+        "summary": "Example: 'From the notes below, draft a one-page outline for my department head: (1) conclusion in one sentence, (2) up to three supporting points with numbers, (3) risks and countermeasures, (4) what we need from them, with a deadline. Add plain-language explanations in brackets for technical terms. Do not include numbers that are not in the notes.' Get the outline first and check it before expanding into slides or text.",
+        "note": "Caveats: AI may round numbers or drop conditions while polishing, so check figures against the source. You can hand the outline to Copilot in PowerPoint or ChatGPT Slides, but keep confidential content in company-approved tools."
+      },
+      "src": []
+    },
+    {
+      "id": "2026-10-03-tool-gemini-skills",
+      "date": "2026-10-03",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "guide",
+      "ja": {
+        "title": "【こんなのもあるよ】よく使う指示を保存して「/名前」で呼び出す：Geminiの「スキル」",
+        "summary": "Googleが9月30日に発表。チャットで使った指示を「スキル」として保存し、入力欄に「/」とスキル名を打つと呼び出せる。複数のスキルを重ねて使え、PDF・文書・画像を参照資料として付けられる。Geminiアプリでは世界で順次提供中、Google Workspaceの企業・教育向けには今後数週間で提供。従来の「Gem」はスキルに置き換わり、個人アカウントは11月から自動移行が始まる。",
+        "note": "使いどころ：例えば上の「仕様書のあいまい表現チェック」の指示を /仕様チェック として保存すれば、毎回コピペせずに済む。注意点：利用は18歳以上。自社がGoogle Workspaceを使っていない場合は、Copilotのエージェント作成機能など、会社が契約しているAIの同様の機能を探すとよい（各社の料金・提供条件は今回未確認）。"
+      },
+      "en": {
+        "title": "[Worth a look] Save your go-to instructions and call them with '/name': Gemini Skills",
+        "summary": "Announced by Google on 30 Sep. Save instructions from a chat as a 'skill' and invoke it by typing '/' plus its name. Skills can be stacked and can include PDFs, documents and images as reference files. Rolling out globally in the Gemini app, and to Google Workspace business and education customers in the coming weeks. Skills replace Gems; automatic migration for personal accounts starts in November.",
+        "note": "Use: save the spec-wording check above as /speccheck so you never paste it again. Caveats: 18+ only. If your company doesn't use Google Workspace, look for the equivalent in your approved AI (e.g. Copilot agents); other vendors' pricing and terms were not checked here."
+      },
+      "src": [
+        {
+          "name": "Google",
+          "url": "https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-03-tool-local-qwen",
+      "date": "2026-10-03",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "advanced",
+      "tags": [
+        "セキュリティ",
+        "モデル",
+        "コーディング"
+      ],
+      "prio": 1,
+      "conf": "report",
+      "ja": {
+        "title": "【こんなのもあるよ】自分のPCで動かせる公開モデル「Qwen3.8-27B」：4ビット量子化なら約17GBのGPUメモリで動作",
+        "summary": "Alibabaが8月に公開した270億パラメータのモデルで、ライセンスはApache 2.0、扱える文脈長は262,144トークン、画像・動画の理解にも対応する。必要なGPUメモリは16ビットで約56GB、FP8で約28GB、4ビット量子化で約17GB。第三者評価のArtificial Analysisでは指数52で、OpenAIのGPT-5.6 Lunaと同水準とされた。",
+        "note": "使いどころ（推測）：社外に出せない試験データやソースコードを、ネットワークから切り離したPCで処理する検証用。注意点：推論の途中で長く考え込む傾向があり、応答が遅くなることがある。会社PCへのモデル導入は情報システム部門の許可が必要。性能値の多くはAlibaba自身の測定。"
+      },
+      "en": {
+        "title": "[Worth a look] Qwen3.8-27B, an open model you can run locally: about 17GB of GPU memory at 4-bit",
+        "summary": "Released by Alibaba in August, this 27-billion-parameter model is Apache 2.0 licensed, has a 262,144-token context window and understands images and video. It needs about 56GB of GPU memory at 16-bit, ~28GB at FP8 and ~17GB with 4-bit quantisation. Artificial Analysis gave it 52 on its Intelligence Index, level with OpenAI's GPT-5.6 Luna.",
+        "note": "Use (speculative): trials processing test data or source code that cannot leave the company, on an offline PC. Caveats: it tends to over-reason, which can slow responses. Installing models on work PCs needs IT approval. Most performance figures are Alibaba's own."
+      },
+      "src": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/qwen3-8-27b-runs-frontier-class-coding-agents-and-reasoning-locally-no-cloud-api-required"
+        }
+      ]
     }
   ]
 }
