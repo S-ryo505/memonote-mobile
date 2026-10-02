@@ -1,6 +1,622 @@
 {
- "updated": "2026-10-02T07:00:00+09:00",
+ "updated": "2026-10-03T06:55:39+09:00",
  "items": [
+  {
+   "id": "2026-10-03-bmw-3series-g50",
+   "date": "2026-09-29",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "4WD",
+    "制御"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "BMW 新型3シリーズ（エンジン車）発表：M350 xDriveは437 hp、ソフト更新で後輪駆動化する「Drift Moment」",
+    "summary": "新型3シリーズのエンジン車は従来のCLARを改良したプラットフォームを使い、Neue KlasseはEVのi3のみ。M350 xDriveは3.0L直6ターボ+48Vマイルドハイブリッドで437 hp/580 Nm、8速AT、0-60 mph 3.9秒。330/330 xDriveは2.0L直4ターボで255 hp/400 Nm。米国発売は2027年第1四半期。",
+    "note": "437 hp×0.7457＝約326 kW。「Drift Moment」は前軸へのトルク伝達を断ち後輪だけで駆動するモードで、前後配分 T_f:T_r＝0:100 にする。xDriveは多板クラッチ（トランスファー）の締結トルクで前輪配分を決める方式で、0:100はクラッチ解放に相当（推測）。提供開始時期は未公表。"
+   },
+   "en": {
+    "title": "BMW reveals new ICE 3 Series: M350 xDrive makes 437 hp, with software-enabled RWD 'Drift Moment'",
+    "summary": "The combustion 3 Series uses an updated version of the outgoing CLAR platform; Neue Klasse is reserved for the electric i3. The M350 xDrive pairs a 3.0 L turbo straight-six with a 48 V mild hybrid for 437 hp and 580 Nm, an 8-speed automatic and 0-60 mph in 3.9 s. The 330/330 xDrive uses a 2.0 L turbo four with 255 hp and 400 Nm. US sales start in Q1 2027.",
+    "note": "437 hp × 0.7457 ≈ 326 kW. 'Drift Moment' cuts drive to the front axle so only the rear wheels are driven, i.e. a front:rear split of 0:100. xDrive sets the front share via the engagement torque of a multi-plate clutch in the transfer case, so 0:100 corresponds to an open clutch (inference). Availability date not disclosed."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/09/2027-bmw-3-series-launch/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-bmw-3-no-diesel",
+   "date": "2026-09-30",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "規制",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BMW、新型3シリーズでディーゼルを廃止、PHEVが代替に",
+    "summary": "BMWは新世代3シリーズにディーゼルを設定しないことを確認した。E30以降のすべての世代で少なくとも1種のディーゼルがあった。現行G20の320d（188 hp）とM340d（340 hp）の代わりに、2027年にPHEV（2.0L B48+モーター、EV走行100 km超の見込み）が入る見通し。",
+    "note": "BMWは理由を公表していない。記事はEuro 7の排出規制がディーゼル継続を難しくしていると推測している（理由は推測、要確認）。EV走行「62マイル超」＝約100 km（1 mile＝1.609 km）。"
+   },
+   "en": {
+    "title": "BMW drops diesel from the new 3 Series; a PHEV will take its place",
+    "summary": "BMW confirmed the new-generation 3 Series will not offer a diesel. Every generation since the E30 had at least one. The current G20's 320d (188 hp) and M340d (340 hp) are expected to be replaced by a 2027 PHEV using a 2.0 L B48 plus an electric motor, with over 100 km of electric range expected.",
+    "note": "BMW has not given a reason; the article speculates that Euro 7 makes diesels hard to justify (speculation, needs confirmation). '62+ miles' ≈ 100 km (1 mile = 1.609 km)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/09/bmw-3-series-diesel-dead/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-hyundai-tucson",
+   "date": "2026-10-01",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "KR",
+   "tags": [
+    "PT",
+    "4WD"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "2027年型 Hyundai Tucson 発表：HEV 242 hp、PHEVは17.1 kWhで4WD専用",
+    "summary": "ガソリンは1.6Lターボ/2.0L NAで148〜190 hp。HEVは1.6Lターボ+モーターで233〜242 hp/380 Nm、電池1.49 kWh、6速AT。PHEVは288 hp/350 Nm、17.1 kWh、EV走行50マイル（約80 km）で、4WDはPHEVのみ。ホイールベースは1.1インチ伸びて109.6インチ。韓国は2026年内、北米・欧州は2027年に発売。",
+    "note": "PHEVの電費の目安：17.1 kWh÷80 km≒214 Wh/km。ただし17.1 kWhは総容量とみられ、使用可能容量は未公表のため実電費はこれより小さい（推測）。「4WDはPHEV専用」は記事の記述どおりで、市場別の設定は要確認。"
+   },
+   "en": {
+    "title": "2027 Hyundai Tucson revealed: hybrid up to 242 hp, PHEV with 17.1 kWh and AWD only on the PHEV",
+    "summary": "Petrol versions use a 1.6 L turbo or 2.0 L NA engine with 148-190 hp. The hybrid combines a 1.6 L turbo and a motor for 233-242 hp and 380 Nm, with a 1.49 kWh battery and a 6-speed automatic. The PHEV makes 288 hp and 350 Nm, has 17.1 kWh and 50 miles (about 80 km) of electric range, and is the only version with AWD. The wheelbase grows by 1.1 in to 109.6 in. Korea gets it later in 2026; North America and Europe in 2027.",
+    "note": "Rough PHEV consumption: 17.1 kWh ÷ 80 km ≈ 214 Wh/km. 17.1 kWh is likely gross capacity and usable capacity is not disclosed, so real consumption is lower (inference). 'AWD only on the PHEV' is as stated in the article; market-specific availability needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/10/hyundai-tucson-2027-reveal/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-lexus-lx-fsport-jp",
+   "date": "2026-10-02",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "シャシー",
+    "制御",
+    "4WD"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "Lexus LX、日本にF SPORTを追加し、AVS・EPSの制御を見直し",
+    "summary": "日本仕様LXにF SPORTを設定した（2021年以降は米国・中東のみ）。全車でパフォーマンスダンパー、AVS（電子制御可変ダンパー）、EPSの設定を変更し、F SPORTは後軸にトルセン式LSDを持つ。LX600は3.5L V6ツインターボ409 hp/650 Nm、LX700hは457 hp/790 Nm、いずれも10速AT・4WD。価格はLX600が1,560万円、LX700h Executiveが2,210万円。",
+    "note": "トルセン（トルク感応型）LSDは左右トルク比を T_high/T_low ≤ TBR（トルクバイアス比）に制限する。片輪が浮いて T_low≒0 になると伝達トルクも小さくなるため、悪路ではブレーキLSD（片輪ブレーキで T_low を作る）と組み合わせるのが一般的。本車のTBR値は未公表。"
+   },
+   "en": {
+    "title": "Lexus LX gets F Sport in Japan, with retuned AVS and EPS",
+    "summary": "The Japanese LX now offers an F Sport trim, previously limited to the US and Middle East since 2021. Across the range, the performance dampers, AVS adaptive dampers and EPS have been retuned, and the F Sport has a Torsen limited-slip differential on the rear axle. The LX600 has a 3.5 L twin-turbo V6 with 409 hp and 650 Nm; the LX700h has 457 hp and 790 Nm; both use a 10-speed automatic and 4WD. Prices range from JPY 15.6 million (LX600) to JPY 22.1 million (LX700h Executive).",
+    "note": "A Torsen (torque-sensing) LSD limits the left/right torque ratio to T_high/T_low ≤ TBR (torque bias ratio). If one wheel lifts and T_low ≈ 0, transferable torque also collapses, so off-road it is usually combined with brake-based LSD (braking one wheel to create T_low). The TBR of this unit is not disclosed."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/10/lexus-lx-f-sport-japan/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-toyota-knuckle-recall",
+   "date": "2026-10-02",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "シャシー",
+    "品質"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "Toyota・Lexus、時効処理を省いたアルミ鍛造ナックルで617台をリコール（米国）",
+    "summary": "2026年6月18〜26日製造のLexus TX/RX、Toyota Grand Highlanderなど米国617台が対象。Bharat Forge Aluminum USA製の鍛造アルミ製ステアリングナックルが時効炉の工程を経ずに組み付けられ、強度が不足している。穴や縁石への衝突でストラットまたはタイロッド取付部が破断するおそれがある。販売店で無償交換、所有者への通知は2026年11月2日。",
+    "note": "アルミ鍛造品（6000系が一般的、本件の材質は要確認）は溶体化後の人工時効（T6処理）で析出強化され、耐力が上がる。時効を省くと耐力・疲労強度が設計値を下回る。工程抜けの検出には硬さ検査の全数化が有効とされる（一般論）。"
+   },
+   "en": {
+    "title": "Toyota and Lexus recall 617 US vehicles over aluminium steering knuckles that skipped the ageing step",
+    "summary": "The recall covers 617 US vehicles built between 18 and 26 June 2026, including the Lexus TX and RX and Toyota Grand Highlander. Forged aluminium steering knuckles from Bharat Forge Aluminum USA were installed without going through the ageing furnace, leaving them weaker than specified. Hitting a pothole or curb could fracture the strut or tie-rod attachment point. Dealers will replace the knuckles free of charge; owners will be notified on 2 November 2026.",
+    "note": "Forged aluminium parts (commonly 6000-series; the alloy here needs confirmation) gain strength by precipitation hardening during artificial ageing after solution treatment (T6). Skipping ageing leaves yield and fatigue strength below design values. 100% hardness testing is a common way to catch a missed step (general practice)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://carscoops.com/2026/10/lexus-toyota-steering-knuckle-recall"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-peugeot-208-sbw",
+   "date": "2026-10-02",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "制御",
+    "シャシー"
+   ],
+   "prio": 2,
+   "conf": "rumor",
+   "ja": {
+    "title": "次期Peugeot 208（STLA One）の試作車を目撃、ステアbyワイヤ+角型ハンドルの見込み",
+    "summary": "2027年後半発売とみられる次期208はSTLA Oneプラットフォームを使い、発売時はEVのみとなる見込み。角型の「Hypersquare」ステアリングとステアbyワイヤ、STLA Brainの電子基盤を採用すると報じられている。現行のガソリン/マイルドハイブリッド版は並行して販売を続ける。",
+    "note": "ステアbyワイヤでは操舵角比 i＝δ_sw/δ_f（ハンドル角/前輪実舵角）を車速で変えられる。低速で i を小さくすれば持ち替えなしで旋回でき、角型ハンドルが成立する。小型Bセグメントでの採用は量産規模の点で注目点。仕様は未確認（スクープ）。"
+   },
+   "en": {
+    "title": "Next Peugeot 208 on STLA One spotted, expected to use steer-by-wire and a square wheel",
+    "summary": "The next 208, expected in the second half of 2027, uses the STLA One platform and is expected to launch as an EV only. It is reported to use the rectangular 'Hypersquare' wheel with steer-by-wire and STLA Brain electronics. The current petrol/mild-hybrid 208 will remain on sale alongside it.",
+    "note": "With steer-by-wire the ratio i = δ_sw/δ_f (steering-wheel angle / road-wheel angle) can vary with speed. A small i at low speed lets the driver turn without hand-over-hand, which is what makes a square wheel workable. Use in a B-segment car matters for production volume. Specs unconfirmed (spy report)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/10/peugeot-208-scoop/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-rrs-electric",
+   "date": "2026-09-29",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "4WD",
+    "シャシー",
+    "制御",
+    "電池"
+   ],
+   "prio": 3,
+   "conf": "primary",
+   "ja": {
+    "title": "Range Rover Sport Electric 公開：2モーター850 Nm、118.5 kWh、800V、全輪操舵とActive Roll Control",
+    "summary": "2モーターで542 hp/850 Nm、0-100 km/h 4.5秒。電池は118.5 kWh、800V系で最大350 kW充電、10-80%は約22分、航続は最大600 km。Dynamic Air SuspensionとActive Roll Control、全輪操舵、ツインバルブダンパー（100項目を毎秒500回監視）を持つ。車体剛性はPHEV比61%向上、重心は73 mm低い。2027年第1四半期に一部市場で納車開始、米国は2027年型では未導入。",
+    "note": "10-80%充電の平均電力の概算：0.70×118.5 kWh÷(22/60 h)≒226 kW（118.5 kWhを使用可能容量と仮定＝仮定値）。ピーク350 kWに対し平均約65%。重心低下の効果は横転限界の簡易式 a_y,lim≒g·(t/2)/h で、h が小さいほど限界が上がる。"
+   },
+   "en": {
+    "title": "Range Rover Sport Electric revealed: two motors, 850 Nm, 118.5 kWh, 800 V, all-wheel steering and Active Roll Control",
+    "summary": "Two motors deliver 542 hp and 850 Nm, with 0-100 km/h in 4.5 s. The 118.5 kWh battery runs on an 800 V system with up to 350 kW charging (10-80% in about 22 min) and up to 600 km range. It has Dynamic Air Suspension, Active Roll Control, all-wheel steering and twin-valve dampers that monitor 100 parameters 500 times per second. Body stiffness is 61% higher than the PHEV and the centre of gravity is 73 mm lower. Deliveries start in Q1 2027 in selected markets; not for the US in model year 2027.",
+    "note": "Average 10-80% charging power: 0.70 × 118.5 kWh ÷ (22/60 h) ≈ 226 kW (assuming 118.5 kWh is usable — assumed value), about 65% of the 350 kW peak. The lower CoG raises the simple rollover limit a_y,lim ≈ g·(t/2)/h as h decreases."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/09/the-range-rover-sport-electric-is-as-quick-as-the-v8-and-looks-the-same/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-kia-ev-gt-uk",
+   "date": "2026-10-01",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "4WD",
+    "制御",
+    "シャシー"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "Kia、英国でEV3/EV4/EV5 GTの受注開始：2モーター4WD、電子制御トルクベクタリング",
+    "summary": "3車種とも81.4 kWh電池、2モーター4WD、電子制御トルクベクタリング、電子制御サスペンション、6段の仮想変速「Virtual Gear Shift」を持つ。EV3 GTは215 kW/468 Nm・0-62 mph 5.7秒・£48,695、EV4 GTは215 kW・5.6秒・£49,345、EV5 GTは225 kW/480 Nm・6.2秒・£54,295。",
+    "note": "ブレーキ式トルクベクタリングは内輪に制動力 ΔFx を加え、ヨーモーメント Mz≒ΔFx·t/2（t：トレッド）を作る。ΔFx はそのまま減速と熱になるため、前後2モーターの配分変更（前後方向の荷重移動を利用）と組み合わせるのが一般的。どちらの方式かは記事では不明（要確認）。"
+   },
+   "en": {
+    "title": "Kia opens UK orders for EV3, EV4 and EV5 GT: dual-motor AWD and electronic torque vectoring",
+    "summary": "All three use an 81.4 kWh battery, dual-motor AWD, electronic dynamic torque vectoring, electronically controlled suspension and a six-step 'Virtual Gear Shift'. The EV3 GT has 215 kW and 468 Nm, 0-62 mph in 5.7 s, at GBP 48,695; the EV4 GT has 215 kW, 5.6 s, GBP 49,345; the EV5 GT has 225 kW and 480 Nm, 6.2 s, GBP 54,295.",
+    "note": "Brake-based torque vectoring applies a braking force ΔFx to the inner wheel, creating a yaw moment Mz ≈ ΔFx·t/2 (t: track width). ΔFx also costs deceleration and heat, so it is usually combined with front/rear motor torque shifting. Which method Kia uses is not stated in the article (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://electrive.com/2026/10/01/kia-opens-uk-orders-for-ev3-ev4-and-ev5-gt-models"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-byd-da-han",
+   "date": "2026-09-25",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT",
+    "4WD",
+    "シャシー",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BYD「大漢（Da Han）」10月13日発売：AWDは前200 kW+後370 kW、後輪操舵とDiSus-A",
+    "summary": "RWDは370 kWの1モーターでCLTC航続最大1,008 km、AWDは前200 kW+後370 kWの計570 kWで880 km。全車にDiSus-A（2チャンバー空気ばね）と後輪操舵を標準装備する。予約価格はRWD 24.99万/26.99万元、AWD 29.99万元。全長5,256 mm、ホイールベース3,130 mm。PHEV版は54.489 kWh電池でWLTC EV走行370 km。",
+    "note": "最大出力の前後比は200:370＝35:65で後輪寄り。後輪操舵の同相/逆相は定常円旋回のスリップ角 β をゼロに近づける目的で使われ、低速逆相で最小回転半径を、高速同相でヨー応答の安定化を狙う（一般論、制御仕様は未公表）。"
+   },
+   "en": {
+    "title": "BYD Da Han launches 13 October: AWD with 200 kW front + 370 kW rear, rear-wheel steering and DiSus-A",
+    "summary": "The RWD version has a single 370 kW motor and up to 1,008 km CLTC range; the AWD has 200 kW front plus 370 kW rear (570 kW total) and 880 km. All versions get DiSus-A dual-chamber air suspension and rear-wheel steering. Pre-sale prices are CNY 249,900/269,900 for RWD and CNY 299,900 for AWD. It is 5,256 mm long with a 3,130 mm wheelbase. A PHEV with a 54.489 kWh battery and 370 km WLTC electric range is planned.",
+    "note": "Peak power split is 200:370 = 35:65, rear-biased. Rear steering runs counter-phase at low speed to cut turning radius and in-phase at high speed to stabilise yaw response, keeping sideslip β near zero (general practice; control details not disclosed)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/09/25/byd-to-launch-da-han-oct-13/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-vw-id-era-8x",
+   "date": "2026-09-28",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT",
+    "4WD",
+    "ADAS"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "上汽VW「ID. ERA 8X」EREV SUVが予約開始、10月12日発売、800V・2WD/4WD",
+    "summary": "発電用エンジンは1.5L EA211ターボ（105 kW）で、800V系、2WDと4WDを設定する。電池は51.1/65.2 kWh、CLTC EV航続340〜451 km、満タン満充電の総航続は最大1,602 km。全長5,020 mm、ホイールベース2,970 mm。想定価格帯は25万〜35万元。ADASはMomentaのR7モデルと192chのLiDARを使う。",
+    "note": "EREV（シリーズHV）では駆動はモーターのみで、エンジンは発電専用。発電パスの効率は η＝η_eng×η_gen×η_inv（×電池経由ならさらに充放電効率）で、エンジン直結より数%〜十数%不利になる（一般論）。"
+   },
+   "en": {
+    "title": "VW ID. ERA 8X EREV SUV opens pre-sales in China, launching 12 October with 800 V and 2WD/4WD",
+    "summary": "A 1.5 L EA211 turbo engine (105 kW) acts as the generator on an 800 V system, with 2WD and 4WD versions. Batteries are 51.1 or 65.2 kWh, giving 340-451 km CLTC electric range and up to 1,602 km total. It is 5,020 mm long with a 2,970 mm wheelbase. The target price band is CNY 250,000-350,000. ADAS uses Momenta's R7 model and a 192-channel LiDAR.",
+    "note": "In an EREV (series hybrid) only the motors drive the wheels; the engine only generates. Generator-path efficiency is η = η_eng × η_gen × η_inv (plus battery round-trip losses if buffered), a few to over ten percent worse than direct engine drive (general)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/09/28/vw-id-era-8x-erev-suv-opens-pre-sales-china/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-nissan-us-hybrid",
+   "date": "2026-09-30",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "日産、北米でハイブリッド重視に転換：Rogue Hybrid（e-POWER）は35,490ドル、Rogue PHEVは廃止",
+    "summary": "2027年型Rogue Hybridは1.5L 3気筒ターボを発電専用に使うe-POWERで、1.67 kWh電池、2モーター、225 hp。価格は35,490ドルから、2028年に米国生産を始める。Kicksのe-POWER版も2028年頃投入、ハイブリッドV6のXterraも確認された。Rogue PHEVは3,000台中1,500台しか売れず廃止。",
+    "note": "e-POWERはシリーズHVで、車輪出力 P_wheel≒P_eng×η_gen×η_inv×η_mot。「2モーター」が前後各1基（電動4WD）かは記事では未確認（要確認）。"
+   },
+   "en": {
+    "title": "Nissan bets on hybrids in North America: Rogue Hybrid (e-POWER) from $35,490, Rogue PHEV dropped",
+    "summary": "The 2027 Rogue Hybrid uses e-POWER, with a 1.5 L turbo three-cylinder acting purely as a generator, a 1.67 kWh battery, two motors and 225 hp. It starts at $35,490 and US production begins in 2028. A Kicks e-POWER follows around 2028, and a revived Xterra with a hybrid V6 was confirmed. The Rogue PHEV is dropped after selling only 1,500 of 3,000 units.",
+    "note": "e-POWER is a series hybrid: P_wheel ≈ P_eng × η_gen × η_inv × η_mot. Whether 'two motors' means one per axle (electric AWD) is not confirmed in the article (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/09/nissan-hybrid-e-power-usa/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-polestar2-nextgen",
+   "date": "2026-10-02",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "シャシー",
+    "制御"
+   ],
+   "prio": 1,
+   "conf": "rumor",
+   "ja": {
+    "title": "次期Polestar 2、800V新プラットフォームとアクティブダンパーでBMW i3に対抗と報道",
+    "summary": "Auto Express誌のインタビューによると、次期Polestar 2は800Vの新しいプラットフォームを使い、2028年のPolestar 7と共用する。アクティブダンパーと操舵フィールの改善を図り、2027年に公開予定。出力・電池容量は未公表。",
+    "note": "出典は第三者誌のインタビューの二次報道で、仕様は未確定（rumor扱い）。"
+   },
+   "en": {
+    "title": "Next Polestar 2 to use a new 800 V platform and active dampers to take on the BMW i3, report says",
+    "summary": "According to an Auto Express interview, the next Polestar 2 will use a new 800 V platform shared with the 2028 Polestar 7. It will get active dampers and improved steering, with a reveal planned for 2027. Power and battery size are not disclosed.",
+    "note": "This is a second-hand report of a magazine interview; specs are unconfirmed (treated as rumor)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/10/polestar-2-next-generation-report/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-byd-seal07-gen2",
+   "date": "2026-09-28",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "BYD 第2世代Seal 07を予告：全長5,080 mm、EVは245/300 kW",
+    "summary": "第2世代Seal 07は全長5,080 mm（+85 mm）、全幅1,960 mm（+50 mm）、ホイールベース2,960 mm（+60 mm）。EVはモーター最大出力245 kWまたは300 kW、LFP電池、最高速240 km/h。PHEV（DM-i）も継続し、ルーフにLiDARを持つ。発売日は未公表。",
+    "note": "4WDの有無とサスペンション仕様は記事に記載がない（要確認）。"
+   },
+   "en": {
+    "title": "BYD previews second-gen Seal 07: 5,080 mm long, EV with 245 or 300 kW",
+    "summary": "The second-gen Seal 07 is 5,080 mm long (+85 mm), 1,960 mm wide (+50 mm) with a 2,960 mm wheelbase (+60 mm). EV versions have 245 kW or 300 kW motors, LFP batteries and a 240 km/h top speed. The DM-i PHEV continues, and a roof LiDAR is fitted. Launch date not disclosed.",
+    "note": "AWD availability and suspension details are not in the article (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/09/28/byd-previews-2nd-gen-seal-07-sedan/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-jetta-m6",
+   "date": "2026-09-28",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "一汽VW、Jettaブランド初のEVセダン「M6」：8.08万〜9.98万元",
+    "summary": "一汽VW独自の「Jiesi」アーキテクチャを使うFFのEVで、モーターは113 kWまたは145 kW。セルはCALB製で、パックは一汽VWが組み立てる。全長4.81 m、ホイールベース2.82 m、車両重量1,557〜1,628 kg。価格は8.08万〜9.98万元（約1.06万〜1.31万ユーロ）で、10月中旬に正式発売。",
+    "note": "外資系合弁が中国の現地アーキテクチャで10万元以下のEVを出す例。"
+   },
+   "en": {
+    "title": "FAW-VW launches Jetta brand's first EV sedan, the M6, from CNY 80,800 to 99,800",
+    "summary": "A front-wheel-drive EV on FAW-Volkswagen's own 'Jiesi' architecture, with 113 kW or 145 kW motors. Cells come from CALB and FAW-VW assembles the packs. It is 4.81 m long with a 2.82 m wheelbase and weighs 1,557-1,628 kg. Prices run from CNY 80,800 to 99,800 (about EUR 10,600-13,100), with the official launch in mid-October.",
+    "note": "An example of a foreign JV launching a sub-CNY 100k EV on a local Chinese architecture."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/09/28/faw-volkswagen-introduces-the-jetta-m6-electric-sedan/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-eu-autopackage-vote",
+   "date": "2026-10-02",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "PT"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "欧州議会運輸委員会、「Auto Package」（2035年CO2規制緩和）の採決を約2週間延期",
+    "summary": "10月5日予定の採決を、会派間の調整のため約2週間延期した。本会議採決は11月の予定。案は2035年の目標を2021年比100%削減から90%削減（約11 g/km）に変え、2035年以降も新車の27〜29%にエンジン車が残りうる。グリーン鋼材（基準の7%）やクリーン燃料（3%）によるクレジット、全長4.20 m未満のEVを1.3台と数えるスーパークレジット、2030〜2032年の柔軟な中間目標を含む。",
+    "note": "90%削減の意味：フリート平均 E_2035＝(1−0.90)×E_ref。記事の11 g/kmから逆算すると E_ref≒110 g/km（推測、基準値の定義は要確認）。PHEV/レンジエクステンダーの残存余地が増えるため、パワートレイン計画への影響が大きい。"
+   },
+   "en": {
+    "title": "European Parliament transport committee delays 'Auto Package' vote on easing 2035 CO2 rules by about two weeks",
+    "summary": "The vote scheduled for 5 October was pushed back about two weeks so the political groups can reach agreement; the plenary vote is planned for November. The proposal changes the 2035 target from a 100% to a 90% cut versus 2021 (about 11 g/km), so 27-29% of new cars could still have combustion engines after 2035. It includes credits for green steel (7% of the reference) and clean fuels (3%), super-credits counting EVs under 4.20 m as 1.3 cars, and flexible 2030-2032 interim targets.",
+    "note": "A 90% cut means fleet average E_2035 = (1 − 0.90) × E_ref. Back-calculating from 11 g/km gives E_ref ≈ 110 g/km (inference; the reference definition needs confirmation). More room for PHEVs and range extenders has a direct impact on powertrain planning."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/02/eu-transport-committee-postpones-auto-package-vote/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-cn-battery-plan",
+   "date": "2026-09-28",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "CN",
+   "tags": [
+    "電池",
+    "規制"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "中国、第15次5カ年の電池産業発展計画：2030年に全固体電池の初期大規模利用、サイクル寿命15,000回",
+    "summary": "MIIT、国家発展改革委員会、交通運輸部など7部門が2026年9月14日付で発行した。2030年までに全固体電池の「初期の大規模利用」、15,000サイクルの長寿命リチウム電池、大手メーカーの不良率をppbレベルにする目標を掲げる。乗用車新車販売に占めるNEV比率は2030年に70%を目指す。エネルギー密度（Wh/kg）の数値目標はない。",
+    "note": "15,000サイクルを1日1回の充放電で換算すると約41年（15,000÷365）。主に定置用蓄電を想定した数値とみられる（推測）。"
+   },
+   "en": {
+    "title": "China issues 15th Five-Year battery plan: initial large-scale all-solid-state use by 2030 and 15,000-cycle cells",
+    "summary": "Seven agencies including MIIT, the NDRC and the Ministry of Transport issued the plan, dated 14 September 2026. Targets include 'initial large-scale use' of all-solid-state batteries by 2030, long-life lithium batteries with 15,000 cycles, and ppb-level defect rates at leading makers. NEVs are to reach 70% of domestic new passenger-car sales by 2030. There is no numeric energy-density (Wh/kg) target.",
+    "note": "15,000 cycles at one cycle a day is about 41 years (15,000 ÷ 365); the figure likely targets stationary storage (inference)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/09/28/china-unveils-5-year-battery-plan/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-bmw-gen6-battery-plant",
+   "date": "2026-10-02",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "電池",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "BMW、Irlbach-Straßkirchen工場でGen6電池の量産開始：46 mm円筒セル、エネルギー密度約20%向上",
+    "summary": "下バイエルンの新工場が10月2日に量産を始めた。投資額は約10億ユーロ、2ラインで1日数百パックを生産し、フル稼働時は1,600人。直径46 mmの大型円筒セル（Gen6）を使い、従来の角形セル比でエネルギー密度が約20%高い。800V、セル・トゥ・パック構造で、まずミュンヘン工場のi3に供給する。",
+    "note": "46xx円筒セルは直径を21 mm→46 mmに広げることで、セル数（≒溶接・接続点数）を減らす。発熱は体積に、放熱は表面積に比例するため、径が大きいほど中心部の温度上昇に注意が必要（一般論）。"
+   },
+   "en": {
+    "title": "BMW starts Gen6 battery production at Irlbach-Straßkirchen: 46 mm cylindrical cells, about 20% higher energy density",
+    "summary": "The new Lower Bavaria plant began series production on 2 October. It cost about EUR 1 billion, builds several hundred packs per day on two lines and will employ 1,600 at full capacity. It uses 46 mm-diameter large cylindrical Gen6 cells with about 20% higher energy density than the previous prismatic cells. The packs are 800 V cell-to-pack designs and first go to the i3 built in Munich.",
+    "note": "Moving from 21 mm to 46 mm diameter reduces cell count (and weld/connection points). Heat generation scales with volume while cooling scales with surface area, so larger diameters need care with core temperature (general)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/02/bmw-begins-gen6-battery-production-in-irlbach-straskirchen/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-tesla-q3",
+   "date": "2026-10-02",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "Tesla 2026年第3四半期：納車48.6万台、生産46.4万台",
+    "summary": "第3四半期の生産は46.4万台（前年同期比+3.7%）、納車は48.6万台で前年同期の約50万台を下回った。Model 3/Yは生産457,387台・納車478,237台、その他（Cybertruck、Semi、Model S/X）は生産7,004台・納車8,295台。蓄電システムの出荷は13.7 GWh。",
+    "note": ""
+   },
+   "en": {
+    "title": "Tesla Q3 2026: 486,000 deliveries, 464,000 produced",
+    "summary": "Q3 production was 464,000 (+3.7% year on year) and deliveries 486,000, below the nearly 500,000 of Q3 2025. Model 3/Y production was 457,387 and deliveries 478,237; other models (Cybertruck, Semi, Model S/X) were 7,004 produced and 8,295 delivered. Energy storage deployments were 13.7 GWh.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/02/q3-figures-tesla-factories-regains-production-footing/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-tesla-drive-away",
+   "date": "2026-10-02",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "品質",
+    "制御"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "Tesla、充電ケーブル接続中でも発進できる「Emergency Drive Away」を米国で追加",
+    "summary": "ソフトウェア2026.38.3で、Supercharger接続中にDレンジに入れると画面に「Emergency Drive Away」が表示され、ボタン操作で発進できるようになった。従来は接続中の発進をソフトで禁止していた。約2か月前に充電所でTesla所有者が銃撃された事件を受けたもの。車両と充電器を損傷するため緊急時専用で、意図的な誤用にはペナルティを科すとしている。",
+    "note": "充電中の発進禁止（チャージインターロック）は一般に法規・安全要件として扱われる機能で、これをユーザー操作で解除可能にした例。各国の型式認証要件との整合は要確認。"
+   },
+   "en": {
+    "title": "Tesla adds 'Emergency Drive Away' in the US, allowing the car to move with a charging cable attached",
+    "summary": "With software 2026.38.3, shifting into Drive while connected to a Supercharger shows an 'Emergency Drive Away' option that lets the car move off at the press of a button. Previously the software blocked driving while connected. It follows a fatal shooting of Tesla owners at a charging station about two months earlier. Tesla says it is for emergencies only, will damage the car and the charger, and deliberate misuse will be penalised.",
+    "note": "A charge interlock is usually treated as a safety/regulatory function; this makes it user-overridable. Consistency with type-approval rules in other markets needs confirmation."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/02/teslas-can-now-drive-off-with-a-charging-cable-connected/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-cn-sept-deliveries",
+   "date": "2026-10-01",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "中国主要メーカー9月納車：BYD 46.4万台、Leapmotorは3か月連続10万台超",
+    "summary": "BYDは463,561台（前年比+16.98%）、奇瑞292,308台、吉利汽車292,168台（+6.97%）。Leapmotorは105,656台（+58.51%）で3か月連続の10万台超、Zeekrは37,216台（+103.85%）で6か月連続の過去最高。Huawei HIMAは37,490台（−29.15%）、Li Autoは31,817台（−6.29%）に減った。",
+    "note": ""
+   },
+   "en": {
+    "title": "China's September deliveries: BYD 463,561, Leapmotor above 100,000 for a third month",
+    "summary": "BYD delivered 463,561 (+16.98% year on year), Chery 292,308 and Geely Auto 292,168 (+6.97%). Leapmotor reached 105,656 (+58.51%), its third straight month above 100,000, and Zeekr set a sixth straight monthly record at 37,216 (+103.85%). Huawei's HIMA fell to 37,490 (-29.15%) and Li Auto to 31,817 (-6.29%).",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/01/roundup-sept-2026-deliveries-china-automakers/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-te-eu-cells",
+   "date": "2026-10-01",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "電池",
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "T&E分析：欧州製セルは2030年に社用車・個人車の需要を賄える見込み、ただし生産能力の85%超は域外資本",
+    "summary": "T&Eは、欧州製セルが2027年に補助対象の社用車需要を満たし、2030年には中程度の確度の計画が実現すれば個人車も賄えると分析した。2022年以降に発表されたセル計画の4分の1は中止・延期。正極材の発表能力は2030年に年52.9万トンだが、実現確率で重み付けすると約17.7万トン。欧州の稼働中セル能力の85%超が域外企業の所有で、韓国勢が72%を占める。",
+    "note": ""
+   },
+   "en": {
+    "title": "T&E: European-made cells could cover company and private car demand by 2030, but over 85% of capacity is foreign-owned",
+    "summary": "T&E finds European cells can cover subsidised company-car demand by 2027 and private cars too by 2030 if medium-probability projects go ahead. A quarter of cell projects announced since 2022 have been cancelled or postponed. Announced cathode material capacity for 2030 is 529,000 t a year, but about 177,000 t when weighted by probability. Over 85% of active European cell capacity is owned by non-European firms, with Korean makers at 72%.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/01/te-analysis-sufficient-european-battery-cells-by-2030/"
+    }
+   ]
+  },
   {
    "id": "2026-10-02-valeo-wayve-nissan",
    "date": "2026-10-01",
