@@ -1,6 +1,62 @@
 {
-  "updated": "2026-10-03T07:30:00+09:00",
+  "updated": "2026-10-05T07:30:00+09:00",
   "items": [
+    {
+      "id": "2026-10-04-us-super-intelligence-force",
+      "date": "2026-10-04",
+      "kind": "flash",
+      "cat": "reg",
+      "level": "all",
+      "tags": [
+        "規制"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "トランプ米大統領、AI政策を調整する連邦タスクフォース「Super Intelligence Force」を発表",
+        "summary": "10月4日（米国時間）、トランプ大統領がTruth Socialで新しい連邦タスクフォース「Super Intelligence Force」の設置を発表した。議長は国家情報長官のJay Clayton氏、副議長はFTC委員長のAndrew Ferguson氏ら3名で、120日以内にAIのリスクと機会に関する報告書をまとめる。任務には「超知能を使った脅威」への対応計画づくりと、技術革新を妨げる過剰な規制の防止が含まれる。",
+        "note": "使いどころ：米国拠点・米国顧客向けにAIを使う部署は、120日後（2027年2月ごろ・推測）の報告書を規制方針の判断材料として予定に入れておくと良い。注意点：現時点で企業に新しい義務を課すものではない。FTC委員長が副議長に入っており、進行中のFTCによるAI企業調査との関係は要確認。"
+      },
+      "en": {
+        "title": "Trump announces 'Super Intelligence Force,' a federal task force to coordinate AI policy",
+        "summary": "On Oct. 4 (US time), President Trump announced on Truth Social a new federal task force called the 'Super Intelligence Force.' It is chaired by Director of National Intelligence Jay Clayton, with three vice chairs including FTC Chair Andrew Ferguson, and must deliver a report on AI risks and opportunities within 120 days. Its mandate includes planning responses to 'super intelligence-enabled threats' while preventing regulation that would stifle innovation.",
+        "note": "How to use it at work: teams using AI for US operations or US customers should put the report, due in about 120 days (around February 2027, estimated), on their calendar as input for compliance planning. Caution: it creates no new obligations for companies yet. With the FTC chair as a vice chair, how it relates to the FTC's ongoing probe of AI companies is unconfirmed."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-04-google-oss-bounty-freeze",
+      "date": "2026-10-04",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "intermediate",
+      "tags": [
+        "セキュリティ"
+      ],
+      "prio": 3,
+      "conf": "primary",
+      "ja": {
+        "title": "Google、AI生成の無効な脆弱性報告が急増したためオープンソース向けバグ報奨金を一時停止",
+        "summary": "Googleはオープンソース向けの脆弱性報奨金プログラム（OSS VRP）を10月1日付で一時停止した。理由として「自動化された投稿が大幅に増え、その大半が無効だった」と説明しており、AIが作った誤った内容の報告がエンジニアやOSS保守者の負担になっていたと報じられている。再開については2027年第1四半期に続報を出すとしている。",
+        "note": "使いどころ：社内でAIを使って脆弱性診断や不具合報告を作る場合、人が再現確認してから提出するルールを決める参考になる。注意点：停止はOSS向けプログラムのみで、Googleの他の報奨金プログラムは継続（個別の名称は記事に記載なし）。投稿件数や無効率の具体的な数値は公表されていない。"
+      },
+      "en": {
+        "title": "Google pauses its open source bug bounty after a surge in invalid AI-generated reports",
+        "summary": "Google paused its Open Source Software Vulnerability Rewards Program effective Oct. 1. It cited a significant rise in automated submissions, most of which were not valid, and reports say AI-generated reports with fabricated details were overloading engineers and open source maintainers. Google says it will give an update in the first quarter of 2027.",
+        "note": "How to use it at work: if your team uses AI to draft vulnerability findings or bug reports, use this as a reason to require a human to reproduce each issue before submitting it. Caution: only the open source program is paused; Google's other bounty programs continue (the article does not name them). No figures on submission volume or invalid rates were published."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/"
+        }
+      ]
+    },
     {
       "id": "2026-10-01-ftc-ai-probe",
       "date": "2026-10-01",
