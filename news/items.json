@@ -1,6 +1,64 @@
 {
- "updated": "2026-10-03T06:55:39+09:00",
+ "updated": "2026-10-06T07:05:00+09:00",
  "items": [
+  {
+   "id": "2026-10-06-lges-mb-46100",
+   "date": "2026-10-03",
+   "kind": "flash",
+   "cat": "supplier",
+   "region": "EU",
+   "tags": [
+    "電池",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "LGES、Mercedes向けに新形状の円筒セル「46100」を供給へと韓国報道（2028年納入開始）",
+    "summary": "韓国The Elecの報道によると、LG Energy Solutionは直径46 mm・高さ100 mmの未公表フォーマット「46100」をMercedes-Benzの次世代EV向けに供給する。生産ラインの準備は来年に始まり、主力生産拠点はポーランド・ヴロツワフ工場（準備作業は韓国・梧倉工場）、納入は2028年からとされる。契約金額・GWh・搭載車種は記事に記載がなく、LGESの公式発表ではない。",
+    "note": "円筒セルの体積は V = π(D/2)²·H。D一定なら V∝H なので、46100は4680比で約1.25倍、4695比で約1.05倍の外形体積になる（缶厚・ヘッドスペースを無視した概算）。容量はほぼ電極巻長に比例するため、同じ化学系なら1セル容量も同程度増える推測。高さを伸ばすと電流経路（タブ）長が伸び抵抗・発熱が増えるため、フルタブ構造の採用有無は要確認。"
+   },
+   "en": {
+    "title": "LGES reportedly to supply a new '46100' cylindrical cell to Mercedes, with deliveries from 2028",
+    "summary": "According to South Korea's The Elec, LG Energy Solution will supply Mercedes-Benz with an unannounced cylindrical format measuring 46 mm in diameter and 100 mm in height for next-generation EVs. Line preparation is said to start next year, with the Wrocław plant in Poland as the main production site (preparatory work at Ochang, Korea) and deliveries from 2028. The article gives no contract value, GWh volume or vehicle models, and LGES has not confirmed it.",
+    "note": "A cylindrical cell's volume is V = π(D/2)²·H. With D fixed, V scales with H, so a 46100 has about 1.25x the external volume of a 4680 and about 1.05x that of a 4695 (rough estimate ignoring can wall and headspace). Since capacity roughly follows electrode winding length, per-cell capacity would rise similarly for the same chemistry (speculation). A taller cell lengthens the current path, raising resistance and heat, so whether a tabless design is used needs confirmation."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/03/lg-energy-solution-to-supply-46100-round-cells-to-mercedes/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-06-bmw-ix5-orders",
+   "date": "2026-10-05",
+   "kind": "flash",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BMW iX5 60 xDrive、10月8日に受注開始：425 kW、141 kWh、WLTP 845 km",
+    "summary": "BMWはNeue Klasse・第6世代eDrive（800 V）を使うiX5 60 xDriveの受注を2026年10月8日に始め、生産は12月に開始する。出力425 kW・トルク805 Nm、0-100 km/h 4.6秒、正味電池容量141 kWh、WLTP航続最大845 km、DC最大460 kWで10-80%充電23分。あわせてiX3 40 xDrive（275 kW・520 Nm、82.6 kWh、WLTP 621 km、65,900ユーロ〜、生産は2027年2月）も案内された。",
+    "note": "平均充電電力 P_avg = ΔSOC·E/t = 0.70×141 kWh /(23/60 h) ≈ 257 kW。ピーク460 kWとの比は約0.56で、高SOC側の電流絞り込み（CC-CV相当）を反映していると読める（推測）。電費の目安は E/航続 = 141 kWh/845 km ≈ 16.7 kWh/100 km（WLTPは充電損失を含む系統電力ベースのため、正味容量から割った値とは定義が異なる点に注意）。モーター数・前後配置は記事に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "BMW iX5 60 xDrive opens for orders on 8 October: 425 kW, 141 kWh, up to 845 km WLTP",
+    "summary": "BMW will open orders for the iX5 60 xDrive, built on the Neue Klasse with sixth-generation eDrive (800 V), on 8 October 2026, with production starting in December. It delivers 425 kW and 805 Nm, 0-100 km/h in 4.6 s, a 141 kWh net battery, up to 845 km WLTP, and 10-80% charging in 23 minutes at up to 460 kW DC. BMW also detailed the iX3 40 xDrive (275 kW, 520 Nm, 82.6 kWh, 621 km WLTP, from EUR 65,900, production from February 2027).",
+    "note": "Average charging power P_avg = ΔSOC·E/t = 0.70 x 141 kWh / (23/60 h) ≈ 257 kW. Its ratio to the 460 kW peak is about 0.56, which likely reflects current tapering at high SOC (CC-CV-like behaviour; speculation). A rough consumption figure is E/range = 141 kWh / 845 km ≈ 16.7 kWh/100 km (note that WLTP consumption is measured at the grid including charging losses, so it is defined differently from dividing net capacity by range). The number and layout of motors are not stated in the article (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/05/bmw-ix5-ix3-40-xdrive-order-start-and-os-x-update/"
+    }
+   ]
+  },
   {
    "id": "2026-10-03-bmw-3series-g50",
    "date": "2026-09-29",
