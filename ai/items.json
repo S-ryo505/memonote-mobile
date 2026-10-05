@@ -1,6 +1,71 @@
 {
-  "updated": "2026-10-05T07:30:00+09:00",
+  "updated": "2026-10-06T07:33:54+09:00",
   "items": [
+    {
+      "id": "2026-10-05-openai-eu-text-watermark",
+      "date": "2026-10-05",
+      "kind": "flash",
+      "cat": "reg",
+      "level": "all",
+      "tags": [
+        "規制",
+        "セキュリティ",
+        "仕事で使える",
+        "メール・英語"
+      ],
+      "prio": 2,
+      "conf": "primary",
+      "ja": {
+        "title": "OpenAI、EUのChatGPT・Codex出力テキストに見えない透かし「textGrain」を導入へ",
+        "summary": "OpenAIは10月5日、EU AI法の「生成コンテンツを機械判読可能な形で識別できるようにする」義務への対応として、テキスト透かし技術textGrainを発表した。EU域内のChatGPTとCodexでは全プランを対象に今後数週間で順次導入し、APIでは一部モデルで世界共通のオプトイン機能（初期設定はオフ）として即日提供する。検出率は400トークンの文章で95%、200トークンで80%で、単語の10%を言い換えると約92%から66%に下がる。",
+        "note": "仕事での使いどころ：EU拠点や欧州顧客とのやり取りでChatGPTを使った文書は、コピー＆ペースト後も透かしが残る前提で扱う。AI利用の開示ルールを社内で決める際の材料になる。注意点：検出ツールは当面、承認された研究者・専門機関のみ利用可能で、一般企業が自分で確認することはできない。透かしが無いことは人間が書いた証明にはならない。日本拠点のアカウントへの適用予定は記事に記載なし（要確認）。"
+      },
+      "en": {
+        "title": "OpenAI to add an invisible 'textGrain' watermark to ChatGPT and Codex text in the EU",
+        "summary": "On Oct. 5, OpenAI announced textGrain, a text watermarking technique, to meet the EU AI Act requirement that generated content be identifiable in a machine-readable way. It will roll out to ChatGPT and Codex users in the EU on all plans over the coming weeks, and is available immediately in the API worldwide as an opt-in feature for select models (off by default). Detection is 95% for 400-token passages and 80% for 200-token passages, and drops from about 92% to 66% when 10% of the words are replaced.",
+        "note": "How to use it at work: assume that documents drafted with ChatGPT for EU sites or European customers keep the watermark even after copy-and-paste. This is useful input when setting internal rules on disclosing AI use. Caution: for now the detector is limited to approved researchers and expert organizations, so companies cannot check text themselves. The absence of a watermark does not prove a human wrote the text. Whether it will apply to accounts in Japan is not stated (to be confirmed)."
+      },
+      "src": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/eu-text-provenance/"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-05-chatgpt-image-ads",
+      "date": "2026-10-05",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "画像・動画",
+        "料金",
+        "セキュリティ"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "ChatGPT、画像生成結果の横に画像広告を表示へ（まず米国の無料・低価格プラン）",
+        "summary": "TechCrunchによると、OpenAIはChatGPTの画像生成結果の横に表示する画像付き広告を発表した。10月後半から米国のみで、無料プランと低価格プランを対象に、初期の限られた広告主で開始する。OpenAIは広告に表示ラベルを付け、ChatGPTの回答内容には影響させないとしている。",
+        "note": "仕事での使いどころ：業務で無料版ChatGPTを使っている社員がいる場合、有料の法人プラン（Business/Enterprise）へ寄せる理由の一つになる。注意点：記事には広告ターゲティングに使うデータの説明や、広告を消す設定の記載がない。日本での開始時期も未発表。法人プランが対象外かどうかは記事に明記がなく要確認。"
+      },
+      "en": {
+        "title": "ChatGPT to show image ads next to image generation results, starting with US free and low-cost plans",
+        "summary": "According to TechCrunch, OpenAI announced display ads with images that appear next to image generation results in ChatGPT. They start later this month in the US only, for the free and low-cost plans, with an initial test group of advertisers. OpenAI says the ads will be clearly labeled and will not affect ChatGPT's answers.",
+        "note": "How to use it at work: if some employees use the free version of ChatGPT for work, this is another reason to move them to a paid business plan (Business/Enterprise). Caution: the article does not explain what data is used to target ads or whether ads can be turned off. No start date for Japan has been announced. The article does not explicitly say business plans are excluded (to be confirmed)."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/"
+        }
+      ]
+    },
     {
       "id": "2026-10-04-us-super-intelligence-force",
       "date": "2026-10-04",
@@ -126,7 +191,10 @@
       "kind": "weekly",
       "cat": "model",
       "level": "all",
-      "tags": ["モデル", "料金"],
+      "tags": [
+        "モデル",
+        "料金"
+      ],
       "prio": 3,
       "conf": "report",
       "ja": {
@@ -140,8 +208,14 @@
         "note": "For work, the standout is very long outputs (large code or long reports in one go). Benchmarks are Google's own figures as quoted by the article, not third-party results. Timing for the consumer Gemini app is unclear."
       },
       "src": [
-        { "name": "VentureBeat", "url": "https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release" },
-        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/" }
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/"
+        }
       ]
     },
     {
@@ -150,7 +224,10 @@
       "kind": "weekly",
       "cat": "model",
       "level": "all",
-      "tags": ["モデル", "料金"],
+      "tags": [
+        "モデル",
+        "料金"
+      ],
       "prio": 2,
       "conf": "report",
       "ja": {
@@ -163,7 +240,12 @@
         "summary": "API pricing is $2 input / $10 output per million tokens. An 'Ultrafast' tier (6x standard price) outputs up to 300 tokens per second. Available via the API, ChatGPT Work and Codex, but not regular ChatGPT.",
         "note": "'Near-equal at one-fifth the price' refers to specific benchmarks (DeepSWE, OSWorld, etc.). Across vendors, the trend is to route bulk document processing to cheaper models and reserve top models for hard tasks, cutting cost several-fold."
       },
-      "src": [{ "name": "VentureBeat", "url": "https://venturebeat.com/technology/openais-gpt-6-1-sol-offers-astra-like-performance-at-1-5th-price-a-new-ultrafast-tier-clocks-at-300-tokens-per-second" }]
+      "src": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/openais-gpt-6-1-sol-offers-astra-like-performance-at-1-5th-price-a-new-ultrafast-tier-clocks-at-300-tokens-per-second"
+        }
+      ]
     },
     {
       "id": "2026-09-28-claude-sonnet-5-5",
@@ -171,7 +253,10 @@
       "kind": "weekly",
       "cat": "model",
       "level": "all",
-      "tags": ["モデル", "料金"],
+      "tags": [
+        "モデル",
+        "料金"
+      ],
       "prio": 2,
       "conf": "report",
       "ja": {
@@ -184,7 +269,12 @@
         "summary": "Pricing is unchanged from Sonnet 5 at $2 input / $10 output per million tokens. Benchmarks are close to the top-tier Opus 5.5 (GDPval-AA 1844 vs 1846; OSWorld 2.1 80.1% vs 81.8%). Also available on AWS, Google Cloud and Azure; Haiku 5.5 is expected in the following weeks.",
         "note": "This page is produced by Claude (an Anthropic model), so Anthropic news is handled with the same rules as other vendors: article figures only, no evaluative wording."
       },
-      "src": [{ "name": "VentureBeat", "url": "https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-5-with-30-cost-reduction-per-task-due-to-faster-speeds-and-fewer-tool-calls" }]
+      "src": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-5-with-30-cost-reduction-per-task-due-to-faster-speeds-and-fewer-tool-calls"
+        }
+      ]
     },
     {
       "id": "2026-09-29-openai-pages-space",
@@ -192,7 +282,11 @@
       "kind": "weekly",
       "cat": "tool",
       "level": "beginner",
-      "tags": ["仕事で使える", "資料作成", "エージェント"],
+      "tags": [
+        "仕事で使える",
+        "資料作成",
+        "エージェント"
+      ],
       "prio": 3,
       "conf": "report",
       "ja": {
@@ -205,7 +299,12 @@
         "summary": "Space is a shared team workspace for files and pages; Pages is a document tool that people and AI edit together, with chart and image generation. Slides builds decks from conversation and arrives in the coming weeks. Space is for Pro, Business and Enterprise and replaces the old Library.",
         "note": "Compatibility with Microsoft Office files (docx/pptx) is not mentioned. Company use requires a Business/Enterprise plan and a check against internal data-classification rules."
       },
-      "src": [{ "name": "TechCrunch", "url": "https://techcrunch.com/2026/09/29/openai-takes-on-microsoft-with-the-launch-of-what-feels-a-whole-lot-like-chatgpts-own-office-suite/" }]
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/29/openai-takes-on-microsoft-with-the-launch-of-what-feels-a-whole-lot-like-chatgpts-own-office-suite/"
+        }
+      ]
     },
     {
       "id": "2026-09-29-openai-dots",
@@ -213,7 +312,10 @@
       "kind": "weekly",
       "cat": "tool",
       "level": "intermediate",
-      "tags": ["エージェント", "仕事で使える"],
+      "tags": [
+        "エージェント",
+        "仕事で使える"
+      ],
       "prio": 2,
       "conf": "report",
       "ja": {
@@ -226,7 +328,12 @@
         "summary": "Each Dot runs on its own cloud computer and browser, monitors projects, operates software and sends finished work back for approval. They communicate via ChatGPT, Slack and Microsoft Teams and connect to 4,000+ apps. One Dot is free for Pro and Business Premium; Enterprise and others get a beta.",
         "note": "Think of routine delegation such as updating a weekly progress sheet and flagging late tasks in Teams. The concept is the same as the scheduled runs behind this news page."
       },
-      "src": [{ "name": "VentureBeat", "url": "https://venturebeat.com/technology/openai-launches-dots-always-on-ai-agent-coworkers-and-chatgpt-space-where-they-can-collaborate-with-human-teams" }]
+      "src": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/openai-launches-dots-always-on-ai-agent-coworkers-and-chatgpt-space-where-they-can-collaborate-with-human-teams"
+        }
+      ]
     },
     {
       "id": "2026-09-11-m365-copilot-button",
@@ -234,7 +341,10 @@
       "kind": "weekly",
       "cat": "tool",
       "level": "beginner",
-      "tags": ["仕事で使える", "資料作成"],
+      "tags": [
+        "仕事で使える",
+        "資料作成"
+      ],
       "prio": 3,
       "conf": "primary",
       "ja": {
@@ -247,7 +357,12 @@
         "summary": "The Copilot button gets its own input field, so you can type or dictate without opening the pane. Selecting content shows contextual prompt suggestions. Shortcuts are Alt+C on Windows and Command+Control+I on Mac. Rollout starts September 2026 and should finish by December.",
         "note": "No admin action is needed and existing Copilot controls still apply. If your company has Copilot licences, expect it this year (Message Center MC1470885)."
       },
-      "src": [{ "name": "M365 Message Center (merill.net)", "url": "https://mc.merill.net/message/MC1470885" }]
+      "src": [
+        {
+          "name": "M365 Message Center (merill.net)",
+          "url": "https://mc.merill.net/message/MC1470885"
+        }
+      ]
     },
     {
       "id": "2026-09-14-m365-copilot-sep",
@@ -255,7 +370,12 @@
       "kind": "weekly",
       "cat": "tool",
       "level": "beginner",
-      "tags": ["仕事で使える", "資料作成", "会議", "メール・英語"],
+      "tags": [
+        "仕事で使える",
+        "資料作成",
+        "会議",
+        "メール・英語"
+      ],
       "prio": 2,
       "conf": "report",
       "ja": {
@@ -268,7 +388,12 @@
         "summary": "PowerPoint can translate a whole deck while keeping layouts and speaker notes. Excel can show edits and version history with explanations of the changes. Planner Agent creates and updates project plans and task assignments from chat prompts.",
         "note": "Full-deck translation is directly useful for preparing Japanese/English material for overseas sites. Some features are in staged rollout and may not yet appear in every tenant."
       },
-      "src": [{ "name": "HubSite 365", "url": "https://www.hubsite365.com/en-ww/crm-pages/6-new-microsoft-copilot-features-youll-want-to-try-september-2026.htm" }]
+      "src": [
+        {
+          "name": "HubSite 365",
+          "url": "https://www.hubsite365.com/en-ww/crm-pages/6-new-microsoft-copilot-features-youll-want-to-try-september-2026.htm"
+        }
+      ]
     },
     {
       "id": "2026-09-29-codex-env",
@@ -276,7 +401,10 @@
       "kind": "weekly",
       "cat": "tool",
       "level": "advanced",
-      "tags": ["コーディング", "エージェント"],
+      "tags": [
+        "コーディング",
+        "エージェント"
+      ],
       "prio": 1,
       "conf": "report",
       "ja": {
@@ -289,7 +417,12 @@
         "summary": "Cloud environments that used to be throwaway per task can now persist with approved settings and permissions. Work can start from a computer, remotely or from a phone. Also announced: voice commands in the CLI, an /agents view for multiple tasks, and Codex Security Cloud for repo scanning and fix preparation.",
         "note": "General availability date and pricing are not stated in the article."
       },
-      "src": [{ "name": "TechCrunch", "url": "https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/" }]
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/"
+        }
+      ]
     },
     {
       "id": "2026-09-28-nvidia-openshell",
@@ -297,7 +430,10 @@
       "kind": "weekly",
       "cat": "biz",
       "level": "advanced",
-      "tags": ["セキュリティ", "エージェント"],
+      "tags": [
+        "セキュリティ",
+        "エージェント"
+      ],
       "prio": 2,
       "conf": "report",
       "ja": {
@@ -310,7 +446,12 @@
         "summary": "It sits between agents and files, APIs, credentials and networks, isolating them with Linux kernel controls and a policy proxy for network access. Every decision is audit-logged. Free under Apache 2.0, with Anthropic, Salesforce, SAP and Red Hat among integrators.",
         "note": "The idea is to shrink what an agent can reach even if it ignores instructions. Likely to become a common point in corporate security reviews of agents (inference)."
       },
-      "src": [{ "name": "VentureBeat", "url": "https://venturebeat.com/infrastructure/nvidias-openshell-controls-what-ai-agents-can-access-even-when-they-ignore-instructions" }]
+      "src": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/infrastructure/nvidias-openshell-controls-what-ai-agents-can-access-even-when-they-ignore-instructions"
+        }
+      ]
     },
     {
       "id": "2026-09-30-safeguard-false-positive",
@@ -318,7 +459,10 @@
       "kind": "weekly",
       "cat": "biz",
       "level": "intermediate",
-      "tags": ["セキュリティ", "仕事で使える"],
+      "tags": [
+        "セキュリティ",
+        "仕事で使える"
+      ],
       "prio": 2,
       "conf": "report",
       "ja": {
@@ -331,7 +475,12 @@
         "summary": "Cited cases include simulated satellite control, robotics UIs, camera and sensor parameter access on hardware, and open-source vulnerability review. Some developers have moved to open models. OpenAI admits safeguards can slow legitimate work; Anthropic acknowledged false positives and says Fable 5.1 aims for about 60% fewer interventions.",
         "note": "Vehicle-control and ECU questions can hit similar false blocks. A practical fix is stating your purpose (design, validation, training) and role in the first sentence; route anything still blocked to approved internal tools."
       },
-      "src": [{ "name": "VentureBeat", "url": "https://venturebeat.com/technology/developers-say-openai-and-anthropic-safeguards-are-flagging-routine-work-and-costing-them-time" }]
+      "src": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/developers-say-openai-and-anthropic-safeguards-are-flagging-routine-work-and-costing-them-time"
+        }
+      ]
     },
     {
       "id": "2026-05-07-eu-ai-act-delay",
@@ -339,7 +488,9 @@
       "kind": "weekly",
       "cat": "reg",
       "level": "all",
-      "tags": ["規制"],
+      "tags": [
+        "規制"
+      ],
       "prio": 2,
       "conf": "report",
       "ja": {
@@ -352,7 +503,12 @@
         "summary": "Obligations for standalone high-risk AI (Annex III) move from Aug 2, 2026 to Dec 2, 2027; AI embedded in regulated products (Annex I) moves from Aug 2, 2027 to Aug 2, 2028. Watermarking duties shift to Dec 2, 2026, and the Machinery Regulation is removed from high-risk classification.",
         "note": "This was a provisional agreement in May; formal adoption since then is unverified. In-vehicle AI is partly handled under type approval, so its relation to Annex I needs legal review."
       },
-      "src": [{ "name": "Hogan Lovells", "url": "https://www.hlc.com/en/publications/eu-legislators-agree-to-delay-for-highrisk-ai-rules" }]
+      "src": [
+        {
+          "name": "Hogan Lovells",
+          "url": "https://www.hlc.com/en/publications/eu-legislators-agree-to-delay-for-highrisk-ai-rules"
+        }
+      ]
     },
     {
       "id": "2026-10-02-howto-meeting",
@@ -360,7 +516,10 @@
       "kind": "weekly",
       "cat": "howto",
       "level": "beginner",
-      "tags": ["仕事で使える", "会議"],
+      "tags": [
+        "仕事で使える",
+        "会議"
+      ],
       "prio": 3,
       "conf": "guide",
       "ja": {
@@ -381,7 +540,10 @@
       "kind": "weekly",
       "cat": "howto",
       "level": "intermediate",
-      "tags": ["仕事で使える", "データ分析"],
+      "tags": [
+        "仕事で使える",
+        "データ分析"
+      ],
       "prio": 2,
       "conf": "guide",
       "ja": {
@@ -402,7 +564,10 @@
       "kind": "weekly",
       "cat": "howto",
       "level": "beginner",
-      "tags": ["仕事で使える", "メール・英語"],
+      "tags": [
+        "仕事で使える",
+        "メール・英語"
+      ],
       "prio": 2,
       "conf": "guide",
       "ja": {
@@ -423,7 +588,10 @@
       "kind": "weekly",
       "cat": "tool",
       "level": "beginner",
-      "tags": ["仕事で使える", "資料作成"],
+      "tags": [
+        "仕事で使える",
+        "資料作成"
+      ],
       "prio": 2,
       "conf": "guide",
       "ja": {
