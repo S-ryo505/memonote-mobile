@@ -1,6 +1,39 @@
 {
- "updated": "2026-10-06T07:05:00+09:00",
+ "updated": "2026-10-07T06:54:00+09:00",
  "items": [
+  {
+   "id": "2026-10-07-honda-nissan-applied-intuition",
+   "date": "2026-10-06",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "制御",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ホンダと日産、同日にApplied IntuitionのVehicle OS採用を発表（SDV基盤）",
+    "summary": "ホンダは10月6日、米Applied IntuitionのVehicle OSを用いて、ハイブリッドを含む全パワートレインに対応する集中型・更新可能なSDVプラットフォームの開発を加速すると発表した。日産も同日、2020年からのシミュレーション分野の協業を拡大し、Vehicle OSとAI開発ツールを今後の車種共通のソフト基盤（AIDV）に採用するとした。両社とも日本とシリコンバレーの技術者が共同で開発し、投資額や搭載時期は公表されていない。",
+    "note": "Vehicle OSはハードウェア層を抽象化するミドルウェアで、ECU構成が変わってもアプリ（シャシー制御を含む）を共通化しやすくなる。車両運動制御側では、集中型ECUへの統合時に制御周期・レイテンシ（例：ESC系は数ms周期）とASIL要求の分離（混在クリティカリティ）をどう扱うかが論点になる。両社の制御系機能がどこまでVehicle OS上に載るかは記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Honda and Nissan both adopt Applied Intuition's Vehicle OS for their SDV platforms on the same day",
+    "summary": "On October 6, Honda announced it will use Applied Intuition's Vehicle OS to speed development of a centralized, upgradable SDV platform supporting all powertrains, including hybrids. On the same day, Nissan expanded its partnership with the company, which began with simulation tools in 2020, to include Vehicle OS and AI development tools as the common software foundation for future models (AIDVs). Both automakers will develop with engineers in Japan and Silicon Valley; no investment amounts or launch timing were disclosed.",
+    "note": "Vehicle OS is middleware that abstracts the hardware layer, making it easier to reuse applications (including chassis control) when ECU layouts change. For vehicle dynamics control, the key questions with centralized ECUs are control cycle time and latency (e.g., a few ms for ESC-class functions) and separating ASIL requirements (mixed criticality). How much of either company's control functions will run on Vehicle OS is not stated in the articles and needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Automotive World",
+     "url": "https://www.automotiveworld.com/news/honda-taps-applied-intuition-to-speed-sdv-platform-work/"
+    },
+    {
+     "name": "Automotive World",
+     "url": "https://www.automotiveworld.com/news/nissan-expands-applied-intuition-tie-up-to-in-vehicle-os/"
+    }
+   ]
+  },
   {
    "id": "2026-10-06-lges-mb-46100",
    "date": "2026-10-03",
