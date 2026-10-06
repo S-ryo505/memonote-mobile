@@ -1,6 +1,75 @@
 {
-  "updated": "2026-10-06T07:33:54+09:00",
+  "updated": "2026-10-07T07:33:02+09:00",
   "items": [
+    {
+      "id": "2026-10-06-mistral-large-4",
+      "date": "2026-10-06",
+      "kind": "flash",
+      "cat": "model",
+      "level": "intermediate",
+      "tags": [
+        "モデル",
+        "コーディング",
+        "セキュリティ"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "仏Mistral、1兆パラメータの「Mistral Large 4」をAPIで先行公開。10月27日に重み公開予定",
+        "summary": "Mistralは10月6日、総パラメータ1兆・推論時に使うパラメータ490億の混合エキスパート型モデル「Mistral Large 4」をMistral APIでプレビュー公開した。入力は画像を含むマルチモーダル、出力はテキストのみで、モデルの重み（自社サーバーで動かせるデータ）は安全性試験の後、10月27日に独自ライセンスで公開する予定。同社の暫定ベンチマークはDeepSWE v1.1で62%、金融系Finchで67%。",
+        "note": "仕事での使いどころ：重みが公開されれば、社外にデータを出せない設計資料や試験データを社内サーバーで扱うAIの候補になる。米国・中国以外の提供元を選びたい場合の選択肢。注意点：ベンチマークは公開時点の暫定値で、第三者評価はまだ無い。API料金・コンテキスト長は記事に記載なし（要確認）。1兆パラメータ規模を社内で動かすには大型GPUサーバーが必要（推測）。独自ライセンスの商用利用条件も要確認。"
+      },
+      "en": {
+        "title": "Mistral previews its 1-trillion-parameter 'Mistral Large 4' via API, with open weights planned for Oct. 27",
+        "summary": "On Oct. 6, Mistral released a preview of Mistral Large 4 on its API: a mixture-of-experts model with 1 trillion total parameters, 49 billion of which are active during inference. It accepts multimodal input, including images, but outputs text only, and the company plans to publish the weights under its own license on Oct. 27 after safety testing. Mistral's preliminary benchmark scores include 62% on DeepSWE v1.1 and 67% on the Finch finance benchmark.",
+        "note": "How to use it at work: once the weights are released, it becomes a candidate for an in-house AI that handles design documents and test data that cannot leave the company. It is also an option if you want a provider based outside the US and China. Caution: the benchmarks are preliminary and have not been independently verified. API pricing and context length were not stated in the articles (to be confirmed). Running a 1-trillion-parameter model in-house would likely require large GPU servers (our estimate). The commercial-use terms of the custom license also need to be checked."
+      },
+      "src": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/mistral-debuts-large-4-le-chonk-a-1-trillion-parameter-text-output-model-with-high-benchmarks-planned-for-open-weights-release"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-06-atlassian-openai-rovo",
+      "date": "2026-10-06",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "仕事で使える",
+        "エージェント",
+        "コーディング",
+        "セキュリティ"
+      ],
+      "prio": 3,
+      "conf": "primary",
+      "ja": {
+        "title": "Atlassian、OpenAIとの提携を拡大：Rovoで GPT-6 Astra が使用可能に、Jira・ConfluenceのMCPサーバーも刷新",
+        "summary": "AtlassianとOpenAIは10月6日、提携拡大を発表し、AtlassianのAI機能RovoでGPT-6 AstraとGPT-5.6系が使えるようになった。あわせて刷新したAtlassian MCPサーバー（外部AIからJira・Confluence・Bitbucket・Loomなどを操作する窓口）は220以上の操作に対応し、同社によると旧版より使用トークンが最大25%少ない。ChatGPTやCodexからJiraの課題やConfluenceの文書を参照するプラグインも用意され、AIエージェントへのJira課題の割り当ては今後提供予定。",
+        "note": "仕事での使いどころ：JiraやConfluenceで課題・仕様を管理しているチームなら、ChatGPTやCodexから課題一覧や関連文書を直接引いて、進捗まとめや報告書の下書きに使える。注意点：RovoはOpenAI以外（Claudeなど）も含めてタスクごとにモデルを自動で選ぶ仕組みで、GPT-6 Astraが既定モデルではない。管理者向けにドメイン・IP許可リスト、権限範囲の設定、監査ログがあるので、社内導入前に情報システム部門と設定を確認すること。エージェントへの作業割り当て機能の提供日は未発表。"
+      },
+      "en": {
+        "title": "Atlassian expands its OpenAI partnership: GPT-6 Astra comes to Rovo, and the Jira/Confluence MCP server is rebuilt",
+        "summary": "On Oct. 6, Atlassian and OpenAI announced an expanded partnership, and GPT-6 Astra and the GPT-5.6 models are now available in Rovo, Atlassian's AI feature. Atlassian also rebuilt its MCP server, the gateway that lets outside AI tools work with Jira, Confluence, Bitbucket, Loom and more; it now exposes over 220 tools and, according to the company, uses up to 25% fewer tokens than the previous version. New plugins let ChatGPT and Codex pull in Jira work items and Confluence pages, and assigning Jira work to AI agents is planned for later.",
+        "note": "How to use it at work: teams that track issues and specs in Jira or Confluence can pull work items and related pages straight into ChatGPT or Codex to draft progress summaries and reports. Caution: Rovo picks a model per task from several providers, including Claude, so GPT-6 Astra is not the default. Admins get domain and IP allowlists, per-scope permissions and audit logs, so check these settings with your IT department before rolling it out. No release date has been given for assigning work to agents."
+      },
+      "src": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/atlassian-partnership/"
+        },
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/orchestration/atlassian-deepens-its-openai-partnership-with-a-spend-commitment-but-its-platform-stays-firmly-multi-model"
+        }
+      ]
+    },
     {
       "id": "2026-10-05-openai-eu-text-watermark",
       "date": "2026-10-05",
