@@ -1,6 +1,127 @@
 {
- "updated": "2026-10-07T06:54:00+09:00",
+ "updated": "2026-10-08T06:56:00+09:00",
  "items": [
+  {
+   "id": "2026-10-08-jaguar-type01",
+   "date": "2026-10-07",
+   "kind": "flash",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "4WD",
+    "電池"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "Jaguar Type 01 正式公開：3モーター758 kW、118 kWh・850 V、2027年後半納車",
+    "summary": "JLRは新型4ドアEV GT「Jaguar Type 01」を発表した。3モーターで合計758 kW（1,030 PS）・1,365 Nm、電池118 kWh、システム電圧850 V、新プラットフォームJEAの初採用車で、DC最大350 kW（13分で約320 km分）。英Solihull工場で生産し、受注は2027年初頭、納車は2027年後半、価格は英国13万ポンド〜・ドイツ約16.5万ユーロ。",
+    "note": "充電の平均電力：記事の電費16.5 kWh/100 km（16〜17の中央値、仮定）で320 km分は 0.165×320≈52.8 kWh、これを13分(0.217 h)で入れると平均 P≈52.8/0.217≈244 kW。最大350 kWに対し約70%で、SOC上昇に伴う電流絞りを含めた値と読める。3モーターの前後配置とトルクベクタリングの有無は記事に記載なし（要確認）。後2モーター構成なら左右独立駆動でヨーモーメント M_z=(T_RR−T_RL)·i/r_w·(t_r/2)（i：減速比、r_w：タイヤ動半径、t_r：後トレッド）を直接作れる（推測）。"
+   },
+   "en": {
+    "title": "Jaguar Type 01 revealed: three motors, 758 kW, 118 kWh at 850 V, deliveries in H2 2027",
+    "summary": "JLR unveiled the Jaguar Type 01, a four-door electric GT. Three motors deliver a combined 758 kW (1,030 PS) and 1,365 Nm, the 118 kWh battery runs at 850 V, it is the first car on the new JEA platform, and DC charging peaks at 350 kW (about 320 km of range in 13 minutes). It will be built in Solihull, UK, with orders opening in early 2027, deliveries in the second half of 2027, and prices from £130,000 in the UK and about €165,000 in Germany.",
+    "note": "Average charging power: assuming 16.5 kWh/100 km (midpoint of the quoted 16–17), 320 km needs 0.165×320≈52.8 kWh; delivered in 13 min (0.217 h) that is P≈244 kW, about 70% of the 350 kW peak, consistent with current derating as SOC rises. The motor layout and whether it uses torque vectoring are not stated (to be confirmed). If the two motors are at the rear, they can generate a yaw moment directly: M_z=(T_RR−T_RL)·i/r_w·(t_r/2), where i is the reduction ratio, r_w the tyre rolling radius and t_r the rear track (speculation)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/07/type-01-unveiled-the-latest-jaguar-enters-series-production/"
+    },
+    {
+     "name": "Automotive World",
+     "url": "https://www.automotiveworld.com/news/jlr-reveals-jaguar-type-01-in-new-york-uk-output-in-2027/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-eu-co2-france",
+   "date": "2026-10-07",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "EU車両CO2規制：フランスがドイツに同調し緩和容認へと報道",
+    "summary": "FAZとHandelsblattの報道によると、フランスは欧州委員会「Auto Package」（2035年は2021年比90%削減＝11 g/km）を上回る緩和への反対を取り下げ、独仏は補償なしで追加10ポイントの緩和と、2030年中間目標の平均期間を3年から5年（2028〜2032年）に延ばす案を求めている。見返りにフランスは「Made in EU」要件の強化を受け入れる見込み。欧州議会の本会議採決は11月予定で、理事会は15か国・人口65%以上の特定多数が必要。",
+    "note": "平均期間の延長の意味：適合判定が Σ_{y=2028}^{2032} E_y/5 ≤ 目標 となり、2028〜29年の超過を2031〜32年の電動車比率で相殺できる。Super Credit：全長4.20 m未満のEVを1.3台と数えるため、フリート平均は E=Σn_i·e_i/Σ(m_i·n_i)（m_i=1.3 or 1）で分母が増える方向に働く。いずれも交渉中で数値は確定前（要確認）。"
+   },
+   "en": {
+    "title": "EU car CO2 rules: France reportedly joins Germany in backing further softening",
+    "summary": "According to FAZ and Handelsblatt, France is dropping its opposition to going beyond the Commission's Auto Package (a 90% cut versus 2021 in 2035, i.e. 11 g/km), and France and Germany are seeking a further 10-point softening without compensation plus a longer averaging period for the 2030 interim target, from three to five years (2028–2032). In return France is expected to accept stricter Made in EU requirements. The Parliament plenary vote is planned for November, and the Council needs a qualified majority of 15 states representing at least 65% of the EU population.",
+    "note": "Effect of longer averaging: compliance becomes Σ_{y=2028}^{2032} E_y/5 ≤ target, so overshoots in 2028–29 can be offset by a higher EV share in 2031–32. Super credits count EVs shorter than 4.20 m as 1.3 vehicles, so the fleet average E=Σn_i·e_i/Σ(m_i·n_i) (m_i=1.3 or 1) gets a larger denominator. Everything is still under negotiation and the figures are not final (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/07/france-set-to-follow-germany-in-softening-co2-targets/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-eu-cn-hybrid-curbs",
+   "date": "2026-10-07",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "戦略",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "rumor",
+   "ja": {
+    "title": "EU、中国製ハイブリッド車の輸入制限（関税割当など）を準備とBloomberg報道",
+    "summary": "Bloombergが関係者の話として伝えたところでは、欧州委員会は中国製ハイブリッド車の輸入に期間限定のセーフガードを検討しており、一定台数を超えた分に課税する関税割当が選択肢の一つ。FT集計ではEUの中国製ハイブリッド輸入は2024年10月の3,800台から2026年7月に5万台へ増加した。数量・税率・時期は未定で、委員会は年末までに措置を示す計画。",
+    "note": "関税割当（TRQ）：輸入量Mに対し税額 = t_in·min(M,Q)+t_out·max(M−Q,0)（Q：割当量、t_out>t_in）。BEVには既に相殺関税7.8〜35.3%（通常関税10%と合わせ最大45.3%）がかかっており、ハイブリッドは対象外だったため輸入がPHEV/HEVに移ったとされる。対象がPHEVかHEVかは記事に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "EU preparing curbs on Chinese hybrid imports, possibly via tariff-rate quotas, Bloomberg reports",
+    "summary": "Citing people familiar with the matter, Bloomberg reports that the European Commission is considering time-limited safeguard measures on China-made hybrids, with tariff-rate quotas that levy imports above a set volume as one option. According to the FT, EU imports of Chinese hybrids rose from 3,800 units in October 2024 to 50,000 in July 2026. Quota volumes, rates and timing are undecided, and the Commission plans to present measures by year-end.",
+    "note": "Tariff-rate quota: duty = t_in·min(M,Q)+t_out·max(M−Q,0), with quota Q and t_out>t_in. BEVs already face countervailing duties of 7.8–35.3% (up to 45.3% including the 10% standard tariff), while hybrids were exempt, which is said to have shifted imports toward PHEVs and HEVs. Whether PHEVs, HEVs or both are covered is not stated (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/07/eu-plans-chinese-hybrid-import-curbs/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-skoda-octavia-hybrid",
+   "date": "2026-10-07",
+   "kind": "flash",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "Skoda初のフルハイブリッド「Octavia Hybrid」：1.5 TSI＋2モーターのシリーズ・パラレル方式",
+    "summary": "Skodaは初のフルハイブリッドとしてOctavia Hybrid（ハッチバック／ワゴン）を追加した。1.5 L TSIに発電・始動用と駆動・回生用の2モーターを組み合わせ、システム出力は100 kW（136 PS）と125 kW（170 PS）の2種、電池は1.6 kWh。約60 km/hまではシリーズ、それ以上はパラレルで走り、受注は今月開始、初納車は12月。",
+    "note": "シリーズ域では P_eng·η_gen·η_mot ≈ P_drive（エンジンは車輪と切り離され、効率の良い運転点に置ける）、パラレル域ではエンジンを直結し P_drive = P_eng·η_mech + P_mot（モーターがアシスト）。変速機は1段で、高速域を直結1段で受け持つ点はホンダe:HEVと同系統の構成（推測）。トルクと燃費は未公表。"
+   },
+   "en": {
+    "title": "Skoda's first full hybrid, the Octavia Hybrid: 1.5 TSI plus two motors in a series-parallel layout",
+    "summary": "Skoda has added the Octavia Hybrid (hatchback and estate) as its first full hybrid. A 1.5-litre TSI is paired with two motors, one for generating and starting and one for driving and regeneration, giving 100 kW (136 PS) or 125 kW (170 PS) of system power, with a 1.6 kWh battery. It runs as a series hybrid up to about 60 km/h and as a parallel hybrid above that; orders open this month and first deliveries are due in December.",
+    "note": "In series mode P_eng·η_gen·η_mot ≈ P_drive (the engine is decoupled from the wheels and can sit at an efficient operating point); in parallel mode the engine is coupled directly and P_drive = P_eng·η_mech + P_mot (motor assist). Using a single fixed ratio for high-speed direct drive resembles Honda's e:HEV concept (speculation). Torque and fuel consumption have not been published."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/10/skoda-octavia-hybrid/"
+    }
+   ]
+  },
   {
    "id": "2026-10-07-honda-nissan-applied-intuition",
    "date": "2026-10-06",
