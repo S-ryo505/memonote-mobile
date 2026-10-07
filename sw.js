@@ -2,7 +2,7 @@
    役割: 一度開けば、電波が無くても開けるようにする。
          他のアプリから「共有」されたもの（文章・URL・HTMLファイル）を受け取る。
    更新: CACHE の数字を上げると、次に開いたときに新しいものへ入れ替わります。 */
-const CACHE = "memonote-mobile-v3";
+const CACHE = "memonote-mobile-v4";
 const SHARE = "memonote-share";      /* 共有されたファイルを、アプリが開くまで一時的に置く場所 */
 const FILES = [
   "./index.html",

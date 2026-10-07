@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- =====================================================================
-     MemoNote Mobile  v1.3.0
+     MemoNote Mobile  v1.6.0
      スマホで書いた勉強ノートと、ToDo・覚書・待ち球を、
      会社の MemoNote へメールで送るためのアプリです。
      書いた内容は端末の中だけに残り、送信するときだけ外に出ます。
@@ -101,6 +101,7 @@ input,textarea,select{font:inherit;color:inherit}
   padding:14px 16px;font-size:16px;text-align:center}
 .big:active{filter:brightness(.9)}
 .big.ghost{background:transparent;color:var(--tx-dim);border:1px solid var(--line);flex:none;padding:14px 18px}
+.big.ghost.set{color:var(--violet);border-color:var(--violet)}
 .big[disabled]{opacity:.4}
 
 /* ---------- 編集 ---------- */
@@ -185,6 +186,8 @@ input,textarea,select{font:inherit;color:inherit}
     <span class="sp"></span>
     <button class="icb" id="backbtn" style="display:none">←</button>
     <button class="icb" id="delbtn" style="display:none">🗑</button>
+    <a class="icb" id="newsbtn" href="./news/" aria-label="自動車ニュース" title="自動車ニュース" style="text-decoration:none">🚗</a>
+    <a class="icb" id="ainewsbtn" href="./ai/" aria-label="AIニュース" title="AIニュース" style="text-decoration:none">🤖</a>
     <button class="icb" id="menubtn">⋯</button>
   </header>
 
@@ -239,6 +242,7 @@ input,textarea,select{font:inherit;color:inherit}
         <button data-add="paste">＋ 貼り付け</button>
         <button data-add="formula">＋ 式</button>
         <button data-add="qa">＋ 問い</button>
+        <button data-add="html">＋ HTML</button>
       </div>
 
       <div class="sec">要約</div>
@@ -257,6 +261,7 @@ input,textarea,select{font:inherit;color:inherit}
 <div class="toast" id="toast"></div>
 <input type="file" id="filepick" accept="image/*" style="display:none">
 <input type="file" id="restorepick" accept=".json,application/json" style="display:none">
+<input type="file" id="htmlpick" accept=".html,.htm,text/html,application/xhtml+xml" style="display:none">
 
 <script>
 "use strict";
@@ -275,7 +280,7 @@ function loadSet(){
   if(!Array.isArray(SET.people)) SET.people = [];
 }
 function saveSet(){ try{ localStorage.setItem(SKEY, JSON.stringify(SET)); }catch(_){} }
-const APP_VERSION = "1.3.0";
+const APP_VERSION = "1.6.0";
 let D = [];            /* 下書きの配列 */
 let T = [];            /* ToDo・覚書・待ち球の配列 */
 let cur = null;        /* 編集中の下書き */
@@ -811,6 +816,7 @@ document.querySelectorAll("[data-add]").forEach(b => b.onclick = () => {
   const t = b.dataset.add;
   if(t === "image"){ $("#filepick").click(); return; }
   if(t === "paste"){ pasteImage(); return; }
+  if(t === "html"){ htmlTarget = "append"; $("#htmlpick").click(); return; }
   const nb = {type:t};
   if(t === "text" || t === "heading") nb.text = "";
   if(t === "formula"){ nb.expr = ""; nb.symbols = [["","",""]]; }
@@ -823,6 +829,93 @@ document.querySelectorAll("[data-add]").forEach(b => b.onclick = () => {
     if(f) f.focus();
   }, 30);
 });
+
+/* --- HTMLファイル（AIの調査結果など）を、見出しと文章に分けて入れます --- */
+let htmlTarget = "new";  /* "new" = 新しい下書きにする / "append" = 開いている下書きに足す */
+$("#htmlpick").onchange = e => {
+  const f = e.target.files && e.target.files[0];
+  e.target.value = "";
+  if(!f) return;
+  f.text().then(t => importHtml(t, f.name, htmlTarget)).catch(() => toast("ファイルを読めませんでした", true));
+};
+const HTML_MAX_CHARS = 60000;   /* 端末の保存容量を守るための上限（文字数） */
+const HTML_MAX_IMAGES = 6;
+async function importHtml(html, fileName, mode){
+  const doc = new DOMParser().parseFromString(html, "text/html");
+  doc.querySelectorAll("script,style,noscript,template,iframe,nav,footer,header button,form").forEach(n => n.remove());
+  const norm = s => (s || "").replace(/[ \t ]+/g, " ").replace(/\s*\n\s*/g, "\n").trim();
+  const blocks = [], imgs = [];
+  let buf = [], total = 0, cut = false;
+  const flush = () => {
+    if(buf.length){ blocks.push({type:"text", text: buf.join("\n")}); buf = []; }
+  };
+  const addText = t => {
+    t = norm(t); if(!t) return;
+    if(total + t.length > HTML_MAX_CHARS){ cut = true; return; }
+    total += t.length; buf.push(t);
+    if(buf.join("\n").length > 1500) flush();
+  };
+  const walk = node => {
+    if(cut) return;
+    for(const n of node.childNodes){
+      if(cut) return;
+      if(n.nodeType === 3){ addText(n.textContent); continue; }
+      if(n.nodeType !== 1) continue;
+      const tag = n.tagName.toLowerCase();
+      if(/^h[1-4]$/.test(tag)){
+        flush();
+        const t = norm(n.textContent);
+        if(t){ blocks.push({type:"heading", text:t}); total += t.length; }
+      }else if(tag === "li"){
+        addText("・" + n.textContent);
+      }else if(tag === "tr"){
+        addText([...n.children].map(c => norm(c.textContent)).join(" | "));
+      }else if(tag === "pre" || tag === "p" || tag === "blockquote" || tag === "figcaption" || tag === "dt" || tag === "dd"){
+        addText(n.textContent);
+      }else if(tag === "br"){
+        /* 何もしない */
+      }else if(tag === "img"){
+        const src = n.getAttribute("src") || "";
+        if(/^data:image\/(png|jpe?g|webp|gif)/i.test(src) && imgs.length < HTML_MAX_IMAGES){
+          flush();
+          const at = blocks.length;
+          blocks.push(null);   /* 画像の場所を取っておく */
+          imgs.push({at, src, caption: n.getAttribute("alt") || ""});
+        }
+      }else if(tag === "svg"){
+        /* グラフ等の SVG は文字として読めないので飛ばします */
+      }else if(!n.querySelector("p,div,h1,h2,h3,h4,li,ul,ol,table,tr,pre,section,article,img,blockquote,dl,figure")){
+        addText(n.textContent);   /* 中に段落を持たない要素は、ひとかたまりの文として扱う */
+      }else{
+        walk(n);
+      }
+    }
+  };
+  walk(doc.body || doc.documentElement);
+  flush();
+  /* 画像は縮めてから入れる（読めなかったものは外す） */
+  for(const im of imgs){
+    try{
+      const blob = await (await fetch(im.src)).blob();
+      blocks[im.at] = {type:"image", data: await shrink(blob, 1600, 0.72), caption: im.caption};
+    }catch(_){ blocks[im.at] = null; }
+  }
+  const out = blocks.filter(Boolean);
+  if(!out.length){ toast("このHTMLから文章を取り出せませんでした", true); return; }
+  const title = norm((doc.title || (doc.querySelector("h1") || {}).textContent || fileName || "HTML").split("\n")[0]).slice(0, 80);
+  const firstLink = [...doc.querySelectorAll("a[href^='http']")].map(a => a.href)[0] || "";
+  const note = "（" + (fileName || "HTML") + " から取り込み" + (cut ? "。長いため後半は省略" : "") + (imgs.length ? "。画像" + out.filter(b => b.type === "image").length + "枚" : "") + "）";
+  if(mode === "append" && cur){
+    cur.blocks.push({type:"heading", text:title}, {type:"text", text:note}, ...out);
+    touch(); renderBlocks();
+  }else{
+    newDraft({
+      title: title, source: firstLink,
+      blocks: [{type:"text", text:note}, ...out, {type:"heading", text:"自分の言葉で"}, {type:"text", text:""}]
+    });
+  }
+  toast("HTMLを取り込みました" + (cut ? "（長いので途中まで）" : ""));
+}
 
 /* --- 写真。メールが重くならないように縮めてから入れます --- */
 $("#filepick").onchange = e => {
@@ -1168,20 +1261,6 @@ $("#menubtn").onclick = () => {
     renderBottom(); segCounts();
     toast(n + "件を消しました");
   });
-  mk("全部を書き出す", "機種変更の前に押してください", () => {
-    const blob = new Blob([JSON.stringify({app:"MemoNote-Mobile-Backup", at:nowISO(),
-                                           drafts:D, tasks:T}, null, 1)],
-      {type:"application/json"});
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = "MemoNote_backup_" + nowISO().slice(0,10) + ".json";
-    a.click();
-    setTimeout(() => URL.revokeObjectURL(a.href), 4000);
-    toast("書き出しました");
-  });
-  mk("書き出したものを読み込む", "新しい端末で使います", () => $("#restorepick").click());
-  mk("会社アドレスを決める", SET.mailTo || "まだ登録されていません", openMailSetting);
-  mk("分野を編集する", FIELDS().join(" / "), openFieldSetting);
   mk("選んだものを消す", "一覧でチェックしたものを消します", () => {
     if(!picked.size){ toast("一覧でチェックを入れてください", true); return; }
     const nn = picked.size;
@@ -1190,6 +1269,14 @@ $("#menubtn").onclick = () => {
     picked = new Set(); saveNow(); renderList(); renderBottom();
     toast(nn + "件を消しました");
   });
+  mk("分野を編集する", FIELDS().join(" / "), openFieldSetting);
+
+  /* ---- ここで区切って、設定まわりは色を変える ---- */
+  const hr = el("div");
+  hr.style.cssText = "border-top:1px solid var(--line);margin:6px 0 16px";
+  SIN.appendChild(hr);
+  mk("会社アドレスを決める", SET.mailTo || "まだ登録されていません", openMailSetting, " ghost set");
+  mk("機種変更する時", "書き出し・読み込みはここから", openMoveSetting, " ghost set");
   mk("使い方", "", showHelp);
   const ver = el("p", null, "MemoNote Mobile " + APP_VERSION +
     " ・ 下書き " + D.length + "件 ・ ToDo " + T.length + "件");
@@ -1220,6 +1307,34 @@ $("#restorepick").onchange = e => {
   };
   r.readAsText(f);
 };
+/* 機種変更する時（書き出す / 読み込む） */
+function exportAll(){
+    const blob = new Blob([JSON.stringify({app:"MemoNote-Mobile-Backup", at:nowISO(),
+                                           drafts:D, tasks:T}, null, 1)],
+      {type:"application/json"});
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "MemoNote_backup_" + nowISO().slice(0,10) + ".json";
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+    toast("書き出しました");
+  }
+function openMoveSetting(){
+  SIN.innerHTML = "";
+  SIN.appendChild(el("h3", null, "機種変更する時"));
+  SIN.appendChild(el("p", null, "① 今の端末で「全部を書き出す」を押して、できたファイルを新しい端末へ移します（メール添付やGoogleドライブなど）。② 新しい端末で「書き出したものを読み込む」を押して、そのファイルを選びます。"));
+  const mk = (label, sub, fn) => {
+    const b = el("button","big ghost set", label);
+    b.style.cssText = "width:100%;margin-bottom:10px;text-align:left;padding:14px 16px";
+    const t = el("div"); t.style.cssText = "font-size:12px;color:var(--tx-faint);font-weight:400;margin-top:2px";
+    t.textContent = sub; b.appendChild(t);
+    b.onclick = () => { closeSheet(); fn(); };
+    SIN.appendChild(b);
+  };
+  mk("全部を書き出す", "機種変更の前に、今の端末で押します", exportAll);
+  mk("書き出したものを読み込む", "新しい端末で押します", () => $("#restorepick").click());
+  SHEET.classList.add("on");
+}
 function showHelp(){
   SIN.innerHTML = "";
   SIN.appendChild(el("h3", null, "使い方"));
@@ -1240,7 +1355,9 @@ function showHelp(){
    ["分野","⋯ の「分野を編集する」で、技術・マネジメント以外も足せます。会社側と同じ言葉にしておくと揃います。"],
    ["送る","一覧で送るものにチェックを入れて「会社に送る」。写真が無ければ、宛先入りでメールアプリが開きます。"],
    ["会社側","MemoNote を開いて取り込むと、勉強ノートになります。同じものを二度送っても増えません。"],
-   ["機種変更","メニューの「全部を書き出す」でファイルを保存し、新しい端末で「読み込む」を押します。"]
+   ["ニュース","上の 🚗 で自動車ニュース、🤖 でAIニュースが開きます。毎朝自動で更新され、圏外でも前回分が読めます。"],
+   ["HTMLを入れる","AIの調査結果などのHTMLファイルは、ファイルアプリの「共有」から MemoNote を選ぶか、下書きの「＋ HTML」で選びます。見出しと文章に分けて入ります。"],
+   ["機種変更","メニューの「機種変更する時」→「全部を書き出す」でファイルを保存し、新しい端末で「書き出したものを読み込む」を押します。"]
   ].forEach(([a,b]) => {
     const p = el("p"); p.style.margin = "0 0 12px";
     const s = el("b"); s.textContent = a + " — "; s.style.color = "var(--tx)";
@@ -1260,6 +1377,26 @@ function showHelp(){
 function boot(){
   load();
   const q = new URLSearchParams(location.search);
+  if(q.get("sharedfile")){
+    /* 他のアプリから HTML / テキストファイルが共有されてきたとき（sw.js が一時保存している） */
+    history.replaceState(null, "", location.pathname);
+    go("list");
+    caches.open("memonote-share").then(async c => {
+      const r = await c.match("./shared-file");
+      if(!r){ toast("共有されたファイルが見つかりませんでした", true); return; }
+      const name = decodeURIComponent(r.headers.get("X-File-Name") || "shared.html");
+      const type = r.headers.get("Content-Type") || "";
+      let text = await r.text();
+      await c.delete("./shared-file");
+      if(!/html/i.test(type) && !/\.html?$/i.test(name)){
+        /* ただのテキストは、そのまま段落として入れる */
+        const esc = s => s.replace(/[&<>]/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[ch]));
+        text = "<title>" + esc(name) + "</title>" + text.split(/\n{2,}/).map(p => "<p>" + esc(p) + "</p>").join("");
+      }
+      importHtml(text, name, "new");
+    }).catch(() => toast("共有されたファイルを読めませんでした", true));
+    return;
+  }
   const shared = q.get("title") || q.get("text") || q.get("url");
   if(shared){
     /* 他のアプリから共有されてきたとき */
@@ -1294,7 +1431,13 @@ function boot(){
 window.addEventListener("pagehide", saveNow);
 document.addEventListener("visibilitychange", () => { if(document.hidden) saveNow(); });
 if("serviceWorker" in navigator){
-  window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(() => {});
+    /* 電波があるうちに最新のニュースを控えに入れておく（圏外でも🚗/🤖が読めるように） */
+    if(navigator.onLine) setTimeout(() => {
+      ["./news/items.json", "./ai/items.json", "./news/", "./ai/"].forEach(u => fetch(u, {cache:"no-store"}).catch(() => {}));
+    }, 3000);
+  });
 }
 boot();
 </script>
