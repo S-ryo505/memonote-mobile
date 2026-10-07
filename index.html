@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <!-- =====================================================================
-     MemoNote Mobile  v1.5.1
-     スマホで書いた勉強ノートを、会社の MemoNote へメールで送るためのアプリです。
+     MemoNote Mobile  v1.3.0
+     スマホで書いた勉強ノートと、ToDo・覚書・待ち球を、
+     会社の MemoNote へメールで送るためのアプリです。
      書いた内容は端末の中だけに残り、送信するときだけ外に出ます。
      ===================================================================== -->
 <html lang="ja">
@@ -48,6 +49,32 @@ input,textarea,select{font:inherit;color:inherit}
 .view{display:none}
 .view.on{display:block}
 
+/* ---------- 上の切り替え（ノート / ToDo・覚書） ---------- */
+.seg{display:flex;background:var(--panel);border-bottom:1px solid var(--line);flex:none;padding:0 14px}
+.seg.off{display:none}
+.seg button{flex:1;padding:11px 0;font-size:14px;color:var(--tx-faint);
+  border-bottom:2px solid transparent}
+.seg button.on{color:var(--teal);border-bottom-color:var(--teal);font-weight:700}
+.seg .n{font-family:var(--mono);font-size:11px;margin-left:6px;color:var(--amber)}
+
+/* ---------- ToDo・覚書 ---------- */
+.qadd{border:1px solid var(--line);border-radius:13px;background:var(--panel);
+  padding:13px 14px;margin-bottom:18px}
+.trow{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:11px 13px;
+  margin-bottom:9px;display:flex;gap:11px;align-items:flex-start;width:100%;text-align:left}
+.trow:active{background:var(--raise)}
+.trow.on{border-color:var(--teal)}
+.trow.sent{opacity:.5}
+.trow .pick{width:26px;height:26px;border-radius:8px;border:2px solid var(--tx-faint);flex:none;
+  display:grid;place-items:center;font-size:14px;color:transparent;margin-top:1px}
+.trow.on .pick{background:var(--teal);border-color:var(--teal);color:#04141A}
+.trow .bd{flex:1;min-width:0}
+.trow .tt{display:block;font-size:15px;word-break:break-word;line-height:1.6}
+.trow .mt{font-size:11.5px;color:var(--tx-faint);display:flex;gap:9px;flex-wrap:wrap;margin-top:3px}
+.trow .mt i{font-style:normal;font-family:var(--mono)}
+.kb{font-family:var(--mono);font-size:10.5px;border:1px solid currentColor;border-radius:4px;
+  padding:0 6px;flex:none;align-self:flex-start;margin-top:3px}
+
 /* ---------- 一覧 ---------- */
 .hint{color:var(--tx-dim);font-size:13px;margin:0 0 14px}
 .card{border:1px solid var(--line);border-radius:13px;background:var(--panel);
@@ -74,7 +101,6 @@ input,textarea,select{font:inherit;color:inherit}
   padding:14px 16px;font-size:16px;text-align:center}
 .big:active{filter:brightness(.9)}
 .big.ghost{background:transparent;color:var(--tx-dim);border:1px solid var(--line);flex:none;padding:14px 18px}
-.big.ghost.set{color:var(--violet);border-color:var(--violet)}
 .big[disabled]{opacity:.4}
 
 /* ---------- 編集 ---------- */
@@ -159,12 +185,32 @@ input,textarea,select{font:inherit;color:inherit}
     <span class="sp"></span>
     <button class="icb" id="backbtn" style="display:none">←</button>
     <button class="icb" id="delbtn" style="display:none">🗑</button>
-    <a class="icb" id="newsbtn" href="./news/" aria-label="自動車ニュース" title="自動車ニュース" style="text-decoration:none">🚗</a>
-    <a class="icb" id="aibtn" href="./ai/" aria-label="AIニュース" title="AIニュース" style="text-decoration:none">🤖</a>
     <button class="icb" id="menubtn">⋯</button>
   </header>
 
+  <div class="seg" id="seg">
+    <button data-seg="list">ノート<span class="n" id="segn-note"></span></button>
+    <button data-seg="task">ToDo・覚書<span class="n" id="segn-task"></span></button>
+  </div>
+
   <main class="main" id="main">
+    <!-- ToDo・覚書 -->
+    <section class="view" id="v-task">
+      <div class="qadd">
+        <div class="chips" id="tkinds" style="margin-bottom:10px"></div>
+        <textarea class="ed" id="tinput" rows="2"
+          placeholder="思い出したことを1行で。例: 操安の目標値を田中さんに確認"></textarea>
+        <div class="row" style="margin:10px 0 0"><span class="lb">期限</span>
+          <span class="chips" id="tdue" style="margin:0"></span></div>
+        <div class="row" style="margin:8px 0 0"><span class="lb">相手</span>
+          <input class="fld" id="tperson" placeholder="任意。会社側の人に結びつきます" list="personlist">
+          <datalist id="personlist"></datalist></div>
+        <button class="big" id="taddbtn" style="width:100%;margin-top:12px">追加する</button>
+      </div>
+      <p class="hint" id="taskhint"></p>
+      <div id="tcards"></div>
+    </section>
+
     <!-- 一覧 -->
     <section class="view on" id="v-list">
       <p class="hint" id="listhint"></p>
@@ -193,7 +239,6 @@ input,textarea,select{font:inherit;color:inherit}
         <button data-add="paste">＋ 貼り付け</button>
         <button data-add="formula">＋ 式</button>
         <button data-add="qa">＋ 問い</button>
-        <button data-add="html">＋ HTML</button>
       </div>
 
       <div class="sec">要約</div>
@@ -212,7 +257,6 @@ input,textarea,select{font:inherit;color:inherit}
 <div class="toast" id="toast"></div>
 <input type="file" id="filepick" accept="image/*" style="display:none">
 <input type="file" id="restorepick" accept=".json,application/json" style="display:none">
-<input type="file" id="htmlpick" accept=".html,.htm,text/html,application/xhtml+xml" style="display:none">
 
 <script>
 "use strict";
@@ -220,24 +264,32 @@ input,textarea,select{font:inherit;color:inherit}
    1. 保存（端末の中だけ）
    ===================================================================== */
 const KEY = "mnm_drafts_v1";
+const TKEY = "mnm_tasks_v1";        /* ToDo・覚書・待ち球 */
 const SKEY = "mnm_settings_v1";
-let SET = {mailTo:"", fields:[]};   /* 送り先と、分野の一覧。空なら既定の分野を使います */
+/* 送り先、分野の一覧、相手の名前の履歴。空なら既定を使います */
+const SET_DEF = {mailTo:"", fields:[], people:[]};
+let SET = Object.assign({}, SET_DEF);
 function loadSet(){
-  try{ SET = Object.assign({mailTo:"", fields:[]},
-                           JSON.parse(localStorage.getItem(SKEY) || "{}")); }
-  catch(_){ SET = {mailTo:"", fields:[]}; }
+  try{ SET = Object.assign({}, SET_DEF, JSON.parse(localStorage.getItem(SKEY) || "{}")); }
+  catch(_){ SET = Object.assign({}, SET_DEF); }
+  if(!Array.isArray(SET.people)) SET.people = [];
 }
 function saveSet(){ try{ localStorage.setItem(SKEY, JSON.stringify(SET)); }catch(_){} }
-const APP_VERSION = "1.5.1";
+const APP_VERSION = "1.3.0";
 let D = [];            /* 下書きの配列 */
+let T = [];            /* ToDo・覚書・待ち球の配列 */
 let cur = null;        /* 編集中の下書き */
 let picked = new Set();/* 一覧で選んだもの */
+let tpick = new Set(); /* ToDo 一覧で選んだもの */
 
 function load(){
   loadSet();
   try{ D = JSON.parse(localStorage.getItem(KEY) || "[]"); }
   catch(_){ D = []; }
   if(!Array.isArray(D)) D = [];
+  try{ T = JSON.parse(localStorage.getItem(TKEY) || "[]"); }
+  catch(_){ T = []; }
+  if(!Array.isArray(T)) T = [];
 }
 let saveTimer = null;
 function save(){
@@ -251,6 +303,7 @@ function saveNow(){
   clearTimeout(saveTimer);
   try{ localStorage.setItem(KEY, JSON.stringify(D)); }catch(_){}
 }
+function saveT(){ try{ localStorage.setItem(TKEY, JSON.stringify(T)); }catch(_){} }
 
 /* =====================================================================
    2. 道具
@@ -302,10 +355,25 @@ function go(v){
   $("#backbtn").style.display = v === "edit" ? "" : "none";
   $("#delbtn").style.display = v === "edit" ? "" : "none";
   $("#topttl").textContent = v === "edit" ? "下書き" : "MemoNote";
+  $("#seg").classList.toggle("off", v === "edit");
+  document.querySelectorAll("#seg button").forEach(b =>
+    b.classList.toggle("on", b.dataset.seg === v));
   $("#main").scrollTop = 0;
   renderBottom();
   if(v === "list") renderList();
+  if(v === "task") renderTaskView();
+  segCounts();
 }
+/* 上の切り替えに出す未送信の数 */
+function segCounts(){
+  const dn = D.filter(d => !d.sentAt).length;
+  const tn = T.filter(t => !t.sentAt).length;
+  $("#segn-note").textContent = dn ? dn : "";
+  $("#segn-task").textContent = tn ? tn : "";
+}
+document.querySelectorAll("#seg button").forEach(b => {
+  b.onclick = () => { if(view === "edit") saveNow(); go(b.dataset.seg); };
+});
 $("#backbtn").onclick = () => { saveNow(); go("list"); };
 $("#aibtn").onclick = () => { if(cur) openAI(); };
 $("#delbtn").onclick = () => {
@@ -356,6 +424,210 @@ function renderList(){
     c.onclick = () => openDraft(d.id);
     box.appendChild(c);
   });
+  segCounts();
+}
+
+/* =====================================================================
+   4.5 ToDo・覚書・待ち球
+   会社の MemoNote の右側にある3つの欄と同じ区分です。
+   出張先や休みの日に思い出したことを、1行で溜めておいて、まとめて送ります。
+   ===================================================================== */
+const TKINDS = [["todo","ToDo","var(--amber)"],
+                ["keep","覚書","var(--green)"],
+                ["waiting","待ち球","var(--coral)"]];
+const kindName  = k => (TKINDS.find(x => x[0] === k) || TKINDS[0])[1];
+const kindColor = k => (TKINDS.find(x => x[0] === k) || TKINDS[0])[2];
+/* 入力欄の今の状態。種類と相手は続けて入れることが多いので残します */
+let tDraft = {kind:"todo", due:null, person:""};
+
+const ymdOf = d => d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());
+function addDays(n){ const d = new Date(); d.setDate(d.getDate()+n); return d; }
+/* 次の金曜（今日が金なら今日）。週明けは次の月曜 */
+function nextDow(dow){
+  const d = new Date(), diff = (dow - d.getDay() + 7) % 7;
+  d.setDate(d.getDate() + diff);
+  return d;
+}
+function dueChips(){
+  return [["なし", null],
+          ["今日", ymdOf(new Date())],
+          ["明日", ymdOf(addDays(1))],
+          ["今週金", ymdOf(nextDow(5))],
+          ["週明け", ymdOf(nextDow(1))]];
+}
+function dueLabelM(s){
+  if(!s) return "";
+  const t = ymdOf(new Date());
+  if(s === t) return "今日まで";
+  if(s === ymdOf(addDays(1))) return "明日まで";
+  const d = new Date(s + "T00:00:00");
+  return isNaN(d) ? s : (d.getMonth()+1)+"/"+d.getDate()+"まで";
+}
+
+function renderTaskView(){
+  /* 種類 */
+  const kb = $("#tkinds"); kb.innerHTML = "";
+  TKINDS.forEach(([k,label,col]) => {
+    const b = el("button","chip" + (tDraft.kind === k ? " on" : ""), label);
+    if(tDraft.kind === k){ b.style.borderColor = col; b.style.color = col;
+                           b.style.background = "transparent"; }
+    b.onclick = () => { tDraft.kind = k; renderTaskView(); };
+    kb.appendChild(b);
+  });
+  /* 期限 */
+  const db = $("#tdue"); db.innerHTML = "";
+  dueChips().forEach(([label, val]) => {
+    const b = el("button","chip" + (tDraft.due === val ? " on" : ""), label);
+    b.onclick = () => { tDraft.due = val; renderTaskView(); };
+    db.appendChild(b);
+  });
+  const dp = el("input"); dp.type = "date"; dp.className = "chip";
+  dp.style.cssText = "padding:5px 10px;font-size:13px;background:none";
+  dp.value = tDraft.due || "";
+  dp.onchange = () => { tDraft.due = dp.value || null; renderTaskView(); };
+  db.appendChild(dp);
+  /* 相手 */
+  const pi = $("#tperson");
+  pi.value = tDraft.person || "";
+  pi.oninput = () => { tDraft.person = pi.value; };
+  const pl = $("#personlist"); pl.innerHTML = "";
+  SET.people.forEach(n => { const o = document.createElement("option"); o.value = n; pl.appendChild(o); });
+
+  const ta = $("#tinput");
+  ta.oninput = () => autoGrow(ta);
+  autoGrow(ta);
+  $("#taddbtn").onclick = addQuickTask;
+
+  /* 一覧 */
+  const box = $("#tcards"); box.innerHTML = "";
+  const unsent = T.filter(t => !t.sentAt).length;
+  $("#taskhint").textContent = T.length
+    ? "未送信 " + unsent + "件。送るものを選んで、下の「会社に送る」を押します。"
+    : "ここに書いたものは、会社の MemoNote の右側（ToDo・覚書・待ち球）に入ります。";
+  [...T].sort((a,b) => (b.createdAt||"").localeCompare(a.createdAt||"")).forEach(t => {
+    const r = el("button","trow" + (tpick.has(t.id) ? " on" : "") + (t.sentAt ? " sent" : ""));
+    const p = el("span","pick","✓");
+    p.onclick = e => {
+      e.stopPropagation();
+      tpick.has(t.id) ? tpick.delete(t.id) : tpick.add(t.id);
+      renderTaskView(); renderBottom();
+    };
+    r.appendChild(p);
+    const bd = el("span","bd");
+    bd.appendChild(el("span","tt", t.text || "（空）"));
+    const mt = el("span","mt");
+    mt.appendChild(el("i", null, shortDate(t.createdAt)));
+    if(t.due)    mt.appendChild(el("span", null, dueLabelM(t.due)));
+    if(t.person) mt.appendChild(el("span", null, t.person));
+    if(t.memo)   mt.appendChild(el("span", null, "メモあり"));
+    mt.appendChild(el("span", null, t.sentAt ? "送信済" : "未送信"));
+    bd.appendChild(mt);
+    r.appendChild(bd);
+    const kbg = el("span","kb", kindName(t.kind));
+    kbg.style.color = kindColor(t.kind);
+    r.appendChild(kbg);
+    r.onclick = () => openTask(t.id);
+    box.appendChild(r);
+  });
+  segCounts();
+}
+
+function addQuickTask(){
+  const ta = $("#tinput");
+  const text = ta.value.trim();
+  if(!text){ toast("内容を書いてください", true); ta.focus(); return; }
+  const person = ($("#tperson").value || "").trim();
+  T.push({id:"t_" + Date.now().toString(36) + Math.random().toString(36).slice(2,7),
+          kind:tDraft.kind, text:text, due:tDraft.due || null, person:person,
+          memo:"", createdAt:nowISO(), sentAt:null});
+  if(person && !SET.people.includes(person)){
+    SET.people = [person, ...SET.people].slice(0,30); saveSet();
+  }
+  /* 期限と相手は、次の1件に持ち越しません。前のものが黙って付くのを防ぐためです。
+     種類だけは、続けて同じものを入れることが多いので残します。 */
+  tDraft.due = null; tDraft.person = "";
+  saveT();
+  ta.value = ""; autoGrow(ta);
+  renderTaskView(); renderBottom();
+  toast(kindName(tDraft.kind) + "に1件足しました");
+  ta.focus();
+}
+
+/* 1件を直す画面 */
+function openTask(id){
+  const t = T.find(x => x.id === id); if(!t) return;
+  SIN.innerHTML = "";
+  SIN.appendChild(el("h3", null, kindName(t.kind) + "を直す"));
+  SIN.appendChild(el("p", null, t.sentAt
+    ? "送信済みです。直して送り直すと、会社側では別の1件として届きます。"
+    : "内容・種類・期限・相手を直せます。"));
+
+  SIN.appendChild(el("label", null, "内容"));
+  const ta = el("textarea"); ta.className = "ed"; ta.value = t.text || "";
+  ta.oninput = () => autoGrow(ta);
+  SIN.appendChild(ta);
+
+  SIN.appendChild(el("label", null, "種類"));
+  const kb = el("div","chips");
+  let k = t.kind;
+  const drawK = () => {
+    kb.innerHTML = "";
+    TKINDS.forEach(([kk,label,col]) => {
+      const b = el("button","chip" + (k === kk ? " on" : ""), label);
+      if(k === kk){ b.style.borderColor = col; b.style.color = col; b.style.background = "transparent"; }
+      b.onclick = () => { k = kk; drawK(); };
+      kb.appendChild(b);
+    });
+  };
+  drawK(); SIN.appendChild(kb);
+
+  SIN.appendChild(el("label", null, "期限"));
+  const db = el("div","chips");
+  let due = t.due || null;
+  const drawD = () => {
+    db.innerHTML = "";
+    dueChips().forEach(([label, val]) => {
+      const b = el("button","chip" + (due === val ? " on" : ""), label);
+      b.onclick = () => { due = val; drawD(); };
+      db.appendChild(b);
+    });
+    const dp = el("input"); dp.type = "date"; dp.className = "chip";
+    dp.style.cssText = "padding:5px 10px;font-size:13px;background:none";
+    dp.value = due || "";
+    dp.onchange = () => { due = dp.value || null; drawD(); };
+    db.appendChild(dp);
+  };
+  drawD(); SIN.appendChild(db);
+
+  SIN.appendChild(el("label", null, "相手"));
+  const pi = el("input"); pi.className = "fld"; pi.value = t.person || "";
+  pi.setAttribute("list","personlist");
+  SIN.appendChild(pi);
+
+  SIN.appendChild(el("label", null, "メモ（任意。会社側では小さく添えて表示されます）"));
+  const mo = el("textarea"); mo.className = "ed"; mo.value = t.memo || "";
+  mo.oninput = () => autoGrow(mo);
+  SIN.appendChild(mo);
+
+  const btns = el("div","btns");
+  const del = el("button","big ghost","消す");
+  del.onclick = () => {
+    if(!confirm("この1件を消します。元に戻せません。")) return;
+    T = T.filter(x => x.id !== t.id); tpick.delete(t.id); saveT();
+    closeSheet(); renderTaskView(); renderBottom(); toast("消しました");
+  };
+  const ok = el("button","big","保存");
+  ok.onclick = () => {
+    t.text = ta.value.trim(); t.kind = k; t.due = due;
+    t.person = pi.value.trim(); t.memo = mo.value.trim();
+    if(t.person && !SET.people.includes(t.person)){
+      SET.people = [t.person, ...SET.people].slice(0,30); saveSet();
+    }
+    saveT(); closeSheet(); renderTaskView(); toast("直しました");
+  };
+  btns.append(del, ok); SIN.appendChild(btns);
+  SHEET.classList.add("on");
+  setTimeout(() => autoGrow(ta), 0);
 }
 
 /* =====================================================================
@@ -363,6 +635,20 @@ function renderList(){
    ===================================================================== */
 function renderBottom(){
   const b = $("#bottom"); b.innerHTML = "";
+  if(view === "task"){
+    const n = tpick.size;
+    const all = el("button","big ghost","未送信を全部選ぶ");
+    all.onclick = () => {
+      T.filter(x => !x.sentAt).forEach(x => tpick.add(x.id));
+      if(!tpick.size){ toast("未送信がありません"); return; }
+      renderTaskView(); renderBottom();
+    };
+    const send = el("button","big", n ? "会社に送る（" + n + "件）" : "会社に送る");
+    send.disabled = !n;
+    send.onclick = () => shareTasks();
+    b.append(all, send);
+    return;
+  }
   if(view === "edit"){
     const back = el("button","big","書き終わり");
     back.onclick = () => { saveNow(); go("list"); };
@@ -525,7 +811,6 @@ document.querySelectorAll("[data-add]").forEach(b => b.onclick = () => {
   const t = b.dataset.add;
   if(t === "image"){ $("#filepick").click(); return; }
   if(t === "paste"){ pasteImage(); return; }
-  if(t === "html"){ htmlTarget = "append"; $("#htmlpick").click(); return; }
   const nb = {type:t};
   if(t === "text" || t === "heading") nb.text = "";
   if(t === "formula"){ nb.expr = ""; nb.symbols = [["","",""]]; }
@@ -538,93 +823,6 @@ document.querySelectorAll("[data-add]").forEach(b => b.onclick = () => {
     if(f) f.focus();
   }, 30);
 });
-
-/* --- HTMLファイル（AIの調査結果など）を、見出しと文章に分けて入れます --- */
-let htmlTarget = "new";  /* "new" = 新しい下書きにする / "append" = 開いている下書きに足す */
-$("#htmlpick").onchange = e => {
-  const f = e.target.files && e.target.files[0];
-  e.target.value = "";
-  if(!f) return;
-  f.text().then(t => importHtml(t, f.name, htmlTarget)).catch(() => toast("ファイルを読めませんでした", true));
-};
-const HTML_MAX_CHARS = 60000;   /* 端末の保存容量を守るための上限（文字数） */
-const HTML_MAX_IMAGES = 6;
-async function importHtml(html, fileName, mode){
-  const doc = new DOMParser().parseFromString(html, "text/html");
-  doc.querySelectorAll("script,style,noscript,template,iframe,nav,footer,header button,form").forEach(n => n.remove());
-  const norm = s => (s || "").replace(/[ \t ]+/g, " ").replace(/\s*\n\s*/g, "\n").trim();
-  const blocks = [], imgs = [];
-  let buf = [], total = 0, cut = false;
-  const flush = () => {
-    if(buf.length){ blocks.push({type:"text", text: buf.join("\n")}); buf = []; }
-  };
-  const addText = t => {
-    t = norm(t); if(!t) return;
-    if(total + t.length > HTML_MAX_CHARS){ cut = true; return; }
-    total += t.length; buf.push(t);
-    if(buf.join("\n").length > 1500) flush();
-  };
-  const walk = node => {
-    if(cut) return;
-    for(const n of node.childNodes){
-      if(cut) return;
-      if(n.nodeType === 3){ addText(n.textContent); continue; }
-      if(n.nodeType !== 1) continue;
-      const tag = n.tagName.toLowerCase();
-      if(/^h[1-4]$/.test(tag)){
-        flush();
-        const t = norm(n.textContent);
-        if(t){ blocks.push({type:"heading", text:t}); total += t.length; }
-      }else if(tag === "li"){
-        addText("・" + n.textContent);
-      }else if(tag === "tr"){
-        addText([...n.children].map(c => norm(c.textContent)).join(" | "));
-      }else if(tag === "pre" || tag === "p" || tag === "blockquote" || tag === "figcaption" || tag === "dt" || tag === "dd"){
-        addText(n.textContent);
-      }else if(tag === "br"){
-        /* 何もしない */
-      }else if(tag === "img"){
-        const src = n.getAttribute("src") || "";
-        if(/^data:image\/(png|jpe?g|webp|gif)/i.test(src) && imgs.length < HTML_MAX_IMAGES){
-          flush();
-          const at = blocks.length;
-          blocks.push(null);   /* 画像の場所を取っておく */
-          imgs.push({at, src, caption: n.getAttribute("alt") || ""});
-        }
-      }else if(tag === "svg"){
-        /* グラフ等の SVG は文字として読めないので飛ばします */
-      }else if(!n.querySelector("p,div,h1,h2,h3,h4,li,ul,ol,table,tr,pre,section,article,img,blockquote,dl,figure")){
-        addText(n.textContent);   /* 中に段落を持たない要素は、ひとかたまりの文として扱う */
-      }else{
-        walk(n);
-      }
-    }
-  };
-  walk(doc.body || doc.documentElement);
-  flush();
-  /* 画像は縮めてから入れる（読めなかったものは外す） */
-  for(const im of imgs){
-    try{
-      const blob = await (await fetch(im.src)).blob();
-      blocks[im.at] = {type:"image", data: await shrink(blob, 1600, 0.72), caption: im.caption};
-    }catch(_){ blocks[im.at] = null; }
-  }
-  const out = blocks.filter(Boolean);
-  if(!out.length){ toast("このHTMLから文章を取り出せませんでした", true); return; }
-  const title = norm((doc.title || (doc.querySelector("h1") || {}).textContent || fileName || "HTML").split("\n")[0]).slice(0, 80);
-  const firstLink = [...doc.querySelectorAll("a[href^='http']")].map(a => a.href)[0] || "";
-  const note = "（" + (fileName || "HTML") + " から取り込み" + (cut ? "。長いため後半は省略" : "") + (imgs.length ? "。画像" + out.filter(b => b.type === "image").length + "枚" : "") + "）";
-  if(mode === "append" && cur){
-    cur.blocks.push({type:"heading", text:title}, {type:"text", text:note}, ...out);
-    touch(); renderBlocks();
-  }else{
-    newDraft({
-      title: title, source: firstLink,
-      blocks: [{type:"text", text:note}, ...out, {type:"heading", text:"自分の言葉で"}, {type:"text", text:""}]
-    });
-  }
-  toast("HTMLを取り込みました" + (cut ? "（長いので途中まで）" : ""));
-}
 
 /* --- 写真。メールが重くならないように縮めてから入れます --- */
 $("#filepick").onchange = e => {
@@ -754,34 +952,50 @@ function openAI(){
 /* =====================================================================
    8. 会社に送る
    ===================================================================== */
-function buildPackage(ids){
-  return {
+/* 封筒は1種類だけです。中に drafts（勉強ノート）と tasks（ToDo など）が
+   入りうる、という形にしてあります。会社側は入っているものだけを見ます。
+   app の文字列は、会社側がメールを見つける目印なので変えないでください。 */
+function buildPackage(ids, tids){
+  const pkg = {
     app: "MemoNote-Mobile", version: 1, appVersion: APP_VERSION,
-    sentAt: nowISO(),
-    drafts: D.filter(d => ids.includes(d.id)).map(d => ({
+    sentAt: nowISO()
+  };
+  if(ids && ids.length)
+    pkg.drafts = D.filter(d => ids.includes(d.id)).map(d => ({
       id: d.id, createdAt: d.createdAt, kind: "study",
       title: d.title, field: d.field, topic: d.topic, source: d.source,
       level: d.level, tags: d.tags || [], summary: d.summary || "",
       applied: d.applied || "",
       blocks: d.blocks || []
-    }))
-  };
+    }));
+  if(tids && tids.length)
+    pkg.tasks = T.filter(t => tids.includes(t.id)).map(t => ({
+      id: t.id, createdAt: t.createdAt,
+      kind: (t.kind === "keep" || t.kind === "waiting") ? t.kind : "todo",
+      text: t.text || "", due: t.due || null,
+      person: t.person || "", memo: t.memo || ""
+    }));
+  return pkg;
 }
 /* 送り方を選ぶ画面。写真の有無と大きさで、使える手段が変わります。 */
-function share(){
-  const ids = [...picked];
-  if(!ids.length){ toast("送るものを選んでください", true); return; }
-  const pkg = buildPackage(ids);
+function share(){ sendSheet([...picked], [], "勉強ノート"); }
+function shareTasks(){ sendSheet([], [...tpick], "ToDo・覚書"); }
+
+function sendSheet(ids, tids, label){
+  if(!ids.length && !tids.length){ toast("送るものを選んでください", true); return; }
+  const pkg = buildPackage(ids, tids);
   const text = JSON.stringify(pkg);
   const kb = Math.round(text.length/1024);
-  const hasImg = pkg.drafts.some(d => (d.blocks||[]).some(b => b.type === "image"));
+  const n = ids.length + tids.length;
+  const hasImg = (pkg.drafts||[]).some(d => (d.blocks||[]).some(b => b.type === "image"));
   /* メールの本文に入れられる長さの目安。これを超えると途中で切られることがあります */
   const canMail = !hasImg && text.length < 1800;
+  const subject = "MemoNote# " + label + " " + n + "件";
 
   SIN.innerHTML = "";
   SIN.appendChild(el("h3", null, "会社に送る"));
   SIN.appendChild(el("p", null,
-    ids.length + "件 ・ " + kb + "KB" + (hasImg ? " ・ 写真あり" : "")));
+    label + " " + n + "件 ・ " + kb + "KB" + (hasImg ? " ・ 写真あり" : "")));
 
   const mk = (label, sub, cls, fn) => {
     const b = el("button","big" + (cls||""), label);
@@ -798,10 +1012,10 @@ function share(){
     mk("メールを開いて送る", "宛先も中身も入った状態で開きます。送信を押すだけです", "", () => {
       closeSheet();
       const url = "mailto:" + encodeURIComponent(SET.mailTo) +
-        "?subject=" + encodeURIComponent("MemoNote# 勉強ノート " + ids.length + "件") +
+        "?subject=" + encodeURIComponent(subject) +
         "&body=" + encodeURIComponent(text);
       location.href = url;
-      markSent(ids, kb);
+      markSent(ids, tids, kb);
     });
   } else if(canMail && !SET.mailTo){
     mk("会社アドレスを登録する", "登録すると、写真なしのノートは1タップで送れます", " ghost", () => {
@@ -812,10 +1026,10 @@ function share(){
   mk(hasImg ? "共有して送る（写真も送れる）" : "共有して送る",
      SET.mailTo ? "メールアプリを選びます。宛先はコピーしてあるので長押しで貼れます"
                 : "メールアプリを選びます", hasImg ? "" : " ghost",
-     () => { closeSheet(); shareFile(ids, pkg, text, kb); });
+     () => { closeSheet(); shareFile(ids, tids, pkg, text, kb, subject); });
 
   mk("ファイルに保存する", "あとから手で添付します", " ghost", () => {
-    closeSheet(); saveFile(pkg, text); markSent(ids, kb);
+    closeSheet(); saveFile(pkg, text); markSent(ids, tids, kb);
   });
 
   const c = el("button","big ghost","やめる");
@@ -829,23 +1043,22 @@ function pkgFile(pkg, text){
   const name = "MemoNote_" + pkg.sentAt.replace(/[-:T]/g,"").slice(0,12) + ".txt";
   return new File([text], name, {type:"text/plain"});
 }
-async function shareFile(ids, pkg, text, kb){
+async function shareFile(ids, tids, pkg, text, kb, subject){
   const file = pkgFile(pkg, text);
-  const subject = "MemoNote# 勉強ノート " + ids.length + "件";
   if(SET.mailTo){
     try{ await navigator.clipboard.writeText(SET.mailTo); }catch(_){}
   }
   try{
     if(navigator.canShare && navigator.canShare({files:[file]})){
       await navigator.share({files:[file], title:subject, text:subject});
-      markSent(ids, kb);
+      markSent(ids, tids, kb);
       return;
     }
   }catch(e){
     if(e && e.name === "AbortError") return;   /* 本人が取り消した */
   }
   saveFile(pkg, text);
-  markSent(ids, kb);
+  markSent(ids, tids, kb);
 }
 function saveFile(pkg, text){
   const file = pkgFile(pkg, text);
@@ -856,12 +1069,19 @@ function saveFile(pkg, text){
   setTimeout(() => URL.revokeObjectURL(a.href), 4000);
   toast("保存しました。メールに添付して送ってください");
 }
-function markSent(ids, kb){
-  const t = nowISO();
-  D.forEach(d => { if(ids.includes(d.id)) d.sentAt = t; });
-  picked = new Set(); saveNow();
-  toast(ids.length + "件を送信にまわしました（" + kb + "KB）");
-  go("list");
+function markSent(ids, tids, kb){
+  const at = nowISO();
+  if(ids && ids.length){
+    D.forEach(d => { if(ids.includes(d.id)) d.sentAt = at; });
+    picked = new Set(); saveNow();
+  }
+  if(tids && tids.length){
+    T.forEach(t => { if(tids.includes(t.id)) t.sentAt = at; });
+    tpick = new Set(); saveT();
+  }
+  const n = (ids ? ids.length : 0) + (tids ? tids.length : 0);
+  toast(n + "件を送信にまわしました（" + kb + "KB）");
+  go((tids && tids.length && !(ids && ids.length)) ? "task" : "list");
 }
 /* 分野の並び。左から順に、下書きの画面にボタンとして出ます。 */
 function openFieldSetting(){
@@ -932,7 +1152,6 @@ $("#menubtn").onclick = () => {
     b.onclick = () => { closeSheet(); fn(); };
     SIN.appendChild(b);
   };
-  /* ---- 下書きの整理 ---- */
   mk("送信済みを片づける", "送信済みの下書きをまとめて消します", () => {
     const n = D.filter(d => d.sentAt).length;
     if(!n){ toast("送信済みはありません"); return; }
@@ -940,6 +1159,29 @@ $("#menubtn").onclick = () => {
     D = D.filter(d => !d.sentAt); saveNow(); renderList(); renderBottom();
     toast(n + "件を消しました");
   });
+  mk("送信済みの ToDo を片づける", "送信済みの ToDo・覚書・待ち球をまとめて消します", () => {
+    const n = T.filter(t => t.sentAt).length;
+    if(!n){ toast("送信済みはありません"); return; }
+    if(!confirm("送信済み " + n + "件を消します。会社側には残ります。よろしいですか。")) return;
+    T = T.filter(t => !t.sentAt); saveT();
+    if(view === "task") renderTaskView();
+    renderBottom(); segCounts();
+    toast(n + "件を消しました");
+  });
+  mk("全部を書き出す", "機種変更の前に押してください", () => {
+    const blob = new Blob([JSON.stringify({app:"MemoNote-Mobile-Backup", at:nowISO(),
+                                           drafts:D, tasks:T}, null, 1)],
+      {type:"application/json"});
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "MemoNote_backup_" + nowISO().slice(0,10) + ".json";
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+    toast("書き出しました");
+  });
+  mk("書き出したものを読み込む", "新しい端末で使います", () => $("#restorepick").click());
+  mk("会社アドレスを決める", SET.mailTo || "まだ登録されていません", openMailSetting);
+  mk("分野を編集する", FIELDS().join(" / "), openFieldSetting);
   mk("選んだものを消す", "一覧でチェックしたものを消します", () => {
     if(!picked.size){ toast("一覧でチェックを入れてください", true); return; }
     const nn = picked.size;
@@ -948,16 +1190,9 @@ $("#menubtn").onclick = () => {
     picked = new Set(); saveNow(); renderList(); renderBottom();
     toast(nn + "件を消しました");
   });
-  mk("分野を編集する", FIELDS().join(" / "), openFieldSetting);
-
-  /* ---- ここで区切って、設定まわりは色を変える ---- */
-  const hr = el("div");
-  hr.style.cssText = "border-top:1px solid var(--line);margin:6px 0 16px";
-  SIN.appendChild(hr);
-  mk("会社アドレスを決める", SET.mailTo || "まだ登録されていません", openMailSetting, " ghost set");
-  mk("機種変更する時", "書き出し・読み込みはここから", openMoveSetting, " ghost set");
   mk("使い方", "", showHelp);
-  const ver = el("p", null, "MemoNote Mobile " + APP_VERSION + " ・ 下書き " + D.length + "件");
+  const ver = el("p", null, "MemoNote Mobile " + APP_VERSION +
+    " ・ 下書き " + D.length + "件 ・ ToDo " + T.length + "件");
   ver.style.cssText = "font-size:11.5px;color:var(--tx-faint);margin:14px 0 0;text-align:center";
   SIN.appendChild(ver);
   SHEET.classList.add("on");
@@ -971,48 +1206,31 @@ $("#restorepick").onchange = e => {
     try{
       const o = JSON.parse(r.result);
       const arr = Array.isArray(o) ? o : (o.drafts || []);
-      if(!arr.length){ toast("下書きが入っていません", true); return; }
+      const tarr = (o && Array.isArray(o.tasks)) ? o.tasks : [];
+      if(!arr.length && !tarr.length){ toast("下書きが入っていません", true); return; }
       const have = new Set(D.map(d => d.id));
       const add = arr.filter(d => d && d.id && !have.has(d.id));
-      D = D.concat(add); saveNow(); renderList(); renderBottom();
-      toast(add.length + "件を読み込みました");
+      D = D.concat(add); saveNow();
+      const haveT = new Set(T.map(t => t.id));
+      const addT = tarr.filter(t => t && t.id && !haveT.has(t.id));
+      T = T.concat(addT); saveT();
+      renderList(); renderBottom();
+      toast((add.length + addT.length) + "件を読み込みました");
     }catch(_){ toast("読めないファイルです", true); }
   };
   r.readAsText(f);
 };
-/* 機種変更する時（書き出す / 読み込む） */
-function exportAll(){
-  const blob = new Blob([JSON.stringify({app:"MemoNote-Mobile-Backup", at:nowISO(), drafts:D}, null, 1)],
-    {type:"application/json"});
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = "MemoNote_backup_" + nowISO().slice(0,10) + ".json";
-  a.click();
-  setTimeout(() => URL.revokeObjectURL(a.href), 4000);
-  toast("書き出しました");
-}
-function openMoveSetting(){
-  SIN.innerHTML = "";
-  SIN.appendChild(el("h3", null, "機種変更する時"));
-  SIN.appendChild(el("p", null, "① 今の端末で「全部を書き出す」を押して、できたファイルを新しい端末へ移します（メール添付やGoogleドライブなど）。② 新しい端末で「書き出したものを読み込む」を押して、そのファイルを選びます。"));
-  const mk = (label, sub, fn) => {
-    const b = el("button","big ghost set", label);
-    b.style.cssText = "width:100%;margin-bottom:10px;text-align:left;padding:14px 16px";
-    const t = el("div"); t.style.cssText = "font-size:12px;color:var(--tx-faint);font-weight:400;margin-top:2px";
-    t.textContent = sub; b.appendChild(t);
-    b.onclick = () => { closeSheet(); fn(); };
-    SIN.appendChild(b);
-  };
-  mk("全部を書き出す", "機種変更の前に、今の端末で押します", exportAll);
-  mk("書き出したものを読み込む", "新しい端末で押します", () => $("#restorepick").click());
-  SHEET.classList.add("on");
-}
 function showHelp(){
   SIN.innerHTML = "";
   SIN.appendChild(el("h3", null, "使い方"));
   const ul = el("div");
   ul.style.cssText = "font-size:14px;line-height:1.9;color:var(--tx-dim)";
-  [["書く","「＋ 新しく書く」で1件ずつ作ります。1件 = 会社での1ノートです。"],
+  [["2つの画面","上の「ノート」は勉強ノート、「ToDo・覚書」は会社の右側の欄に入る1行ものです。"],
+   ["ToDo を溜める","「ToDo・覚書」で種類を選び、1行書いて「追加する」。期限と相手は任意です。"],
+   ["待ち球","人に頼んで返事を待っているものです。会社側では経過日数が出ます。"],
+   ["ToDo を送る","チェックを入れて「会社に送る」。写真が無いので、ほぼいつも1タップのメールで送れます。"],
+   ["会社側の受け取り","MemoNote の右の ToDo 欄の下に「スマホから受け取る」が出ます。押すと届いたものが並び、1件ずつ入れるか捨てるかを選べます。"],
+   ["書く","「＋ 新しく書く」で1件ずつ作ります。1件 = 会社での1ノートです。"],
    ["話して入れる","キーボードのマイクを押すと、話した内容が文字になります。"],
    ["写真","「＋ 写真」で撮るか選びます。自動で縮めるのでメールが重くなりません。"],
    ["共有から作る","他のアプリの共有先に MemoNote が出ます。記事の題名とURLが入った下書きができます。"],
@@ -1022,8 +1240,7 @@ function showHelp(){
    ["分野","⋯ の「分野を編集する」で、技術・マネジメント以外も足せます。会社側と同じ言葉にしておくと揃います。"],
    ["送る","一覧で送るものにチェックを入れて「会社に送る」。写真が無ければ、宛先入りでメールアプリが開きます。"],
    ["会社側","MemoNote を開いて取り込むと、勉強ノートになります。同じものを二度送っても増えません。"],
-   ["HTMLを入れる","AIの調査結果などのHTMLファイルは、ファイルアプリの「共有」から MemoNote を選ぶか、下書きの「＋ HTML」で選びます。見出しと文章に分けて入ります。"],
-   ["機種変更","メニューの「機種変更する時」→「全部を書き出す」でファイルを保存し、新しい端末で「書き出したものを読み込む」を押します。"]
+   ["機種変更","メニューの「全部を書き出す」でファイルを保存し、新しい端末で「読み込む」を押します。"]
   ].forEach(([a,b]) => {
     const p = el("p"); p.style.margin = "0 0 12px";
     const s = el("b"); s.textContent = a + " — "; s.style.color = "var(--tx)";
@@ -1043,26 +1260,6 @@ function showHelp(){
 function boot(){
   load();
   const q = new URLSearchParams(location.search);
-  if(q.get("sharedfile")){
-    /* 他のアプリから HTML / テキストファイルが共有されてきたとき（sw.js が一時保存している） */
-    history.replaceState(null, "", location.pathname);
-    go("list");
-    caches.open("memonote-share").then(async c => {
-      const r = await c.match("./shared-file");
-      if(!r){ toast("共有されたファイルが見つかりませんでした", true); return; }
-      const name = decodeURIComponent(r.headers.get("X-File-Name") || "shared.html");
-      const type = r.headers.get("Content-Type") || "";
-      let text = await r.text();
-      await c.delete("./shared-file");
-      if(!/html/i.test(type) && !/\.html?$/i.test(name)){
-        /* ただのテキストは、そのまま段落として入れる */
-        const esc = s => s.replace(/[&<>]/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[ch]));
-        text = "<title>" + esc(name) + "</title>" + text.split(/\n{2,}/).map(p => "<p>" + esc(p) + "</p>").join("");
-      }
-      importHtml(text, name, "new");
-    }).catch(() => toast("共有されたファイルを読めませんでした", true));
-    return;
-  }
   const shared = q.get("title") || q.get("text") || q.get("url");
   if(shared){
     /* 他のアプリから共有されてきたとき */
@@ -1085,18 +1282,19 @@ function boot(){
     history.replaceState(null, "", location.pathname);
     newDraft(); return;
   }
+  /* ?task=1 で ToDo の画面から始まります。ホーム画面に別アイコンで置けます */
+  if(q.get("task")){
+    history.replaceState(null, "", location.pathname);
+    go("task");
+    setTimeout(() => $("#tinput").focus(), 120);
+    return;
+  }
   go("list");
 }
 window.addEventListener("pagehide", saveNow);
 document.addEventListener("visibilitychange", () => { if(document.hidden) saveNow(); });
 if("serviceWorker" in navigator){
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js").catch(() => {});
-    /* 電波があるうちに最新のニュースを控えに入れておく（圏外でも🚗/🤖が読めるように） */
-    if(navigator.onLine) setTimeout(() => {
-      ["./news/items.json", "./ai/items.json", "./news/", "./ai/"].forEach(u => fetch(u, {cache:"no-store"}).catch(() => {}));
-    }, 3000);
-  });
+  window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
 }
 boot();
 </script>
