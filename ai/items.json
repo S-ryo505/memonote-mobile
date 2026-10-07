@@ -1,6 +1,126 @@
 {
-  "updated": "2026-10-07T07:33:02+09:00",
+  "updated": "2026-10-08T07:29:13+09:00",
   "items": [
+    {
+      "id": "2026-10-07-claude-haiku-5-5",
+      "date": "2026-10-07",
+      "kind": "flash",
+      "cat": "model",
+      "level": "intermediate",
+      "tags": [
+        "モデル",
+        "料金",
+        "エージェント",
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "primary",
+      "ja": {
+        "title": "Anthropic、小型高速モデル「Claude Haiku 5.5」を公開。API料金はHaiku 4.5の約1/10（10万トークン以下）",
+        "summary": "Anthropicは10月7日、Claude Haiku 5.5（API名 claude-haiku-5-5）を公開した。料金は100万トークンあたり入力0.10ドル・出力0.50ドル（10万トークン以下のプロンプト、超える分は0.50ドル/2.50ドル）で、Haiku 4.5の入力1ドル・出力5ドルから下がった。同社公表値ではOSWorld 2.1（オフライン部分）72.4%（Haiku 4.5は15.7%）、Haikuクラスで初めて推論の手間（effort）を調整できる。",
+        "note": "仕事での使いどころ：議事録の要約、メール分類、大量文書からの項目抽出など、件数が多く単価を抑えたい定型処理。社内ツールに組み込むAPI費用の見直し候補。注意点：ベンチマークはAnthropic自社公表値で第三者評価は未確認。トークナイザー変更で同じ文章でも消費トークン数がやや増えるとされる。複雑なコーディング作業はSonnet 5.5/Opus 5.5の方が上と同社自身が記載。Claudeアプリのどのプランで使えるかはページに記載なし（要確認）。"
+      },
+      "en": {
+        "title": "Anthropic releases Claude Haiku 5.5, a small fast model priced at about one-tenth of Haiku 4.5 for prompts up to 100k tokens",
+        "summary": "On Oct. 7, Anthropic released Claude Haiku 5.5 (API name claude-haiku-5-5). It costs $0.10 per million input tokens and $0.50 per million output tokens for prompts up to 100k tokens ($0.50/$2.50 above that), down from $1/$5 for Haiku 4.5. Anthropic reports 72.4% on the OSWorld 2.1 offline subset (vs. 15.7% for Haiku 4.5), and it is the first Haiku-class model with an adjustable effort setting.",
+        "note": "How to use it at work: high-volume routine jobs where unit cost matters, such as summarizing meeting notes, sorting emails, or extracting fields from large sets of documents. A candidate for cutting API costs in internal tools. Caveats: the benchmarks are Anthropic's own figures and have not been independently verified. Its new tokenizer reportedly uses slightly more tokens for the same text. Anthropic itself says Sonnet 5.5 and Opus 5.5 are still better for complex coding. The page does not say which Claude app plans include it (needs confirmation)."
+      },
+      "src": [
+        {
+          "name": "Anthropic",
+          "url": "https://www.anthropic.com/claude-haiku-5-5"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-07-chatgpt-gpt6-intelligent-ui",
+      "date": "2026-10-07",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "仕事で使える",
+        "モデル",
+        "データ分析"
+      ],
+      "prio": 2,
+      "conf": "primary",
+      "ja": {
+        "title": "ChatGPTの標準モデルがGPT-6に。回答内にグラフやボタン、フォームを表示する「Intelligent UI」も導入",
+        "summary": "OpenAIは10月7日、ChatGPTのチャット画面でGPT-6の提供を開始した。Plus・Pro・Business・EnterpriseはGPT-6 Sol、Free・Goは翌日からGPT-6 Lunaを使う。回答にグラフ、タップできるボタン、入力フォームなどを組み込む「Intelligent UI」が加わり、Web検索が必要な質問ではGPT-6 InstantがGPT-5.6 Instantより平均44%早く回答を始めるとしている。",
+        "note": "仕事での使いどころ：数値の比較や手順の確認をチャット内のグラフや選択ボタンで進められるため、ちょっとしたデータ確認や調べ物が速くなる可能性。注意点：EnterpriseはIT管理者の設定次第で使えない場合がある。利用回数の上限や料金の変更は発表に記載なし（要確認）。表示されたグラフの元データは必ず確認すること。WorkとCodexのモデルは変更なし。"
+      },
+      "en": {
+        "title": "ChatGPT switches to GPT-6 by default and adds 'Intelligent UI' with charts, buttons and forms inside answers",
+        "summary": "On Oct. 7, OpenAI began rolling out GPT-6 in ChatGPT's Chat tab. Plus, Pro, Business and Enterprise users get GPT-6 Sol, while Free and Go users get GPT-6 Luna starting the next day. A new 'Intelligent UI' lets answers include charts, tappable buttons and forms, and OpenAI says GPT-6 Instant starts answering web-search questions 44% sooner on average than GPT-5.6 Instant.",
+        "note": "How to use it at work: comparing numbers or walking through procedures with charts and buttons inside the chat may speed up quick data checks and lookups. Caveats: on Enterprise, availability depends on admin settings. Usage limits and pricing changes are not mentioned (needs confirmation). Always check the underlying data behind any chart it shows. The models behind Work and Codex are unchanged."
+      },
+      "src": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/gpt-6-for-everyone/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-07-claude-google-workspace",
+      "date": "2026-10-07",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "仕事で使える",
+        "資料作成",
+        "データ分析"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "ClaudeがGoogleドキュメント・スプレッドシート・スライド内で使用可能に（有料プラン、パブリックベータ）",
+        "summary": "Anthropicは、Google Workspaceのアドオンとしてドキュメント・スプレッドシート・スライドの横にClaudeを表示し、開いているファイルを直接編集できる機能をパブリックベータで公開した。逆にClaudeの画面からGoogleファイルを開いて作成・編集できるコネクターも追加され、全有料プランが対象。スプレッドシートでは数式、ピボットテーブル、グラフ作成に対応し、編集は初期設定で「編集前に確認」になっている。",
+        "note": "仕事での使いどころ：Googleスライドで既存テンプレートのまま報告資料を作る、スプレッドシートの集計やグラフ化を任せる、など。注意点：ベータ版。Team・EnterpriseはオーナーがコネクターをONにするまで使えない。管理者はドメイン全体または特定グループに配布可能。社内データをClaudeに渡すことになるため、自社の情報管理ルールの確認が必要。日本で使えるかは記事に記載なし（要確認）。"
+      },
+      "en": {
+        "title": "Claude now works inside Google Docs, Sheets and Slides (paid plans, public beta)",
+        "summary": "Anthropic released a public beta of a Google Workspace add-on that shows Claude in a sidebar next to Docs, Sheets and Slides and lets it edit the open file directly. New connectors also let users open, create and edit Google files from the Claude interface, on all paid plans. In Sheets it can write formulas and build pivot tables and charts, and by default it asks for approval before making edits.",
+        "note": "How to use it at work: building report slides in Google Slides using your existing template, or having it aggregate and chart spreadsheet data. Caveats: this is a beta. On Team and Enterprise, an owner must turn on the connectors first. Admins can deploy it to the whole domain or to selected groups. Because company data is passed to Claude, check your internal data-handling rules. The article does not say whether it is available in Japan (needs confirmation)."
+      },
+      "src": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/you-can-now-open-claude-directly-in-google-docs-sheets-and-slides-and-vice-versa-open-and-edit-the-files-in-claude"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-07-google-synthid-site",
+      "date": "2026-10-07",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "画像・動画"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "Google、AI生成の画像・動画・音声を誰でも判定できるサイト「synthid.com」を公開",
+        "summary": "Googleは10月7日、AI生成かどうかを確認できるWebサイト synthid.com を一般公開した。Googleの電子透かし技術SynthIDを使い、JPG・PNGなどの画像、MP4・MOVなどの動画、WAV・MP3などの音声に対応する。記事によると判定依頼は現在1日約100万件。",
+        "note": "仕事での使いどころ：社外から届いた画像・動画・音声がAI生成か確認する際の一次チェック。注意点：判定できるのはSynthIDの透かしが入ったもの（Gemini、Veo、Nano Bananaなど）で、MicrosoftやMetaは別方式のため、透かしが見つからなくても人が作ったとは言えない（推測ではなく記事の指摘）。社外秘ファイルのアップロードは避けること。ファイルサイズ上限・利用条件は記事に記載なし（要確認）。"
+      },
+      "en": {
+        "title": "Google opens synthid.com, a site anyone can use to check whether images, video or audio were made with AI",
+        "summary": "On Oct. 7, Google opened synthid.com to the public, a website that checks whether media was AI-generated. It uses Google's SynthID watermarking technology and supports images such as JPG and PNG, videos such as MP4 and MOV, and audio such as WAV and MP3. According to the article, it currently handles about 1 million checks per day.",
+        "note": "How to use it at work: a first check on whether images, video or audio received from outside the company were AI-generated. Caveats: it only detects content carrying a SynthID watermark (Gemini, Veo, Nano Banana and others). Microsoft and Meta use their own methods, so finding no watermark does not prove a human made it (the article makes this point, it is not a guess). Avoid uploading confidential files. File size limits and terms of use are not mentioned in the article (needs confirmation)."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media/"
+        }
+      ]
+    },
     {
       "id": "2026-10-06-mistral-large-4",
       "date": "2026-10-06",
