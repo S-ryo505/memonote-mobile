@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- =====================================================================
-     MemoNote Mobile  v1.6.0
+     MemoNote Mobile  v1.7.0
      スマホで書いた勉強ノートと、ToDo・覚書・待ち球を、
      会社の MemoNote へメールで送るためのアプリです。
      書いた内容は端末の中だけに残り、送信するときだけ外に出ます。
@@ -272,7 +272,7 @@ const KEY = "mnm_drafts_v1";
 const TKEY = "mnm_tasks_v1";        /* ToDo・覚書・待ち球 */
 const SKEY = "mnm_settings_v1";
 /* 送り先、分野の一覧、相手の名前の履歴。空なら既定を使います */
-const SET_DEF = {mailTo:"", fields:[], people:[]};
+const SET_DEF = {mailTo:"", fields:[], people:[], askedMail:false};
 let SET = Object.assign({}, SET_DEF);
 function loadSet(){
   try{ SET = Object.assign({}, SET_DEF, JSON.parse(localStorage.getItem(SKEY) || "{}")); }
@@ -280,7 +280,7 @@ function loadSet(){
   if(!Array.isArray(SET.people)) SET.people = [];
 }
 function saveSet(){ try{ localStorage.setItem(SKEY, JSON.stringify(SET)); }catch(_){} }
-const APP_VERSION = "1.6.0";
+const APP_VERSION = "1.7.0";
 let D = [];            /* 下書きの配列 */
 let T = [];            /* ToDo・覚書・待ち球の配列 */
 let cur = null;        /* 編集中の下書き */
@@ -558,6 +558,20 @@ function addQuickTask(){
   ta.focus();
 }
 
+/* チェックしたものをまとめて消します。
+   済んだ ToDo を片づけるときに使います。送信済みかどうかは問いません。 */
+function delPickedTasks(){
+  const ids = [...tpick];
+  if(!ids.length){ toast("消すものにチェックを入れてください", true); return; }
+  const unsent = T.filter(t => ids.includes(t.id) && !t.sentAt).length;
+  if(!confirm(ids.length + "件を消します。元に戻せません。" +
+              (unsent ? "\n（まだ会社に送っていないものが " + unsent + "件 あります）" : ""))) return;
+  T = T.filter(t => !ids.includes(t.id));
+  tpick = new Set(); saveT();
+  renderTaskView(); renderBottom(); segCounts();
+  toast(ids.length + "件を消しました");
+}
+
 /* 1件を直す画面 */
 function openTask(id){
   const t = T.find(x => x.id === id); if(!t) return;
@@ -642,16 +656,23 @@ function renderBottom(){
   const b = $("#bottom"); b.innerHTML = "";
   if(view === "task"){
     const n = tpick.size;
-    const all = el("button","big ghost","未送信を全部選ぶ");
+    const all = el("button","big ghost", n ? "選び直す" : "全部選ぶ");
+    all.title = "未送信のものに、まとめてチェックを入れます";
     all.onclick = () => {
+      if(tpick.size){ tpick = new Set(); renderTaskView(); renderBottom(); return; }
       T.filter(x => !x.sentAt).forEach(x => tpick.add(x.id));
       if(!tpick.size){ toast("未送信がありません"); return; }
       renderTaskView(); renderBottom();
     };
+    /* チェックしたものを、その場で消せます。済んだものを片づける用です。 */
+    const del = el("button","big ghost","🗑");
+    del.title = "チェックしたものを消す";
+    del.disabled = !n;
+    del.onclick = () => delPickedTasks();
     const send = el("button","big", n ? "会社に送る（" + n + "件）" : "会社に送る");
     send.disabled = !n;
     send.onclick = () => shareTasks();
-    b.append(all, send);
+    b.append(all, del, send);
     return;
   }
   if(view === "edit"){
@@ -1089,6 +1110,10 @@ function sendSheet(ids, tids, label){
   SIN.appendChild(el("h3", null, "会社に送る"));
   SIN.appendChild(el("p", null,
     label + " " + n + "件 ・ " + kb + "KB" + (hasImg ? " ・ 写真あり" : "")));
+  const warn = el("p", null, "秘匿情報は❌（開発符号など）");
+  warn.style.cssText = "color:var(--coral);font-size:13.5px;font-weight:700;" +
+    "border:1px solid var(--coral);border-radius:9px;padding:9px 12px;margin:0 0 16px";
+  SIN.appendChild(warn);
 
   const mk = (label, sub, cls, fn) => {
     const b = el("button","big" + (cls||""), label);
@@ -1205,24 +1230,37 @@ function openFieldSetting(){
   btns.append(c, ok); SIN.appendChild(btns);
   SHEET.classList.add("on");
 }
-function openMailSetting(){
+function openMailSetting(first){
   SIN.innerHTML = "";
-  SIN.appendChild(el("h3", null, "会社アドレス"));
-  SIN.appendChild(el("p", null,
-    "送り先を登録しておくと、写真なしのノートはメールアプリが宛先入りで開きます。" +
-    "この端末の中にだけ保存されます。"));
+  SIN.appendChild(el("h3", null, first ? "はじめに、会社アドレスを決めます" : "会社アドレス"));
+  SIN.appendChild(el("p", null, first
+    ? "書いたものを送る先です。入れておくと、写真のないノートや ToDo は" +
+      "メールアプリが宛先入りで開くので、送信を押すだけになります。" +
+      "この端末の中にだけ保存され、送るとき以外は外に出ません。あとから ⋯ で変えられます。"
+    : "送り先を登録しておくと、写真なしのノートはメールアプリが宛先入りで開きます。" +
+      "この端末の中にだけ保存されます。"));
   SIN.appendChild(el("label", null, "メールアドレス"));
   const inp = el("input"); inp.className = "fld"; inp.type = "email";
   inp.placeholder = "例: yourname@example.co.jp";
   inp.value = SET.mailTo || "";
+  inp.autocomplete = "email";
   SIN.appendChild(inp);
   const btns = el("div","btns");
-  const c = el("button","big ghost","やめる"); c.onclick = closeSheet;
+  const c = el("button","big ghost", first ? "あとで" : "やめる");
+  c.onclick = () => { if(first){ SET.askedMail = true; saveSet(); } closeSheet(); };
   const ok = el("button","big","保存");
-  ok.onclick = () => { SET.mailTo = inp.value.trim(); saveSet(); closeSheet();
+  ok.onclick = () => { SET.mailTo = inp.value.trim(); SET.askedMail = true; saveSet(); closeSheet();
     toast(SET.mailTo ? "登録しました" : "宛先を空にしました"); };
   btns.append(c, ok); SIN.appendChild(btns);
   SHEET.classList.add("on");
+  if(first) setTimeout(() => { try{ inp.focus(); }catch(_){} }, 250);
+}
+/* いちばん最初に開いたときだけ聞きます。
+   答えてもらってから旗を立てるので、読み込み直しが挟まっても取りこぼしません。
+   「あとで」を押したら、もう聞きません（⋯ のメニューからいつでも入れられます）。 */
+function askMailFirstRun(){
+  if(SET.askedMail || SET.mailTo) return;
+  setTimeout(() => { if(!SET.askedMail && !SET.mailTo) openMailSetting(true); }, 700);
 }
 
 /* =====================================================================
@@ -1261,7 +1299,9 @@ $("#menubtn").onclick = () => {
     renderBottom(); segCounts();
     toast(n + "件を消しました");
   });
-  mk("選んだものを消す", "一覧でチェックしたものを消します", () => {
+  mk("選んだ ToDo・覚書を消す", "ToDo の画面でチェックしたものを消します（下の 🗑 と同じです）",
+     () => delPickedTasks());
+  mk("選んだノートを消す", "ノートの一覧でチェックしたものを消します", () => {
     if(!picked.size){ toast("一覧でチェックを入れてください", true); return; }
     const nn = picked.size;
     if(!confirm(nn + "件を消します。元に戻せません。")) return;
@@ -1344,6 +1384,9 @@ function showHelp(){
    ["ToDo を溜める","「ToDo・覚書」で種類を選び、1行書いて「追加する」。期限と相手は任意です。"],
    ["待ち球","人に頼んで返事を待っているものです。会社側では経過日数が出ます。"],
    ["ToDo を送る","チェックを入れて「会社に送る」。写真が無いので、ほぼいつも1タップのメールで送れます。"],
+   ["ToDo を消す","チェックを入れて、下の 🗑 を押します。済んだものはここで片づけられます。"],
+   ["秘匿情報","送るものに開発符号などは入れないでください。送信の画面にも出ます。"],
+   ["圏外","一度でも電波のあるところで開いてあれば、圏外でもアプリと 🚗/🤖 のニュースが読めます。"],
    ["会社側の受け取り","MemoNote の右の ToDo 欄の下に「スマホから受け取る」が出ます。押すと届いたものが並び、1件ずつ入れるか捨てるかを選べます。"],
    ["書く","「＋ 新しく書く」で1件ずつ作ります。1件 = 会社での1ノートです。"],
    ["話して入れる","キーボードのマイクを押すと、話した内容が文字になります。"],
@@ -1424,21 +1467,51 @@ function boot(){
     history.replaceState(null, "", location.pathname);
     go("task");
     setTimeout(() => $("#tinput").focus(), 120);
+    askMailFirstRun();
     return;
   }
   go("list");
+  askMailFirstRun();
 }
 window.addEventListener("pagehide", saveNow);
 document.addEventListener("visibilitychange", () => { if(document.hidden) saveNow(); });
+/* ---- 圏外でも開けるようにする仕掛け（sw.js）----------------------------
+   ・登録したら、新しい sw.js が出ていないかを毎回みにいきます。
+   ・新しいものに入れ替わったら、1回だけ読み直して最新の画面にします
+     （何度も読み直さないよう、合図をこのタブに1つだけ残します）。
+   ・電波があるうちに 🚗/🤖 のニュースを控え直します。圏外に出ても読めます。
+   ------------------------------------------------------------------- */
+function warmNews(){
+  if(!navigator.onLine) return;
+  const sw = navigator.serviceWorker && navigator.serviceWorker.controller;
+  if(sw){ try{ sw.postMessage({type:"refresh-news"}); }catch(_){ } }
+  ["./news/items.json", "./ai/items.json", "./news/", "./ai/"]
+    .forEach(u => fetch(u, {cache:"no-store"}).catch(() => {}));
+}
 if("serviceWorker" in navigator){
+  /* 最初の導入かどうか。最初のときは読み込み直しません
+     （入れた直後に画面が作り直されると、はじめの問いかけが消えてしまうため）。 */
+  const hadSw = !!navigator.serviceWorker.controller;
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js").catch(() => {});
-    /* 電波があるうちに最新のニュースを控えに入れておく（圏外でも🚗/🤖が読めるように） */
-    if(navigator.onLine) setTimeout(() => {
-      ["./news/items.json", "./ai/items.json", "./news/", "./ai/"].forEach(u => fetch(u, {cache:"no-store"}).catch(() => {}));
-    }, 3000);
+    navigator.serviceWorker.register("./sw.js").then(reg => {
+      if(navigator.onLine) { try{ reg.update(); }catch(_){ } }
+    }).catch(() => {});
+    setTimeout(warmNews, 3000);
+  });
+  /* 中身が新しくなったときだけ、1回だけ読み込み直します */
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if(!hadSw) return;
+    try{
+      if(sessionStorage.getItem("mnm_reloaded")) return;
+      sessionStorage.setItem("mnm_reloaded", "1");
+    }catch(_){ return; }
+    location.reload();
   });
 }
+window.addEventListener("online", () => setTimeout(warmNews, 1200));
+document.addEventListener("visibilitychange", () => {
+  if(!document.hidden && navigator.onLine) setTimeout(warmNews, 1500);
+});
 boot();
 </script>
 </body>
