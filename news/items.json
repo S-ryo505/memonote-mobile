@@ -1,6 +1,755 @@
 {
- "updated": "2026-10-08T06:56:00+09:00",
+ "updated": "2026-10-09T08:23:22+09:00",
  "items": [
+  {
+   "id": "2026-10-08-maextro-v800-brake",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "シャシー",
+    "品質"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "Maextro V800、緊急制動テストでブレーキペダルブラケットが破断と報道、ファーウェイ/JACが設計変更と無償改修を表明",
+    "summary": "中国の自動車情報サイトDongchediが、Maextro V800（MPV、76.6万〜101.6万元）3台で100 km/hからの緊急制動を繰り返したところ、3台とも2〜4回目でブレーキペダルブラケットが破断し、フットブレーキが使えずPボタン経由の緊急制動で停止したと動画で公表した。JAC株は同日10.01%下落しストップ安。Maextroは顧客使用での破断はなく「非標準の極端な試験条件」としつつ、ブラケット基部の設計を改良し既販車に無償アップグレードを提供すると発表した。",
+    "note": "ペダル系は運転者入力の荷重経路で、破断すると油圧（またはbyWire）系が健全でもサービスブレーキを指令できない。1回の100→0 km/h停止で消費する運動エネルギーは E=½mv²、v=27.8 m/s、m=2,800 kg（仮定値）で約1.08 MJ。ただしブラケット荷重を決めるのはエネルギーではなく踏力（緊急時は数百N〜1 kN級が一般的、仮定値）と繰り返し回数で、疲労・締結部の問題か静的強度不足かは公表情報からは不明（要確認）。Pボタンによる緊急制動は一般にEPBの動的モードでESCの液圧制御を使う方式が多いが、本車の実装は要確認。"
+   },
+   "en": {
+    "title": "Maextro V800 brake pedal brackets reportedly fail in emergency-braking tests; Huawei/JAC promise redesign and free fix",
+    "summary": "Chinese auto platform Dongchedi published a video in which three Maextro V800 MPVs (766,000-1,016,000 yuan) were repeatedly braked from 100 km/h to a stop; on all three the brake pedal bracket fractured on the 2nd to 4th attempt, and the testers had to stop using emergency braking via the Park button. JAC shares fell 10.01% to the daily limit. Maextro said no fractures have occurred in customer use and called the test conditions non-standard and extreme, but will redesign the bracket base and offer existing owners a free upgrade.",
+    "note": "The pedal assembly is the load path for the driver's input; if it breaks, the service brake cannot be commanded even if the hydraulic (or by-wire) system is intact. Kinetic energy per 100-0 km/h stop is E=½mv²; with v=27.8 m/s and m=2,800 kg (assumed) that is about 1.08 MJ. However, bracket load is driven by pedal force (typically several hundred N to ~1 kN in panic stops, assumed) and the number of cycles, not by energy; whether this is fatigue/fastening or static strength is not clear from public information (to be confirmed). Emergency braking via the Park button is usually an EPB dynamic mode using ESC hydraulic control, but this vehicle's implementation needs confirmation."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/08/maextro-v800-brake-test-controversy-jac-shares-fall/"
+    },
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/08/maextro-pledges-component-redesign-brake-test-controversy/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-bmw-ix3-m60",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "4WD",
+    "制御",
+    "シャシー"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "BMW iX3 M60 xDrive発表：450 kW・875 Nm、電子制御Mスポーツディファレンシャルと中央制御「Heart of Joy」",
+    "summary": "BMWはiX3の最上位「M60 xDrive」を発表した。前後2モーターAWDで450 kW・875 Nm、0-100 km/h 3.9秒、最高速240 km/h、電池108.7 kWh、航続最大754 km、DC 400 kW（10→80% 21分）。後軸にGen6 EESM（巻線界磁同期モーター）と新ステーター・高出力インバーターを採用し、後軸に電子制御Mスポーツディファレンシャル、アダプティブMサスペンション、フロントスタビリンクの変更を標準装備。受注開始は2027年1月末、生産はDebrecenで2027年春から。",
+    "note": "電子制御LSDのクラッチ伝達トルクΔTによるヨーモーメントは Mz≈ΔT·t/(2·r_w)（t：後トレッド、r_w：タイヤ有効半径）。例：ΔT=800 Nm、t=1.65 m、r_w=0.37 m（いずれも仮定値）で Mz≈1,780 Nm。LSDは高速輪→低速輪へしかトルクを移せないため、旋回加速時は外輪側へ移して回頭性、低μ時は差動制限で安定化に使う。0-100 km/h 3.9秒の平均加速度は 27.78/3.9≈7.1 m/s²≈0.73 G。「Heart of Joy」は従来比10倍速いとBMWは説明するが、制御周期の具体値は記事にない（要確認）。"
+   },
+   "en": {
+    "title": "BMW reveals iX3 M60 xDrive: 450 kW, 875 Nm, electronic M Sport differential and 'Heart of Joy' central controller",
+    "summary": "BMW introduced the range-topping iX3 M60 xDrive. Its front and rear motors give AWD with 450 kW and 875 Nm, 0-100 km/h in 3.9 s, a 240 km/h top speed, a 108.7 kWh battery, up to 754 km of range and 400 kW DC charging (10-80% in 21 min). The rear axle gets a Gen6 EESM (electrically excited synchronous motor) with a new stator and stronger inverter, plus an electronically controlled M Sport differential; adaptive M suspension and revised front anti-roll bar links are standard. Orders open at the end of January 2027, with production in Debrecen from spring 2027.",
+    "note": "The yaw moment from an e-LSD's clutch transfer torque ΔT is Mz≈ΔT·t/(2·r_w) (t: rear track, r_w: effective tyre radius). Example: ΔT=800 Nm, t=1.65 m, r_w=0.37 m (all assumed) gives Mz≈1,780 Nm. An LSD can only move torque from the faster to the slower wheel, so it shifts torque outward under power in corners for turn-in and locks up for stability on low grip. The 3.9 s 0-100 km/h implies an average 27.78/3.9≈7.1 m/s²≈0.73 g. BMW says Heart of Joy is ten times faster than before, but no control-cycle figure is given (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/08/100-km-h-in-3-9-seconds-bmw-unveils-the-upgraded-ix3/"
+    },
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/08/bmw-adds-ix3-m60-xdrive-603-hp-extensive-m-upgrades/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-bmw-ix4",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "4WD",
+    "シャシー",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BMW iX4（Neue Klasse SUVクーペ）発表：全車2モーターAWD、7万900ユーロから、2027年3月発売",
+    "summary": "BMWはiX3とiX5の間に位置するSUVクーペ「iX4」を発表した。全車前後モーターのAWDで、40 xDriveが275 kW・520 Nm（82.6 kWh、最大638 km）、50 xDriveが345 kW・645 Nm（108.7 kWh、最大828 km、DC 400 kW）、M60 xDriveは2027年1月受注開始。車両重量2,260〜2,380 kg、全長4.78 m。前ダブルジョイント式・後5リンク（ばね・ダンパー別置き）に、中央制御「Heart of Joy」と「Dynamic Performance Control」を組み合わせる。",
+    "note": "車重2,380 kgで50 xDriveの比出力は 345/2.38≈145 kW/t。重い車の回頭性は慣性 Iz と前後コーナリングパワーの比で決まり、定常ヨーレートゲインは γ/δ = V/[L(1+A·V²)]（A：スタビリティファクタ）で表される。前後独立モーターによる前後駆動力配分の変化はAを実質的に変える手段になる（一般論）。BMWは制御が従来比10倍速いと説明するが、具体値は記事にない（要確認）。"
+   },
+   "en": {
+    "title": "BMW iX4 (Neue Klasse SUV coupe) revealed: dual-motor AWD across the range, from EUR 70,900, launch March 2027",
+    "summary": "BMW revealed the iX4 SUV coupe, positioned between the iX3 and iX5. All versions have front and rear motors for AWD: the 40 xDrive has 275 kW and 520 Nm (82.6 kWh, up to 638 km), the 50 xDrive 345 kW and 645 Nm (108.7 kWh, up to 828 km, 400 kW DC), and the M60 xDrive opens for orders in January 2027. Kerb weight is 2,260-2,380 kg and length 4.78 m. A double-joint front axle and five-link rear axle with separate springs and dampers work with the Heart of Joy central controller and Dynamic Performance Control.",
+    "note": "At 2,380 kg the 50 xDrive has about 345/2.38≈145 kW/t. A heavy car's turn-in depends on yaw inertia Iz and front/rear cornering stiffness; steady-state yaw-rate gain is γ/δ = V/[L(1+A·V²)] (A: stability factor). Varying front/rear drive force with independent motors is a way to effectively change A (general principle). BMW says the control is ten times faster, but no figure is given (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/08/bmw-ix4-arrives-as-an-electric-suv-coupe-starting-at-e70900/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-deepdrive-order",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "DeepDrive（独）、デュアルロータ・ラジアルフラックスモーターで量産受注、2028年量産開始・上海に拠点",
+    "summary": "ミュンヘンのDeepDriveは、社名非公表のグローバルOEMから電動駆動システムの量産サプライヤーに指名されたと発表した。量産開始は2028年で、車種・台数は非公表。ステーターを内外2つのロータで挟むデュアルロータ・ラジアルフラックス構造で、発電機・インホイールモーター・センタードライブの3用途で検証を完了。上海にチームを置き中国展開を始める。出資者にはVWをアンカーとするLeitmotif、BMW i Venturesなど。",
+    "note": "ラジアルギャップのトルクは T≈2π·r²·L·σ（r：エアギャップ半径、L：積厚、σ：平均せん断応力）。デュアルロータは内外2つのエアギャップを持つため、同じ外形で T≈2π·L·σ·(r_o²+r_i²) となり、トルク密度が上がる（σを同一と仮定した簡略式）。インホイール用途ではばね下質量増が乗り心地・接地荷重変動に影響する点が別途課題（一般論）。"
+   },
+   "en": {
+    "title": "DeepDrive wins series order for its dual-rotor radial-flux motor, SOP 2028, opens Shanghai base",
+    "summary": "Munich-based DeepDrive says it has been nominated as series supplier of electric drive systems by an unnamed global carmaker, with production starting in 2028; model and volume were not disclosed. Its dual-rotor radial-flux design places the stator between an inner and an outer rotor, and validation is complete for generator, in-wheel and central-drive uses. It is setting up a Shanghai team to enter China. Investors include Leitmotif (with VW as anchor) and BMW i Ventures.",
+    "note": "Torque in a radial air gap is T≈2π·r²·L·σ (r: air-gap radius, L: stack length, σ: mean shear stress). A dual rotor has two air gaps, so for the same outer size T≈2π·L·σ·(r_o²+r_i²), raising torque density (simplified, assuming equal σ). For in-wheel use, added unsprung mass affects ride and tyre load variation (general point)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/08/deepdrive-secures-high-volume-order-for-electric-drive-systems-starting-in-2028/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-vw-id4-recall",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "電池",
+    "品質"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "VW ID.4、電池発火リスクで米国2万2,524台をリコール、恒久対策までSOC 80%以下での充電を指示",
+    "summary": "VWはNHTSAへの届出で、2023〜2026年型ID.4の2万2,524台をリコールした。原因は不明だが、一部の高電圧電池（SK製）で特定の充電プロファイルとSOC 80%超が重なると熱伝播が起きうるとしている。2024年1月18日〜2026年8月7日に米国で22件の事案があり、該当は対象の約0.1%と推定。恒久対策までは80%以下での充電を求め、警告ラベル貼付と、通信可能な車両ではSOC上限80%の設定を行う。",
+    "note": "高SOCでは負極の電位が下がり、充電条件次第でリチウム析出が起きやすく、内部短絡や熱暴走開始温度の低下につながる（一般論、本件の原因は未特定）。SOC上限を下げるのは発熱源となる蓄積エネルギーを減らす暫定策で、使用可能容量は約2割減る。0.1%は約23台に相当（22,524×0.001）。"
+   },
+   "en": {
+    "title": "VW recalls 22,524 ID.4s in the US over battery fire risk; owners told to charge only to 80% until a fix",
+    "summary": "In an NHTSA filing, VW recalled 22,524 model-year 2023-2026 ID.4s. The root cause is unknown, but in some SK-supplied high-voltage batteries certain charging profiles combined with SOC above 80% may trigger thermal propagation. There were 22 US incidents between 18 January 2024 and 7 August 2026, and VW estimates about 0.1% of the population is affected. Until a permanent fix, owners are asked to charge to 80% or less; warning labels will be applied and connected vehicles may be set to an 80% SOC limit.",
+    "note": "At high SOC the anode potential is lower, and depending on charging conditions lithium plating becomes more likely, which can lead to internal shorts and a lower onset temperature for thermal runaway (general point; the cause here is not identified). Lowering the SOC cap is an interim measure that reduces stored energy, at the cost of about 20% usable capacity. 0.1% corresponds to about 23 vehicles (22,524×0.001)."
+   },
+   "src": [
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/811244/vw-id4-battery-fire-recall/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-nissan-frontier-pro",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "Global",
+   "tags": [
+    "PT",
+    "4WD",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "日産「フロンティア プロ/ナバラ プロ」：中国開発・生産の初の輸出車、PHEV 350 PS・660 Nm、後輪デフロック付き4WD",
+    "summary": "日産は鄭州日産が設計・開発・生産するピックアップ「フロンティア プロ/ナバラ プロ」を、2026年10月のメキシコを皮切りに、11月フィリピン、年末までに中東・中南米、2027年に豪州・NZへ投入すると発表した。メキシコ仕様PHEVは1.5 Lターボ＋モーター＋20 kWh電池でシステム350 PS・660 Nm、EV走行最大75 km、総航続約1,000 km。後輪デフロック付き4WD、後マルチリンク、最低地上高232 mm、牽引3.5 t、価格96万9,900ペソから。",
+    "note": "EV走行75 km÷20 kWh＝約267 Wh/km（電池総容量で割った値で、使用可能容量は記事にないため実際の電費はこれより良い、推測）。デフロック時は左右輪が同回転となり、駆動力上限は Fx ≤ μ_L·Fz_L + μ_R·Fz_R（オープンデフでは 2·min(μ_L·Fz_L, μ_R·Fz_R)）。片輪浮き・スプリットμでの脱出性が上がる一方、舗装路旋回では内外輪差を吸収できずタイトコーナーブレーキングが出るため通常は低速オフロード専用。"
+   },
+   "en": {
+    "title": "Nissan Frontier Pro/Navara Pro: first China-developed export model, 350 PS/660 Nm PHEV, 4WD with rear diff lock",
+    "summary": "Nissan will launch the Frontier Pro/Navara Pro pickup, designed, developed and built by Zhengzhou Nissan, starting in Mexico in October 2026, then the Philippines in November, the Middle East and Latin America by year-end, and Australia/New Zealand in 2027. The Mexican PHEV combines a 1.5-litre turbo, a motor and a 20 kWh battery for 350 PS and 660 Nm, up to 75 km EV range and about 1,000 km total range. It has 4WD with a rear diff lock, multi-link rear suspension, 232 mm ground clearance, 3.5 t towing, and starts at 969,900 pesos.",
+    "note": "75 km of EV range from 20 kWh is about 267 Wh/km (based on gross capacity; usable capacity is not given, so real consumption is better - inference). With the diff locked both wheels turn at the same speed, so the traction limit is Fx ≤ μ_L·Fz_L + μ_R·Fz_R (an open diff gives 2·min(μ_L·Fz_L, μ_R·Fz_R)). This helps with a lifted wheel or split-μ, but on pavement it cannot absorb the inner/outer speed difference (tight-corner braking), so it is normally for low-speed off-road use."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2146658.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-toyota-faw-gac-alliance",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "トヨタ・一汽・広汽が三社提携の枠組み協定に調印：一汽トヨタと広汽トヨタが研究開発・調達・生産・販売で連携へ",
+    "summary": "トヨタ、中国一汽、広汽集団は10月8日に広州で新たな三社戦略提携の枠組み協定に調印した。広汽が株式発行により一汽保有の一汽トヨタ株50%を取得し、一汽は広汽の戦略株主となる。一汽トヨタは独立した事業体として継続し、次の段階で一汽トヨタと広汽トヨタが研究開発・調達・生産・販売の機能で連携する。両合弁の累計顧客は2,300万人超。（9月末の株式取得報道に対し、今回は正式調印と合弁間連携の方針が新しい事実）",
+    "note": ""
+   },
+   "en": {
+    "title": "Toyota, FAW and GAC sign three-way alliance framework; FAW Toyota and GAC Toyota to cooperate in R&D, procurement, production and sales",
+    "summary": "Toyota, China FAW and GAC signed a framework agreement for a new three-way strategic alliance in Guangzhou on 8 October. GAC will acquire FAW's 50% stake in FAW Toyota through a share issue, and FAW will become a strategic shareholder of GAC. FAW Toyota will continue as an independent entity; in the next phase FAW Toyota and GAC Toyota will cooperate in R&D, procurement, production and sales. The two JVs have served more than 23 million customers. (New versus the late-September stake report: the formal signing and the plan for JV-to-JV cooperation.)",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Toyota Newsroom",
+     "url": "https://global.toyota/en/newsroom/corporate/44911427.html"
+    },
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2146930.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-nhtsa-fmvss108",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "US",
+   "tags": [
+    "規制"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "NHTSA、灯火基準FMVSS No.108の見直しに着手：グレア・照射高さ・国際基準との整合を交渉型規則制定で検討",
+    "summary": "NHTSAは10月6日、FMVSS No.108（灯火器）の近代化計画を発表した。対象はグレア、ヘッドランプの高さとエイミング、LED、オートハイビーム、薄暮センサー、交換式光源、樹脂レンズの試験、国際基準との整合など。最大18の利害関係者による交渉型規則制定（negotiated rulemaking）で進め、意見と委員応募の締切は11月9日（Docket NHTSA-2026-1981）。完了時期は示されておらず、今回の発表で新たな要件は発効しない。",
+    "note": ""
+   },
+   "en": {
+    "title": "NHTSA starts review of lighting standard FMVSS No. 108: glare, headlamp height/aim and international harmonisation via negotiated rulemaking",
+    "summary": "On 6 October NHTSA announced plans to modernise FMVSS No. 108 (lamps and lighting). Topics include glare, headlamp height and aim, LEDs, automatic high beams, dusk sensors, replaceable light sources, testing of plastic optics, and alignment with international standards. It will use negotiated rulemaking with up to 18 stakeholders; comments and membership applications are due 9 November (docket NHTSA-2026-1981). No completion date was given and no new requirements take effect from this announcement.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/10/nhtsa-headlight-standards/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-honda-crv-civic-plan",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "rumor",
+   "ja": {
+    "title": "ホンダ、次期CR-Vの生産を2027年4月に延期、インディアナでの次期Civic生産計画は中止と報道",
+    "summary": "Automotive Newsなどの報道によると、ホンダは次期CR-V（新型ハイブリッド搭載）の生産開始を当初の1月頃から2027年4月に遅らせ、北米の初年度生産を4万1,315台とする。インディアナ州Greensburg工場で2028年5月に予定していた次期Civic生産は中止され、同工場の能力をCR-Vに回すとされる。現行CR-Vの米国販売は1〜9月で前年比9.5%増の33万6,844台。ホンダはCivic情報は自社発表ではないとし、CR-Vの時期は未確定と回答した。",
+    "note": ""
+   },
+   "en": {
+    "title": "Honda reportedly delays next CR-V production to April 2027 and drops plan to build next Civic in Indiana",
+    "summary": "According to reports including Automotive News, Honda has pushed production of the next CR-V (with a new hybrid system) from around January to April 2027, planning 41,315 units in North America in the first year. A plan to build the next Civic at Greensburg, Indiana from May 2028 has reportedly been dropped to free capacity for the CR-V. Current CR-V US sales rose 9.5% to 336,844 units in January-September. Honda said the Civic information was not released by Honda and that CR-V timing is not confirmed.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/10/honda-civic-cr-v-production-indiana/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-lges-q3",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "KR",
+   "tags": [
+    "電池",
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "LGエナジーソリューション、2026年第3四半期速報で過去最高：売上高72.1億ドル（+59%）、営業利益5.65億ドル（+25%）",
+    "summary": "LGESの第3四半期速報は売上高72.1億ドル（前年比59%増）、営業利益5.65億ドル（同25%増）で四半期最高となった。欧州（ポーランド工場、VW・ルノー向け）のEV電池需要と、米国のデータセンター向けESS電池が寄与し、米IRA 45X生産税額控除（2032年まで）やOEMからの最低購入量未達補償も含まれると報じられた。カナダElevra Lithiumとリチウム精鉱24万トンの複数年引取契約も締結。確定決算は11月。",
+    "note": ""
+   },
+   "en": {
+    "title": "LG Energy Solution posts record preliminary Q3: revenue USD 7.21 bn (+59%), operating profit USD 565 m (+25%)",
+    "summary": "LGES's preliminary Q3 results showed record revenue of USD 7.21 bn (+59% YoY) and operating profit of USD 565 m (+25%). Drivers were EV battery demand in Europe (Poland plant, VW and Renault) and ESS batteries for US data centres; reports say US 45X production credits (available to 2032) and compensation from carmakers for missing minimum purchase volumes also contributed. It also signed a multi-year offtake for 240,000 t of lithium concentrate from Canada's Elevra Lithium. Final results come in November.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/811218/lges-record-ev-ess-battery-sales/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-honda-taisei-dwpt",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ホンダ・大成建設・大成ロテック、走行中ワイヤレス給電（磁界結合方式）の基盤技術を開発、2027年度以降に館山道で実証",
+    "summary": "本田技術研究所、大成建設、大成ロテックは10月5日、走行中のEVに非接触で給電する「磁界結合方式無線給電道路システム」の基盤技術を開発したと発表した。ホンダはインバータとコイルを一体化した路面側の直流配電型給電ユニット（GA）と車両側受電ユニット（VA）、大成建設は直流電源、大成ロテックは舗装・施工方法を担当。複数GAを直流配線でつなぐことで配線を簡素化し、VAは乗用車から大型商用車まで対応を狙う。2027年度以降に高速道路（館山道）で実証する計画。",
+    "note": "磁界結合（共振）方式の理論最大効率は η_max = k²Q₁Q₂ / (1+√(1+k²Q₁Q₂))²（k：結合係数、Q₁,Q₂：送受電コイルのQ値）。走行中は位置ずれと路面〜受電コイル間ギャップでkが変動するため、効率と給電電力が車両位置に依存する。給電電力・効率の数値は記事にない（要確認）。"
+   },
+   "en": {
+    "title": "Honda, Taisei and Taisei Rotec develop dynamic wireless charging road (magnetic coupling); expressway trial from FY2027",
+    "summary": "Honda R&D, Taisei Corporation and Taisei Rotec announced on 5 October that they have developed the base technology for a magnetic-coupling wireless power road that charges EVs while driving. Honda handles the road-side ground assembly (GA) with an integrated inverter and coil fed by DC distribution and the vehicle-side receiver (VA); Taisei develops the DC power supply and Taisei Rotec the paving and construction method. Linking multiple GAs by DC wiring simplifies cabling, and the VA aims to cover cars through heavy commercial vehicles. A trial on the Tateyama Expressway is planned from FY2027.",
+    "note": "The theoretical maximum efficiency of magnetic (resonant) coupling is η_max = k²Q₁Q₂ / (1+√(1+k²Q₁Q₂))² (k: coupling coefficient, Q₁,Q₂: coil quality factors). While driving, lateral offset and the gap between road and receiver change k, so efficiency and power depend on vehicle position. Power and efficiency figures are not given (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/08/417560.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-tein-4x4-sportplus",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "CN",
+   "tags": [
+    "シャシー",
+    "4WD"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "テイン、クロカン4WD用減衰力調整式ダンパー「4×4 SPORT PLUS」：複筒式＋別体タンク、中国アラサン英雄会で試乗",
+    "summary": "テインは複筒式「4×4 SPORT」に別体タンクを付けた減衰力調整式「4×4 SPORT PLUS」を、中国・内モンゴルの「アラサン英雄会」で11台（TANK 400/300、ランクル300/250/70、ラングラー、ブロンコ、ジムニーノマドなど）に装着して試乗に供した。ガスとオイルを分離して長距離悪路での性能低下を抑えるのが狙いで、室内から前後の減衰力を変える「EDFC5」をオプション設定する。2025年発表の単筒ソレノイドバルブ式「4×4 Z2」に次ぐ普及型との位置付け。",
+    "note": "ダンパーの吸収パワーは P = c·v²（c：減衰係数、v：ピストン速度）で、悪路連続走行では熱となりオイル温度が上がる。温度上昇は概ね ΔT ≈ ∫P dt /(m_oil·c_p) で、別体タンクでオイル量を増やすと温度上昇が緩やかになり、粘度低下による減衰力のタレが減る。ガス・オイル分離はエアレーション（泡立ち）による減衰力の抜けを防ぐ。"
+   },
+   "en": {
+    "title": "TEIN '4x4 SPORT PLUS' adjustable damper for off-roaders: twin-tube with remote reservoir, tested at China's Alxa Heroes festival",
+    "summary": "TEIN fitted its new adjustable 4x4 SPORT PLUS, a twin-tube 4x4 SPORT with an added remote reservoir, to 11 off-roaders (Tank 400/300, Land Cruiser 300/250/70, Wrangler, Bronco, Jimny Nomade and others) at the Alxa Heroes festival in Inner Mongolia. Separating gas and oil aims to reduce fade over long rough-road runs, and the optional EDFC5 lets front and rear damping be changed from the cabin. It is positioned as a more affordable model after the 2025 monotube solenoid-valve 4x4 Z2.",
+    "note": "Damper power absorption is P = c·v² (c: damping coefficient, v: piston speed); on continuous rough roads this becomes heat and oil temperature rises. Roughly ΔT ≈ ∫P dt /(m_oil·c_p), so more oil volume via a remote reservoir slows the temperature rise and reduces damping fade from lower viscosity. Separating gas and oil prevents aeration, which also causes loss of damping."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/impression/2146565.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-traton-lfp",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "EU",
+   "tags": [
+    "電池",
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "Traton（Scania・MAN）開発責任者、トラック用LFP電池の開発を認める：これまではNMCが中心",
+    "summary": "Traton GroupのR&D責任者Niklas Klingenbergはelectriveのインタビューで、従来NMC中心だった同グループがLFP電池の開発を進めていると述べた。ScaniaとMANの電動トラックは改良電池で航続最大720 km。2025年半ばに電池・充電のR&Dをグループの単一機能に統合した。レンジエクステンダー、架線充電、水素も検証するが主軸はBEVで、電池交換は優先していないとした。",
+    "note": ""
+   },
+   "en": {
+    "title": "Traton (Scania, MAN) R&D chief confirms LFP battery development for trucks after an NMC focus",
+    "summary": "Traton Group R&D chief Niklas Klingenberg told electrive that the group, which has so far focused on NMC, is now developing LFP batteries. Improved batteries give Scania and MAN electric trucks up to 720 km of range. Battery and charging R&D was merged into a single group function in mid-2025. Range extenders, overhead-wire charging and hydrogen are being tested, but BEV is the main path and battery swapping is not a priority.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/08/traton-rd-chief-are-we-considering-lfp-yes-absolutely/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-07-porsche-strategy-35",
+   "date": "2026-10-07",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "ポルシェ新戦略「Sportwagenschmiede '35」：911上位のミッドシップ・エンジン車開発、エンジン車:EV＝約2:1、約9,000人削減",
+    "summary": "ポルシェは10月7日のキャピタルマーケットデーで2035年に向けた戦略を発表した。911の上位にエンジン専用のミッドシップ・スーパースポーツ用プラットフォームを開発し（コンセプト「Mission S」を10月15日公開）、2028年にマカンEVと並売する内燃・PHEVのSUV、カイエン上位の大型SUVも計画。エンジン車とEVの比率を約2:1とし、911は電動化しないと明言。派生モデル数を約20%削減、開発費を最大20%削減、管理職を約40%削減、約9,000人の人員削減で損益分岐点を年20万台未満に下げ、営業利益率は中期9〜12%、長期15%を目標とする。",
+    "note": ""
+   },
+   "en": {
+    "title": "Porsche 'Sportwagenschmiede 35' strategy: mid-engined combustion car above the 911, about 2:1 ICE-to-EV mix, about 9,000 job cuts",
+    "summary": "At its capital markets day on 7 October Porsche presented its strategy to 2035. It is developing a combustion-only mid-engined super-sports platform above the 911 (Mission S concept due 15 October), plans an ICE/PHEV SUV alongside the electric Macan in 2028, and a large SUV above the Cayenne. It targets roughly a 2:1 mix of combustion and EV models and said the 911 will never be electric. It will cut variants by about 20%, development costs by up to 20%, management positions by about 40% and about 9,000 jobs, bringing break-even below 200,000 units a year, with a return on sales target of 9-12% medium term and 15% long term.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2146798.html"
+    },
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/new-cars/porsche-plans-new-halo-car-suvs-and-specials-revival-plan"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-07-porsche-718-ev-ecore",
+   "date": "2026-10-07",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "シャシー",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "次期ポルシェ718はEV専用に、エンジン版計画を撤回：電池をシート後方に積む「e-core」レイアウト（PPE Sport）",
+    "summary": "ポルシェは次期718ボクスター/ケイマン（983型）を2027年にEV専用で投入し、新アーキテクチャにエンジンを載せる計画を撤回した。新プラットフォームPPE SportはAudi Concept C量産版とも共用し、床下スケートボードではなく、エンジン車でエンジンがあった車体中央に電池を積む「e-core」レイアウトで、ミッドシップ車に近い重量配分と低い着座位置を狙う。出力・航続などの数値は未公表で、Autocarは開発車（計測機器約50 kg搭載）の同乗試乗を報告した。",
+    "note": "ヨー慣性は Iz = Σmᵢ·xᵢ²（xᵢ：重心からの前後距離）で、重い電池を重心近くにまとめると床下に前後へ広げる配置よりIzが小さくなり、ヨー応答の立ち上がりが速くなる。一方、電池を縦に積むと重心高が床下配置より上がる可能性があり（推測）、ロール・荷重移動とのトレードオフになる。数値は未公表（要確認）。"
+   },
+   "en": {
+    "title": "Next Porsche 718 goes EV-only, combustion plan dropped: 'e-core' layout puts the battery behind the seats (PPE Sport)",
+    "summary": "Porsche will launch the next 718 Boxster/Cayman (983) in 2027 as EVs only, dropping a plan to fit combustion engines to the new architecture. The PPE Sport platform, shared with the production Audi Concept C, uses an 'e-core' layout that stacks the battery in the middle of the car where an ICE Boxster's engine would sit, rather than a floor skateboard, aiming for mid-engine weight distribution and a low seating position. Power and range have not been disclosed; Autocar reported a passenger ride in a development car carrying about 50 kg of test equipment.",
+    "note": "Yaw inertia is Iz = Σmᵢ·xᵢ² (xᵢ: longitudinal distance from the CG), so concentrating the heavy battery near the CG gives a smaller Iz than spreading it under the floor, speeding up the initial yaw response. Stacking the battery vertically may raise the CG compared with a floor pack (inference), a trade-off with roll and load transfer. No figures have been published (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/new-cars/first-ride-speed-new-porsche-718-boxster-ev"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-07-vw-id-polo-gti",
+   "date": "2026-10-07",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "制御",
+    "シャシー"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "VW初のEV版GTI「ID. Polo GTI」予約開始：FWD 166 kW・290 Nm、電子制御フロントデフロック、3万9,995ユーロから",
+    "summary": "VWは初の電動GTI「ID. Polo GTI」の予約受付を3万9,995ユーロから開始した。前輪駆動で166 kW（222 hp）・290 Nm、0-100 km/h 6.8秒。電子制御のフロントアクスル・トランスバースディファレンシャルロックで左右前輪の駆動力を配分し、「GTI」ドライブプロファイルで駆動・ステアリング・サスペンションの設定を切り替える。電池は52 kWhのNMCで、WLTP航続最大431 km、DC 105 kW（10→80%約24分）。全長4,096 mm、ホイールベース2,599 mm。",
+    "note": "FFでの電子制御デフロック（VAQ相当）は、内輪空転を抑えて旋回脱出時の駆動力上限を上げ、外輪側への伝達で Mz≈ΔT·t_f/(2·r_w) の回頭モーメントを生む。例：ΔT=200 Nm、t_f=1.53 m、r_w=0.33 m（仮定値）で Mz≈460 Nm。前輪では駆動力差がキングピンまわりのモーメントとなりトルクステアにつながるため、EPSとの協調が重要（一般論）。"
+   },
+   "en": {
+    "title": "VW opens pre-orders for ID. Polo GTI, its first electric GTI: FWD 166 kW/290 Nm, electronic front diff lock, from EUR 39,995",
+    "summary": "VW opened pre-orders for the ID. Polo GTI, its first electric GTI, from EUR 39,995. It is front-wheel drive with 166 kW (222 hp) and 290 Nm, 0-100 km/h in 6.8 s. An electronically controlled front-axle transverse differential lock distributes drive between the front wheels, and a GTI drive profile changes the drive, steering and suspension settings. The 52 kWh NMC battery gives up to 431 km WLTP range and 105 kW DC charging (10-80% in about 24 min). Length is 4,096 mm and wheelbase 2,599 mm.",
+    "note": "An electronic diff lock on a FWD car (like VAQ) limits inside-wheel spin to raise the traction limit on corner exit and, by sending torque to the outer wheel, creates a turning moment Mz≈ΔT·t_f/(2·r_w). Example: ΔT=200 Nm, t_f=1.53 m, r_w=0.33 m (assumed) gives Mz≈460 Nm. On the front axle, a left/right force difference also acts about the kingpin and causes torque steer, so coordination with EPS matters (general point)."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/07/volkswagen-opens-orders-first-electric-gti-hot-hatch-at-45000/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-07-ferrari-purosangue-hs",
+   "date": "2026-10-07",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "シャシー",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "Ferrari Purosangue「Handling Speciale」：Multimatic製アクティブダンパーを再調整しロール・ピッチ・スクワットを約10%低減",
+    "summary": "FerrariはPurosangue向けにHandling Specialeパック（英国で1万6,480ポンド）を設定した。Multimatic製アクティブダンパーの制御を見直してロール・ピッチ・スクワットを約10%低減し、8速トランスアクスルの変速を速め、排気音を変更した。サスペンションジオメトリー、車高、タイヤ、6.5 L V12の715 bhpは変更なし。Autocarは「Comfort」時の乗り心地は標準車から変えていないと報告している。",
+    "note": "定常ロール角は φ ≈ m·a_y·h_r /(K_φ − m·g·h_r)（h_r：重心とロール軸の距離、K_φ：ロール剛性）で、受動ダンパーは定常値を変えられず過渡の速度だけを抑える。記事はアクティブダンパーと記載しており、能動的に力を発生できる方式であれば定常に近い姿勢変化も抑えられる（方式・制御内容は記事になく要確認）。"
+   },
+   "en": {
+    "title": "Ferrari Purosangue 'Handling Speciale': retuned Multimatic active dampers cut roll, pitch and squat by about 10%",
+    "summary": "Ferrari now offers a Handling Speciale pack for the Purosangue (GBP 16,480 in the UK). The Multimatic active dampers are retuned to cut roll, pitch and squat by about 10%, shifts from the eight-speed transaxle are quicker and the exhaust note changes. Suspension geometry, ride height, tyres and the 6.5-litre V12's 715 bhp are unchanged. Autocar reports that ride quality in Comfort is left as on the standard car.",
+    "note": "Steady-state roll angle is φ ≈ m·a_y·h_r /(K_φ − m·g·h_r) (h_r: CG-to-roll-axis distance, K_φ: roll stiffness); passive dampers cannot change the steady value, only slow the transient. The article calls them active dampers; if they can generate force actively, they can also limit near-steady body motion (the actuation method and control details are not in the article - to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/new-cars/ferrari-purosangue-handling-speciale-driven-sublime-or-overkill"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-07-tesla-fsd-germany",
+   "date": "2026-10-07",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "ADAS",
+    "規制"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ドイツ交通省、TeslaのFSDのEU承認を支持：速度超過は制限速度の10%まで、名称は「Tesla Assisted Driving」へ",
+    "summary": "ドイツ連邦交通省は10月6日、9月のBilger交通相とTeslaの協議で技術・責任の論点が合意に至ったとして、FSDのEU全域承認を後押しすると発表した。制限速度に対する設定上の超過を10%までとし、Teslaは名称を「Tesla Assisted Driving」に変えて運転者が全責任を負うことを明確にすると提案したとされる。FSDは欧州8か国で利用可能で、4月のオランダ承認は18か月超の審査後だった。EU全域適用には加盟国による別途の投票が必要。",
+    "note": "10%の速度オフセットは、制限50 km/hで最大55 km/h、130 km/hで最大143 km/hに相当。運転者責任を残す点からレベル2（運転支援）の枠組みでの承認となる（記事の記述から推測、適用法規名は記事にない＝要確認）。"
+   },
+   "en": {
+    "title": "German transport ministry backs EU approval of Tesla FSD: speeding capped at 10%, name to change to 'Tesla Assisted Driving'",
+    "summary": "Germany's Federal Ministry of Transport said on 6 October that talks between minister Bilger and Tesla in September reached agreement on technical and liability issues, and that it will push for EU-wide approval of FSD. The speed offset is capped at 10% above the limit, and Tesla reportedly offered to rename it 'Tesla Assisted Driving' to make clear the driver remains fully responsible. FSD is available in eight European countries; the Dutch approval in April came after more than 18 months of assessment. EU-wide use requires a separate vote by member states.",
+    "note": "A 10% offset means up to 55 km/h in a 50 km/h zone and up to 143 km/h at 130 km/h. Keeping the driver responsible implies approval within a Level 2 (driver assistance) framework (inferred from the article; the applicable regulation is not named - to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/811088/tesla-fsd-gains-support-germany/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-07-gm-hybrids",
+   "date": "2026-10-07",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "GM、ハイブリッド投入を計画と明言：現行のHEVはCorvetteのみ、新型は最短で来年",
+    "summary": "GMのパワートレーン技術担当副社長Mike AndersonはCNBCの取材で、ハイブリッドは計画に含まれていると述べた。BEVを最終形としつつ技術の多様性を認める姿勢で、車種は明かしていない（Motor1はEquinox等を予想）。GMの現行HEVはCorvetteのみ。同期間に、トヨタの電動車販売は第3四半期28.5%増、ヒョンデのHEVは9月39.0%増・第3四半期35%増、ホンダのHEVは9月18.4%増・第3四半期20.9%増だった。",
+    "note": ""
+   },
+   "en": {
+    "title": "GM confirms hybrids are in its plans; the Corvette is its only hybrid today, a new one possibly next year",
+    "summary": "GM vice president of propulsion engineering Mike Anderson told CNBC that hybrids are part of the plan. GM still sees BEVs as the end state but accepts technology diversity; he did not name models (Motor1 expects the Equinox among others). GM's only current hybrid is the Corvette. Meanwhile, Toyota's electrified sales rose 28.5% in Q3, Hyundai's hybrid sales rose 39.0% in September and 35% in Q3, and Honda's hybrid sales rose 18.4% in September and 20.9% in Q3.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/811086/general-motors-hybrids-comeback-plan/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-07-suzuki-e-sky",
+   "date": "2026-10-07",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "電池",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "スズキ初の軽乗用EV「e SKY」発表：電費97 Wh/km・航続310 km、油冷eAxle、軽初の電動ブレーキブースター、212万円から",
+    "summary": "スズキは10月6日、初の軽乗用EV「e SKY」を発表した。油冷式eAxle（モーター・インバーター・減速機一体）、EV専用プラットフォーム「HEARTECT-e」、薄型LFP電池（BYD製と報道）を採用し、一充電航続310 km（WLTC）、交流電力量消費率97 Wh/km、最小回転半径4.4 m。回生協調ブレーキ、ブレーキ引きずり低減機構、スズキ軽初の電動ブレーキブースターを採用。価格は212万〜279万円、湖西工場でガソリン車と混流生産。発売日はCar Watchが11月6日、Electrekが11月16日と記載しており要確認。",
+    "note": "97 Wh/km×310 km≈30 kWh は、コンセント側で測った一充電分の電力量（充電損失を含む）で、電池の公称容量は記事にない（推測で20 kWh台後半か、要確認）。回生協調ブレーキは 要求制動力 F_req = F_regen + F_fric とし、モーター回生上限（車速・SOC・温度で変化）を超える分だけ摩擦ブレーキで補う。電動ブースターは負圧源が不要で、ペダル踏力と液圧を切り離して摩擦分を調整できるため、回生量の変化をペダルフィールに出さない制御が可能。"
+   },
+   "en": {
+    "title": "Suzuki unveils e SKY, its first kei passenger EV: 97 Wh/km, 310 km range, oil-cooled eAxle, first electric brake booster in a Suzuki kei car, from JPY 2.12 m",
+    "summary": "Suzuki announced its first kei passenger EV, the e SKY, on 6 October. It uses an oil-cooled eAxle (motor, inverter and reduction gear in one unit), the dedicated HEARTECT-e platform and a thin LFP battery (reported to be from BYD), achieving 310 km WLTC range, AC energy consumption of 97 Wh/km and a 4.4 m minimum turning radius. It has regenerative cooperative braking, a brake-drag reduction mechanism and Suzuki's first electric brake booster in a kei car. Prices are JPY 2.12-2.79 m, built at Kosai alongside petrol cars. The on-sale date is 6 November per Car Watch and 16 November per Electrek - to be confirmed.",
+    "note": "97 Wh/km x 310 km ≈ 30 kWh is the energy per full charge measured at the outlet (including charging losses); nominal battery capacity is not given (inference: high-20s kWh, to be confirmed). Cooperative braking sets F_req = F_regen + F_fric, with friction covering only what exceeds the motor's regen limit (which varies with speed, SOC and temperature). An electric booster needs no vacuum source and decouples pedal force from hydraulic pressure, so changes in regen share can be hidden from the pedal feel."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2146471.html"
+    },
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/06/suzuki-undercuts-byd-13500-mini-ev-using-byd-batteries/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-07-jeep-compass-jp",
+   "date": "2026-10-07",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "新型ジープ・コンパス日本発売：1.2 L 3気筒ターボ＋16 kWモーターの48 Vハイブリッド、6速DCT、WLTC 19.6 km/L、520万円から",
+    "summary": "Stellantisジャパンは9年ぶりにフルモデルチェンジした「コンパス」を発売した。直列3気筒1.2 Lターボ（100 kW）に16 kWモーターと6速DCTを組み合わせる48 Vハイブリッドで、システム出力107 kW（145 PS）、全車FF、WLTC燃費19.6 km/L。発進・低速時はモーターのみで走行可能。全長4,550 mm、ホイールベース2,785 mm。価格は520万〜590万円、限定100台のファーストエディションは595万円。ジープ初の誤発進抑制機能を採用。",
+    "note": "19.6 km/L は 100/19.6≈5.1 L/100 km、米ガロン換算で 19.6×2.352≈46.1 mpg（1 mpg = 0.4251 km/L）。エンジン100 kW＋モーター16 kW＝116 kWに対しシステム107 kWと小さいのは、両者の最大出力の発生回転域が一致しないため（一般論）。"
+   },
+   "en": {
+    "title": "New Jeep Compass on sale in Japan: 48V hybrid with 1.2-litre three-cylinder turbo and 16 kW motor, 6-speed DCT, 19.6 km/L WLTC, from JPY 5.2 m",
+    "summary": "Stellantis Japan launched the Compass, its first full redesign in nine years. The 48V hybrid pairs a 1.2-litre three-cylinder turbo (100 kW) with a 16 kW motor and a six-speed DCT for 107 kW (145 PS) system output; all versions are FWD, with 19.6 km/L WLTC fuel economy, and it can drive on electricity alone when pulling away and at low speed. Length is 4,550 mm and wheelbase 2,785 mm. Prices are JPY 5.2-5.9 m, and a 100-unit First Edition costs JPY 5.95 m. It is the first Jeep with acceleration-suppression for pedal misapplication.",
+    "note": "19.6 km/L equals 100/19.6≈5.1 L/100 km, or 19.6x2.352≈46.1 US mpg (1 mpg = 0.4251 km/L). The 107 kW system output is less than 100 kW + 16 kW = 116 kW because the engine and motor peaks occur at different speeds (general point)."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2146377.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-05-bmw-m3-ev-quad",
+   "date": "2026-10-05",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "4WD",
+    "制御"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "BMW M3 EV（2027年）：4モーターで各輪を個別制御、最大出力より運動性能を優先とM部門トップ",
+    "summary": "BMWは電動M3の試作車画像を公開し、ミュンヘン工場で生産すると確認した（2027年発売予定）。M部門のFrank van Meel氏はAutocarに対し、4モーター構成だが全モーターを同時に最大で使うことはなく、出力を追うのではなく中央制御「Heart of Joy」による各輪駆動力制御で敏捷性・安定性を高めると説明した。内輪を制動し外輪を加速することで旋回脱出の仕方が変わるとしている。エンジン版M3も並行開発中。",
+    "note": "4輪独立駆動のヨーモーメントは Mz = (t_f/2)(Fx_FR − Fx_FL) + (t_r/2)(Fx_RR − Fx_RL)、Fx = T/r_w。例：後軸だけで左右差ΔT=1,000 Nm、t_r=1.6 m、r_w=0.35 m（仮定値）なら Mz≈2,290 Nm。LSDと違いモーターは低速輪→高速輪の向きにも、制動・駆動の符号を問わず配分できるため、定常旋回ではアンダーステア補正、過渡では目標ヨーレート γ* への追従（例：Mz = Iz·dγ*/dt + K(γ*−γ)）が可能。出力値は未公表（要確認）。"
+   },
+   "en": {
+    "title": "BMW M3 EV (2027): four motors with per-wheel control, prioritising dynamics over peak power, says M boss",
+    "summary": "BMW published images of the electric M3 prototype and confirmed it will be built in Munich (launch expected 2027). M division head Frank van Meel told Autocar it has four motors but will never use them all at full output at once; instead of chasing power, per-wheel drive control by the Heart of Joy central computer is used for agility and stability. Braking the inside wheels and accelerating the outside ones changes how the car exits corners, he said. A combustion M3 is being developed in parallel.",
+    "note": "Yaw moment for four-wheel independent drive is Mz = (t_f/2)(Fx_FR − Fx_FL) + (t_r/2)(Fx_RR − Fx_RL), with Fx = T/r_w. Example: a rear left/right difference ΔT=1,000 Nm, t_r=1.6 m, r_w=0.35 m (assumed) gives Mz≈2,290 Nm. Unlike an LSD, motors can move torque in either direction and with drive or regen, enabling understeer correction in steady cornering and tracking of a target yaw rate γ* in transients (e.g. Mz = Iz·dγ*/dt + K(γ*−γ)). Output figures are not disclosed (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/electric-cars/bmw-m3-ev-all-revealed-natural-enemy-ice-super-saloon"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-05-toyota-argentina-ev",
+   "date": "2026-10-05",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "Global",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、アルゼンチンで新EV生産へ約13億ドル投資、同国自動車産業で最大",
+    "summary": "トヨタ・アルゼンチンは、大型投資優遇制度RIGIへの参加承認を受け、ブエノスアイレス州サラテ工場で新型EVを生産すると発表した。投資額は約13億ドルで同国自動車産業で最大、建設期に約3,600人、完成後に約2,600人の雇用を見込む。経済相は年約12.8億ドルの輸出、生産の約70%を輸出とした。Automotive NewsはHilux BEVが候補と報じた。中南米ではBYDが1〜7月に8万5,800台を販売し、EV 14万7,493台の約6割を占める。",
+    "note": ""
+   },
+   "en": {
+    "title": "Toyota to invest about USD 1.3 bn to build a new EV in Argentina, the country's largest auto investment",
+    "summary": "Toyota Argentina received approval to join the RIGI large-investment incentive regime and will produce a new EV at its Zárate plant in Buenos Aires province. The roughly USD 1.3 bn project is the largest in Argentina's auto industry, creating about 3,600 jobs during construction and about 2,600 afterwards. The economy minister said it will generate about USD 1.28 bn in annual exports, with about 70% of output exported. Automotive News reports the Hilux BEV is a likely candidate. In Latin America BYD sold 85,800 vehicles through July, about 60% of the region's 147,493 EVs.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/05/toyota-gets-green-light-new-ev-built-to-take-on-china/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-02-sne-battery-share",
+   "date": "2026-10-02",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "Global",
+   "tags": [
+    "電池"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "世界EV電池搭載量（2026年1〜8月、SNE Research）：計844.2 GWh（+19.7%）、CATL 39.4%、BYD 15.1%、LGES 8.1%",
+    "summary": "SNE Researchによると、2026年1〜8月の世界のEV用電池搭載量（BEV・PHEV・HEV）は844.2 GWhで前年比19.7%増。CATLが333.0 GWh（シェア39.4%）、BYDが127.9 GWh（15.1%）、LGESが68.3 GWh（8.1%）、CALB 44.4 GWh、Gotion 41.5 GWh、Panasonic 29.7 GWh（3.5%）。上位10社中の中国7社で73.3%を占める。LGESの北米搭載量は42.3%減の14.6 GWh。",
+    "note": ""
+   },
+   "en": {
+    "title": "Global EV battery installations Jan-Aug 2026 (SNE Research): 844.2 GWh (+19.7%), CATL 39.4%, BYD 15.1%, LGES 8.1%",
+    "summary": "According to SNE Research, global EV battery installations (BEV, PHEV and HEV) in January-August 2026 were 844.2 GWh, up 19.7%. CATL had 333.0 GWh (39.4% share), BYD 127.9 GWh (15.1%), LGES 68.3 GWh (8.1%), CALB 44.4 GWh, Gotion 41.5 GWh and Panasonic 29.7 GWh (3.5%). The seven Chinese firms in the top 10 held 73.3%. LGES's North American installations fell 42.3% to 14.6 GWh.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/02/global-ev-battery-market-share-jan-aug-2026/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-02-uk-cn-tariff",
+   "date": "2026-10-02",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "EU、英国に中国製EVへの追加関税（最大45%）導入を要求と報道、見返りに英国製EVを「Made in Europe」扱い",
+    "summary": "Financial Times報道として、EUは英国に対し、中国製EVにEUと同じ追加関税（メーカーにより最大45%）を課すよう求め、見返りに産業加速法（IAA）案で日産・Range Rover・BentleyのEVを「Made in Europe」として扱う用意があるとAutocarが伝えた。英国の現行関税は10%で、9月の英国新車市場で中国ブランドのシェアは23%。英ビジネス相は判断が難しい状況だと述べた。",
+    "note": ""
+   },
+   "en": {
+    "title": "EU reportedly asks UK to impose extra tariffs (up to 45%) on Chinese EVs in return for treating UK-built EVs as 'Made in Europe'",
+    "summary": "Citing the Financial Times, Autocar reports that the EU has asked the UK to apply the same additional tariffs on Chinese-built EVs (up to 45% depending on the maker), in return for treating Nissan, Range Rover and Bentley EVs as 'Made in Europe' under the proposed Industrial Accelerator Act. The UK currently charges 10%, and Chinese brands took 23% of the UK market in September. The business secretary described the UK position as a difficult balance.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/business-corporate/uk-genuine-dilemma-over-bowing-eu-chinese-car-tariffs"
+    }
+   ]
+  },
   {
    "id": "2026-10-08-jaguar-type01",
    "date": "2026-10-07",
