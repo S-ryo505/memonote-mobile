@@ -21,6 +21,7 @@ MAX_NEW_PER_SOURCE = 25
 MAX_TEXT = 20000          # 本文は取り出しに使うだけで保存しない
 MAX_FACTS_CHARS = 700     # 保存するのは数値・固有名詞を含む文の抜き出し（この長さまで）
 MAX_SUMMARY = 400
+SCHEMA = 2                # 保存形式の版。変えると古い記事を捨てて集め直す
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/128.0 Safari/537.36 MemoNoteFeedCollector/1.0")
 JST = dt.timezone(dt.timedelta(hours=9))
@@ -48,8 +49,9 @@ def fetch_text(url, fallback):
     """記事ページから本文を取り出す。取れなければ RSS の内容で代用"""
     try:
         r = requests.get(url, headers={"User-Agent": UA}, timeout=25)
-        if r.ok and r.text:
-            t = trafilatura.extract(r.text, include_comments=False, include_tables=True,
+        if r.ok and r.content:
+            # 文字コードの誤判定（日本語サイトの文字化け）を防ぐため、bytes のまま渡して trafilatura に判定させる
+            t = trafilatura.extract(r.content, include_comments=False, include_tables=True,
                                     favor_recall=True, url=url)
             if t and len(t) > len(fallback) * 0.8 and len(t) > 300:
                 return t[:MAX_TEXT], "page"
@@ -85,7 +87,7 @@ def main():
         path = OUT / f"{topic}.json"
         old = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"items": []}
         items = {i["url"]: i for i in old.get("items", [])
-                 if dt.datetime.fromisoformat(i["published"]) >= cutoff}
+                 if i.get("v") == SCHEMA and dt.datetime.fromisoformat(i["published"]) >= cutoff}
 
         for s in srcs:
             st = {"ok": False, "entries": 0, "new": 0, "page_text": 0, "error": ""}
@@ -112,6 +114,7 @@ def main():
                     summary = strip_html(e.get("summary", ""))
                     text, how = fetch_text(url, rss_body or summary)
                     items[url] = {
+                        "v": SCHEMA,
                         "source": s["name"],
                         "title": strip_html(e.get("title", "")),
                         "url": url,
