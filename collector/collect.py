@@ -1,8 +1,9 @@
 """MemoNote ニュース用の記事収集スクリプト（GitHub Actions で毎朝実行）
 
 各サイトの RSS から新しい記事を拾い、記事ページの本文を取り出して
-<出力先>/<topic>.json に保存する。ワークフローがそれを暗号化して feeds ブランチに置き、
-Claude の定期タスクはそれを復号して読む
+<出力先>/<topic>.json に保存する。ワークフローがそれを feeds ブランチに置き、
+Claude の定期タスクはそれを読むだけ（ウェブも暗号もスクリプト実行も不要）。
+著作権に配慮して、記事全文は保存せず「要約（RSS）＋数値を含む文の抜き出し」だけを残す
 （Claude がウェブを直接開かないので、承認の確認が出ない）。
 
 - 保存期間: KEEP_DAYS 日（それより古い記事は消す）
@@ -13,11 +14,13 @@ import json, time, datetime as dt, pathlib, re, html, sys
 import feedparser, requests, trafilatura
 
 ROOT = pathlib.Path(__file__).parent
-# 出力先（作業用フォルダ）。暗号化前の本文はリポジトリには入れず、ワークフローが暗号化して feeds ブランチに置く
+# 出力先（作業用フォルダ）
 OUT = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "feeds"
 KEEP_DAYS = 10
 MAX_NEW_PER_SOURCE = 25
-MAX_TEXT = 8000
+MAX_TEXT = 20000          # 本文は取り出しに使うだけで保存しない
+MAX_FACTS_CHARS = 700     # 保存するのは数値・固有名詞を含む文の抜き出し（この長さまで）
+MAX_SUMMARY = 400
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/128.0 Safari/537.36 MemoNoteFeedCollector/1.0")
 JST = dt.timezone(dt.timedelta(hours=9))
@@ -53,6 +56,23 @@ def fetch_text(url, fallback):
     except Exception:
         pass
     return fallback[:MAX_TEXT], "rss"
+
+
+FACT_HINT = re.compile(r"[0-9０-９]|%|kWh|kW|Nm|hp|PS|mph|km|ドル|円|ユーロ|万台|億|兆|billion|million|percent", re.I)
+
+
+def facts_of(text):
+    """本文から、数値や単位を含む文を先頭から順に抜き出す（記事全文は保存しない）"""
+    sents = re.split(r"(?<=[。！？])|(?<=[.!?])\s+|\n+", text or "")
+    out, n = [], 0
+    for s in sents:
+        s = s.strip()
+        if len(s) < 12 or len(s) > 400 or not FACT_HINT.search(s):
+            continue
+        if n + len(s) > MAX_FACTS_CHARS:
+            break
+        out.append(s); n += len(s)
+    return out
 
 
 def main():
@@ -97,8 +117,8 @@ def main():
                         "url": url,
                         "published": pub.isoformat(timespec="seconds"),
                         "collected": now().isoformat(timespec="seconds"),
-                        "summary": summary[:600],
-                        "text": text,
+                        "summary": (summary or text)[:MAX_SUMMARY],
+                        "facts": facts_of(text),
                         "text_from": how,
                     }
                     n += 1
