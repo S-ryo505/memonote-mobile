@@ -25,10 +25,6 @@
       "url": "https://www.autocar.co.uk/rss"
     },
     {
-      "name": "Green Car Congress",
-      "url": "https://www.greencarcongress.com/index.xml"
-    },
-    {
       "name": "Electrek",
       "url": "https://electrek.co/feed/"
     },
@@ -49,10 +45,6 @@
     {
       "name": "TechCrunch",
       "url": "https://techcrunch.com/category/artificial-intelligence/feed/"
-    },
-    {
-      "name": "VentureBeat",
-      "url": "https://venturebeat.com/category/ai/feed/"
     },
     {
       "name": "The Verge",
