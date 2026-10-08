@@ -1,15 +1,16 @@
 name: collect-feeds
 
-# 🚗/🤖 ニュース用の記事を集めるワークフロー
-# - Claude の定期タスクが動き始めるときに feeds-request ブランチへ push して呼び出す（確実に動かすため）
-# - 予備として毎朝 5:17 / 6:17 JST にも動く（GitHub の定時実行は遅れたり飛ばされたりすることがある）
-# 記事本文は暗号化（鍵は Secrets の FEED_KEY）して feeds ブランチに置く。公開リポジトリでも中身は読めない。
+# 🚗/🤖 ニュース用の記事を集めて feeds ブランチに置くワークフロー
+# - 毎日 3:17 / 5:17 / 6:17 / 12:17 / 18:17 JST に動く（GitHub の定時実行は遅れたり飛ばされたりするので多めに）
+# - feeds-request ブランチへの push でも動く（手動で今すぐ集めたいとき用）
+# 保存するのは「題名・URL・日付・RSSの要約・数値を含む文の抜き出し」だけで、記事全文は保存しない。
+# Claude の定期タスクは feeds ブランチを clone して JSON を読むだけ（ウェブを開かない）。
 on:
+  schedule:
+    - cron: "17 18,20,21 * * *"
+    - cron: "17 3,9 * * *"
   push:
     branches: [feeds-request]
-  schedule:
-    - cron: "17 20 * * *"
-    - cron: "17 21 * * *"
   workflow_dispatch:
 
 permissions:
@@ -23,12 +24,7 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    env:
-      FEED_KEY: ${{ secrets.FEED_KEY }}
     steps:
-      - name: check key
-        run: test -n "$FEED_KEY" || { echo "::error::Secrets に FEED_KEY がありません"; exit 1; }
-
       - uses: actions/checkout@v4
         with:
           ref: main
@@ -39,34 +35,23 @@ jobs:
 
       - run: pip install feedparser==6.0.11 trafilatura==1.12.2 requests==2.32.3
 
-      - name: restore previous (decrypt)
+      - name: restore previous
         run: |
           mkdir -p "$RUNNER_TEMP/work"
           if git fetch -q --depth 1 origin feeds 2>/dev/null; then
             for t in auto ai; do
-              if git show "FETCH_HEAD:$t.json.gz.enc" > "$RUNNER_TEMP/$t.enc" 2>/dev/null; then
-                openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass env:FEED_KEY \
-                  -in "$RUNNER_TEMP/$t.enc" | gunzip > "$RUNNER_TEMP/work/$t.json" || rm -f "$RUNNER_TEMP/work/$t.json"
-              fi
+              git show "FETCH_HEAD:$t.json" > "$RUNNER_TEMP/work/$t.json" 2>/dev/null || rm -f "$RUNNER_TEMP/work/$t.json"
             done
           fi
 
       - name: collect
         run: python collector/collect.py "$RUNNER_TEMP/work"
 
-      - name: encrypt and publish to feeds branch
+      - name: publish to feeds branch
         run: |
           OUT="$RUNNER_TEMP/out"; mkdir -p "$OUT"
-          for t in auto ai; do
-            gzip -9 -c "$RUNNER_TEMP/work/$t.json" | openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt \
-              -pass env:FEED_KEY -out "$OUT/$t.json.gz.enc"
-          done
-          cp "$RUNNER_TEMP/work/status.json" "$OUT/status.json"
-          cat > "$OUT/README.md" <<'EOF'
-          # feeds ブランチ（自動生成）
-          collect-feeds ワークフローが上書きします。記事データは暗号化されています（鍵: Secrets の FEED_KEY）。
-          復号: `openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass pass:<鍵> -in auto.json.gz.enc | gunzip > auto.json`
-          EOF
+          cp "$RUNNER_TEMP/work/auto.json" "$RUNNER_TEMP/work/ai.json" "$RUNNER_TEMP/work/status.json" "$OUT/"
+          printf '# feeds ブランチ（自動生成）\ncollect-feeds ワークフローが毎回上書きします。消さないでください。\n' > "$OUT/README.md"
           cd "$OUT"
           git init -q -b feeds
           git config user.name "feed-collector"
