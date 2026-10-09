@@ -1,6 +1,712 @@
 {
- "updated": "2026-10-09T08:23:22+09:00",
+ "updated": "2026-10-10T06:52:46+09:00",
  "items": [
+  {
+   "id": "2026-10-09-honda-hybrid-15",
+   "date": "2026-10-09",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "制御",
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "ホンダ、次世代2モーターHVの名称を「Honda Hybrid」に決定、2029年度までに15車種へ搭載",
+    "summary": "ホンダは2027年からグローバル投入する次世代ハイブリッドの名称を「Honda Hybrid」とし、2029年度までに北米を中心に15車種へ搭載する計画を示した。e:HEV（旧i-MMD）の2モーター方式をベースに、エンジンの高効率運転域の拡大、ドライブユニットの小型・高効率化、制御の改良で燃費を上げるとしている。2026年5月公表の四輪事業再構築で、開発・生産リソースをHVへ再配分する施策の一つ。",
+    "note": "2モーター式はシリーズ走行時に η_sys = η_eng·η_gen·η_inv·η_mot と電気変換を2回通るため、高速巡航ではエンジン直結クラッチで変換損失を避ける。例えば各効率を0.95と仮定（仮定値）すると電気経路は0.95³≈0.86で、直結時のギア効率（約0.97、仮定値）との差が高速燃費に効く。記事にある「ボディのしなりを活用してタイヤの接地…」以降の車体側の記述は要約文が途中で切れており、内容は要確認。"
+   },
+   "en": {
+    "title": "Honda names its next-generation two-motor hybrid 'Honda Hybrid' and plans 15 models with it by FY2029",
+    "summary": "Honda has named the next-generation hybrid system it will roll out globally from 2027 'Honda Hybrid', and plans to fit it to 15 models by FY2029, led by North America. Based on the two-motor e:HEV (formerly i-MMD), it aims to improve fuel economy by widening the engine's high-efficiency range, making the drive unit smaller and more efficient, and refining control. It is part of the four-wheel business restructuring announced in May 2026, which shifts development and production resources toward hybrids.",
+    "note": "In series mode a two-motor system passes energy through two conversions, η_sys = η_eng·η_gen·η_inv·η_mot, so at highway speeds an engine direct-drive clutch avoids those losses. Assuming 0.95 for each stage (assumed values), the electrical path is 0.95³ ≈ 0.86, versus about 0.97 for a direct gear path (assumed), which matters for highway economy. The article's description of the body side ('using body flex to keep the tyres in contact...') is cut off in the summary; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/09/417609.html"
+    },
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2147052.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-honda-mitsubishi-triton",
+   "date": "2026-10-09",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "rumor",
+   "ja": {
+    "title": "ホンダ、三菱自からタイ生産「トライトン」のOEM供給を受ける方針と読売報道",
+    "summary": "読売新聞（10月9日朝刊1面）によると、ホンダは両社の協業の第1弾として、三菱自がタイ工場で生産するピックアップ「トライトン」のOEM供給を2028年にも受け、東南アジアで販売する方針。他地域への展開や、他車種のOEM、メーターやディスプレイなど運転席周り部品の共同開発も検討しているという。両社とも公式発表はしていない。",
+    "note": "トライトンはラダーフレーム構造のボディオンフレーム車で、ホンダの現行ラインアップにない車型を補う。三菱側はタイ工場の稼働率を上げる狙いとされる。報道ベースのため詳細仕様（駆動方式・ホンダ版の差別化）は要確認。"
+   },
+   "en": {
+    "title": "Yomiuri reports Honda will source the Thai-built Mitsubishi Triton pickup as an OEM model",
+    "summary": "According to the Yomiuri Shimbun (front page, 9 October), Honda plans, as the first step of its partnership talks with Mitsubishi Motors, to receive the Triton pickup built at Mitsubishi's Thai plant as an OEM model from as early as 2028 and sell it in Southeast Asia. It is also reportedly considering other regions, OEM supply of further models, and joint development of cockpit parts such as meters and displays. Neither company has announced it officially.",
+    "note": "The Triton is a body-on-frame truck with a ladder frame, filling a body type missing from Honda's current lineup. For Mitsubishi, the aim is said to be higher utilisation of its Thai plant. As this is a press report, details such as drivetrain and how Honda's version will differ need confirmation."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/09/417583.html"
+    },
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/811281/honda-truck-rebadged-mitsubishi-triton/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-nissan-serena-epower3",
+   "date": "2026-10-09",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "rumor",
+   "ja": {
+    "title": "次期日産セレナは2028年前後、第3世代e-POWER搭載の見込み（スクープ）",
+    "summary": "Responseのスクープ記事によると、現行C28型（2022年12月発売、2026年2月改良）の次期型は2028年前後の登場が有力で、全長とホイールベースをわずかに延ばして3列目と荷室を改善する方向。パワートレインは発電専用エンジンと5部品一体の「5-in-1 e-POWER電動ユニット」を組み合わせる第3世代e-POWERが本命とされる。価格はグレードにより30万〜50万円上がる可能性があるという。",
+    "note": "現行e-POWER ハイウェイスターV（2WD）のWLTC燃費は19.0 km/L＝5.26 L/100km（100/19.0）。仮に10%改善すると約20.9 km/Lだが、記事自体が「出力10〜15%向上・燃費10%改善」を裏付ける公式情報はないとしており、この数値は仮定値。e-POWERはシリーズ式で、エンジンを高効率点付近に固定運転できるのが利点。"
+   },
+   "en": {
+    "title": "Next Nissan Serena expected around 2028 with third-generation e-POWER (scoop)",
+    "summary": "According to a Response scoop, the successor to the current C28 Serena (launched December 2022, updated February 2026) is likely to arrive around 2028, with slightly longer overall length and wheelbase to improve the third row and luggage space. The likely powertrain is third-generation e-POWER, which pairs a generator-only engine with a '5-in-1' electric drive unit integrating five main components. Prices may rise by JPY 300,000–500,000 depending on grade.",
+    "note": "The current e-POWER Highway Star V (2WD) is rated at 19.0 km/L WLTC, i.e. 5.26 L/100 km (100/19.0). A 10% gain would give about 20.9 km/L, but the article itself says there is no official basis for '10–15% more power, 10% better economy', so this is an assumed value. e-POWER is a series hybrid, so the engine can run near its most efficient operating point."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/09/417597.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-toyota-rav4-rugged-comfort",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "シャシー"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、50系RAV4向け後付け「ラギッドコンフォートパッケージ」発売（フィン付き床下カバー＋パフォーマンスダンパー）",
+    "summary": "トヨタ アップグレード ファクトリーは10月8日、50系RAV4（2019年4月〜2025年12月生産、PHEV除く）向けに、士別フィン付きアルミ製アンダーカバーとパフォーマンスダンパーを組み合わせた後付けパッケージを17万3800円（工賃込み）で発売した。フィン付きアンダーカバーはハイラックスに続く2車種目で、単品価格は8万3600円。",
+    "note": "パフォーマンスダンパーは車体の2点間に減衰要素を入れ、車体の微小な弾性変形を速度比例の力 F=c·ẋ で吸収して振動の収束を早める部品。床下フィンは空力で車体姿勢や直進性に効くとされるが、効果の定量値は記事にない（要確認）。既販車へのシャシー系後付けアップデートという販売形態が特徴。"
+   },
+   "en": {
+    "title": "Toyota launches retrofit 'Rugged Comfort Package' for the 50-series RAV4: finned underbody cover plus performance damper",
+    "summary": "On 8 October, Toyota Upgrade Factory launched a retrofit package for the 50-series RAV4 (built April 2019 to December 2025, excluding PHEV) that combines an aluminium underbody cover with 'Shibetsu fins' and a performance damper, priced at JPY 173,800 including labour. The finned cover is the second application after the Hilux and costs JPY 83,600 on its own.",
+    "note": "A performance damper places a damping element between two points on the body, absorbing small elastic deformation with a velocity-proportional force F = c·ẋ so vibrations settle faster. The underbody fins are said to aid attitude and straight-line stability aerodynamically, but no figures are given (needs confirmation). The retrofit chassis update for cars already on the road is the notable sales model."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2147075.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-toray-150c-film-cap",
+   "date": "2026-10-09",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "JP",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "東レ、150℃耐熱フィルムコンデンサ搭載インバータを150℃環境で動作実証、放熱構造は約50%小型化の可能性",
+    "summary": "東レは自社の150℃耐熱フィルムを誘電体にしたフィルムコンデンサを試作し、名古屋大学 山本真義教授との共同研究のモデルインバータで150℃環境下の動作を確認した。熱シミュレーションでは放熱構造を約50%小型化できる可能性も示した。NEDOの2023年度採択事業の成果で、10月13〜16日のCEATEC 2026（NEDOブース）に出展する。",
+    "note": "DCリンクのフィルムコンデンサではリップル電流による発熱 P = I_rms²·ESR が自己発熱となり、周囲温度＋自己発熱が耐熱上限を超えないよう冷却を設計する。耐熱上限が上がれば許容温度差 ΔT = P·R_th が広がり、熱抵抗 R_th が大きい放熱構造、つまり小型のヒートシンクで済む。一般的なBOPPフィルムは105℃前後が上限とされる（記事外の一般値・要確認）。"
+   },
+   "en": {
+    "title": "Toray demonstrates an inverter with 150°C film capacitors at 150°C; cooling structure could shrink by about 50%",
+    "summary": "Toray built film capacitors using its own 150°C heat-resistant film as the dielectric and confirmed that a model inverter, developed with Professor Masayoshi Yamamoto of Nagoya University, runs stably at 150°C. Thermal simulation also suggested the cooling structure could be about 50% smaller. The work comes from a NEDO project adopted in FY2023 and will be shown on the NEDO booth at CEATEC 2026 on 13–16 October.",
+    "note": "In a DC-link film capacitor, ripple current causes self-heating P = I_rms²·ESR, and cooling is sized so ambient plus self-heating stays below the temperature limit. A higher limit widens the allowable rise ΔT = P·R_th, so a cooling structure with higher thermal resistance R_th, i.e. a smaller heatsink, is enough. Typical BOPP film is limited to around 105°C (general value outside the article; needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/09/417621.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-energywith-nizn",
+   "date": "2026-10-09",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "JP",
+   "tags": [
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "エナジーウィズ、ニッケル亜鉛電池の実製品を初公開へ：鉛蓄電池比で寿命約4倍・重量エネルギー密度約2.1倍",
+    "summary": "エナジーウィズはJMSビズウィーク2026（10月13〜16日、幕張メッセ）でNi-Zn電池の実製品を初公開し、同サイズの鉛蓄電池と比較展示する。軽負荷試験で寿命は鉛蓄電池の約4倍、体積エネルギー密度約1.4倍、重量エネルギー密度約2.1倍、充電時間は約1/4で、75℃でも安定動作するとしている。負極のデンドライト析出による短寿命を独自の劣化抑制技術で解決したとし、自動車の始動用・補機用、フォークリフト、AGV、UPSを用途に想定する。",
+    "note": "同じエネルギー量なら質量は密度比の逆数で、鉛蓄電池比 1/2.1≈0.48、つまり約52%軽くなる計算（体積は 1/1.4≈0.71）。補機電源として使う場合の公称電圧（Ni-Znは一般にセル約1.6V）や12V系のセル構成は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "EnergyWith to show production nickel-zinc batteries: about 4x the life and 2.1x the specific energy of lead-acid",
+    "summary": "EnergyWith will unveil production Ni-Zn batteries at Japan Mobility Show Bizweek 2026 (13–16 October, Makuhari Messe), shown alongside a same-size lead-acid battery. It claims about 4x the life of lead-acid in a light-load test, about 1.4x the volumetric and 2.1x the gravimetric energy density, about a quarter of the charging time, and stable operation at 75°C. It says its own degradation-suppression technology solved the short life caused by dendrites at the negative electrode, and targets automotive starter and auxiliary batteries, forklifts, AGVs and UPS.",
+    "note": "For the same energy, mass scales with the inverse of energy density: 1/2.1 ≈ 0.48, roughly 52% lighter than lead-acid (volume 1/1.4 ≈ 0.71). The nominal voltage (Ni-Zn is generally about 1.6 V per cell) and cell layout for a 12 V system are not in the article; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/09/417626.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-jtekt-oil-film-ae",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "JP",
+   "tags": [
+    "品質"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "ジェイテクト、油膜挙動を光干渉法とAEで同時計測する研究でMIRAI Conference優秀研究賞",
+    "summary": "ジェイテクトは神奈川大学との共同研究「光干渉法とアコースティックエミッション（AE）による油膜挙動の検出」を第19回MIRAI Conferenceで発表し、Excellent Research Awardを受賞した。転がり・すべり接触部で、油膜の状態と損傷発生に伴うAE信号の変化の関係を調べた研究。",
+    "note": "軸受・ギヤの潤滑状態は油膜パラメータ λ = h_min/√(σ1²+σ2²)（最小油膜厚さ／合成表面粗さ）で整理され、λが小さいと金属接触が増えて損傷に至る。光干渉で h を直接見て、実機で使えるAEとの対応が取れれば、軸受やハブユニットの状態監視に使える可能性がある（応用は推測）。"
+   },
+   "en": {
+    "title": "JTEKT wins MIRAI Conference award for measuring oil-film behaviour with optical interferometry and acoustic emission",
+    "summary": "JTEKT presented joint research with Kanagawa University, 'Detection of Oil-film Behavior by In Situ Optical Interferometry and Acoustic Emission Sensing', at the 19th MIRAI Conference and received its Excellent Research Award. The study examined how oil-film behaviour in rolling-sliding contacts relates to changes in acoustic emission (AE) signals as damage occurs.",
+    "note": "Lubrication in bearings and gears is described by the film parameter λ = h_min/√(σ1²+σ2²) (minimum film thickness over combined roughness); low λ means more metal contact and eventually damage. If film thickness h seen directly by interferometry can be mapped to AE, which works on real hardware, it could support condition monitoring of bearings and hub units (application is speculation)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/09/417580.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-vw-id-tiguan",
+   "date": "2026-10-09",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "4WD",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "VW「ID.ティグアン」発表、ID.4/ID.5を置き換え：58/77kWh、RWDとAWD、WLTP最大600km",
+    "summary": "VWはID.4とID.5の後継としてID.ティグアンを発表した。中身は大幅改良したID.4で、58kWhと77kWhの電池、後輪駆動と全輪駆動を設定し、ベースのRWD（58kWh）は187hp。WLTP航続距離は最大600km（373マイル）で、欧州では2027年初めにドイツなどで発売、内燃・HVのティグアンと併売する。物理ボタンの増設、ワンペダル走行、フロントトランクを採用した。",
+    "note": "電費の目安：77kWh÷600km＝12.8 kWh/100km（WLTP）。ただし77kWhが総容量か使用可能容量かは記事に記載がなく要確認で、使用可能容量なら実電費はこれに近い。AWD版のモーター出力・前後配分は記事に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "VW reveals the ID. Tiguan to replace the ID.4 and ID.5: 58/77 kWh, RWD and AWD, up to 600 km WLTP",
+    "summary": "VW has revealed the ID. Tiguan as the successor to the ID.4 and ID.5. It is essentially a heavily updated ID.4, offered with 58 kWh and 77 kWh batteries and rear- or all-wheel drive; the base RWD 58 kWh version has 187 hp. WLTP range is up to 600 km (373 miles), and it goes on sale in Germany and other European markets in early 2027 alongside the combustion and hybrid Tiguan. It adds more physical buttons, one-pedal driving and a front trunk.",
+    "note": "Efficiency estimate: 77 kWh ÷ 600 km = 12.8 kWh/100 km (WLTP). Whether 77 kWh is gross or usable is not stated (needs confirmation); if usable, real consumption is close to this. AWD motor outputs and front/rear split are not given (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/10/vw-id-tiguan-launch/"
+    },
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/811249/volkswagen-id-tiguan-debut-details/"
+    },
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/811254/vw-id-tiguan-launch-id4/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-lambo-urus-se-performante",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "シャシー",
+    "制御",
+    "PT",
+    "4WD"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "ランボルギーニ「ウルスSEパフォルマンテ」：2室式エアサスと「6D」センサーでロール50%低減、800bhp PHEV",
+    "summary": "ランボルギーニはウルスSEのPHEV（ツインターボV8＋モーター）を使う新型ウルスSEパフォルマンテを発表した。出力は800bhp、0-100km/h（62mph）は3.3秒。新たにデュアルチャンバー（2室式）エアサスペンションと「6D」センサーを採用し、ボディロールを50%減らしたとしている。",
+    "note": "定常ロール角は近似で φ ≈ m·a_y·h_r／(K_φ − m·g·h_r)（h_r：重心とロール軸の距離、K_φ：ロール剛性）。ロールを半分にするには分母の K_φ を概ね2倍以上にする必要がある。2室式エアばねは空気室容積 V を切り替えることでばね定数 k ≈ n·p·A²/V（n：ポリトロープ指数、p：内圧、A：有効受圧面積）を変え、旋回時は小容積側で高剛性にできる。「6D」は6自由度（並進3＋回転3）の慣性センサーを指すと推測（要確認）。"
+   },
+   "en": {
+    "title": "Lamborghini Urus SE Performante: dual-chamber air suspension and '6D' sensor cut body roll by 50%, 800 bhp PHEV",
+    "summary": "Lamborghini has revealed the Urus SE Performante, using the Urus SE plug-in hybrid powertrain (twin-turbo V8 plus electric motor). It produces 800 bhp and does 0–100 km/h (62 mph) in 3.3 seconds. New dual-chamber air suspension and a '6D' sensor are claimed to reduce body roll by 50%.",
+    "note": "Steady-state roll angle is approximately φ ≈ m·a_y·h_r/(K_φ − m·g·h_r) (h_r: CG height above roll axis, K_φ: roll stiffness), so halving roll needs roughly double the effective K_φ or more. A dual-chamber air spring changes rate k ≈ n·p·A²/V (n: polytropic index, p: pressure, A: effective area) by switching air volume V, giving high stiffness on the small-volume setting when cornering. '6D' presumably means a six-degree-of-freedom (3 translational + 3 rotational) inertial sensor (speculation; needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/new-cars/lamborghini-urus-performante-leaner-meaner-and-more-sensible"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-ferrari-296-cs",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT"
+   ],
+   "prio": 1,
+   "conf": "rumor",
+   "ja": {
+    "title": "フェラーリ「296チャレンジストラダーレ」を独で試験中か、ハイブリッドを外した純V6の可能性",
+    "summary": "ドイツで偽装した296の試作車が目撃され、Carscoopsは296スペチアーレの上に位置する「チャレンジストラダーレ」とみている。ハイブリッドを持たないツインターボV6と、空力の強化が予想されている。360以降、430スクーデリア、458スペチアーレ、488ピスタと続いた軽量ハードコア路線の後継とされる。",
+    "note": "PHEV系を外すと電池・モーター・インバータ分の質量が減る一方、電動トルクアシストとEV走行がなくなる。車両の加速性能は概ね P/m（出力重量比）で決まるため、減量分と出力減のどちらが大きいかが性能差になる。いずれも目撃情報からの推測で、諸元は未発表。"
+   },
+   "en": {
+    "title": "Ferrari 296 'Challenge Stradale' reportedly testing in Germany, possibly as a non-hybrid V6",
+    "summary": "A camouflaged 296 prototype has been spotted in Germany, which Carscoops believes is a 'Challenge Stradale' positioned above the 296 Speciale. It is expected to use a non-hybrid twin-turbo V6 and sharper aerodynamics, continuing the lightweight hardcore line that began with the 360 and continued with the 430 Scuderia, 458 Speciale and 488 Pista.",
+    "note": "Removing the plug-in hybrid hardware saves the mass of the battery, motor and inverter but loses electric torque assist and EV driving. Acceleration depends largely on P/m (power-to-weight ratio), so the result depends on whether the mass saved outweighs the power lost. All of this is speculation from spy sightings; no specifications have been announced."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/10/hardcore-ferrari-296-challenge-stradale-to-ditch-hybrid-for-pure-v6-thrills/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-hyundai-ioniq7-ioniq4",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "KR",
+   "tags": [
+    "戦略",
+    "4WD"
+   ],
+   "prio": 1,
+   "conf": "rumor",
+   "ja": {
+    "title": "ヒョンデ、IONIQ 7（IONIQ 5と9の間）とIONIQ 4を開発中と英報道",
+    "summary": "Auto Expressの報道として、ヒョンデはIONIQ 5とIONIQ 9の間に入る中型SUV「IONIQ 7」と、IONIQ 3よりオーソドックスなSUVとなる「IONIQ 4」を開発中とされる。IONIQ 7は800V電気アーキテクチャで、1モーターと2モーター（AWD）の両方を設定する見込み。もともと「IONIQ 7」の名前は3列SUVの候補だったが、それはIONIQ 9として発売された経緯がある。",
+    "note": "800V系は同じ電力で電流が400V系の半分（I = P/V）になり、充電ケーブルや配線の抵抗損失 I²R は1/4になる。仕様はいずれも報道ベースで要確認。"
+   },
+   "en": {
+    "title": "Hyundai reportedly developing an IONIQ 7 (between the IONIQ 5 and 9) and an IONIQ 4",
+    "summary": "Citing Auto Express, Hyundai is said to be developing the IONIQ 7, a mid-size SUV between the IONIQ 5 and IONIQ 9, and the IONIQ 4, a more conventional SUV alternative to the IONIQ 3. The IONIQ 7 is expected to use an 800-volt architecture with single- and dual-motor (AWD) versions. The IONIQ 7 name was originally linked to the three-row SUV, which launched as the IONIQ 9.",
+    "note": "At 800 V the current for the same power is half that of 400 V (I = P/V), so resistive loss I²R in cables and wiring falls to a quarter. All specifications are from press reports and need confirmation."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/08/hyundai-ioniq-7-coming-big-sibling-to-ioniq-5/"
+    },
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/10/hyundai-ioniq-4-ioniq-7/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-chalmers-cell-bypass",
+   "date": "2026-10-09",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "EU",
+   "tags": [
+    "電池",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "Chalmers工科大学、セルを個別バイパスする再構成型電池パックで寿命20%超延長の可能性をシミュレーション",
+    "summary": "スウェーデンのChalmers工科大学は、スイッチと制御で個々のセル（またはセル群）の接続を変え、劣化したセルをバイパスできる再構成型電池パックを検討した。全セルを個別制御する最も高度なケースでは、一部の高電圧車で寿命が20%超延びる結果になった。80kWh・年間12,000kmの例では、通常パックを10年で交換する劣化状態に達するのが約11年後（約14か月遅れ）になる。",
+    "note": "直列パックの使用可能容量は最弱セルで決まる：Q_pack = min(Q_i)。弱いセルをバイパスすれば残りのセルで容量を使い切れるが、パック電圧は V = ΣV_i から1セル分下がるため、インバータ入力電圧範囲の余裕が必要になる。14か月延長は年12,000kmで約14,000km分の走行に相当（計算値）。スイッチ追加のコスト・損失は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Chalmers simulation: reconfigurable packs that bypass individual cells could extend battery life by over 20%",
+    "summary": "Sweden's Chalmers University of Technology studied reconfigurable battery packs in which switches and control can change how individual cells or cell groups are connected, so weak cells can be bypassed. In the most advanced case, with every cell individually controllable, simulations showed life extended by more than 20% for some high-voltage vehicles. In an example with an 80 kWh pack and 12,000 km a year, the reconfigurable pack reaches the ageing state at which a conventional pack is replaced after ten years only after about eleven years, roughly 14 months later.",
+    "note": "Usable capacity of a series pack is set by the weakest cell: Q_pack = min(Q_i). Bypassing weak cells lets the remaining cells use their full capacity, but pack voltage V = ΣV_i drops by one cell, so the inverter needs input-voltage margin. A 14-month extension at 12,000 km/year equals about 14,000 km (calculated). Cost and losses of the extra switches are not given; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/09/cell-bypass-aims-to-extend-the-usable-life-of-ev-batteries/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-mercedes-q3-bev",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "電池",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "メルセデス・ベンツ Q3：BEV 78,100台（前年比+52%）、乗用車のBEV比率16.8%",
+    "summary": "メルセデス・ベンツ・グループの7〜9月のBEV販売は78,100台で、前年同期比52%増、前四半期比24%増。内訳は乗用車68,400台（+61%）、バン9,700台（+12%）。全パワートレイン合計は491,700台（-6%）で、乗用車のBEV比率は2025年Q2の9.6%から16.8%に上がった。中国市場は引き続き厳しいとしている。",
+    "note": "全体のBEV比率は 78,100/491,700 ≈ 15.9%（計算値）。総販売が減る中でBEV台数が増えたため、比率の上昇は分子増と分母減の両方による。"
+   },
+   "en": {
+    "title": "Mercedes-Benz Q3: 78,100 BEVs (+52% year on year); BEV share of passenger cars reaches 16.8%",
+    "summary": "Mercedes-Benz Group delivered 78,100 BEVs in July–September, up 52% year on year and 24% on the previous quarter. Of these, 68,400 were passenger cars (+61%) and 9,700 vans (+12%). Total sales across all drivetrains were 491,700 (-6%), and the BEV share of passenger cars rose from 9.6% in Q2 2025 to 16.8%. China remains very difficult for the company.",
+    "note": "Overall BEV share is 78,100/491,700 ≈ 15.9% (calculated). Because BEV volume grew while total sales fell, the share rise comes from both a larger numerator and a smaller denominator."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/08/one-in-six-new-mercedes-passenger-cars-worldwide-now-fully-electric/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-tesla-rdw-fsd-emails",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "ADAS",
+    "規制"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "テスラがオランダRDWにFSD審査の縮小を働きかけていたとロイター報道、審査費36.5万ユーロにも異議",
+    "summary": "ロイターが入手したメールによると、テスラは数か月にわたりオランダの型式認証当局RDWに「FSD（Supervised）」の審査範囲を縮めるよう求め、5か月分の審査費用36万5,000ユーロの請求に「極めて高額」と異議を唱え、職員ごとの時間明細が出るまで支払いを保留するとした。2024年11月には、月内の車両試験開始が経営陣にとって重要だと伝えていた。RDWはその後承認し、EU全体での承認を求めており、現在8か国でFSDが使える。",
+    "note": "EUの型式認証は1加盟国の当局が承認し、他国が認めるかEUレベルで採決する仕組みで、RDWの承認がテスラの欧州展開の起点になっている。報道は当局とメーカーの関係を示す内容で、承認判断の技術的妥当性への影響は記事からは不明（要確認）。"
+   },
+   "en": {
+    "title": "Reuters: Tesla pressed Dutch regulator RDW to scale back its FSD review and disputed a EUR 365,000 bill",
+    "summary": "Emails obtained by Reuters show Tesla spent months pushing the Dutch type-approval authority RDW to narrow its review of 'Full Self-Driving (Supervised)', calling the EUR 365,000 invoice for five months of work an 'extremely high cost' and holding payment until it received an hour-by-hour breakdown per RDW employee. In November 2024 it told RDW that starting vehicle tests that month was critical for its leadership. RDW later approved the system and is asking the EU to do the same; eight EU countries now allow it.",
+    "note": "In EU type approval, one member state's authority grants approval and other states either recognise it or the EU votes on it, so RDW's approval is the basis of Tesla's European rollout. The report concerns the regulator-manufacturer relationship; whether it affected the technical soundness of the decision cannot be judged from the article (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/08/tesla-fsd-europe-rdw-pressure-reuters/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-ford-led-headlamp-recall",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "US",
+   "tags": [
+    "品質",
+    "規制"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "フォード、LEDヘッドランプ不良で41,748台リコール（エクスペディション、スーパーデューティ）",
+    "summary": "フォードは、ヘッドランプ内部のLEDチップの汚染で重要な灯火機能が失われるおそれがあるとして、2025〜2027年型エクスペディションと2026年型F-250/F-350/F-450/F-550スーパーデューティの計41,748台をリコールする。不良部品を持つのは対象の約1%とみられ、ディーラー点検で交換要否を判断する。NHTSAへの届出では、ディーラーへの通知は2026年10月末まで。",
+    "note": "実際の不良台数の推定は 41,748×1% ≈ 420台（計算値）。対象を広く取り点検で絞り込むのは、製造ロットのトレーサビリティがチップ単位まで追えない場合の典型的な対応（推測）。"
+   },
+   "en": {
+    "title": "Ford recalls 41,748 Expeditions and Super Duty trucks over defective LED headlamps",
+    "summary": "Ford is recalling 41,748 vehicles—the 2025–2027 Expedition and 2026 F-250, F-350, F-450 and F-550 Super Duty—because a contaminated LED chip inside the headlamp can disable critical lighting functions. Only about 1% are thought to have the defective part, and dealer inspections will decide which assemblies need replacing. According to its NHTSA filing, dealers will be notified by the end of October 2026.",
+    "note": "Estimated defective units: 41,748 × 1% ≈ 420 (calculated). Recalling a wide population and narrowing it by inspection is typical when traceability does not reach the individual chip (speculation)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/811154/ford-expedition-super-duty-headlight/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-05-global-gas-below-50",
+   "date": "2026-10-05",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "Global",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "2026年上期の世界新車販売でガソリン専用車が初めて5割を切り49%に（日経報道）",
+    "summary": "日経が報じたMobility Globalのデータによると、2026年1〜6月の世界新車販売に占めるガソリン専用車の比率は49%で、2021年の73%から低下し、初めて半数を下回った。ガソリン専用車は前年比10%減の2,025万台。BEVは12%増の687万台（17%）、ハイブリッド（HEV）は10%増の727万台（18%）で、HEVがBEVを上回っている。",
+    "note": "総販売の推定：2,025万÷0.49 ≈ 4,130万台（計算値、丸めの影響あり）。ガソリン専用車が減った分の多くをHEVなど燃料タンクを持つ電動車が埋めており、エンジン＋モーターの制御・熱管理の需要は当面続く構図。"
+   },
+   "en": {
+    "title": "Gasoline-only cars fall below half of global new-car sales for the first time in H1 2026 (49%), Nikkei reports",
+    "summary": "According to Mobility Global data reported by Nikkei, gasoline-only vehicles made up 49% of global new-car sales in January–June 2026, down from 73% in 2021 and below half for the first time. Gasoline-only sales fell 10% year on year to 20.25 million. BEVs grew 12% to 6.87 million (17%) and conventional hybrids grew 10% to 7.27 million (18%), so hybrids still outsell BEVs.",
+    "note": "Estimated total market: 20.25 million ÷ 0.49 ≈ 41.3 million (calculated; affected by rounding). Much of the decline in gasoline-only cars is being filled by hybrids that still have a fuel tank, so demand for engine-plus-motor control and thermal management continues for now."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/05/gas-cars-fall-below-50-percent-global-new-car-sales/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-05-lucid-q3",
+   "date": "2026-10-05",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "ルシード Q3：納車3,806台（前年比-7%）、生産2,954台（前四半期比-38%）で在庫を圧縮",
+    "summary": "ルシードの7〜9月の納車は3,806台で前年同期（4,078台）比7%減、前四半期（3,953台）比4%減。生産は4,774台から2,954台へ38%減り、2025年初め以来の低水準となった。新CEOのSilvio Napoli氏の下で上期に積み上がった在庫を減らしており、2026年で初めて納車が生産を上回った四半期となった。決算発表は11月9日。",
+    "note": "在庫変化 ≈ 生産−納車 = 2,954−3,806 = −852台（計算値、Q3で約850台の在庫減）。"
+   },
+   "en": {
+    "title": "Lucid Q3: 3,806 deliveries (-7% year on year), production cut 38% to 2,954 to reduce inventory",
+    "summary": "Lucid delivered 3,806 vehicles in Q3, down 7% from 4,078 a year earlier and 4% from 3,953 in Q2. Production fell 38% from 4,774 to 2,954, its lowest since early 2025. Under new CEO Silvio Napoli the company is selling down inventory built up in the first half, and Q3 was the first quarter of 2026 in which deliveries exceeded production. Earnings are due on 9 November.",
+    "note": "Inventory change ≈ production − deliveries = 2,954 − 3,806 = −852 (calculated; about 850 units of stock reduction in Q3)."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/05/lucid-lcid-q3-2026-deliveries-production/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-xiaomi-sky-nomad-erev",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "シャオミ初のレンジエクステンダー車「Sky Nomad」、発売30日で確定受注7万台超",
+    "summary": "シャオミ・オートは、EREV（レンジエクステンダーEV）として初の「Sky Nomad」シリーズが、9月7日〜10月7日の30日間で7万台超の確定受注を得たと発表した。同シリーズは9月に1万台超を納車し、シャオミ・オートの9月の総納車は4万台を超えた。",
+    "note": "EREVはエンジンを発電専用とするシリーズ式で、駆動はモーターのみ。エンジンを車速から切り離して高効率点で運転できる一方、高速巡航では発電→モーター駆動の変換損失が残る（上のHonda Hybrid項の η_sys 式と同じ構造）。電池容量・EV航続は記事に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "Xiaomi's first range-extender model, the Sky Nomad, passes 70,000 locked-in orders in 30 days",
+    "summary": "Xiaomi Auto said its Sky Nomad lineup, its first extended-range EV (EREV), secured more than 70,000 locked-in orders in the 30 days from 7 September to 7 October. The lineup delivered more than 10,000 vehicles in September, helping Xiaomi Auto's total September deliveries exceed 40,000.",
+    "note": "An EREV is a series hybrid: the engine only generates electricity and only the motor drives the wheels. The engine can run at its most efficient point independently of road speed, but at highway speeds the generate-then-drive conversion losses remain (the same η_sys structure as in the Honda Hybrid item). Battery capacity and EV range are not given (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/08/xiaomi-sky-nomad-70000-locked-in-orders/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-nio-holiday-swaps",
+   "date": "2026-10-09",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "電池"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "NIO、国慶節7日間で電池交換119万回、1日最大18.4万回",
+    "summary": "NIOの4,168か所の電池交換ステーションは10月1〜7日に計1,192,221回の交換を行い、1日平均は前年比22%増となった。帰省ラッシュの10月5日には1日183,664回で過去最高を更新した（期間中に2回記録更新）。",
+    "note": "1ステーション当たりの1日平均：1,192,221÷7÷4,168 ≈ 40.9回（計算値）。ピーク日は 183,664÷4,168 ≈ 44.1回/日で、平均との差が小さいことから、休日期間全体を通じて高い稼働率だったと読める（推測）。"
+   },
+   "en": {
+    "title": "Nio performs nearly 1.2 million battery swaps over the 7-day National Day holiday, peaking at 183,664 in a day",
+    "summary": "Nio's 4,168 battery swap stations completed 1,192,221 swaps from 1 to 7 October, with the daily average up 22% year on year. On 5 October, the return-travel peak, swaps reached a record 183,664 in a single day (records were set twice during the period).",
+    "note": "Average per station per day: 1,192,221 ÷ 7 ÷ 4,168 ≈ 40.9 swaps (calculated). The peak day was 183,664 ÷ 4,168 ≈ 44.1 per station, close to the average, suggesting high utilisation throughout the holiday (speculation)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/09/nio-1-2-million-battery-swaps-7-day-holiday/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-li-i6-2026",
+   "date": "2026-10-09",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "電池"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "理想汽車、2026年型「Li i6」を10月28日発表・11月上旬納車：自社開発5C電池とMachチップ",
+    "summary": "理想汽車は2026年型Li i6の発表会を10月28日に開き、直後に試乗・受注を開始、中国での納車は11月上旬からとした。展示車は10月11日に国内485店舗に配備し、10月12日のパリモーターショーにも出展する。自社開発の5C電池と「Mach」チップを搭載し、価格は未発表。",
+    "note": "Cレートは容量に対する電流の倍率で、5Cは理論上 1/5時間＝12分で満充電に相当する電流（I = 5×Q）。実際の急速充電は温度とセル電圧で電流が絞られるため、10→80%の時間などの実値は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Li Auto to launch the 2026 Li i6 on 28 October with in-house 5C batteries and Mach chips; deliveries from early November",
+    "summary": "Li Auto will hold the 2026 Li i6 launch on 28 October, opening test drives and orders immediately afterwards, with deliveries in China from early November. Display cars arrive at its 485 stores in China on 11 October, and the model appears at the Paris Motor Show on 12 October. It uses in-house 5C batteries and Mach chips; pricing has not been announced.",
+    "note": "C-rate is current relative to capacity; 5C means a current that would theoretically fill the battery in 1/5 hour = 12 minutes (I = 5 × Q). In practice fast charging is throttled by temperature and cell voltage, and real figures such as 10–80% time are not given (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/09/li-auto-launch-2026-li-i6-oct-28/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-byd-seagull-gen2",
+   "date": "2026-10-09",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "BYD、全長425mm拡大の2代目「Seagull（海鴎）」の予約受付を開始",
+    "summary": "BYDは中国で2代目Seagullの予約受付を開始した。先代より全長が425mm長く、出力も上がるとされるが、予約価格は未発表。Seagullの販売は9月まで2か月連続で前年を上回ったものの、1〜9月累計では33.22%減となっている。BYD海洋シリーズ販売部門の張卓氏がWeibo上で6色の外装色を公開した。",
+    "note": ""
+   },
+   "en": {
+    "title": "BYD opens pre-orders for the second-generation Seagull, 425 mm longer than before",
+    "summary": "BYD has opened pre-orders in China for the second-generation Seagull, which is 425 mm longer than its predecessor and reportedly more powerful; pre-order prices have not been announced. Seagull sales rose year on year for a second straight month in September, but January–September sales are still down 33.22%. Zhang Zhuo, head of sales for BYD's Ocean series, revealed six exterior colours on Weibo.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/09/byd-opens-pre-orders-second-gen-seagull/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-05-toyota-sora-fc-bus",
+   "date": "2026-10-05",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT"
+   ],
+   "prio": 1,
+   "conf": "primary",
+   "ja": {
+    "title": "トヨタ、燃料電池路線バス「SORA」新型を発売",
+    "summary": "トヨタは水素で走る燃料電池路線バス「SORA」の新型を発売した。初代SORAは2018年発売。トヨタは2019年からFCシステムの外販を始め、2026年9月末時点でバス・鉄道・定置式発電機などの用途で100社超に3,500基超を供給している。FCEVのMIRAIは2014年発売で、30以上の国・地域で販売している。",
+    "note": "FCの発電電力は P = V_cell·I·N_cell（セル電圧×電流×セル数）で、セル電圧は電流密度が上がるほど低下する（分極曲線）。新型SORAの出力・水素搭載量・航続などの諸元は今回のデータに含まれず要確認。"
+   },
+   "en": {
+    "title": "Toyota launches the new 'Sora' fuel cell route bus",
+    "summary": "Toyota has launched a new version of its hydrogen-powered fuel cell route bus 'Sora'; the first-generation Sora went on sale in 2018. Toyota began supplying fuel cell systems externally in 2019 and, as of the end of September 2026, has delivered more than 3,500 systems to over 100 customers for buses, rail, stationary generators and other uses. The Mirai FCEV was launched in 2014 and is sold in more than 30 countries and regions.",
+    "note": "Fuel cell output is P = V_cell·I·N_cell (cell voltage × current × number of cells), and cell voltage falls as current density rises (polarisation curve). Output, hydrogen capacity and range of the new Sora are not in this data; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Toyota Newsroom",
+     "url": "https://global.toyota/en/newsroom/toyota/44712219.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-porsche-mission-s",
+   "date": "2026-10-08",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "ポルシェ、ミッドエンジン・スーパースポーツ用プラットフォームのプレビュー「Mission S」を10月15日公開へ",
+    "summary": "ポルシェは10月15日に、将来のミッドエンジン・スーパースポーツカー向けプラットフォームのプレビュー「Mission S」を初公開すると発表した。公式SNSで一部を先行公開している。詳細は15日の発表待ち。",
+    "note": "既報の戦略「Sportwagenschmiede 35」で示された911の上に位置するミッドシップ内燃車との関係は、記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Porsche to preview a mid-engined supercar platform, 'Mission S', on 15 October",
+    "summary": "Porsche has announced it will show a first preview of a platform for future mid-engined super sports cars, called 'Mission S', on 15 October, and has teased part of it on its official social channels. Details await the 15 October reveal.",
+    "note": "Its link to the mid-engined combustion car above the 911 in the previously reported 'Sportwagenschmiede 35' strategy is not stated in the article; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/08/417562.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-03-tesla-robotaxi-night",
+   "date": "2026-10-03",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "US",
+   "tags": [
+    "ADAS"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "テスラ、オースティンのロボタクシーを23時まで延長；マスク氏は夜間の課題を「暗所で灰色の子猫を検出すること」と説明",
+    "summary": "テスラのロボタクシー公式アカウントは、オースティンでの運行時間を22時から23時まで延長したと発表した。2025年6月の開始時は6時〜24時に受付していた。マスク氏は夜間運行の主な障害を、暗い路面上のペットの検出だとし、例として「灰色の路面上の灰色の子猫」を挙げた。Electrekは、低照度・低コントラスト検出はカメラの弱点で、LiDARやレーダーが得意な領域だと指摘している。比較としてWaymo第6世代はカメラ13・LiDAR 4・レーダー6を搭載する。",
+    "note": "LiDARは距離を飛行時間 d = c·Δt/2 で直接測るため、物体のコントラストや照度に依存しない。カメラは画素の明暗差で物体を検出するため、背景と同じ色・低照度では信号対雑音比が下がる。"
+   },
+   "en": {
+    "title": "Tesla extends Austin Robotaxi hours to 11 pm; Musk says the night-time problem is detecting 'grey kittens on grey tarmac'",
+    "summary": "Tesla's Robotaxi account said the Austin service now runs until 11 pm instead of 10 pm; at launch in June 2025 the app took requests from 6 am to midnight. Musk said the main obstacle to night operation is detecting pets in the dark, citing 'grey kittens on grey tarmac'. Electrek notes that low-light, low-contrast detection is a known weakness of cameras and a strength of lidar and radar. For comparison, Waymo's sixth-generation system uses 13 cameras, 4 lidars and 6 radars.",
+    "note": "Lidar measures distance directly from time of flight, d = c·Δt/2, so it does not depend on object contrast or lighting. Cameras detect objects from brightness differences between pixels, so signal-to-noise drops for objects the same colour as the background in low light."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/03/tesla-robotaxi-pets-night-musk-lidar/"
+    }
+   ]
+  },
   {
    "id": "2026-10-08-maextro-v800-brake",
    "date": "2026-10-08",
