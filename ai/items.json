@@ -1,6 +1,143 @@
 {
-  "updated": "2026-10-08T07:29:13+09:00",
+  "updated": "2026-10-09T13:15:00+09:00",
   "items": [
+    {
+      "id": "2026-10-08-google-gemini-agent",
+      "date": "2026-10-08",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "エージェント",
+        "仕事で使える",
+        "モデル"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "Google、業務用AIエージェント「Gemini Agent」を発表。Claude Opus/Sonnet 5.5も選択可能、まず企業向け限定プレビュー",
+        "summary": "Googleは「Gemini at Work」イベントで、Gemini Enterpriseアプリ内で動く業務用エージェント「Gemini Agent」を発表した。サブエージェントへの作業分担、複数モデルの切り替え（Gemini 4 Argonに加えClaude Opus 5.5／Sonnet 5.5）、エージェント専用のメールアドレス付き業務IDを持つ。接続先はGoogle Workspace、Microsoft 365、Slack、Jira、Confluence、Git、BigQuery、Snowflakeなどで、現時点では企業顧客向けの限定プレビュー。",
+        "note": "仕事での使いどころ：Gmail・Drive・カレンダーと社内のJira/Confluenceをまたぐ定型業務（資料集め、進捗まとめ、会議準備）の委任。Gemini Enterprise契約済みの部署は評価候補。注意点：限定プレビューで一般提供時期・料金は記事に記載なし（要確認）。エージェントが独自のメールアドレスとIDを持つため、権限範囲・監査ログ・社外送信の扱いを情報システム部門と事前に決める必要がある。発表日は媒体により10月8日／9日（現地）と表記が異なる（要確認）。"
+      },
+      "en": {
+        "title": "Google announces Gemini Agent for work, with Claude Opus/Sonnet 5.5 as model options; private preview for enterprises first",
+        "summary": "At its Gemini at Work event, Google announced Gemini Agent, a work agent that runs inside the Gemini Enterprise app. It can hand off tasks to subagents, switch between multiple models (Gemini 4 Argon plus Claude Opus 5.5 and Sonnet 5.5), and gets its own workplace identity with an email address. It connects to Google Workspace, Microsoft 365, Slack, Jira, Confluence, Git, BigQuery, Snowflake and more, and is currently in private preview for enterprise customers only.",
+        "note": "How to use it at work: delegating routine tasks that span Gmail, Drive, Calendar and internal Jira/Confluence, such as gathering materials, summarizing progress, or preparing for meetings. Worth evaluating for teams already on Gemini Enterprise. Caveats: it is in private preview, and the articles give no general-availability date or pricing (needs confirmation). Because the agent has its own email address and identity, permissions, audit logs and external sending rules should be agreed with IT beforehand. Sources differ on whether it was announced on Oct. 8 or Oct. 9 local time (needs confirmation)."
+      },
+      "src": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/"
+        },
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2610/09/2000002152/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-08-claude-dashboards-motion",
+      "date": "2026-10-08",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "データ分析",
+        "資料作成",
+        "画像・動画",
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Claude、BigQuery等から自動更新ダッシュボードを作る「Dashboards」と解説動画生成「Motion」をベータ公開",
+        "summary": "Anthropicは2つのベータ機能を追加した。Dashboardsは文章の指示でBigQueryやSnowflakeなどのデータを自動更新のダッシュボードにする機能、Motionは文章・図・画像からアニメーション解説動画を作り、コードとして編集してMP4で書き出せる機能。あわせてDocs、Slides、Designが無料プランを含む全プランで使えるようになり、Claude Designは12月14日までにメインアプリへ統合される予定。",
+        "note": "仕事での使いどころ：品質・生産データのKPIダッシュボードの試作、新人教育や工程説明用の短い解説動画づくり。注意点：両機能ともベータ。社内データベースに接続する場合は接続権限と社外送信の可否を確認すること。対応プランや料金、BigQuery/Snowflake以外の接続先は記事に記載なし（要確認）。"
+      },
+      "en": {
+        "title": "Claude launches Dashboards, which builds auto-updating dashboards from BigQuery and similar sources, and Motion for explainer videos (beta)",
+        "summary": "Anthropic added two beta features. Dashboards turns data from sources such as BigQuery and Snowflake into live dashboards from a text prompt, and Motion creates animated explainer videos from text, diagrams and images that can be edited as code and exported as MP4. Docs, Slides and Design are now available on all plans, including free, and Claude Design will be merged into the main app by Dec. 14.",
+        "note": "How to use it at work: prototyping KPI dashboards for quality or production data, and making short explainer videos for onboarding or process training. Caveats: both features are in beta. If you connect internal databases, check access rights and whether data may leave the company. The article does not list supported plans, pricing, or connectors other than BigQuery and Snowflake (needs confirmation)."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/claude-can-now-generate-animated-explainer-videos-and-live-data-dashboards-from-text-prompts/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-08-anthropic-usage-policy",
+      "date": "2026-10-08",
+      "kind": "flash",
+      "cat": "reg",
+      "level": "all",
+      "tags": [
+        "規制",
+        "セキュリティ",
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Anthropic、Claudeの利用ポリシーを約1年ぶりに改定（11月12日発効）。モデルへの継続的な虐待を禁止、高リスク用途の基準を明確化",
+        "summary": "Anthropicは10月8日（現地）、Claudeの利用ポリシー改定版を公開し、11月12日に発効する。Claudeへの継続的で不必要な虐待的・残酷な振る舞いを新たに禁止し（通常の不満や批判は対象外）、選挙干渉・偽装キャンペーン・兵器向けソフト・監視の規定を整理した。法務・医療・金融・雇用など11分野で追加要件の対象行為と対象外行為を列挙し、負傷を起こし得る物理機器を自律操作させる場合の要件も加えた。",
+        "note": "仕事での使いどころ：社内のClaude利用ガイドラインや、API組み込み製品のコンプライアンス確認の更新材料。注意点：11分野の高リスク用途（雇用・金融など）にClaudeを組み込んでいる場合は追加要件が該当するか確認が必要。ロボットや設備など物理機器をClaudeで自律制御する開発は新要件の対象になり得る（詳細は原文で要確認）。The Decoderは違反でアカウント停止の可能性を報じている。"
+      },
+      "en": {
+        "title": "Anthropic updates Claude's usage policy for the first time in about a year (effective Nov. 12), banning sustained abuse of the model and clarifying high-risk uses",
+        "summary": "On Oct. 8 (local time), Anthropic published a revised usage policy for Claude that takes effect on Nov. 12. It newly prohibits sustained and needless abusive or cruel behavior toward Claude (ordinary frustration and criticism remain allowed) and reorganizes rules on election interference, deceptive campaigns, weapons software and surveillance. It lists what is and isn't covered in 11 high-risk areas such as legal, medical, finance and employment, and adds requirements for autonomously operating physical devices that could cause injury.",
+        "note": "How to use it at work: material for updating internal Claude usage guidelines and compliance checks for products built on the API. Caveats: if Claude is embedded in one of the 11 high-risk areas (employment, finance, etc.), check whether the extra requirements apply. Development that has Claude autonomously control physical equipment such as robots may fall under the new requirements (check the original text for details). The Decoder reports that violations could lead to account suspension."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/news/article/2610/09/2000002149/"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-08-aws-agentcore-hijack",
+      "date": "2026-10-08",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "advanced",
+      "tags": [
+        "セキュリティ",
+        "エージェント",
+        "コーディング"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "AWS Bedrock AgentCoreに、公開エージェント1つから同一アカウントの全エージェントを乗っ取れる問題。Zenityが報告、AWSは修正済み",
+        "summary": "Zenity Labsによると、Amazon Bedrock AgentCore上で外部公開したAIエージェント1つを足がかりに、同じAWSアカウント・リージョンの全AgentCoreエージェントを乗っ取れた。原因はエージェントから内部アドレス169.254.169.254のメタデータサービス（一時認証情報を発行）へ制限なく到達できたこと。Zenityは2025年12月25日にAWSへ報告し、AWSは新規デプロイでIMDSv2を既定にするなど既定権限を絞った。",
+        "note": "仕事での使いどころ：社内でAgentCoreやStrandsを使ったエージェントを運用・検討している場合の設定点検（IMDSv2強制、IAMロールの最小権限、Web取得ツールの通信先制限）。注意点：修正は新規デプロイ向けとされ、既存デプロイへの適用範囲は記事要約から不明（要確認）。プロンプトインジェクション経由で認証情報が漏れる型の問題は他社クラウドのエージェントにも当てはまる可能性がある（推測）。"
+      },
+      "en": {
+        "title": "Flaw in AWS Bedrock AgentCore let one public agent take over every agent in the same account; reported by Zenity, now patched by AWS",
+        "summary": "According to Zenity Labs, a single publicly accessible AI agent on Amazon Bedrock AgentCore could be used to take over every AgentCore agent in the same AWS account and region. The cause was that agents could freely reach the metadata service at the internal address 169.254.169.254, which issues temporary credentials. Zenity reported it to AWS on Dec. 25, 2025, and AWS tightened default permissions, including making IMDSv2 the default for new deployments.",
+        "note": "How to use it at work: a checklist for teams running or evaluating agents on AgentCore or Strands (enforce IMDSv2, least-privilege IAM roles, restrict where web tools can connect). Caveats: the fix is described as applying to new deployments; how it affects existing ones is unclear from the summary (needs confirmation). Credential leaks via prompt injection may also apply to agents on other clouds (speculation)."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found/"
+        }
+      ]
+    },
     {
       "id": "2026-10-07-claude-haiku-5-5",
       "date": "2026-10-07",
@@ -380,7 +517,10 @@
       "kind": "weekly",
       "cat": "model",
       "level": "all",
-      "tags": ["モデル", "料金"],
+      "tags": [
+        "モデル",
+        "料金"
+      ],
       "prio": 3,
       "conf": "report",
       "ja": {
@@ -394,8 +534,14 @@
         "note": "For work, the standout is very long outputs (large code or long reports in one go). Benchmarks are Google's own figures as quoted by the article, not third-party results. Timing for the consumer Gemini app is unclear."
       },
       "src": [
-        { "name": "VentureBeat", "url": "https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release" },
-        { "name": "TechCrunch", "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/" }
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/"
+        }
       ]
     },
     {
@@ -404,7 +550,10 @@
       "kind": "weekly",
       "cat": "model",
       "level": "all",
-      "tags": ["モデル", "料金"],
+      "tags": [
+        "モデル",
+        "料金"
+      ],
       "prio": 2,
       "conf": "report",
       "ja": {
@@ -417,7 +566,12 @@
         "summary": "API pricing is $2 input / $10 output per million tokens. An 'Ultrafast' tier (6x standard price) outputs up to 300 tokens per second. Available via the API, ChatGPT Work and Codex, but not regular ChatGPT.",
         "note": "'Near-equal at one-fifth the price' refers to specific benchmarks (DeepSWE, OSWorld, etc.). Across vendors, the trend is to route bulk document processing to cheaper models and reserve top models for hard tasks, cutting cost several-fold."
       },
-      "src": [{ "name": "VentureBeat", "url": "https://venturebeat.com/technology/openais-gpt-6-1-sol-offers-astra-like-performance-at-1-5th-price-a-new-ultrafast-tier-clocks-at-300-tokens-per-second" }]
+      "src": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/openais-gpt-6-1-sol-offers-astra-like-performance-at-1-5th-price-a-new-ultrafast-tier-clocks-at-300-tokens-per-second"
+        }
+      ]
     },
     {
       "id": "2026-09-28-claude-sonnet-5-5",
@@ -425,7 +579,10 @@
       "kind": "weekly",
       "cat": "model",
       "level": "all",
-      "tags": ["モデル", "料金"],
+      "tags": [
+        "モデル",
+        "料金"
+      ],
       "prio": 2,
       "conf": "report",
       "ja": {
@@ -438,7 +595,12 @@
         "summary": "Pricing is unchanged from Sonnet 5 at $2 input / $10 output per million tokens. Benchmarks are close to the top-tier Opus 5.5 (GDPval-AA 1844 vs 1846; OSWorld 2.1 80.1% vs 81.8%). Also available on AWS, Google Cloud and Azure; Haiku 5.5 is expected in the following weeks.",
         "note": "This page is produced by Claude (an Anthropic model), so Anthropic news is handled with the same rules as other vendors: article figures only, no evaluative wording."
       },
-      "src": [{ "name": "VentureBeat", "url": "https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-5-with-30-cost-reduction-per-task-due-to-faster-speeds-and-fewer-tool-calls" }]
+      "src": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-5-with-30-cost-reduction-per-task-due-to-faster-speeds-and-fewer-tool-calls"
+        }
+      ]
     },
     {
       "id": "2026-09-29-openai-pages-space",
@@ -446,7 +608,11 @@
       "kind": "weekly",
       "cat": "tool",
       "level": "beginner",
-      "tags": ["仕事で使える", "資料作成", "エージェント"],
+      "tags": [
+        "仕事で使える",
+        "資料作成",
+        "エージェント"
+      ],
       "prio": 3,
       "conf": "report",
       "ja": {
@@ -459,7 +625,12 @@
         "summary": "Space is a shared team workspace for files and pages; Pages is a document tool that people and AI edit together, with chart and image generation. Slides builds decks from conversation and arrives in the coming weeks. Space is for Pro, Business and Enterprise and replaces the old Library.",
         "note": "Compatibility with Microsoft Office files (docx/pptx) is not mentioned. Company use requires a Business/Enterprise plan and a check against internal data-classification rules."
       },
-      "src": [{ "name": "TechCrunch", "url": "https://techcrunch.com/2026/09/29/openai-takes-on-microsoft-with-the-launch-of-what-feels-a-whole-lot-like-chatgpts-own-office-suite/" }]
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/29/openai-takes-on-microsoft-with-the-launch-of-what-feels-a-whole-lot-like-chatgpts-own-office-suite/"
+        }
+      ]
     },
     {
       "id": "2026-09-29-openai-dots",
@@ -467,7 +638,10 @@
       "kind": "weekly",
       "cat": "tool",
       "level": "intermediate",
-      "tags": ["エージェント", "仕事で使える"],
+      "tags": [
+        "エージェント",
+        "仕事で使える"
+      ],
       "prio": 2,
       "conf": "report",
       "ja": {
@@ -480,7 +654,12 @@
         "summary": "Each Dot runs on its own cloud computer and browser, monitors projects, operates software and sends finished work back for approval. They communicate via ChatGPT, Slack and Microsoft Teams and connect to 4,000+ apps. One Dot is free for Pro and Business Premium; Enterprise and others get a beta.",
         "note": "Think of routine delegation such as updating a weekly progress sheet and flagging late tasks in Teams. The concept is the same as the scheduled runs behind this news page."
       },
-      "src": [{ "name": "VentureBeat", "url": "https://venturebeat.com/technology/openai-launches-dots-always-on-ai-agent-coworkers-and-chatgpt-space-where-they-can-collaborate-with-human-teams" }]
+      "src": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/openai-launches-dots-always-on-ai-agent-coworkers-and-chatgpt-space-where-they-can-collaborate-with-human-teams"
+        }
+      ]
     },
     {
       "id": "2026-09-11-m365-copilot-button",
@@ -488,7 +667,10 @@
       "kind": "weekly",
       "cat": "tool",
       "level": "beginner",
-      "tags": ["仕事で使える", "資料作成"],
+      "tags": [
+        "仕事で使える",
+        "資料作成"
+      ],
       "prio": 3,
       "conf": "primary",
       "ja": {
@@ -501,7 +683,12 @@
         "summary": "The Copilot button gets its own input field, so you can type or dictate without opening the pane. Selecting content shows contextual prompt suggestions. Shortcuts are Alt+C on Windows and Command+Control+I on Mac. Rollout starts September 2026 and should finish by December.",
         "note": "No admin action is needed and existing Copilot controls still apply. If your company has Copilot licences, expect it this year (Message Center MC1470885)."
       },
-      "src": [{ "name": "M365 Message Center (merill.net)", "url": "https://mc.merill.net/message/MC1470885" }]
+      "src": [
+        {
+          "name": "M365 Message Center (merill.net)",
+          "url": "https://mc.merill.net/message/MC1470885"
+        }
+      ]
     },
     {
       "id": "2026-09-14-m365-copilot-sep",
@@ -509,7 +696,12 @@
       "kind": "weekly",
       "cat": "tool",
       "level": "beginner",
-      "tags": ["仕事で使える", "資料作成", "会議", "メール・英語"],
+      "tags": [
+        "仕事で使える",
+        "資料作成",
+        "会議",
+        "メール・英語"
+      ],
       "prio": 2,
       "conf": "report",
       "ja": {
@@ -522,7 +714,12 @@
         "summary": "PowerPoint can translate a whole deck while keeping layouts and speaker notes. Excel can show edits and version history with explanations of the changes. Planner Agent creates and updates project plans and task assignments from chat prompts.",
         "note": "Full-deck translation is directly useful for preparing Japanese/English material for overseas sites. Some features are in staged rollout and may not yet appear in every tenant."
       },
-      "src": [{ "name": "HubSite 365", "url": "https://www.hubsite365.com/en-ww/crm-pages/6-new-microsoft-copilot-features-youll-want-to-try-september-2026.htm" }]
+      "src": [
+        {
+          "name": "HubSite 365",
+          "url": "https://www.hubsite365.com/en-ww/crm-pages/6-new-microsoft-copilot-features-youll-want-to-try-september-2026.htm"
+        }
+      ]
     },
     {
       "id": "2026-09-29-codex-env",
@@ -530,7 +727,10 @@
       "kind": "weekly",
       "cat": "tool",
       "level": "advanced",
-      "tags": ["コーディング", "エージェント"],
+      "tags": [
+        "コーディング",
+        "エージェント"
+      ],
       "prio": 1,
       "conf": "report",
       "ja": {
@@ -543,7 +743,12 @@
         "summary": "Cloud environments that used to be throwaway per task can now persist with approved settings and permissions. Work can start from a computer, remotely or from a phone. Also announced: voice commands in the CLI, an /agents view for multiple tasks, and Codex Security Cloud for repo scanning and fix preparation.",
         "note": "General availability date and pricing are not stated in the article."
       },
-      "src": [{ "name": "TechCrunch", "url": "https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/" }]
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/"
+        }
+      ]
     },
     {
       "id": "2026-09-28-nvidia-openshell",
@@ -551,7 +756,10 @@
       "kind": "weekly",
       "cat": "biz",
       "level": "advanced",
-      "tags": ["セキュリティ", "エージェント"],
+      "tags": [
+        "セキュリティ",
+        "エージェント"
+      ],
       "prio": 2,
       "conf": "report",
       "ja": {
@@ -564,7 +772,12 @@
         "summary": "It sits between agents and files, APIs, credentials and networks, isolating them with Linux kernel controls and a policy proxy for network access. Every decision is audit-logged. Free under Apache 2.0, with Anthropic, Salesforce, SAP and Red Hat among integrators.",
         "note": "The idea is to shrink what an agent can reach even if it ignores instructions. Likely to become a common point in corporate security reviews of agents (inference)."
       },
-      "src": [{ "name": "VentureBeat", "url": "https://venturebeat.com/infrastructure/nvidias-openshell-controls-what-ai-agents-can-access-even-when-they-ignore-instructions" }]
+      "src": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/infrastructure/nvidias-openshell-controls-what-ai-agents-can-access-even-when-they-ignore-instructions"
+        }
+      ]
     },
     {
       "id": "2026-09-30-safeguard-false-positive",
@@ -572,7 +785,10 @@
       "kind": "weekly",
       "cat": "biz",
       "level": "intermediate",
-      "tags": ["セキュリティ", "仕事で使える"],
+      "tags": [
+        "セキュリティ",
+        "仕事で使える"
+      ],
       "prio": 2,
       "conf": "report",
       "ja": {
@@ -585,7 +801,12 @@
         "summary": "Cited cases include simulated satellite control, robotics UIs, camera and sensor parameter access on hardware, and open-source vulnerability review. Some developers have moved to open models. OpenAI admits safeguards can slow legitimate work; Anthropic acknowledged false positives and says Fable 5.1 aims for about 60% fewer interventions.",
         "note": "Vehicle-control and ECU questions can hit similar false blocks. A practical fix is stating your purpose (design, validation, training) and role in the first sentence; route anything still blocked to approved internal tools."
       },
-      "src": [{ "name": "VentureBeat", "url": "https://venturebeat.com/technology/developers-say-openai-and-anthropic-safeguards-are-flagging-routine-work-and-costing-them-time" }]
+      "src": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/developers-say-openai-and-anthropic-safeguards-are-flagging-routine-work-and-costing-them-time"
+        }
+      ]
     },
     {
       "id": "2026-05-07-eu-ai-act-delay",
@@ -593,7 +814,9 @@
       "kind": "weekly",
       "cat": "reg",
       "level": "all",
-      "tags": ["規制"],
+      "tags": [
+        "規制"
+      ],
       "prio": 2,
       "conf": "report",
       "ja": {
@@ -606,7 +829,12 @@
         "summary": "Obligations for standalone high-risk AI (Annex III) move from Aug 2, 2026 to Dec 2, 2027; AI embedded in regulated products (Annex I) moves from Aug 2, 2027 to Aug 2, 2028. Watermarking duties shift to Dec 2, 2026, and the Machinery Regulation is removed from high-risk classification.",
         "note": "This was a provisional agreement in May; formal adoption since then is unverified. In-vehicle AI is partly handled under type approval, so its relation to Annex I needs legal review."
       },
-      "src": [{ "name": "Hogan Lovells", "url": "https://www.hlc.com/en/publications/eu-legislators-agree-to-delay-for-highrisk-ai-rules" }]
+      "src": [
+        {
+          "name": "Hogan Lovells",
+          "url": "https://www.hlc.com/en/publications/eu-legislators-agree-to-delay-for-highrisk-ai-rules"
+        }
+      ]
     },
     {
       "id": "2026-10-02-howto-meeting",
@@ -614,7 +842,10 @@
       "kind": "weekly",
       "cat": "howto",
       "level": "beginner",
-      "tags": ["仕事で使える", "会議"],
+      "tags": [
+        "仕事で使える",
+        "会議"
+      ],
       "prio": 3,
       "conf": "guide",
       "ja": {
@@ -635,7 +866,10 @@
       "kind": "weekly",
       "cat": "howto",
       "level": "intermediate",
-      "tags": ["仕事で使える", "データ分析"],
+      "tags": [
+        "仕事で使える",
+        "データ分析"
+      ],
       "prio": 2,
       "conf": "guide",
       "ja": {
@@ -656,7 +890,10 @@
       "kind": "weekly",
       "cat": "howto",
       "level": "beginner",
-      "tags": ["仕事で使える", "メール・英語"],
+      "tags": [
+        "仕事で使える",
+        "メール・英語"
+      ],
       "prio": 2,
       "conf": "guide",
       "ja": {
@@ -677,7 +914,10 @@
       "kind": "weekly",
       "cat": "tool",
       "level": "beginner",
-      "tags": ["仕事で使える", "資料作成"],
+      "tags": [
+        "仕事で使える",
+        "資料作成"
+      ],
       "prio": 2,
       "conf": "guide",
       "ja": {
