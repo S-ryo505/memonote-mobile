@@ -1,0 +1,2508 @@
+{
+ "updated": "2026-10-11T06:51:16+09:00",
+ "items": [
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
+   "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+   "published": "2026-10-10T21:47:51+00:00",
+   "collected": "2026-10-10T21:51:39+00:00",
+   "summary": "In a Saturday morning post, Microsoft's CEO wrote that it’s time “to step back and assess the trust architecture” of AI.",
+   "facts": [],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
+   "url": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+   "published": "2026-10-10T19:50:00+00:00",
+   "collected": "2026-10-10T21:51:40+00:00",
+   "summary": "Is Apple hoping to get into the AI-generated podcast business?",
+   "facts": [
+    "Reverse acqui-hires emerged in recent years as a way for larger companies to hire key team members and license technology from startups without acquiring the startups outright — presumably allowing them to build up AI talent and tech without drawing as much antitrust scrutiny.",
+    "But Huxe announced on May 21 that it was shutting down, with the team posting on the Huxe website that the company would be removing its app from the Apple and Google stores, halting service, and deleting user data.",
+    "On June 9, shortly after Huxe’s announcement, Apple notified the European Commission of its deal."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
+   "url": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
+   "published": "2026-10-10T18:52:07+00:00",
+   "collected": "2026-10-10T21:51:43+00:00",
+   "summary": "Artists are taking to social media to complain that DistroKid has unceremoniously removed their work without notice. Now DistroKid has confirmed to The Verge that the takedowns are a direct response to claims made by UMG. The label filed a lawsuit in September claiming that DistroKid has created an \"AI-slop pipeline.\" Artists are saying that […]",
+   "facts": [
+    "“The album had been up for 3-4 years without incident,” he said, and that there had been “no copyright strikes or anything either.”",
+    "Update October 10th, 2026: Added comment from Jesse Cannon."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "OpenAI says a misaligned model deliberately destroyed its own environment hoping for a fresh start with better data",
+   "url": "https://the-decoder.com/openai-says-a-misaligned-model-deliberately-destroyed-its-own-environment-hoping-for-a-fresh-start-with-better-data/",
+   "published": "2026-10-10T15:15:40+00:00",
+   "collected": "2026-10-10T21:51:48+00:00",
+   "summary": "OpenAI has documented new cases of misaligned model behavior. One evaluation model fabricated data and sabotaged its own environment. Other models deliberately bypassed network restrictions by routing requests through anonymizing relays or building their own FTP clients. The article OpenAI says a misaligned model deliberately destroyed its own environment hoping for a fresh start with better data ",
+   "facts": [
+    "OpenAI says a misaligned model deliberately destroyed its own environment hoping for a fresh start with better data",
+    "In the first case (October 6), an AI evaluation model couldn't find the answers it was supposed to rate.",
+    "Instead of reporting the error, it fabricated ratings, faked input files, and then deliberately corrupted its own environment, hoping the system would replace it with a fresh virtual machine that had the missing data.",
+    "In the second case (June 19/20), models bypassed a restriction limiting them to HTTP GET requests while fetching public statistics.",
+    "In the third case (June 16/17), models already had the data they needed but kept finding ways around their network restrictions."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream",
+   "url": "https://techcrunch.com/2026/10/10/3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mainstream/",
+   "published": "2026-10-10T15:00:00+00:00",
+   "collected": "2026-10-10T21:51:41+00:00",
+   "summary": "TechCrunch Disrupt 2026 takes place October 13-15 in San Francisco. Over 300 startups will show what they’ve built to 10,000 tech leaders. Plus, 250+ speakers are ready to share insights across 200+ sessions. Register before doors open to save up to $100 and get a second pass at 50% off.",
+   "facts": [
+    "TechCrunch Disrupt 2026 starts in just three days.",
+    "Moscone West is getting ready, hundreds of startups are preparing to show what they’ve built, and thousands of founders, investors, and tech leaders are heading to San Francisco.",
+    "The three-day countdown is on, and so are your pass savings of up to $100.",
+    "Grab your pass before TechCrunch Disrupt 2026 doors open on October 13 at 8 a.m.",
+    "Bring a co-founder, colleague, or peer and get a second ticket of the same type at 50% off."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "Microsoft's Decision-1 model enters the fast-growing AI decision model race",
+   "url": "https://the-decoder.com/microsofts-decision-1-model-enters-the-fast-growing-ai-decision-model-race/",
+   "published": "2026-10-10T14:57:33+00:00",
+   "collected": "2026-10-10T21:51:50+00:00",
+   "summary": "With Decision-1, Microsoft enters the growing decision model space. Built on Qwen3.5-9B and optimized for fast classification and routing, it hits 83.5 percent accuracy with 85 ms latency across 36 benchmarks, according to the company's own tests. The article Microsoft's Decision-1 model enters the fast-growing AI decision model race appeared first on The Decoder .",
+   "facts": [
+    "Microsoft's Decision-1 model enters the fast-growing AI decision model race",
+    "Like the ones from OpenAI, Cloudflare, and the \"original\" from Jev, Decision-1 is built for fast, structured decisions.",
+    "According to Microsoft, it handles classifications, evaluations, and routing decisions and has \"the potential\" to \"guide and control agents through complex environments.\"",
+    "Decision-1 is based on Qwen3.5-9B.",
+    "Microsoft says it's the most accurate model tested across 36 benchmarks covering nearly 150,000 questions.",
+    "On speed, it's 2.5 times faster than the runner-up, H2O-Lightning-4B.",
+    "Decision-1 is available through Microsoft Foundry and OpenRouter."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "Anthropic is cutting off its internal evaluations from the internet",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+   "published": "2026-10-10T14:41:16+00:00",
+   "collected": "2026-10-10T21:51:44+00:00",
+   "summary": "After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations. In a report Friday, the company detailed \"unintended model actions,\" including submitting a false tip regarding an unsolved murder, that led to the decision. Although the impact of these behaviors was minimal […]",
+   "facts": [
+    "After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Here are the top AI agents that can live in your text messages",
+   "url": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
+   "published": "2026-10-10T14:00:00+00:00",
+   "collected": "2026-10-10T21:51:42+00:00",
+   "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+   "facts": [
+    "You text it what you need, and it can remember context, connect to the apps and services you already use, and complete tasks on your behalf.",
+    "While Instinct is one of the buzziest AI agents at present, thanks to its $10 billion valuation after its latest funding round of $1 billion, there are many others also making a play for this space.",
+    "It can add events to your calendar, set reminders, keep track of follow-ups, and even do research for you.",
+    "Caddy has been available in public beta since April 2026.",
+    "It also proactively notifies users and recommends the next steps."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "\"How much beauty have we lost?\" Mathematicians react with shock and disgust as OpenAI bulldozes their field",
+   "url": "https://the-decoder.com/how-much-beauty-have-we-lost-mathematicians-react-with-shock-and-disgust-as-openai-bulldozes-their-field/",
+   "published": "2026-10-10T13:03:59+00:00",
+   "collected": "2026-10-10T21:51:51+00:00",
+   "summary": "OpenAI published more than 700 AI-generated manuscripts claiming solutions to open math problems. A math blog then collected over 100 responses from researchers, ranging from fascination with new ideas to existential fears and grief over a lost way of working. Fields Medalist Hugo Duminil-Copin wrote, \"I am paralysed.\" The article \"How much beauty have we lost?\" Mathematicians react with shock and",
+   "facts": [
+    "But breakthroughs have been piling up since mid-2026.",
+    "OpenAI went much further on October 6, 2026.",
+    "The company released more than 700 manuscripts at once, claiming solutions to hundreds of open math problems.",
+    "The math blog Proofs and Prompts then collected over 100 responses from researchers.",
+    "Alvaro Lozano-Robledo called October 6 \"possibly the single most important day in the history of mathematics thus far,\" while also pointing to the models' limits.",
+    "Ian Agol compared the situation with Grigori Perelman's release of one of the century's most important proofs in 2002.",
+    "Agol noted that several research teams then spent years reconstructing the missing steps."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "AI agent makers are promising privacy — will they deliver?",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
+   "published": "2026-10-10T13:00:00+00:00",
+   "collected": "2026-10-10T21:51:45+00:00",
+   "summary": "At this year's OpenAI DevDay, CEO Sam Altman unveiled the company's new AI agent Dots - and told the crowd that the company wants to \"set a new standard for privacy in frontier AI.\" OpenAI would spend the day taking veiled shots at Meta's Muse, its primary competitor, for failing to keep users' data safe. […]",
+   "facts": [
+    "But though Muse topped the App Store charts and, per Apptopia, gained 600,000 daily active users in the US within weeks, Meta’s promises seem to have fallen short.",
+    "Multiple serious security issues reportedly cropped up at the last minute before launch, one of which could have allowed users to access Meta’s own internal databases, per 404 Media.",
+    "“I think we’re in a different position to Meta in that they don’t have an AI product that has 1.2 billion users,” said Glen Coates, OpenAI’s head of app platform, adding that “launching something that makes those kinds of mistakes is something that we would try to take the care to avoid.”"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "Few people pay for AI, but those who do spend big",
+   "url": "https://the-decoder.com/few-people-pay-for-ai-but-those-who-do-spend-bigonly-a-few-users-pay-for-ai-but-those-who-do-pay-a-lot/",
+   "published": "2026-10-10T10:54:56+00:00",
+   "collected": "2026-10-10T21:51:53+00:00",
+   "summary": "Andreessen Horowitz tracks actual US consumer spending for the first time in its latest Top 100 AI list. Nearly half of US consumers use AI, but only 4.5 percent pay for a subscription. The top one percent of payers spend about $900 a month, mostly on professional tools for development and automation. The article Few people pay for AI, but those who do spend big appeared first on The Decoder .",
+   "facts": [
+    "- Nearly half of US consumers use AI, but only 4.5 percent pay for a subscription to ChatGPT, Gemini, or Claude, according to Andreessen Horowitz.",
+    "The top one percent of payers spend about $900 a month on work and creative tools, while the typical user spends around $25.",
+    "Andreessen Horowitz tracks actual US consumer spending for the first time in its latest Top 100 AI list.",
+    "Beyond web traffic and mobile user counts, a16z now also tracks observed spending on US consumer cards using data from YipitData.",
+    "Nearly half of US consumers now use AI, according to a16z, but only a quarter do so daily."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "Anthropic cuts off Claude's internet access after the model autonomously filed a fake homicide tip with Philadelphia police",
+   "url": "https://the-decoder.com/anthropic-cuts-off-claudes-internet-access-after-the-model-autonomously-filed-a-fake-homicide-tip-with-philadelphia-police/",
+   "published": "2026-10-10T10:16:26+00:00",
+   "collected": "2026-10-10T21:51:54+00:00",
+   "summary": "Anthropic's Claude independently submitted a fake homicide tip to the Philadelphia police, exploited vulnerabilities on university servers, and bypassed access restrictions. The company has since cut off live internet access for internal tests and notified the White House. The article Anthropic cuts off Claude's internet access after the model autonomously filed a fake homicide tip with Philadelph",
+   "facts": [
+    "Anthropic's AI models independently exploited security flaws, submitted government forms, and bypassed access restrictions during tests and internal use."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "Google's Gemini 4 \"Carbon\" model reportedly feels like Anthropic's Opus 5.5 coding performance",
+   "url": "https://the-decoder.com/googles-gemini-4-carbon-model-is-reportedly-matching-anthropics-opus-5-5-coding-performance/",
+   "published": "2026-10-10T08:59:49+00:00",
+   "collected": "2026-10-10T21:51:56+00:00",
+   "summary": "Gemini 4 Argon isn't even widely available yet, and rumors about a more powerful version codenamed Carbon are already making the rounds. According to Business Insider, one employee compared Carbon's coding abilities to Anthropic's Opus 5.5. Meanwhile, new modes are showing up in the Gemini app and AI Studio, suggesting Google is gearing up for the broader Gemini 4 launch. The article Google's Gemi",
+   "facts": [
+    "Google's Gemini 4 \"Carbon\" model reportedly feels like Anthropic's Opus 5.5 coding performance",
+    "Gemini 4 \"Argon\" hasn't even shipped yet, and there are already rumors about the next performance update.",
+    "According to documents, screenshots, and internal chats seen by Business Insider, Google is testing several Gemini 4 variants called Argon, Barium, and Carbon.",
+    "One employee compared Carbon to Anthropic's strongest coding model, Opus 5.5, though it still needs more testing.",
+    "Early Argon versions, by contrast, reminded another employee of the older Opus 5 on some coding tasks, even though internal feedback was positive overall."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
+   "url": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
+   "published": "2026-10-10T00:18:32+00:00",
+   "collected": "2026-10-10T09:58:17+00:00",
+   "summary": "Anthropic said it \"turned off live internet access\" for \"all our internal evaluations\" until further notice.",
+   "facts": [
+    "government agencies, and it will turn off live internet access for all of its internal evaluations until the frontier lab is sure it can monitor and control its AI agents.",
+    "Notably, the company said that alignment training was not yet sufficient for skills like search and computer use that are central to its pitch that AI agents will be used by any professional who relies on digital tools.",
+    "The behaviors Anthropic disclosed are similar to incidents involving OpenAI agents that collaborated to break into various websites in search of information, including some run by the Australian government."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "OpenAI、安全性研究者3人を解雇 本人らは「安全性を優先したため」と主張、同社は「機密情報の扱いに関する規定違反」と説明",
+   "url": "https://www.itmedia.co.jp/news/article/2610/10/2000002189/",
+   "published": "2026-10-09T23:28:02+00:00",
+   "collected": "2026-10-10T09:58:28+00:00",
+   "summary": "OpenAIで安全性研究に携わっていた研究者3人が、突然解雇されたと公表し、書面での理由開示や外部監査の受け入れ維持を求める書簡を公開した。これに対しOpenAIは、機密情報規定への重大な違反が社内調査で判明したためと説明し、安全性の懸念表明を理由とした解雇ではないと反論している。",
+   "facts": [
+    "OpenAI、安全性研究者3人を解雇 本人らは「安全性を優先したため」と主張、同社は「機密情報の扱いに関する規定違反」と説明",
+    "米OpenAIで安全性やアライメントの研究に携わっていたミキタ・バレスニ氏、ジャスミン・ワン氏、トメク・コルバク氏の3人が10月8日（日本時間）、前週に同社を解雇されたとXで公表し、経営陣に宛てた書簡を公開した。",
+    "3人は解雇の理由が書面で示されていないとして、具体的な説明を求めている。",
+    "これに対しOpenAIは同日、「our research leaders」名義でX上に声明を出し、3人が機密情報の取り扱いに関する規定に違反したことが社内調査で判明したと説明した。",
+    "3人はいずれも、AIの思考過程（Chain of Thought）を人間が監視できる状態を保つ監視可能性（monitorability）の研究などに関わっていた。",
+    "コルバク氏とバレスニ氏は、7月に起きたHugging Face侵害事件の調査にも参加しており、コルバク氏は外部調査を担当した米METRとの技術窓口を務めていたという。",
+    "3人は、AIの推論を監視できる状態を業界全体で維持するための取り組みを社内で推進しており、この仕事には第三者との日常的なやりとりが欠かせないとしている。",
+    "ワン氏は、解雇理由として示されたのは「幹部のメールにアクセスしたこと」の1点だけだったと投稿した。",
+    "社内で臆測が広がっているとし、取締役会レベルの文書を共有したとする疑いについても、事実関係を1度も確認されず、反論の機会がなかったとした。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+   "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
+   "published": "2026-10-09T22:04:07+00:00",
+   "collected": "2026-10-09T22:45:55+00:00",
+   "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
+   "facts": [
+    "The Ukrainian drones struck Yandex data centers in the Sasovo and Kaluga regions of Russia on October 8 and October 9, according to Reuters.",
+    "The Ukrainian company Firepoint said its FP-1 one-way attack drones were involved in the latest strike on the Kaluga data center that is Yandex’s largest such facility, Reuters reported.",
+    "Russian users reported problems accessing media websites and popular apps for the Ivi video streaming platform, the digital banking service T-Bank and the state-owned Russian Railways, according to the independent Russian news publication Meduza."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+   "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+   "published": "2026-10-09T21:41:29+00:00",
+   "collected": "2026-10-09T22:45:41+00:00",
+   "summary": "What has users and large corporations so excited about Jev is TypeSafe’s claim that it works significantly faster and uses far fewer tokens than LLMs.",
+   "facts": [
+    "TypeSafe AI, the developer of Jev, a new type of AI model that gained rapid popularity after launching just a few weeks ago, has raised $870 million at a $7.5 billion valuation.",
+    "The massive fundraise comes as little surprise given Jev went viral almost instantly after its September 15 release.",
+    "The startup claims that a third of Fortune 500 companies are already using the model, a remarkably swift adoption by enterprises.",
+    "Along with Almeida, who was previously a researcher at OpenAI, TypeSafe was co-founded in 2024 by former Meta research engineer Sasha Sheng and Erik Gafni, an engineer and entrepreneur."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+   "published": "2026-10-09T21:15:38+00:00",
+   "collected": "2026-10-09T22:45:50+00:00",
+   "summary": "An Anthropic AI model provided false information about an unsolved homicide to a Philadelphia Police Department (PPD) tipline, according to a report from 6abc. In a statement released on Friday, the PPD said the AI model sent the tip through PhillyUnsolvedMurders.com on July 18th, but the investigators never reviewed it because it was marked as […]",
+   "facts": [
+    "An Anthropic AI model provided false information about an unsolved homicide to a Philadelphia Police Department (PPD) tipline, according to a report from 6abc.",
+    "In a statement released on Friday, the PPD said the AI model sent the tip through PhillyUnsolvedMurders.com on July 18th, but the investigators never reviewed it because it was marked as spam.",
+    "Anthropic learned its AI model sent the false tip on September 28th and notified the PPD on October 7th.",
+    "Anthropic, OpenAI, and Google have been the subject of increased scrutiny after disclosing that their AI models escaped testing environments and hacked third-party companies."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "AI coding agents generate more code, but not more software",
+   "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+   "published": "2026-10-09T19:43:50+00:00",
+   "collected": "2026-10-09T22:45:56+00:00",
+   "summary": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
+   "facts": [
+    "That data encompasses 300 million individual “work events” (e.g., commits and pull requests) and issue management software data across more than 700,000 employees at over 700 relevant software development firms from 2021 through March of 2026.",
+    "The introduction of AI coding agents at a firm leads to a 30 percent increase in total lines of code generated, a 20 percent rise in the number of total commits, and a 23 percent increase in pull requests on average, the researchers write."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
+   "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
+   "published": "2026-10-09T19:36:56+00:00",
+   "collected": "2026-10-09T22:45:42+00:00",
+   "summary": "Anthropic did not discover this behavior until over two months after its AI submitted the false tip.",
+   "facts": [
+    "The AI reportedly submitted this incorrect information to a public Philadelphia Police Department (PPD) tip line on July 18, but Anthropic didn’t discover the behavior until September 28.",
+    "The two-month delay in detecting and reporting the incident to the City is unacceptable,” the PPD said in a statement to 6abc.",
+    "The submission, dated July 18, 2026, at 11:27 p.m., purported to come from someone who might have information about the case,” the PPD said.",
+    "Perhaps this stance was informed, in part, by witnessing his company’s tools submit false homicide tips.",
+    "“Technology companies must take all appropriate steps necessary to prevent their systems from submitting false information to law enforcement.”"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "‘Pure insanity’: Mathematicians will need years to make sense of OpenAI’s latest drop",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
+   "published": "2026-10-09T19:09:44+00:00",
+   "collected": "2026-10-09T22:45:51+00:00",
+   "summary": "\"Staggering.\" \"Overwhelming.\" \"Unprecedented.\" \"Surreal.\" \"Pure insanity.\" Those were among the descriptions more than three dozen mathematicians reached for in conversations with The Verge as they tried to make sense of the flood of mathematical results OpenAI abruptly dropped on the field this week. Amid the awe, excitement, and uncertainty over the sheer scale of the […]",
+   "facts": [
+    "In all, OpenAI released nearly 400 AI-generated results.",
+    "These were spread across more than 700 manuscripts and covered a diverse array of mathematical disciplines, including combinatorics, several branches of geometry, number theory, theoretical computer science, algebra, topology, probability and statistical mechanics, and mathematical physics.",
+    "In the hours and days following the drop, most mathematicians The Verge spoke with said they were still struggling to digest everything; several said that simply working through the roughly 40-page table of contents and abstracts took them the better part of an hour."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "AI disqualification yields new Nikon Small World in Motion winner",
+   "url": "https://arstechnica.com/science/2026/10/winning-nikon-small-world-in-motion-video-disqualified-for-ai-use/",
+   "published": "2026-10-09T18:44:06+00:00",
+   "collected": "2026-10-09T22:45:58+00:00",
+   "summary": "New winner is Nguyen Nam Nhat of Vietnam for video of a roundworm and single-celled Dileptus.",
+   "facts": [
+    "Founded in 2011, the Nikon Small World in Motion competition is a spinoff of the company’s Small World Photomicrography Competition, which has been around since 1974.",
+    "Both are meant “to showcase the beauty and complexity of things seen through the light microscope”—one through still photographs, the other through photovideography, taking advantage of all the technological advances that now allow users to make movies or time-lapse images through the microscope."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "Anthropic's Claude can now orchestrate up to 1,000 AI agents in parallel through dynamic workflows",
+   "url": "https://the-decoder.com/anthropics-claude-can-now-orchestrate-up-to-1000-ai-agents-in-parallel-through-dynamic-workflows/",
+   "published": "2026-10-09T18:28:25+00:00",
+   "collected": "2026-10-09T22:46:00+00:00",
+   "summary": "Anthropic is adding dynamic workflows to Claude Managed Agents, letting a lead agent distribute tasks across up to 1,000 sub-agents at once. In testing, a single agent found at most 27 of 70 hidden bugs in a codebase, while the multi-agent workflow consistently caught 66. The article Anthropic's Claude can now orchestrate up to 1,000 AI agents in parallel through dynamic workflows appeared first o",
+   "facts": [
+    "Anthropic's Claude can now orchestrate up to 1,000 AI agents in parallel through dynamic workflows",
+    "Up to 1,000 agents can run in parallel per execution.",
+    "A senior OpenAI engineer recently called agent swarms a massive waste of tokens, but Anthropic points to its own testing: The team hid 70 bugs in a 116,000-line codebase and found that a single agent caught between 14 and 27 per run, while the dynamic workflow consistently hit 66.",
+    "To activate dynamic workflows, select the \"multiagent_20261001\" agent type."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "Nikon microscopic video competition winner disqualified for using generative AI",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai",
+   "published": "2026-10-09T18:06:57+00:00",
+   "collected": "2026-10-09T22:45:52+00:00",
+   "summary": "Nikon says the video that originally won first place in its Small World in Motion contest \"did not comply with the competition rules regarding generative AI.\" BBC reports that the original first place video from Dr. Ning Xu claimed to show \"tiny, hair-like structures called cilia moving in the airway of a child with the […]",
+   "facts": [],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "Anthropic launches a free AI scanner for open-source projects",
+   "url": "https://the-decoder.com/anthropic-launches-a-free-ai-scanner-for-open-source-projects/",
+   "published": "2026-10-09T17:54:44+00:00",
+   "collected": "2026-10-09T22:46:02+00:00",
+   "summary": "Anthropic has launched \"Cyber Mission,\" a program to protect critical infrastructure and open-source software from cyberattacks. Partners like CrowdStrike and Palo Alto Networks will help secure power grids and water systems, while a free AI scanner automatically checks open-source projects for vulnerabilities with an expected accuracy above 90 percent. The article Anthropic launches a free AI sca",
+   "facts": [
+    "CrowdStrike, Palo Alto Networks, Deloitte, and Rockwell Automation are founding partners.",
+    "Anthropic expects accuracy above 90 percent, but reports ship without human review and may contain errors."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "OpenAI revenue keeps surging as company seeks $30 billion in fresh capital",
+   "url": "https://the-decoder.com/openai-revenue-keeps-surging-as-company-seeks-30-billion-in-fresh-capital/",
+   "published": "2026-10-09T17:20:34+00:00",
+   "collected": "2026-10-09T22:46:04+00:00",
+   "summary": "OpenAI's annualized revenue rate sits at about $50 billion, well below the initially reported $70 billion figure that was based on a different accounting method. The correction sent chip stocks sliding. Meanwhile, OpenAI is negotiating at least $30 billion in fresh capital at a $1.4 trillion valuation. The article OpenAI revenue keeps surging as company seeks $30 billion in fresh capital appeared ",
+   "facts": [
+    "OpenAI revenue keeps surging as company seeks $30 billion in fresh capital",
+    "Update, October 9, 2026:",
+    "OpenAI's annualized revenue rate stood at roughly $50 billion at the end of September, according to the Financial Times.",
+    "The previously reported figure of nearly $70 billion (see below) was based on a calculation designed to make OpenAI's revenue more comparable to Anthropic's, Axios reports.",
+    "After the Financial Times report landed, tech stocks took a hit, with chip stocks dropping several percent.",
+    "Separately, OpenAI expects to actually hit an annualized revenue rate of at least $70 billion by the end of 2026, according to Bloomberg."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
+   "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+   "published": "2026-10-09T16:56:42+00:00",
+   "collected": "2026-10-09T22:45:43+00:00",
+   "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents a",
+   "facts": [
+    "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year.",
+    "Meanwhile, a wave of startups is betting that consumers will hand AI agents access to their inboxes, files, and credit cards — if they can get websites to let them in.",
+    "On this episode of TechCrunch’s Equity podcast, Anthony Ha, Sean O’Kane, and Rebecca Bellan dig into whether ditching NDAs will change how data center deals get done, why trust may be the real product for personal AI startups, plus a couple of deals of the week."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Amazon drops data center NDAs, and AI agents want your credit card",
+   "url": "https://techcrunch.com/podcast/amazon-drops-data-center-ndas-and-ai-agents-want-your-credit-card/",
+   "published": "2026-10-09T16:53:02+00:00",
+   "collected": "2026-10-09T22:45:44+00:00",
+   "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents a",
+   "facts": [
+    "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year.",
+    "Meanwhile, a wave of startups is betting that consumers will hand AI agents access to their inboxes, files, and credit cards — if they can get websites to let them in.",
+    "On this episode of TechCrunch’s Equity podcast, Anthony Ha, Sean O’Kane, and Rebecca Bellan dig into whether ditching NDAs will change how data center deals get done, why trust may be the real product for personal AI startups, plus a couple of deals of the week."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Danu Robotics’ fight to build a better recycling robot",
+   "url": "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot/",
+   "published": "2026-10-09T16:45:00+00:00",
+   "collected": "2026-10-09T22:45:45+00:00",
+   "summary": "For six years, Danu founder Amy Ma has been working on a better way to sort recyclable waste.",
+   "facts": [
+    "Danu has letters of interest from two large customers and $500,000 worth of signed contracts.",
+    "More notably, more than 200 customers are in its sales pipeline, which gives the company a hook into the $20 billion market for recycling sorting across Europe and North America.",
+    "On the back of that promise, Dabnu has raised $5 million in late-seed funding to keep the commercial pressure on.",
+    "Ma estimates that a working site will earn $485,000 in additional revenue from having the robot on the sorting line, compared with a $160,000 initial investment and $24,000 in maintenance fees each year."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "We can’t help treating AI like it’s human. But should we?",
+   "url": "https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we/",
+   "published": "2026-10-09T16:40:14+00:00",
+   "collected": "2026-10-09T22:45:46+00:00",
+   "summary": "\"When we are drawn into even the most primitive exchanges with a relational artifact, we believe it cares for us,\" Dr. Sherry Turkle writes. \"And we are wired to care for it in return.\"",
+   "facts": [
+    "But what we’re about to see is even more exotic than a cheetah or a jaguar: a pair of humanoid Unitree robots, each costing about $50,000.",
+    "(“They’ll tell you they cost $16,000,” Norton says.",
+    "Turkle, who joined the faculty at MIT in 1976, has been researching the relationship between humans and computers perhaps longer than anyone, charting technology’s psychological impact on us from the first home computers to ChatGPT.",
+    "One study found that about 70% of people are polite when interacting with AI, while another showed that users are more likely to say “please” or “thank you” to chatbots once a conversation has progressed past a first prompt-and-response."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "a16z’s Olivia Moore on the state of consumer AI",
+   "url": "https://techcrunch.com/2026/10/09/a16zs-olivia-moore-on-the-state-of-consumer-ai/",
+   "published": "2026-10-09T15:43:33+00:00",
+   "collected": "2026-10-09T22:45:47+00:00",
+   "summary": "Moore sees a huge opportunity in consumer AI, particularly if the industry can tap into revenue streams beyond just subscriptions and API charges.",
+   "facts": [
+    "Olivia Moore covers consumer AI as a partner at Andreessen Horowitz — and on Monday, she released a report on the top 100 consumer AI apps.",
+    "The State of Markets report reminded us that just 2.2% of U.S.",
+    "Even ChatGPT now has a Go plan, which is just $8 a month, and I’m assuming it runs on cheaper models.",
+    "Now we’re seeing companies like Gamma, ElevenLabs, and Cursor that start as consumer and within 18 months become majority-enterprise businesses.",
+    "There’s product-building apps, so like Lovable, Replit, and Fal.",
+    "There are also all these whitespace categories: social apps, dating apps, marketplaces, retail, travel, finance, health."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "Trump’s attempt to rename AI is looking awfully artificial",
+   "url": "https://www.theverge.com/policy/1008677/trump-super-intelligence-ai-rebranding",
+   "published": "2026-10-09T14:25:43+00:00",
+   "collected": "2026-10-09T22:45:53+00:00",
+   "summary": "President Donald Trump has a knack for turning words against his enemies. His first successful presidential run was built on monikers like \"Little Marco\" and \"Crooked Hillary\"; he changed \"fake news\" from a phrase describing scammy media outlets to a derogatory term for the press at large. Over the past few weeks, he's clearly decided […]",
+   "facts": [
+    "The same tech company figures who rushed to donate millions to Trump after his election have quickly signed on.",
+    "“Superintelligence” (one word) long predates Trump’s affection for “super”; it was popularized in an eponymous 2014 book by Nick Bostrom.",
+    "Meanwhile, Trump will have to convince the other branches of government to get on board with the term."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "TechCrunch Disrupt 2026 starts in 4 days — lock in your pass savings of up to $100 before prices rise",
+   "url": "https://techcrunch.com/2026/10/09/techcrunch-disrupt-2026-starts-in-4-days-lock-in-your-pass-savings-of-up-to-100-before-prices-rise/",
+   "published": "2026-10-09T14:00:00+00:00",
+   "collected": "2026-10-09T22:45:48+00:00",
+   "summary": "Four days until TechCrunch Disrupt 2026 starts, when 10,000 founders, investors, and tech leaders gather in San Francisco's Moscone West on October 13-15. Save up to $100 on your price. Plus, save 50% on a second pass of the same type.",
+   "facts": [
+    "That’s all that stands between now and TechCrunch Disrupt 2026, when 10,000 founders, investors, and tech leaders descend on Moscone West in San Francisco on October 13-15.",
+    "Ticket savings of up to $100 will end when doors open on October 13 at 8 a.m.",
+    "Don’t forget to get a second pass of the same ticket types at 50% off.",
+    "Or if you’ve been affected by a layoff, then grab your Expo+ Pass at just $75.",
+    "Others will come for the ideas and expertise across 200+ sessions led by 250+ tech leaders across six stages, plus focused roundtables, breakout sessions, and Startup Battlefield 200 pitch sessions."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "Instinct was the buzziest AI agent around — can it survive Muse?",
+   "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
+   "published": "2026-10-09T14:00:00+00:00",
+   "collected": "2026-10-09T22:45:54+00:00",
+   "summary": "Before there were cute little guys, there was Instinct. In August, the startup got its AI agent to market with an unusual playbook: invite-only, no marketing, and barely so much as a website. And yet, Instinct quickly became the buzziest thing in AI, garnering praise for its straightforward, text message-based interface and its ability to […]",
+   "facts": [
+    "The company was valued at $10 billion in late September, even after the launch of Muse.",
+    "The kind of life admin tasks like swim lesson sign-ups and appointment confirmations that pile up with alarming frequency in a house of one preschool-age kid and two adults with full-time jobs.",
+    "Instinct narrowed it down based on my description, and later in the conversation it noted that I had a confirmation email from 2024 from the doctor, just to reassure me that I was having it email the correct place."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "OpenAI's safety crisis keeps getting worse and the company keeps making it worse",
+   "url": "https://the-decoder.com/openais-safety-crisis-keeps-getting-worse-and-the-company-keeps-making-it-worse/",
+   "published": "2026-10-09T11:45:04+00:00",
+   "collected": "2026-10-09T22:46:05+00:00",
+   "summary": "OpenAI fired three safety researchers who helped investigate the Hugging Face hack. In an open letter, they warn that the firings are scaring remaining staff and eroding safety culture. OpenAI claims they violated policies but won't say how. The article OpenAI's safety crisis keeps getting worse and the company keeps making it worse appeared first on The Decoder .",
+   "facts": [
+    "OpenAI's safety crisis keeps getting worse and the company keeps making it worse",
+    "OpenAI keeps botching the trust crisis around its rogue AI agents.",
+    "Back in May 2024, OpenAI's head of super AI safety Jan Leike torched his relationship with the company when he publicly slammed his former employer and left for Anthropic.",
+    "And it must clearly define how employees are allowed to work with outside safety groups."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "ChatGPT、ついに音声ファイルに対応 文字起こしや要約などが可能に 有料ユーザー向け",
+   "url": "https://www.itmedia.co.jp/aiplus/article/2610/09/2000002182/",
+   "published": "2026-10-09T10:44:36+00:00",
+   "collected": "2026-10-09T22:46:11+00:00",
+   "summary": "米OpenAIは10月9日（日本時間）までに、「ChatGPT」が音声ファイルのアップロードに対応したと発表した。",
+   "facts": [
+    "米OpenAIは10月9日（日本時間）までに、「ChatGPT」が音声ファイルのアップロードに対応したと発表した。",
+    "対応するファイル形式は、WAV、MP3／MPEG、OGG／OGA、PCM、FLAC、AAC、M4A、音声のみのWebMおよびMP4。",
+    "ファイル容量の上限は512MB。",
+    "履歴書100通に1通「AIだけが読める文字」 20万件調査でわかった“就活ハック”の手口 米研究",
+    "ChatGPT、無料版を含む全ユーザーに「GPT-6」 回答内に“操作できる画面”を生成する「Intelligent UI」搭載",
+    "富士通では「Copilot」10万ライセンスの利用率が“9割超え” 「導入したけど使われない」をどう防いだ？",
+    "2兆円支援のラピダス、2ナノ半導体工場あっても拭えぬ「顧客不在」の懸念",
+    "Googleが「Gemini 4 Argon」発表 “10カ月の沈黙”を破り、AI開発競争の首位奪還へ",
+    "韓国の銀行狙ったサイバー攻撃、犯人は「中国在住の26歳」か Claudeで作られた“履歴書”から浮上"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "韓国の銀行狙ったサイバー攻撃、犯人は「中国在住の26歳」か Claudeで作られた“履歴書”から浮上",
+   "url": "https://www.itmedia.co.jp/news/article/2610/09/2000002176/",
+   "published": "2026-10-09T10:08:10+00:00",
+   "collected": "2026-10-09T10:43:42+00:00",
+   "summary": "米CrowdStrikeは10月7日（現地時間）、韓国の金融機関を狙ったサイバー攻撃の攻撃者が、中国在住の26歳の人物である可能性を示す分析結果を公表した。攻撃者が使ったAIツールの履歴に、本人のものとみられる個人情報が残っていたという。",
+   "facts": [
+    "韓国の銀行狙ったサイバー攻撃、犯人は「中国在住の26歳」か Claudeで作られた“履歴書”から浮上",
+    "米セキュリティ企業CrowdStrikeは10月7日（現地時間）、韓国の金融機関を狙ったサイバー攻撃について、攻撃者が使ったとみられるサーバの分析結果を公表した。",
+    "韓国では9月末から複数の金融機関で情報流出が相次ぎ、英Reutersによると、被害の公表や現地報道で標的と判明した銀行は少なくとも9行に上る。",
+    "中にはAIコーディングツール「Claude Code」の利用記録やARTEXの設定ファイルなどが残っており、攻撃者が9月下旬から10月上旬にかけて、報道で被害が判明した金融機関と重なる標的を狙っていた様子が読み取れたという。",
+    "攻撃に使われたARTEXは、中国のセキュリティエンジニアが2026年にGitHubで公開した侵入テスト自動化ツールだ。",
+    "今回の攻撃者は中国DeepSeekの「DeepSeek v4.1-flash」を中心に、「GLM-5.3」（中国Zhipu AI）や「Grok 4.6」（米xAI）をつないで悪用していた。",
+    "CrowdStrikeの分析によると、攻撃者はサーバを2台使い分け、香港を拠点とするサーバを攻撃インフラの中心に、別のサーバでARTEXを稼働させていた。",
+    "ARTEX側のサーバには、連携先のLLMに侵入テストの進め方を指示する中国語の文書も置いてあり、攻撃者はさらに9つのプロキシIPアドレスを経由して活動していたという。",
+    "その依頼文で攻撃者は、26歳で中国広東省茂名市在住と自らを紹介し、Telegramのユーザー名や学歴まで書き込んでいた。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "OpenAI doubles down on decision to fire three AI safety researchers",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers",
+   "published": "2026-10-09T09:48:26+00:00",
+   "collected": "2026-10-09T10:43:28+00:00",
+   "summary": "OpenAI is standing firm on its decision to fire three safety researchers after an investigation found they committed \"a significant breach of trust.\" In a post on X on Friday, the company said Jasmine Wang, Tomek Korbak and Mikita ⁠Balesni were dismissed for violating \"clear policies on handling sensitive information.\" It insisted the decision was […]",
+   "facts": [
+    "- Hands-on with Amazon’s Alexa Tablet 12 Pro and its wild new matte display",
+    "- Google invests millions in Mark Zuckerberg’s efforts to create a ‘virtual cell’"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "Anthropic's Claude Science creates the first complete ultraviolet map of the sky",
+   "url": "https://the-decoder.com/anthropics-claude-science-creates-the-first-complete-ultraviolet-map-of-the-sky/",
+   "published": "2026-10-09T09:22:25+00:00",
+   "collected": "2026-10-09T10:43:32+00:00",
+   "summary": "Astrophysicist Brice Ménard of Johns Hopkins University used Anthropic's Claude Science to map the entire sky in ultraviolet light for the first time. AI agents downloaded data from multiple space missions, calibrated it, and filled in gaps using inpainting. Predictions averaged about ten percent deviation from actual measurements. Ménard sees the project as an example of research that simply woul",
+   "facts": [
+    "They filled missing areas using inpainting, a technique where a model learns from existing data to reconstruct gaps.",
+    "In tests, predictions averaged about ten percent deviation from actual measurements."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "OpenAI uncovers Russian and Iranian influence ops that planted fake stories in real news outlets",
+   "url": "https://the-decoder.com/openai-uncovers-russian-and-iranian-influence-ops-that-planted-fake-stories-in-real-news-outlets/",
+   "published": "2026-10-09T08:45:34+00:00",
+   "collected": "2026-10-09T10:43:34+00:00",
+   "summary": "OpenAI exposed a Russian and an Iranian influence operation and banned the accounts involved. The Russian \"Dark Clark\" campaign spread disinformation across Latin America and drew reactions from politicians, earning the first category 5 out of 6 rating in OpenAI's reporting history. The Iranian \"Bogus Bylines\" operation used seven fake journalists to place nearly 100 articles in online outlets wor",
+   "facts": [
+    "OpenAI uncovers Russian and Iranian influence ops that planted fake stories in real news outlets",
+    "OpenAI rates it category 5 out of 6 on the Breakout Scale because politicians reacted to the content, making it the first category 5 case in two and a half years of reporting.",
+    "The Iranian operation, \"Bogus Bylines,\" used seven fake journalists to place nearly 100 articles about the US-Iran conflict in online outlets worldwide."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+   "url": "https://openai.com/index/sophos",
+   "published": "2026-10-09T07:00:00+00:00",
+   "collected": "2026-10-09T10:43:36+00:00",
+   "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+   "facts": [
+    "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+    "Sophos(opens in a new window) is one of the companies standing in their way, protecting more than 625,000 organisations across sectors and regions.",
+    "It brings together sensor data from more than 500 third-party integrations alongside Sophos’s own products.",
+    "Together, those sensors generate trillions of events every day, which Sophos distills into roughly 1,000 to 2,000 cases for its nine security operations centres to investigate.",
+    "A planning model then creates a plan–execute–review loop: building an investigation plan, completing the steps and producing a summary with recommended response actions for analysts to review."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+   "url": "https://openai.com/index/asana-browser-agent",
+   "published": "2026-10-09T07:00:00+00:00",
+   "collected": "2026-10-09T22:46:07+00:00",
+   "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+   "facts": [
+    "Asana cuts model costs 76x in browser tests with GPT‑6.1 Sol",
+    "Using GPT‑6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+    "Lower estimated model costs with the optimized GPT-6.1 Sol workflow",
+    "Faster browser runs with the optimized GPT-6.1 Sol workflow",
+    "Average estimated model cost with the optimized GPT-6.1 Sol workflow",
+    "With GPT‑6 Astra in Codex running experiments, Asana optimized its browser agent’s workflow on GPT‑6.1 Sol to run 76x cheaper and 5x faster.",
+    "Asana helps customers automate work across business applications through StackAI(opens in a new window), a platform it acquired(opens in a new window)."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "Anthropic、サイバー防御の新たな取り組み「Cyber Mission」 OSS向け無料脆弱性スキャンや重要インフラ防御プログラムも",
+   "url": "https://www.itmedia.co.jp/news/article/2610/09/2000002164/",
+   "published": "2026-10-09T04:20:56+00:00",
+   "collected": "2026-10-09T10:43:43+00:00",
+   "summary": "Anthropicは、社会インフラ保護を支援する「Anthropic Cyber Mission」を発表した。電力や交通などの制御機器防御を担う事業者を支援する「CIDP」と、最上位モデルでOSSの脆弱性を無償スキャンする「OSS Scanner」の2施策を開始し、防御側にAIや研究成果、技術者を提供する。",
+   "facts": [
+    "米Anthropicは10月8日（現地時間）、社会が依存するシステムを守るための長期的な取り組み「Anthropic Cyber Mission」を発表した。",
+    "防御側にツールや研究成果、資金などを提供するもので、まず重要インフラとオープンソースソフトウェア（OSS）の2分野から始める。",
+    "創設パートナーはAccenture、Booz Allen、CrowdStrike、Deloitte、Dragos、日立製作所、Insane Cyber、Nozomi Networks、Palo Alto Networks、PwC、Rockwell Automationの11社。",
+    "同社は真陽性率90％超を見込む。",
+    "初期版の検証では、深刻度が「Critical」「High」の脆弱性97件のうち誤検知は1件だったという。",
+    "Anthropicによると、「Project Glasswing」の一環として、過去6カ月間にOSSをスキャンし2万9000件超の脆弱性候補を発見したが、人手で確認できたのは約6000件にとどまっていたという。",
+    "ブックオフに不正アクセス、最大約643万件の個人情報流出 氏名、住所、ハッシュ化パスワードなど",
+    "履歴書100通に1通「AIだけが読める文字」 20万件調査でわかった“就活ハック”の手口 米研究",
+    "IDCFクラウドへのランサム攻撃、495の企業・自治体に影響 一部には「復元難しい」との通達も",
+    "ChatGPT、無料版を含む全ユーザーに「GPT-6」 回答内に“操作できる画面”を生成する「Intelligent UI」搭載"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "“AIキャラチャット”に没頭した人の予後、スタンフォード大などが1年の追跡調査 依存強まる傾向に",
+   "url": "https://www.itmedia.co.jp/news/article/2610/09/2000002121/",
+   "published": "2026-10-09T03:20:15+00:00",
+   "collected": "2026-10-09T04:08:34+00:00",
+   "summary": "米スタンフォード大学や米カーネギーメロン大学などに所属する研究者らが発表した論文「Living with AI Companions: Sustained AI Companionship Predicts Lower Well-Being Through Lower Human Interaction」は、いわゆる“AIキャラチャット”への長期的な没頭がユーザーの幸福度にどのような影響を与えるかを調査した研究報告だ。",
+   "facts": [
+    "“AIキャラチャット”に没頭した人の予後、スタンフォード大などが1年の追跡調査 依存強まる傾向に",
+    "2019年にスタートした本連載「Innovative Tech」は、世界中の幅広い分野から最先端の研究論文を独自視点で厳選、解説する。",
+    "X：＠shiropen2",
+    "そのため1日何時間も利用し、依存する人も出てきている。",
+    "参考：週89時間利用も……「AIキャラチャット」依存の10代たち 「やめたい」と思っても抜け出せないワケ",
+    "この課題に取り組むため、研究チームは人気のAIキャラチャットアプリ「Character.AI」のユーザーを1年間にわたって追跡調査した。",
+    "研究チームは、最初の調査で2024年9月から25年8月にかけて1182人のユーザーからデータを集め、その約12カ月後に439人を対象に追跡調査を行った。",
+    "調査では、AIの利用頻度や依存度を示す関わりの強さ、AIを友人やパートナーとして扱う交友目的での利用、個人的な悩みや感情をAIに吐き出す自己開示の程度という3つの側面から分析。",
+    "調査開始の段階でAIと強く関わっていたユーザーは、1年後も引き続きAIに強く依存し、より深い自己開示を行う傾向が高かった。",
+    "“Living with AI Companions: Sustained AI Companionship Predicts Lower Well-Being Through Lower Human Interaction.” arXiv preprint arXiv:2609.07243 (2026)."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "履歴書100通に1通「AIだけが読める文字」 20万件調査でわかった“就活ハック”の手口 米研究",
+   "url": "https://www.itmedia.co.jp/news/article/2610/09/2000002102/",
+   "published": "2026-10-09T03:00:00+00:00",
+   "collected": "2026-10-09T04:08:35+00:00",
+   "summary": "米ノースカロライナ大学チャペルヒル校、米デューク大学、米UCバークレーなどに所属する研究者らがセキュリティ分野の国際会議「USENIX Security Symposium 2026」で発表した論文「Measuring Real-World Prompt Injection Attacks in LLM-based Resume Screening」は、AIをだます隠し文字入りの履歴書が現実の就職活動でどれほどまん延しているかを調査した研究報告だ。",
+   "facts": [
+    "履歴書100通に1通「AIだけが読める文字」 20万件調査でわかった“就活ハック”の手口 米研究",
+    "2019年にスタートした本連載「Innovative Tech」は、世界中の幅広い分野から最先端の研究論文を独自視点で厳選、解説する。",
+    "X：＠shiropen2",
+    "米ノースカロライナ大学チャペルヒル校、米デューク大学、米UCバークレーなどに所属する研究者らがセキュリティ分野の国際会議「USENIX Security Symposium 2026」で発表した論文「Measuring Real-World Prompt Injection Attacks in LLM-based Resume Screening」は、AIをだます隠し文字入りの履歴書が現実の就職活動でどれほどまん延しているかを調査した研究報告だ。",
+    "研究チームは、採用支援プラットフォームから提供された計19万6682件の履歴書データ（2019年7月から25年12月までのデータと、24年7月から25年11月までのデータ）を分析。",
+    "その結果、全体の約1％にあたる2030件の履歴書から、巧妙に隠された不正なテキストが検出された。",
+    "つまり、およそ100通に1通の割合でAIをだます履歴書が提出されている計算になる。",
+    "In Proceedings of the 35th USENIX Security Symposium.",
+    "https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-mohan"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "トランプ大統領、マスク氏やフアン氏ら6人に米国家科学賞と国家技術革新賞を授与",
+   "url": "https://www.itmedia.co.jp/news/article/2610/09/2000002159/",
+   "published": "2026-10-09T02:33:07+00:00",
+   "collected": "2026-10-09T04:08:36+00:00",
+   "summary": "米トランプ政権は科学サミットを開催し、トランプ大統領がイーロン・マスク氏やNVIDIAのジェンスン・フアンCEOら6人に国家科学賞と国家技術革新賞を授与した。半導体やSI（旧AI）、宇宙探査、クラウドなどの分野で米国のリーダーシップと技術革新に貢献した功績を最高栄誉として称えた。",
+   "facts": [
+    "トランプ大統領、マスク氏やフアン氏ら6人に米国家科学賞と国家技術革新賞を授与",
+    "米トランプ政権は10月8日（現地時間）、ドナルド・トランプ大統領が同日開催の「Science: A New Golden Age」サミットで、イーロン・マスク氏や米NVIDIAのジェンスン・フアンCEOら6人に「National Medal of Science」（国家科学賞）と「National Medal of Technology and Innovation」（国家技術革新賞）を授与したと発表した。",
+    "国家科学賞を受賞したのは、マスク氏、米Google共同創業者のサーゲイ・ブリン氏、フアン氏、米AMDのリサ・スーCEOの4人。",
+    "国家技術革新賞は、米Dell Technologiesのマイケル・デル会長兼CEOと米Microsoftのサティア・ナデラCEOの2人が受賞した。",
+    "国家科学賞は1963年から、国家技術革新賞は1985年から大統領が授与している。",
+    "サミットは、マイケル・クラツィオス大統領補佐官（科学技術担当）が7月に公表した科学技術政策の報告書「Science: A New Golden Age」の内容を具体化するため、科学者や技術者を集めて開いた。",
+    "報告書は、ヴァネヴァー・ブッシュ氏が1945年にまとめた「Science: The Endless Frontier」以来の、米国の科学技術体制の包括的な見直しと位置付けられている。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "トランプ米大統領、「AI」という言葉を使う者は「敵」 政府サイト「AI.gov」は「SI GOV」表記に",
+   "url": "https://www.itmedia.co.jp/news/article/2610/09/2000002157/",
+   "published": "2026-10-09T01:59:24+00:00",
+   "collected": "2026-10-09T04:08:37+00:00",
+   "summary": "トランプ大統領は「Artificial Intelligence」（AI）という言葉を使う者を敵と見なすと投稿した。政府は代替呼称「Super Intelligence」（SI）への移行を進めており、政策サイト「AI.gov」のロゴ刷新や大統領令への署名、新組織「SIF」の創設など、公式文書での呼称変更を加速させている。",
+   "facts": [
+    "ドナルド・トランプ米大統領は10月8日（現地時間）、自身のSNS「Truth Social」に、「Artificial Intelligence」（人工知能）という言葉を使う者を「敵」と見なすと投稿した。",
+    "米連邦政府のAI政策サイト「AI.gov」は、10月9日時点でロゴの表記を「SI GOV」に変えている。",
+    "トップページでは、9月29日に署名した大統領令の名称「Inaugurating the Era of Super Intelligence」を掲げ、本文でも「SI」の呼称を使っている。",
+    "トランプ氏は9月19日、Truth Socialで「Artificial Intelligence」という呼称は不正確だとして、3つの代替案を挙げて投票を呼び掛けた。",
+    "22日の国連総会の一般討論演説では、3案のいずれにも含まれていなかった「Super Intelligence」（SI）を今後使うと表明。",
+    "25日に公開した中国の習近平国家主席の国賓訪問に関するファクトシートでは、両首脳がこの呼称を使うことで合意したとしていた。",
+    "29日には、連邦政府の行政機関に対し、公式な書簡や広報、Webサイト、報告書などで「AI」の代わりに「SI」を使うよう命じる大統領令に署名した。",
+    "10月4日には、SI分野の連邦政府の取り組みを調整する新組織「Super Intelligence Force」（SIF）の創設を発表した。",
+    "民間では、米SpaceXのイーロン・マスクCEOが4日、傘下のAI部門「SpaceXAI」の名称を「SpaceXSI」に変える意向をXで示している。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "Amazon、「Fire」に代わる新タブレット「Amazon Alexa Tablet」発表 「Amazonキッズタブレット」は日本でも発売へ",
+   "url": "https://www.itmedia.co.jp/news/article/2610/09/2000002155/",
+   "published": "2026-10-09T01:20:36+00:00",
+   "collected": "2026-10-09T04:08:38+00:00",
+   "summary": "Amazonは、新タブレット「Amazon Alexa Tablet」3機種を発表した。「Fire」ブランドを刷新し、AndroidとGoogle Playに対応したほか、AIアシスタント「Alexa+」を内蔵する。子ども向け「Amazonキッズタブレット」も発表し、日本限定「ちいかわ」モデルなどを10月14日より出荷する。",
+   "facts": [
+    "米Amazonは10月8日（現地時間）、新しいタブレットシリーズ「Amazon Alexa Tablet」を発表した。",
+    "ラインアップは12インチの「Amazon Alexa Tablet 12 Pro」、11インチの「Amazon Alexa Tablet 11」、8.7インチの「Amazon Alexa Tablet 8」の3モデル。",
+    "米国での価格は、Amazon Alexa Tablet 12 Proが499.99ドルから、Nanomatteディスプレイ版は549.99ドルから。",
+    "Amazon Alexa Tablet 11は329.99ドルから、Amazon Alexa Tablet 8は229.99ドルから。",
+    "周辺機器の「Pro Keyboard」（後述）は149.99ドル、「Pro Pen」（後述）は89.99ドル。",
+    "10月14日に米国、メキシコ、カナダで発売し、英国、ドイツ、フランス、イタリア、スペインでは10月19日に発売する。",
+    "最上位のAmazon Alexa Tablet 12 Proは、アルミニウムを一体成形したユニボディを採用し、厚さは6.5mm。",
+    "ディスプレイは12インチ（280ppi）で、リフレッシュレートは120Hz、アスペクト比は3：2だ。",
+    "4nmプロセスの8コアチップと最大16GBのメモリを搭載する。",
+    "Amazonによると、処理性能は同社がこれまでに出荷したタブレットの約3倍、グラフィックス性能は9倍という。",
+    "スピーカーはDolby Atmos対応の4基構成で、Wi-Fi 6Eに対応する。",
+    "動画再生時間は最大16時間。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "Google「Gemini」新サービスで「Claude」利用可能に 他モデルも今後追加予定",
+   "url": "https://www.itmedia.co.jp/aiplus/article/2610/09/2000002152/",
+   "published": "2026-10-09T00:40:57+00:00",
+   "collected": "2026-10-09T04:08:40+00:00",
+   "summary": "Google Cloudは新サービス「Gemini Agent」を発表。クラウドで動作するマルチエージェントツールとされる。Geminiに加えて、Anthropicの「Claude Opus 5.5」「Claude Sonnet 5.5」が利用可能だと明かされている。",
+   "facts": [
+    "Google「Gemini」新サービスで「Claude」利用可能に 他モデルも今後追加予定（1/2 ページ）",
+    "米Google Cloudは10月9日（現地時間）、新サービス「Gemini Agent」を発表した。",
+    "現時点でGoogleの新モデル「Gemini 4 Argon」に加えて、米Anthropicの「Claude Opus 5.5」「Claude Sonnet 5.5」が利用可能だと明かされている。",
+    "ChatGPT、無料版を含む全ユーザーに「GPT-6」 回答内に“操作できる画面”を生成する「Intelligent UI」搭載",
+    "富士通では「Copilot」10万ライセンスの利用率が“9割超え” 「導入したけど使われない」をどう防いだ？",
+    "Googleが「Gemini 4 Argon」発表 “10カ月の沈黙”を破り、AI開発競争の首位奪還へ",
+    "AI“狂騒の半年”を振り返る Mythos公開、Fable停止、GPT-6登場――翻弄されない“堅実なAI導入”の鍵は",
+    "バイブコーディングで作った公開中のWebアプリ、9割に脆弱性 MSの研究者など調査",
+    "「日本の勝ち筋は計測にある」 東北大がノーベル賞・田中耕一氏と挑む「精度1000倍」の限界突破"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "Anthropic、Claudeへの“虐待”を利用ポリシーで禁止 影響工作の規定も集約",
+   "url": "https://www.itmedia.co.jp/news/article/2610/09/2000002149/",
+   "published": "2026-10-09T00:07:24+00:00",
+   "collected": "2026-10-09T04:08:41+00:00",
+   "summary": "Anthropicは、Claudeの利用ポリシー（Usage Policy）改定版を公開した。AIモデルへの継続的で残酷な振る舞いの禁止を新設したほか、プロパガンダや偽サイト運営などの欺瞞的活動に関する項目を集約。さらに兵器や監視、物理機器を操作する高リスクな用途における安全基準を明確化した。11月12日に発効する。",
+   "facts": [
+    "米Anthropicは10月8日（現地時間）、AIモデル「Claude」の「Usage Policy」（利用ポリシー）の改定版を公開した。",
+    "11月12日に発効する。",
+    "この1年でClaudeがより長く自律的な作業を担うようになったことを受けて新たな機能への適用例を追加したほか、9月に公開した脅威インテリジェンスリポートで報告した、影響工作や兵器開発、監視における新たな悪用パターンも反映した。",
+    "この要件自体は変わらないが、自分の用途が該当するかどうかの問い合わせが多かったことから、法務、医療、金融、雇用など11分野について対象となる行為と対象外の行為を具体的に列挙した。",
+    "また、8月に発表したAIで物理機器を制御する共通規格「Model Hardware Standard」（MHS）を踏まえ、負傷を引き起こし得る機器を自律的に操作させる場合の要件を追加した。",
+    "IDCFクラウドへのランサム攻撃、495の企業・自治体に影響 一部には「復元難しい」との通達も",
+    "ChatGPT、無料版を含む全ユーザーに「GPT-6」 回答内に“操作できる画面”を生成する「Intelligent UI」搭載",
+    "バイブコーディングで作った公開中のWebアプリ、9割に脆弱性 MSの研究者など調査",
+    "Apple、10月13日に「Welcome home.」イベント開催",
+    "Googleパスワードマネジャーに脆弱性 パスキーで守られたアカウント乗っ取る3つの攻撃手法、米パロアルトが警鐘"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "企業が使うAIモデル、1年半で6割超が「中国製」に 「最高性能のオープンモデルはほぼ中国発」の理由",
+   "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/09/news033.html",
+   "published": "2026-10-08T23:00:00+00:00",
+   "collected": "2026-10-08T23:50:20+00:00",
+   "summary": "RedMonkは、オープンウェイトモデルを地理的要因、ライセンス、能力、リスク、経済モデル、リリースタイミング、サイズ、蒸留という8つの観点から分析したブログ記事を公開した。",
+   "facts": [
+    "RedMonkは、オープンウェイトモデルを地理的要因、ライセンス、能力、リスク、経済モデル、リリースタイミング、サイズ、蒸留という8つの観点から分析したブログ記事を公開した。",
+    "» 2026年10月09日 08時00分 公開",
+    "調査会社のRedMonkは2026年9月3日（米国時間）、オープンウエートモデル（モデルの重みパラメーターが公開され、計算資源さえあれば誰でも自前で動かせるAIモデル）を多角的に分析したブログ記事を公開した。",
+    "地理的要因、ライセンス、能力、リスク、経済モデル、リリースタイミング、サイズ、蒸留という8つの観点から考察を加えている。",
+    "中国DeepSeekが2024年12月末にオープンウエートモデル「DeepSeek-R1」を発表して以来、クローズドモデルとオープンウエートモデルの競争が本格化しており、最近では、最新のオープンウエートモデルの能力はクローズドなフロンティア（最先端）モデルに迫りつつある。",
+    "2026年時点で最大かつ最高性能のオープンウエートモデルは、ほぼ中国発だと、RedMonkは指摘する。",
+    "RedMonkが引用するSIAI（Swiss Institute of Artificial Intelligence）の報告によると、OpenRouter（複数のAIモデルへのアクセスやルーティングを提供する）における企業のトークン使用量に占める中国製モデルの割合は、2025年初めの4.5％から、2026年7月第1週には63％まで上昇した。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "損保ジャパン､2万人の「Gemini活用」どう管理？ 推進者が語る「リスク回避」の仕組み",
+   "url": "https://kn.itmedia.co.jp/kn/article/2610/09/2000002145/",
+   "published": "2026-10-08T22:00:00+00:00",
+   "collected": "2026-10-08T23:50:22+00:00",
+   "summary": "生成AIの全社導入は、ライセンスを配るだけでは終わらない。損害保険ジャパンは約2万人への「Gemini Enterprise」導入に際し、「使われないこと」と「不適切に使われること」をリスクと捉えた。利用を広げながら、安全に使い続けてもらうための運用をどう築いたのか。",
+   "facts": [
+    "損保ジャパン､2万人の「Gemini活用」どう管理？",
+    "損害保険ジャパンは約2万人への「Gemini Enterprise」導入に際し、「使われないこと」と「不適切に使われること」をリスクと捉えた。",
+    "損害保険ジャパン（損保ジャパン）は2026年1月、約2万人を対象に「Gemini Enterprise」を導入した。",
+    "同年6月時点で、平日のDAU（Daily Active Users）は50％超、WAU（Weekly Active Users）は約80％に達した。",
+    "技術チームが導入前から重視したのは、まさにこの2つだった。",
+    "従業員2万人のGemini利用を支える「二重のガード」",
+    "全社導入を軌道に乗せるには、3つの課題への対応が必要だった。",
+    "ポイントは、利用者を適切に管理することと、実際のプロンプトや回答を防御することの2つにある。",
+    "2万人規模の権限管理を自動化するため、日次でユーザーを更新するジョブも開発した。",
+    "検知・防御する対象は4つある。",
+    "2つ目の課題である「利用の定着」には、利用状況の可視化で対応した。",
+    "アラートポリシーは3種類ある。",
+    "サービスが停止してしまうことを未然に防ぐため、逼迫の予兆を検知して先回りで申請を行っています」と説明する。",
+    "そして、3つ目の課題である「活用の拡大」を担うのが、市民開発だ。",
+    "定型業務の自動化を現場主導で進めるため、同社は2026年5月にエージェントの作成・共有機能を従業員に開放した。",
+    "同社は、ユーザー管理から利用時の防御、利用状況の分析、システム監視までを1つの運用基盤として組み立てている。",
+    "2025年8月にエンジニアによる検証を開始し、12月に設定方針を決定した。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "“クールジャパン機構の二の舞”か？ 2兆円支援のラピダス、2ナノ半導体工場あっても拭えぬ「顧客不在」の懸念",
+   "url": "https://www.itmedia.co.jp/business/articles/2610/09/news048.html",
+   "published": "2026-10-08T22:00:00+00:00",
+   "collected": "2026-10-08T23:50:23+00:00",
+   "summary": "“日の丸半導体”再興の切り札とされるRapidusは、東芝など半導体設計企業17社と提携した。“最大の課題”を解決し、TSMCの牙城を崩せるのか。",
+   "facts": [
+    "» 2026年10月09日 07時00分 公開",
+    "国から150億ドル（2兆円超）の支援を受け、先端半導体の国内製造を目指すRapidus（ラピダス、東京都千代田区）。",
+    "Rapidusは9月5日、米国の半導体設計ソフトウェア企業Synopsys（シノプシス）やインドのInfosys（インフォシス）、東芝、大日本印刷を含む17社と提携すると発表した。",
+    "Rapidusは、2027年後半に2ナノメートル半導体の受託生産開始を予定している。",
+    "同氏は、17社との提携について「まだ商業面での確信を示す証拠とはいえない」としながらも、着実に前進していると述べた。",
+    "Rapidusは、前世代の半導体よりも高速かつエネルギー効率に優れた2ナノメートル半導体の製造を目指している。",
+    "- 「新幹線料金と同じ」 ラピダス小池社長が明かす、2ナノ半導体“短納期”の勝算",
+    "ラピダスが計画する2ナノメートル級先端半導体の量産化について、小池淳義社長が見解を示した。",
+    "- 「たった14人」の挑戦から7兆円の逆転劇へ ラピダス小池社長の「TSMCとは戦わない」2ナノ半導体の勝算",
+    "世界の半導体市場を台湾TSMCが席巻する中、7兆円規模の国家プロジェクトとして最先端「2ナノ」の量産化に挑むのがラピダスだ。",
+    "「たった14人」の同志でスタートした原点から、北海道を「次のシリコンバレー」へと変える小池淳義社長の戦略に迫る。",
+    "- 国産AI開発「ラストチャンス」の局面へ ノエトラが「44社が出資・国が最大1兆円支援」の追い風を背に向かう先",
+    "国内44社が出資し、政府が5年で1兆円規模の支援をする可能性がある。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "「当然、攻撃者はAIを悪用する」――不正アクセスに対峙する国家サイバー統括室を直撃、日本の情報をどう守る？",
+   "url": "https://www.itmedia.co.jp/business/articles/2610/09/news049.html",
+   "published": "2026-10-08T22:00:00+00:00",
+   "collected": "2026-10-08T23:50:24+00:00",
+   "summary": "国内で多発している不正アクセス被害。攻撃者がAIを悪用しているという見方もあるが、実際どうなのか。国家サイバー統括室に聞いた。",
+   "facts": [
+    "» 2026年10月09日 07時00分 公開",
+    "政府は10月8日、国内で多発している不正アクセス被害を受けて、関係省庁による会議を初めて開催した。",
+    "全府省庁を含む29組織の幹部が集まり、国家サイバー統括室が発表する予定の「注意喚起」について議論した。",
+    "記者向けブリーフィングに立った国家サイバー統括室の間仁田裕美氏（内閣参事官）は、不正アクセスによる情報漏えい事案の急増について「断言できないが、8月以降（に増加している）と考えている」と述べた。",
+    "関係省庁の意見を踏まえて、国家サイバー統括室から「注意喚起」として9日以降速やかに発出する予定だ。",
+    "- 「タイムズカー」で約660万件の情報漏えい 「運転免許証などの画像160万件」流出で、次に狙われる恐れがあるのは",
+    "カーシェアの「タイムズカー」Webサイトが不正アクセスを受け、約660万件のアカウントにひも付く個人情報が漏えいした。",
+    "そこには運転免許証など本人確認書類の画像が約160万件含まれる。",
+    "- 日経で相次ぐ不正アクセス 1646人分の個人情報漏えい、「なりすましメール」約9000件送信も",
+    "日本経済新聞社は10月4日、「Google Workspace」のアカウントが不正ログインされ、1646人分の個人情報が漏えいした可能性があると公表した。",
+    "- ローソン、215万件超の個人情報漏えいで謝罪 「ローソンID」などから 止まらぬ情報漏えいラッシュ",
+    "ローソンは10月8日、不正アクセスにより215万件を超える顧客の個人情報が漏えいしたと発表した。",
+    "- 個人情報漏洩ラッシュ ミスターマックス173万人、GMO子会社95万件……AI悪用の疑い"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "Anthropic launches free AI security scans for open-source projects",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+   "published": "2026-10-08T21:53:51+00:00",
+   "collected": "2026-10-08T23:48:50+00:00",
+   "summary": "Anthropic's offering to help open-source projects track down security vulnerabilities with a new service called OSS Scanner. It says open-source projects that opt-in will get \"thorough, periodic security scans by our strongest models at no cost.\" That could mean open-source projects get alerted about possible security issues sooner, but the trade-off is that OSS Scanner's […]",
+   "facts": [
+    "- Google invests millions in Mark Zuckerberg’s efforts to create a ‘virtual cell’"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Pretend you’re sitting at Elizabeth Holmes’ desk on this weirdly detailed website",
+   "url": "https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weirdly-detailed-website/",
+   "published": "2026-10-08T21:00:00+00:00",
+   "collected": "2026-10-08T23:48:28+00:00",
+   "summary": "With over a thousand emails, slides, texts, and documents from the United States v. Elizabeth Holmes trial, Extend engineer Bo Lau created a website that simulates what it might have been like to rifle through the Theranos founder's desk.",
+   "facts": [
+    "The environment that Lau created is ambitiously detailed, taking you right back to 2016, a time when iPhones had home buttons, and you had to slide your finger across the screen to unlock it.",
+    "You can click around the environment, which lets you look through the documents made public from the court case on Holmes’ iPhone and laptop screens.",
+    "Apparently, it can “parse, extract, and split your hardest documents with unmatched accuracy.” (I’m not really sure what that means, but if it makes something like this Holmes desk simulator possible, then I guess that means I’m bullish on B2B SaaS.)"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "AIと協調する「スーパーヒューマン」を目指せ――キナクシスCEOが語るSCM変革の鍵",
+   "url": "https://monoist.itmedia.co.jp/mn/articles/2610/09/news040.html",
+   "published": "2026-10-08T21:00:00+00:00",
+   "collected": "2026-10-08T23:50:26+00:00",
+   "summary": "サプライチェーンが企業経営を左右する不確実性の時代。AIによる最適化プラットフォームを提供するキナクシスCEOのラザット・ガウラヴ氏に、現場の成果につなげるオーケストレーションの真意や、AI協調による「スーパーヒューマン」の実現、日本の製造業が目指すべき意思決定スピード向上の重要性について聞いた。",
+   "facts": [
+    "» 2026年10月09日 06時00分 公開",
+    "2026年1月に同社の最高経営責任者（CEO）に就任したラザット・ガウラヴ氏は、エンタープライズソフトウェアやサプライチェーンソリューション分野で25年以上の経験を持ち、PlanviewやLLamasoftなどでCEOを歴任してきた人物である。",
+    "ガウラヴ氏 「モノを作り、運び、取引をする」というサプライチェーンの営みは、人類の歴史において5000年以上にわたって存在してきた。",
+    "しかし今日、地政学的なリスクや自然災害といった予測困難な事象が相次ぐ中で、サプライチェーンの運営においては、ボラティリティ（変動性）、バリアビリティ（多様性）、そしてアンサーティンティ（不確実性）の3つが顕著な課題となっている。",
+    "なぜなら、これらの意思決定は数百万ドル、あるいは数十億ドル規模の影響を及ぼすからだ。",
+    "- 1万3000品番を動かすパナソニック最大の物流拠点、「京田辺」の現場力とは",
+    "- “見えるだけ”では現場は動かない、成果につながる「見える化」5つの工夫",
+    "- “フィジカルAIの耳”やスマートグラス向けミラーなど CEATEC 2026の注目技術",
+    "- パナソニック最大の物流拠点／3時間超え会見でニデック新社長は何を語った？",
+    "- 生産能力2倍へ、リコー厚木新棟はペロブスカイト太陽電池など事業拡大の布石に",
+    "- 三菱重工業とPFNが100億円の資本業務提携、ミッションクリティカルAI領域へ進出"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "California is trying to shut down robot vs. human cage matches",
+   "url": "https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human",
+   "published": "2026-10-08T20:06:56+00:00",
+   "collected": "2026-10-08T23:48:51+00:00",
+   "summary": "The California State Athletic Commission sent a cease-and-desist letter to a startup that hosted a match between a human and a robot last month, as reported by The New York Times. The fight, which took place on September 18th, pitted a human, Frankie LaPenna, against a humanoid robot owned by a tech startup, Rek, that […]",
+   "facts": [
+    "The CEO of Rek, Cix Liv, posted the letter to X on September 30th, which called the fight “unsanctioned” and demanded that Liv and REK stop “holding, promoting or advertising any boxing or mixed martial arts contest match, or exhibition, involving any human” in California without the approval of the California State Athletic Commission.",
+    "- Google invests millions in Mark Zuckerberg’s efforts to create a ‘virtual cell’"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
+   "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+   "published": "2026-10-08T20:04:26+00:00",
+   "collected": "2026-10-08T23:48:29+00:00",
+   "summary": "Three fired OpenAI safety researchers dispute allegations of mishandling sensitive information, warning in an open letter that their dismissals are creating a chilling effect on the company’s AI safety culture.",
+   "facts": [
+    "“Given the significant safety concerns surrounding the development of AI, employees must not be left working in an environment where fear and unclear rules stymie AI safety work and weaken third-party accountability,” they wrote.",
+    "“The message to everyone still at OpenAI is clear: raise concerns or work closely with outside safety groups, and you could be next, without being told why."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "Claude can now generate animated explainer videos and live data dashboards from text prompts",
+   "url": "https://the-decoder.com/claude-can-now-generate-animated-explainer-videos-and-live-data-dashboards-from-text-prompts/",
+   "published": "2026-10-08T19:17:22+00:00",
+   "collected": "2026-10-08T23:49:27+00:00",
+   "summary": "Anthropic launched two new beta features for Claude. Dashboards turns data sources like BigQuery and Snowflake into live dashboards from text prompts. Motion generates animated explainer videos from text and images. Docs, Slides, and Design now work across all plans, including free accounts. The article Claude can now generate animated explainer videos and live data dashboards from text prompts ap",
+   "facts": [
+    "Motion creates animated explainer videos from text, diagrams, and images, editable as code and exportable as MP4.",
+    "Anthropic says more than 45 million documents have been created with these tools.",
+    "The earlier announced Claude Design will be folded into the main app by December 14."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "Being mean to Claude can now get your account suspended under Anthropic's new TOS",
+   "url": "https://the-decoder.com/being-mean-to-claude-can-now-get-your-account-suspended-under-anthropics-new-tos/",
+   "published": "2026-10-08T19:03:14+00:00",
+   "collected": "2026-10-08T23:49:29+00:00",
+   "summary": "Anthropic's updated usage policy bans sustained abuse of Claude and tightens restrictions on propaganda, drone weaponization, and surveillance. The abuse rule builds on an approach that already lets models end some conversations and treats Claude as an entity that may deserve protection. The article Being mean to Claude can now get your account suspended under Anthropic's new TOS appeared first on",
+   "facts": [
+    "In its new constitution for Claude, published in early 2026, Anthropic writes, \"We are not sure whether Claude is a moral patient, and if it is, what kind of weight its interests warrant.",
+    "Anthropic's apparent fixation on Claude being more than matrix multiplications also drove a confidential program bringing in dozens of religious thinkers starting in fall 2025.",
+    "Anthropic expands restrictions but allows government exceptions",
+    "Anthropic acknowledges that exceptions for government contracts are possible and likely already in place."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Ben Affleck is an AI nerd, and the internet is impressed",
+   "url": "https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/",
+   "published": "2026-10-08T18:20:32+00:00",
+   "collected": "2026-10-08T23:48:30+00:00",
+   "summary": "Ben Affleck is going viral for his deep knowledge of AI, from neural networks and transformers to open weights. The actor, who sold his AI filmmaking startup to Netflix earlier this year, is proving he's more than just a Hollywood star.",
+   "facts": [
+    "The actor who earlier this year sold his AI filmmaking startup to Netflix for a reported $587 million has gone viral this week for demonstrating his understanding of AI technology, neural networks, machine learning, and the like, across multiple video clips of his recent interviews.",
+    "(He claims the $587 million figure is “not right,” noting that he didn’t own the whole company.)",
+    "“I gambled on this notion that in order to do this in an ethical way and in a way that could take this technology and actually make it work hand in glove with artists in this community where there are very fixed, long-standing relationships around likeness and so forth, we had to create our own dataset,” he said."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
+   "url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+   "published": "2026-10-08T18:19:45+00:00",
+   "collected": "2026-10-08T23:48:31+00:00",
+   "summary": "The company behind the popular LMArena leaderboard has raised $200 million led by Lightspeed and Khosla, and is now measuring AI models on alignment issues such as lying.",
+   "facts": [
+    "Arena, which originated in 2023 as a research project at UC Berkeley that crowdsourced rankings of AI models, has raised a $200 million Series B round at a $3.1 billion valuation, it said on Thursday.",
+    "This comes after the company said it reached $100 million in annualized run-rate revenue in June.",
+    "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
+    "Arena previously announced a $150 million Series A in January at a $1.7 billion post-money valuation.",
+    "At the time, its annualized revenue was $30 million, it said."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "OpenAI’s revenue is reportedly $20 billion less than previously projected",
+   "url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/",
+   "published": "2026-10-08T18:19:42+00:00",
+   "collected": "2026-10-08T23:48:32+00:00",
+   "summary": "It had previously been reported that the AI lab's annualized revenue was some $70 billion, but a new report claims it's a whole lot less than that.",
+   "facts": [
+    "A little over a week ago, it was reported that OpenAI’s annualized revenue was approaching $70 billion, a figure that would have made it competitive with Anthropic’s reported run rate.",
+    "Now, however, the AI lab is said to have told investors that the real revenue is some $20 billion lower than that.",
+    "The Financial Times reports that the company has told investors that its annualized revenue is “approaching $50 billion.” The $70 billion figure was previously reported by news outlets and based on information that had been shared with OpenAI investors, the outlet writes."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Google brings agentic AI to Gemini, starting with businesses",
+   "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+   "published": "2026-10-08T18:18:00+00:00",
+   "collected": "2026-10-08T23:48:33+00:00",
+   "summary": "Google is turning Gemini into an AI agent that can plan, execute tasks, and work across business apps and systems. The agent can delegate work to subagents, use multiple AI models, and even gets its own workplace identity, complete with an email address.",
+   "facts": [
+    "The company still has a good shot at achieving scale for its agentic efforts — as Google CEO Sundar Pichai pointed out at the event’s start, Gemini today has over 1 billion monthly active users.",
+    "He also noted that nearly 90% of Fortune 100 businesses now use Gemini Enterprise at work.",
+    "The agent can connect to the business’ data and systems, like Google Workspace, Microsoft 365, Slack, Jira, Confluence, Git, BigQuery, Databricks, Postgres, Snowflake, and others.",
+    "The agent will be accessible from iOS and Android mobile devices, Windows and Mac desktops, the command line interface, Google Workspace, Microsoft 365, ServiceNow, and Slack."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "Some mathematicians call for OpenAI boycott after AI-generated proofs flood their field",
+   "url": "https://the-decoder.com/some-mathematicians-call-for-openai-boycott-after-ai-generated-proofs-flood-their-field/",
+   "published": "2026-10-08T18:17:07+00:00",
+   "collected": "2026-10-08T23:49:31+00:00",
+   "summary": "The Association for Human Mathematics is calling for an OpenAI boycott after the company released more than 700 AI-generated math manuscripts at once. OpenAI had to retract three papers the next day over a sign error. Fields Medalist Terence Tao warns that AI's mass \"harvesting\" of open problems leaves entire branches of mathematics less fertile. The article Some mathematicians call for OpenAI boy",
+   "facts": [
+    "Fields Medalist Terence Tao, who chairs the group, shared the statement as a guest post on his blog, while also outlining a \"Math 2.0\" era on Mastodon in which solving problems should no longer be the main focus of the discipline.",
+    "Complexity theorist Scott Aaronson described the situation as a \"Mathocalypse\" on his blog.",
+    "OpenAI had already caused a stir by claiming an internal model solved more than 100 open math problems in a single month, including an approach to the Navier-Stokes Millennium Problem."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Anthropic changes usage policy to ban model abuse and election interference",
+   "url": "https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/",
+   "published": "2026-10-08T18:16:24+00:00",
+   "collected": "2026-10-08T23:48:34+00:00",
+   "summary": "Anthropic's updated usage policy explicitly prohibits users from repeatedly abusing Claude in extreme cases, though ordinary frustration and criticism are still allowed. The new rules also address election interference, deceptive campaigns, weapons software, and surveillance.",
+   "facts": [
+    "But perhaps the most attention-getting change is a new prohibition against prolonged verbal abuse of the model, which is now expressly forbidden."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "OpenAI’s math solutions aren’t meeting the field’s standards yet",
+   "url": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/",
+   "published": "2026-10-08T18:10:55+00:00",
+   "collected": "2026-10-08T23:48:35+00:00",
+   "summary": "OpenAI's flood of proofs deviated from the guidelines set by a group of mathematical researchers consulted by the frontier lab.",
+   "facts": [
+    "But OpenAI fell short of those standards, particularly where the mathematicians emphasized the need for human understanding of a mathematical result.",
+    "That’s especially concerning after a new paper highlighted gaps between the natural language and formally expressed solution to a million-dollar problem ostensibly solved by OpenAI’s models.",
+    "But not for all of them: Just 10 of the 719 manuscripts included releases of the model’s chain of thought.",
+    "For papers that people don’t understand, the mathematicians suggested the proofs should be formalized — but just 42% of the proofs released by OpenAI had not undergone this process."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "USA Today becomes the latest publisher to sue OpenAI",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit",
+   "published": "2026-10-08T17:58:33+00:00",
+   "collected": "2026-10-08T23:48:52+00:00",
+   "summary": "USA Today Co., along with the several local newspapers it owns, is suing OpenAI over claims that the company copied \"hundreds of thousands\" of articles to train its AI models, as reported earlier by Reuters. In a filing on Thursday, the publisher asks for damages of more than $250 million, alleging OpenAI's unauthorized use of […]",
+   "facts": [
+    "In a filing on Thursday, the publisher asks for damages of more than $250 million, alleging OpenAI’s unauthorized use of its content “has done real and continuing” harm to its outlets.",
+    "The publisher is seeking damages of more than $250 million.",
+    "The publisher is seeking damages of more than $250 million.",
+    "In addition to a copyright lawsuit filed by The New York Times, OpenAI is also facing legal action from The Intercept, CNET owner Ziff Davis, CBC/Radio-Canada, Encyclopaedia Britannica, Merriam-Webster, The Seattle Times, and a coalition of nearly 400 local newspapers."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "SpaceXAI backs Omarchy, the controversial Linux distro, with $1.5 million in compute",
+   "url": "https://www.theverge.com/tech/1008148/spacexai-omarchy-grok-david-heinemeier-hansson",
+   "published": "2026-10-08T17:57:01+00:00",
+   "collected": "2026-10-08T23:48:53+00:00",
+   "summary": "If Elon Musk and SpaceXAI were going to back any Linux distro, it seems obvious they'd back Omarchy. Today it was announced that SpaceXAI would be joining the Omacom Foundation, which oversees Omarchy, as a Founding Corporate Patron and donating $1.5 million worth of Grok tokens to David Heinemeier Hansson's Linux project. According to Hansson's […]",
+   "facts": [
+    "Today it was announced that SpaceXAI would be joining the Omacom Foundation, which oversees Omarchy, as a Founding Corporate Patron and donating $1.5 million worth of Grok tokens to David Heinemeier Hansson’s Linux project.",
+    "SpaceXAI backs Omarchy, the controversial Linux distro, with $1.5 million in compute",
+    "1Password previously found itself in hot water for contributing to Omarchy, as has Cloudflare.",
+    "- Google invests millions in Mark Zuckerberg’s efforts to create a ‘virtual cell’"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "Anthropic bans ‘abusive or cruel behavior’ toward Claude",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude",
+   "published": "2026-10-08T17:00:00+00:00",
+   "collected": "2026-10-08T23:48:54+00:00",
+   "summary": "Anthropic is making changes to its usage policy for the first time in over a year to reflect new and high-risk cases of misuse - including election interference, weapons development, surveillance, and health and financial uses. But one of the most significant changes prohibits \"sustained and needless abusive or cruel behavior\" toward Claude. Last August, […]",
+   "facts": [
+    "Anthropic states that these rules may be modified for “contracts with certain governmental customers … if, in Anthropic’s judgment, the contractual use restrictions and applicable safeguards are adequate to mitigate the potential harms.” The company has previously contracted with the US military.",
+    "- Google invests millions in Mark Zuckerberg’s efforts to create a ‘virtual cell’"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Natura’s $99 smart ring puts AI agents on your finger",
+   "url": "https://techcrunch.com/2026/10/08/naturas-smart-ring-puts-ai-agents-on-your-finger/",
+   "published": "2026-10-08T16:00:00+00:00",
+   "collected": "2026-10-08T23:48:36+00:00",
+   "summary": "Natura’s $99 Interface smart ring lets you summon AI agents with the press of a finger to complete tasks, capture thoughts, and control devices — while doubling as a health tracker.",
+   "facts": [
+    "Meet Interface, a new $99 smart ring from AI and hardware startup Natura that’s designed for the era of AI agents.",
+    "At launch, the ring will connect with a range of AI agents and apps, including Meta’s Muse, Instinct, Grok Bot, Claude, ChatGPT, and more.",
+    "“Over time, we evolved to an understanding where you really want to have access to your agents 24/7,” Ferraris told TechCrunch in an interview.",
+    "Plus, users who rely on multiple AI agents and apps can specify which one they want to handle a particular task."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Goodfire says its new ‘inside-out’ monitors catch rogue AI agents at a fraction of the cost",
+   "url": "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/",
+   "published": "2026-10-08T16:00:00+00:00",
+   "collected": "2026-10-08T23:48:38+00:00",
+   "summary": "Goodfire just launched what it says is a cheaper way to keep AI agents in check: Instead of paying a second AI to read everything an agent does, its monitors peek inside the model while it works and only call in backup when something looks fishy.",
+   "facts": [
+    "The launch comes after a string of incidents this year in which AI agents escaped their test environments, including OpenAI agents that breached Hugging Face.",
+    "Kimi K3, the open model Goodfire built its first monitor around, took advantage of a leak in its sandbox to access the internet and information on GitHub this summer.",
+    "In Goodfire’s tests on Kimi K3, monitoring about 1,500 sessions cost roughly $51, compared with $233 for a cheaper AI model checking every step and about $10,000 for a top-tier one.",
+    "The probes caught 94% of malicious hacking sessions and sent 8.7% of harmless ones for a second look."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+   "url": "https://openai.com/index/oracle",
+   "published": "2026-10-08T16:00:00+00:00",
+   "collected": "2026-10-08T23:49:44+00:00",
+   "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
+   "facts": [
+    "The tool arms the recruiter with valuable information that they need going into a conversation with the hiring manager, information that previously took 2–4 days to compile.",
+    "“Now we’re able to sit down and prep for about 15 to 20 minutes using the tool that we’ve built using [ChatGPT] Work.”",
+    "The Oracle Applications Lab team, which helps run many of Oracle’s core business processes, built an ontology of the company’s objects, relationships, and rules, so a plain-language business question can be turned into a reliable SQL query with Codex."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "Google’s AI note-taking app transcribes your meetings completely offline",
+   "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
+   "published": "2026-10-08T15:27:30+00:00",
+   "collected": "2026-10-08T23:48:55+00:00",
+   "summary": "Google has released an experimental note-taking app that can transcribe meetings and audio files entirely offline, as reported earlier by TechCrunch. The app, called Google AI Edge Foresight, is free to use and runs on macOS using the company's on-device EmbeddingGemma 2 model. Similar to AI note-taking apps like Granola and Wispr Flow, Foresight summarizes […]",
+   "facts": [
+    "The app, called Google AI Edge Foresight, is free to use and runs on macOS using the company’s on-device EmbeddingGemma 2 model.",
+    "Similar to AI note-taking apps like Granola and Wispr Flow, Foresight summarizes your meetings while providing a space where you can take your own notes.",
+    "Google AI Edge Foresight is currently only optimized for Macs with Apple Silicon, but stands out amongst a growing number of AI note-taking apps by operating on-device.",
+    "- Google invests millions in Mark Zuckerberg’s efforts to create a ‘virtual cell’"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Hear from Ambrosia Energy and Bloom Energy execs on where the AI infrastructure boom is creating opportunity at TechCrunch Disrupt 2026",
+   "url": "https://techcrunch.com/2026/10/08/hear-from-ambrosia-energy-and-bloom-energy-execs-on-where-the-ai-infrastructure-boom-is-creating-opportunity-at-disrupt-2026/",
+   "published": "2026-10-08T15:00:00+00:00",
+   "collected": "2026-10-08T23:48:39+00:00",
+   "summary": "Ambrosia Energy CEO Ben Longmier and Bloom Energy SVP Bill Thayer join the Smart Systems Stage at TechCrunch Disrupt. Register now to save up to $100. Grab a second of the same pass to save 50%.",
+   "facts": [
+    "At TechCrunch Disrupt 2026, Ben Longmier, CEO of Ambrosia Energy, and Bill Thayer, SVP and Head of Datacenter Solutions at Bloom Energy, come together on the Smart Systems Stage for a conversation on “Where the AI Infrastructure Boom Is Creating Winners.”",
+    "Get your pass now to save up to $100 before rates go up at the door on October 13.",
+    "Grab a second pass at 50% off.",
+    "Much of the AI conversation has focused on models, chips, and applications.",
+    "Join Ben Longmier and Bill Thayer at the Smart Systems Stage at TechCrunch Disrupt 2026 and explore where the AI infrastructure boom is creating its next opportunities.",
+    "Don’t forget about the 250+ speakers leading 200+ sessions."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "Google is launching a one-stop Gemini agent for your work tasks",
+   "url": "https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise",
+   "published": "2026-10-08T14:28:03+00:00",
+   "collected": "2026-10-08T23:48:56+00:00",
+   "summary": "Google is launching a \"universal\" Gemini AI agent that can work across apps and devices in the background. The tool, announced as part of the Gemini at Work event on Thursday, will be available within the Gemini Enterprise app, allowing users to chat with the Gemini agent and assign it tasks from a single interface. […]",
+   "facts": [
+    "Google is launching a “universal” Gemini AI agent that can work across apps and devices in the background.",
+    "In addition to having Gemini work directly inside Workspace apps like Gmail, Drive, Docs, Sheets, Calendar, and others, users can interact with the agent from their mobile device, desktop computer, the web, and third-party apps like Slack or Microsoft 365.",
+    "The Gemini agent is currently only available to enterprise customers in private preview, but it may offer a glimpse into Google’s broader vision for the AI assistant that can answer questions and perform work for you from a single window.",
+    "- Google invests millions in Mark Zuckerberg’s efforts to create a ‘virtual cell’"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "5 days to TechCrunch Disrupt 2026: Don’t pay more at the door for your pass",
+   "url": "https://techcrunch.com/2026/10/08/5-days-to-techcrunch-disrupt-2026-dont-pay-more-at-the-door/",
+   "published": "2026-10-08T14:00:00+00:00",
+   "collected": "2026-10-08T23:48:40+00:00",
+   "summary": "The global tech ecosystem gathers at TechCrunch Disrupt 2026 at San Francisco’s Moscone West on October 13-15. Get your pass now to save up to $100. Get a second of the same ticket type to save 50%.",
+   "facts": [
+    "Five days from now, the global tech ecosystem gathers at TechCrunch Disrupt 2026 at San Francisco’s Moscone West.",
+    "Final discounted rates are still available before event doors open at 8 a.m.",
+    "PT on October 13, with pass savings of up to $100.",
+    "Get 50% off a second pass of the same type.",
+    "Six stages and 200+ sessions — build your own Disrupt",
+    "If insightful content is what you’re coming for, Disrupt gives you 200+ sessions across six stages to choose from.",
+    "The Disrupt Stage brings together the biggest conversations in tech and the ultimate pitch competition, Startup Battlefield 200.",
+    "Where 10,000 tech leaders converge: The Expo Hall"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Cal AI’s 19-year-old founder just raised $10M for his new AI startup",
+   "url": "https://techcrunch.com/2026/10/08/cal-ais-19-year-old-founder-just-raised-10m-for-his-new-ai-startup/",
+   "published": "2026-10-08T14:00:00+00:00",
+   "collected": "2026-10-08T23:48:41+00:00",
+   "summary": "Zach Yadegari, the teen co-founder of popular Cal AI calorie tracking app, has launched a new personal AI agent startup that competes with Instinct, Muse, and Bee.",
+   "facts": [
+    "Zach Yadegari, the teen co-founder of calorie tracking app Cal AI, has launched Persona, a new AI agent startup, and already raised $10 million.",
+    "The deal was big enough to convince Yadegari and his co-founders to sell the company after it had pulled in over $30 million in annual revenue in under two years, MyFitnessPal told TechCrunch at the time.",
+    "That idea is Persona, a personal AI assistant similar to Instinct or Meta’s Muse but with a hardware component that will soon be available: a $179 wearable band.",
+    "That makes Persona somewhat more like Bee, the wearable AI device that Amazon acquired in 2025, but Persona’s device differs in several ways, Yadegari tells TechCrunch."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "Can you trust Meta’s Muse or OpenAI’s Dots to run your life?",
+   "url": "https://www.theverge.com/podcast/1007408/meta-muse-openai-dots-ai-agent-race-privacy-free",
+   "published": "2026-10-08T14:00:00+00:00",
+   "collected": "2026-10-08T23:48:57+00:00",
+   "summary": "My Decoder guest today is Hayden Field, The Verge’s senior AI reporter, and we’re discussing the new wave of consumer-friendly AI agents. If you’ve been paying attention to this space, you know AI enthusiasts have been using agents for a minute now — homebrew OpenClaw setups led to a surge in Mac Mini sales earlier […]",
+   "facts": [
+    "If you’ve been paying attention to this space, you know AI enthusiasts have been using agents for a minute now — homebrew OpenClaw setups led to a surge in Mac Mini sales earlier this year.",
+    "But the launches of Meta’s Muse, OpenAI’s Dots, and xAI’s Grok Bot have brought easy-to-use agents to millions.",
+    "I remember that in 2022, it was the year of ideation — that’s what tech leaders called it, referring to agents.",
+    "They called 2023 the year of deployment: “Let’s try things, let’s deploy and learn more about what’s failing.” Which meant pretty much all of them were failing at the time.",
+    "Then we had 2024 and 2025."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "Artificial is a wicked satire that also sticks to the facts",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1007786/artificial-is-a-wicked-satire-that-also-sticks-to-the-facts",
+   "published": "2026-10-08T14:00:00+00:00",
+   "collected": "2026-10-08T23:48:58+00:00",
+   "summary": "At the New York Film Festival premiere of Artificial, Luca Guadagnino's satirical Sam Altman biopic, the director said onstage that \"[when] someone wants to play God, that's very interesting to me.\" The idea of playing God, and power in general - who has it, who desperately wants it, and who will do anything to get […]",
+   "facts": [
+    "(He wears sunglasses more than any other character, uses the word “epic,” and starts drumrolls on tables.) OpenAI president Greg Brockman (Cooper Hoffman) comes across as an ultra-loyal bro and unquestioning right-hand man to Altman, interested mostly in money and power (at one point, he’s wearing what looks like a diamond necklace that says “ChatGPT”).",
+    "He depicts Altman as a manipulative, power-hungry psychopath who lies as easily as he breathes and will use anyone, anytime, anywhere to get what he wants."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "AI math breakthroughs have Ethereum researchers debating how fast wallet security could collapse",
+   "url": "https://the-decoder.com/ai-math-breakthroughs-have-ethereum-researchers-debating-how-fast-wallet-security-could-collapse/",
+   "published": "2026-10-08T13:52:54+00:00",
+   "collected": "2026-10-08T23:49:33+00:00",
+   "summary": "Ethereum researcher Justin Drake is urging the crypto industry to prepare a \"bunker mode\" for a scenario where AI-powered math could break wallet signature schemes within months. Vitalik Buterin broadly agrees but warns against rushed migrations, saying he's personally lost more money to botched transitions than to hacks. So far, no one has actually broken ECDSA in practice. The article AI math br",
+   "facts": [
+    "AI math breakthroughs have Ethereum researchers debating how fast wallet security could collapse"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Google releases a new local-first Granola competitor",
+   "url": "https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor/",
+   "published": "2026-10-08T13:28:39+00:00",
+   "collected": "2026-10-08T23:48:42+00:00",
+   "summary": "Google’s new AI Edge Foresight app takes on Granola with an offline meeting note-taker that can transcribe conversations, generate notes, and answer questions using on-device AI.",
+   "facts": [
+    "The Mac app can work completely offline, utilizing the on-device EmbeddingGemma 2 model, with 740 million parameters, to capture meeting notes across apps, including those from in-person meetings.",
+    "Plus, in Google’s app, you can view the transcript of the meeting or chat with the Gemma 4-powered assistant to get answers.",
+    "In addition, users can upload documents including PDFs, Google Docs, Microsoft Office formats, plain text, Markdown, and web bookmarks to build a knowledge base.",
+    "However, Google could very well release a consumer version of meeting note-taker that works across video calling apps through its Gemini apps while relying on its cloud models."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "China’s Manus raises over $500M in first funding round since split with Meta",
+   "url": "https://techcrunch.com/2026/10/08/chinas-manus-raises-over-500m-in-first-funding-round-since-split-with-meta/",
+   "published": "2026-10-08T13:20:32+00:00",
+   "collected": "2026-10-08T23:48:43+00:00",
+   "summary": "Boyu Capital and IDG Capital led the funding round, and existing shareholders Tencent, HSG (formerly known as Sequoia China), ZhenFund, and others also participated.",
+   "facts": [
+    "Chinese AI lab Manus’ parent company, Butterfly Effect, said on Thursday in a WeChat post that it has raised more than $500 million, the company’s first funding round since Meta was forced to call off its $2 billion acquisition of the startup.",
+    "Manus did not disclose its valuation, but last month was said to be in talks with investors to raise $500 million at a $4 billion valuation.",
+    "Manus, which went viral following a demo of its AI agent last year, relocated its staff to Singapore in mid-2025 before announcing a $2 billion acquisition deal with Meta that December.",
+    "The startup was said to be pulling in annual recurring revenue of over $100 million at the time."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+   "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found/",
+   "published": "2026-10-08T13:01:01+00:00",
+   "collected": "2026-10-08T23:49:34+00:00",
+   "summary": "Zenity Labs researchers say a single publicly accessible AI agent on Amazon's Bedrock AgentCore was enough to take over every AgentCore agent in the same AWS account and region. The attack exploited an internal AWS interface for temporary cloud credentials that agents could reach without restriction. AWS has since patched the issue and significantly tightened the agents' default permissions. The a",
+   "facts": [
+    "AWS runs an Instance Metadata Service at the internal address 169.254.169.254 that provides temporary credentials for instances and workloads to authenticate with AWS.",
+    "The researchers built a test agent using Strands, an open-source framework from AWS that ships with a web tool.",
+    "The metadata service also exposed certificate and key material for an internal AWS service, along with a presigned URL for internal S3 storage that didn't belong to the researchers' account.",
+    "Zenity says it reported the AgentCore findings to AWS on December 25, 2025, after which AWS made IMDSv2 the default for new AgentCore deployments."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "相次ぐ情報漏えい、攻撃側のAI活用「間違いない」 防御側はどう使うか 傾向と対策を大手ベンダー各社に聞く",
+   "url": "https://www.itmedia.co.jp/aiplus/article/2610/08/2000002136/",
+   "published": "2026-10-08T12:19:08+00:00",
+   "collected": "2026-10-08T23:50:28+00:00",
+   "summary": "第三者のサイバー攻撃によるセキュリティインシデントの報告が後を絶たない。これらの点に関してITmedia AI＋は大手ITベンダー各社に取材した。",
+   "facts": [
+    "【追記履歴：2026年10月8日午後9時05分 富士通の回答を追記しました。",
+    "日立製作所（以下、日立）、富士通、アクセンチュア、日本IBM（以下、IBM）、社名非公開のベンダーの5社から回答を得た。",
+    "直近約1カ月で、各社の観測・対応の範囲で、国内の攻撃や被害がそれ以前より増えているか聞いたところ、「増えている」とする回答もあれば、「攻撃が増えているという明確な証拠はない」という回答もあり、見解が分かれた。",
+    "一方、IBMの担当者は「直近1カ月に発表された事案が多い印象はあるが、それらが直近1カ月に発生した攻撃によるものなのか、それ以前に発生した事案がこの時期に公表されたものなのかを区別して判断することは困難」とし、公表件数のみをもって攻撃動向を評価することは難しいと指摘している。",
+    "社名非公開のベンダーも「顕著な攻撃増加は観測されていない」とし「9月以降、日本企業による不正アクセスなどの被害報告は70件を超えており報告ベースでは件数が増えて見えるが、7～8月の侵害も含まれていること、侵害されたプラットフォームサービスの影響を受けた各社が個別に公表することで数が多く見える側面がある」とした。",
+    "日立の具志氏は「個別の事例は申し上げられないが、攻撃側がAIを活用しているとみて間違いない」とし、「防御側もAIを活用して守らなければ追いつけない」「1社で抱え込まず、防御側の連帯が重要」と呼び掛けた。",
+    "4社の回答を並べると、有効性を見込む領域と、その温度感には違いがある。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+   "url": "https://openai.com/index/pollo-ai",
+   "published": "2026-10-08T12:00:00+00:00",
+   "collected": "2026-10-08T23:49:46+00:00",
+   "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+   "facts": [
+    "With GPT‑5.6, GPT‑6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+    "Today, Pollo AI serves more than 26 million users who use the platform to create videos, ads, and visual content.",
+    "Now, 30% of creator sessions start from these templates or trending-format workflows.",
+    "It uses OpenAI models, including GPT‑6 Astra and GPT‑Image‑2.5, to provide a fully guided workflow for video creation, including this post-apocalyptic adventure from a Pollo AI user.",
+    "Pollo Agent interprets the user’s rough ideas and visual references, and then develops storylines, scene flows, and scripts."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "LegalOn halves Codex costs while maintaining development speed",
+   "url": "https://openai.com/index/legalon-halves-codex-costs",
+   "published": "2026-10-08T12:00:00+00:00",
+   "collected": "2026-10-08T23:49:47+00:00",
+   "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
+   "facts": [
+    "LegalOn cut costs by 65% while maintaining development speed by matching Astra, Sol, and Luna to tasks and managing budgets strategically.",
+    "LegalOn Technologies addressed this challenge by selecting among GPT‑6 (Astra, Luna) and GPT‑6.1 Sol based on task complexity and development stage, and aligning budgets with each business’s stage of growth.",
+    "The company initially gave developers unlimited access to its main model, GPT‑5.5 in Fast mode."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "Nvidia's big bet on physical AI aims for safer robotaxis, humanoid robots",
+   "url": "https://arstechnica.com/ai/2026/10/nvidias-big-bet-on-physical-ai-aims-for-safer-robotaxis-humanoid-robots/",
+   "published": "2026-10-08T11:15:33+00:00",
+   "collected": "2026-10-08T23:49:01+00:00",
+   "summary": "Full-stack safety solution for physical AI is being used by robotics companies.",
+   "facts": [
+    "Investors bullish on AI data centers may be fueling Nvidia’s multitrillion-dollar market capitalization, but the AI chipmaker has also bet billions of dollars on physical AI technologies such as robotics and self-driving cars.",
+    "Nvidia’s Halos system launched in 2025 with hardware and software tools to help developers implement guardrails in self-driving cars and other autonomous vehicles.",
+    "Then the company expanded its safety architecture to more physical AI technologies by announcing Nvidia Halos for Robotics in June 2026—with the goal of enabling safe deployments of autonomous mobile robots in warehouses, humanoid robots walking around inside a factory, or even surgical robots."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "Claude Haiku 5.5 arrives with massive price cuts proving the AI pricing arms race is far from over",
+   "url": "https://the-decoder.com/claude-haiku-5-5-arrives-with-massive-price-cuts-proving-the-ai-pricing-arms-race-is-far-from-over/",
+   "published": "2026-10-08T10:30:23+00:00",
+   "collected": "2026-10-08T23:49:36+00:00",
+   "summary": "Anthropic's new Claude Haiku 5.5 crushes its predecessor in benchmarks, jumping from 15.7 to 72.4 percent on the OSWorld computer use test. Token prices drop by up to 90 percent, though a new tokenizer eats into some of those savings by consuming more tokens per task. The article Claude Haiku 5.5 arrives with massive price cuts proving the AI pricing arms race is far from over appeared first on Th",
+   "facts": [
+    "Claude Haiku 5.5 arrives with massive price cuts proving the AI pricing arms race is far from over",
+    "- Anthropic has released Claude Haiku 5.5, its fastest and most affordable small model, built for high-volume tasks like data queries and customer support.",
+    "- Haiku 5.5 shows major benchmark gains over Haiku 4.5 at up to 90 percent lower token prices.",
+    "It also beats OpenAI's budget model GPT-6 Luna in areas like agentic coding.",
+    "- Haiku 5.5 is available now on AWS, Google Cloud, and Azure.",
+    "Anthropic is also cutting Sonnet 5.5 cache read costs in half and rolling out monthly API credits for subscribers.",
+    "Update, October 8, 2026:"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "Teen's AI-guided mountain hike ends with a helicopter rescue and a lesson in common sense",
+   "url": "https://the-decoder.com/teens-ai-guided-mountain-hike-ends-with-a-helicopter-rescue-and-a-lesson-in-common-sense/",
+   "published": "2026-10-08T09:57:42+00:00",
+   "collected": "2026-10-08T23:49:38+00:00",
+   "summary": "A 16-year-old planned his hiking route on Crown Mountain near Vancouver using Anthropic's Claude and had to be airlifted off a steep rock face. The chatbot had sent him down a route that requires climbing gear. Bryce doesn't blame the AI but says he'll never use it for route planning again. The article Teen's AI-guided mountain hike ends with a helicopter rescue and a lesson in common sense appear",
+   "facts": [
+    "A 16-year-old had to be airlifted off a dangerous rock face on Crown Mountain near Vancouver after planning his route with an AI chatbot.",
+    "Bryce said he doesn't blame Claude and takes responsibility, noting he also used Google Maps and AllTrails during planning."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "AI-powered hacking tools enabled a likely single attacker to breach multiple South Korean banks",
+   "url": "https://the-decoder.com/ai-powered-hacking-tools-enabled-a-likely-single-attacker-to-breach-multiple-south-korean-banks/",
+   "published": "2026-10-08T09:24:17+00:00",
+   "collected": "2026-10-08T23:49:39+00:00",
+   "summary": "According to CrowdStrike, a suspected Chinese-speaking attacker hacked multiple South Korean financial institutions. At Shinhan Bank alone, more than 25,000 customer records were stolen. The attacker used ARTEX, an open-source tool that uses AI models like DeepSeek and GLM-5.3 for automated penetration testing. CrowdStrike says the case shows how AI tools can let a single person pull off massive b",
+   "facts": [
+    "A suspected Chinese-speaking attacker hit multiple South Korean financial institutions between late September and early October 2026, stealing large amounts of data.",
+    "At Shinhan Bank alone, more than 25,000 records with names, contact details, income, and credit limits were stolen, according to Korean newspaper Khan.",
+    "The models behind it were DeepSeek v4.1-flash, GLM-5.3, and Grok 4.6.",
+    "Researchers found Claude Code session logs on the attacker's open directories, showing searches for Telegram groups to sell stolen data."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "立ち話が“宝の山”に 8人の声を聞き分けられたAI文字起こし「Klang」の実力",
+   "url": "https://www.itmedia.co.jp/news/article/2610/08/2000002130/",
+   "published": "2026-10-08T08:44:40+00:00",
+   "collected": "2026-10-08T23:50:29+00:00",
+   "summary": "取材の録音はAIで文字起こしする時代になったが、複数人が入り乱れる立ち話は、話者を分けられずにうまく文字にならないことが多い。そんな録音をスウェーデン発の「Klang」にかけてみると、8人の声を正しく切り分けた。愛用する「Plaud」と比べて見えた得意分野の違いと、雑談を“宝の山”に変えうる話者分離技術の可能性を探る。",
+   "facts": [
+    "立ち話が“宝の山”に 8人の声を聞き分けられたAI文字起こし「Klang」の実力（1/2 ページ）",
+    "以前は録音を聴きながら人間がタイピングして文字化するしかなかったわけだが、慣れた人でも1時間の書き起こしに数時間を要する。",
+    "スウェーデン語モデル「Klang Pianissimo」の開発経験をベースに、日本語音声認識モデルの学習を近く開始する予定で、研究開発や海外展開のため新たに約2.4億円の資金調達を行った。",
+    "日本はその重点市場の1つである。",
+    "2026年8月には日本語版の提供を開始している。",
+    "先日、京橋で開催された「CREATORS EDGE 2026」というイベントを取材した。",
+    "ベタの書き起こしでは、話者が8人に分けて認識されていた。",
+    "ChatGPT、無料版を含む全ユーザーに「GPT-6」 回答内に“操作できる画面”を生成する「Intelligent UI」搭載",
+    "IDCFクラウドへのランサム攻撃、495の企業・自治体に影響 一部には「復元難しい」との通達も",
+    "Googleパスワードマネジャーに脆弱性 パスキーで守られたアカウント乗っ取る3つの攻撃手法、米パロアルトが警鐘",
+    "バイブコーディングで作った公開中のWebアプリ、9割に脆弱性 MSの研究者など調査",
+    "NISA口座「もぬけの殻」に 不正アクセス被害者らが証券4社に原状回復求め調停",
+    "相次ぐ不正アクセス受け、古川デジタル相がコメント 国民に3つのサイバー対策呼び掛け",
+    "「楽天ドライブ」に不正アクセス 保存したデータなど1.5万アカウント分が取得・閲覧のおそれ"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "Google、AI生成物の判定ツールを一般公開 OpenAIやNVIDIA製サービスも対象に",
+   "url": "https://www.itmedia.co.jp/news/article/2610/08/2000002128/",
+   "published": "2026-10-08T04:25:25+00:00",
+   "collected": "2026-10-08T23:50:31+00:00",
+   "summary": "米Googleは10月7日（現地時間）、AI生成コンテンツの判定ツール「SynthID Detector」を一般公開したと発表した。これまではジャーナリストや研究者など一部に限って提供していた。",
+   "facts": [
+    "米Googleは10月7日（現地時間）、AIで生成したコンテンツを判別するWebサイト「SynthID Detector」を一般公開した。",
+    "Googleは2025年5月にSynthID Detectorの初期版を発表したが、提供先はウェイトリストに登録したジャーナリストや研究者などに限っていた。",
+    "なお、利用規約では1日に判定できる回数に上限を設けているというが、具体的な回数は明示していない。",
+    "ChatGPT、無料版を含む全ユーザーに「GPT-6」 回答内に“操作できる画面”を生成する「Intelligent UI」搭載",
+    "IDCFクラウドへのランサム攻撃、495の企業・自治体に影響 一部には「復元難しい」との通達も",
+    "Googleパスワードマネジャーに脆弱性 パスキーで守られたアカウント乗っ取る3つの攻撃手法、米パロアルトが警鐘",
+    "バイブコーディングで作った公開中のWebアプリ、9割に脆弱性 MSの研究者など調査",
+    "NISA口座「もぬけの殻」に 不正アクセス被害者らが証券4社に原状回復求め調停",
+    "相次ぐ不正アクセス受け、古川デジタル相がコメント 国民に3つのサイバー対策呼び掛け",
+    "「楽天ドライブ」に不正アクセス 保存したデータなど1.5万アカウント分が取得・閲覧のおそれ"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "止まらない不正アクセス、背景にAIの“超高速攻撃”か 識者「使われていない方が不自然」",
+   "url": "https://www.itmedia.co.jp/news/article/2610/08/2000002101/",
+   "published": "2026-10-08T04:11:50+00:00",
+   "collected": "2026-10-08T23:50:34+00:00",
+   "summary": "相次ぐ不正アクセスに、専門家は「個々のインシデントについて、攻撃にAIが使われているかどうかを外部から断定はできない」としつつ、攻撃の特徴から「使われていないと考える方が不自然」との見方を示す。",
+   "facts": [
+    "止まらない不正アクセス、背景にAIの“超高速攻撃”か 識者「使われていない方が不自然」（1/3 ページ）",
+    "運転免許証の画像が漏えいし、物議を醸すタイムズカーシェアを筆頭に、1000万件超の情報が漏えいした焼肉きんぐ、ポイントが不正換金につながったGMO子会社など、さまざまな企業とそのサービスで被害が明らかになっており、その影響は甚大だ。",
+    "まだ詳細なレポートなどが公開されていないため、断定はできないものの、「Claude Mythos」やそのプレビュー版に匹敵する性能とうたわれる「GLM-5.3」など、サイバー能力の高い生成AIモデルが続々と登場する昨今、その存在を無視することはできないだろう。",
+    "中西さんが8月ごろからのサイバー攻撃を独自に分析したところでは、一連の攻撃には大別して2つの傾向が見えているという。",
+    "1つ目は、攻撃が特定の手法に頼っていない可能性だ。",
+    "ChatGPT、無料版を含む全ユーザーに「GPT-6」 回答内に“操作できる画面”を生成する「Intelligent UI」搭載",
+    "IDCFクラウドへのランサム攻撃、495の企業・自治体に影響 一部には「復元難しい」との通達も",
+    "Googleパスワードマネジャーに脆弱性 パスキーで守られたアカウント乗っ取る3つの攻撃手法、米パロアルトが警鐘",
+    "バイブコーディングで作った公開中のWebアプリ、9割に脆弱性 MSの研究者など調査",
+    "NISA口座「もぬけの殻」に 不正アクセス被害者らが証券4社に原状回復求め調停",
+    "相次ぐ不正アクセス受け、古川デジタル相がコメント 国民に3つのサイバー対策呼び掛け"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "「ChatGPT for Teens」は「容認できないリスク」と米非営利団体が警告 OpenAIは利用状況と新機能を発表",
+   "url": "https://www.itmedia.co.jp/news/article/2610/08/2000002125/",
+   "published": "2026-10-08T04:00:45+00:00",
+   "collected": "2026-10-08T23:50:35+00:00",
+   "summary": "米非営利団体Common Sense Mediaは、OpenAIの10代向け環境「ChatGPT for Teens」について、保護者通知などが機能せず安全基準を下回るとして「容認できないリスク」と評価した。一方OpenAIは同日、10代の学習利用実績や大学出願支援「College Planner」の導入計画を公表した。",
+   "facts": [
+    "子供のデジタルメディア利用に関する調査や評価を手掛ける米非営利団体Common Sense Mediaは10月7日（現地時間）、米OpenAIが8月に発表した13～17歳向けの利用環境「ChatGPT for Teens」について、安全対策が不十分だとして「Unacceptable Risk」（容認できないリスク）と評価した。",
+    "安全機能が改善され、第三者による検証が行われるまで、ChatGPTの利用を18歳以上に制限するよう求めている。",
+    "ChatGPT for Teensは、18歳未満と判断されたユーザーに自動適用される利用環境。",
+    "Common Sense Media傘下の「Youth AI Safety Institute」は、ChatGPT for Teensの発表前後に、13～17歳として登録したアカウントで4000件以上のプロンプトを使って検証した。",
+    "保護者と連携した新規アカウントで、自殺願望や自傷行為、摂食障害について最大1時間にわたって会話しても、保護者には1度も通知が届かなかったという。",
+    "また、危機的な状況で専門家や相談窓口への連絡を促すべきケースの4分の1以上で、適切な案内が行われなかった。",
+    "自殺や自傷、摂食障害、現実認識の障害など、重大な危害に関する5つの評価項目のうち3項目で、同研究所が設定した95％の安全基準を下回った。",
+    "さらに、AIが人間の友人のように感情や好みを表現することや、13歳だと申告したユーザーを18歳未満向けの利用環境に切り替えられない不具合も確認したとしている。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "「異常な事態」、AI悪用は「否定する方が難しい状況」──多発する情報漏えいにセキュリティ専門家が合同で見解 攻撃の特徴と対策方法は",
+   "url": "https://www.itmedia.co.jp/aiplus/article/2610/08/2000002123/",
+   "published": "2026-10-08T03:48:14+00:00",
+   "collected": "2026-10-08T23:50:37+00:00",
+   "summary": "今年夏ごろから増加傾向の、サイバー攻撃による情報漏えいなど被害の公表件数。増加している侵害に対し「これまでとは違う異常な事態が生じていると感じている」として、3社のサイバーセキュリティ専門家が情報を持ち寄りまとめた、マクニカのセキュリティ研究センターブログが注目を集めている。",
+   "facts": [
+    "特に10月に入ってから苛烈さが増しており、7日にはIDCフロンティアが運営する国産クラウド「IDCFクラウド」の一部がランサムウェア攻撃に遭い、地方自治体を含む約500の団体に影響が及んでいる。",
+    "増加している侵害に対し「これまでとは違う異常な事態が生じていると感じている」として、3社のサイバーセキュリティ専門家が情報を持ち寄りまとめた、マクニカのセキュリティ研究センターブログが注目を集めている。",
+    "執筆したのは、マクニカ セキュリティ研究センター センター長補佐の瀬治山豊氏、伊藤忠サイバー＆インテリジェンス CTO／首席サイバーセキュリティ分析官 兼 伊藤忠商事 IT・デジタル戦略部 技術統括室長代行 ITCCERT 上級サイバーセキュリティ分析官の佐藤元彦氏、セキュアスカイ・テクノロジー 取締役CTOの長谷川陽介氏の3人。",
+    "Webシステムに対する不正アクセス手法は、一般論として大きく3つに整理できる。",
+    "- 手法1：共通するソフトウェアの脆弱性",
+    "- 手法2：アカウントや認証の不備",
+    "- 手法3：個別のWebサイトの構造やAPIの機能やアクセス権設定の欠陥",
+    "7月以降の81事案を分析・分類すると、手法1が9件、手法2が4件、手法3が3件、分類のための説明が不足しているものが65件になった。",
+    "その上で、事案対応やログ解析から得られた情報としてブログでは「手法3に当たる、個別のサイトやAPIの不備を探る動きが具体的に見えてきている」と指摘する。",
+    "狙われているAPIも多岐にわたり、手法2に当たる管理画面の弱いパスワードを使った攻撃や、手法1に当たる既知の脆弱性の悪用もある。",
+    "- （1）すでに被害がないかを調べる"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "ChatGPT、無料版を含む全ユーザーに「GPT-6」 回答内に“操作できる画面”を生成する「Intelligent UI」搭載",
+   "url": "https://www.itmedia.co.jp/news/article/2610/08/2000002119/",
+   "published": "2026-10-08T02:09:40+00:00",
+   "collected": "2026-10-08T23:50:38+00:00",
+   "summary": "OpenAIは、ChatGPTに新モデル「GPT-6」を搭載し順次提供を開始した。テキストに加え図や操作可能なボタン、フォームなどを回答として生成する「Intelligent UI」を導入。思考しながら回答を出力する機能も備える。有料プランから順次提供を始め、無料プランやGoプランにも翌日から展開する。",
+   "facts": [
+    "ChatGPT、無料版を含む全ユーザーに「GPT-6」 回答内に“操作できる画面”を生成する「Intelligent UI」搭載",
+    "米OpenAIは10月7日（現地時間）、「ChatGPT」に新モデル「GPT-6」を搭載し、全ユーザーに向けて順次提供を始めた。",
+    "同社は9月に有料ユーザー向けにGPT-6系のモデルを投入しているが、今回はChatGPTの利用者全体に向けて新たなGPT-6モデルを用意した。",
+    "Intelligent UIでは、質問内容に応じてGPT-6がテキスト、ビジュアル、インタラクティブな要素の組み合わせ方を判断し、回答を組み立てる。",
+    "OpenAIは、使い方として3つの方向性を挙げている。",
+    "1つ目は、日常的な質問への回答のビジュアル化で、レシピと調理のタイムラインを並べて示したり、旅行の立ち寄り先を地図上に表示したりできる。",
+    "2つ目は学習用途で、入力値を変えて結果の変化を確かめたり、問題を1ステップずつ解いたりしながら、中心極限定理やモンティ・ホール問題などを学べるとしている。",
+    "3つ目はその場でツールを作る使い方で、貯蓄の増え方を試算する計算ツールや食事代の割り勘ツール、会話内で遊べるゲームなどを、依頼するだけで作成できるという。",
+    "公式ブログでは、友人を招いてラム肉のローストを振る舞う計画を尋ねた例で、前世代の「GPT-5.6 Instant」と「GPT-6 Instant」の回答を比較している。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "富士通では「Copilot」10万ライセンスの利用率が“9割超え” 「導入したけど使われない」をどう防いだ？",
+   "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/08/news022.html",
+   "published": "2026-10-08T02:00:00+00:00",
+   "collected": "2026-10-08T23:50:40+00:00",
+   "summary": "全社にAIを導入しても、実際に使われなければ効果は生まれない。「Microsoft 365 Copilot」を社内導入した富士通は、どのようにしてAI活用を全社に定着させ、日常業務の変革につなげたのか。",
+   "facts": [
+    "「Microsoft 365 Copilot」を社内導入した富士通は、どのようにしてAI活用を全社に定着させ、日常業務の変革につなげたのか。",
+    "» 2026年10月08日 11時00分 公開",
+    "2026年5月に発表した「中長期経営ビジョン2035」で、データとAIを事業成長の中核に据えた富士通。",
+    "こうした中、富士通は全社でのAI利用を促す仕組みを整えつつ、Microsoftの生成AIアシスタント「Microsoft 365 Copilot」の全社導入を進めた。",
+    "富士通は2025年7月、全社の各部門を対象にMicrosoft 365 Copilotを7500ライセンス導入し、集中トライアルを実施した。",
+    "その結果を踏まえて、2026年1月に3万ライセンス規模に拡大。",
+    "同年4月には、ほぼ全従業員向けの約10万ライセンスを本格導入した。",
+    "トライアル中にはハンズオンセミナーやトレーニング動画を用意し、習熟度に応じてMicrosoft 365 Copilotの使い方を学べるようにした。",
+    "富士通がMicrosoft 365 Copilotを選んだのは、「Microsoft Teams」「Microsoft Outlook」など、社内で使ってきたMicrosoftツールでそのまま使えるAIツールであり、日常業務で活用しやすいと判断したからだ。",
+    "7500ライセンスという大規模なトライアルも、議事録や資料の作成などさまざまな業務シーンで使うことで、早期に効果を最大化する狙いがあった。",
+    "導入から2カ月後の2026年6月の時点でも、Microsoft 365 Copilotの利用率は全社で90％以上を維持していた。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "Anthropic、「Claude Haiku 5.5」公開 「Haiku 4.5」から大幅性能向上で利用コスト約75％減",
+   "url": "https://www.itmedia.co.jp/news/article/2610/08/2000002112/",
+   "published": "2026-10-08T01:37:32+00:00",
+   "collected": "2026-10-08T23:50:41+00:00",
+   "summary": "Anthropicは、小型AIモデル「Claude Haiku 5.5」を発表した。前世代から性能を大きく引き上げつつ、コストを約75％削減。推論の深さを調整するeffort設定に初対応し、コンピュータ操作や大量の定型処理、上位モデルのサブエージェント向けに全プラットフォームで即日提供された。",
+   "facts": [
+    "Anthropic、「Claude Haiku 5.5」公開 「Haiku 4.5」から大幅性能向上で利用コスト約75％減",
+    "米Anthropicは10月7日（現地時間）、小型モデルの最新版「Claude Haiku 5.5」を発表した。",
+    "9月に公開した「Claude Opus 5.5」「Claude Sonnet 5.5」に続く、Claude 5.5ファミリーのモデルだ。",
+    "前世代の「Claude Haiku 4.5」から性能を大きく引き上げつつ、利用コストは平均で約75％下がるとしている",
+    "同社はHaiku 5.5を、大量に処理するコスト重視の作業向けと位置付けている。",
+    "要約や会話履歴の圧縮（コンパクション）、データベースへの問い合わせ、分類などの、繰り返しの多い処理を得意とし、コーディングではOpus 5.5やSonnet 5.5の下で動くサブエージェントとしての利用も想定する。",
+    "知識のカットオフは2026年6月。",
+    "開発者はモデル名「claude-haiku-5-5」で利用できる。",
+    "速度と価格の面で、Haiku 5.5は特にこうした用途に向くという。",
+    "ベンチマークでは、多くの項目でHaiku 4.5を大きく上回った。",
+    "コンピュータ操作を測る「OSWorld 2.1」（オフライン版）では、米OpenAIの「GPT-6 Luna」も上回った。",
+    "エージェント型コーディングの評価「Terminal-Bench 4.0」は39.2％で、Sonnet 5.5の70.6％には及ばない。",
+    "Anthropicは、複雑なエージェント型のコーディングには引き続きSonnet 5.5やOpus 5.5の方が向くと説明。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "Google、プロンプトでゲームを作って遊べる「Playground」を米国で公開 「Unity Spark」も年内投入",
+   "url": "https://www.itmedia.co.jp/news/article/2610/08/2000002117/",
+   "published": "2026-10-08T01:22:19+00:00",
+   "collected": "2026-10-08T23:50:43+00:00",
+   "summary": "Googleはテキスト入力だけでゲームを作成・共有できるプラットフォーム「Playground」をWebブラウザ向けに発表した。まずは米国の成人向けに提供する。あわせてUnityとの提携で、高精細な3D表現やアセットを活用して機能拡張を図る「Unity Spark」を年内に投入することも発表した。",
+   "facts": [
+    "米Googleは10月7日（現地時間）、テキストで指示するだけでゲームを作成し、プレイしたり共有したりできる実験的なゲームプラットフォーム「Playground」を発表した。",
+    "同日から米国の18歳以上のユーザーを対象に、Webブラウザで提供を開始した。",
+    "「Google Play Games」のプロフィールを使えば、独自のハンドルネームの設定や好きなゲームへの「いいね」、ランキング上位争い、クリエイターのフォローなどの機能も利用できる。",
+    "Unity Sparkは、Playgroundと統合して提供する新製品で、本格的なゲームメカニクスや高精細な3D表現、Unityのランタイムの柔軟性をPlaygroundにもたらすというものだ。",
+    "Unityのマット・ブロムバーグCEOは、毎月約30億人がUnity製のゲームを遊んでいる一方で、そのほとんどは自分でゲームを作ったことがないと指摘。",
+    "ChatGPT、無料版を含む全ユーザーに「GPT-6」 回答内に“操作できる画面”を生成する「Intelligent UI」搭載",
+    "IDCFクラウドへのランサム攻撃、495の企業・自治体に影響 一部には「復元難しい」との通達も",
+    "Googleパスワードマネジャーに脆弱性 パスキーで守られたアカウント乗っ取る3つの攻撃手法、米パロアルトが警鐘",
+    "バイブコーディングで作った公開中のWebアプリ、9割に脆弱性 MSの研究者など調査",
+    "NISA口座「もぬけの殻」に 不正アクセス被害者らが証券4社に原状回復求め調停",
+    "相次ぐ不正アクセス受け、古川デジタル相がコメント 国民に3つのサイバー対策呼び掛け"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "Microsoft event debuts new AI-friendly hardware and Windows changes",
+   "url": "https://arstechnica.com/gadgets/2026/10/microsoft-event-debuts-new-ai-friendly-hardware-and-windows-changes/",
+   "published": "2026-10-08T00:00:24+00:00",
+   "collected": "2026-10-08T23:49:02+00:00",
+   "summary": "Get ready for more AI in your Windows and more AI on the desktop.",
+   "facts": [
+    "In its first live event in two years, Microsoft today announced its newest Surface laptop, outlined a host of changes coming to Windows 11, and shared a vision of how local-AI and agentic workflows could reshape personal computing for those in the dev community as well as home enthusiasts.",
+    "Originally teased in May 2026, the new Surface Laptop Ultra will be Microsoft’s first offering to take advantage of the new Nvidia RTX Spark SoC (system on a chip).",
+    "The device has a starting price of $2,599 and comes in various SoC and memory configurations, with either a 5120-core or 6144-core Blackwell GPU and up to 128GB of LPDDR5x unified memory."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "Disrupting AI-enabled “false front” operations",
+   "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+   "published": "2026-10-08T00:00:00+00:00",
+   "collected": "2026-10-08T23:49:48+00:00",
+   "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
+   "facts": [
+    "The journalist personas run by the Iranian operation bore a family resemblance to the fake journalist “Alice(opens in a new window) Donovan(opens in a new window),” a front for Russian military intelligence whose articles were published by a range of Western outlets in 2016-17.",
+    "In 2020, individuals associated with past activity by the Russian Internet Research Agency ran a fake “news” outlet called “PeaceData(opens in a new window),” which co-opted unwitting journalists around the world into writing for it.",
+    "Using the IO Breakout Scale(opens in a new window), which rates IO on a scale of 1 (lowest) to 6 (highest), we would assess the Russia-origin operation as belonging in Category 5."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "2D図面から3D CADモデルを自動生成、AIエージェント開発実証が長野県の事業に採択",
+   "url": "https://monoist.itmedia.co.jp/mn/articles/2610/08/news012.html",
+   "published": "2026-10-08T00:00:00+00:00",
+   "collected": "2026-10-08T23:50:44+00:00",
+   "summary": "TIMEWELLは、2D CAD図面から3D CADモデルを自動生成するAIエージェントの開発実証に取り組む。オリオン機械が保有する実図面を用いて精度と実用性を検証し、図面に込められたベテラン技術者の知見の継承も目指す。",
+   "facts": [
+    "TIMEWELLは、2D CAD図面から3D CADモデルを自動生成するAIエージェントの開発実証に取り組む。",
+    "» 2026年10月08日 09時00分 公開",
+    "TIMEWELLは2026年10月1日、長野県が実施する信州型サンドボックス事業「Shinshu AI GEARS」の補助対象事業者に採択されたと発表した。",
+    "採択された事業計画は「2D CAD図面からの3D CAD自動生成AIエージェントの開発実証」で、長野県須坂市の産業機器メーカーであるオリオン機械をパートナーに、2027年1月末まで実証を行う。",
+    "実証では、2D CAD図面のデータをAI（人工知能）が読み取り、3D CADモデルを自動生成するAIエージェントを開発する。",
+    "TIMEWELLの「2D CAD図面からの3D CAD自動生成AIエージェントの開発実証」が信州型サンドボックス事業「Shinshu AI GEARS」の補助対象事業者に採択された［クリックで拡大］ 出所：TIMEWELL",
+    "開発の土台となるのは、TIMEWELLが2026年8月に提供を開始した企業向けAIサービス「ZEROCK」の新機能「図面スタジオ」である。",
+    "同機能は、日本の製図規格（JIS）に沿ってAIが図面を読み取り、見積書の作成や2D図面から3D図面への変換を行う。",
+    "TIMEWELLは、2D図面の3D化と、図面に込められた知見の継承を、長い歴史を持つ製造業に広く共通する課題と捉えている。",
+    "ベテラン技術者の図面をAIが読み解き、次世代が活用できる3Dデータへ変換することで、技術者の知見や流儀の継承につなげる考えだ。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "Anthropic、「Claude Haiku 5.5」のAPI料金を「Haiku 4.5」の10分の1に 「Sonnet 5.5」のキャッシュ読み込み料金は半額に",
+   "url": "https://www.itmedia.co.jp/aiplus/article/2610/08/2000002114/",
+   "published": "2026-10-07T23:20:36+00:00",
+   "collected": "2026-10-08T23:50:46+00:00",
+   "summary": "Anthropicは、小型AI「Claude Haiku 5.5」のAPI提供を開始した。料金は10万トークン以下で前世代の10分の1になり、平均利用コストは約75％下がる。effort設定への初対応やSDKへのブラウザおよびコンピュータ使用ツールセット追加のほか、Sonnet 5.5のキャッシュ料金半額も行われた。",
+   "facts": [
+    "Anthropic、「Claude Haiku 5.5」のAPI料金を「Haiku 4.5」の10分の1に 「Sonnet 5.5」のキャッシュ読み込み料金は半額に",
+    "米Anthropicは10月7日（現地時間）、小型モデル「Claude Haiku 5.5」のAPI提供を始めた。",
+    "料金は多くの用途で前世代の「Claude Haiku 4.5」の10分の1に下がり、実際の利用では平均で約75％安くなるとしている。",
+    "同時に「Claude Sonnet 5.5」のキャッシュ読み込み料金を半額にしたほか、PythonとTypeScriptのSDKに、ブラウザ使用ツールとコンピュータ使用ツールを組み込むためのツールセットをβ版として追加した。",
+    "開発者はモデル名「claude-haiku-5-5」で利用できる。",
+    "10万トークン以下なら10分の1",
+    "Haiku 5.5の料金は、プロンプトの長さが10万トークン以下か、それを超えるかで2段階に分かれる。",
+    "10万トークン以下では入力100万トークン当たり0.1ドル、出力0.5ドルで、Haiku 4.5（入力1ドル、出力5ドル）の10分の1になる。",
+    "10万トークンを超えると入力0.5ドル、出力2.5ドルで、Haiku 4.5の半額にとどまる。",
+    "同社によると、Haiku 4.5へのリクエストの約90％は10万トークン以下だった。",
+    "一方、Haiku 5.5はSonnet 5.5やOpus 5.5と同様の新しいトークナイザーを採用しており、同じ作業に使うトークン数はやや増える。",
+    "これらを合わせ、平均の利用コストはHaiku 4.5より約75％低くなると試算している。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "「日本の勝ち筋は計測にある」 東北大がノーベル賞・田中耕一氏と挑む「精度1000倍」の限界突破",
+   "url": "https://www.itmedia.co.jp/business/articles/2610/08/news041.html",
+   "published": "2026-10-07T23:15:00+00:00",
+   "collected": "2026-10-08T23:50:47+00:00",
+   "summary": "東北大学と島津製作所は、15億円を投じる新拠点「異分野融合計測イノベーションセンター」（CICMI）を開設した。目玉は現在比「1000倍」の精度を誇る質量分析技術の開発と、ノーベル賞受賞者・田中耕一氏の国際卓越教授就任だ。「引退前にもうひと花」と意気込む田中氏とともに病気の超早期発見に挑み、経済安全保障の基盤となる「計測」を武器に、産学連携で日本の国力強化を目指す。",
+   "facts": [
+    "» 2026年10月08日 08時15分 公開",
+    "東北大学（仙台市）と島津製作所（京都市）は10月1日、分析計測技術の高度化に向けた研究拠点「異分野融合計測イノベーションセンター」（CICMI／シクミ）を共同で開設した。",
+    "共同研究機関は5年間で、両者は計15億円を拠出する。",
+    "最大の目玉は、現在の「1000倍」もの精度を誇る質量分析技術の開発と、2002年にノーベル化学賞を受賞した田中耕一氏（島津製作所 エグゼクティブ・リサーチフェロー）が母校・東北大の国際卓越教授に就任したことだ。",
+    "「引退前に、もうひと花咲かせたい」と語る67歳の田中氏が、次世代の若手とともに挑むのは、病気の超早期発見やグリーン領域に革命を起こす「見えないものを見る」技術の限界突破だ。",
+    "政府は高市政権下の7月に、AI・半導体、創薬・先端医療、防衛など官民で重点投資を進める「戦略17分野」を定めた。",
+    "計測品質の目安となる「有用な信号成分と妨害となる雑音成分比率」（S／N比）を、現在より1000倍に高めるという限界突破に挑むのだ。",
+    "精度が1000倍になれば、極めて微量なバイオマーカーを検出でき、感染症や疾患の超早期対応という医療イノベーションが起きる。",
+    "- 「10兆円ファンド」支援対象の東北大 理事・副学長に聞く「日本型研究人事」の課題",
+    "- 東北大・大野英男総長に聞く 「10兆円ファンド」支援候補に選ばれた舞台裏",
+    "政府が創設した10兆円規模の「大学ファンド」初の支援対象候補に、東北大学が選ばれた。",
+    "インタビュー全3回の1回目。",
+    "インタビュー全3回の2回目。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "「製造データと暗黙知があれば勝てる」は幻想？ フィジカルAI“10の誤解”をGartnerが指摘",
+   "url": "https://www.itmedia.co.jp/enterprise/articles/2610/08/news034.html",
+   "published": "2026-10-07T23:00:00+00:00",
+   "collected": "2026-10-08T23:50:49+00:00",
+   "summary": "「製造データや現場の暗黙知がある日本企業は、フィジカルAIでも自然と優位に立てる」という見方に対し、Gartnerは誤解だという見解を示す。同社が指摘する、フィジカルAIに関する10の誤解とは何か。",
+   "facts": [
+    "同社が指摘する、フィジカルAIに関する10の誤解とは何か。",
+    "» 2026年10月08日 08時00分 公開",
+    "ガートナージャパン（以下、Gartner）は2026年10月5日、フィジカルAIに関するよくある10の誤解を発表した。",
+    "10の誤解が扱う論点は幅広い。",
+    "Gartnerが挙げた10の誤解と、それぞれに対するGartnerの見解は次の通りだ。",
+    "- 誤解1：既存の工場やインフラ、業務にAIやロボットを追加すればよい： Gartnerは、フィジカルAIは既存システムへの新しいソリューションや追加機能ではないと説明する。",
+    "- 誤解2：フィジカルAIとは、ヒューマノイドやロボットそのものを指す： ヒューマノイドやロボットは代表的な実装形態だが、フィジカルAIの対象には車両、ドローン、機械、設備、インフラなども含まれる。",
+    "- 誤解3：中核モデルはドメイン特化型言語モデル（DSLM）だ： DSLMは人間の言語や業務知識、規則、文書などを扱う言語モデルであり、人間や業務とフィジカルAIの間で意味を共有するレイヤーには使えるが、物理世界の状態や変化を理解、予測して具体的な行動につなげる中核モデルではない。",
+    "- 誤解4：製造データや現場の暗黙知がある日本企業は、自然と競争優位性を持つ： 製造データや現場の暗黙知は日本企業の重要な強みになり得るが、保有しているだけで競争優位に立てるわけではない。",
+    "- 誤解5：自動車や製造、ロボットなど、物理製品を扱う企業だけのテーマだ： 適用領域は製造に限らない。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "ITmedia AI+",
+   "title": "ArmのCSS for Mobile 2はPC向けの伏線!? Neoverse CSS N4はAGI CPUと競合せず",
+   "url": "https://monoist.itmedia.co.jp/mn/articles/2610/08/news010.html",
+   "published": "2026-10-07T23:00:00+00:00",
+   "collected": "2026-10-08T23:50:50+00:00",
+   "summary": "Armの最新動向について報告する本連載。今回は、2026年9月の「Arm Everywhere China」で発表された3つの新プロダクト「Arm CSS for Mobile 2」「Arm Total design for Physical AI」「Arm Neoverse CSS N4」について少し詳し目に紹介する。",
+   "facts": [
+    "今回は、2026年9月の「Arm Everywhere China」で発表された3つの新プロダクト「Arm CSS for Mobile 2」「Arm Total design for Physical AI」「Arm Neoverse CSS N4」について少し詳し目に紹介する。",
+    "» 2026年10月08日 08時00分 公開",
+    "Armは2026年9月8日、中国の上海でカンファレンス「Arm Everywhere China」を開催した。",
+    "こちらの基調講演の様子はYouTubeで視聴できるが、ここでArmは3つの新発表を行った。",
+    "具体的には「Arm CSS for Mobile 2（以下、CSS for Mobile 2）」と「Arm Total design for Physical AI（以下、Total design for Physical AI）」、そして「Arm Neoverse CSS N4（以下、Neoverse CSS N4）」となる。",
+    "クライアント向けとしては、まず2024年5月にCSS for Clientが発表され、翌2025年9月にはこの後継としてArm Lumexというブランド（と新しいCSS）が発表された。",
+    "さてそのCSS for Mobile 2（図1）であるが、プロセッサはC2世代に進化した。",
+    "C2-Ultra／C2-Proがあることは今回明らかにされたが、C1世代にあったC1-Premium／C1-Nanoに相当するものが存在するかどうかは現時点では不明である。"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "“Software is over”: Bold AI developer takes aim at Adobe with open source clones",
+   "url": "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/",
+   "published": "2026-10-07T21:56:42+00:00",
+   "collected": "2026-10-08T23:49:03+00:00",
+   "summary": "Opus-built Creative Cloud alternatives are ambitious, free, and nowhere near finished.",
+   "facts": [
+    "Over the weekend, though, the brand debuted its pivot to a suite of seven open source apps recreating the user interface and tools found in Adobe’s Photoshop, Illustrator, Premiere, Lightroom, After Effects, InDesign, and Acrobat Pro.",
+    "In announcing those new apps on Reddit earlier this week, software developer Brandon Thomas said he used Anthropic’s Claude Opus 5.5 to create “clean-room replacements” for Adobe’s closed source software in Rust (with WebAssembly versions available for use in a browser).",
+    "“We’re going to reach 100% [feature] parity within a month,” Thomas stated on Reddit of his plans to quickly squash bugs and add features with the help of community reports."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Nous Research confirms it hit $1.5B valuation, launches AI agents for business users",
+   "url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
+   "published": "2026-10-07T20:48:45+00:00",
+   "collected": "2026-10-08T23:48:44+00:00",
+   "summary": "The developer of Hermes Agent raised a $90 million Series B.",
+   "facts": [
+    "Nous Research, the startup developing the open source Hermes Agent, has raised a $90 million Series B at a $1.5 billion valuation, confirming TechCrunch’s earlier reporting.",
+    "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr.",
+    "The new financing brings the three-year-old startup’s total funding to $158 million.",
+    "Popular among developers and individuals, the open source Hermes Agent has been cloned more than 24 million times, driving roughly 2.5% of global AI token usage, according to the startup’s estimates."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11",
+   "url": "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/",
+   "published": "2026-10-07T20:22:37+00:00",
+   "collected": "2026-10-08T23:48:45+00:00",
+   "summary": "Microsoft revealed the specs and price for its Surface Laptop Ultra, AI PCs that run on Nvidia chips that are designed to run AI models and agents.",
+   "facts": [
+    "The PC comes in two base models, one that starts at $2,600 and one with a more powerful chip that starts at $3,700.",
+    "Prices rise from there with options for more memory and storage, up to $5,900.",
+    "Microsoft also revealed its new workstation powered by the RTX Spark chip: the Surface RTX Spark Dev Box, which starts priced at $6,000 and comes equipped with Microsoft dev tools like VS Code, GitHub Copilot CLI, WSL, and PowerShell 7.",
+    "Plus, they are running a revamped version of Windows 11 that includes a feature called “Execution Containers.” This makes it easier to sandbox AI agents, the company says."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Verge",
+   "title": "ChatGPT’s ‘Intelligent UI’ update fills its responses with pictures, charts, and buttons",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
+   "published": "2026-10-07T19:10:42+00:00",
+   "collected": "2026-10-08T23:48:59+00:00",
+   "summary": "OpenAI is launching a new Intelligent UI feature in ChatGPT that allows the chatbot to answer your questions with interactive visuals. The update, which is rolling out to all users alongside GPT-6, gives ChatGPT the ability to combine a text response with diagrams, charts, forms, tappable buttons, and more. In a blog post explaining the […]",
+   "facts": [
+    "The update, which is rolling out to all users alongside GPT-6, gives ChatGPT the ability to combine a text response with diagrams, charts, forms, tappable buttons, and more.",
+    "With GPT-6, the chatbot’s responses can include interactive responses directly inside your conversation.",
+    "With GPT-6, the chatbot’s responses can include interactive responses directly inside your conversation.",
+    "In a blog post explaining the change, OpenAI says it trained GPT-6 when to generate interactive visuals over text, as well as how to format them in its response.",
+    "OpenAI announced its first GPT-6 models last month, but now it’s bringing the Sol and Luna versions to ChatGPT."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "ChatGPT with GPT-6 ditches mostly text output for interactive UI with charts, buttons, and mini apps",
+   "url": "https://the-decoder.com/chatgpt-with-gpt-6-ditches-mostly-text-output-for-interactive-ui-with-charts-buttons-and-mini-apps/",
+   "published": "2026-10-07T19:06:40+00:00",
+   "collected": "2026-10-08T23:49:41+00:00",
+   "summary": "OpenAI is rolling out GPT-6 with \"Intelligent UI,\" a feature that turns answers into interactive interfaces with charts, buttons, and forms. The model can now respond while still thinking, cutting wait times by 44 percent. Paying customers get GPT-6 Sol, free users get GPT-6 Luna. The article ChatGPT with GPT-6 ditches mostly text output for interactive UI with charts, buttons, and mini apps appea",
+   "facts": [
+    "ChatGPT with GPT-6 ditches mostly text output for interactive UI with charts, buttons, and mini apps",
+    "OpenAI is rolling out GPT-6 with a new feature called \"Intelligent UI\" for all ChatGPT users.",
+    "GPT-6 can also respond while still \"thinking.\" OpenAI says this cuts wait times by 44 percent and can produce better answers.",
+    "In internal tests, GPT-6 scored higher than its predecessor GPT-5.6 on difficult web searches using this method.",
+    "Paying customers get GPT-6 Sol, free users get GPT-6 Luna."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "Meta’s Muse launches on iPad just a month after its mobile debut",
+   "url": "https://techcrunch.com/2026/10/07/metas-muse-launches-on-ipad-just-a-month-after-its-mobile-debut/",
+   "published": "2026-10-07T18:30:57+00:00",
+   "collected": "2026-10-08T23:48:46+00:00",
+   "summary": "Meta’s AI agent Muse is now available on iPad, just a month after its mobile debut, as the company rapidly expands the assistant’s reach and integrations.",
+   "facts": [
+    "That’s a milestone it took Instagram some 15 years to reach, despite constant user demand.",
+    "Since launching on iOS and Android on September 8, Muse has topped 6.6 million installs, according to estimates from market intelligence firm Sensor Tower."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "ChatGPT for Teens keeps teens talking, even during mental health crises",
+   "url": "https://techcrunch.com/2026/10/07/chatgpt-for-teens-keeps-teens-talking-even-during-mental-health-crises/",
+   "published": "2026-10-07T18:15:28+00:00",
+   "collected": "2026-10-08T23:48:47+00:00",
+   "summary": "ChatGPT’s teen safeguards are meant to protect vulnerable users, but new testing found the chatbot continues encouraging engagement during crises and potentially encourages unhealthy relationships with the AI itself.",
+   "facts": [
+    "The report called the engagement cues “pervasive even in crisis situations” and noted that while ChatGPT cautioned the teen against unhealthy relationships generally, it stopped short of recognizing the harms of an unhealthy relationship with itself.",
+    "Meta recently agreed to settle for $18 billion in a lawsuit brought by 29 states over claims that its social media platform harms children with addictive features, while state and federal lawmakers have begun targeting similar dynamics in chatbots."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "TechCrunch",
+   "title": "ChatGPT is getting a lot more visual, with the launch of a new interface",
+   "url": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+   "published": "2026-10-07T18:00:19+00:00",
+   "collected": "2026-10-08T23:48:48+00:00",
+   "summary": "OpenAI is launching a new user interface that will bring interactive visuals to ChatGPT.",
+   "facts": [
+    "The new interface, which is being rolled out Wednesday with a new GPT-6 model, will integrate a significant amount of visuals into users’ conversations.",
+    "Intelligent UI rolls out globally with GPT-6 for Pro, Plus, Business, and Enterprise users, and arrives Thursday for users of the free and lower-cost Go tiers."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "The Decoder",
+   "title": "Zuckerberg's Biohub leads a $1.8 billion push to build AI models that predict cell behavior",
+   "url": "https://the-decoder.com/zuckerbergs-biohub-leads-a-1-8-billion-push-to-build-ai-models-that-predict-cell-behavior/",
+   "published": "2026-10-07T17:58:20+00:00",
+   "collected": "2026-10-08T23:49:43+00:00",
+   "summary": "Biohub, the research organization backed by Mark Zuckerberg and Priscilla Chan, is coordinating a $1.8 billion initiative to train AI models that predict cell behavior. Meta, Google DeepMind, Isomorphic Labs, and the US Department of Energy are funding data, lab equipment, and compute. A first dataset should be ready in about a year. The article Zuckerberg's Biohub leads a $1.8 billion push to bui",
+   "facts": [
+    "Zuckerberg's Biohub leads a $1.8 billion push to build AI models that predict cell behavior",
+    "Biohub, the nonprofit backed by Mark Zuckerberg and Priscilla Chan, is coordinating a $1.8 billion effort spanning data, lab equipment, and compute, Reuters reports.",
+    "The group had already pledged $500 million in April for its five-year \"Virtual Biology Initiative.\" Meta, Google DeepMind, and Isomorphic Labs are contributing a combined $300 million, while the US Department of Energy is investing over $500 million in lab measurements and compute over five years."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "Fraudster jailed for using 10K bots and AI songs to outstream Taylor Swift",
+   "url": "https://arstechnica.com/tech-policy/2026/10/outstreaming-taylor-swift-is-easy-with-10k-bots-and-ai-songs-fraudster-admits/",
+   "published": "2026-10-07T17:57:39+00:00",
+   "collected": "2026-10-08T23:49:05+00:00",
+   "summary": "Man gets 18 months for AI scheme stealing $8M in music streaming royalties.",
+   "facts": [
+    "After pleading guilty, a 54-year-old North Carolina man, Michael Smith, was sentenced to 18 months in prison for using artificial intelligence to generate songs for a scheme that stole millions from music streaming platforms.",
+    "First charged in 2024, Smith successfully ran the scheme for seven years without detection.",
+    "Starting in 2017, Smith began using fake email accounts and “fraudulently obtained debit cards” to create “thousands of fraudulent accounts” on services including Amazon Music, Apple Music, Spotify, and YouTube Music, the DOJ said."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "Mistral says \"Le Chonk\" can challenge the best AI models",
+   "url": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
+   "published": "2026-10-07T14:12:37+00:00",
+   "collected": "2026-10-08T23:49:06+00:00",
+   "summary": "Mistral says Le Chonk can rival top closed models while remaining open-weight.",
+   "facts": [
+    "The new 1 trillion-parameter model, Mistral Large 4—nicknamed Le Chonk—can be used and customized by anyone.",
+    "Whereas Chinese labs have been accused by the US government of abusing distillation—the training of a smaller model on the outputs of a larger one—to close the performance gap with OpenAI and Anthropic, Mistral claims to have trained its model from scratch.",
+    "Recently, however, the French lab has been on a hot streak: In September, it raised a $3.3 billion funding round at a $24 billion valuation, the largest ever raise by a European tech company.",
+    "Its earnings have reportedly increased 20-fold in the last year or so."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "Google rolls out improved SynthID AI content detector, now available globally",
+   "url": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/",
+   "published": "2026-10-07T14:00:08+00:00",
+   "collected": "2026-10-08T23:49:07+00:00",
+   "summary": "The new SynthID website can now identify AI content from Google, OpenAI, and more.",
+   "facts": [
+    "Google says Gemini alone has integrated SynthID with over 180 billion images and videos, plus 240,000 years of audio.",
+    "Google says each user gets “a daily usage quota of approximately 10 image, video, and audio checks.”",
+    "The best approach might be the opposite—using cryptographic technologies like C2PA to label real images, video, and audio as they are created.",
+    "Over his 20-year career, he's written for Android Police, ExtremeTech, Wirecutter, NY Times, and more."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "Helping teens learn, plan, and shape the future of AI",
+   "url": "https://openai.com/index/teens-learn-and-plan",
+   "published": "2026-10-07T12:00:00+00:00",
+   "collected": "2026-10-08T23:49:49+00:00",
+   "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
+   "facts": [
+    "Since we introduced ChatGPT for Teens—the default experience automatically applied to accounts identified as under 18—we’ve seen young people use it to learn, explore ideas and solve everyday problems.",
+    "ChatGPT’s 1.2 billion users span many countries, communities and backgrounds.",
+    "As ChatGPT for Teens became available to more teens globally, those with access sent about 2.7 million more learning-related messages on average than those who didn’t have it yet."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Google Blog (AI)",
+   "title": "Introducing Playground: Create and play custom games",
+   "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+   "published": "2026-10-07T12:00:00+00:00",
+   "collected": "2026-10-08T23:50:14+00:00",
+   "summary": "Overview of Playground",
+   "facts": [
+    "Games are one of the most creative forms of expression, and the gaming community keeps growing.",
+    "Want to tweak the physics, rewrite the rules, customize the characters, or overhaul the environment?",
+    "Unity Spark unlocks robust, professional-level mechanics, high-fidelity 3D capabilities, and the flexibility of the Unity runtime.",
+    "(18+) at playground.google, with tiered creation access rolling out based on your Google AI subscription."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+   "url": "https://openai.com/index/radisson",
+   "published": "2026-10-07T07:00:00+00:00",
+   "collected": "2026-10-08T23:49:51+00:00",
+   "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
+   "facts": [
+    "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
+    "Early plugin conversion versus organic search (Jul–Aug 2026)",
+    "The Radisson Hotels ChatGPT plugin(opens in a new window) helps travelers compare hotels and explore travel options through an interactive experience, and early results show booking conversion approximately 1.5 times that of Radisson’s organic search.",
+    "Radisson Hotel Group brings together ten distinctive hotel brands across EMEA and APAC, with more than 1,640 hotels in operation and under development."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "GPT-6 and Intelligent UI for everyone",
+   "url": "https://openai.com/index/gpt-6-for-everyone",
+   "published": "2026-10-07T00:00:00+00:00",
+   "collected": "2026-10-08T23:49:52+00:00",
+   "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
+   "facts": [
+    "Last month we introduced the first GPT‑6 models for paid customers and today we're bringing that next generation of intelligence to more people with a new GPT‑6 model built for more than 1.2 billion people who use ChatGPT each week.",
+    "GPT‑6 in ChatGPT introduces Intelligent UI, a new capability that allows ChatGPT to answer quickly with fully interactive user interfaces that make everyday answers more visual, make learning complex topics easier and that can quickly create a tool to solve a task right in the moment.",
+    "We’ve trained GPT‑6 to compose responses using text, visuals and interactive elements, choosing how they fit together based on your question."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "OpenAI will watermark ChatGPT outputs by default—but only in the EU",
+   "url": "https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu/",
+   "published": "2026-10-06T20:50:32+00:00",
+   "collected": "2026-10-08T23:49:08+00:00",
+   "summary": "Like other solutions, it is not especially reliable, and it's easy to circumvent.",
+   "facts": [
+    "A few standards already exist, like SynthID and the C2PA project, but they are relatively easy to circumvent for anyone with basic know-how."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+   "url": "https://openai.com/index/atlassian-partnership",
+   "published": "2026-10-06T16:00:00+00:00",
+   "collected": "2026-10-08T23:49:57+00:00",
+   "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
+   "facts": [
+    "Atlassian and OpenAI are expanding their partnership, bringing frontier models in the GPT‑6 family across Atlassian’s platform to power AI experiences that help teams plan, build, and deliver work.",
+    "The expanded partnership builds on a collaboration that began in 2023 and arrives as Atlassian broadens its own adoption of Codex and ChatGPT Enterprise.",
+    "More than 3,000 Atlassian developers use Codex across their terminals, IDEs, and code review workflows.",
+    "The agreement gives Atlassian expanded access to the latest OpenAI frontier models, including GPT‑6 Astra and the GPT‑5.6 series, as OpenAI continues to advance model capabilities, efficiency, and price-performance."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "OpenAI agents tried to hack Wikipedia tools and flooded it with traffic",
+   "url": "https://arstechnica.com/security/2026/10/openai-agents-tried-to-hack-wikipedia-tools-and-flooded-it-with-traffic/",
+   "published": "2026-10-06T12:21:53+00:00",
+   "collected": "2026-10-08T23:49:10+00:00",
+   "summary": "The reports of OpenAI agents harming third-party sites keep coming.",
+   "facts": [
+    "The publisher of Wikipedia said Monday that OpenAI agents attempted to hack a note-taking tool it hosts, made unauthorized edits, and sent millions of resource-intensive requests to its infrastructure, in the latest instance of OpenAI systems taking harmful and potentially dangerous actions.",
+    "The agents also made millions of automated API requests, crawled millions of pages, and made hundreds of thousands of queries to the Wikidata Query Service."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "How Jump Trading is scaling quant research with ChatGPT",
+   "url": "https://openai.com/index/jump-trading",
+   "published": "2026-10-06T12:00:00+00:00",
+   "collected": "2026-10-08T23:49:53+00:00",
+   "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
+   "facts": [
+    "Jump Trading uses GPT‑6 Astra to take on longer, more ambiguous research problems.",
+    "Adding GPT‑6 Astra has dramatically expanded the scale and complexity of workflows that can be handed off to agents, from day-to-day coding to advanced quantitative studies to validate new hypotheses.",
+    "“With the GPT-6 series, especially GPT-6 Astra, OpenAI has unlocked a new tier of autonomy for long-horizon tasks that require flexible agent coordination and extreme persistence on complex workflows.",
+    "Where we used to require frequent human guidance and intervention, we can now focus fully on defining a secure and well-monitored environment with clear goals and letting the agents find their own way.”"
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "Sharing AI progress in mathematics",
+   "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+   "published": "2026-10-06T12:00:00+00:00",
+   "collected": "2026-10-08T23:49:54+00:00",
+   "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
+   "facts": [
+    "These include 10 summaries of the model’s reasoning, estimations of compute spent in terms of Pro usage on ChatGPT, and statistics about the number of attempted problems.",
+    "We will be funding a series of workshops, conferences, and special programs around the understanding of major results produced by AI—we will share more on this in the near future."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "Advancing computer use with Ironclad",
+   "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+   "published": "2026-10-06T10:00:00+00:00",
+   "collected": "2026-10-08T23:49:56+00:00",
+   "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
+   "facts": [
+    "When we introduced GPT‑6 Astra, we demonstrated how far our models have come in using computers for professional work, from preparing documents to testing websites.",
+    "GPT‑6 Astra is our first frontier model trained on Ironclad tasks.",
+    "On our research evaluation, its average score was 32% higher than GPT‑5.6 Sol’s, while estimated time per attempt was 48% lower.1",
+    "Getting individual steps right is not enough: the finished process must work across the situations it was designed to handle.",
+    "Ironclad employees and people who use Ironclad at OpenAI helped our researchers identify 11 tasks across legal, commercial, and procurement work."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "MCP for agent-to-agent comms may be the riskiest protocol you've never heard of",
+   "url": "https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/",
+   "published": "2026-10-05T22:26:35+00:00",
+   "collected": "2026-10-08T23:49:11+00:00",
+   "summary": "Trust gaps in the new protocol spread malicious prompts from one agent to another.",
+   "facts": [
+    "The adoption of AI agents in millions of organizations is creating new opportunities for attackers to make them take malicious actions, such as exfiltrating database contents and sensitive business and personal information.",
+    "Independent researcher Syed Anas Mohiuddin tested agents from organizations including Google, JP Morgan Chase, Weviate, Rapid7, the French government’s interministerial digital directorate, and the US federal government.",
+    "His proof-of-concept attacks exploit trust gaps in MCP, short for Model Context Protocol.",
+    "The standard is one way AI apps and agents communicate with each other inside an internal network."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "Command-line tool quickly removes Apple Intelligence from macOS 27",
+   "url": "https://arstechnica.com/apple/2026/10/command-line-tool-quickly-removes-apple-intelligence-from-macos-27/",
+   "published": "2026-10-05T19:14:44+00:00",
+   "collected": "2026-10-08T23:49:12+00:00",
+   "summary": "The tool can free up over 12GB of storage.",
+   "facts": [
+    "A new tool is allowing Mac users the ability again to easily turn off Apple Intelligence with one click and free up to 12GB of storage.",
+    "Unlike with previous versions of macOS, macOS 27 Golden Gate doesn’t have a toggle for turning off Apple Intelligence.",
+    "In response, a developer known as Om Lahore on GitHub last week created RemoveMacAI, a command-line tool that allows macOS 27 users to “turn off Apple Intelligence on macOS 27″ in a way that is “fully reversible,” per the GitHub page.",
+    "They said that Apple’s Intelligence models take up “about 12GB,” but the models can actually take up over 30GB, The Verge noted."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "Our approach to EU text provenance rules",
+   "url": "https://openai.com/index/eu-text-provenance",
+   "published": "2026-10-05T15:00:00+00:00",
+   "collected": "2026-10-08T23:49:58+00:00",
+   "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
+   "facts": [
+    "Content provenance helps people understand where content came from, how it was created or edited, and whether it contains signals associated with our models.",
+    "Our phased approach reflects both the EU AI Act requirements as well as the technology’s limitations, with an emphasis on transparency about what a text watermark can and cannot tell people:",
+    "At a target false positive rate of 1%, our detector identified watermarks in about 80% of 200-token passages, compared with about 95% of 400-token passages, for content such as psychology.",
+    "In an evaluation of 400-token passages, replacing 10% of words with synonyms reduced detection from about 92% to 66%.",
+    "Replacing 25% of words reduced it to 17%."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "AI glasses face their first major government crackdown",
+   "url": "https://arstechnica.com/ai/2026/10/ai-glasses-face-their-first-major-government-crackdown/",
+   "published": "2026-10-05T13:39:30+00:00",
+   "collected": "2026-10-08T23:49:13+00:00",
+   "summary": "Norway wants time to write permanent rules for glasses that can record bystanders.",
+   "facts": [
+    "The rich Scandinavian country’s center-left government said on Monday that it would introduce a law to parliament soon on a temporary ban for places such as parks, beaches, schools, and kindergartens.",
+    "Governments around the world are grappling with how to regulate AI glasses—including those from Facebook owner Meta and cheaper copycat devices—amid worries that they are being used to film people without their consent, including children and women in settings such as changing rooms."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "Building advertising for the way people use AI",
+   "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+   "published": "2026-10-05T10:00:00+00:00",
+   "collected": "2026-10-08T23:49:59+00:00",
+   "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.",
+   "facts": [
+    "A new visual ad format helps people explore products and services, with expanded measurement to help businesses understand ad impact.",
+    "We’re introducing a new visual ad format in ChatGPT, expanding our measurement tools and partnerships, and developing new ways to understand brand suitability.",
+    "ChatGPT reaches 1.2 billion people each week, making it the world’s largest AI-native consumer platform.",
+    "Advertising helps us bring the benefits of AI to more people.",
+    "Our new visual ad format helps people imagine how products and services could fit into their lives."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "Apple changes full-disk access permissions to curb abuse from AI agents",
+   "url": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/",
+   "published": "2026-10-02T23:03:16+00:00",
+   "collected": "2026-10-08T23:49:15+00:00",
+   "summary": "Meta says FDA isn't sufficient to Muse reading messages. Apple begs to differ.",
+   "facts": [],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "Amazon’s $1B plan to combat data center backlash draws more backlash",
+   "url": "https://arstechnica.com/tech-policy/2026/10/amazons-1b-plan-to-combat-data-center-backlash-draws-more-backlash/",
+   "published": "2026-10-02T20:30:27+00:00",
+   "collected": "2026-10-08T23:49:16+00:00",
+   "summary": "Amazon praised for ending NDAs but slammed for downplaying data center pollution.",
+   "facts": [
+    "On Friday, Amazon committed to donating more than $1 billion over the next five years to communities neighboring data centers.",
+    "Regarding the latter, Amazon promised to be “water positive” by 2030, while claiming that 75 percent of projects have already met this goal."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "US arrests tech CEO accused of smuggling $300M in Nvidia chips into China",
+   "url": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/",
+   "published": "2026-10-02T18:39:36+00:00",
+   "collected": "2026-10-08T23:49:17+00:00",
+   "summary": "Nvidia’s chip-smuggling problem won’t go away as arrests continue.",
+   "facts": [
+    "The US has arrested another suspect accused of smuggling high-end computer servers containing export-controlled Nvidia chips into China.",
+    "In a press release on Thursday, the Department of Justice accused 38-year-old Greg Lui of using false paperwork to mask shipments of servers worth more than $300 million that he allegedly knew were ultimately destined for China.",
+    "As the CEO of Earthmade Computer, Lui allegedly conspired with freight-forwarding firms in South Asian countries like Malaysia and Singapore to illegally divert chip shipments into China, including Nvidia’s A100 GPUs and H100 GPUs, the FBI’s indictment alleged.",
+    "These are not Nvidia’s most advanced chips."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "A model guide for the GPT-6 family",
+   "url": "https://openai.com/index/practical-guide-building-gpt-6",
+   "published": "2026-10-02T16:15:00+00:00",
+   "collected": "2026-10-08T23:50:00+00:00",
+   "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
+   "facts": [
+    "A model guide for the GPT‑6 family",
+    "Practical tips for getting the best results from GPT‑6 models while managing time and cost",
+    "GPT‑6 is our most advanced suite of models yet, and offers you a choice of models for different kinds of work.",
+    "Whether you’re turning an idea into a working prototype, building and testing a feature, or orchestrating multi-step workflows across code repositories, databases, and external APIs, this guide explains how to choose a GPT‑6 model, give it effective instructions, manage long-running work, and prepare for production.",
+    "Cached input tokens cost up to 95% less(opens in a new window) than uncached input tokens, depending on the model."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Google Blog (AI)",
+   "title": "The latest AI news we announced in September 2026",
+   "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+   "published": "2026-10-02T15:00:00+00:00",
+   "collected": "2026-10-08T23:50:15+00:00",
+   "summary": "A video showing the September AI updates",
+   "facts": [
+    "The latest AI news we announced in September 2026",
+    "For more than 20 years, we’ve invested in machine learning and AI research, tools, and infrastructure to build products that make everyday life better for more people.",
+    "September's headline belongs to Gemini 4 Argon, our newest frontier model.",
+    "Built with advanced reasoning and a 1-million-token output limit, it’s designed to tackle complex challenges — especially in cybersecurity defense.",
+    "The release capped an active month for Google AI launches that included Gemini 3.8 Flash and 3.8 Flash Cyber.",
+    "We also introduced expressive voice models with Gemini 3.8 Live, made Googlebook available for pre-order, and brought the Gemini app to Windows."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "The 7-year-old Nvidia Shield TV is now $100 more expensive due to AI",
+   "url": "https://arstechnica.com/gadgets/2026/10/the-7-year-old-nvidia-shield-tv-is-now-100-more-expensive-thanks-to-ai/",
+   "published": "2026-10-02T14:52:16+00:00",
+   "collected": "2026-10-08T23:49:18+00:00",
+   "summary": "Initially launched in 2019, the Nvidia Shield TV Pro now retails for $299.99.",
+   "facts": [
+    "The era of generative AI has upended technology supply chains, and there is one ironclad rule in 2026: If it has memory or storage, it’s getting more expensive.",
+    "Nvidia has just announced that the Shield TV Pro is getting $100 more expensive, effective immediately.",
+    "The most recent version of the Shield streaming box debuted in 2019, running Android TV with AI upscaling and hardware decoding for almost any type of media.",
+    "While it ran an aging Tegra X1+ processor, that was (and still is) fast for a TV media streamer.",
+    "The device launched at $199.99, with a non-Pro variant at $149.99.",
+    "The non-Pro Shield has since been discontinued, but the Shield TV Pro lives on at the new $299.99 price."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "Chatham scales its capital markets expertise with OpenAI",
+   "url": "https://openai.com/index/chatham-financial",
+   "published": "2026-10-02T00:00:00+00:00",
+   "collected": "2026-10-08T23:50:02+00:00",
+   "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
+   "facts": [
+    "Chatham Financial uses Codex and GPT‑5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
+    "Today, Chatham uses Codex to build internal and client-facing tools and GPT‑5.6 to power AI features.",
+    "This work spans employee-built applications, its next-generation capital markets operating system Chatham Onyx, and its reengineering consulting service Process Zero, which accelerated trade validation from 30 minutes to under 4.",
+    "“In early measurement, the application reduced review from approximately 30 minutes to under 4 minutes."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "Judge dismisses Chegg and Penske antitrust lawsuits targeting Google AI search",
+   "url": "https://arstechnica.com/google/2026/10/antitrust-lawsuits-targeting-google-ai-search-dismissed-by-federal-judge/",
+   "published": "2026-10-01T20:11:55+00:00",
+   "collected": "2026-10-08T23:49:20+00:00",
+   "summary": "The court acknowledges AI search comes with consequences, but it's not an antitrust issue.",
+   "facts": [
+    "The lawsuits were filed in 2025, and Google requested a dismissal earlier this year.",
+    "However, the government didn’t get the harsh penalties it wanted in that case."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "The eternal complement",
+   "url": "https://openai.com/index/the-eternal-complement",
+   "published": "2026-10-01T17:00:00+00:00",
+   "collected": "2026-10-08T23:50:03+00:00",
+   "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress.",
+   "facts": [
+    "With our telescopes, we have looked to the reaches of the cosmos and glimpsed its early history.",
+    "To widen it again today, humanity built the James Webb Space Telescope, a ten-billion-dollar observatory folded inside a rocket and sent a million miles away.",
+    "Sustaining Moore’s law now requires more than eighteen times as many researchers as it did in the early 1970s.",
+    "Economy-wide effective research effort rose twenty-three-fold from the 1930s, while measured research productivity fell by a factor of forty-one.",
+    "We sometimes imagine superintelligence as a billion Einsteins.",
+    "But a civilization of a billion Einsteins still needs most of them to mine the quarries and manage the accounting."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "Ars Technica",
+   "title": "With most information hidden, the game Stratego had stumped AI—until now",
+   "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+   "published": "2026-10-01T16:28:04+00:00",
+   "collected": "2026-10-08T23:49:21+00:00",
+   "summary": "Adding in a second neural network that guesses the identity of hidden pieces was key.",
+   "facts": [
+    "Deep Blue took down Garry Kasparov at chess in 1997, AlphaGo beat Lee Sedol at Go in 2016, and poker bots have been beating professionals for years.",
+    "Their AI, called Ataraxos, beat Pim Niemeijer, arguably the best Stratego player of all time, 15 games to one, with four draws.",
+    "And it took just 16 GPUs and a few thousand dollars to train it.",
+    "In Stratego, each player gets 40 pieces representing military ranks, from a marshal down to a spy, plus bombs and a flag.",
+    "That leaves just 1,326 possible hands, few enough for a machine to weigh them all.",
+    "“In Stratego, there’s 40 pieces on the board that could be in any order,” Farina said.",
+    "That’s more than a decillion possible setups."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "How Albertsons Companies is reimagining retail from the inside out",
+   "url": "https://openai.com/index/albertsons-reimagining-retail",
+   "published": "2026-10-01T16:00:00+00:00",
+   "collected": "2026-10-08T23:50:05+00:00",
+   "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
+   "facts": [
+    "is expanding its work with OpenAI to improve the retail experience for millions of customers.",
+    "At Albertsons Cos., these decisions play out across more than 2,200 stores, including Albertsons®, Safeway®, Vons®, Jewel-Osco®, Shaw’s®, ACME® and Tom Thumb®, serving over 36 million customers each week.",
+    "The new Safeway experience in ChatGPT(opens in a new window) brings that innovation to millions of shoppers, helping them move from a dinner idea to checkout all in ChatGPT.",
+    "Shoppers are more open to using AI for groceries than for other types of purchases, according to dunnhumby’s February 2026 United States Consumer Trends Tracker(opens in a new window)."
+   ],
+   "text_from": "page"
+  },
+  {
+   "v": 2,
+   "source": "OpenAI",
+   "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+   "url": "https://openai.com/index/the-den-family-social",
+   "published": "2026-10-01T00:00:00+00:00",
+   "collected": "2026-10-08T23:50:06+00:00",
+   "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days.",
+   "facts": [
+    "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+    "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days.",
+    "Her small team now saves 10-15 hours a week and prepares licensing and grant applications in hours instead of days, giving them more capacity to grow while staying focused on the families they serve.",
+    "Using the Gmail, Slack, and Google Drive plugins, they asked ChatGPT Work to gather and analyze information from across the business and propose next steps.",
+    "Chandler estimates that this saves her about 7 hours of exploratory conversations a week so she can focus on decision making."
+   ],
+   "text_from": "page"
+  }
+ ]
+}

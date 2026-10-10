@@ -1,0 +1,131 @@
+{
+ "ran_at": "2026-10-11T06:51:16+09:00",
+ "sources": {
+  "auto/electrive": {
+   "ok": true,
+   "entries": 30,
+   "new": 1,
+   "page_text": 1,
+   "error": ""
+  },
+  "auto/Carscoops": {
+   "ok": true,
+   "entries": 18,
+   "new": 5,
+   "page_text": 5,
+   "error": ""
+  },
+  "auto/CnEVPost": {
+   "ok": true,
+   "entries": 50,
+   "new": 3,
+   "page_text": 3,
+   "error": ""
+  },
+  "auto/InsideEVs": {
+   "ok": true,
+   "entries": 20,
+   "new": 1,
+   "page_text": 1,
+   "error": ""
+  },
+  "auto/Motor1": {
+   "ok": true,
+   "entries": 20,
+   "new": 0,
+   "page_text": 0,
+   "error": ""
+  },
+  "auto/Autocar": {
+   "ok": true,
+   "entries": 38,
+   "new": 1,
+   "page_text": 0,
+   "error": ""
+  },
+  "auto/Electrek": {
+   "ok": true,
+   "entries": 100,
+   "new": 2,
+   "page_text": 2,
+   "error": ""
+  },
+  "auto/Car Watch": {
+   "ok": true,
+   "entries": 30,
+   "new": 1,
+   "page_text": 1,
+   "error": ""
+  },
+  "auto/Response": {
+   "ok": true,
+   "entries": 50,
+   "new": 1,
+   "page_text": 1,
+   "error": ""
+  },
+  "auto/Toyota Newsroom": {
+   "ok": true,
+   "entries": 50,
+   "new": 0,
+   "page_text": 0,
+   "error": ""
+  },
+  "ai/TechCrunch": {
+   "ok": true,
+   "entries": 20,
+   "new": 4,
+   "page_text": 4,
+   "error": ""
+  },
+  "ai/The Verge": {
+   "ok": true,
+   "entries": 10,
+   "new": 3,
+   "page_text": 3,
+   "error": ""
+  },
+  "ai/Ars Technica": {
+   "ok": true,
+   "entries": 20,
+   "new": 0,
+   "page_text": 0,
+   "error": ""
+  },
+  "ai/The Decoder": {
+   "ok": true,
+   "entries": 10,
+   "new": 6,
+   "page_text": 6,
+   "error": ""
+  },
+  "ai/OpenAI": {
+   "ok": true,
+   "entries": 1287,
+   "new": 0,
+   "page_text": 0,
+   "error": ""
+  },
+  "ai/Google Blog (AI)": {
+   "ok": true,
+   "entries": 20,
+   "new": 0,
+   "page_text": 0,
+   "error": ""
+  },
+  "ai/Microsoft 365 Blog": {
+   "ok": true,
+   "entries": 10,
+   "new": 0,
+   "page_text": 0,
+   "error": ""
+  },
+  "ai/ITmedia AI+": {
+   "ok": true,
+   "entries": 20,
+   "new": 0,
+   "page_text": 0,
+   "error": ""
+  }
+ }
+}
