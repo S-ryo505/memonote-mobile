@@ -1,6 +1,124 @@
 {
- "updated": "2026-10-10T06:52:46+09:00",
+ "updated": "2026-10-12T06:54:20+09:00",
  "items": [
+  {
+   "id": "2026-10-11-cn-eu-hybrid-export",
+   "date": "2026-10-11",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "戦略",
+    "PT"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "中国、EU向けHV・PHEV輸出の抑制で合意：4年間で数百万台規模の削減とEU通商担当委員",
+    "summary": "中国とEUの通商・投資協議の結果、中国製のハイブリッド車とプラグインハイブリッド車のEU向け輸出に上限をかける方向となった。EUのシェフチョビッチ委員は、4年間で輸出を数百万台規模減らす内容と説明したが、具体的な規則や技術的な詳細は未公表。直近の中国からの輸入は月約5万台とされる。",
+    "note": "規模感の確認：現状ペース5万台/月が4年（48か月）続くと累計は 5万×48＝約240万台。「数百万台の削減」は現状の輸入水準ではなく、増加を見込んだ将来シナリオに対する削減と読める（推測、委員自身も現状水準を指していないと説明）。BEVへの相殺関税を避けてHV/PHEVで輸出する流れに枠がかかるため、欧州でのPHEV（多モード駆動・ePTW）競争条件が変わる可能性がある。具体ルールは要確認。"
+   },
+   "en": {
+    "title": "China agrees to curb hybrid and plug-in hybrid exports to the EU, cutting several million units over four years",
+    "summary": "Trade and investment talks between China and the EU will put a cap on exports of Chinese hybrids and plug-in hybrids to the EU. EU Trade Commissioner Šefčovič said exports would be reduced by several million cars over four years, but the specific rules and technical details have not been published. Imports from China recently ran at about 50,000 hybrids and PHEVs per month.",
+    "note": "Scale check: at the current 50,000 units/month for four years (48 months), the total would be 50,000 × 48 ≈ 2.4 million. So the 'several million' reduction likely refers to a projected growth scenario rather than today's import level (speculation; the commissioner said he was not referring to the current level). This caps the route of exporting HEVs/PHEVs to avoid countervailing duties on BEVs, which could change competitive conditions for PHEVs in Europe. Detailed rules still need to be confirmed."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/11/china-limits-hybrid-exports-to-eu/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-10-cn-design-rules-draft",
+   "date": "2026-10-10",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "CN",
+   "tags": [
+    "規制",
+    "品質"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "中国、車両デザイン規則の強化案を公表：設計安全評価を型式認可に連動、折りたたみ画面も対象",
+    "summary": "中国の工業情報化部など4省庁（公安部・生態環境部・国家市場監督管理総局と共同）が、車両デザインに関する規則の強化案を公表した。設計の安全評価を車両の認可と結びつけ、折りたたみ式ディスプレイなども対象とする。完全格納式ドアハンドルの禁止を改めて示し、意見募集は11月10日まで。",
+    "note": "関連する既存規制：2月2日公表の強制国家標準は車内外の機械式ドアハンドルを義務化し、2027年1月1日施行、認可済み車種は2029年1月まで設計変更の猶予がある。4省庁は、十分な試験なしにトレンドを追う設計が安全・環境リスクを高めていると指摘している。主管省庁や条文の詳細は要確認。"
+   },
+   "en": {
+    "title": "China proposes tighter vehicle design rules, linking design safety assessments to approvals and targeting foldable screens",
+    "summary": "China's Ministry of Industry and Information Technology, together with the Ministry of Public Security, the Ministry of Ecology and Environment and the State Administration for Market Regulation, published draft rules tightening vehicle design requirements. The draft ties design safety assessments to vehicle approvals and covers items such as foldable screens. It reiterates the ban on fully concealed door handles, with public comments accepted until November 10.",
+    "note": "Related existing rule: a mandatory national standard released on February 2 requires mechanical interior and exterior door handles; it takes effect on January 1, 2027, and already approved models have until January 2029 to change their designs. The four agencies said some makers follow design trends without sufficient testing, raising safety and environmental risks. The lead agency and the exact clauses need to be confirmed."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/10/china-proposes-tighter-vehicle-design-rules/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-11-catl-seres",
+   "date": "2026-10-11",
+   "kind": "flash",
+   "cat": "supplier",
+   "region": "CN",
+   "tags": [
+    "電池",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "CATL、Seres（AITO）と長期戦略提携：共同プロジェクト完成後の年産能力は20GWh超",
+    "summary": "CATLがSeresと長期戦略協力契約を結び、AITOブランド向けの電池生産能力を拡大する。共同プロジェクトの完成後、年間能力は20GWhを超える見込みで、提携範囲は充電サービスと海外市場にも広げる。AITOは発足以来全車種でCATL製電池を使っており、累計納車は120万台を超えた。",
+    "note": "能力の目安：台数 ≈ 年間能力 ÷ 1台あたり電池容量。仮定値として平均50kWh/台とすると 20GWh÷50kWh＝約40万台/年分。AITOはEREV（レンジエクステンダー）比率が高く1台あたり容量が小さい車種も多いため、実際の台数換算はこれより増える可能性がある（推測）。"
+   },
+   "en": {
+    "title": "CATL signs long-term strategic deal with Seres (AITO), with annual capacity exceeding 20 GWh after a joint project",
+    "summary": "CATL has signed a long-term strategic cooperation agreement with Seres to expand battery production capacity for the AITO brand. Once a joint project is completed, annual capacity is expected to exceed 20 GWh, and the partnership will extend into charging services and overseas markets. AITO has used CATL batteries in every model since its launch, with cumulative deliveries passing 1.2 million vehicles.",
+    "note": "Rough sizing: vehicles ≈ annual capacity ÷ battery capacity per vehicle. Assuming an average of 50 kWh per vehicle (assumed value), 20 GWh ÷ 50 kWh ≈ 400,000 vehicles per year. Because AITO sells many range-extender models with smaller packs, the vehicle-equivalent number could be higher (speculation)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/11/catl-deal-seres-expand-aito-battery-capacity/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-10-geely-cruiser-700",
+   "date": "2026-10-10",
+   "kind": "flash",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT",
+    "4WD",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "Geely Galaxy、初の本格オフロードPHEV「Cruiser 700（戦艦700）」発売：3モーター4WDで出力830kW",
+    "summary": "Geely傘下のGalaxyブランドが、初の本格オフロードSUV「Cruiser 700」を中国で発売した。2WDと3モーター4WDを設定し、パワートレイン出力は最大830kW（1,113hp）。正式価格は18.98万元からで、下取り補助込みの期間限定価格16.98万元では、発売後12分で確定受注が1万台を超えた。",
+    "note": "3モーター4WDの一般的な構成は前1・後2モーター（本車の配置は要確認）。後輪を左右独立モーターで駆動する場合、トルクベクタリングによるヨーモーメントは Mz ≈ (Fx_RR − Fx_RL)·(tr/2) ＝ (T_RR − T_RL)·tr/(2·r_w)（tr：後輪トレッド、r_w：タイヤ動半径、減速比込みのトルク）。左右差をつけることで、機械式デフロックなしで片輪浮き時のトラクション確保や旋回補助ができる。"
+   },
+   "en": {
+    "title": "Geely Galaxy launches its first rugged off-road PHEV, the Cruiser 700, with triple-motor 4WD and 830 kW",
+    "summary": "Geely's Galaxy brand has launched its first rugged off-road SUV, the Cruiser 700, in China. It comes in 2WD and triple-motor 4WD versions, with powertrain output of up to 830 kW (1,113 hp). The official starting price is 189,800 yuan, and at the limited-time price of 169,800 yuan including a trade-in subsidy, firm orders passed 10,000 units within 12 minutes.",
+    "note": "A typical triple-motor 4WD layout uses one front and two rear motors (this model's layout needs confirmation). When the rear wheels are driven by independent left and right motors, the torque-vectoring yaw moment is Mz ≈ (Fx_RR − Fx_RL)·(tr/2) = (T_RR − T_RL)·tr/(2·r_w), where tr is the rear track, r_w the effective tire radius and T the wheel torque including gearing. The left-right difference can secure traction when a wheel lifts and assist turning without a mechanical diff lock."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/10/geely-galaxy-launches-cruiser-700-suv/"
+    }
+   ]
+  },
   {
    "id": "2026-10-09-honda-hybrid-15",
    "date": "2026-10-09",
