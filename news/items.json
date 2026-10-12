@@ -1,6 +1,126 @@
 {
- "updated": "2026-10-12T06:54:20+09:00",
+ "updated": "2026-10-13T06:55:08+09:00",
  "items": [
+  {
+   "id": "2026-10-12-honda-hybrid-name",
+   "date": "2026-10-12",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "Global",
+   "tags": [
+    "PT",
+    "4WD",
+    "制御",
+    "シャシー",
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "ホンダ、次世代HVの名称を「Honda Hybrid」に統一：2027年から展開、新開発の電動AWDとMotion Management Systemを採用",
+    "summary": "ホンダは2019年から使ってきた2モーター式e:HEVを発展させた次世代ハイブリッドを「Honda Hybrid」の名称で2027年から世界展開する。軽量・高剛性化したプラットフォームに、Motion Management Systemと新開発の電動全輪駆動を組み合わせる。2030年3月期までに北米・日本・インドで約15車種に搭載する計画。",
+    "note": "電動AWDの前後配分の効き方：前後輪の横力上限は摩擦円から Fy,max,i = √((μFz,i)² − Fx,i²)（i=f,r）。後輪側へ駆動力 Fx,r を振ると前輪の横力余裕が増えアンダーステアが減り、逆に後輪の横力余裕は減る。電動AWDはモーター応答（数十ms級、推測）で Fx,f/Fx,r を常時変えられるため、この配分をヨーレート制御の操作量に使える。Motion Management Systemの中身（ブレーキ・駆動トルクの協調範囲、左右配分の有無）は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Honda unifies its next-gen hybrid under the 'Honda Hybrid' name, launching from 2027 with a new electric AWD and Motion Management System",
+    "summary": "Honda will roll out its next-generation hybrid, an evolution of the two-motor e:HEV system it has used since 2019, under the 'Honda Hybrid' name globally from 2027. It pairs a lighter, stiffer platform with a Motion Management System and a newly developed electric all-wheel drive. About 15 models in North America, Japan and India are planned to adopt it by the fiscal year ending March 2030.",
+    "note": "How front/rear split in an electric AWD works: the lateral force limit at each axle follows the friction circle, Fy,max,i = √((μFz,i)² − Fx,i²) (i = f, r). Shifting drive force Fx,r to the rear frees lateral capacity at the front and reduces understeer, while reducing rear lateral margin. Because motor torque responds quickly (tens of ms, assumed), Fx,f/Fx,r can be used as a control input for yaw-rate control. What the Motion Management System actually controls (brake/drive coordination, any left-right split) is not stated and needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/811539/honda-hybrid-global-rollout-platform/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-12-chery-omoda5-axle-recall",
+   "date": "2026-10-12",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "Global",
+   "tags": [
+    "シャシー",
+    "品質"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "奇瑞、マレーシアでOmoda 5を8,878台リコール：走行中に後車軸が脱落、トレーリングアーム溶接の強度不足",
+    "summary": "マレーシアで2023年式Omoda 5が走行中に後車軸を失う事故が発生し（負傷者なし）、奇瑞は後車軸トレーリングアームの溶接強度が不足している可能性があるとして同国で8,878台をリコールする。現地当局は同モデルの新規登録を停止した。奇瑞は中国など他市場でも同一生産ロットの車両の点検を始めている。",
+    "note": "後軸の横力が失われる影響：定常旋回で後輪横力 Fy,r = C_r·α_r が車両のヨーモーメント釣り合い a·Fy,f − b·Fy,r = Iz·dr/dt を支えている（a,b：重心から前後軸までの距離）。後軸の支持が外れると Fy,r ≈ 0 となり、前輪横力によるヨーモーメントが打ち消されずスピン方向に回る。トレーリングアームは前後力と制動反力を受ける部材で、溶接部は繰り返し荷重による疲労が支配的と考えられる（推測）。他市場への波及（対象台数）は記事時点で未確定、要確認。"
+   },
+   "en": {
+    "title": "Chery recalls 8,878 Omoda 5 SUVs in Malaysia after a rear axle came off while driving; trailing-arm welds may be too weak",
+    "summary": "A 2023 Omoda 5 lost its rear axle while being driven in Malaysia, with no injuries, and Chery is recalling 8,878 units there because the welds on the rear axle trailing arms may lack strength. The local regulator has suspended new registrations of the model. Chery has also started checking vehicles from the same production batch in China and other markets.",
+    "note": "Effect of losing rear lateral force: in steady cornering, the rear lateral force Fy,r = C_r·α_r balances the yaw moment a·Fy,f − b·Fy,r = Iz·dr/dt (a, b: CG-to-axle distances). If the rear axle detaches, Fy,r ≈ 0, so the front lateral force's yaw moment is no longer cancelled and the car rotates toward a spin. Trailing arms carry longitudinal and braking reaction loads, so weld fatigue under repeated loading is the likely failure mode (speculation). Whether other markets will be affected, and how many units, is not yet confirmed."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/12/chery-recalls-omoda-5-malaysia/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-12-byd-atto8-europe",
+   "date": "2026-10-12",
+   "kind": "flash",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "電池",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BYD、7人乗り大型EV「Atto 8」をパリで公開：欧州初の第2世代115kWhブレード電池、10→70%を5分",
+    "summary": "BYDはパリモーターショーで7人乗りの大型電動SUV「Atto 8」を公開し、欧州でのSUVラインアップの最上位に置く。欧州向けモデルとして初めて第2世代の115kWhブレード電池を積み、自社の超急速充電器（Flash充電）でSOC 10→70%を5分、さらに4分で97%まで充電できるとしている。競合としてKia EV9やSkoda Peaqを挙げている。",
+    "note": "平均充電電力の概算：P_avg = ΔSOC·E_bat / t。10→70%：0.60×115kWh／(5/60)h ≈ 828kW。70→97%：0.27×115／(4/60) ≈ 466kW。公称容量＝充電対象容量とみなした仮定値で、損失は無視。電池側電圧1,000V級と仮定すると10→70%区間の平均電流は約830A（仮定値・要確認）。"
+   },
+   "en": {
+    "title": "BYD unveils the seven-seat Atto 8 in Paris, its first European model with the second-gen 115kWh Blade battery, charging 10-70% in five minutes",
+    "summary": "BYD revealed the Atto 8, a large seven-seat electric SUV, at the Paris motor show as the top of its European SUV range. It is the first European model to use the second-generation 115kWh Blade battery, and with BYD's own Flash chargers it can go from 10% to 70% in five minutes and reach 97% in another four minutes. BYD positions it against the Kia EV9 and Skoda Peaq.",
+    "note": "Rough average charging power: P_avg = ΔSOC·E_bat / t. 10-70%: 0.60 × 115 kWh / (5/60) h ≈ 828 kW. 70-97%: 0.27 × 115 / (4/60) ≈ 466 kW. These assume nominal capacity equals charged capacity and ignore losses. If the pack runs at around 1,000 V, average current over 10-70% would be about 830 A (assumption, needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/new-cars/byd-atto-8-seven-seat-skoda-peaq-rival-764bhp"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-12-peugeot-rcz-hypersquare",
+   "date": "2026-10-12",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "EU",
+   "tags": [
+    "シャシー",
+    "制御",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "プジョー、全固体電池のRCZコンセプトを公開：異形操舵コントローラー「Hypersquare」は次期E-208への採用が確定",
+    "summary": "プジョーはRCZの名を復活させた電動コンセプトを公開した。Stellantis STLA Oneベースで、Factorial開発の全固体電池と1,000V系を持ち、出力500hp・航続最大600km・10→80%充電10分と公表している。市販化は未定だが、操舵コントローラー「Hypersquare」は次期E-208に採用されることが確定した。",
+    "note": "Hypersquareは回転角の小さい角型コントローラーで、成立にはステアバイワイヤが前提とみられる（記事に記載なし・推測）。機械連結がない場合、操舵ギア比 i_s = δ_sw/δ_f を車速 V の関数として自由に設定でき、ヨーレートゲイン r/δ_f = V/(L(1+K_us·V²)) を一定に近づけるように i_s(V) を決める設計が一般的。反力は操舵反力アクチュエータで別途生成する必要がある。E-208での方式（SbW か可変ギア比EPSか）は要確認。"
+   },
+   "en": {
+    "title": "Peugeot shows a solid-state RCZ concept; its 'Hypersquare' steering controller is confirmed for the next E-208",
+    "summary": "Peugeot revealed an electric concept that revives the RCZ name. Built on the Stellantis STLA One platform with a Factorial-developed solid-state battery and a 1,000-volt system, it is claimed to make 500 hp, reach up to 600 km of range and charge from 10% to 80% in 10 minutes. A production RCZ is not confirmed, but the Hypersquare steering controller will go into the next E-208.",
+    "note": "Hypersquare is a square controller with a small rotation range, which likely requires steer-by-wire (not stated in the article; speculation). Without a mechanical link, the steering ratio i_s = δ_sw/δ_f can be set freely as a function of speed V; a common approach is to choose i_s(V) so the yaw-rate gain r/δ_f = V/(L(1 + K_us·V²)) seen by the driver stays roughly constant. Steering feel must then be created by a separate feedback actuator. Whether the E-208 uses full SbW or a variable-ratio EPS needs confirmation."
+   },
+   "src": [
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/811555/peugeot-rcz-solid-state-concept/"
+    }
+   ]
+  },
   {
    "id": "2026-10-11-cn-eu-hybrid-export",
    "date": "2026-10-11",
