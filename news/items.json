@@ -1,6 +1,62 @@
 {
- "updated": "2026-10-13T06:55:08+09:00",
+ "updated": "2026-10-14T06:58:00+09:00",
  "items": [
+  {
+   "id": "2026-10-13-proterial-fev-amorphous-motor",
+   "date": "2026-10-13",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "JP",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "プロテリアルとFEV、アモルファス合金コアのxEV駆動モーターを検証：230kW級比で300kW化・約27%軽量化の可能性（シミュレーション）",
+    "summary": "プロテリアルとFEVは、アモルファス合金と重希土類を使わないネオジム焼結磁石を組み合わせた駆動モーターの設計コンセプトをシミュレーションで評価した。市販BEVの最大出力230kW級モーターを基準に、最大出力300kWと質量約27%減を両立できる可能性が示された。モーター効率はWLTP Class 3で95.5%→97.9%、ARTEMIS MW 150で95.3%→97.4%と試算されている。",
+    "note": "損失で見ると改善幅が分かりやすい。損失/出力比 = (1−η)/η より、WLTP Class 3 は 0.045/0.955≈4.7% → 0.021/0.979≈2.1%（損失約54%減）、ARTEMIS MW 150 は約4.9% → 約2.7%（約46%減）。鉄損はSteinmetz式 P_fe ≈ k_h·f·B^α + k_e·f²·B² で表され、渦電流項 k_e は板厚の2乗に比例・抵抗率に反比例する。アモルファス薄帯は板厚が電磁鋼板より薄く抵抗率が高い（一般値、本記事に数値なし）ため、高回転・高周波側の鉄損が下がると考えられる。出力 P = T·ω なので、300kW化が高回転化によるものかトルク増によるものかは記事に記載がなく要確認。実機評価ではなくシミュレーション結果である点に注意。"
+   },
+   "en": {
+    "title": "Proterial and FEV evaluate an amorphous-alloy-core xEV traction motor: 300 kW and about 27% lighter than a 230 kW-class reference (simulation)",
+    "summary": "Proterial and FEV used simulation to assess a traction motor concept combining amorphous alloy with sintered neodymium magnets free of heavy rare earths. Against a 230 kW-class motor typical of production BEVs, the concept could reach 300 kW peak output while cutting mass by about 27%. Motor efficiency was estimated to rise from 95.5% to 97.9% on the WLTP Class 3 cycle and from 95.3% to 97.4% on the ARTEMIS MW 150 cycle.",
+    "note": "The gain is clearer when expressed as losses. Using loss/output = (1−η)/η, WLTP Class 3 goes from 0.045/0.955 ≈ 4.7% to 0.021/0.979 ≈ 2.1% (about 54% less loss), and ARTEMIS MW 150 from about 4.9% to about 2.7% (about 46% less). Core loss follows the Steinmetz form P_fe ≈ k_h·f·B^α + k_e·f²·B², where the eddy-current term k_e scales with lamination thickness squared and inversely with resistivity. Amorphous ribbon is thinner and more resistive than electrical steel (general values, not given in the article), so high-speed, high-frequency core loss should fall. Since P = T·ω, whether the 300 kW comes from higher speed or more torque is not stated and needs confirmation. These are simulation results, not hardware tests."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/13/417689.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-13-leapmotor-b10-zaragoza",
+   "date": "2026-10-13",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "Leapmotor、ステランティスのスペイン・サラゴサ工場で「B10」の生産を開始：中国ブランドの欧州現地生産が始動",
+    "summary": "ステランティスが出資する零跑汽車（Leapmotor）は、コンパクトSUV「B10」がスペインのステランティス・サラゴサ工場で生産に入ったと10月12日に発表した。同時にパリモーターショー2026で「A05」を欧州初公開した。同社は欧州での現地化を進めている。",
+    "note": ""
+   },
+   "en": {
+    "title": "Leapmotor starts B10 production at Stellantis' Zaragoza plant in Spain, launching local European output for the Chinese brand",
+    "summary": "Stellantis-backed Leapmotor announced on October 12 that its B10 compact SUV has entered production at Stellantis' Zaragoza plant in Spain. It also gave the A05 its European debut at the 2026 Paris Motor Show. The company is pushing to localize its operations in Europe.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/13/leapmotor-starts-b10-production-spain-a05-european-debut/"
+    }
+   ]
+  },
   {
    "id": "2026-10-12-honda-hybrid-name",
    "date": "2026-10-12",
