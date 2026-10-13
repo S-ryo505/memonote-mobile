@@ -1,6 +1,104 @@
 {
-  "updated": "2026-10-12T07:25:00+09:00",
+  "updated": "2026-10-14T07:35:00+09:00",
   "items": [
+    {
+      "id": "2026-10-14-gemini-4-argon-ga",
+      "date": "2026-10-14",
+      "kind": "flash",
+      "cat": "model",
+      "level": "all",
+      "tags": [
+        "モデル",
+        "料金",
+        "コーディング",
+        "仕事で使える"
+      ],
+      "prio": 3,
+      "conf": "primary",
+      "ja": {
+        "title": "Google「Gemini 4 Argon」が全世界で一般提供開始。API入力$2・出力$10/100万トークン、アプリはPro/Ultra加入者のみ",
+        "summary": "Googleは10月13日（米国時間）、9月に発表していた最上位モデル「Gemini 4 Argon」を全世界で使えるようにした。開発者・企業はAI StudioとGeminiプラットフォームのAPI経由、個人はGoogle AI Pro/Ultra加入者がGeminiアプリと検索のAIモードで、Ultra加入者はGoogle Antigravityでも利用できる。API料金は導入価格で入力100万トークンあたり2ドル、出力10ドル、キャッシュ済み入力は95%引きで、11月までは開発者向けにAPI料金50%割引も案内されている。",
+        "note": "仕事での使いどころ：Google Workspace／Gemini環境の会社では、長い仕様書の読解や既存コードのバグ探しなど複数手順の作業で試す候補。注意点：Googleは金融・法務・コーディング等のベンチマークで他社最上位モデルを上回ると主張する一方、独立評価ではClaude Opus 5.5などに及ばないとする報道もあり評価は割れている（自社業務での比較が必要）。無料・Plusプランでは使えない。50%割引の条件と「導入価格」の終了時期は要確認。"
+      },
+      "en": {
+        "title": "Google makes Gemini 4 Argon generally available worldwide: API at $2 input / $10 output per million tokens; app access for Pro/Ultra subscribers only",
+        "summary": "On October 13 (US time), Google made Gemini 4 Argon, the top-tier model it announced in September, available worldwide. Developers and enterprises can use it through the API in AI Studio and the Gemini platform, Google AI Pro and Ultra subscribers get it in the Gemini app and AI Mode in Search, and Ultra subscribers can also use it in Google Antigravity. The introductory API price is $2 per million input tokens and $10 per million output tokens, cached inputs are 95% off, and developers are offered a 50% API discount through November.",
+        "note": "How to use it at work: for companies on Google Workspace/Gemini, it is a candidate to try on multi-step tasks such as reading long specifications or hunting bugs in existing code. Caveats: Google claims it beats rival top models on benchmarks in finance, law, coding and more, but some reports say it trails Claude Opus 5.5 and others in independent tests, so opinions differ (compare it on your own tasks). It is not available on the free or Plus plans. The conditions of the 50% discount and when the introductory price ends need confirmation."
+      },
+      "src": [
+        {
+          "name": "Google Blog",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/gemini-4-argon-is-now-available-worldwide-as-googles-most-capable-frontier-model/"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14-anthropic-distillation-defense",
+      "date": "2026-10-14",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "intermediate",
+      "tags": [
+        "セキュリティ",
+        "モデル"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Anthropic、Claudeの推論過程を抜き取る「蒸留」攻撃への対策で抜き取り量を90〜99%削減。数万アカウントを停止",
+        "summary": "Anthropicは、Claudeの内部の推論ステップ（思考過程のトークン）を大量に引き出して他社モデルの学習に使う「蒸留」攻撃への対策により、抜き取られる量を90〜99%減らしたと説明した。対策は推論ステップへのアクセス制限、抜き取りを検知する分類器、検知したアカウントの自動停止の3つで、すでに数万件のアカウントを停止したという。同社はこの攻撃を中国のZhipuとMoonshotに結びつけている。",
+        "note": "仕事での使いどころ：直接の業務影響は小さいが、API利用で推論過程の表示・取得に制限が増える可能性がある。社内でClaudeの思考過程ログを品質確認に使っている場合は仕様変更に注意（推測）。注意点：攻撃元の特定はAnthropic側の主張で、名指しされた企業の反論は記事要約からは確認できない（要確認）。大量・自動的なAPI呼び出しは誤検知で停止される可能性もあるため、社内ツールの利用規約適合を確認しておくとよい（推測）。"
+      },
+      "en": {
+        "title": "Anthropic says its defenses against 'distillation' attacks cut extraction of Claude's reasoning by 90–99%; tens of thousands of accounts banned",
+        "summary": "Anthropic said its countermeasures against distillation attacks, in which Claude's internal reasoning steps (chain-of-thought tokens) are extracted at scale to train other companies' models, have reduced the volume extracted by 90 to 99 percent. The measures are restricted access to the reasoning steps, a classifier that detects extraction attempts, and automatic bans of flagged accounts, and tens of thousands of accounts have already been banned. The company links the attacks to the Chinese firms Zhipu and Moonshot.",
+        "note": "How to use it at work: little direct impact on daily work, but access to reasoning output through the API may become more restricted. If your team uses Claude's reasoning logs for quality checks, watch for spec changes (speculation). Caveats: the attribution is Anthropic's claim, and any rebuttal from the named companies can't be confirmed from the summary (needs confirmation). Heavy automated API use could be falsely flagged, so it is worth checking that in-house tools comply with the terms of use (speculation)."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/anthropic-says-it-cut-claude-reasoning-token-theft-by-up-to-99-in-fight-against-industrial-scale-distillation/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14-x-subscription-grok-cursor",
+      "date": "2026-10-14",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "料金",
+        "コーディング",
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "SpaceXSI（旧xAI系）、X Premium・Grok・Cursorをまとめた新サブスク。月額8〜200ドルの5プラン",
+        "summary": "SpaceXSIは、Xの有料機能、AIのGrok（エージェント機能を含む）、AIコーディングツールのCursorを1つにまとめた「X Subscription」を始めた。プランは無料、Plus（月8ドル）、Premium（月30ドル）、Super（月100ドル）、Ultra（月200ドル）の5段階で、上位ほどAIの利用上限が増える。",
+        "note": "仕事での使いどころ：個人でCursorとGrokを両方使っている人にはまとめ買いの選択肢になる。注意点：各プランでのCursorの利用上限や、既存のCursor単体契約との違いは記事要約からは不明（要確認）。SNS（X）のアカウントと業務用コーディングツールが同じ契約に紐づくため、会社での利用はデータ取り扱いと契約主体の確認が必要。"
+      },
+      "en": {
+        "title": "SpaceXSI launches a new subscription bundling X Premium, Grok and Cursor, with five plans from $8 to $200 a month",
+        "summary": "SpaceXSI has launched 'X Subscription', which combines X's paid features, the Grok AI (including its agent bot) and the AI coding tool Cursor in one plan. There are five tiers: free, Plus ($8/month), Premium ($30/month), Super ($100/month) and Ultra ($200/month), with higher AI usage caps at each step up.",
+        "note": "How to use it at work: an option for individuals who already pay for both Cursor and Grok. Caveats: Cursor usage limits on each plan and how this differs from a standalone Cursor subscription are unclear from the summary (needs confirmation). Because a social media (X) account and a work coding tool would sit under one contract, check data handling and who holds the contract before using it at your company."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/13/spacexsi-bundles-x-premium-grok-and-cursor-into-one-subscription/"
+        }
+      ]
+    },
     {
       "id": "2026-10-10-anthropic-evals-offline",
       "date": "2026-10-10",
