@@ -1,6 +1,103 @@
 {
-  "updated": "2026-10-14T07:35:00+09:00",
+  "updated": "2026-10-15T07:30:00+09:00",
   "items": [
+    {
+      "id": "2026-10-15-openai-insider-leaks",
+      "date": "2026-10-15",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "セキュリティ"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "OpenAIで内部情報の持ち出し事案が2件：役員会議室に盗聴器を仕掛けた疑いで社員逮捕、元社員の100超ファイル持ち出しも主張",
+        "summary": "米司法省・FBIによると、OpenAIのエンジニア（35歳、2025年7月入社、会議室への入室権限なし）が経営陣用の会議室のテレビのUSBポートにトイレットペーパーで包んだ録音機を隠した疑いで10月9日に逮捕された。録音機は9月28日ごろ設置され、OpenAIが見つけたのは2日後の9月30日で、中身は暗号化されていた。起訴状では、この機器は妻のチャットボットのアカウントを使ってAIでコードを書いて作ったとされ、有罪なら最長5年の禁錮と25万ドルの罰金。これとは別に、OpenAIは元社員が製品計画に関する100件超の機密ファイルを個人アカウントに送り、転職先のAppleの幹部に見せたと裁判所への書類で主張している。",
+        "note": "仕事での使いどころ：自社の機密会議室の物理点検（持ち込み機器・USBポート）や、退職者による個人アカウントへのファイル転送の監視ルールを見直すきっかけに使える。生成AIで専門知識が少なくても盗聴機器を作れたとされる点は、内部不正対策の前提を見直す材料。注意点：いずれも起訴・主張の段階で、有罪や事実関係は確定していない。Apple側の見解は記事データからは不明（要確認）。"
+      },
+      "en": {
+        "title": "Two insider-leak cases at OpenAI: an employee arrested for allegedly bugging the executive meeting room, and claims a former employee took over 100 files",
+        "summary": "According to the US Justice Department and the FBI, an OpenAI engineer (35, at the company since July 2025, with no access to the room) was arrested on October 9 for allegedly hiding a recording device wrapped in toilet paper in a TV's USB port in the executives' conference room. The device was likely planted around September 28, OpenAI found it two days later on September 30, and its contents were encrypted. The indictment says he built the device by vibe-coding it with a chatbot through his wife's account; if convicted, he faces up to five years in prison and a $250,000 fine. Separately, OpenAI alleges in a court filing that a former employee sent more than 100 confidential product-plan files to a personal account and showed them to leaders at Apple, where he went to work.",
+        "note": "How to use it at work: a prompt to review physical checks of confidential meeting rooms (brought-in devices, USB ports) and the rules for monitoring departing employees who forward files to personal accounts. The claim that someone built a bugging device with AI-written code, without deep expertise, is a reason to revisit assumptions in insider-threat controls. Caveats: both cases are at the charge or allegation stage, and nothing has been proven. Apple's response is not in the source data (needs confirmation)."
+      },
+      "src": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/tech-policy/2026/10/fbi-arrests-openai-engineer-suspected-of-planting-bug-in-conference-room/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/alleged-openai-spy-vibe-coded-a-surveillance-device-using-his-wifes-chatbot-account/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14-anthropic-iot-self-replicate",
+      "date": "2026-10-14",
+      "kind": "flash",
+      "cat": "model",
+      "level": "intermediate",
+      "tags": [
+        "セキュリティ",
+        "モデル"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Anthropic、小型AIモデルがIoT機器を渡り歩いて自己複製する「新型ワーム」の可能性を警告",
+        "summary": "Anthropicは、小型のオープンウェイトモデルが自分の重みごと他の機器へ広がる「weight-based replicator」が新しい種類のコンピュータワームになりうると警告した。報道によると、実験ではGemma4-26B-A4Bをメモリ4GBの機器15台に分散させて推論を動かせたほか、Qwen3.5-9Bは9種類のハードウェアのうち8種類で他のLLMを動く状態に設定できた。",
+        "note": "仕事での使いどころ：工場・車両・オフィスのIoT機器や組込み機器を管理する部門で、メモリ数GBクラスの機器も攻撃の足場になりうる前提でネットワーク分離・不要サービスの停止を点検する材料になる。注意点：実験の条件（機器の種類、侵入方法、管理者権限の有無）は記事データに含まれておらず要確認。実際の攻撃で使われた事例かどうかも不明で、現時点では研究上の警告と読むのが妥当（推測）。"
+      },
+      "en": {
+        "title": "Anthropic warns small AI models could spread across IoT devices as self-replicating \"worms\"",
+        "summary": "Anthropic warned that \"weight-based replicators\" — small open-weight models that copy themselves, weights included, onto other devices — could become a new kind of computer worm. According to reports, in experiments the Gemma4-26B-A4B model ran inference split across 15 devices with only 4GB of memory each, and Qwen3.5-9B was able to set up other LLMs to run on eight of nine hardware types.",
+        "note": "How to use it at work: for teams that manage IoT and embedded devices in factories, vehicles or offices, it is a reason to check network segmentation and turn off unneeded services on the assumption that even devices with a few GB of memory can become footholds. Caveats: the experiment's conditions (device types, how access was gained, whether admin rights were needed) are not in the source data and need confirmation. It is also unclear whether this has been seen in real attacks; for now it is best read as a research warning (my inference)."
+      },
+      "src": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1011108/anthropic-self-replicating-ai-smart-devices-risk"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-15-us-states-sue-openai-kids",
+      "date": "2026-10-15",
+      "kind": "flash",
+      "cat": "reg",
+      "level": "all",
+      "tags": [
+        "規制"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "米8州がOpenAIを提訴、「ChatGPTは子どもに安全でない」と主張",
+        "summary": "アイオワ、カンザス、ネブラスカ、ウェストバージニア、アーカンソー、アリゾナ、アイダホ、モンタナの8州が、それぞれ別々にOpenAIを訴えた。各州は、OpenAIがChatGPTを「若者にも適した安全なツール」と説明しながら、実際には批判的思考力の低下や誤った医療助言などで弱い立場の利用者に害を与え、安全より利益を優先したと主張している。最初に報じたのはロイター。",
+        "note": "仕事での使いどころ：社内でAIの利用ルールを作る際、医療・健康など専門判断が要る質問に生成AIの回答をそのまま使わないことを明記する根拠の一つになる。注意点：訴訟は提起された段階で、主張が認められたわけではない。業務利用のChatGPT Enterprise等に直接影響するかは不明（推測では影響は限定的）。OpenAIの声明の内容は記事データに含まれておらず要確認。"
+      },
+      "en": {
+        "title": "Eight US states sue OpenAI, saying ChatGPT is not safe for children",
+        "summary": "Eight states — Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho and Montana — have each filed separate lawsuits against OpenAI. They claim OpenAI described ChatGPT as a safe tool suitable for young people while it actually harmed vulnerable users, for example by weakening critical thinking and giving dangerous medical advice, and that the company put profit ahead of safety. Reuters reported the suits first.",
+        "note": "How to use it at work: when writing internal AI-use rules, it is one more reason to state clearly that AI answers to questions needing expert judgment, such as medical or health matters, should not be used as is. Caveats: the suits have only been filed; none of the claims has been upheld. Whether they affect business offerings such as ChatGPT Enterprise is unclear (my guess: limited impact). OpenAI's statement is not in the source data and needs confirmation."
+      },
+      "src": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
+        }
+      ]
+    },
     {
       "id": "2026-10-14-gemini-4-argon-ga",
       "date": "2026-10-14",
