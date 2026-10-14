@@ -1,6 +1,147 @@
 {
- "updated": "2026-10-14T06:58:00+09:00",
+ "updated": "2026-10-15T07:00:00+09:00",
  "items": [
+  {
+   "id": "2026-10-15-mb-sclass-brake-hose-recall",
+   "date": "2026-10-15",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "シャシー",
+    "品質"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "メルセデス、米国でSクラス系30,064台をリコール：前輪ブレーキホースが劣化・漏れ・破裂のおそれ",
+    "summary": "メルセデス・ベンツは米国で、2021年2月〜2024年11月下旬に生産されたSクラス、メルセデス・マイバッハ、メルセデスAMGのセダン（2022〜2025年モデル）計30,064台を対象にリコール範囲を拡大した。前輪ブレーキホースが弱って液漏れし、破裂に至る可能性がある。販売店で該当ホースを無償交換し、所有者への通知は2026年11月27日に発送される（NHTSA番号 26V638）。",
+    "note": "前輪ホースが重要な理由：制動時の荷重移動で前軸荷重は Wf = m·g·l_r/L + m·a_x·h/L となり、理想制動配分の前輪分担率は (l_r + (a_x/g)·h)/L。仮定値 l_r=1.5m、L=3.1m、h=0.55m、a_x=0.8g で (1.5+0.44)/3.1≈0.63、つまり制動力の約6割を前輪が負担する。片側前輪の油圧が失われると制動力が減るうえ左右差 ΔFx によるヨーモーメント Mz≈ΔFx·tf/2（tf：前輪トレッド）が発生し、ESCやステア補正で抑える必要がある。ブレーキ回路が前後分割か対角分割か、ホース劣化の原因（材料・取り回し）は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Mercedes recalls 30,064 S-Class-family sedans in the US over front brake hoses that may weaken, leak or rupture",
+    "summary": "Mercedes-Benz has expanded a US recall to 30,064 S-Class, Mercedes-Maybach and Mercedes-AMG sedans built from February 2021 to late November 2024 (model years 2022–2025). A front brake hose can weaken, leak fluid and possibly rupture. Dealers will replace the hose free of charge, and owner letters go out on November 27, 2026 (NHTSA recall 26V638).",
+    "note": "Why the front hose matters: under braking, load transfer gives a front axle load Wf = m·g·l_r/L + m·a_x·h/L, so the ideal front share of braking force is (l_r + (a_x/g)·h)/L. With assumed values l_r = 1.5 m, L = 3.1 m, h = 0.55 m and a_x = 0.8 g, that is (1.5 + 0.44)/3.1 ≈ 0.63, meaning the front wheels carry about 60% of braking. Losing pressure at one front wheel reduces braking and creates a left/right imbalance ΔFx, producing a yaw moment Mz ≈ ΔFx·tf/2 (tf: front track) that ESC and steering must counter. The article does not say whether the brake circuit is front/rear or diagonal split, nor why the hose degrades; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/811927/mercedes-benz-recalls-30-064/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-14-brembo-boldika",
+   "date": "2026-10-14",
+   "kind": "flash",
+   "cat": "supplier",
+   "region": "Global",
+   "tags": [
+    "シャシー"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ブレンボ、大型ピックアップ/SUV向け6ポット固定キャリパー「BOLDIKA」発表：制動トルク8,500Nm超、シルバラードEVに初採用",
+    "summary": "ブレンボは大型ピックアップとSUV向けの6ピストン固定式アルミキャリパー「BOLDIKA」を発表した。同社の乗用車用キャリパーで最大となる8,500Nm超の制動トルクを持ち、EVとエンジン車の両方に対応する。アルミ製ハーフ2つをボルト結合し鋳鉄製センターブリッジを組み合わせた3ピース構造（特許出願中）で、20インチ以上のホイールに収まり、2026年にシボレー『シルバラードEV RST Stars and Steel Edition』で初搭載される。",
+    "note": "制動トルクの式：T = 2·μp·Fc·r_eff（両面パッド、Fc：片側押付け力、r_eff：有効半径）。仮定値 μp=0.4、r_eff=0.17m なら 8,500Nm に必要な Fc ≈ 8,500/(2×0.4×0.17) ≈ 62.5kN。液圧15MPa（仮定値）なら片側ピストン総面積は約4.2×10⁻³m²、3ピストン均等なら1個あたり直径約42mm相当。必要量の目安：車両質量4,000kg、1g制動、前輪分担0.65、タイヤ半径0.42m（いずれも仮定値）で前輪1輪あたり 4,000×9.81×0.65/2×0.42 ≈ 5.4kNm となり、8,500Nmは連続制動・熱容量を含めた余裕と推測。鋳鉄ブリッジ併用はキャリパー開き（剛性不足によるペダルストローク増）を抑える狙いと考えられる（推測）。"
+   },
+   "en": {
+    "title": "Brembo unveils BOLDIKA six-piston fixed caliper for heavy pickups and SUVs: over 8,500 Nm braking torque, debuting on the Silverado EV",
+    "summary": "Brembo has launched BOLDIKA, a six-piston fixed aluminum caliper for heavy pickups and SUVs. It delivers more than 8,500 Nm of braking torque, the highest of any Brembo passenger-car caliper, and works for both EVs and combustion vehicles. Its patent-pending three-piece design bolts two aluminum halves together with a cast-iron center bridge, fits 20-inch and larger wheels, and will first appear in 2026 on the Chevrolet Silverado EV RST Stars and Steel Edition.",
+    "note": "Braking torque: T = 2·μp·Fc·r_eff (two pad faces, Fc: clamp force per side, r_eff: effective radius). With assumed μp = 0.4 and r_eff = 0.17 m, 8,500 Nm needs Fc ≈ 8,500/(2 × 0.4 × 0.17) ≈ 62.5 kN. At an assumed 15 MPa line pressure, total piston area per side is about 4.2 × 10⁻³ m², or roughly 42 mm diameter per piston if three are equal. For scale, a 4,000 kg vehicle at 1 g with 65% front share and a 0.42 m tire radius (all assumed) needs about 4,000 × 9.81 × 0.65/2 × 0.42 ≈ 5.4 kNm per front wheel, so 8,500 Nm likely leaves margin for repeated stops and heat capacity (speculation). The cast-iron bridge is probably there to limit caliper spread, which would otherwise lengthen pedal travel (speculation)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/14/417772.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-14-daihatsu-ammonia-engine",
+   "date": "2026-10-14",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "JP",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ダイハツ、軽自動車向け「アンモニア/水素混焼エンジン」実機を初公開：660ccに改質器を搭載、2030年代実用化目標",
+    "summary": "ダイハツ工業はジャパンモビリティショービズウィーク2026（10月13日開幕）で、アンモニアと水素を混ぜて燃やすエンジンの実機を初めて展示した。660ccの軽自動車用エンジン上部に、アンモニアから水素を取り出すプラズマリアクタ改質器と触媒改質器を取り付けている。軽自動車用として2030年代の実用化を目指す。",
+    "note": "改質反応：2NH₃ → N₂ + 3H₂（吸熱、ΔH ≈ +46kJ/mol-NH₃、一般値）。アンモニア単体は層流燃焼速度が低く（ガソリン約40cm/sに対し約7cm/s程度とされる、一般値・要確認）着火・燃焼が遅いため、改質で得た燃焼速度の高いH₂を混ぜて燃焼を安定させる構成と考えられる。混焼率 x_H2 を上げるほど燃焼は安定するが改質の吸熱分だけ排熱回収が必要になる。CO₂は出ないが、燃料中の窒素由来のNOxや未燃NH₃、N₂O（温室効果ガス）の後処理が課題になる（一般論、記事に記載なし）。出力・熱効率・混焼比率の数値は記事に記載なし。"
+   },
+   "en": {
+    "title": "Daihatsu shows an ammonia/hydrogen co-firing engine for kei cars: 660 cc with onboard reformers, targeting the 2030s",
+    "summary": "Daihatsu displayed a working ammonia/hydrogen co-firing engine for the first time at Japan Mobility Show Bizweek 2026, which opened on October 13. A plasma-reactor reformer and a catalytic reformer that extract hydrogen from ammonia sit on top of a 660 cc kei-car engine. The company aims to bring it to market for kei cars in the 2030s.",
+    "note": "Reforming reaction: 2NH₃ → N₂ + 3H₂ (endothermic, ΔH ≈ +46 kJ per mol NH₃, general value). Ammonia alone has a low laminar burning velocity (around 7 cm/s versus about 40 cm/s for gasoline, general values; needs confirmation), so ignition and combustion are slow; mixing in fast-burning H₂ from the reformer likely stabilizes combustion. A higher hydrogen fraction improves stability but requires more heat recovery to drive the endothermic reforming. There is no CO₂, but NOx from fuel-bound nitrogen, unburned NH₃ and N₂O (a greenhouse gas) need aftertreatment (general point, not in the article). The article gives no figures for output, thermal efficiency or blend ratio."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/14/417762.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-14-gbt-ssb-series",
+   "date": "2026-10-14",
+   "kind": "flash",
+   "cat": "supplier",
+   "region": "CN",
+   "tags": [
+    "電池"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "GAC系の巨湾技研（GBT）、全固体電池セルの量産を広州で開始：初期能力1GWh、GB/T 48093.1-2026認証取得",
+    "summary": "GAC（広汽集団）が支援する電池メーカーGreater Bay Technology（GBT）は10月13日、広州・南沙工場で全固体電池セルの量産を始めた。既存のリチウムイオン電池ラインを転用し、全固体セルの能力は1GWhで、需要に応じて工場全体の4GWhまで転換できる。同社は中国規格GB/T 48093.1-2026の要件で試験・認証された最初のセルだとしている。",
+    "note": "規模感：1GWh/年を1台あたり60kWh（仮定値）で割ると約16,700台分/年。全固体電池の多くは硫化物系電解質を使い、H₂S発生を避けるため無酸素・極低露点の環境が要る（記事の一般説明）。GBTのセルが硫化物系か、またエネルギー密度・サイクル寿命の数値は記事に記載がなく要確認。既存Li-ionライン転用で立ち上げた点は、硫化物系でない可能性または乾燥工程を追加した可能性があり（推測）、要確認。"
+   },
+   "en": {
+    "title": "GAC-backed GBT starts series production of all-solid-state cells in Guangzhou: 1 GWh initial capacity, certified to GB/T 48093.1-2026",
+    "summary": "Greater Bay Technology (GBT), a battery maker backed by GAC Group, began series production of all-solid-state cells at its Nansha plant near Guangzhou on October 13. It converted an existing lithium-ion line, giving 1 GWh of solid-state capacity, and the rest of the 4 GWh plant can be switched over if demand grows. GBT says its cells are the first tested and certified to China's GB/T 48093.1-2026 standard.",
+    "note": "Scale: 1 GWh per year divided by an assumed 60 kWh per vehicle is about 16,700 vehicles per year. Many solid-state programs use sulfide electrolytes, which need oxygen-free, extremely dry processing to avoid H₂S (general explanation in the article). Whether GBT's cells are sulfide-based, and their energy density and cycle life, are not stated; needs confirmation. Converting an existing Li-ion line suggests either a non-sulfide chemistry or added drying steps (speculation); needs confirmation."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/14/gbt-begins-series-production-of-solid-state-battery-cells/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-14-vw-lineup-halve",
+   "date": "2026-10-14",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "VWブランド、2035年に車種ラインアップを半減へ：シェーファーCEO「自然な移行」で絞り込み",
+    "summary": "フォルクスワーゲンのブランドCEOトーマス・シェーファー氏はパリモーターショーで、2035年時点の理想のポートフォリオを検討した結果、車種数が現在の半分になると説明した。欧州の2035年エンジン車販売終了を受け、ポロとID.ポロ、T-クロスとID.クロスのようなエンジン車とEVの並行設定がなくなることで削減が進むとしている。今後のモデルは「シナジーグループ」単位で管理し、同じ市場領域でモデルが競合しないようにする。",
+    "note": "技術的な含意（推測）：ICE/EVの並行車種がなくなると、同一セグメントで車両運動制御の適合（ESC・トルク配分・サスペンション）を2系統持つ必要が減り、プラットフォームあたりの適合工数が下がる可能性がある。一方で一車種あたりの派生（駆動方式・出力違い）が増える可能性もあり、具体的な削減車種名・時期は記事に記載なし、要確認。"
+   },
+   "en": {
+    "title": "VW brand to halve its line-up by 2035: CEO Schäfer calls it a 'natural transition'",
+    "summary": "Volkswagen brand CEO Thomas Schäfer said at the Paris Motor Show that a review of the ideal 2035 portfolio produced a line-up half the current size. With combustion-car sales ending in Europe in 2035, pairs such as the Polo and ID. Polo or the T-Cross and ID. Cross will no longer coexist, which drives the reduction. Future models will be managed in 'synergy groups' so they do not compete for the same customers.",
+    "note": "Technical implication (speculation): once parallel ICE and EV models disappear, a segment no longer needs two separate vehicle-dynamics calibrations (ESC, torque split, suspension), which could cut calibration work per platform. On the other hand, each remaining model may gain more derivatives (drivetrain or power variants). The article names no specific models or timing for the cuts; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/motor-shows-paris-motor-show/volkswagen-gradually-halve-line-through-natural-transition"
+    }
+   ]
+  },
   {
    "id": "2026-10-13-proterial-fev-amorphous-motor",
    "date": "2026-10-13",
