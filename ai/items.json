@@ -1,6 +1,103 @@
 {
-  "updated": "2026-10-15T07:30:00+09:00",
+  "updated": "2026-10-16T07:25:00+09:00",
   "items": [
+    {
+      "id": "2026-10-16-meta-muse-spark-open",
+      "date": "2026-10-16",
+      "kind": "flash",
+      "cat": "model",
+      "level": "intermediate",
+      "tags": [
+        "モデル",
+        "コーディング",
+        "エージェント"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "Meta、公開モデル「Muse Spark Open」を公開：総パラメータ8160億（稼働420億）、100万トークン対応、Mac Studio 2台で動作",
+        "summary": "Metaが10月15日（米国時間）、重みを公開するモデル「Muse Spark Open」を発表した。総パラメータ8160億のうち1回の処理で動くのは420億で、文脈長は最大100万トークン、テキスト・画像・動画・音声を扱い、用途はコーディングとエージェント作業を想定している。Appleと組み、M5 Ultra搭載Mac Studio 2台（各512GBの統合メモリ）とMLXで手元実行できるとしており、Metaの評価ではQwen 3.8、GLM 5.3、Kimi K3を複数項目で上回る一方、同社の有料モデルMuse Wonder Fullには届かない。",
+        "note": "仕事での使いどころ：社外にデータを出せない設計資料やコードを、社内設置の機器で処理する選択肢になる。中国製公開モデルを社内規程で使いにくい場合の米国製の代替候補。注意点：手元実行には合計約1TBのメモリが必要で、一般的な業務PCでは動かない。性能はMeta自身の評価で、第三者の検証結果は記事データにない（要確認）。商用利用の許諾条件も記事データからは不明（要確認）。"
+      },
+      "en": {
+        "title": "Meta releases open-weight model Muse Spark Open: 816B total parameters (42B active), 1M-token context, runs on two Mac Studios",
+        "summary": "On October 15 (US time), Meta announced Muse Spark Open, a model with publicly released weights. It has 816 billion parameters in total, 42 billion of which are active per step, a context window of up to one million tokens, and handles text, images, video and audio, with coding and agent tasks as its target use. Working with Apple, Meta says it can run locally on two M5 Ultra Mac Studios (512 GB of unified memory each) using MLX; by Meta's own evaluation it beats Qwen 3.8, GLM 5.3 and Kimi K3 in several categories but falls short of Meta's paid Muse Wonder Full.",
+        "note": "Where it helps at work: an option for processing design documents or code that cannot leave the company, on hardware installed in-house. It is also a US-made alternative where internal rules make Chinese open models hard to use. Cautions: local use needs about 1 TB of memory in total, so it will not run on a normal office PC. The performance figures are Meta's own; no third-party verification appears in the article data (to be confirmed). The license terms for commercial use are also not stated in the article data (to be confirmed)."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/muse-spark-open-is-metas-answer-to-qwen-glm-and-kimi-in-the-open-weight-race/"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-16-bitforest-ai-agent-attack",
+      "date": "2026-10-15",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "エージェント"
+      ],
+      "prio": 3,
+      "conf": "primary",
+      "ja": {
+        "title": "国内企業のWebサイトにAIエージェントによる攻撃、WAF事業者ビットフォレストが観測。1件は8時間弱で10段階に手口を変化",
+        "summary": "クラウド型WAFを提供するビットフォレストは10月14日、攻撃元がAIエージェントかを判定する仕組みを入れたところ、10日夜から14日までに少なくとも3つのIPアドレスから日本企業のWebサイトへの攻撃を確認したと公表した。最長の1件は8時間弱続き、毎秒約35件・計約1万件のスキャン、既知の脆弱性への攻撃、約250回のログイン総当たりと手口を10段階で切り替えた。残る2件は問い合わせフォームへの連続投稿を含む5段階の攻撃と、約1000件のスキャンのみで、3件は別の攻撃者の可能性があるという。",
+        "note": "仕事での使いどころ：自社・部署で公開しているWebサイトや問い合わせフォーム、ログイン画面について、総当たり対策（回数制限）とWAFの設定状況を情シスに確認する材料になる。注意点：同社の判定は「検知したものはAIエージェントと断定できるが、すべてを拾えるわけではない」としており、実際の件数はこれより多い可能性がある（推測）。被害の有無は記事データにない（要確認）。"
+      },
+      "en": {
+        "title": "WAF provider BitForest observes AI-agent attacks on Japanese company websites; one switched tactics in 10 stages over nearly 8 hours",
+        "summary": "On October 14, BitForest, which offers a cloud-based web application firewall, said that after deploying a mechanism to judge whether an attacker is an AI agent, it confirmed attacks on Japanese companies' websites from at least three IP addresses between the night of the 10th and the 14th. The longest lasted almost eight hours and moved through 10 stages: about 10,000 scans at roughly 35 per second, attacks on known vulnerabilities, and about 250 brute-force login attempts. The other two were a five-stage attack that included repeated posts to a contact form and a scan of about 1,000 requests only; the company says the three may come from different attackers.",
+        "note": "Where it helps at work: use it to ask IT about brute-force protection (attempt limits) and WAF settings for any websites, contact forms or login pages your company or department exposes. Cautions: the company says its method can say for sure that what it catches is an AI agent but cannot catch every one, so the real number may be higher (speculation). Whether any damage occurred is not in the article data (to be confirmed)."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2610/15/2000002284/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-16-nvidia-nemotron-35-super-vl",
+      "date": "2026-10-16",
+      "kind": "flash",
+      "cat": "model",
+      "level": "advanced",
+      "tags": [
+        "モデル",
+        "エージェント",
+        "データ分析"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Nvidia、企業エージェント向け公開モデル「Nemotron 3.5 Super VL」（1200億パラメータ）を公開。24GB機で動く小型版も",
+        "summary": "Nvidiaが、テキスト・画像・文書・動画を扱う1200億パラメータの公開マルチモーダルモデル「Nemotron 3.5 Super VL」を公開した。バックグラウンドで常時動く業務エージェントや文書解析を想定している。手元の機器向けに小型の「Bolt」2種があり、強く圧縮した版はメモリ24GB以上の機器、後日出す4GB版は音声アシスタント向けとしている。",
+        "note": "仕事での使いどころ：図表入りの社内文書や報告書を社内環境で読み取らせる用途の候補。24GB版は社内のGPU付きPCでの試行対象になりうる。注意点：性能を引き出すにはNvidia製ハードウェアが前提とされる。ベンチマーク値やライセンス条件は記事データにない（要確認）。"
+      },
+      "en": {
+        "title": "Nvidia releases Nemotron 3.5 Super VL, a 120B-parameter open model for enterprise agents, plus small versions that run on 24 GB machines",
+        "summary": "Nvidia has released Nemotron 3.5 Super VL, an open multimodal model with 120 billion parameters that handles text, images, documents and video. It is aimed at business agents that run continuously in the background and at document analysis. For local machines there are two small Bolt models: a heavily compressed one for systems with 24 GB of memory or more, and a 4 GB version, coming later, for voice assistants.",
+        "note": "Where it helps at work: a candidate for reading internal documents and reports that contain figures and tables inside the company's own environment. The 24 GB version could be tried on an in-house PC with a GPU. Cautions: getting the most out of it reportedly assumes Nvidia hardware. Benchmark scores and license terms are not in the article data (to be confirmed)."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/nvidias-nemotron-3-5-super-vl-is-an-open-model-built-to-run-enterprise-ai-agents-nonstop/"
+        }
+      ]
+    },
     {
       "id": "2026-10-15-openai-insider-leaks",
       "date": "2026-10-15",
