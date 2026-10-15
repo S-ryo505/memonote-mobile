@@ -1,6 +1,156 @@
 {
- "updated": "2026-10-15T07:00:00+09:00",
+ "updated": "2026-10-16T06:52:54+09:00",
  "items": [
+  {
+   "id": "2026-10-15-maextro-v800-brake-probe",
+   "date": "2026-10-15",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "CN",
+   "tags": [
+    "シャシー",
+    "品質",
+    "規制"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "中国、3政府機関が尊界（Maextro）V800のブレーキペダルブラケット破損を合同調査",
+    "summary": "ファーウェイとJACが共同開発した高級MPV「Maextro V800」で、試験中にブレーキペダルのブラケットが破損した問題について、中国の政府機関3者が合同調査チームを設置した。発端は約1週間前に自動車情報サイト「懂車帝（Dongchedi）」が公開した試験動画で、メーカー側は追加情報を適時公表するとの声明を出している。",
+    "note": "ペダルブラケットにかかる荷重：踏力Fp、ペダルレバー比ip（支点〜踏面距離／支点〜プッシュロッド距離）とすると、プッシュロッド力 F = Fp·ip、ブラケット（支点）には反力 Fp+F = Fp·(1+ip) が作用する。仮定値 Fp=500N（パニックブレーキ相当）、ip=4 で約2,500N。V800がブースタ付き油圧式か電子制御ブレーキ（EHB/by-wire）か、破損した試験の条件（荷重・回数）は記事に記載がなく要確認。調査の3機関名も記事中に記載なし。"
+   },
+   "en": {
+    "title": "Three Chinese government agencies launch joint probe into brake pedal bracket failures on the Maextro V800",
+    "summary": "Three Chinese government agencies have set up a joint investigation team after the brake pedal bracket of the Maextro V800, a luxury MPV co-developed by Huawei and JAC, broke during a test. The issue surfaced about a week earlier when the auto platform Dongchedi published a video of the tests, and the company has said it will release further information in a timely manner.",
+    "note": "Load on the pedal bracket: with pedal force Fp and pedal lever ratio ip (pivot-to-pad distance / pivot-to-pushrod distance), the pushrod force is F = Fp·ip, and the bracket (pivot) sees a reaction of Fp + F = Fp·(1 + ip). With assumed values Fp = 500 N (panic stop) and ip = 4, that is about 2,500 N. The article does not say whether the V800 uses a boosted hydraulic system or an electronic brake (EHB/by-wire), nor the test conditions (load, cycles); needs confirmation. The three agencies are not named in the article."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/15/china-joint-probe-maextro-v800-brake-pedal-bracket-failures/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-toyota-rav4-phev-recall",
+   "date": "2026-10-15",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "PT",
+    "品質"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、米国で2026年型RAV4 PHEV約3.1万台をリコール：ECUソフト不具合で走行中に駆動力が失われるおそれ",
+    "summary": "トヨタは米国で2026年モデルのRAV4プラグインハイブリッド約31,000台について連邦当局にリコールを届け出た。ECUのソフトウェア不具合により、走行中に動力が遮断される可能性がある。対策は販売店での無償ソフトウェア更新。",
+    "note": "走行中に駆動力がゼロになった場合の減速度は、ブレーキ・回生なしで a = −(m·g·Cr + ½·ρ·Cd·A·v²)/m。仮定値 m=2,000kg、Cr=0.01、ρ=1.2kg/m³、Cd·A=0.9m²、v=27.8m/s（100km/h）で、転がり抵抗196N＋空気抵抗417N＝613N、a≈−0.31m/s²（約0.03G）。急減速ではないが、追い越し・合流中に加速できなくなる点が危険要因。どのモーター・ECUか、回生やブレーキ・操舵アシストへの影響は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Toyota recalls about 31,000 2026 RAV4 plug-in hybrids in the US over an ECU software fault that can cut power while driving",
+    "summary": "Toyota has filed a federal recall in the United States covering about 31,000 units of the 2026 RAV4 Plug-In Hybrid. An ECU software fault can cut power at speed. The fix is a free software update at dealers.",
+    "note": "If drive force drops to zero while moving, the deceleration without braking or regen is a = −(m·g·Cr + ½·ρ·Cd·A·v²)/m. With assumed values m = 2,000 kg, Cr = 0.01, ρ = 1.2 kg/m³, Cd·A = 0.9 m² and v = 27.8 m/s (100 km/h): rolling 196 N + aero 417 N = 613 N, so a ≈ −0.31 m/s² (about 0.03 g). That is not hard braking, but losing acceleration while passing or merging is the hazard. The article does not say which motor or ECU is involved, or whether regen, brakes or steering assist are affected; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/812057/toyota-rav4-plug-hybrid-recall/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-cn-nev-export-vat-rebate",
+   "date": "2026-10-15",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "CN",
+   "tags": [
+    "規制",
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "中国、NEV輸出の増値税還付率を13%→9%に引き下げ：2027年4月1日から",
+    "summary": "中国の財政部と国家税務総局は、BEV・乗用PHEV・電動バス・電動トラクターヘッドの輸出に対する増値税（VAT）還付率を、2027年4月1日から現行の13%から9%へ下げると発表した。13%の還付はこれまで車両生産で購入した部品・材料にかかるVATを全額カバーしていた。国内販売が落ち込む中、輸出を成長源とする中国メーカーのコスト負担が増える。",
+    "note": "影響の概算（推測・要確認）：中国の輸出還付は一般に輸出額（FOB）×還付率で計算され、還付されない部分 ≈ FOB×(13%−9%) が原価増になる。仮定値 FOB=20,000USD/台なら約800USD/台。実際の負担は仕入れVAT額や「免抵退」方式の適用で変わる。"
+   },
+   "en": {
+    "title": "China cuts export VAT rebate for NEVs from 13% to 9% starting April 1, 2027",
+    "summary": "China's Ministry of Finance and State Taxation Administration announced that the VAT rebate on exports of BEVs, passenger plug-in hybrids, electric buses and electric tractor units will drop from 13% to 9% from April 1, 2027. The 13% rebate had covered all of the VAT paid on goods purchased for vehicle production. The move adds cost pressure on Chinese automakers that rely on exports for growth while domestic sales are falling.",
+    "note": "Rough impact (speculative, needs confirmation): China's export rebate is generally calculated as export value (FOB) × rebate rate, so the non-refunded part ≈ FOB × (13% − 9%) becomes extra cost. With an assumed FOB of USD 20,000 per vehicle, that is about USD 800 per vehicle. The actual burden depends on input VAT and on how the exemption-credit-refund method applies."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/15/chinese-government-cuts-state-subsidies-for-ev-manufacturers/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-bmw-gen6-shenyang",
+   "date": "2026-10-15",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "CN",
+   "tags": [
+    "電池",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BMW、瀋陽でノイエ・クラッセ用第6世代電池の量産開始：i3ロングホイールベースは実走1,213kmを記録",
+    "summary": "BMWは中国・瀋陽で、ノイエ・クラッセ向け第6世代高電圧バッテリーの量産を始めた。デブレツェン、イルバッハ＝シュトラスキルヒェンに続く電池網の3拠点目で、約100億元の電池プロジェクトとしてまず中国生産のiX3とi3に供給する。同時に、ロングホイールベース版i3 50Lが充電なしの実走試験で1,213kmを走ったと発表した。",
+    "note": "第6世代は直径46mm、高さ95mmと120mmの大型円筒セル（4695／46120）。セル体積 V=π·r²·h で、4695≈158cm³、46120≈199cm³（比1.26）、従来の2170（≈24cm³）の約6.5〜8.2倍。容量は体積にほぼ比例すると見れば（推測）、同じパック容量でセル数・溶接点数を大きく減らせる。記事では前世代比でエネルギー密度+20%超、充電速度と航続距離は最大+30%。1,213km試験の速度・気温などの条件は記載がなく要確認。"
+   },
+   "en": {
+    "title": "BMW starts Gen 6 battery production for the Neue Klasse in Shenyang; long-wheelbase i3 covers 1,213 km in a real-world test",
+    "summary": "BMW has started series production of its sixth-generation high-voltage batteries for the Neue Klasse in Shenyang, China. It is the third site in the battery network after Debrecen and Irlbach-Straßkirchen, and the roughly 10-billion-yuan project will first supply the China-built iX3 and i3. BMW also said the long-wheelbase i3 50L drove 1,213 km without recharging in a real-world road test.",
+    "note": "Gen 6 uses large cylindrical cells 46 mm in diameter in two heights, 95 mm and 120 mm (4695/46120). With cell volume V = π·r²·h, a 4695 is about 158 cm³ and a 46120 about 199 cm³ (ratio 1.26), roughly 6.5–8.2 times a 2170 cell (about 24 cm³). If capacity scales roughly with volume (speculative), the same pack capacity needs far fewer cells and weld points. The article cites over 20% higher energy density and up to 30% better charging speed and range versus the previous generation. Test conditions for the 1,213 km run (speed, temperature) are not given; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/15/bmw-launches-sixth-gen-battery-production-in-shenyang/"
+    },
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/15/bmw-starts-gen-6-battery-production-china/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-honda-applied-intuition-sdv",
+   "date": "2026-10-15",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "戦略",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "ホンダ、米Applied Intuitionと次世代SDV開発で提携：「Vehicle OS」で自社SDV基盤の開発を加速",
+    "summary": "米カリフォルニア州のソフトウェア企業Applied Intuitionは、ホンダと次世代ソフトウェア定義車両（SDV）開発で提携すると発表した。同社の「Vehicle OS」と開発ツールを使い、ホンダが社内で開発している集約型・アップデート可能なSDVプラットフォームの開発を早める。ホンダの技術者とApplied Intuitionの日本・シリコンバレーのソフトウェアチームが共同で、幅広い車種向けに開発を進める。",
+    "note": "SDVの集約化（一般論）：機能ごとの多数のECUを、少数の高性能計算機＋ゾーンECUにまとめ、OTAで制御ソフトを更新できる構成にする。車両運動制御では、ブレーキ・操舵・駆動の各アクチュエータを統合制御（ヨーモーメント配分など）しやすくなる一方、制御周期・通信遅延の管理が課題となる。ホンダの具体的なアーキテクチャや対象車種・時期は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Honda partners with Applied Intuition on next-generation SDVs, using 'Vehicle OS' to speed up its in-house platform",
+    "summary": "California-based software company Applied Intuition announced a partnership with Honda to develop next-generation software-defined vehicles (SDVs). Using its Vehicle OS and development tools, it aims to accelerate Honda's in-house development of a centralized, upgradable SDV platform. Honda engineers and Applied Intuition software teams in Japan and Silicon Valley will work together on the platform for a wide range of vehicles.",
+    "note": "SDV centralization (general background): many function-specific ECUs are consolidated into a few high-performance computers plus zone ECUs, so control software can be updated over the air. For vehicle dynamics, this makes integrated control of brake, steering and drive actuators (e.g., yaw-moment allocation) easier, while control cycle times and communication latency must be managed. Honda's specific architecture, target models and timing are not in the article; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/15/417801.html"
+    }
+   ]
+  },
   {
    "id": "2026-10-15-mb-sclass-brake-hose-recall",
    "date": "2026-10-15",
