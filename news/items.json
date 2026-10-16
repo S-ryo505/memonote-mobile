@@ -1,6 +1,689 @@
 {
- "updated": "2026-10-16T06:52:54+09:00",
+ "updated": "2026-10-17T06:55:00+09:00",
  "items": [
+  {
+   "id": "2026-10-16-vw-id-battery-recall-eu",
+   "date": "2026-10-16",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "電池",
+    "品質"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "VW、欧州でもID.シリーズの高電圧電池リコールを準備：OTAで充電上限を80%に制限",
+    "summary": "米国でのID.4（22,524台）に続き、VWはドイツなど欧州でID.3/ID.4/ID.7/ID. Buzz、Cupra Bornを対象とする電池リコールを準備している。英国では特定サプライヤー製の2022〜2025年生産の電池が対象とされ、当面はOTAで最大充電率を80%に制限し、工場で電池または個別セルモジュールを点検する。2023〜2025年に生産された該当車種は約66万台とされるが、実際の対象台数は「数千台」と報じられている。",
+    "note": "SOC上限を80%にするのは、満充電付近で正極電位が高くなり、内部短絡（異物・セパレータ欠陥）が熱暴走に進むリスクが上がるためと考えられる（推測）。セル単位のスクリーニング手順と恒久対策の内容は要確認。"
+   },
+   "en": {
+    "title": "VW prepares a high-voltage battery recall for ID. models in Europe, capping charge at 80% via OTA",
+    "summary": "Following the US recall of 22,524 ID.4s, VW is preparing a battery recall in Germany and other European markets covering the ID.3, ID.4, ID.7, ID. Buzz and Cupra Born. In the UK, the action concerns batteries from a specific supplier built between 2022 and 2025; the maximum charge will first be limited to 80% over the air, and workshops will inspect the pack or individual cell modules. Around 660,000 of these models were built in 2023–2025, but the number actually affected is reported as “several thousand”.",
+    "note": "Capping SOC at 80% is presumably meant to lower the cathode potential near full charge, reducing the chance that an internal short (contamination or separator defect) escalates into thermal runaway (speculation). The cell-level screening method and the permanent fix need confirmation."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/16/vw-prepares-battery-recall-for-multiple-id-models-in-europe/"
+    },
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/16/volkswagen-is-recalling-thousands-of-evs-including-the-id-4/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-16-te-phev-real-co2",
+   "date": "2026-10-16",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "PT"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "T&E分析：2024年登録のPHEV、実走CO2は公式値の約6倍に拡大",
+    "summary": "Transport & Environmentが欧州環境庁（EEA）のデータを分析し、2024年に登録されたPHEVの実走CO2排出量が公式値の平均約6倍だったとした。2023年の分析では約5倍だった。公式値との差による追加燃料費はPHEV1台あたり年平均680ユーロと試算している。",
+    "note": "背景はWLTPのユーティリティファクター（UF）。PHEVの公式CO2は CO2 = UF·CO2_CD + (1−UF)·CO2_CS（CD:充電消費モード、CS:充電維持モード）で重み付けされ、UFが実際の電動走行比率より高いと公式値が小さく出る。EUはUFを段階的に引き下げる改定（Euro 6e-bis等）を進めており、PHEVの規制上のCO2値は今後上がる方向。改定の適用時期の詳細は要確認。"
+   },
+   "en": {
+    "title": "T&E: real-world CO2 from PHEVs registered in 2024 was about six times the official figure",
+    "summary": "Transport & Environment analysed European Environment Agency data and found that PHEVs registered in 2024 emitted on average about six times more CO2 on the road than their official figures. In its 2023 analysis the factor was around five. T&E estimates the extra fuel cost versus official consumption at an average of €680 per year per PHEV.",
+    "note": "The root is the WLTP utility factor (UF). Official PHEV CO2 is weighted as CO2 = UF·CO2_CD + (1−UF)·CO2_CS (CD: charge-depleting, CS: charge-sustaining); if the UF is higher than the real electric-driving share, the official value comes out too low. The EU is lowering the UF in steps (e.g. Euro 6e-bis), so regulatory PHEV CO2 values will rise. Exact application dates need confirmation."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/16/plug-in-hybrids-emit-six-times-more-co2-than-officially-stated/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-honda-civic-s-plus-shift",
+   "date": "2026-10-15",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ホンダ、英国Civic e:HEVにプレリュードの疑似変速「S+ Shift」を追加",
+    "summary": "英国仕様のCivic（エンジンは主に発電用、走行は181bhpのモーター駆動）に、Preludeで採用した疑似変速と疑似エンジン音の「S+ Shift」が搭載される。中間グレードのSport（31日までの値引き込みで34,415ポンド）に標準装備され、Bose製オーディオを強化して疑似音を出す。上位のAdvance（37,495ポンド）にも装備される。",
+    "note": "シリーズ主体の2モーターHVでは車速とエンジン回転が機械的に結合しないため、加速時に回転だけ先に上がる「ラバーバンド感」が出やすい。S+ Shiftは仮想ギア比 i_v に対し N_eng ≈ i_v·v（v:車速）となるようエンジン回転（発電点）と音を制御し、モーター駆動トルクにも段付きの変化を加える方式と考えられる（推測）。燃費への影響は要確認。"
+   },
+   "en": {
+    "title": "Honda adds the Prelude's simulated-shift “S+ Shift” to the UK Civic e:HEV",
+    "summary": "The UK Civic, whose engine mainly generates electricity for a 181bhp drive motor, gains the Prelude's simulated gearbox and engine-sound system “S+ Shift”. It is standard on the mid-level Sport trim (£34,415 including a discount until 31 October 2026), which gets an upgraded Bose audio system to play the synthetic sound, and is also fitted to the top Advance grade (£37,495).",
+    "note": "In a mainly series two-motor hybrid, vehicle speed and engine speed are not mechanically linked, so revs can rise ahead of speed (the “rubber-band” feel). S+ Shift presumably controls engine speed (the generating point) and sound so that N_eng ≈ i_v·v for a virtual ratio i_v, and adds stepped changes to motor torque (speculation). The effect on fuel economy needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/new-cars/honda-civic-gains-preludes-simulated-gearbox-tech"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-16-hino-profia-scr-recall",
+   "date": "2026-10-16",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "品質",
+    "規制"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "日野、大型トラック「プロファイア」1,391台をリコール：E13CエンジンのDPR再生制御でSCR触媒が過熱",
+    "summary": "日野は10月7日、2017年6月〜2022年3月製造のプロファイア（4型式）1,391台のリコールを国交省に届け出た。E13Cの制御で、高回転高負荷でのDPR再生中にSCR触媒が想定より高温になり劣化が進むおそれ（発生0件）と、正常な触媒を劣化と誤判定し警告灯が点く不具合（273件）がある。対策はECUプログラムの書き換えと排気管への保温カバー追加で、事故報告はない。",
+    "note": "DPR（DPF）再生ではポスト噴射等で排気温度を上げてPMを燃焼させるが、下流の尿素SCR触媒（Cu/Fe-ゼオライト等）は高温で劣化しNOx浄化率が下がる。浄化率 η = 1 − NOx_out/NOx_in の低下がOBDの閾値を下回ると劣化判定されるが、判定ロジックの誤りで正常品が誤検出されていた。保温カバー追加の狙い（触媒温度分布の均一化か）は要確認。"
+   },
+   "en": {
+    "title": "Hino recalls 1,391 Profia heavy trucks: E13C DPR regeneration control can overheat the SCR catalyst",
+    "summary": "On October 7 Hino filed a recall with Japan's MLIT for 1,391 Profia trucks (four model codes) built between June 2017 and March 2022. In the E13C engine control, the SCR catalyst can get hotter than intended during DPR regeneration at high speed and load, accelerating its degradation (no cases reported), and a faulty catalyst-diagnosis routine can flag a healthy catalyst and light the warning lamp (273 cases). The fix is an ECU reflash plus an insulating cover on the exhaust pipe; no accidents were reported.",
+    "note": "DPR (DPF) regeneration raises exhaust temperature with post-injection to burn off soot, but the downstream urea SCR catalyst (e.g. Cu/Fe-zeolite) degrades at high temperature and loses NOx conversion. When η = 1 − NOx_out/NOx_in falls below the OBD threshold it is flagged; here a logic error flagged healthy units. The purpose of the added insulating cover (more uniform catalyst temperature?) needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/16/417887.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-renault-captur-etech-jp",
+   "date": "2026-10-15",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "ルノー「キャプチャー」新E-TECHを日本発売：1.8L化でシステム158PS、WLTC 24.5km/L、494万円",
+    "summary": "ルノー・ジャポンは10月15日、キャプチャー エスプリ アルピーヌに新フルハイブリッドE-TECHを搭載して発売した（494万円）。エンジンは1.6L NAから新開発の1.8L NA直4に変わり、94PS→109PS、148Nm→172Nm。駆動用電池は1.2→1.4kWh、システム出力は143→158PS、WLTC燃費は23.3→24.5km/Lに改善した。",
+    "note": "E-TECHは駆動モーターとHSG（高電圧スタータ兼発電機）の2モーターに、シンクロを持たない電子制御ドッグクラッチ式マルチモードATを組み合わせる。変速時はHSGでエンジン側の回転を合わせ（Δω→0）てからドッグを噛ませるため、シンクロ機構が不要になる。燃費改善率は (24.5−23.3)/23.3 ≈ 5.2%。"
+   },
+   "en": {
+    "title": "Renault launches the new E-TECH Captur in Japan: 1.8 L engine, 158 PS system output, 24.5 km/L WLTC, ¥4.94m",
+    "summary": "Renault Japon launched the Captur Esprit Alpine with the new full-hybrid E-TECH on October 15 at ¥4.94 million. The engine moves from a 1.6 L NA to a newly developed 1.8 L NA four (94→109 PS, 148→172 Nm), the traction battery grows from 1.2 to 1.4 kWh, system output rises from 143 to 158 PS, and WLTC fuel economy improves from 23.3 to 24.5 km/L.",
+    "note": "E-TECH pairs a traction motor and an HSG (high-voltage starter-generator) with a synchronizer-less, electronically controlled dog-clutch multi-mode gearbox. During shifts the HSG matches engine-side speed (Δω→0) before the dog engages, so no synchronizers are needed. The fuel-economy gain is (24.5−23.3)/23.3 ≈ 5.2%."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/16/417871.html"
+    },
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2148179.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-14-nissan-rogue-epower-wards",
+   "date": "2026-10-14",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "PT",
+    "4WD"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "日産「ローグ ハイブリッド」のe-POWER、Wards 10ベストエンジン＆推進システムに選出：EPA複合38mpg",
+    "summary": "日産は10月14日、米国初のe-POWER車となる新型ローグ ハイブリッドが2026年のWards「10ベストエンジン＆推進システム」に選ばれたと発表した（日産として通算25回目）。エンジン・発電機・インバーター・減速機・モーターを一体化した「5-in-1」構造で、前後2モーターで駆動する。SR（AWD）のEPA推定燃費は市街地41/高速36/複合38mpg、SVは3万5,490ドルから。",
+    "note": "mpg→km/L換算：1 mpg = 1.609 km / 3.785 L = 0.4251 km/L。複合38mpg ≈ 16.2km/L、高速36mpg ≈ 15.3km/L。シリーズ式は高速巡航で発電→駆動の変換損失（発電機・インバーター・モーター効率の積）が残るため、高速値が市街地値を下回る。前後モーターAWDは機械式プロペラシャフトを持たず、前後トルク配分を電気的に変えられる。"
+   },
+   "en": {
+    "title": "Nissan's Rogue Hybrid e-POWER named a Wards 10 Best Engines & Propulsion System: 38 mpg combined (EPA)",
+    "summary": "Nissan announced on October 14 that the new Rogue Hybrid, its first e-POWER model in the US, was named one of Wards' 2026 10 Best Engines & Propulsion Systems (Nissan's 25th win). It uses a “5-in-1” unit combining engine, generator, inverter, reducer and motor, with front and rear motors driving the wheels. The SR AWD is EPA-estimated at 41 city / 36 highway / 38 combined mpg; the SV starts at $35,490.",
+    "note": "mpg to km/L: 1 mpg = 1.609 km / 3.785 L = 0.4251 km/L, so 38 mpg combined ≈ 16.2 km/L and 36 mpg highway ≈ 15.3 km/L. In a series hybrid, highway cruising still carries the generator–inverter–motor conversion losses, so the highway figure is below the city figure. The dual-motor AWD has no propshaft, so front/rear torque split can be changed electrically."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/15/417797.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-12-avatr-t09-concept",
+   "date": "2026-10-12",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT",
+    "4WD"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "Avatr、パリでT09コンセプトを公開：エンジン＋3モーターで1,000hp超の6人乗りSUV",
+    "summary": "長安とCATLが主要株主のAvatrは10月11日のパリモーターショーで6人乗りSUV「T09」コンセプトを公開した。ガソリンエンジンと3基のモーターを組み合わせ、システム出力は1,000hpを超える。中国で9月に発表済みの量産型T09の海外版を示すもので、長安・ファーウェイ・CATLのハードウェアを使う。",
+    "note": "3モーター構成は一般に前1・後2で、後輪左右を独立駆動してトルクベクタリングを行う（Mz = (T_RR − T_RL)·t_r/(2·r_w)、t_r:後輪トレッド、r_w:タイヤ動半径）。T09のモーター配置とエンジンが発電専用か駆動にも使うかは記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Avatr shows the T09 concept in Paris: six-seat SUV with an engine plus three motors and over 1,000 hp",
+    "summary": "Avatr, majority-owned by Changan and CATL, unveiled the six-seat T09 concept at the Paris Motor Show on October 11. A petrol engine paired with three electric motors gives more than 1,000 hp. It previews the international version of the production T09 already revealed in China in September, using Changan, Huawei and CATL hardware.",
+    "note": "Three-motor layouts are typically one front and two rear, driving the rear wheels independently for torque vectoring (Mz = (T_RR − T_RL)·t_r/(2·r_w), t_r: rear track, r_w: tyre rolling radius). The T09's motor layout and whether the engine only generates or also drives are not stated and need confirmation."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/811595/avatr-t09-hybrid-suv-debuts/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-12-vw-id-era-8x-launch",
+   "date": "2026-10-12",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "上汽VW「ID. ERA 8X」EREVを発売：期間限定価格20.68万〜26.98万元、初のBEV「ID. ERA 5X」は11月",
+    "summary": "上汽VWは5人乗り大型EREV SUV「ID. ERA 8X」を4グレードで発売した。期間限定価格は206,800〜269,800元（公式指導価格は226,800〜289,800元）で、Li L6やAITO M6と競合する。ID. ERAシリーズの3車種目で、シリーズ初のBEV「ID. ERA 5X」は11月に発売される。",
+    "note": ""
+   },
+   "en": {
+    "title": "SAIC Volkswagen launches the ID. ERA 8X EREV from 206,800 yuan; the first BEV, ID. ERA 5X, follows in November",
+    "summary": "SAIC Volkswagen launched the five-seat ID. ERA 8X extended-range SUV in four variants at limited-time prices of 206,800–269,800 yuan (official guide prices 226,800–289,800 yuan), targeting the Li L6 and Aito M6. It is the third ID. ERA model; the line's first battery-electric model, the ID. ERA 5X, launches in November.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/12/vw-id-era-8x-launch-china/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-14-bmw-steyr-inverter",
+   "date": "2026-10-14",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "BMW、シュタイア工場に1億ユーロ超を投資：第6世代eモーター用インバーター・パワーモジュール部品を2029年夏から内製",
+    "summary": "BMWはオーストリア・シュタイア工場に1億ユーロ超を投じ、インバーター用パワーモジュール部品の製造設備を新設する。生産開始は2029年夏の予定。同工場は2025年2月に導入したノイエ・クラッセ用第6世代eモーターを既に2ラインで生産しており、今後は同部品の上流工程から組立までを担う。",
+    "note": "パワーモジュール（SiC/IGBTチップ、基板、焼結・封止）はインバーター損失と熱設計を左右する部品。導通損失 P_cond ≈ I_rms²·R_DS(on)、スイッチング損失 P_sw ∝ f_sw·V_dc·I で、内製化によりチップ選定と冷却構造を駆動ユニット側の制御と一体で最適化できる。SiCかIGBTかは記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "BMW invests over €100m in Steyr to make inverter power-module components for Gen6 e-motors from summer 2029",
+    "summary": "BMW will invest more than €100 million in a new facility at its Steyr plant in Austria to make inverter power-module components, with production due to start in summer 2029. Steyr already builds the Gen6 e-motor for Neue Klasse cars (introduced February 2025) on two lines and will take over both the upstream supply chain and assembly of this component.",
+    "note": "The power module (SiC/IGBT dies, substrate, sintering and encapsulation) sets inverter losses and thermal design. Conduction loss P_cond ≈ I_rms²·R_DS(on) and switching loss P_sw ∝ f_sw·V_dc·I; making it in-house lets BMW co-optimise die choice and cooling with the drive-unit control. Whether it is SiC or IGBT is not stated and needs confirmation."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/14/bmw-invests-over-e100-million-in-e-motor-production-in-steyr/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-12-toyota-celica-4wd-scoop",
+   "date": "2026-10-12",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "4WD"
+   ],
+   "prio": 2,
+   "conf": "rumor",
+   "ja": {
+    "title": "新型トヨタ「セリカ」、2.0Lターボ電動化＋4WDで検討との観測：6MT/8ATの設定も",
+    "summary": "新型セリカは2.0L直4ターボをベースにした電動パワートレインと4WDが検討されていると報じられた。6速MTと8速ATの設定も取り沙汰され、海外では「セリカスポーツ」の名称も挙がる。GR担当者は排出ガス規制対応で次世代スポーツ用エンジンに2.0L級を検討していると述べ、広報担当者が4WDの方向性を示したとされる。新開発2.0Lターボ「G20E」は、ミッドシップ4WDのGRヤリスMコンセプトでスーパー耐久に参戦している。",
+    "note": "スクープ記事が主体で、量産仕様は未確定（推測を含む）。G20Eをベースにした電動化の方式（P0/P2マイルドHVか、後輪モーターの電動AWDか）は不明で要確認。"
+   },
+   "en": {
+    "title": "Next Toyota Celica reportedly considered with an electrified 2.0 L turbo and 4WD, plus 6MT/8AT",
+    "summary": "The new Celica is reported to be under study with an electrified powertrain based on a 2.0 L turbo four and four-wheel drive, with 6-speed manual and 8-speed automatic options also rumoured; the name “Celica Sport” has surfaced overseas. A GR official said a 2.0 L-class engine is being considered for next-generation sports cars to meet emissions rules, and a spokesperson reportedly indicated a 4WD direction. The new 2.0 L turbo G20E already races in Super Taikyu in the mid-engined 4WD GR Yaris M Concept.",
+    "note": "Mostly a scoop; production specs are unconfirmed (includes speculation). How the G20E would be electrified (P0/P2 mild hybrid or an electric rear axle AWD) is unknown and needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/12/417669.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-10-chery-stockman-phev-diesel",
+   "date": "2026-10-10",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "Global",
+   "tags": [
+    "PT",
+    "4WD"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "奇瑞、ディーゼルPHEVピックアップ「Stockman」：2.5Lターボディーゼル＋電動で469hp/590lb-ft",
+    "summary": "奇瑞は2月のKP31コンセプトを発展させたピックアップ「Stockman」を投入する。パワートレインは2.5Lターボディーゼルのプラグインハイブリッドで469hp・590lb-ft（約800Nm）、牽引能力7,705lb（約3,495kg）、EV航続60マイル（約97km）。デフロックを3つ標準装備し、顧客への納車は来年早々に始まる予定。",
+    "note": "換算：590 lb-ft × 1.3558 = 約800Nm、7,705 lb × 0.4536 = 約3,495kg。BYD Shark 6、GWM Cannon Hi4-Tと同じ電動化ピックアップ市場を狙う。記事サマリーでは「後輪デフロック3つ」と読める表記だが、前・センター・後の3か所ロックと考えるのが自然で要確認。"
+   },
+   "en": {
+    "title": "Chery's Stockman diesel PHEV pickup: 2.5 L turbo-diesel plug-in hybrid with 469 hp and 590 lb-ft",
+    "summary": "Chery's Stockman, developed from the KP31 concept shown in February, uses a 2.5 L turbo-diesel plug-in hybrid with 469 hp and 590 lb-ft (about 800 Nm), a 7,705 lb (about 3,495 kg) towing rating and 60 miles (about 97 km) of electric range. Three locking differentials are standard, and customer deliveries are due to start early next year.",
+    "note": "Conversions: 590 lb-ft × 1.3558 ≈ 800 Nm; 7,705 lb × 0.4536 ≈ 3,495 kg. It targets the same electrified-pickup segment as the BYD Shark 6 and GWM Cannon Hi4-T. The summary reads as “three locking rear differentials”, but front/centre/rear lockers are more plausible; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2026/10/chery-stockman-plug-in-diesel-pickup-has-469-hp/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-13-bmw-m-manual-48v",
+   "date": "2026-10-13",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "BMW M部門トップ、48Vマイルドハイブリッド化でMTの継続は「非常に難しい」",
+    "summary": "BMW Mのフランク・ファン・ミール氏は、今後のMモデルでMTを残すのが難しい理由として、48Vマイルドハイブリッドの導入、エンジントルクの増大、MT供給サプライヤーの減少を挙げた。MTの廃止を正式に宣言したわけではない。米国のG87型M2では購入者の約半数が6速MTを選んでおり、現行のM4 CS（米国）は8速M Steptronicのみ。",
+    "note": "MTのトルク容量はクラッチの伝達トルク T_c = μ·F_n·r_m·z（z:摩擦面数）で決まり、800Nm級ではクラッチ径・踏力が増えて成立が難しくなる。48V ISG（P0/P2）はクラッチ断時の協調制御やエミッション認証上の扱いが複雑になる点も要因と考えられる（推測）。"
+   },
+   "en": {
+    "title": "BMW M boss: 48 V mild-hybrid tech makes keeping manuals “really difficult”",
+    "summary": "BMW M's Frank van Meel cited 48-volt mild-hybrid technology, rising engine torque and a shrinking supplier base as reasons future M manuals are hard to offer, without declaring the manual finished. About half of US G87 M2 buyers choose the six-speed manual, while the current US M4 CS is automatic-only with the eight-speed M Steptronic.",
+    "note": "A manual's torque capacity is set by clutch torque T_c = μ·F_n·r_m·z (z: friction faces); at around 800 Nm the clutch diameter and pedal force become hard to package. Coordinating a 48 V ISG (P0/P2) with an open clutch and handling it in emissions certification likely adds complexity (speculation)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/811763/bmw-m-manual-gearbox-48/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-porsche-cayenne-s-coupe-ev-test",
+   "date": "2026-10-15",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "シャシー",
+    "電池"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "ポルシェ Cayenne S Coupé Electric試乗：通常400kW/ローンチ490kW、急速充電390kWで10→80%を16分",
+    "summary": "electriveの試乗記。Cayenne Electricは2025年11月発表、2026年2月からブラチスラバで量産。Sは通常400kW・ローンチコントロール時490kWで0-100km/h 3.8秒・最高250km/h。ベースは300kW（325kW）・4.8秒・230km/h、Turboは630kW（850kW）・2.5秒・260km/h。急速充電は最大390kW、10→80%を16分で、2.5t超の車重でもコーナーで安定した挙動と評価している。",
+    "note": "平均充電電力の目安：電池容量を仮定値113kWh（記事に記載なし、要確認）とすると、0.7×113kWh/(16/60 h) ≈ 297kW。ピーク390kWに対し平均約3/4で、充電カーブの維持が長いことを示す（仮定値に基づく推定）。"
+   },
+   "en": {
+    "title": "Porsche Cayenne S Coupé Electric test: 400 kW (490 kW launch), 390 kW charging, 10–80% in 16 minutes",
+    "summary": "An electrive drive report. The Cayenne Electric premiered in November 2025 and entered series production in Bratislava in February 2026. The S makes 400 kW in normal driving and 490 kW with Launch Control, reaching 100 km/h in 3.8 s and 250 km/h; the base car has 300 kW (325 kW), 4.8 s and 230 km/h, and the Turbo 630 kW (850 kW), 2.5 s and 260 km/h. It charges at up to 390 kW, 10–80% in 16 minutes, and the tester found it calm and composed in corners despite weighing over 2.5 tonnes.",
+    "note": "Average charging power estimate: assuming a 113 kWh pack (assumed value, not in the article; needs confirmation), 0.7×113 kWh/(16/60 h) ≈ 297 kW, about three quarters of the 390 kW peak, indicating a long, flat charging curve (estimate based on an assumed value)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/15/porsche-cayenne-s-coupe-electric-test-the-ppe-has-moved-a-step-further/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-13-porsche-718-ev-weight",
+   "date": "2026-10-13",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "シャシー",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ポルシェ電動718の前後重量配分：後軸55.2%、先代エンジン車より50:50に近い",
+    "summary": "ポルシェの車両アーキテクチャ責任者ロベルト・マイヤー氏は、電動Boxster/Caymanは座席後方に電池を配置し、重量の55.2%が後軸にかかると明らかにした。先代モデルより50:50に近い配分になる。ライタースCEOは「911は決して電動化しない」と述べている。",
+    "note": "定常円旋回のスタビリティファクタ K = −(m/(2l²))·(l_f·K_f − l_r·K_r)/(K_f·K_r)（K_f,K_r:前後コーナリングパワー、l_f,l_r:重心〜前後軸距離）。後軸荷重比55.2%なら l_f/l = 0.552 で、前後タイヤ幅とコーナリングパワーの配分で弱アンダーステア（K>0）に合わせ込むことになる。電池の重心高さは記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Porsche's electric 718 will carry 55.2% of its weight on the rear axle, closer to 50:50 than before",
+    "summary": "Porsche's head of vehicle architecture Robert Meier said the electric Boxster and Cayman place the battery behind the seats and carry 55.2% of their weight over the rear axle, closer to 50:50 than the previous model. CEO Michael Leiters has said “the 911 will never be electric”.",
+    "note": "Steady-state cornering stability factor K = −(m/(2l²))·(l_f·K_f − l_r·K_r)/(K_f·K_r) (K_f, K_r: front/rear cornering stiffness; l_f, l_r: CG-to-axle distances). With 55.2% on the rear axle, l_f/l = 0.552, so tyre widths and cornering-stiffness split must be tuned for mild understeer (K>0). The battery's CG height is not stated and needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/811750/porsche-electric-718-batteries-instead-engine/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-porsche-mission-s",
+   "date": "2026-10-15",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "primary",
+   "ja": {
+    "title": "ポルシェ「Mission S」をニューヨークで公開：911の上に位置するミッドエンジン・スーパースポーツ用プラットフォームの将来像",
+    "summary": "ポルシェは10月15日（現地時間）、911の上位に位置する次世代ミッドエンジン・スーパースポーツ用プラットフォームを示すビジョンモデル「Mission S」を公開した。新デザイン責任者トビアス・ズールマン氏の下での初のコンセプトで、量産版の性能は911と918スパイダーの中間に位置づけるとされる。パワートレイン（エンジン形式・電動化）の詳細は公表情報からは確認できない。",
+    "note": ""
+   },
+   "en": {
+    "title": "Porsche unveils Mission S in New York, previewing a mid-engined supercar platform above the 911",
+    "summary": "On October 15 (local time) Porsche revealed the Mission S vision model, previewing a next-generation mid-engined super-sports platform positioned above the 911. It is the first concept under new design chief Tobias Sühlmann, and the production version is said to sit between the 911 and the 918 Spyder in performance. Powertrain details (engine type, electrification) could not be confirmed from the available information.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2148611.html"
+    },
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/new-cars/official-porsche-mission-s-previews-new-flagship-supercar"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-16-melco-foxconn-mobility",
+   "date": "2026-10-16",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "JP",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "primary",
+   "ja": {
+    "title": "三菱電機、自動車機器子会社「三菱電機モビリティ」の株式50%を鴻海系に譲渡し共同運営へ：譲渡額1,150億円見込み",
+    "summary": "三菱電機と鴻海精密工業の投資管理会社Lin Yinは10月16日、三菱電機モビリティを共同運営する戦略提携の最終契約を結んだ。三菱電機が発行済株式の50%をLin Yinへ譲渡し、譲渡額は1,150億円を見込む。事業の企業価値を3,200億円、株式価値を2,300億円として合意し、当局の承認を経て2027年10月に完了する予定。",
+    "note": ""
+   },
+   "en": {
+    "title": "Mitsubishi Electric to sell 50% of Mitsubishi Electric Mobility to a Foxconn affiliate for joint operation (about ¥115bn)",
+    "summary": "Mitsubishi Electric and Lin Yin, an investment arm of Hon Hai (Foxconn), signed a final agreement on October 16 to jointly run Mitsubishi Electric Mobility. Mitsubishi Electric will transfer 50% of the shares to Lin Yin for an expected ¥115 billion, based on an enterprise value of ¥320 billion and an equity value of ¥230 billion. Completion is planned for October 2027, subject to regulatory approvals.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2148964.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-mazda-yazaki-harness",
+   "date": "2026-10-15",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "JP",
+   "tags": [
+    "品質",
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "primary",
+   "ja": {
+    "title": "マツダと矢崎総業、新型CX-5でワイヤーハーネスの種類数を先代比約80%削減：生産の近場化・自動化",
+    "summary": "マツダと矢崎総業は10月15日、ワイヤーハーネス生産の近場化（車両工場の近くで完成品を作る）と自動化に向けた共同活動の成果を新型CX-5に初採用したと発表した。2022年初めから開発初期段階で連携し、自動化を前提に種類数・仕様・構造・製造工程を見直した結果、種類数を約80%減らした。",
+    "note": ""
+   },
+   "en": {
+    "title": "Mazda and Yazaki cut wiring-harness variants by about 80% on the new CX-5 through near-site, automated production",
+    "summary": "Mazda and Yazaki announced on October 15 that the results of their joint work on near-site (close to the vehicle plant) and automated wiring-harness production debut on the new CX-5. Working together from early development since early 2022, they reviewed variant count, specifications, structure and processes on the assumption of automation, cutting the number of harness variants by about 80%.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/16/417885.html"
+    },
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2148309.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-16-astemo-data-breach",
+   "date": "2026-10-16",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "JP",
+   "tags": [
+    "品質"
+   ],
+   "prio": 1,
+   "conf": "primary",
+   "ja": {
+    "title": "Astemo、委託先アカウント経由の不正アクセスでデータ流出：個人情報約350名分を確認",
+    "summary": "Astemoは10月16日、利用するデータ共有クラウドに第三者の不正アクセスがあり、データの一部が流出したと発表した。9月17日に脅迫を示唆する連絡があり、9月24日に委託先従業員のアカウントによる不審なダウンロードを特定した。9月2日頃に同アカウントでログイン異常と本人操作によらない多要素認証通知が発生しており、流出データには従業員や取引先関係者の個人情報約350名分が含まれる。",
+    "note": ""
+   },
+   "en": {
+    "title": "Astemo reports data leak via a contractor account: personal data of about 350 people confirmed",
+    "summary": "Astemo announced on October 16 that a third party accessed its shared cloud data environment and some data leaked. On September 17 employees received messages hinting at publication, and on September 24 suspicious downloads were traced to a contractor employee's account. Around September 2 that account showed login anomalies and MFA prompts not triggered by the user; the leaked data includes personal information on about 350 employees, supplier staff and partners.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2148822.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-changan-catl-75gwh",
+   "date": "2026-10-15",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "CN",
+   "tags": [
+    "電池",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "長安とCATL、合弁の電池生産能力を50GWh→75GWhへ拡大：全固体・ナトリウムイオンでも協力",
+    "summary": "長安が深セン証券取引所で開示した内容によると、CATLとの合弁の生産能力計画を50GWhから75GWhに引き上げる。追加25GWhの新拠点は重慶と四川の間のハイテク区に約70万m²で、投資額は約50億元。2027年に稼働を始め、3年で追加能力に到達する計画。両社は全固体電池とナトリウムイオン電池でも協力を深める。",
+    "note": "目安：25GWhを仮定値75kWh/台で割ると約33万台/年分（仮定値）。投資効率は50億元/25GWh = 2億元/GWh。"
+   },
+   "en": {
+    "title": "Changan and CATL raise their JV battery capacity plan from 50 GWh to 75 GWh, and will cooperate on solid-state and sodium-ion",
+    "summary": "According to Changan's filing on the Shenzhen Stock Exchange, the planned capacity of its joint venture with CATL rises from 50 GWh to 75 GWh. The extra 25 GWh comes from a new site of about 700,000 m² in a high-tech zone between Chongqing and Sichuan, costing about 5 billion yuan; it starts operating in 2027 and reaches full added capacity within three years. The partners will also cooperate more closely on solid-state and sodium-ion batteries.",
+    "note": "Rule of thumb: 25 GWh at an assumed 75 kWh per vehicle ≈ 330,000 vehicles a year (assumed value). Capex intensity: 5 billion yuan / 25 GWh = 0.2 billion yuan per GWh."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/15/changan-and-catl-to-expand-battery-capacity-to-75-gwh/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-cn-battery-installs-sept",
+   "date": "2026-10-15",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "CN",
+   "tags": [
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "中国の9月車載電池搭載量は87.2GWh（前年比+14.7%）で年内最高、LFP比率85.5%；CATL 40.92%、BYD 21.09%",
+    "summary": "CABIAによると、9月の中国の車載電池搭載量は87.2GWhで前年比+14.7%、前月比+10.4%となり、8月の79.0GWhを上回って年内最高となった。一方で前年比伸び率は7月33.5%、8月26.3%から2か月連続で縮小。LFPは前年比+19.9%で全体の85.5%、三元系は−10.9%。メーカー別はCATL 35.49GWh（40.92%）、BYD 18.29GWh（21.09%）、CALB 6.04GWh（6.97%）。",
+    "note": "LFP比率85.5%から LFP ≈ 0.855×87.2 ≈ 74.6GWh、三元系ほか ≈ 12.6GWh。CATLとBYDのシェア差は19.83ポイントで、4か月連続で縮小している。"
+   },
+   "en": {
+    "title": "China's September EV battery installations hit 87.2 GWh (+14.7% YoY), a 2026 high; LFP at 85.5%, CATL 40.92%, BYD 21.09%",
+    "summary": "According to CABIA, China installed 87.2 GWh of EV batteries in September, up 14.7% year on year and 10.4% month on month, beating August's 79.0 GWh for the year's monthly high. Growth slowed for a second month, from 33.5% in July and 26.3% in August. LFP rose 19.9% and made up 85.5% of the total, while ternary fell 10.9%. By supplier: CATL 35.49 GWh (40.92%), BYD 18.29 GWh (21.09%), CALB 6.04 GWh (6.97%).",
+    "note": "With an 85.5% share, LFP ≈ 0.855×87.2 ≈ 74.6 GWh and ternary/other ≈ 12.6 GWh. The CATL–BYD gap is 19.83 points and has narrowed for four straight months."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/15/china-ev-battery-installations-sept-2026/"
+    },
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/15/top-ev-battery-makers-share-china-sept-2026/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-16-nio-firefly-60kwh",
+   "date": "2026-10-16",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "電池"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "NIOのFirefly、CATL製60kWh電池を10月23日に追加：CLTC航続560km、既存オーナーも換装可",
+    "summary": "NIOの小型EVブランドFireflyは、現行の42.1kWhに加えCATL製の長寿命60kWh電池パックを10月23日に投入する。CLTC航続は560km。新規購入者と既存オーナーの両方が選べ、詳細は発表会で示される。",
+    "note": "電費の目安：60kWh/560km ≈ 107Wh/km（CLTC、充放電損失を無視）。容量比 60/42.1 ≈ 1.43倍。既存オーナー向けの選択肢は電池交換（BaaS）網を前提にした運用と考えられる（推測）。"
+   },
+   "en": {
+    "title": "Nio's Firefly gets a 60 kWh CATL pack on October 23: 560 km CLTC, available to existing owners too",
+    "summary": "Nio's small-EV brand Firefly, which currently offers only a 42.1 kWh pack, will add a 60 kWh long-life CATL pack on October 23 with a CLTC range of 560 km. Both new and existing owners will be able to choose it, with details due at the launch event.",
+    "note": "Consumption estimate: 60 kWh / 560 km ≈ 107 Wh/km (CLTC, ignoring charging losses). Capacity ratio 60/42.1 ≈ 1.43. Offering it to existing owners presumably relies on the battery-swap (BaaS) network (speculation)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/16/nio-launch-60-kwh-battery-pack-firefly-oct-23/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-13-prologium-rimac-ssb",
+   "date": "2026-10-13",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "EU",
+   "tags": [
+    "電池"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "ProLogiumとRimac Technology、固体電池パックの公道試験を2028年後半に計画",
+    "summary": "ProLogiumとRimac Technologyはパリモーターショーで次世代電池パックのモックアップを展示した。機能する電池セグメントをCES 2027で公開し、完全に機能するパックを2027年後半に完成させ、公道での車両試験を2028年後半に始める計画。",
+    "note": ""
+   },
+   "en": {
+    "title": "ProLogium and Rimac Technology plan public-road tests of a solid-state battery pack in H2 2028",
+    "summary": "ProLogium and Rimac Technology showed a next-generation battery-pack mock-up at the Paris Motor Show. A functional battery segment will be shown at CES 2027, a fully functional pack is planned for the second half of 2027, and public-road vehicle tests are due to start in the second half of 2028.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/13/prologium-and-rimac-target-2028-for-solid-state-battery-vehicle-tests/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-tesla-robotaxi-remote-ops",
+   "date": "2026-10-15",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "US",
+   "tags": [
+    "ADAS",
+    "規制"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "テスラRobotaxiのNHTSA報告：遠隔オペレーター操作中の衝突が計5件に、事故報告は36件",
+    "summary": "テスラがNHTSAへ提出した最新の事故報告で、自動運転システムではなく遠隔オペレーターが操作中の衝突が2件追加され計5件になった。Robotaxiの事故報告は7月の22件から36件に増えた。ダラスでは遠隔操作で前進中に約0.40mphで駐車SUVに接触し、オースティンでは路地で約1mphでゴミ箱に接触した。",
+    "note": ""
+   },
+   "en": {
+    "title": "Tesla Robotaxi NHTSA reports: five crashes now occurred under remote-operator control, 36 incidents in total",
+    "summary": "Tesla's latest crash reports to NHTSA add two Robotaxi crashes in which a remote operator, not the automated system, was driving, bringing the total to five. Unique Robotaxi incident reports rose from 22 in July to 36. In Dallas a remotely driven Model Y touched a parked SUV at about 0.40 mph, and in Austin one hit a dumpster in an alley at about 1 mph.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/15/tesla-remote-operators-crashing-robotaxis/"
+    }
+   ]
+  },
   {
    "id": "2026-10-15-maextro-v800-brake-probe",
    "date": "2026-10-15",
