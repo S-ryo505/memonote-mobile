@@ -1,6 +1,163 @@
 {
- "updated": "2026-10-17T06:55:00+09:00",
+ "updated": "2026-10-19T07:00:00+09:00",
  "items": [
+  {
+   "id": "2026-10-17-amg-gt-suv-reveal",
+   "date": "2026-10-17",
+   "kind": "flash",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "4WD",
+    "シャシー",
+    "電池"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "Mercedes-AMG「GT SUV」正式公開：アキシャルフラックス3モーターで最高1,153hp、DC充電710kW",
+    "summary": "AMGは専用EV基盤AMG.EAの第2弾として、自社開発のフルサイズSUV「GT SUV」を発表した。GT53/GT55/GT63の3仕様で、GT63は3基のアキシャルフラックスモーターで1,153hp・1,475lb-ft・0-60mph 2.6秒（ロールアウト込み2.4秒）、GT55は805hp。GT55/GT63は最大710kWで10→80%を12分、5分で48kWhを充電でき、ロールに加えピッチも制御するアクティブサスペンションを持ち、米国販売は2027年夏から。",
+    "note": "5分で48kWh＝平均充電電力 P̄ = E/t = 48kWh/(5/60h) ≈ 576kW（ピーク710kWの約81%）。ピッチ制御：加減速時の前後荷重移動 ΔFz = m·ax·h/L により車体にピッチモーメント m·ax·h が働く。アクティブサスはこれと逆向きのモーメントを前後アクチュエーター力で発生させて姿勢角θ≈0を保つ。仮定値 m=2,700kg、ax=1.0G、h=0.6m、L=3.0m で ΔFz ≈ 5.3kN。3モーターの前後配置（前1・後2でリア左右独立のトルクベクタリングか）は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Mercedes-AMG officially reveals the GT SUV: three axial-flux motors, up to 1,153 hp and 710 kW DC charging",
+    "summary": "AMG has unveiled the GT SUV, its first full-size SUV developed in-house and the second model on the dedicated AMG.EA electric platform. It comes as GT53, GT55 and GT63; the GT63 uses three axial-flux motors for 1,153 hp, 1,475 lb-ft and 0-60 mph in 2.6 s (2.4 s with rollout), while the GT55 makes 805 hp. The GT55 and GT63 charge at up to 710 kW, going from 10 to 80% in 12 minutes and adding 48 kWh in five minutes; active suspension controls pitch as well as roll, and US deliveries start in summer 2027.",
+    "note": "48 kWh in 5 minutes means an average charging power of P̄ = E/t = 48 kWh / (5/60 h) ≈ 576 kW, about 81% of the 710 kW peak. Pitch control: under acceleration or braking the longitudinal load transfer is ΔFz = m·ax·h/L, and the body sees a pitch moment m·ax·h. The active suspension generates an opposite moment with the front and rear actuator forces to hold pitch angle θ ≈ 0. With assumed values m = 2,700 kg, ax = 1.0 g, h = 0.6 m and L = 3.0 m, ΔFz ≈ 5.3 kN. The motor layout (possibly one front and two rear for rear torque vectoring) is not stated in the articles; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/17/mercedes-amg-gt-suv-electric-1153-hp-710-kw-charging/"
+    },
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/812320/amg-gt-suv-ev-reveal/"
+    },
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/812304/2028-mercedes-amg-gt-suv-horsepower-range-charging-specs/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-17-toyota-rav4-phev-recall-jp",
+   "date": "2026-10-17",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "制御",
+    "品質"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、国内でもRAV4 PHEV 5,307台をリコール：モーター初期学習未完了時に出力制御が異常、走行不能のおそれ",
+    "summary": "トヨタは10月7日、RAV4 PHEVのモーター制御用コンピューターの不具合で国土交通省にリコールを届け出た。対象は2026年2月4日〜9月4日製作の5,307台で、始動時にモーターの初期学習が終わらないまま走ると出力制御が正しく行われず異常検出し、警告灯点灯や最悪の場合システム停止に至る。不具合は7件、事故報告はなく、対策はプログラムの書き換え。米国で先に出た約3.1万台のリコールとの関係は記事に記載がない。",
+    "note": "推測：「初期学習」はレゾルバ等の回転子位置オフセット学習の可能性。PMSMのトルクは T = (3/2)·p·[ψf·iq + (Ld−Lq)·id·iq]。位置誤差Δθがあると制御上のdq軸が実軸からずれ、表面磁石型近似で実トルク ≈ T指令·cosΔθ となり、さらに不要なd軸電流が流れる。Δθが大きいとトルク不足・過電流となり、異常検出→システム停止につながる、という構図が考えられる。実際の学習対象は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Toyota recalls 5,307 RAV4 PHEVs in Japan: output control can fail if motor initial learning is incomplete, risking loss of drive",
+    "summary": "On October 7 Toyota filed a recall with Japan's transport ministry over the motor control computer in the RAV4 PHEV. It covers 5,307 vehicles built between February 4 and September 4, 2026; if the motor's initial learning at start-up does not complete, output control is not performed correctly and a fault is detected, lighting a warning lamp and in the worst case shutting the system down. Seven failures have been reported with no accidents, and the fix is a software update. The article does not say how this relates to the roughly 31,000-unit US recall announced earlier.",
+    "note": "Speculation: the \"initial learning\" may be rotor position offset learning for a resolver or similar sensor. PMSM torque is T = (3/2)·p·[ψf·iq + (Ld−Lq)·id·iq]. A position error Δθ misaligns the controller's dq frame from the real one; for a surface-magnet approximation the actual torque ≈ T_cmd·cosΔθ, and unwanted d-axis current flows. A large Δθ would cause torque shortfall or overcurrent, leading to fault detection and system shutdown. What is actually learned is not stated in the article; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "レスポンス",
+     "url": "https://response.jp/article/2026/10/17/417905.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-17-tesla-roadster-reveal",
+   "date": "2026-10-17",
+   "kind": "flash",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "PT",
+    "シャシー",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "テスラ、新型「ロードスター」を発表：吸引式ダウンフォースとコールドガススラスターの3グレード",
+    "summary": "テスラは10月16日（米国時間）、テキサス州マクレガーのスペースX試験施設で新型ロードスターを発表した。2人乗り公道仕様の「パフォーマンス」、後部スラスター併用で0-100km/h 1秒未満の「スラスト」、車両周囲のスラスターで上昇や横回転を補助する1人乗り「ロケット」の3グレードで、スラスターは電動アクチュエーターで推力を1秒未満で調整する。会場では最大4,709kgのダウンフォース表示と倒立走行、車5台を回転しながら飛び越える演技が披露された。",
+    "note": "タイヤが出せる最大水平力は Fmax = μ·(m·g + Fdown)。Fdown > m·g なら天井走行（倒立）が理論上可能。仮定値 m=2,000kg、μ=1.2 で、Fdown=4,709kgf（≈46.2kN）なら Fmax ≈ 1.2×(19.6+46.2)kN ≈ 79kN → 最大加速度 ≈ 4.0G（ファン吸引式は低速でもダウンフォースが出る点が翼と異なる）。スラスター推力Ftを加えると ax = (Fmax_x + Ft)/m。0-100km/h 1秒未満は平均2.8G超に相当（a = 27.8/1.0 m/s² ≈ 27.8m/s²）。量産仕様・価格・発売時期は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Tesla unveils the new Roadster: suction downforce and cold-gas thrusters across three trims",
+    "summary": "Tesla revealed the new Roadster on October 16 (US time) at SpaceX's rocket test site in McGregor, Texas. There are three trims: the road-legal two-seat Performance, the Thrust with rear thrusters for 0-100 km/h in under one second, and the single-seat Rocket whose thrusters around the car assist lift and lateral rotation; the thrusters use electric actuators to adjust thrust in under a second. The event showed a displayed downforce of up to 4,709 kg, driving fully upside down, and a spinning jump over five parked cars.",
+    "note": "The maximum horizontal tire force is Fmax = μ·(m·g + Fdown). If Fdown > m·g, driving upside down is possible in theory. With assumed values m = 2,000 kg and μ = 1.2, Fdown = 4,709 kgf (≈ 46.2 kN) gives Fmax ≈ 1.2 × (19.6 + 46.2) kN ≈ 79 kN, or about 4.0 g (a fan-suction system makes downforce even at low speed, unlike a wing). Adding thruster force Ft gives ax = (Fmax_x + Ft)/m. 0-100 km/h in under 1 s means an average above 2.8 g (a = 27.8 m/s ÷ 1.0 s). Production specs, price and timing are not in the article; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2149013.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-17-volvo-nvidia-ad",
+   "date": "2026-10-17",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "Global",
+   "tags": [
+    "ADAS",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ボルボとNVIDIA、自動運転の提携を拡大：Hyperion・Halos OS・Alpamayo Stackを次世代車に搭載",
+    "summary": "ボルボ・カーズとNVIDIAは10月15日（米国時間）、2017年に始めた自動運転分野の協業を拡大すると発表した。NVIDIAのセンサー・計算機構成「Hyperion」、安全OS「Halos OS」、自動運転ソフト「Alpamayo Stack」を使い、ボルボが先に公表した製品投入計画の一環として次世代車に初搭載する。搭載車種や時期は記事に記載がない。",
+    "note": ""
+   },
+   "en": {
+    "title": "Volvo and NVIDIA expand their autonomous driving partnership: Hyperion, Halos OS and the Alpamayo Stack for next-generation cars",
+    "summary": "Volvo Cars and NVIDIA announced on October 15 (US time) that they are expanding the autonomous driving collaboration they began in 2017. The new technology uses NVIDIA's Hyperion sensor and compute architecture, the Halos OS safety OS and the Alpamayo Stack driving software, and will debut on next-generation Volvos as part of the product plan Volvo announced earlier. The article does not name the models or the timing.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "レスポンス",
+     "url": "https://response.jp/article/2026/10/17/417904.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-17-luxeed-license-ipo",
+   "date": "2026-10-17",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "CN",
+   "tags": [
+    "規制",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "奇瑞×ファーウェイの「智界（Luxeed）」、MIIT公告で独自の生産資格取得へ：将来の単独上場も計画",
+    "summary": "中国工業情報化部（MIIT）は10月16日公表の第412批の車両メーカー・製品公告で、Luxeedを新規車両メーカー候補として掲載した。所在地は安徽省蕪湖市で「奇瑞グループの構成企業」と注記され、意見募集は10月23日まで。Luxeed関係者は第一財経に対し、将来の単独上場の計画を認めた。",
+    "note": ""
+   },
+   "en": {
+    "title": "Chery-Huawei brand Luxeed set to get its own carmaking license in an MIIT filing, plans a standalone IPO",
+    "summary": "China's MIIT listed Luxeed as a proposed new vehicle manufacturer in batch 412 of its manufacturer and product announcement published on October 16. The entry is in Wuhu, Anhui province, marked as a member company of Chery Group, and public comments run until October 23. A Luxeed insider confirmed to Yicai that the brand plans a separate listing in the future.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/17/chery-luxeed-carmaking-license-plans-ipo/"
+    }
+   ]
+  },
   {
    "id": "2026-10-16-vw-id-battery-recall-eu",
    "date": "2026-10-16",
