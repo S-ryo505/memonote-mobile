@@ -1,6 +1,155 @@
 {
- "updated": "2026-10-19T07:00:00+09:00",
+ "updated": "2026-10-20T06:54:19+09:00",
  "items": [
+  {
+   "id": "2026-10-19-huawei-catl-choco-swap",
+   "date": "2026-10-19",
+   "kind": "flash",
+   "cat": "supplier",
+   "region": "CN",
+   "tags": [
+    "電池",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ファーウェイの車載事業「引望（Yinwang）」、CATLの電池交換網「Choco-swap」に参加",
+    "summary": "ファーウェイが80%（Seresと長安系Avatrが各10%）を持つ車載事業会社Yinwangが、CATLおよび電池交換子会社CAESと戦略提携の枠組みに署名した。CATLのChoco-swapは9月29日時点で約200都市・2,520拠点に達し、年末に3,000拠点超、長期で30,000拠点を目標とする。対象はファーウェイのQiankun（乾崑）システム搭載車で、3社は車両・交換ステーション・クラウドのデータを連携し、電池状態と移動パターンから交換を事前に手配する計画。",
+    "note": "交換と急速充電の所要時間比較：充電時間 t ≈ ΔSOC·E / P_avg（E：電池容量、P_avg：平均充電電力）。仮定値 E=60 kWh、SOC 10→80%（42 kWh）、P_avg=150 kW で t≈0.28 h≈17分。CATL公表の交換作業99秒はこの約1/10。ただし拠点の電池在庫・稼働率がボトルネックになり、待ち時間を含む実効時間は要確認。"
+   },
+   "en": {
+    "title": "Huawei's car unit Yinwang joins CATL's Choco-swap battery swap network",
+    "summary": "Yinwang, the automotive unit 80% owned by Huawei (Seres and Changan's Avatr hold 10% each), signed a strategic cooperation framework with CATL and its swap subsidiary CAES. As of September 29, CATL's Choco-swap network had 2,520 stations in about 200 Chinese cities, with targets of more than 3,000 by year-end and 30,000 in the long term. The deal covers vehicles using Huawei's Qiankun systems, and the three parties plan to link vehicle, station and cloud data to schedule swaps in advance based on battery status and travel patterns.",
+    "note": "Swap vs. fast charge: charging time t ≈ ΔSOC·E / P_avg (E: pack capacity, P_avg: average charging power). With assumed values E = 60 kWh, SOC 10→80% (42 kWh) and P_avg = 150 kW, t ≈ 0.28 h ≈ 17 min. CATL's quoted 99-second swap is about one tenth of that. Station battery inventory and utilization become the bottleneck, so effective time including queuing needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/19/huawei-catl-battery-swap-choco-2520-stations/"
+    },
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/19/huawei-newcool-joins-catl-choco-swap-ecosystem/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-19-subaru-ev-awd-mule",
+   "date": "2026-10-19",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "4WD",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "スバル、自社開発EV技術を公開：510hpのAWD試作車で0-100km/h 4秒未満",
+    "summary": "Automotive Newsによると、スバルは10月18日に東京北方のテストコースで自社開発のEV向け新プラットフォーム、軽量電池、新モーター、自社製電子制御を披露した。試作車はAWDで最高出力510hp、0-100km/h加速4秒未満。航続距離・充電性能は未公表で、一部技術は2029年頃の量産を見込むが車種や時期は確定していない。",
+    "note": "なぜAWDが要るか：0-100km/h（27.8 m/s）を4.0秒なら平均加速度 a≈6.9 m/s²≈0.71g。後輪駆動の駆動力限界は荷重移動を含めて a_max = μ·g·l_f/(L − μ·h)（l_f：重心〜前軸距離、h：重心高、L：ホイールベース）。仮定値 l_f/L=0.5、h/L=0.2、μ=1.0 で a_max≈0.625g となり0.71gに届かないため、前後両軸で駆動力を分担する必要がある。前後モーター配置やトルク配分制御の詳細は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Subaru shows in-house EV technology: 510-hp AWD prototype does 0-100 km/h in under 4 s",
+    "summary": "According to Automotive News, Subaru presented a new in-house EV platform, lighter batteries, new motors and its own electronics at its proving ground north of Tokyo on October 18. The all-wheel-drive prototype makes 510 hp and accelerates from 0 to 100 km/h in under four seconds. Range and charging specs were not disclosed; some of the technology could reach production around 2029, but no model or date has been confirmed.",
+    "note": "Why AWD is needed: 0-100 km/h (27.8 m/s) in 4.0 s means an average acceleration a ≈ 6.9 m/s² ≈ 0.71 g. For rear-wheel drive, the traction limit including load transfer is a_max = μ·g·l_f/(L − μ·h) (l_f: CG to front axle, h: CG height, L: wheelbase). With assumed values l_f/L = 0.5, h/L = 0.2 and μ = 1.0, a_max ≈ 0.625 g, short of 0.71 g, so drive force must be shared between both axles. Motor layout and torque split control are not described in the article; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/812422/subaru-new-ev-platform-detailed/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-19-uk-zev-mandate-ease",
+   "date": "2026-10-19",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "英国政府、ZEVマンデートを見直し：2030年のBEV比率を80%→60%に緩和する案（FT報道）",
+    "summary": "英国政府はZEVマンデートの見直しを始め、2027〜2035年の電動車販売目標を緩和する方針。FTが関係筋の話として伝えたところでは、2030年の新車BEV比率を現行の80%から60%に下げ、残り40%はハイブリッド車とし、純ガソリン・ディーゼル車は2030年から登録できなくなる。60%案は業界との協議中に提示されたもので、最終決定ではない。",
+    "note": "数値は関係筋情報に基づく報道で、ハイブリッドの定義（HEVを含むか、PHEVのみか）は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "UK to review ZEV mandate: proposal would cut the 2030 BEV share from 80% to 60% (FT report)",
+    "summary": "The UK government has started a review of the ZEV mandate and is prepared to relax EV sales targets for 2027-2035. According to the FT, citing trusted sources, the 2030 requirement for fully electric new cars would fall from the current 80% to 60%, the remaining 40% would have to be hybrids, and pure petrol and diesel cars could no longer be registered from 2030. The 60% figure was put to industry during consultations and is not final.",
+    "note": "The figures come from a report based on sources, and whether 'hybrid' includes full hybrids or only PHEVs is not stated; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/19/uk-government-to-ease-ev-sales-mandate-but-only-slightly/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-19-mercedes-nvidia-l4",
+   "date": "2026-10-19",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "Global",
+   "tags": [
+    "ADAS",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "メルセデス・ベンツとNVIDIA、提携を拡大：MB.OSにHyperion・Alpamayo・Halosを統合しレベル4ロボリムジンも視野",
+    "summary": "メルセデス・ベンツAGとNVIDIAは10月16日、次世代の運転支援・自動運転システムを共同開発するため提携を拡大すると発表した。MB.OSにNVIDIAのHyperion、Alpamayo Stack、並列安全スタックHalosを組み込み、ロボリムジンを含むSAEレベル4用途の開発を支える。協業範囲は車両開発シミュレーションとデジタル生産基盤MO360にも及ぶ。同週にはボルボもNVIDIAとの同種の提携拡大を発表している。",
+    "note": ""
+   },
+   "en": {
+    "title": "Mercedes-Benz and NVIDIA expand partnership: Hyperion, Alpamayo and Halos to be integrated into MB.OS, with Level 4 robo-limousines in view",
+    "summary": "On October 16, Mercedes-Benz AG and NVIDIA announced an expanded partnership to jointly develop next-generation driver assistance and automated driving systems. NVIDIA Hyperion, the Alpamayo Stack and the Halos parallel safety stack will be combined with MB.OS to support SAE Level 4 applications including robo-limousines. The cooperation also covers vehicle engineering simulation and the MO360 digital production ecosystem. Volvo announced a similar expansion with NVIDIA the same week.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2149182.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-19-toyota-1-5l-4cyl-eu",
+   "date": "2026-10-19",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "EU",
+   "tags": [
+    "PT"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、新型1.5L直4エンジンと新世代ハイブリッドを欧州にも投入へ：過給版はA25比で体積20%・全高15%減",
+    "summary": "トヨタは2024年に開発を公表した新型1.5L直列4気筒エンジンと新世代ハイブリッドシステムを欧州市場にも投入する意向を示した。従来の3気筒から4気筒にしてエンジン高を下げ、自然吸気版と過給版を用意する。過給版は現行2.5L直4（A25型）の出力域をカバーしつつ、A25型比で体積20%、全高15%小さく、低いボンネット高を可能にする。",
+    "note": "気筒数を増やすと全高が下がる理由：総排気量 V = (π/4)·B²·S·z（B：ボア、S：ストローク、z：気筒数）。V一定で z を3→4にすると1気筒あたり容積は3/4。ボア・ストローク比を保つと寸法は (3/4)^(1/3)≈0.91倍となり、ストロークは約9%短くなる。エンジン高はクランク半径（S/2）、コンロッド長、ピストン高さなど概ねストロークに比例する寸法の積み上げで決まるため低くできる（一般論、推測）。A25比15%減には過給による排気量縮小（2.5→1.5L）の寄与も大きい。実際のボア・ストローク値は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Toyota to bring its new 1.5-litre inline-four and next-gen hybrid to Europe: turbo version 20% smaller in volume and 15% lower than the A25",
+    "summary": "Toyota said it intends to introduce its new 1.5-litre inline-four engine, first announced in 2024, and its next-generation hybrid system in Europe as well. Moving from three to four cylinders lowers the engine height, and both naturally aspirated and turbocharged versions will be offered. The turbo version covers the power range of the current 2.5-litre four (A25) while being 20% smaller in volume and 15% lower in height, allowing a lower bonnet line.",
+    "note": "Why more cylinders lower the engine: displacement V = (π/4)·B²·S·z (B: bore, S: stroke, z: cylinder count). At constant V, going from 3 to 4 cylinders makes each cylinder 3/4 the volume. Keeping the bore/stroke ratio, dimensions scale by (3/4)^(1/3) ≈ 0.91, so the stroke is about 9% shorter. Engine height is a stack of dimensions roughly proportional to stroke (crank radius S/2, con-rod length, piston height), so it drops (general point, inference). Downsizing from 2.5 to 1.5 L with turbocharging also contributes much of the 15% reduction versus the A25. Actual bore and stroke are not given in the article; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2149097.html"
+    }
+   ]
+  },
   {
    "id": "2026-10-17-amg-gt-suv-reveal",
    "date": "2026-10-17",
