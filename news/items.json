@@ -1,6 +1,161 @@
 {
- "updated": "2026-10-20T06:54:19+09:00",
+ "updated": "2026-10-21T06:55:00+09:00",
  "items": [
+  {
+   "id": "2026-10-20-foxconn-melco-mobility",
+   "date": "2026-10-20",
+   "kind": "flash",
+   "cat": "supplier",
+   "region": "JP",
+   "tags": [
+    "戦略",
+    "PT",
+    "ADAS"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "三菱電機とフォックスコン、三菱電機モビリティ株50%譲渡で最終合意",
+    "summary": "三菱電機は車載機器子会社・三菱電機モビリティの株式50%をフォックスコン（鴻海）側へ譲渡することで最終合意し、50:50の合弁会社とする。譲渡額は約1,150億円で、企業価値3,200億円・株式価値2,300億円を前提に算定された。新会社はEV向けプラットフォーム、パワーエレクトロニクス、自動運転システムをまず日本向けに供給し、完了は2027年10月1日の予定、従業員は約6,400人。",
+    "note": "評価額の関係：企業価値EV = 株式価値 + 純有利子負債（等）。3,200億−2,300億＝約900億円が負債等の調整分とみられる（内訳は要確認）。50%の株式価値は 0.5×2,300億＝1,150億円で譲渡額と一致する。"
+   },
+   "en": {
+    "title": "Mitsubishi Electric and Foxconn finalize sale of 50% of Mitsubishi Electric Mobility",
+    "summary": "Mitsubishi Electric reached a final agreement to transfer 50% of its automotive equipment subsidiary, Mitsubishi Electric Mobility, to the Foxconn side, turning it into a 50:50 joint venture. The price of about 115 billion yen is based on an enterprise value of 320 billion yen and an equity value of 230 billion yen. The JV will supply EV platforms, power electronics and automated driving systems, starting with Japan; closing is planned for October 1, 2027, and the company has about 6,400 employees.",
+    "note": "Valuation link: enterprise value = equity value + net debt (and similar items). 320 bn − 230 bn ≈ 90 bn yen appears to be the debt-type adjustment (breakdown needs confirmation). Half of the equity value, 0.5 × 230 bn = 115 bn yen, matches the price."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/20/foxconn-acquires-stake-in-mitsubishi-electric-mobility/"
+    },
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/20/418013.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-20-subaru-eu-ice-exit",
+   "date": "2026-10-20",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略",
+    "PT",
+    "規制"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "スバル、欧州でエンジン車の販売を終了へ 2028年からEVのみ",
+    "summary": "スバルは欧州で2027年末までに内燃機関車を廃止し、2028年からはSolterra、E-Outback、Unchartedの3車種（トヨタと共同開発のEV）のみを販売する。アウトバックは2026年中、インプレッサ・クロストレック・フォレスター（2.0Lボクサーのマイルドハイブリッド）は2027年に販売を終える。理由としてEUのCO2フリート排出規制を挙げており、自社開発EVプラットフォームは2029年からとされる。",
+    "note": "EUフリート規制の考え方：平均排出量 = Σ(n_i·CO2_i)/Σn_i が目標値を超えると超過分×台数に応じた罰金（1 g/km超過あたり95ユーロ/台、記事外の規則値・要確認）。CO2=0のEV比率を上げるほど平均値が下がる。欧州シェア約0.2%の小規模メーカーでは、ボクサーMHEVの排出量では目標達成が難しいとみられる（推測）。"
+   },
+   "en": {
+    "title": "Subaru to end combustion car sales in Europe, EV-only from 2028",
+    "summary": "Subaru will phase out combustion-engine vehicles in Europe by the end of 2027 and, from 2028, sell only three EVs developed with Toyota: the Solterra, E-Outback and Uncharted. The Outback leaves the market in 2026, while the Impreza, Crosstrek and Forester (2.0-liter boxer mild hybrids) end sales in 2027. Subaru cites EU CO2 fleet emission rules, and its own EV platform is expected from 2029.",
+    "note": "EU fleet rule: average emissions = Σ(n_i·CO2_i)/Σn_i; exceeding the target triggers a fine per g/km of excess per vehicle (95 euros; regulatory value not from the article, needs confirmation). Raising the share of zero-CO2 EVs lowers the average. For a maker with about 0.2% European share, boxer mild hybrids likely cannot meet the target (speculation)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/20/subaru-to-phase-out-combustion-engine-vehicles-in-europe/"
+    },
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/20/subaru-killing-off-gas-cars-europe-will-only-sell-evs/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-20-subaru-510hp-awd-ev",
+   "date": "2026-10-20",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "JP",
+   "tags": [
+    "4WD",
+    "PT",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "スバル、自社開発の2モーターAWD EV試作車（約510hp）を公開",
+    "summary": "スバルは10月18日、東京北方のテストコースで改造アウトバックの試作車を公開した。前後2モーターのAWDで最高出力は約510hp、軽量化したハードウェアと統合制御ユニットを採用する。幹部はこのハードウェアの一部が2029年から市販車に入る可能性を示したが、車種名は明らかにしていない。",
+    "note": "前後2モーターAWDでは前後トルク配分を電気的に変えられる。前後輪の駆動力 F_f=T_f/r, F_r=T_r/r とすると、各輪の摩擦円制約 √(F_x²+F_y²) ≤ μF_z を満たすよう、加速時は荷重移動 ΔF_z = m·a_x·h/L に応じて後輪側へ配分を増やすのが基本。統合制御ユニットが前後配分とESCを一括で扱うかは要確認。"
+   },
+   "en": {
+    "title": "Subaru shows in-house dual-motor AWD EV prototype with about 510 hp",
+    "summary": "On October 18, Subaru demonstrated a modified Outback test mule at its proving ground north of Tokyo. It uses front and rear motors for all-wheel drive with about 510 hp, plus lighter hardware and an integrated control unit. Executives said some of the hardware could reach production vehicles from 2029 but did not name a model.",
+    "note": "With front and rear motors, the front/rear torque split can be changed electrically. With F_f = T_f/r and F_r = T_r/r, each axle must satisfy the friction circle √(F_x²+F_y²) ≤ μF_z; under acceleration the basic approach shifts torque rearward according to load transfer ΔF_z = m·a_x·h/L. Whether the integrated control unit handles both torque split and ESC needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/812601/subaru-ev-prototype-breaks-toyota/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-20-bmw-voluntary-exit",
+   "date": "2026-10-20",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BMW、約8,000人削減へ希望退職制度 一部で最大65万ユーロ提示と報道",
+    "summary": "Handelsblattの報道として、BMWは2027年末までに約8,000ポジションの削減を目指し、10月中旬に希望退職ポータルを開設した。約5万人の従業員が個別の退職金額を確認でき、一部では65万ユーロ（約73万ドル）を超える額が提示されたとされるが、標準額ではない。退職時期は2027年3月31日か10月31日の2回で、制度は2027年10月31日に終了する。",
+    "note": ""
+   },
+   "en": {
+    "title": "BMW launches voluntary exit program targeting about 8,000 jobs, with some offers reportedly above 650,000 euros",
+    "summary": "According to Handelsblatt, BMW aims to cut about 8,000 positions by the end of 2027 and opened a voluntary-exit portal in mid-October. Around 50,000 employees can see an individualized severance figure, and some offers reportedly exceed 650,000 euros (about $730,000), though this is not a standard amount. Employees can leave on March 31 or October 31, 2027, and the program expires on October 31, 2027.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/812543/bmw-voluntary-exit-program-reportedly/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-20-gm-brownstown-close",
+   "date": "2026-10-20",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "電池",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "GM、デトロイトのBrownstown電池組立工場を閉鎖へ",
+    "summary": "GMは延床約48万平方フィートのBrownstown電池組立工場を、リース満了に合わせて来夏までに閉鎖する（Automotive News報道、関係者情報）。同工場は2009年開設で、キャデラック・セレスティークとコルベットE-Ray向けの高電圧電池、E-Ray用駆動ユニットを生産していた。GMはパワートレイン戦略の見直しに伴う数十億ドル規模の損失を計上している。",
+    "note": "E-Rayの駆動ユニットはフロント軸のみモーター駆動（後輪はV8）の電動AWD構成。供給元の移管先は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "GM to close its Brownstown EV battery plant in Detroit",
+    "summary": "GM will decommission its roughly 480,000-square-foot Brownstown Battery Assembly plant by next summer when the lease ends, according to Automotive News citing a person familiar with the matter. Opened in 2009, the plant built high-voltage batteries for the Cadillac Celestiq and Corvette E-Ray, as well as the E-Ray's drive units. GM continues to absorb multibillion-dollar losses tied to its powertrain strategy shift.",
+    "note": "The E-Ray uses an electric front axle with the V8 driving the rear wheels. Where production moves is not stated and needs confirmation."
+   },
+   "src": [
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/812603/gm-brownstown-ev-battery-plant-closure/"
+    }
+   ]
+  },
   {
    "id": "2026-10-19-huawei-catl-choco-swap",
    "date": "2026-10-19",
