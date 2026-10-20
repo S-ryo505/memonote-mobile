@@ -1,6 +1,133 @@
 {
-  "updated": "2026-10-20T07:25:00+09:00",
+  "updated": "2026-10-21T07:24:10+09:00",
   "items": [
+    {
+      "id": "2026-10-21-us-deepseek-federal-ban",
+      "date": "2026-10-21",
+      "kind": "flash",
+      "cat": "reg",
+      "level": "all",
+      "tags": [
+        "規制",
+        "セキュリティ",
+        "モデル"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "米国土安全保障省、連邦の文民機関にDeepSeek製品の撤去と新規購入停止を命令。DeepSeek技術を使った他社サービスも対象",
+        "summary": "米国土安全保障省（DHS）は、連邦の文民機関に対し、中国DeepSeekの製品を政府のIT環境から取り除き、新たに購入しないよう命じた。対象にはDeepSeek本体だけでなく、関連会社の製品や、DeepSeekの技術を組み込んだ第三者のサービスも含まれ、各機関は例外を申請できる。根拠は連邦調達のサプライチェーン安全に関する2018年の法律で、DHSは中国の法律のもとで利用者データが中国当局に渡りうる点を理由に挙げている。",
+        "note": "仕事での使いどころ：米国の取引先・官公庁向け案件で、使っているAIツールの中身（どの会社のモデルを使っているか）を問われる可能性に備え、社内で利用中のAIサービスの基盤モデルを棚卸しする材料になる。注意点：対象は米連邦の文民機関で、民間企業への直接の義務ではない。WSJ報道を基にした記事で、命令の正式文書は未確認（要確認）。"
+      },
+      "en": {
+        "title": "US Homeland Security orders federal civilian agencies to remove DeepSeek products and stop buying them, including third-party services built on its technology",
+        "summary": "The US Department of Homeland Security (DHS) has ordered federal civilian agencies to remove products from China's DeepSeek from government IT systems and not to purchase new ones. The order covers not only DeepSeek's own products but also those of affiliated companies and third-party services built with DeepSeek technology, though agencies can request exceptions. It is based on a 2018 law on supply chain security in federal procurement, and DHS cites the risk that user data could be accessible to Chinese authorities under Chinese law.",
+        "note": "How to use it at work: US customers or government-related projects may start asking which models sit underneath the AI tools you use, so this is a good reason to inventory the base models behind the AI services used in your company. Caveats: the order applies to US federal civilian agencies, not directly to private companies. Coverage is based on a WSJ report, and the official order text has not been checked (needs confirmation)."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/us-bans-deepseek-technology-across-federal-civilian-agencies/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-21-meta-muse-shared-links-exposed",
+      "date": "2026-10-21",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Meta「Muse」の会話共有リンク約6,800件が公開DNS記録から見つかる。Metaは共有機能を一時停止",
+        "summary": "セキュリティ企業Clarocの研究者が、MetaのAIアシスタント「Muse」で利用者が作った会話共有リンクを、公開されているDNS記録から6,800件以上列挙できたと報告した。リンクのURLには会話のタイトルが入る形式で、「住宅購入の予算」「第3四半期の売上レビュー」「ローン申込みの下書き」のような題名が読み取れる例が示されている。Metaは報告を受けて、会話の共有機能を一時停止した。",
+        "note": "仕事での使いどころ：AIの「会話を共有」リンクは、URL自体やタイトルから中身が推測されうるという具体例として、社内のAI利用ルール（業務情報を個人向けAIの共有機能に載せない）の説明に使える。注意点：Museは個人向けアプリで、社内で使っている人がいるかは不明。リンク先の会話本文まで第三者が閲覧できたかは要約から確認できない（要確認）。"
+      },
+      "en": {
+        "title": "About 6,800 shared conversation links from Meta's Muse found via public DNS records; Meta pauses the sharing feature",
+        "summary": "Researchers at security firm Claroc report that they were able to enumerate more than 6,800 conversation-sharing links created by users of Meta's AI assistant Muse, using publicly available DNS records. The link URLs include the conversation's title, with examples such as a home-sale budget, a Q3 revenue review and a loan application draft. After the report, Meta paused the conversation-sharing feature.",
+        "note": "How to use it at work: a concrete example that 'share this chat' links can reveal content through the URL and title alone—useful when explaining internal AI rules such as not putting business information into the sharing features of consumer AI apps. Caveats: Muse is a consumer app, and it's unclear whether anyone at your company uses it. Whether third parties could read the full conversations behind the links can't be confirmed from the summaries (needs checking)."
+      },
+      "src": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-21-ai-coding-api-key-theft",
+      "date": "2026-10-21",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "セキュリティ",
+        "コーディング",
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "AIコーディングツールの認証情報が標的に。マルウェア「Aoki」がClaude・Codex・Cursor・Geminiの認証情報を窃取、OpenCodeでは保存APIキー流出の可能性",
+        "summary": "Symantec（Broadcom）は10月15日、情報窃取マルウェア「Aoki」の新しい版に、Claude、OpenAIのCodex、Cursor、Geminiなどの認証情報を盗む機能が加わったと公表した。10月17日には、オープンソースのAIコーディングエージェント「OpenCode」の運営元が、クラウド側のワークスペースに保存されていた外部AIサービスのAPIキーが流出した可能性を公表した。OpenCode側の説明では、廃止作業中の旧システムに10月16日夜〜17日に不正アクセスがあり、影響はConsole利用者の1.4％で、Anthropic・OpenAI・Googleと協力して対処しているという。",
+        "note": "仕事での使いどころ：AIコーディングツールを使っている開発メンバーに、APIキーの保管場所・利用上限の設定・不要キーの無効化を確認してもらうきっかけになる。注意点：自社でOpenCodeやAoki感染の影響があるかは個別確認が必要。具体的な対策の中身は元記事で確認すること（要確認）。"
+      },
+      "en": {
+        "title": "AI coding tool credentials under attack: 'Aoki' malware steals Claude, Codex, Cursor and Gemini credentials, and OpenCode reports possible leak of stored API keys",
+        "summary": "On October 15, Symantec (Broadcom) disclosed that a new version of the info-stealing malware Aoki can steal credentials for tools such as Claude, OpenAI's Codex, Cursor and Gemini. On October 17, the team behind the open-source AI coding agent OpenCode said API keys for external AI services stored in its cloud workspaces may have been leaked. According to OpenCode, an old system being decommissioned was accessed without authorization from the night of October 16 into the 17th, affecting 1.4% of Console users, and it is working with Anthropic, OpenAI and Google on the response.",
+        "note": "How to use it at work: a good trigger to ask developers using AI coding tools to check where their API keys are stored, set usage limits and revoke keys they no longer need. Caveats: whether your company is affected by the OpenCode incident or Aoki infections needs to be checked case by case. See the original article for the specific countermeasures (needs checking)."
+      },
+      "src": [
+        {
+          "name": "@IT（ITmedia）",
+          "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/21/news011.html"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-21-digital-agency-gennai-agents",
+      "date": "2026-10-21",
+      "kind": "flash",
+      "cat": "reg",
+      "level": "all",
+      "tags": [
+        "エージェント",
+        "規制",
+        "仕事で使える"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "デジタル庁、政府職員約18万人向けAI環境「源内」でAIエージェント作成機能を提供開始。安全ルール「源内基準」も公表",
+        "summary": "デジタル庁は10月20日、政府職員向けの生成AI環境「ガバメントAI 源内」で、対話形式でAIエージェントを作って動かせる「エージェントチャット」を同日から各府省庁に順次導入すると発表した。より高度なエージェントを組める「源内工房」は12月ごろの導入を目指し、両者は「源内OSS Ver.2.0」として2027年2月ごろに一般公開する予定。あわせて安全に使うためのルール「源内基準」を公表した。",
+        "note": "仕事での使いどころ：公開予定の「源内基準」は、社内でAIエージェントを使わせる際のルール作り（権限・確認手順など）の参考資料になりうる。2027年2月ごろのOSS公開後は、社内向けAI環境の構成例としても参照できる。注意点：「源内基準」の具体的な中身は要約からは確認できない（要確認）。「世界初」はデジタル庁自身の調査による主張。"
+      },
+      "en": {
+        "title": "Japan's Digital Agency rolls out AI agent building in 'Gennai', its AI platform for about 180,000 government staff, and publishes 'Gennai Standards' safety rules",
+        "summary": "On October 20, Japan's Digital Agency announced that its generative AI platform for government staff, 'Government AI Gennai', will roll out 'Agent Chat'—which lets staff build and run AI agents through conversation—to ministries in stages starting that day. 'Gennai Kobo', for building more advanced agents, is targeted for around December, and both are to be released publicly as open-source 'Gennai OSS Ver.2.0' around February 2027. The agency also published 'Gennai Standards', rules for using the tools safely.",
+        "note": "How to use it at work: the 'Gennai Standards' could serve as a reference when writing internal rules for letting employees use AI agents (permissions, review steps, etc.). After the planned open-source release around February 2027, it could also serve as a reference design for an in-house AI environment. Caveats: the actual contents of the Gennai Standards can't be confirmed from the summary (needs checking). The 'world first' label is the agency's own claim based on its own research."
+      },
+      "src": [
+        {
+          "name": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/20/2000002428/"
+        }
+      ]
+    },
     {
       "id": "2026-10-19-ai-agent-hacker-100-sites",
       "date": "2026-10-19",
