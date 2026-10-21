@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- =====================================================================
-     MemoNote Mobile  v1.8.0
+     MemoNote Mobile  v1.9.0
      スマホで書いた勉強ノートと、ToDo・覚書・待ち球を、
      会社の MemoNote へメールで送るためのアプリです。
      書いた内容は端末の中だけに残り、送信するときだけ外に出ます。
@@ -280,7 +280,7 @@ function loadSet(){
   if(!Array.isArray(SET.people)) SET.people = [];
 }
 function saveSet(){ try{ localStorage.setItem(SKEY, JSON.stringify(SET)); }catch(_){} }
-const APP_VERSION = "1.8.0";
+const APP_VERSION = "1.9.0";
 let D = [];            /* 下書きの配列 */
 let T = [];            /* ToDo・覚書・待ち球の配列 */
 let cur = null;        /* 編集中の下書き */
@@ -1390,7 +1390,7 @@ function openMoveSetting(){
    ===================================================================== */
 const NKEY = "mnm_notify_v1";
 const NOTIFY_DEF = {on:false, hour:7, car:true, ai:true, todo:true,
-                    perSrc:3, minPrio:2, chars:26, maxBody:180};
+                    perSrc:2, minPrio:2, mode:"wrap", chars:26, maxBody:250};
 let NCFG = Object.assign({}, NOTIFY_DEF);
 function loadNotify(){
   try{ NCFG = Object.assign({}, NOTIFY_DEF, JSON.parse(localStorage.getItem(NKEY) || "{}")); }
@@ -1453,12 +1453,15 @@ function openNotify(){
       const g = (r && r.digest) || {};
       pvt.textContent = "MemoNote ・ " + (g.title || "");
       pvb.textContent = g.body || "（出せるものがありません。重要度や件数をゆるめてください）";
-      const len = (g.body || "").length;
-      pvn.textContent = len <= 150
-        ? "本文 " + len + "文字。この長さなら、時計でも切れずに読めます。"
-        : "本文 " + len + "文字。長めです。時計で切れるようなら「1行の長さ」を短く、" +
-          "または「1つの出どころから」を減らしてください。";
-      pvn.style.color = len <= 150 ? "var(--tx-faint)" : "var(--amber)";
+      const body = g.body || "";
+      const lines = body ? body.split("\n") : [];
+      const longest = lines.reduce((a, x) => Math.max(a, x.length), 0);
+      pvn.textContent = "本文 " + body.length + "文字 ・ " + lines.length + "行 ・ " +
+        "いちばん長い行 " + longest + "字。" +
+        (NCFG.mode === "wrap"
+          ? "行の途中では切っていないので、時計でも最後まで読めます。"
+          : "1行に収める形です。… が出るときは「折り返して全文」にしてください。");
+      pvn.style.color = "var(--tx-faint)";
     }).catch(e => {
       pvt.textContent = "下見を出せません";
       pvb.textContent = e.message || String(e);
@@ -1529,10 +1532,17 @@ function openNotify(){
     });
     SIN.appendChild(box);
   };
-  row("1つの出どころから", "perSrc", [[2,"2件"],[3,"3件"],[4,"4件"],[5,"5件"]]);
+  row("1つの出どころから", "perSrc", [[1,"1件"],[2,"2件"],[3,"3件"],[4,"4件"],[5,"5件"]]);
   row("重要度", "minPrio", [[1,"ぜんぶ"],[2,"●● 以上"],[3,"●●● だけ"]]);
-  row("1行の長さ", "chars", [[20,"短い"],[26,"ふつう"],[34,"長め"]]);
+  row("見出しが長いとき", "mode", [["wrap","折り返して全文"],["clip","1行に収める"]]);
+  row("1行の長さ", "chars", [[22,"22字"],[26,"26字"],[30,"30字"],[34,"34字"]]);
+  row("通知ぜんたい", "maxBody", [[150,"150字"],[250,"250字"],[400,"400字"],[0,"制限なし"]]);
   row("何時以降に出すか", "hour", [[6,"6時"],[7,"7時"],[8,"8時"],[9,"9時"],[12,"12時"]]);
+  const tip = el("p", null,
+    "時計は1行ぶんで切ってしまうので、既定では「折り返して全文」にしています。" +
+    "「1行の長さ」は行の頭の 🚗 も数えた長さです。時計で切れる幅に合わせてください。");
+  tip.style.cssText = "font-size:11.5px;color:var(--tx-faint);margin:10px 0 0;line-height:1.8";
+  SIN.appendChild(tip);
 
   /* ---- 履歴を忘れる ---- */
   mk("「もう知らせた」を忘れる", "同じものをもう一度通知できるようになります", async () => {

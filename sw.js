@@ -10,7 +10,7 @@
      この版では1件ずつ入れて、取れなかったものは黙って飛ばします。
 
    更新: CACHE の数字を上げると、次に開いたときに新しいものへ入れ替わります。 */
-const VERSION = "v6";
+const VERSION = "v7";
 const CACHE   = "memonote-mobile-" + VERSION;
 const SHARE   = "memonote-share";    /* 共有されたファイルの一時置き場 */
 const CFG     = "memonote-cfg";      /* 通知の設定と履歴（localStorage はここから読めないため） */
@@ -71,10 +71,11 @@ const NOTIFY_DEF = {
   on:false,          /* 毎朝うけとるか */
   hour:7,            /* 何時以降に出すか */
   car:true, ai:true, todo:true,
-  perSrc:3,          /* 1つの出どころから何件まで */
+  perSrc:2,          /* 1つの出どころから何件まで */
   minPrio:2,         /* 重要度 ●● 以上だけ（1=全部, 3=●●●のみ） */
-  chars:26,          /* 1行の長さ */
-  maxBody:180,       /* 本文ぜんたいの長さ。時計は長文を切るので短めに */
+  mode:"wrap",       /* wrap=折り返して全文 / clip=1行に収めて … で切る */
+  chars:26,          /* 1行ぜんたいの長さ（行頭の 🚗 を含む） */
+  maxBody:250,       /* 本文ぜんたいの長さ。0 なら制限なし */
   counts:null        /* 画面側が入れてくれる ToDo の残り数 */
 };
 async function cfgGet(key, def){
@@ -95,15 +96,86 @@ async function cfgPut(key, obj){
 const notifyCfg   = () => cfgGet("notify-config", NOTIFY_DEF);
 const notifyState = () => cfgGet("notify-state", {ids:[], at:"", day:""});
 
-/* 長い見出しを、時計で読める長さに詰めます。
-   途中で切るときは、読点があればそこで切ると自然に終わります。 */
+/* 見出しの下ごしらえ。
+   【参考・5月】のような前置きや（カッコ書き）、「〜と報じた」のような
+   言い回しを外します。意味は変えず、字数だけを減らすものだけにしています。 */
+const TIDY_SUB = [
+  ["について","の"], ["に関する","の"], ["ならびに","・"], ["および","・"],
+  ["することが分かった",""], ["することが明らかに",""], ["を明らかにした",""],
+  ["を発表した","発表"], ["と発表した","発表"], ["との報道",""], ["と報じた",""],
+  ["と報道",""], ["の見通し",""], ["株式会社",""]
+];
+const TIDY_TAIL = ["と報じられる", "との情報", "の見込み", "とのこと"];
+function tidy(t){
+  t = String(t == null ? "" : t);
+  t = t.replace(/【[^】]{0,24}】/g, "").replace(/[（(][^）)]{0,20}[）)]/g, "");
+  t = t.replace(/\s+/g, " ").replace(/^[\s　・、,]+|[\s　・、,]+$/g, "");
+  for(const [a, b] of TIDY_SUB) t = t.split(a).join(b);
+  for(let k = 0; k < 3; k++)
+    for(const x of TIDY_TAIL)
+      if(t.endsWith(x)) t = t.slice(0, -x.length).replace(/[、\s　]+$/, "");
+  return t.replace(/^[\s　、]+|[\s　、]+$/g, "");
+}
+/* 1行に収めるとき。読点があればそこで終わらせると自然です。 */
 function clip(s, n){
-  s = String(s == null ? "" : s).replace(/\s+/g, " ").trim();
+  s = tidy(s);
   if(s.length <= n) return s;
   const cut = s.slice(0, n);
   const m = cut.lastIndexOf("、");
   if(m >= Math.floor(n * 0.6)) return cut.slice(0, m);
   return cut + "…";
+}
+/* 時計は1行ぶんしか出さずに切ってしまうので、こちら側で折り返します。
+   こうすると途中で切られず、見出しを最後まで読めます。
+   折るところは、読点・中黒・空白をさかのぼって探します。
+   英数字の途中では折らないようにします（型式や数値が読めなくなるため）。 */
+const BREAKCH = "、，：:；;・ 　／/｜|";
+const ALNUM = /[0-9A-Za-z.\-]/;
+const NOHEAD = "。、，．,.）)」』】〕］}｝・ー";   /* 行の頭に置かない字 */
+function wrapLines(t, w){
+  const out = [];
+  let cur = "", i = 0;
+  while(i < t.length){
+    /* 行の頭の空白は捨てます */
+    if(!cur.length && (t[i] === " " || t[i] === "　")){ i++; continue; }
+    cur += t[i]; i++;
+    if(cur.length < w) continue;
+    if(i >= t.length) break;
+    /* 句点や閉じ括弧が次の行の頭に来ないよう、1字だけ引き取ります */
+    while(i < t.length && NOHEAD.indexOf(t[i]) >= 0 && cur.length < w + 2){ cur += t[i]; i++; }
+    if(i >= t.length) break;
+    let k = -1;
+    /* 行の前の方で折ると、1行目がすかすかになります。
+       後ろ寄りに区切りが無ければ、幅いっぱいまで使います。 */
+    const floor = Math.max(1, Math.floor(w * 0.55));
+    for(let j = cur.length - 1; j >= floor; j--){
+      if(BREAKCH.indexOf(cur[j]) >= 0){ k = j; break; }
+    }
+    if(k < 0){
+      /* 区切りが無いときは、英数字のかたまりを割らない位置まで戻します */
+      let j = cur.length - 1;
+      while(j > floor && ALNUM.test(cur[j]) && ALNUM.test(t[i - (cur.length - j)] || "")) j--;
+      if(j > floor && j < cur.length - 1) k = j;
+    }
+    if(k >= 0){
+      out.push(cur.slice(0, k + 1).replace(/[\s　]+$/, ""));
+      cur = cur.slice(k + 1).replace(/^[\s　]+/, "");
+    } else {
+      out.push(cur); cur = "";
+    }
+  }
+  if(cur) out.push(cur);
+  return out.filter(x => x.length);
+}
+/* 1件ぶんの行。折り返したぶんは字下げして、続きだと分かるようにします。 */
+function itemLines(it, mark, cfg){
+  const raw = (it.ja && (it.ja.short || it.ja.title)) || "";
+  /* cfg.chars は「行頭の 🚗 を含めた1行ぜんたい」の長さです。
+     行頭が 3 文字ぶん（絵文字＋空白、続きは字下げ）なので、その分を引きます。 */
+  const w = Math.max(8, (cfg.chars || 26) - 3);
+  if(cfg.mode === "clip") return [mark + " " + clip(raw, w)];
+  const t = tidy(raw);
+  return wrapLines(t, w).map((x, i) => (i ? "　 " : mark + " ") + x);
 }
 const pad2 = n => String(n).padStart(2, "0");
 function today(){
@@ -135,7 +207,7 @@ function pickLines(data, mark, cfg, seen){
       return (b.prio || 0) - (a.prio || 0);
     })
     .slice(0, cfg.perSrc)
-    .map(it => ({id:it.id, line:mark + " " + clip((it.ja && it.ja.title) || "", cfg.chars)}));
+    .map(it => ({id:it.id, lines:itemLines(it, mark, cfg)}));
 }
 /* まとめを1つ作ります。fresh=true なら「前に知らせたか」を見ません（お試し用）。 */
 async function buildDigest(fresh){
@@ -156,20 +228,23 @@ async function buildDigest(fresh){
     if(c.keep)    bits.push("覚書 " + c.keep);
     tail = "✓ " + bits.join(" ・ ");
   }
-  /* 本文ぜんたいが長すぎると時計側で切られるので、入らない行は落とします */
-  const budget = cfg.maxBody - (tail ? tail.length + 1 : 0);
-  let body = "";
+  /* 本文ぜんたいが長すぎると時計側で切られるので、入らない「1件」を落とします。
+     行の途中では切らないので、載ったものは必ず最後まで読めます。 */
+  const cap = cfg.maxBody > 0 ? cfg.maxBody : 100000;
+  const budget = cap - (tail ? tail.length + 1 : 0);
+  let body = "", used = 0;
   for(const r of rows){
-    const next = body ? body + "\n" + r.line : r.line;
+    const block = r.lines.join("\n");
+    const next = body ? body + "\n" + block : block;
     if(next.length > budget) break;
-    body = next;
+    body = next; used++;
   }
-  const used = body ? body.split("\n").length : 0;
   if(tail) body = body ? body + "\n" + tail : tail;
   const d = new Date();
   const title = (d.getMonth()+1) + "/" + d.getDate() + " の要点";
-  const open = cfg.car && rows.some(r => r.line.indexOf("🚗") === 0) ? "./news/"
-             : cfg.ai  && rows.some(r => r.line.indexOf("🤖") === 0) ? "./ai/"
+  const head = r => (r.lines && r.lines[0]) || "";
+  const open = cfg.car && rows.some(r => head(r).indexOf("🚗") === 0) ? "./news/"
+             : cfg.ai  && rows.some(r => head(r).indexOf("🤖") === 0) ? "./ai/"
              : "./index.html";
   /* 実際に本文へ載せたぶんだけを「知らせた」ことにします */
   const ids = rows.slice(0, used).map(r => r.id);
