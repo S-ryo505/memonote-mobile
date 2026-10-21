@@ -10,7 +10,7 @@
      この版では1件ずつ入れて、取れなかったものは黙って飛ばします。
 
    更新: CACHE の数字を上げると、次に開いたときに新しいものへ入れ替わります。 */
-const VERSION = "v7";
+const VERSION = "v8";
 const CACHE   = "memonote-mobile-" + VERSION;
 const SHARE   = "memonote-share";    /* 共有されたファイルの一時置き場 */
 const CFG     = "memonote-cfg";      /* 通知の設定と履歴（localStorage はここから読めないため） */
@@ -94,7 +94,8 @@ async function cfgPut(key, obj){
   }catch(_){ }
 }
 const notifyCfg   = () => cfgGet("notify-config", NOTIFY_DEF);
-const notifyState = () => cfgGet("notify-state", {ids:[], at:"", day:""});
+/* src は出どころごとの記録。{car:{updated,at,day}, ai:{…}} の形です。 */
+const notifyState = () => cfgGet("notify-state", {ids:[], at:"", day:"", src:{}, todoDay:""});
 
 /* 見出しの下ごしらえ。
    【参考・5月】のような前置きや（カッコ書き）、「〜と報じた」のような
@@ -195,8 +196,18 @@ async function readItems(url){
   }catch(_){ }
   return null;
 }
+/* 出どころ。🚗 と 🤖 は別々の時間に更新されるので、まとめも通知も別々にします。
+   片方だけ新しくなったときは、その片方だけを知らせます。 */
+const SOURCES = [
+  {key:"car", mark:"\u{1F697}", name:"自動車", url:"./news/items.json", open:"./news/"},
+  {key:"ai",  mark:"\u{1F916}", name:"AI",     url:"./ai/items.json",   open:"./ai/"}
+];
+function srcState(st, key){
+  const all = st.src || {};
+  return Object.assign({updated:"", at:"", day:""}, all[key] || {});
+}
 /* 出どころ1つぶんの行を作ります。前に知らせたものは外します。 */
-function pickLines(data, mark, cfg, seen){
+function pickRows(data, mark, cfg, seen){
   const items = (data && data.items) || [];
   return items
     .filter(it => it && it.id && (it.prio || 1) >= cfg.minPrio)
@@ -209,26 +220,24 @@ function pickLines(data, mark, cfg, seen){
     .slice(0, cfg.perSrc)
     .map(it => ({id:it.id, lines:itemLines(it, mark, cfg)}));
 }
-/* まとめを1つ作ります。fresh=true なら「前に知らせたか」を見ません（お試し用）。 */
-async function buildDigest(fresh){
-  const cfg = await notifyCfg();
-  const st  = await notifyState();
-  const seen = fresh ? [] : (st.ids || []);
-  const rows = [];
-  if(cfg.car) rows.push(...pickLines(await readItems("./news/items.json"), "🚗", cfg, seen));
-  if(cfg.ai)  rows.push(...pickLines(await readItems("./ai/items.json"),   "🤖", cfg, seen));
-
-  /* ToDo の行は最後に必ず付けたいので、先に長さを押さえておきます */
+/* 残っている ToDo の1行。その日の最初の通知にだけ添えます。 */
+function todoLine(cfg){
   const c = cfg.counts;
-  let tail = "";
-  if(cfg.todo && c && (c.todo || c.waiting || c.keep)){
-    const bits = [];
-    if(c.todo)    bits.push("ToDo " + c.todo);
-    if(c.waiting) bits.push("待ち " + c.waiting);
-    if(c.keep)    bits.push("覚書 " + c.keep);
-    tail = "✓ " + bits.join(" ・ ");
-  }
-  /* 本文ぜんたいが長すぎると時計側で切られるので、入らない「1件」を落とします。
+  if(!cfg.todo || !c || !(c.todo || c.waiting || c.keep)) return "";
+  const bits = [];
+  if(c.todo)    bits.push("ToDo " + c.todo);
+  if(c.waiting) bits.push("待ち " + c.waiting);
+  if(c.keep)    bits.push("覚書 " + c.keep);
+  return "✓ " + bits.join(" ・ ");
+}
+/* 出どころ1つぶんのまとめ。fresh=true なら「前に知らせたか」を見ません（お試し用）。 */
+async function buildOne(src, cfg, st, fresh, withTodo){
+  const data = await readItems(src.url);
+  const updated = (data && data.updated) || "";
+  const seen = fresh ? [] : (st.ids || []);
+  const rows = pickRows(data, src.mark, cfg, seen);
+  const tail = withTodo ? todoLine(cfg) : "";
+  /* 本文が長すぎると時計側で切られるので、入らない「1件」を落とします。
      行の途中では切らないので、載ったものは必ず最後まで読めます。 */
   const cap = cfg.maxBody > 0 ? cfg.maxBody : 100000;
   const budget = cap - (tail ? tail.length + 1 : 0);
@@ -241,44 +250,76 @@ async function buildDigest(fresh){
   }
   if(tail) body = body ? body + "\n" + tail : tail;
   const d = new Date();
-  const title = (d.getMonth()+1) + "/" + d.getDate() + " の要点";
-  const head = r => (r.lines && r.lines[0]) || "";
-  const open = cfg.car && rows.some(r => head(r).indexOf("🚗") === 0) ? "./news/"
-             : cfg.ai  && rows.some(r => head(r).indexOf("🤖") === 0) ? "./ai/"
-             : "./index.html";
-  /* 実際に本文へ載せたぶんだけを「知らせた」ことにします */
-  const ids = rows.slice(0, used).map(r => r.id);
-  return {title:title, body:body, ids:ids, n:used,
-          empty:!used && !tail, open:open, cfg:cfg};
+  const stamp = (d.getMonth()+1) + "/" + d.getDate();
+  return {key:src.key, name:src.name, mark:src.mark, open:src.open,
+          title:"MemoNote ・ " + src.name + " " + stamp,
+          body:body, ids:rows.slice(0, used).map(r => r.id),
+          n:used, updated:updated, empty:!used};
 }
-/* 実際に通知を出し、何を知らせたかを覚えます。 */
+/* 画面の下見用。入にしてある出どころを順に作って返します。 */
+async function buildDigest(fresh){
+  const cfg = await notifyCfg();
+  const st  = await notifyState();
+  const out = [];
+  let first = true;
+  for(const src of SOURCES){
+    if(!cfg[src.key]) continue;
+    const g = await buildOne(src, cfg, st, fresh, first);
+    const prev = srcState(st, src.key);
+    g.fresh = !prev.updated || prev.updated !== g.updated;   /* まだ知らせていない更新か */
+    g.lastAt = prev.at || "";
+    out.push(g);
+    if(!g.empty) first = false;
+  }
+  return {list:out, cfg:cfg, empty:out.every(g => g.empty)};
+}
+/* 実際に通知を出します。出どころごとに別の通知にするので、
+   🚗 と 🤖 が別の時間に更新されても、それぞれが時計に出ます。
+   fresh=true は「いますぐ通知する」用で、更新の有無を見ずに出します。 */
 async function showDigest(fresh){
-  const g = await buildDigest(fresh);
-  if(g.empty && !g.body) return {ok:false, why:"new"};
-  await self.registration.showNotification("MemoNote ・ " + g.title, {
-    body: g.body,
-    icon: "./icon-192.png",
-    badge: "./icon-192.png",
-    tag: "memonote-digest",
-    renotify: true,
-    silent: false,
-    data: {url:g.open}
-  });
-  const st = await notifyState();
-  const ids = [...new Set([...(st.ids || []), ...g.ids])].slice(-400);
-  await cfgPut("notify-state", {ids:ids, at:new Date().toISOString(), day:today()});
-  return {ok:true, n:g.n, title:g.title, body:g.body};
+  const cfg = await notifyCfg();
+  let st = await notifyState();
+  const done = [];
+  let first = (st.todoDay !== today());
+  for(const src of SOURCES){
+    if(!cfg[src.key]) continue;
+    const prev = srcState(st, src.key);
+    const data0 = await readItems(src.url);
+    const up = (data0 && data0.updated) || "";
+    /* まだ新しくなっていない出どころは飛ばします（同じものを二度出さないため） */
+    if(!fresh && prev.updated && up && prev.updated === up) continue;
+    const g = await buildOne(src, cfg, st, fresh, first);
+    if(g.empty) continue;
+    await self.registration.showNotification(g.title, {
+      body: g.body,
+      icon: "./icon-192.png",
+      badge: "./icon-192.png",
+      tag: "memonote-" + src.key,     /* 出どころごとに別枠。上書きし合いません */
+      renotify: true,
+      silent: false,
+      data: {url:g.open}
+    });
+    const ids = [...new Set([...(st.ids || []), ...g.ids])].slice(-600);
+    const srcAll = Object.assign({}, st.src || {});
+    srcAll[src.key] = {updated:g.updated, at:new Date().toISOString(), day:today()};
+    st = Object.assign({}, st, {ids:ids, src:srcAll,
+                                at:new Date().toISOString(), day:today()});
+    if(first){ st.todoDay = today(); first = false; }
+    await cfgPut("notify-state", st);
+    done.push({key:src.key, n:g.n, title:g.title, body:g.body});
+  }
+  if(!done.length) return {ok:false, why:"new"};
+  return {ok:true, sent:done.length, done:done};
 }
-
 /* 毎朝の自動。Chrome が頃合いを見て呼びます（時刻は指定できません）。
-   設定した時刻より前、またはその日もう出したときは、何もしません。 */
+   設定した時刻より前なら何もしません。
+   その日もう出したかどうかは出どころごとに見るので、🚗 を出したあとに
+   🤖 が新しくなれば、同じ日でも 🤖 だけをもう一度出します。 */
 self.addEventListener("periodicsync", e => {
   if(e.tag !== "memonote-digest") return;
   e.waitUntil((async () => {
     const cfg = await notifyCfg();
     if(!cfg.on) return;
-    const st = await notifyState();
-    if(st.day === today()) return;
     if(new Date().getHours() < (cfg.hour || 0)) return;
     await warm(NEWS).catch(() => {});
     await showDigest(false).catch(() => {});
@@ -321,7 +362,7 @@ self.addEventListener("message", e => {
       .then(() => showDigest(!!d.fresh)).then(r => reply(r))
       .catch(err => reply({ok:false, why:String(err)})));
   if(d.type === "forget")
-    return e.waitUntil(cfgPut("notify-state", {ids:[], at:"", day:""})
+    return e.waitUntil(cfgPut("notify-state", {ids:[], at:"", day:"", src:{}, todoDay:""})
       .then(() => reply({ok:true})));
 });
 

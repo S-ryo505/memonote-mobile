@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- =====================================================================
-     MemoNote Mobile  v1.9.0
+     MemoNote Mobile  v1.9.1
      スマホで書いた勉強ノートと、ToDo・覚書・待ち球を、
      会社の MemoNote へメールで送るためのアプリです。
      書いた内容は端末の中だけに残り、送信するときだけ外に出ます。
@@ -280,7 +280,7 @@ function loadSet(){
   if(!Array.isArray(SET.people)) SET.people = [];
 }
 function saveSet(){ try{ localStorage.setItem(SKEY, JSON.stringify(SET)); }catch(_){} }
-const APP_VERSION = "1.9.0";
+const APP_VERSION = "1.9.1";
 let D = [];            /* 下書きの配列 */
 let T = [];            /* ToDo・覚書・待ち球の配列 */
 let cur = null;        /* 編集中の下書き */
@@ -1436,36 +1436,57 @@ function openNotify(){
     "🚗 と 🤖 の新しいぶんを、時計で読める長さにまとめてスマホに通知します。" +
     "時計には、スマホに出た通知がそのまま届きます。"));
 
-  /* ---- 時計に出る見た目のまま、下見を出します ---- */
-  const pv = el("div");
-  pv.style.cssText = "border:1px solid var(--line);border-radius:12px;background:var(--ink);" +
-    "padding:12px 14px;margin-bottom:14px";
-  const pvt = el("div"); pvt.style.cssText = "font-size:13px;font-weight:700;margin-bottom:4px";
-  const pvb = el("div"); pvb.style.cssText =
-    "font-size:13.5px;line-height:1.75;white-space:pre-wrap;word-break:break-word;color:var(--tx-dim)";
-  const pvn = el("div"); pvn.style.cssText = "font-size:11px;color:var(--tx-faint);margin-top:8px";
-  pvt.textContent = "読み込んでいます…";
-  pv.append(pvt, pvb, pvn);
-  SIN.appendChild(pv);
+  /* ---- 時計に出る見た目のまま、下見を出します ----
+     🚗 と 🤖 は別の通知になるので、下見も別々の箱にします。 */
+  const pvWrap = el("div"); pvWrap.style.marginBottom = "14px";
+  const pvMsg = el("div");
+  pvMsg.style.cssText = "border:1px solid var(--line);border-radius:12px;background:var(--ink);" +
+    "padding:12px 14px;font-size:13px;font-weight:700";
+  pvMsg.textContent = "読み込んでいます…";
+  pvWrap.appendChild(pvMsg);
+  SIN.appendChild(pvWrap);
 
+  const card = g => {
+    const b = el("div");
+    b.style.cssText = "border:1px solid var(--line);border-radius:12px;background:var(--ink);" +
+      "padding:12px 14px;margin-bottom:9px";
+    const t = el("div", null, g.title);
+    t.style.cssText = "font-size:13px;font-weight:700;margin-bottom:4px";
+    b.appendChild(t);
+    const bd = el("div", null, g.body ||
+      "（出せるものがありません。重要度や件数をゆるめてください）");
+    bd.style.cssText = "font-size:13.5px;line-height:1.75;white-space:pre-wrap;" +
+      "word-break:break-word;color:var(--tx-dim)";
+    b.appendChild(bd);
+    const lines = g.body ? g.body.split("\n") : [];
+    const longest = lines.reduce((a, x) => Math.max(a, x.length), 0);
+    const n = el("div", null,
+      (g.body || "").length + "文字 ・ " + lines.length + "行 ・ いちばん長い行 " + longest + "字" +
+      (g.lastAt ? " ・ 前回 " + new Date(g.lastAt).toLocaleString("ja-JP").slice(0,16) : "") +
+      (g.fresh ? "" : " ・ まだ新しくなっていません"));
+    n.style.cssText = "font-size:11px;color:var(--tx-faint);margin-top:8px";
+    b.appendChild(n);
+    return b;
+  };
   const drawPv = () => {
     swAsk({type:"digest", fresh:true}).then(r => {
-      const g = (r && r.digest) || {};
-      pvt.textContent = "MemoNote ・ " + (g.title || "");
-      pvb.textContent = g.body || "（出せるものがありません。重要度や件数をゆるめてください）";
-      const body = g.body || "";
-      const lines = body ? body.split("\n") : [];
-      const longest = lines.reduce((a, x) => Math.max(a, x.length), 0);
-      pvn.textContent = "本文 " + body.length + "文字 ・ " + lines.length + "行 ・ " +
-        "いちばん長い行 " + longest + "字。" +
-        (NCFG.mode === "wrap"
-          ? "行の途中では切っていないので、時計でも最後まで読めます。"
-          : "1行に収める形です。… が出るときは「折り返して全文」にしてください。");
-      pvn.style.color = "var(--tx-faint)";
+      const list = (r && r.digest && r.digest.list) || [];
+      pvWrap.innerHTML = "";
+      if(!list.length){
+        pvMsg.textContent = "「入れるもの」で 🚗 か 🤖 を入にしてください";
+        pvWrap.appendChild(pvMsg);
+        return;
+      }
+      list.forEach(g => pvWrap.appendChild(card(g)));
+      const note = el("div", null, NCFG.mode === "wrap"
+        ? "🚗 と 🤖 は別々の通知として出ます。行の途中では切っていないので、時計でも最後まで読めます。"
+        : "🚗 と 🤖 は別々の通知として出ます。1行に収める形なので、… が出ることがあります。");
+      note.style.cssText = "font-size:11.5px;color:var(--tx-faint);line-height:1.8";
+      pvWrap.appendChild(note);
     }).catch(e => {
-      pvt.textContent = "下見を出せません";
-      pvb.textContent = e.message || String(e);
-      pvn.textContent = "";
+      pvWrap.innerHTML = "";
+      pvMsg.textContent = "下見を出せません: " + (e.message || String(e));
+      pvWrap.appendChild(pvMsg);
     });
   };
 
@@ -1481,20 +1502,20 @@ function openNotify(){
   };
 
   /* ---- 今すぐ出す（時計に出るか試すところ）---- */
-  mk("いますぐ通知する", "時計に出るか、ここで試せます", async () => {
+  mk("いますぐ通知する", "🚗 と 🤖 を1つずつ、いま出します（試し打ち）", async () => {
     try{
       const ok = await askNotifyPerm();
       if(!ok) return;
       await pushCfg({});
       const r = await swAsk({type:"notify", fresh:true});
-      if(r && r.ok) toast("通知を出しました。時計を見てください");
+      if(r && r.ok) toast(r.sent + "件の通知を出しました。時計を見てください");
       else toast("出せるものがありませんでした", true);
     }catch(e){ toast(e.message || String(e), true); }
   }, "");
 
   /* ---- 毎朝うけとる ---- */
   const toggle = mk(NCFG.on ? "毎朝うけとる：入" : "毎朝うけとる：切",
-    NCFG.on ? "朝 " + NCFG.hour + "時以降に、新しいぶんだけを1回"
+    NCFG.on ? "朝 " + NCFG.hour + "時以降、🚗 と 🤖 が新しくなったときにそれぞれ1回"
             : "押すと、毎朝うけとるようになります",
     async () => {
       if(NCFG.on){ await pushCfg({on:false}); await dropPeriodic(); openNotify(); return; }
@@ -1545,7 +1566,7 @@ function openNotify(){
   SIN.appendChild(tip);
 
   /* ---- 履歴を忘れる ---- */
-  mk("「もう知らせた」を忘れる", "同じものをもう一度通知できるようになります", async () => {
+  mk("「もう知らせた」を忘れる", "記事と更新の記録を消して、もう一度通知できるようにします", async () => {
     await swAsk({type:"forget"}).catch(() => {});
     toast("忘れました"); drawPv();
   });
@@ -1629,15 +1650,23 @@ async function notifyStatus(){
   }catch(_){ bits.push("毎朝の予約: 調べられません"); }
   try{
     const r = await swAsk({type:"get-cfg"});
-    const at = r && r.state && r.state.at;
-    bits.push("前回の通知: " + (at ? new Date(at).toLocaleString("ja-JP").slice(0,16) : "まだ"));
+    const sx = (r && r.state && r.state.src) || {};
+    const one = (k, nm) => {
+      const a = sx[k] && sx[k].at;
+      return nm + " " + (a ? new Date(a).toLocaleString("ja-JP").slice(5,16) : "まだ");
+    };
+    bits.push("前回の通知: " + one("car", "🚗") + " / " + one("ai", "🤖"));
   }catch(_){ }
   bits.push("ホーム画面から起動: " +
     (window.matchMedia("(display-mode: standalone)").matches ? "はい" : "いいえ"));
   return bits.join(" ／ ");
 }
 /* アプリを開いたときの取りこぼし補完。
-   毎朝の予約が動かない端末でも、ここで1日1回は出ます。 */
+   毎朝の予約が動かない端末でも、ここで出ます。
+   出すかどうかは sw.js が出どころごとに決める（新しくなったものだけ）ので、
+   ここでは「短い間に何度も聞かない」ことだけ見ます。
+   🚗 と 🤖 の更新時間がずれていても、どちらも取りこぼしません。 */
+const ASKKEY = "mnm_notify_ask";
 async function notifyOnOpen(){
   loadNotify();
   /* 通知を出さない設定でも、残り数だけは新しくしておきます */
@@ -1646,13 +1675,11 @@ async function notifyOnOpen(){
   if(!("Notification" in window) || Notification.permission !== "granted") return;
   if(new Date().getHours() < (NCFG.hour || 0)) return;
   try{
-    const r = await swAsk({type:"get-cfg"});
-    const day = r && r.state && r.state.day;
-    const d = new Date();
-    const t = d.getFullYear() + "-" + pad(d.getMonth()+1) + "-" + pad(d.getDate());
-    if(day === t) return;                       /* きょうはもう出した */
-    await swAsk({type:"notify", fresh:false});
+    const last = +(localStorage.getItem(ASKKEY) || 0);
+    if(Date.now() - last < 15 * 60 * 1000) return;    /* 15分は間を空けます */
+    localStorage.setItem(ASKKEY, String(Date.now()));
   }catch(_){ }
+  try{ await swAsk({type:"notify", fresh:false}); }catch(_){ }
 }
 
 function showHelp(){
