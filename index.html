@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- =====================================================================
-     MemoNote Mobile  v1.7.0
+     MemoNote Mobile  v1.8.0
      スマホで書いた勉強ノートと、ToDo・覚書・待ち球を、
      会社の MemoNote へメールで送るためのアプリです。
      書いた内容は端末の中だけに残り、送信するときだけ外に出ます。
@@ -280,7 +280,7 @@ function loadSet(){
   if(!Array.isArray(SET.people)) SET.people = [];
 }
 function saveSet(){ try{ localStorage.setItem(SKEY, JSON.stringify(SET)); }catch(_){} }
-const APP_VERSION = "1.7.0";
+const APP_VERSION = "1.8.0";
 let D = [];            /* 下書きの配列 */
 let T = [];            /* ToDo・覚書・待ち球の配列 */
 let cur = null;        /* 編集中の下書き */
@@ -289,6 +289,7 @@ let tpick = new Set(); /* ToDo 一覧で選んだもの */
 
 function load(){
   loadSet();
+  loadNotify();
   try{ D = JSON.parse(localStorage.getItem(KEY) || "[]"); }
   catch(_){ D = []; }
   if(!Array.isArray(D)) D = [];
@@ -1318,6 +1319,7 @@ $("#menubtn").onclick = () => {
   mk("会社アドレスを決める", SET.mailTo || "まだ登録されていません", openMailSetting, " ghost set");
   mk("機種変更する時", "書き出し・読み込みはここから", openMoveSetting, " ghost set");
   mk("使い方", "", showHelp);
+  mk("整理して通知する", notifySub(), openNotify, " ghost set");
   const ver = el("p", null, "MemoNote Mobile " + APP_VERSION +
     " ・ 下書き " + D.length + "件 ・ ToDo " + T.length + "件");
   ver.style.cssText = "font-size:11.5px;color:var(--tx-faint);margin:14px 0 0;text-align:center";
@@ -1375,6 +1377,274 @@ function openMoveSetting(){
   mk("書き出したものを読み込む", "新しい端末で押します", () => $("#restorepick").click());
   SHEET.classList.add("on");
 }
+
+/* =====================================================================
+   9.5 整理して通知する
+   毎朝の 🚗/🤖 から、時計で読める長さのまとめを作ってスマホに通知します。
+   時計（Xiaomi Redmi Watch 5 Active など）には、Mi Fitness が
+   「スマホに出た通知」をそのまま転送します。時計へ直接送る道はありません。
+
+   まとめを作るのも通知を出すのも sw.js 側です。ここはその窓口だけです。
+   （画面から直接 new Notification() を出すことは Android の Chrome では
+     できない決まりなので、必ずサービスワーカー経由にします）
+   ===================================================================== */
+const NKEY = "mnm_notify_v1";
+const NOTIFY_DEF = {on:false, hour:7, car:true, ai:true, todo:true,
+                    perSrc:3, minPrio:2, chars:26, maxBody:180};
+let NCFG = Object.assign({}, NOTIFY_DEF);
+function loadNotify(){
+  try{ NCFG = Object.assign({}, NOTIFY_DEF, JSON.parse(localStorage.getItem(NKEY) || "{}")); }
+  catch(_){ NCFG = Object.assign({}, NOTIFY_DEF); }
+}
+function notifySub(){
+  if(!("Notification" in window)) return "この端末では使えません";
+  if(!NCFG.on) return "毎朝のまとめを時計に出します（いまは切）";
+  return "毎朝 " + NCFG.hour + "時以降 ・ " +
+         [NCFG.car ? "🚗" : "", NCFG.ai ? "🤖" : "", NCFG.todo ? "✓" : ""].filter(Boolean).join(" ");
+}
+/* sw.js への呼びかけ。返事が来るまで待ちます（最大6秒）。 */
+function swAsk(msg){
+  return new Promise((ok, ng) => {
+    if(!("serviceWorker" in navigator)) return ng(new Error("この端末では使えません"));
+    navigator.serviceWorker.ready.then(reg => {
+      const sw = reg.active || navigator.serviceWorker.controller;
+      if(!sw) return ng(new Error("まだ準備できていません。一度アプリを開き直してください"));
+      const ch = new MessageChannel();
+      const t = setTimeout(() => ng(new Error("sw.js が古いようです。index.html と一緒に入れ替えてください")), 6000);
+      ch.port1.onmessage = ev => { clearTimeout(t); ok(ev.data || {}); };
+      sw.postMessage(msg, [ch.port2]);
+    }).catch(ng);
+  });
+}
+/* いまの ToDo の残り数を、通知に添えられるように sw.js へ預けます */
+function notifyCounts(){
+  const open = k => T.filter(t => t.kind === k && !t.sentAt).length;
+  return {todo:open("todo"), waiting:open("waiting"), keep:open("keep")};
+}
+function pushCfg(extra){
+  NCFG = Object.assign(NCFG, extra || {});
+  try{ localStorage.setItem(NKEY, JSON.stringify(NCFG)); }catch(_){}
+  return swAsk({type:"save-cfg", cfg:Object.assign({}, NCFG, {counts:notifyCounts()})})
+           .catch(() => {});
+}
+
+function openNotify(){
+  loadNotify();
+  SIN.innerHTML = "";
+  SIN.appendChild(el("h3", null, "整理して通知する"));
+  SIN.appendChild(el("p", null,
+    "🚗 と 🤖 の新しいぶんを、時計で読める長さにまとめてスマホに通知します。" +
+    "時計には、スマホに出た通知がそのまま届きます。"));
+
+  /* ---- 時計に出る見た目のまま、下見を出します ---- */
+  const pv = el("div");
+  pv.style.cssText = "border:1px solid var(--line);border-radius:12px;background:var(--ink);" +
+    "padding:12px 14px;margin-bottom:14px";
+  const pvt = el("div"); pvt.style.cssText = "font-size:13px;font-weight:700;margin-bottom:4px";
+  const pvb = el("div"); pvb.style.cssText =
+    "font-size:13.5px;line-height:1.75;white-space:pre-wrap;word-break:break-word;color:var(--tx-dim)";
+  const pvn = el("div"); pvn.style.cssText = "font-size:11px;color:var(--tx-faint);margin-top:8px";
+  pvt.textContent = "読み込んでいます…";
+  pv.append(pvt, pvb, pvn);
+  SIN.appendChild(pv);
+
+  const drawPv = () => {
+    swAsk({type:"digest", fresh:true}).then(r => {
+      const g = (r && r.digest) || {};
+      pvt.textContent = "MemoNote ・ " + (g.title || "");
+      pvb.textContent = g.body || "（出せるものがありません。重要度や件数をゆるめてください）";
+      const len = (g.body || "").length;
+      pvn.textContent = len <= 150
+        ? "本文 " + len + "文字。この長さなら、時計でも切れずに読めます。"
+        : "本文 " + len + "文字。長めです。時計で切れるようなら「1行の長さ」を短く、" +
+          "または「1つの出どころから」を減らしてください。";
+      pvn.style.color = len <= 150 ? "var(--tx-faint)" : "var(--amber)";
+    }).catch(e => {
+      pvt.textContent = "下見を出せません";
+      pvb.textContent = e.message || String(e);
+      pvn.textContent = "";
+    });
+  };
+
+  const mk = (label, sub, fn, cls) => {
+    const b = el("button","big" + (cls || " ghost"), label);
+    b.style.cssText = "width:100%;margin-bottom:10px;text-align:left;padding:14px 16px";
+    if(sub){ const s2 = el("div");
+      s2.style.cssText = "font-size:12px;color:var(--tx-faint);font-weight:400;margin-top:2px";
+      s2.textContent = sub; b.appendChild(s2); }
+    b.onclick = fn;
+    SIN.appendChild(b);
+    return b;
+  };
+
+  /* ---- 今すぐ出す（時計に出るか試すところ）---- */
+  mk("いますぐ通知する", "時計に出るか、ここで試せます", async () => {
+    try{
+      const ok = await askNotifyPerm();
+      if(!ok) return;
+      await pushCfg({});
+      const r = await swAsk({type:"notify", fresh:true});
+      if(r && r.ok) toast("通知を出しました。時計を見てください");
+      else toast("出せるものがありませんでした", true);
+    }catch(e){ toast(e.message || String(e), true); }
+  }, "");
+
+  /* ---- 毎朝うけとる ---- */
+  const toggle = mk(NCFG.on ? "毎朝うけとる：入" : "毎朝うけとる：切",
+    NCFG.on ? "朝 " + NCFG.hour + "時以降に、新しいぶんだけを1回"
+            : "押すと、毎朝うけとるようになります",
+    async () => {
+      if(NCFG.on){ await pushCfg({on:false}); await dropPeriodic(); openNotify(); return; }
+      const ok = await askNotifyPerm();
+      if(!ok) return;
+      await pushCfg({on:true});
+      const how = await addPeriodic();
+      openNotify();
+      toast(how);
+    }, NCFG.on ? "" : " ghost");
+  if(NCFG.on){
+    toggle.style.background = "var(--green)";
+    toggle.style.color = "#06130C";
+    const sub = toggle.querySelector("div");
+    if(sub) sub.style.color = "rgba(6,19,12,.72)";
+  }
+
+  /* ---- 中身の設定 ---- */
+  SIN.appendChild(el("label", null, "入れるもの"));
+  const srcBox = el("div","chips");
+  [["car","🚗 自動車"],["ai","🤖 AI"],["todo","✓ 残りの ToDo"]].forEach(([k,label]) => {
+    const b = el("button","chip" + (NCFG[k] ? " on" : ""), label);
+    b.onclick = async () => { await pushCfg({[k]:!NCFG[k]}); openNotify(); };
+    srcBox.appendChild(b);
+  });
+  SIN.appendChild(srcBox);
+
+  const row = (label, key, opts) => {
+    SIN.appendChild(el("label", null, label));
+    const box = el("div","chips");
+    opts.forEach(([v, t]) => {
+      const b = el("button","chip" + (NCFG[key] === v ? " on" : ""), t);
+      b.onclick = async () => { await pushCfg({[key]:v}); openNotify(); };
+      box.appendChild(b);
+    });
+    SIN.appendChild(box);
+  };
+  row("1つの出どころから", "perSrc", [[2,"2件"],[3,"3件"],[4,"4件"],[5,"5件"]]);
+  row("重要度", "minPrio", [[1,"ぜんぶ"],[2,"●● 以上"],[3,"●●● だけ"]]);
+  row("1行の長さ", "chars", [[20,"短い"],[26,"ふつう"],[34,"長め"]]);
+  row("何時以降に出すか", "hour", [[6,"6時"],[7,"7時"],[8,"8時"],[9,"9時"],[12,"12時"]]);
+
+  /* ---- 履歴を忘れる ---- */
+  mk("「もう知らせた」を忘れる", "同じものをもう一度通知できるようになります", async () => {
+    await swAsk({type:"forget"}).catch(() => {});
+    toast("忘れました"); drawPv();
+  });
+
+  /* ---- 時計側の手順 ---- */
+  const h = el("div");
+  h.style.cssText = "border-top:1px solid var(--line);margin-top:16px;padding-top:14px;" +
+    "font-size:12.5px;line-height:1.9;color:var(--tx-dim)";
+  h.appendChild(el("b", null, "時計に出すための設定（1回だけ）"));
+  const ol = el("div"); ol.style.marginTop = "6px";
+  ["1. このアプリをホーム画面に入れる（Chrome の ⋮ →「アプリをインストール」）",
+   "2. Mi Fitness →「アプリ通知」で、MemoNote（入れていなければ Chrome）を入にする",
+   "3. Mi Fitness の「スマホ使用中は通知しない」を切ると、画面を見ている間も届きます",
+   "4. Android の設定 → アプリ → MemoNote → 通知 を入にする",
+   "5. 上の「いますぐ通知する」で、時計に出るか確かめる"
+  ].forEach(t => { const d = el("div", null, t); d.style.marginBottom = "3px"; ol.appendChild(d); });
+  h.appendChild(ol);
+  SIN.appendChild(h);
+
+  /* ---- いまの状態 ---- */
+  const st = el("p"); st.style.cssText = "font-size:11.5px;color:var(--tx-faint);margin:12px 0 0";
+  st.textContent = "状態を調べています…";
+  SIN.appendChild(st);
+  notifyStatus().then(t => { st.textContent = t; });
+
+  const c = el("button","big ghost","閉じる");
+  c.style.cssText = "width:100%;margin-top:14px";
+  c.onclick = closeSheet;
+  SIN.appendChild(c);
+  SHEET.classList.add("on");
+  /* ToDo の残り数を先に預けてから下見を作ります（通知に添えるため） */
+  pushCfg({}).then(drawPv, drawPv);
+}
+
+/* 通知の許可。押したその場で聞かないと、Android では断られます。 */
+async function askNotifyPerm(){
+  if(!("Notification" in window)){ toast("この端末では通知を出せません", true); return false; }
+  if(Notification.permission === "granted") return true;
+  if(Notification.permission === "denied"){
+    toast("通知が拒否されています。Android の設定 → アプリ → 通知 から入にしてください", true);
+    return false;
+  }
+  const r = await Notification.requestPermission();
+  if(r !== "granted"){ toast("通知が許可されませんでした", true); return false; }
+  return true;
+}
+/* 毎朝の予約。Chrome の「定期バックグラウンド同期」を使います。
+   時刻は指定できず、Chrome が頃合いを見て呼びます。
+   使えない端末では、アプリを開いたときに出す形だけになります。 */
+async function addPeriodic(){
+  try{
+    const reg = await navigator.serviceWorker.ready;
+    if(!("periodicSync" in reg)) return "毎朝うけとるようにしました（アプリを開いたときに出します）";
+    const st = await navigator.permissions.query({name:"periodic-background-sync"});
+    if(st.state !== "granted") return "毎朝うけとるようにしました（アプリを開いたときに出します）";
+    await reg.periodicSync.register("memonote-digest", {minInterval: 12 * 60 * 60 * 1000});
+    return "毎朝うけとるようにしました";
+  }catch(_){ return "毎朝うけとるようにしました（アプリを開いたときに出します）"; }
+}
+async function dropPeriodic(){
+  try{
+    const reg = await navigator.serviceWorker.ready;
+    if(reg.periodicSync) await reg.periodicSync.unregister("memonote-digest");
+  }catch(_){ }
+}
+async function notifyStatus(){
+  const bits = [];
+  bits.push("通知の許可: " + (!("Notification" in window) ? "使えません"
+    : Notification.permission === "granted" ? "済"
+    : Notification.permission === "denied" ? "拒否されています" : "まだ"));
+  try{
+    const reg = await navigator.serviceWorker.ready;
+    if(!("periodicSync" in reg)){
+      bits.push("毎朝の予約: この端末では使えません（アプリを開いたときに出します）");
+    } else {
+      let tags = [];
+      try{ tags = await reg.periodicSync.getTags(); }catch(_){ }
+      bits.push("毎朝の予約: " + (tags.indexOf("memonote-digest") >= 0
+        ? "あり" : "なし（アプリを開いたときに出します）"));
+    }
+  }catch(_){ bits.push("毎朝の予約: 調べられません"); }
+  try{
+    const r = await swAsk({type:"get-cfg"});
+    const at = r && r.state && r.state.at;
+    bits.push("前回の通知: " + (at ? new Date(at).toLocaleString("ja-JP").slice(0,16) : "まだ"));
+  }catch(_){ }
+  bits.push("ホーム画面から起動: " +
+    (window.matchMedia("(display-mode: standalone)").matches ? "はい" : "いいえ"));
+  return bits.join(" ／ ");
+}
+/* アプリを開いたときの取りこぼし補完。
+   毎朝の予約が動かない端末でも、ここで1日1回は出ます。 */
+async function notifyOnOpen(){
+  loadNotify();
+  /* 通知を出さない設定でも、残り数だけは新しくしておきます */
+  await pushCfg({}).catch(() => {});
+  if(!NCFG.on) return;
+  if(!("Notification" in window) || Notification.permission !== "granted") return;
+  if(new Date().getHours() < (NCFG.hour || 0)) return;
+  try{
+    const r = await swAsk({type:"get-cfg"});
+    const day = r && r.state && r.state.day;
+    const d = new Date();
+    const t = d.getFullYear() + "-" + pad(d.getMonth()+1) + "-" + pad(d.getDate());
+    if(day === t) return;                       /* きょうはもう出した */
+    await swAsk({type:"notify", fresh:false});
+  }catch(_){ }
+}
+
 function showHelp(){
   SIN.innerHTML = "";
   SIN.appendChild(el("h3", null, "使い方"));
@@ -1387,6 +1657,7 @@ function showHelp(){
    ["ToDo を消す","チェックを入れて、下の 🗑 を押します。済んだものはここで片づけられます。"],
    ["秘匿情報","送るものに開発符号などは入れないでください。送信の画面にも出ます。"],
    ["圏外","一度でも電波のあるところで開いてあれば、圏外でもアプリと 🚗/🤖 のニュースが読めます。"],
+   ["時計に出す","⋯ の「整理して通知する」で、🚗/🤖 の新しいぶんを短くまとめてスマホに通知します。Mi Fitness で通知を許してあれば、そのまま時計に出ます。"],
    ["会社側の受け取り","MemoNote の右の ToDo 欄の下に「スマホから受け取る」が出ます。押すと届いたものが並び、1件ずつ入れるか捨てるかを選べます。"],
    ["書く","「＋ 新しく書く」で1件ずつ作ります。1件 = 会社での1ノートです。"],
    ["話して入れる","キーボードのマイクを押すと、話した内容が文字になります。"],
@@ -1497,6 +1768,8 @@ if("serviceWorker" in navigator){
       if(navigator.onLine) { try{ reg.update(); }catch(_){ } }
     }).catch(() => {});
     setTimeout(warmNews, 3000);
+    /* 毎朝の予約が動かない端末でも、ここで1日1回は出します */
+    setTimeout(() => { notifyOnOpen().catch(() => {}); }, 6000);
   });
   /* 中身が新しくなったときだけ、1回だけ読み込み直します */
   navigator.serviceWorker.addEventListener("controllerchange", () => {
@@ -1510,7 +1783,10 @@ if("serviceWorker" in navigator){
 }
 window.addEventListener("online", () => setTimeout(warmNews, 1200));
 document.addEventListener("visibilitychange", () => {
-  if(!document.hidden && navigator.onLine) setTimeout(warmNews, 1500);
+  if(!document.hidden && navigator.onLine){
+    setTimeout(warmNews, 1500);
+    setTimeout(() => { notifyOnOpen().catch(() => {}); }, 4000);
+  }
 });
 boot();
 </script>
