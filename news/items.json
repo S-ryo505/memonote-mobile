@@ -1,6 +1,127 @@
 {
- "updated": "2026-10-21T06:55:00+09:00",
+ "updated": "2026-10-22T09:05:00+09:00",
  "items": [
+  {
+   "id": "2026-10-21-eu-co2-875-compromise",
+   "date": "2026-10-21",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "PT",
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "EU議会の3会派、2035年の乗用車CO2削減目標を2021年比87.5%とする妥協案で合意",
+    "summary": "欧州議会のEPP・S&D・Renew Europeの代表者が、2035年の新車平均CO2を2021年比87.5%削減とする案で合意したと報じられた。欧州委員会が昨年12月に出した案は90%削減で、現行規則は100%削減（実質的に純エンジン車の販売終了）。2035年以降もエンジン車を販売できる余地がさらに広がる。",
+    "note": "目標値 = 基準値 ×（1 − 削減率）。仮に2021年基準を95 g/km（NEDC相当、仮定値）とすると、100%削減→0 g/km、90%→9.5 g/km、87.5%→約11.9 g/km。残る枠はフリート平均で使うため、BEV比率をx、エンジン車（HEV/PHEV含む）の平均をE g/kmとすると E×(1−x) ≤ 目標 となり、E=100 g/km（仮定値）なら x ≥ 約88%が必要。会派間の合意段階で、本会議採決・理事会との三者協議は今後（要確認）。"
+   },
+   "en": {
+    "title": "Three EU Parliament groups agree a compromise setting the 2035 car CO2 cut at 87.5% versus 2021",
+    "summary": "Representatives of the EPP, S&D and Renew Europe have reportedly agreed that average CO2 from new cars should fall 87.5% from 2021 levels by 2035. The European Commission's proposal last December called for 90%, and the current rule requires 100%, which in practice ends sales of pure combustion cars. The deal widens the room for combustion vehicles to stay on sale after 2035.",
+    "note": "Target = baseline × (1 − reduction). Assuming a 2021 baseline of 95 g/km (NEDC-equivalent, assumed value): 100% → 0 g/km, 90% → 9.5 g/km, 87.5% → about 11.9 g/km. The allowance applies to the fleet average, so with BEV share x and combustion (incl. HEV/PHEV) average E g/km, E×(1−x) ≤ target; with E = 100 g/km (assumed) x must be at least about 88%. This is only a deal between groups; the plenary vote and trilogue with the Council are still to come (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/812687/eu-moves-closer-delay-ice-ban/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-vw-battery-recall-72k",
+   "date": "2026-10-21",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "Global",
+   "tags": [
+    "電池",
+    "品質"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "VW、電池不具合で世界72,668台のEVをリコール（KBA公表、ドイツ国内9,881台）",
+    "summary": "ドイツ連邦自動車庁（KBA）の情報によると、VWの電池関連リコールは3件で計72,668台、うちドイツ国内は9,881台。対象は2022〜2025年生産のID.3・ID.4・ID.7・ID. Buzzと、2022〜2024年生産のCupra Born。恒久対策までの暫定措置として、OTAで最大充電量を80%に制限する。米国では今月、ID.4の22,524台が別途NHTSAに届け出られている。",
+    "note": "暫定措置の80%制限は、セル電圧の上限を下げる対策。使用可能エネルギーは概ね E_use ≈ E_nom ×（SOC上限 − SOC下限）なので、上限100%→80%で航続はおよそ2割減る（下限・バッファ設定は車両ごとに異なり要確認）。高SOCほど正極電位が高く、内部短絡が起きた場合の発熱エネルギーも大きいため、不良セルのリスク低減として一般的な手当て。不具合の具体的な原因（セル製造ロット等）は今回の情報には含まれず要確認。"
+   },
+   "en": {
+    "title": "VW recalls 72,668 EVs worldwide over battery defects, KBA data show (9,881 in Germany)",
+    "summary": "According to Germany's Federal Motor Transport Authority (KBA), three VW battery recalls cover 72,668 EVs worldwide, including 9,881 in Germany. Affected are ID.3, ID.4, ID.7 and ID. Buzz built in 2022–2025 and Cupra Born built in 2022–2024. As an interim measure until a fix is ready, VW will cap the maximum charge at 80% via an over-the-air update. Separately, 22,524 ID.4s were filed with NHTSA in the US earlier this month.",
+    "note": "The 80% cap lowers the upper cell-voltage limit. Usable energy is roughly E_use ≈ E_nom × (SOC_max − SOC_min), so dropping SOC_max from 100% to 80% cuts range by about a fifth (actual buffers vary by vehicle; to be confirmed). Higher SOC means a higher cathode potential and more energy released if an internal short occurs, so this is a common stopgap for suspect cells. The specific root cause (e.g. cell production lots) is not stated and needs confirmation."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/21/vws-battery-recall-affects-72700-evs-including-10000-in-germany/"
+    },
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/21/volkswagen-recalls-nearly-73000-evs-faulty-batteries/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-ford-gauge-recall-102k",
+   "date": "2026-10-21",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "品質"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "Ford、速度計・回転計の表示誤りで米国のトラック102,159台をリコール",
+    "summary": "対象は2024年12月14日〜2026年4月17日生産の2025〜2026年型Super Duty（F-250〜F-600）91,588台、2025年8月22日〜2026年5月12日生産の2026年型F-150 10,570台、2026年型F-750 1台。アナログ式の速度計と回転計が実際と異なる値を表示するおそれがある。Fordの社内審査グループが問題を把握したのは5月28日。",
+    "note": "メーター表示の車速は通常、車速センサ（車輪速またはトランスミッション出力軸回転）から v = ω × r_tire（駆動系経由なら ÷ 最終減速比）で算出されCAN経由で表示される。今回の原因がセンサ側か、メーターECU・指針駆動側かは記事情報からは不明（要確認）。"
+   },
+   "en": {
+    "title": "Ford recalls 102,159 US trucks because their speedometers and tachometers can show wrong readings",
+    "summary": "The recall covers 91,588 model-year 2025–2026 Super Duty trucks (F-250 to F-600) built from 14 December 2024 to 17 April 2026, 10,570 2026 F-150s built from 22 August 2025 to 12 May 2026, and one 2026 F-750. Their analog speedometer and tachometer can display values that differ from the actual ones. Ford's Critical Concern Review Group first learned of the problem on 28 May.",
+    "note": "Displayed vehicle speed is normally computed from a speed sensor (wheel speed or transmission output shaft) as v = ω × r_tire (divided by the final drive ratio if measured upstream) and sent to the cluster over CAN. Whether the fault lies in the sensor side or in the cluster ECU / needle drive is not stated (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2293512/ford-super-duty-recall-faulty-gauges/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-gm-gen4-ev-platform",
+   "date": "2026-10-21",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "US",
+   "tags": [
+    "PT",
+    "電池",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "GM、第4世代EVプラットフォームの概要を公表：車重15%減・効率20%向上・電池容量20%減",
+    "summary": "GMは10月21日のGM Forwardイベントで第4世代EVプラットフォームの詳細を一部公表した。車両質量15%減、効率20%向上、電池容量20%減、空力性能25%向上、配線30%減としている。駆動ユニットとパワーエレクトロニクスを再設計し、モーター1基あたりの部品点数を40%削減する。",
+    "note": "必要電池容量は E_batt ≈ 航続距離 × 電費（Wh/km）。効率20%向上で電費が1/1.2倍（約17%減）になれば、同じ航続に必要な容量も約17%減り、公表の「20%減」と概ね整合する（推測）。走行抵抗は F = C_rr·m·g + ½·ρ·C_d·A·v² で、質量15%減は転がり抵抗項に、空力25%改善はC_d·Aに比例して効く。各数値の比較基準（現行Ultium比か）や対象車種は要確認。"
+   },
+   "en": {
+    "title": "GM outlines its fourth-generation EV platform: 15% lighter, 20% more efficient, 20% less battery",
+    "summary": "At its GM Forward event on 21 October, GM shared some details of its fourth-generation EV platform. It cites a 15% reduction in vehicle mass, 20% higher efficiency, 20% less battery capacity, 25% better aerodynamics and 30% less wiring. The drive units and power electronics were redesigned, cutting the part count inside each motor by 40%.",
+    "note": "Required battery capacity is roughly E_batt ≈ range × consumption (Wh/km). If efficiency rises 20%, consumption falls to 1/1.2 (about 17% lower), so the capacity needed for the same range drops by about 17%, broadly consistent with the stated 20% (inference). Road load is F = C_rr·m·g + ½·ρ·C_d·A·v²: the 15% mass cut acts on the rolling term and the 25% aero gain on C_d·A. The baseline for these figures (current Ultium?) and target models need confirmation."
+   },
+   "src": [
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/812810/gm-fourth-generation-ev-platform-lmr-battery/"
+    }
+   ]
+  },
   {
    "id": "2026-10-20-foxconn-melco-mobility",
    "date": "2026-10-20",
