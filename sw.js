@@ -10,9 +10,10 @@
      この版では1件ずつ入れて、取れなかったものは黙って飛ばします。
 
    更新: CACHE の数字を上げると、次に開いたときに新しいものへ入れ替わります。 */
-const VERSION = "v5";
+const VERSION = "v6";
 const CACHE   = "memonote-mobile-" + VERSION;
 const SHARE   = "memonote-share";    /* 共有されたファイルの一時置き場 */
+const CFG     = "memonote-cfg";      /* 通知の設定と履歴（localStorage はここから読めないため） */
 
 /* アプリ本体。圏外でも必ず開けるように、最初に控えておきます。 */
 const SHELL = [
@@ -49,18 +50,204 @@ self.addEventListener("install", e => {
 self.addEventListener("activate", e => {
   e.waitUntil((async () => {
     const ks = await caches.keys();
-    await Promise.all(ks.filter(k => k !== CACHE && k !== SHARE).map(k => caches.delete(k)));
+    await Promise.all(ks.filter(k => k !== CACHE && k !== SHARE && k !== CFG)
+                        .map(k => caches.delete(k)));
     await self.clients.claim();
     /* 圏外のまま入れ替わったときのために、ここでもう一度試します */
     warm(SHELL.concat(NEWS)).catch(() => {});
   })());
 });
 
-/* 画面側から「ニュースを控え直して」と言われたとき */
+/* =====================================================================
+   整理して通知する
+   毎朝の 🚗/🤖 から「時計で読める長さ」のまとめを作って、
+   スマホの通知として出します。時計（Mi Fitness で通知を許したもの）には
+   そのスマホの通知がそのまま転送されます。
+
+   設定と履歴は localStorage ではなく Cache に置きます。
+   サービスワーカーからは localStorage が読めないためです。
+   ===================================================================== */
+const NOTIFY_DEF = {
+  on:false,          /* 毎朝うけとるか */
+  hour:7,            /* 何時以降に出すか */
+  car:true, ai:true, todo:true,
+  perSrc:3,          /* 1つの出どころから何件まで */
+  minPrio:2,         /* 重要度 ●● 以上だけ（1=全部, 3=●●●のみ） */
+  chars:26,          /* 1行の長さ */
+  maxBody:180,       /* 本文ぜんたいの長さ。時計は長文を切るので短めに */
+  counts:null        /* 画面側が入れてくれる ToDo の残り数 */
+};
+async function cfgGet(key, def){
+  try{
+    const c = await caches.open(CFG);
+    const r = await c.match("./" + key);
+    if(!r) return def;
+    return Object.assign({}, def, await r.json());
+  }catch(_){ return def; }
+}
+async function cfgPut(key, obj){
+  try{
+    const c = await caches.open(CFG);
+    await c.put("./" + key, new Response(JSON.stringify(obj),
+      {headers:{"Content-Type":"application/json"}}));
+  }catch(_){ }
+}
+const notifyCfg   = () => cfgGet("notify-config", NOTIFY_DEF);
+const notifyState = () => cfgGet("notify-state", {ids:[], at:"", day:""});
+
+/* 長い見出しを、時計で読める長さに詰めます。
+   途中で切るときは、読点があればそこで切ると自然に終わります。 */
+function clip(s, n){
+  s = String(s == null ? "" : s).replace(/\s+/g, " ").trim();
+  if(s.length <= n) return s;
+  const cut = s.slice(0, n);
+  const m = cut.lastIndexOf("、");
+  if(m >= Math.floor(n * 0.6)) return cut.slice(0, m);
+  return cut + "…";
+}
+const pad2 = n => String(n).padStart(2, "0");
+function today(){
+  const d = new Date();
+  return d.getFullYear() + "-" + pad2(d.getMonth()+1) + "-" + pad2(d.getDate());
+}
+/* items.json を読みます。圏外なら控えから出ます（fetch ハンドラが面倒を見ます）。 */
+async function readItems(url){
+  try{
+    const r = await fetch(url, {cache:"no-store"});
+    if(r && r.ok) return await r.json();
+  }catch(_){ }
+  try{
+    const c = await caches.open(CACHE);
+    const r = await c.match(url, {ignoreSearch:true});
+    if(r) return await r.json();
+  }catch(_){ }
+  return null;
+}
+/* 出どころ1つぶんの行を作ります。前に知らせたものは外します。 */
+function pickLines(data, mark, cfg, seen){
+  const items = (data && data.items) || [];
+  return items
+    .filter(it => it && it.id && (it.prio || 1) >= cfg.minPrio)
+    .filter(it => seen.indexOf(it.id) < 0)
+    .sort((a, b) => {
+      if(a.date !== b.date) return a.date < b.date ? 1 : -1;
+      if((a.kind === "flash") !== (b.kind === "flash")) return a.kind === "flash" ? -1 : 1;
+      return (b.prio || 0) - (a.prio || 0);
+    })
+    .slice(0, cfg.perSrc)
+    .map(it => ({id:it.id, line:mark + " " + clip((it.ja && it.ja.title) || "", cfg.chars)}));
+}
+/* まとめを1つ作ります。fresh=true なら「前に知らせたか」を見ません（お試し用）。 */
+async function buildDigest(fresh){
+  const cfg = await notifyCfg();
+  const st  = await notifyState();
+  const seen = fresh ? [] : (st.ids || []);
+  const rows = [];
+  if(cfg.car) rows.push(...pickLines(await readItems("./news/items.json"), "🚗", cfg, seen));
+  if(cfg.ai)  rows.push(...pickLines(await readItems("./ai/items.json"),   "🤖", cfg, seen));
+
+  /* ToDo の行は最後に必ず付けたいので、先に長さを押さえておきます */
+  const c = cfg.counts;
+  let tail = "";
+  if(cfg.todo && c && (c.todo || c.waiting || c.keep)){
+    const bits = [];
+    if(c.todo)    bits.push("ToDo " + c.todo);
+    if(c.waiting) bits.push("待ち " + c.waiting);
+    if(c.keep)    bits.push("覚書 " + c.keep);
+    tail = "✓ " + bits.join(" ・ ");
+  }
+  /* 本文ぜんたいが長すぎると時計側で切られるので、入らない行は落とします */
+  const budget = cfg.maxBody - (tail ? tail.length + 1 : 0);
+  let body = "";
+  for(const r of rows){
+    const next = body ? body + "\n" + r.line : r.line;
+    if(next.length > budget) break;
+    body = next;
+  }
+  const used = body ? body.split("\n").length : 0;
+  if(tail) body = body ? body + "\n" + tail : tail;
+  const d = new Date();
+  const title = (d.getMonth()+1) + "/" + d.getDate() + " の要点";
+  const open = cfg.car && rows.some(r => r.line.indexOf("🚗") === 0) ? "./news/"
+             : cfg.ai  && rows.some(r => r.line.indexOf("🤖") === 0) ? "./ai/"
+             : "./index.html";
+  /* 実際に本文へ載せたぶんだけを「知らせた」ことにします */
+  const ids = rows.slice(0, used).map(r => r.id);
+  return {title:title, body:body, ids:ids, n:used,
+          empty:!used && !tail, open:open, cfg:cfg};
+}
+/* 実際に通知を出し、何を知らせたかを覚えます。 */
+async function showDigest(fresh){
+  const g = await buildDigest(fresh);
+  if(g.empty && !g.body) return {ok:false, why:"new"};
+  await self.registration.showNotification("MemoNote ・ " + g.title, {
+    body: g.body,
+    icon: "./icon-192.png",
+    badge: "./icon-192.png",
+    tag: "memonote-digest",
+    renotify: true,
+    silent: false,
+    data: {url:g.open}
+  });
+  const st = await notifyState();
+  const ids = [...new Set([...(st.ids || []), ...g.ids])].slice(-400);
+  await cfgPut("notify-state", {ids:ids, at:new Date().toISOString(), day:today()});
+  return {ok:true, n:g.n, title:g.title, body:g.body};
+}
+
+/* 毎朝の自動。Chrome が頃合いを見て呼びます（時刻は指定できません）。
+   設定した時刻より前、またはその日もう出したときは、何もしません。 */
+self.addEventListener("periodicsync", e => {
+  if(e.tag !== "memonote-digest") return;
+  e.waitUntil((async () => {
+    const cfg = await notifyCfg();
+    if(!cfg.on) return;
+    const st = await notifyState();
+    if(st.day === today()) return;
+    if(new Date().getHours() < (cfg.hour || 0)) return;
+    await warm(NEWS).catch(() => {});
+    await showDigest(false).catch(() => {});
+  })());
+});
+
+self.addEventListener("notificationclick", e => {
+  e.notification.close();
+  const want = (e.notification.data && e.notification.data.url) || "./index.html";
+  e.waitUntil((async () => {
+    const url = new URL(want, self.registration.scope).href;
+    const cs = await self.clients.matchAll({type:"window", includeUncontrolled:true});
+    for(const c of cs){
+      if(c.url.indexOf(self.registration.scope) === 0 && "focus" in c){
+        try{ await c.navigate(url); }catch(_){ }
+        return c.focus();
+      }
+    }
+    if(self.clients.openWindow) return self.clients.openWindow(url);
+  })());
+});
+
+/* 画面側とのやりとり */
 self.addEventListener("message", e => {
   const d = e.data || {};
-  if(d.type === "refresh-news") e.waitUntil(warm(NEWS).catch(() => {}));
-  if(d.type === "skip-waiting") self.skipWaiting();
+  const reply = v => { try{ (e.ports && e.ports[0]) && e.ports[0].postMessage(v); }catch(_){ } };
+  if(d.type === "refresh-news") return e.waitUntil(warm(NEWS).catch(() => {}));
+  if(d.type === "skip-waiting") return self.skipWaiting();
+  if(d.type === "save-cfg")
+    return e.waitUntil(notifyCfg().then(c => cfgPut("notify-config",
+      Object.assign({}, c, d.cfg || {}))).then(() => reply({ok:true})));
+  if(d.type === "get-cfg")
+    return e.waitUntil(Promise.all([notifyCfg(), notifyState()])
+      .then(([c, st]) => reply({ok:true, cfg:c, state:st})));
+  if(d.type === "digest")
+    return e.waitUntil(buildDigest(!!d.fresh).then(g => reply({ok:true, digest:g}))
+      .catch(err => reply({ok:false, why:String(err)})));
+  if(d.type === "notify")
+    return e.waitUntil(warm(NEWS).catch(() => {})
+      .then(() => showDigest(!!d.fresh)).then(r => reply(r))
+      .catch(err => reply({ok:false, why:String(err)})));
+  if(d.type === "forget")
+    return e.waitUntil(cfgPut("notify-state", {ids:[], at:"", day:""})
+      .then(() => reply({ok:true})));
 });
 
 /* 共有の受け口（manifest の share_target が POST でここに送ってくる） */
