@@ -1,6 +1,129 @@
 {
- "updated": "2026-10-22T09:05:00+09:00",
+ "updated": "2026-10-23T08:57:14+09:00",
  "items": [
+  {
+   "id": "2026-10-22-honda-mitsubishi-triton",
+   "date": "2026-10-22",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "ホンダと三菱自、トライトンベースのホンダ向けピックアップ開発で覚書：ASEAN向けに2028年発売予定",
+    "summary": "ホンダと三菱自動車は10月22日、三菱の1tピックアップ「トライトン」を基にしたホンダ向けモデルを開発する覚書を交わした。ASEAN市場向けで、2028年中の販売開始を予定し、両社間の車両相互補完としては初の案件となる。2024年8月1日に日産を含む3社で結んだ戦略的パートナーシップの枠組みで検討されてきたもので、三菱はタイ工場の稼働率向上を狙う。",
+    "note": "ベース車はラダーフレーム構造。ホンダはラダーフレーム車を自社開発せずにラインアップへ追加する形となる。駆動系・4WD方式をホンダ向けに変更するかは記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Honda and Mitsubishi sign MOU for a Triton-based Honda pickup, due in ASEAN in 2028",
+    "summary": "On October 22, Honda and Mitsubishi Motors signed a memorandum of understanding to develop a Honda model based on Mitsubishi's one-ton Triton pickup. Aimed at ASEAN markets, it is scheduled to go on sale during 2028 and is the first vehicle-sharing project between the two companies. It was studied under the strategic partnership the two signed with Nissan on August 1, 2024, and Mitsubishi expects higher utilization at its Thai plant.",
+    "note": "The base truck uses a ladder frame, so Honda adds a body-on-frame model without developing one itself. Whether the drivetrain or 4WD system will be changed for Honda is not stated in the articles (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2150451.html"
+    },
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/23/418110.html"
+    },
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/812885/mitsubishi-triton-based-honda-truck-confirmed/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-22-land-cruiser-hv-fuel-recall",
+   "date": "2026-10-22",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "品質",
+    "PT"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、ランドクルーザー・ハイブリッド（J250）105,794台をリコール：燃料チューブ接続部の外れで燃料漏れ・火災のおそれ",
+    "summary": "対象は2024〜2026年モデルのJ250型ランドクルーザー・ハイブリッド105,794台。燃料タンク付近の燃料チューブ接続部が外れる可能性があり、点検または燃料チューブ交換で対応する。これまでに市場報告23件、保証請求64件が確認されている。",
+    "note": "燃料系の接続部外れは漏れた燃料が着火源に触れると火災につながるため、台数規模とあわせて重大度が高い。対象市場は記事から米国と推測（要確認）。"
+   },
+   "en": {
+    "title": "Toyota recalls 105,794 Land Cruiser Hybrids (J250) over fuel-tube connection that can leak and pose a fire risk",
+    "summary": "The recall covers 105,794 J250-generation Land Cruiser Hybrids from model years 2024 to 2026. A fuel-tube connection near the tank may come loose, and dealers will inspect or replace the fuel tube. Toyota has logged 23 field reports and 64 warranty claims so far.",
+    "note": "A loose fuel-system joint can cause a fire if leaked fuel reaches an ignition source, which makes this serious given the volume. The affected market is inferred to be the US from the article (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/812890/toyota-land-cruiser-recall-targets/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-23-meti-cev-subsidy-cut",
+   "date": "2026-10-23",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "JP",
+   "tags": [
+    "規制",
+    "電池"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "経産省、CEV補助金の上限を引き下げ：EVは125万円→75万円、2027年1月1日以降の新規登録から",
+    "summary": "経済産業省は10月21日、令和7年度補正CEV補助金の補助額を見直すと発表した。最高額（得点130以上）はEVが125万円→75万円、軽EVが55万円→44万円、PHEVが80万円→48万円、FCVが145万円→87万円となり、2027年1月1日以降に新規登録される車両に適用する。受付期限の2027年2月12日より前に予算が尽きる見込みとなったため、補助期間を延ばす目的とされる。",
+    "note": "引き下げ率 = 1 − 新上限/旧上限 で計算すると、EV・PHEV・FCVは約40%（75/125=0.60、48/80=0.60、87/145=0.60）、軽EVは20%（44/55=0.80）。普通車系を一律0.6倍、軽EVを0.8倍にした形と読める（計算は筆者）。鋼材関連の加算額も最大5万円→3万円（軽EVは3万円→1.8万円）で、こちらも0.6倍。"
+   },
+   "en": {
+    "title": "METI cuts CEV subsidy caps: EVs from ¥1.25M to ¥750K for registrations from January 1, 2027",
+    "summary": "On October 21, Japan's Ministry of Economy, Trade and Industry announced revised amounts for the FY2025 supplementary CEV subsidy. Maximum amounts (score of 130 or more) fall from ¥1.25M to ¥750K for EVs, ¥550K to ¥440K for kei EVs, ¥800K to ¥480K for PHEVs and ¥1.45M to ¥870K for FCVs, applying to vehicles newly registered on or after January 1, 2027. The aim is to stretch the budget, which was expected to run out before the February 12, 2027 application deadline.",
+    "note": "Using reduction = 1 − new cap / old cap, EVs, PHEVs and FCVs drop about 40% (75/125, 48/80 and 87/145 all equal 0.60), while kei EVs drop 20% (44/55 = 0.80). In effect, regular vehicles were scaled by 0.6 and kei EVs by 0.8 (author's calculation). The steel-related bonus also falls from up to ¥50K to ¥30K (¥30K to ¥18K for kei EVs), again a factor of 0.6."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2150528.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-22-cn-l3-second-batch",
+   "date": "2026-10-22",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "CN",
+   "tags": [
+    "ADAS",
+    "規制"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "中国MIIT、L3自動運転の第2弾パイロット承認を準備中：対象メーカー・時期は非公表",
+    "summary": "中国工業情報化部（MIIT）装備工業一司の郭守剛司長が、2026年世界智能網聯汽車大会で、L3車両の第2弾パイロット承認の作業が進んでいると明らかにした。第1弾は2025年12月に長安汽車とBAIC（北京汽車）のモデルが条件付き承認を受けている。第2弾の対象メーカー・車種・承認時期は示されていない。",
+    "note": "L3はシステム作動中の運転責任がシステム側に移るため、承認の拡大は責任分界・冗長化（操舵・制動・電源）要件の実運用につながる。中国GB規格側の要件との関係は記事に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "China's MIIT is preparing a second batch of Level 3 pilot approvals; automakers and timing not disclosed",
+    "summary": "Guo Shougang, head of MIIT's equipment industry department, said at the 2026 World Intelligent Connected Vehicles Conference that work on a second batch of Level 3 pilot approvals is underway. The first batch went to models from Changan and BAIC, which received conditional approval in December 2025. The automakers, models and timeline for the second batch were not disclosed.",
+    "note": "At Level 3, driving responsibility shifts to the system while it is active, so wider approvals move liability splits and redundancy requirements (steering, braking, power) into real operation. The link to China's GB standard requirements is not covered in the article (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/22/china-advances-2nd-batch-level-3-approvals/"
+    }
+   ]
+  },
   {
    "id": "2026-10-21-eu-co2-875-compromise",
    "date": "2026-10-21",
