@@ -1,6 +1,137 @@
 {
-  "updated": "2026-10-21T07:24:10+09:00",
+  "updated": "2026-10-23T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-10-22-php2shell-exploited",
+      "date": "2026-10-22",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "セキュリティ"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "PHPに重大な脆弱性2件（php2shell）。AIで発見、修正公開前から悪用、日本でも21日夜に緊急メンテ相次ぐ",
+        "summary": "PHP財団は、遠隔から任意のコードを実行できる脆弱性2件（CVE-2026-109618、CVE-2026-109619、通称php2shell）を公表し、10月21日23時（日本時間）に修正パッチを公開した。脆弱性は約20年前までさかのぼる全バージョンにあり、発見にはOpenAIのAIモデルが使われた。Amazonは「広く悪用されている」と警告し、Ars Technicaは攻撃者がパッチ公開の4日前から悪用を始めていたと報じている。",
+        "note": "仕事での使いどころ：社内Webサイト、販売店・部品サプライヤー向けポータル、WordPress等のCMSでPHPを使っていないか、情報システム部門に確認と適用状況を問い合わせる材料になる。注意点：サポート終了の古いPHPには修正が出ない可能性がある（推測、要確認）。パッチ前から悪用されていたため、適用済みでも侵入の痕跡調査が必要かは要確認。"
+      },
+      "en": {
+        "title": "Two critical PHP flaws (\"php2shell\") found with AI were exploited before the patch; many Japanese services went into emergency maintenance on Oct 21",
+        "summary": "The PHP Foundation disclosed two vulnerabilities (CVE-2026-109618 and CVE-2026-109619, together called php2shell) that let attackers run arbitrary code remotely, and released a patch at 11 p.m. JST on October 21. The flaws exist in every PHP version going back about 20 years and were found using an OpenAI model. Amazon warned they are being \"broadly exploited,\" and Ars Technica reports attackers started exploiting them four days before the patch was released.",
+        "note": "How to use it at work: Ask your IT department whether company websites, dealer or supplier portals, or CMSs such as WordPress run on PHP, and whether the patch has been applied. Caveats: Old, unsupported PHP versions may not receive fixes (speculation; needs confirmation). Because the bugs were exploited before the patch, whether patched systems also need a compromise check needs confirmation."
+      },
+      "src": [
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/business/articles/2610/22/news053.html"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1016574/php2shell-security-vulnerability-websites-down"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-23-connectwise-breach-ai-agents",
+      "date": "2026-10-23",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "エージェント"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "IT管理大手ConnectWiseが侵害され約2,250組織に被害。攻撃者はAIエージェントで毎分約3,000回のサインインを試行",
+        "summary": "Microsoftは、IT管理ソフト大手ConnectWiseへの侵害を中国系とみられるハッカーによるものとし、攻撃者がAIエージェントを使って約2,250の組織に侵入したと説明した。サインイン試行は毎分約3,000回に達した。盗まれた認証情報で、顧客のMicrosoft環境に正規ユーザーとしてログインし、メールやファイルにアクセスできる状態だった。",
+        "note": "仕事での使いどころ：自社や委託先がConnectWise製品を使っていないか、Microsoft 365のサインイン履歴に不審な大量試行がないかを確認する依頼の根拠になる。注意点：被害企業の名前や日本企業の被害有無は記事中に書かれておらず要確認。攻撃者の特定はMicrosoftの見解に基づく。"
+      },
+      "en": {
+        "title": "IT management firm ConnectWise breached, about 2,250 organizations hit; attackers used AI agents to try nearly 3,000 sign-ins per minute",
+        "summary": "Microsoft attributes the breach of IT management software company ConnectWise to a China-aligned hacker and says the attackers used AI agents to break into about 2,250 organizations. Sign-in attempts reached almost 3,000 per minute. With the stolen credentials, the attackers could log in to customers' Microsoft-hosted environments as authorized users and access emails and files.",
+        "note": "How to use it at work: Use this as grounds to ask whether your company or its contractors use ConnectWise products, and whether Microsoft 365 sign-in logs show suspicious bulk attempts. Caveats: The article does not name the affected companies or say whether Japanese firms were hit (needs confirmation). The attribution is Microsoft's assessment."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-22-claude-duet",
+      "date": "2026-10-22",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "エージェント",
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "primary",
+      "ja": {
+        "title": "Anthropic、常時稼働エージェント「Claude Duet」をリサーチプレビュー公開。Opus 5.5ベース、Pro／Maxプランでウェイトリスト提供",
+        "summary": "Anthropicは10月21日（現地時間）、利用者が離席中も作業を続けるエージェントアプリ「Claude Duet」をリサーチプレビューとして公開した。Claude Opus 5.5をベースにし、Gmail・Slack・Stripeなど6,000以上のコネクタ／プラグインと接続でき、毎朝つないだアプリの重要事項を短くまとめて送る。iOS・Android・Web（claude.ai）で動き、Pro／Maxプラン向けにウェイトリスト方式で提供され、支払いなどの操作には利用者の承認が必要。",
+        "note": "仕事での使いどころ：メール・チャット・予定の朝のまとめや、席を外している間の資料・ダッシュボード作成の下準備。注意点：個人向けPro／Max対象で、会社のTeam／Enterpriseプランで使えるかは記事に記載がなく要確認。会社のメールやSlackを接続する前に社内の情報管理ルールの確認が必要。xAI・Meta・OpenAIも同種の製品を出しており比較が必要。"
+      },
+      "en": {
+        "title": "Anthropic releases \"Claude Duet,\" an always-on agent, as a research preview built on Opus 5.5 for Pro and Max users via a waitlist",
+        "summary": "On October 21 (US time), Anthropic released Claude Duet, an agent app that keeps working while the user is away, as a research preview. Built on Claude Opus 5.5, it connects to more than 6,000 connectors and plugins such as Gmail, Slack, and Stripe, and sends a short summary of key items from connected apps every morning. It runs on iOS, Android, and the web at claude.ai, is offered to Pro and Max users through a waitlist, and requires user approval for actions such as payments.",
+        "note": "How to use it at work: Morning summaries of email, chat, and schedules, and groundwork for documents or dashboards while you are away from your desk. Caveats: It targets individual Pro/Max plans; whether it is available on company Team/Enterprise plans is not stated (needs confirmation). Check your company's information-handling rules before connecting work email or Slack. xAI, Meta, and OpenAI offer similar products, so compare them."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2610/22/2000002490/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/anthropic-takes-on-grok-bot-metas-muse-and-openais-dots-with-its-always-on-agent-claude-duet/"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-22-google-cloud-openai-models",
+      "date": "2026-10-22",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "intermediate",
+      "tags": [
+        "モデル",
+        "コーディング"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Google CloudのModel GardenにOpenAIのGPT-6 Astra・GPT-6.1 Sol・GPT-6 Lunaが追加",
+        "summary": "Google Cloudは10月21日（現地時間）、モデルカタログ「Model Garden」にOpenAIの3モデルを追加したと発表した。最上位のGPT-6 Astra、コストを重視するGPT-6.1 Sol、軽量のGPT-6 Lunaで、Google Cloudは「主要3社のクローズドモデルを使える唯一のハイパースケーラー」と説明している。",
+        "note": "仕事での使いどころ：社内システムをGoogle Cloudで構築している場合、新たなクラウド契約なしにGemini・Claude・GPTを同じ基盤で比較・切り替えできる可能性がある。注意点：料金、提供リージョン（日本リージョンの有無）、データの取り扱い条件は記事に記載がなく要確認。「主要3社」の範囲はGoogle側の主張。"
+      },
+      "en": {
+        "title": "Google Cloud adds OpenAI's GPT-6 Astra, GPT-6.1 Sol, and GPT-6 Luna to Model Garden",
+        "summary": "On October 21 (US time), Google Cloud announced that it has added three OpenAI models to its Model Garden catalog: the top-tier GPT-6 Astra, the cost-focused GPT-6.1 Sol, and the lightweight GPT-6 Luna. Google Cloud describes itself as \"the only hyperscaler\" offering closed models from all three major companies.",
+        "note": "How to use it at work: If your internal systems run on Google Cloud, you may be able to compare and switch between Gemini, Claude, and GPT on the same platform without a new cloud contract. Caveats: Pricing, available regions (including Japan), and data-handling terms are not stated in the article (needs confirmation). The \"three major companies\" claim is Google's own."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2610/22/2000002487/"
+        }
+      ]
+    },
     {
       "id": "2026-10-21-us-deepseek-federal-ban",
       "date": "2026-10-21",
