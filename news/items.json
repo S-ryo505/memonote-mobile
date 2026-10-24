@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T08:57:14+09:00",
+ "updated": "2026-10-24T09:51:08+09:00",
  "items": [
   {
    "id": "2026-10-22-honda-mitsubishi-triton",
@@ -4956,6 +4956,717 @@
     {
      "name": "All About Industries",
      "url": "https://www.all-about-industries.com/brake-by-wire-in-small-series-still-in-2026-a-5b91ecee02502169d8c356b12d6a9ce5/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-19-nissan-elgrand-e4orce-review",
+   "date": "2026-10-19",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "4WD",
+    "制御",
+    "シャシー"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "日産 新型エルグランド試乗：1.5L直3 e-POWER＋前後モーターのe-4ORCE専用、走行モードで減衰力・操舵・回生を統合制御",
+    "summary": "4代目エルグランドは先代プラットフォームを改良し、サスペンションはフロントがストラット、リヤがマルチリンク。パワートレインは1.5L直3（140馬力・228Nm）を発電専用とする第3世代e-POWERで、フロントモーター205馬力・330Nm、リヤモーター136馬力・195Nmの4WD（e-4ORCE）のみの設定。走行モードに応じて加速・回生減速・操舵フィール・ダンパー減衰力・前後駆動配分をまとめて切り替えるとしている。",
+    "note": "前後独立モーターのため、前後配分は機械式カップリングを介さず指令で決まる。前輪駆動力 F_f=T_f·i/r_w、後輪 F_r=T_r·i/r_w（i:減速比、r_w:タイヤ動半径）。前後の最大トルク比は330:195≒63:37だが、これはモーター単体の上限比で、実際の配分は路面μ・荷重移動に応じて変わる（推測）。シリーズHVのため、エンジン出力140馬力は前後モーター合計の連続出力の上限を左右し、モーター合計の最大値（単純和341馬力）は電池からの持ち出しを含む瞬間値（推測、要確認）。エンジン振動40%低減は記事記載値。"
+   },
+   "en": {
+    "title": "Nissan Elgrand (new) drive review: 1.5L three-cylinder e-POWER with front and rear motors, e-4ORCE only, drive modes coordinate damping, steering and regen",
+    "summary": "The fourth-generation Elgrand uses an evolved version of the previous platform, with front struts and a rear multi-link. Its third-generation e-POWER uses a 1.5L three-cylinder (140 hp, 228 Nm) purely as a generator, with a 205 hp/330 Nm front motor and a 136 hp/195 Nm rear motor; it is offered only as the e-4ORCE 4WD. Drive modes switch acceleration, regenerative deceleration, steering feel, damper force and front/rear drive control together.",
+    "note": "With independent front and rear motors, the drive split is set by command rather than a mechanical coupling. Front force F_f = T_f·i/r_w and rear force F_r = T_r·i/r_w (i: reduction ratio, r_w: dynamic tire radius). The peak torque ratio 330:195 ≈ 63:37 is only the ratio of each motor's limit; the actual split depends on road friction and load transfer (assumption). In a series hybrid the 140 hp engine limits sustained output, while the simple sum of motor peaks (341 hp) is a transient value that includes battery power (assumption, to be confirmed). The 40% engine-vibration reduction is the figure stated in the article."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/19/417962.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-22-lexus-lbx-eps-nurburgring",
+   "date": "2026-10-22",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "制御",
+    "シャシー",
+    "4WD"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "レクサスLBX一部改良：ニュルでシャシーを再チューニング、EPS制御を変更、11月3日発売・445万〜593万円",
+    "summary": "レクサスはLBXを一部改良し、11月3日に発売する。価格は445万〜593万円で、5グレードすべてにFFと4WD（E-Four）を設定する。ニュルブルクリンクでシャシーチューニングを行い、EPS（電動パワーステアリング）の制御を変更して市街地の扱いやすさと高速・ワインディングの操縦安定性の両立を狙った。2023年12月の導入から2026年8月末までに60以上の国・地域で約13万台を販売。",
+    "note": "EPSのアシストは一般に T_assist=f(T_driver, V) のアシストマップに、ダンピング（∝操舵角速度）・戻り（∝舵角）・摩擦補償の各項を加えて作られる。記事の「軽快かつリニアなフィードバック」は、アシストマップの傾きと、セルフアライニングトルク由来の反力の伝え方を変えたことを指す可能性が高いが、どの項を変えたかは記事に記載がない（推測、要確認）。"
+   },
+   "en": {
+    "title": "Lexus LBX update: chassis retuned at the Nürburgring, revised EPS control, on sale Nov. 3 from ¥4.45M to ¥5.93M",
+    "summary": "Lexus has updated the LBX, going on sale on November 3 priced from ¥4.45 million to ¥5.93 million, with FWD and 4WD (E-Four) for all five grades. Chassis tuning was carried out at the Nürburgring, and the EPS control was changed to balance ease of use in town with stability on highways and winding roads. Since its December 2023 launch, about 130,000 units have been sold in more than 60 countries and regions as of end-August 2026.",
+    "note": "EPS assist is usually built from an assist map T_assist = f(T_driver, V) plus damping (∝ steering rate), return (∝ steering angle) and friction-compensation terms. The 'light and linear feedback' likely refers to changes in the map slope and in how reaction force from self-aligning torque is passed to the driver, but the article does not say which terms changed (assumption, to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2150347.html"
+    },
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/22/418102.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-22-bmw-m135-apex-edition-jp",
+   "date": "2026-10-22",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "シャシー",
+    "4WD"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "BMW、M135 xDrive／M235 xDriveグランクーペに限定車「Apex Edition」：足回り強化・Mコンパウンドブレーキ、808万円から",
+    "summary": "BMWジャパンはM135 xDriveとM235 xDriveグランクーペをベースにした限定車Apex Editionを発売した。19インチ鍛造ホイール、Mコンパウンド・ブレーキ、強化した足回りを装備し、コーナリング時の剛性と精度を高めたとしている。台数は各モデル50台（アルピン・ホワイト30台、フローズン・ピュア・グレー20台）、価格は808万円から。",
+    "note": "鍛造ホイール化はばね下質量を減らし、ホイールホップ固有振動数 f≈(1/2π)√((k_s+k_t)/m_u)（k_s:ばね、k_t:タイヤ縦剛性、m_u:ばね下質量）を上げる方向に働く。軽量化の量や足回りの具体的な変更（ばね・ダンパー・ブッシュ）は記事に記載がない（要確認）。"
+   },
+   "en": {
+    "title": "BMW launches the limited 'Apex Edition' of the M135 xDrive and M235 xDrive Gran Coupé in Japan: stiffer chassis and M Compound brakes, from ¥8.08M",
+    "summary": "BMW Japan has launched the limited Apex Edition based on the M135 xDrive and the M235 xDrive Gran Coupé. It adds 19-inch forged wheels, M Compound brakes and a strengthened chassis to improve stiffness and precision in corners. Each model is limited to 50 units (30 in Alpine White, 20 in Frozen Pure Grey), priced from ¥8.08 million.",
+    "note": "Forged wheels reduce unsprung mass, raising the wheel-hop natural frequency f ≈ (1/2π)√((k_s+k_t)/m_u) (k_s: spring rate, k_t: tire vertical stiffness, m_u: unsprung mass). The article gives neither the weight saving nor the specific chassis changes (springs, dampers, bushings) (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/23/418114.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-23-isuzu-forward-wheel-off-detect",
+   "date": "2026-10-23",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "シャシー",
+    "4WD",
+    "品質"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "いすゞ、中型トラック「フォワード」に全輪駆動車型など追加：GVW14.5t以上の全車に車輪脱落予兆検知を標準装備",
+    "summary": "いすゞは10月22日、4HK1エンジン搭載のGVW14.5〜20tクラスに特装系車型を追加した（14.5tに全輪駆動車、16tに消防車用シャシ、20tにミキサー車用シャシ）。あわせて、大型「ギガ」で採用済みの車輪脱落予兆検知システムを、既存車型も含むGVW14.5t以上の全車に標準装備する。後軸タイヤを対象にホイールナットの緩みに伴う異常を検知し、警告表示とブザーで知らせる。住友ゴムの技術を使う。フォワード全体の国内目標販売は年1万8000台。",
+    "note": "記事では検知原理の詳細は不明。住友ゴムの「センシングコア」系技術は一般に、車輪速信号の周波数・位相の変化からタイヤ・ホイールの状態を推定する方式とされる（推測）。ナットが緩むと車輪の回転に同期した振動成分（回転1次成分、周波数 f=V/(2π·r_w)）が変化することを捉える考え方と見られるが、実際の判定ロジックは要確認。"
+   },
+   "en": {
+    "title": "Isuzu adds all-wheel-drive and other body-builder variants to the Forward medium truck; wheel-detachment early warning becomes standard on all models of 14.5 t GVW and above",
+    "summary": "On October 22 Isuzu added specialist variants with the 4HK1 engine in the 14.5–20 t GVW range: an all-wheel-drive model at 14.5 t, a fire-engine chassis at 16 t and a mixer chassis at 20 t. The wheel-detachment early-warning system already used on the heavy-duty Giga becomes standard on every Forward of 14.5 t GVW and above, including existing variants. It monitors the rear-axle tires for anomalies caused by loose wheel nuts and warns the driver with a display and buzzer, using Sumitomo Rubber technology. Isuzu targets 18,000 Forward sales a year in Japan.",
+    "note": "The article does not explain the detection principle. Sumitomo Rubber's 'Sensing Core' technology is generally described as estimating tire and wheel condition from changes in wheel-speed signal frequency and phase (assumption). The idea is likely to detect changes in the vibration component synchronous with wheel rotation (first order, f = V/(2π·r_w)) when nuts loosen, but the actual logic needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/23/418121.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-19-nissan-note-next-epower3-scoop",
+   "date": "2026-10-19",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "rumor",
+   "ja": {
+    "title": "次期日産ノート、2027年12月発売の可能性（スクープ）：第3世代e-POWERの5-in-1ユニットと1.4L発電エンジンHR14DDeの組み合わせか",
+    "summary": "Responseのスクープ班によると、次期ノートは2027年12月にも発売される可能性がある（従来は2027年夏との情報）。第3世代e-POWERの、モーター・インバーター・減速機・発電機・増速機を一体化した「5-in-1」ユニットを採用し、発電用エンジンを現行1.2Lから新開発1.4L「HR14DDe」に拡大する可能性があるという。欧州キャシュカイの第3世代は1.5Lターボ「ZR15DDTe」で別のエンジン。",
+    "note": "シリーズHVの燃費はおおむね 燃料消費 ≈ ∫P_drive dt /(η_eng·η_gen·η_inv·η_mot) で決まり、発電エンジンを高効率点（BSFC最小点）付近で回せる時間が長いほど良くなる。排気量を上げると同じ発電出力をより低回転・低負荷率で出せるため、騒音と効率点の使い方に余裕が出る（一般論）。燃費の数値は記事に記載がなく、発売時期を含めて未確認情報。"
+   },
+   "en": {
+    "title": "Next Nissan Note may launch in December 2027 (scoop): possibly third-gen e-POWER 5-in-1 unit with the new 1.4L HR14DDe generator engine",
+    "summary": "According to Response's scoop team, the next Note could launch as early as December 2027 (earlier information said summer 2027). It may use the third-generation e-POWER '5-in-1' unit integrating the motor, inverter, reducer, generator and speed-increasing gear, and the generator engine may grow from the current 1.2L to the newly developed 1.4L HR14DDe. The third-gen Qashqai in Europe uses a different engine, the 1.5L turbo ZR15DDTe.",
+    "note": "Series-hybrid fuel use is roughly ∫P_drive dt / (η_eng·η_gen·η_inv·η_mot), and improves the longer the engine can run near its best-BSFC point. A larger displacement can deliver the same generating power at lower speed and load, giving more freedom for noise and efficiency (general principle). The article gives no fuel-economy figures; the timing and content are unconfirmed."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/19/417949.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-23-toyota-gr86-future-fr-2l-na",
+   "date": "2026-10-23",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "JP",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、S耐岡山に「GR86 Future FR concept」を開発中の直4 2.0L自然吸気エンジンで投入：前回は直3 1.6Lターボ",
+    "summary": "トヨタはスーパー耐久第6戦（岡山、10月23〜25日）に32号車「TGRR GR86 Future FR concept」で参戦し、開発中の直列4気筒2.0L NAエンジンを初めて積んだ。2025年最終戦では直3 1.6Lターボ（G16E-GTS改）だった。メカニックによると重量はあまり変わらず、出力は200PS前後としている。",
+    "note": "比出力で見ると 200PS/2.0L＝100PS/L。NAの出力は P≈η_v·ρ_air·(V_d/2)·n·(AFR⁻¹)·H_u·η_th（4ストローク、n:回転数[rps]）で、過給なしでは体積効率η_vと回転数が主な手段になる。トヨタが欧州向けに発表した新1.5L直4系との関係は記事に記載がない（要確認）。"
+   },
+   "en": {
+    "title": "Toyota runs the GR86 Future FR concept at the Super Taikyu Okayama round with a developmental 2.0L naturally aspirated inline-four, replacing a 1.6L turbo three-cylinder",
+    "summary": "Toyota entered car No. 32, the 'TGRR GR86 Future FR concept', in round 6 of the Super Taikyu series at Okayama (Oct. 23–25), fitted for the first time with a 2.0L naturally aspirated inline-four under development. At the 2025 final round it used a modified 1.6L turbo three-cylinder (G16E-GTS). According to a mechanic, weight barely changed and output is around 200 PS.",
+    "note": "Specific output is 200 PS / 2.0 L = 100 PS/L. NA power is roughly P ≈ η_v·ρ_air·(V_d/2)·n·(1/AFR)·H_u·η_th (four-stroke, n in rev/s); without boost, volumetric efficiency and engine speed are the main levers. The article does not say how it relates to the new 1.5L four-cylinder family Toyota announced for Europe (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2150564.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-ford-ranger-27-v6",
+   "date": "2026-10-21",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "PT"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "2027年型フォード・レンジャー、XLT・ラリアットに3.0L V6ツインターボを設定し2.7L V6を廃止へ（Ford Authority情報）",
+    "summary": "Ford Authorityの情報として、2027年型レンジャーのXLTとラリアットに、現在レンジャー・ラプター専用の3.0L EcoBoost V6ツインターボを設定し、2.7L V6を選択肢から外すと報じられた。レンジャー・ラプターでは405hp・430lb-ft（ブロンコ・ラプターは418hp・440lb-ft）。2027年型ブロンコも同様の変更をすると伝えられている。",
+    "note": "単位換算：430lb-ft×1.3558＝約583Nm、405hp×0.7457＝約302kW。XLT/ラリアット用の出力値は記事に記載がなく、ラプターと同一とは限らない（要確認）。"
+   },
+   "en": {
+    "title": "2027 Ford Ranger XLT and Lariat reportedly get the 3.0L twin-turbo V6, dropping the 2.7L V6 (Ford Authority)",
+    "summary": "Citing Ford Authority, the 2027 Ranger XLT and Lariat will offer the 3.0L EcoBoost twin-turbo V6 currently exclusive to the Ranger Raptor, and the 2.7L V6 will be dropped. In the Ranger Raptor it makes 405 hp and 430 lb-ft (the Bronco Raptor makes 418 hp and 440 lb-ft). The 2027 Bronco is reported to make the same change.",
+    "note": "Unit conversion: 430 lb-ft × 1.3558 ≈ 583 Nm; 405 hp × 0.7457 ≈ 302 kW. Output for the XLT/Lariat is not given and may differ from the Raptor (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2293013/2027-ford-ranger-adds-turbo-v6/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-20-lexus-nx-2027-hybrid-only",
+   "date": "2026-10-20",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "PT",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "2027年型レクサスNX、ガソリン専用車を廃止しHV/PHEVのみに：NX 450h+は電池18.1→22.7kWh、EV航続45マイル、初のDC急速充電",
+    "summary": "レクサスは10月20日に2027年型NXを発表し、ガソリン専用グレードを廃止してNX 350h（HV）とNX 450h+（PHEV）の2本立て、Premium／Premium+／F Sport／Luxuryの4グレードに整理した。NX 450h+は電池容量を18.1kWhから22.7kWhに増やし、メーカー推定のEV航続は45マイル。NACSポートでのDC急速充電に初めて対応する。",
+    "note": "45マイル＝約72.4km。容量比から単純計算すると電費は 72.4km/22.7kWh≒3.2km/kWh（総容量基準、使用可能容量は不明のため仮定値）。容量増加率は22.7/18.1＝1.25倍。HV系の「より強力なシステム」の具体的な出力値は記事に記載がない（要確認）。"
+   },
+   "en": {
+    "title": "2027 Lexus NX goes hybrid/PHEV only: NX 450h+ battery grows from 18.1 to 22.7 kWh, 45-mile EV range and first DC fast charging",
+    "summary": "Lexus unveiled the 2027 NX on October 20, dropping the gas-only version and offering only the NX 350h hybrid and NX 450h+ plug-in hybrid across four grades: Premium, Premium+, F Sport and Luxury. The NX 450h+ battery grows from 18.1 kWh to 22.7 kWh for a manufacturer-estimated 45 miles of EV range, and it gains DC fast charging through a native NACS port for the first time.",
+    "note": "45 miles ≈ 72.4 km. A simple calculation gives about 72.4 km / 22.7 kWh ≈ 3.2 km/kWh (gross capacity; usable capacity is unknown, so this is an assumed basis). Capacity rises by 22.7/18.1 = 1.25×. Output figures for the 'stronger' hybrid systems are not stated (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/812539/2027-lexus-nx-hybrid-plug-in-hybrid-specs-range-official/"
+    },
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/812567/2027-lexus-nx-drops-gas/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-22-ford-mach-e-2027-trail",
+   "date": "2026-10-22",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "電池",
+    "4WD"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "2027年型マスタング・マッハE：全車大容量電池（88/91kWh）標準化、Select eAWD用「Trail」パッケージ（2,295ドル）を追加",
+    "summary": "フォードは2027年型マッハEの受注を10月22日に開始した。標準容量電池を廃止し、Select・Premiumは使用可能88.0kWh、GT・Rallyは91.0kWhを標準とする。Select RWDは配送料込み42,460ドルで2026年型より600ドル安い。Select eAWDにオフロード向けTrailパッケージ（2,295ドル）を追加した。",
+    "note": "Trailパッケージの具体的な内容（車高・タイヤ・駆動制御モード等）は記事の抜粋に記載がない（要確認）。モーター2基のeAWDでは前後トルク配分をモーター指令で変えられ、低μ路では各軸の駆動力を F_x≤μ·F_z（軸荷重）以内に抑えるトラクション制御が重要になる（一般論）。"
+   },
+   "en": {
+    "title": "2027 Ford Mustang Mach-E: larger 88/91 kWh battery standard across the range, new $2,295 Trail package for the Select eAWD",
+    "summary": "Ford opened orders for the 2027 Mach-E on October 22. The standard-range battery is dropped: Select and Premium get 88.0 kWh usable and GT and Rally get 91.0 kWh. The Select RWD starts at $42,460 including destination, $600 less than the 2026 model. A Trail off-road package ($2,295) is added for the Select eAWD.",
+    "note": "The excerpt does not detail the Trail package (ride height, tires, drive modes) (to be confirmed). With two motors, eAWD can change the front/rear torque split by command; on low-friction surfaces, traction control keeps each axle's force within F_x ≤ μ·F_z (axle load) (general principle)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/812851/ford-mustang-mach-e-2027/"
+    },
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/22/2027-ford-mustang-mach-e-adds-range-starts-40000/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-22-ford-bronco-orv-package",
+   "date": "2026-10-22",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "シャシー",
+    "4WD"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "フォード、ブロンコ4ドア向けディーラー装着「ORV」パッケージ：Foxサスペンション・ラプター用スキッドプレート等で18,995ドル",
+    "summary": "フォードのCustom Garageは2026年型ブロンコ4ドアの一部モデル向けに、Foxサスペンション、ブロンコ・ラプター用スキッドプレート、補助灯、17インチWeldホイールをまとめたORVパッケージを設定した。価格は車両価格に加えて18,995ドルで、販売店で取り付け、保証対象となる。フロントバンパーはパークアシストのセンサーを使える構造でRIGID製補助灯を内蔵する。",
+    "note": "ダンパー交換によるオフロード性能は主に、減衰係数c（F=c·v）とストローク量の変更で決まる。減衰比 ζ=c/(2√(k·m))。Fox製ユニットの減衰特性・ストローク量は記事に記載がない（要確認）。"
+   },
+   "en": {
+    "title": "Ford's dealer-installed Bronco ORV package for four-door models: Fox suspension, Raptor skid plates and more for $18,995",
+    "summary": "Ford's Custom Garage offers an ORV package for select four-door 2026 Broncos, bundling Fox suspension, Bronco Raptor skid plates, auxiliary lighting and 17-inch Weld wheels. It costs $18,995 on top of the vehicle price and is dealer-installed with warranty coverage. A modular front bumper keeps the park-assist sensors working and houses RIGID auxiliary lights.",
+    "note": "Off-road gains from a damper change mainly come from the damping coefficient c (F = c·v) and travel. Damping ratio ζ = c/(2√(k·m)). The Fox units' damping characteristics and travel are not given (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/812838/ford-bronco-orv-package-costs/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-22-audi-48v-bsg-recall-jp",
+   "date": "2026-10-22",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "品質"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "アウディ17車種4,858台を国内リコール：48VベルトスタータオルタネータのインバータはんだにクラックでPT電源喪失、走行不能のおそれ",
+    "summary": "VWグループジャパンは10月15日、アウディA6/A7/A8/Q7/Q8系など17車種24型式4,858台（輸入期間2018年6月18日〜2023年11月27日）のリコールを国交省に届け出た。48Vベルト駆動式スタータオルタネータのインバータ内の電子部品が、回路基板のはんだ接続部の熱疲労亀裂で接触不良になることがある。48Vと12Vの電池が充電されず警告灯が点灯し、最悪の場合12V電圧低下で走行不能になる。不具合報告は3,316件。",
+    "note": "はんだ熱疲労はCoffin–Manson則 N_f ∝ (Δε_p)^(-1/c)（Δε_p:温度サイクルによる塑性ひずみ振幅）で寿命が整理され、部品とFR-4基板の線膨張係数差Δα×温度振幅ΔT が大きいほど寿命が短くなる。48V MHEVではBSGが12V系へのDC/DC経由の唯一の供給源になる構成が多く、BSG故障がそのまま12V系の電圧低下につながる（構成は一般論、本車の回路は要確認）。"
+   },
+   "en": {
+    "title": "Audi recalls 4,858 vehicles of 17 models in Japan: cracked solder in the 48V belt starter-alternator inverter can cut charging and stall the car",
+    "summary": "On October 15 Volkswagen Group Japan filed a recall with MLIT for 4,858 Audis of 17 models and 24 type designations, including the A6/A7/A8/Q7/Q8 families, imported between June 18, 2018 and November 27, 2023. Electronic parts in the inverter of the 48V belt-driven starter-alternator can lose contact due to thermal-fatigue cracks in solder joints on the circuit board. The 48V and 12V batteries then stop charging and a warning lamp lights; in the worst case low 12V voltage can leave the car unable to drive. 3,316 defect reports have been received.",
+    "note": "Solder thermal fatigue is described by the Coffin–Manson relation N_f ∝ (Δε_p)^(-1/c) (Δε_p: plastic strain amplitude per thermal cycle); the larger the CTE mismatch Δα between component and FR-4 board times the temperature swing ΔT, the shorter the life. In many 48V MHEVs the BSG is the only source feeding the 12V system via a DC/DC converter, so a BSG failure leads directly to 12V undervoltage (general architecture; this vehicle's circuit needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/22/418096.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-aito-bosch-inside-overseas",
+   "date": "2026-10-21",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "CN",
+   "tags": [
+    "シャシー",
+    "ADAS",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "AITO（ファーウェイ×セレス）の海外仕様M6〜M9、ボッシュのADAS・コックピット・シャシーを採用する「Bosch Inside」方式へ（36Kr報道）",
+    "summary": "中国メディア36Krの報道として、AITOが海外向けモデルでボッシュと共同開発する「Bosch Inside」方式を採ると伝えられた。海外仕様のM6・M7・M8・M9に、運転支援、スマートコックピット、シャシーの各領域でボッシュのソリューション一式を搭載するという。見出しでは、海外ではファーウェイが一歩引く形と報じている。",
+    "note": "シャシー領域の「ソリューション」の中身（ESC世代、ブレーキbyワイヤ、統合車両運動制御ソフトなど）は記事に記載がない。海外仕様で供給元を切り替える場合、車両運動制御の適合（ESC閾値、ヨーレートゲイン目標 γ_ref=V·δ/(L(1+K_us·V²))など）のやり直しが必要になる（一般論・推測）。"
+   },
+   "en": {
+    "title": "Aito (Huawei × Seres) to use 'Bosch Inside' ADAS, cockpit and chassis tech for overseas M6–M9 models (36Kr report)",
+    "summary": "According to a 36Kr report, Aito will adopt a 'Bosch Inside' model, co-developing its overseas models with Bosch. Overseas versions of the M6, M7, M8 and M9 will carry Bosch's full suite covering driver assistance, the smart cockpit and the chassis. The headline describes Huawei as stepping back for overseas models.",
+    "note": "The article does not say what the chassis 'solutions' include (ESC generation, brake-by-wire, integrated vehicle-dynamics software, etc.). Switching suppliers for export models would require recalibrating vehicle-dynamics control (ESC thresholds, yaw-rate target γ_ref = V·δ/(L(1+K_us·V²)), etc.) (general principle, assumption)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/21/aito-use-bosch-inside-tech-overseas-models/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-toyota-veef-renewable-fuel-eu",
+   "date": "2026-10-21",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、EUで認証済み再生可能ガソリン専用車を「ゼロエミッション」扱いとする「VEEF」案を推進",
+    "summary": "Motor1によると、トヨタはVEEFと呼ぶ枠組みで、承認済みの再生可能ガソリンだけで走る一部のエンジン車をEUでゼロエミッション車として扱う案を提案している。現行EU規則は2035年に新車フリートCO2を100%削減と定めるが、欧州委員会は90%削減とし、適格燃料や低炭素鋼で残りを相殺できる案を正式に出している。草案の一つは2028〜2032年の5年間を対象とするが、最終条件は未定。トヨタはスペインで再生可能ガソリン100%の実証も行っている。",
+    "note": "テールパイプCO2は燃料の炭素量で決まり、ガソリン約2.3kg-CO2/L（一般値）。再生可能燃料のゼロ扱いは、燃焼で出るCO2を原料生成時の吸収で相殺する（Well-to-Wheel）考え方で、テールパイプ基準のEU規則とは評価の境界が異なる。「専用で走る」ことをどう担保するか（燃料識別など）は記事に記載がない（要確認）。"
+   },
+   "en": {
+    "title": "Toyota pushes 'VEEF' proposal to count certain cars running only on approved renewable gasoline as zero-emission in the EU",
+    "summary": "According to Motor1, Toyota is proposing a framework called VEEF under which some combustion models that run exclusively on approved renewable gasoline would be classed as zero-emission in the EU. Current EU rules require a 100% cut in new-car fleet CO2 from 2035, but the European Commission has formally proposed a 90% cut, allowing qualifying fuels or low-carbon steel to offset the rest. One draft covers 2028–2032, but final terms are open. Toyota is also testing 100% renewable gasoline in Spain.",
+    "note": "Tailpipe CO2 depends on the fuel's carbon content, about 2.3 kg CO2 per liter of gasoline (typical value). Treating renewable fuel as zero relies on offsetting combustion CO2 with uptake during feedstock production (well-to-wheel), a different boundary from the tailpipe-based EU rules. How 'exclusively' would be enforced (e.g., fuel recognition) is not described (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/812756/toyota-veef-plan-seeks-zero/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-23-eu-auto-package-committee-95",
+   "date": "2026-10-23",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "EU議会の産業・運輸委員会、自動車パッケージでCO2規制緩和に賛成多数：2035年削減目標を2021年比95%とする案",
+    "summary": "欧州議会の産業委員会と運輸委員会は10月22日、Auto Packageについて初の委員会採決を行い、多数がCO2規制の緩和に賛成した。採決された案では、2035年の新車CO2削減を2021年比100%ではなく95%とする。中道派の会派が直前に内部で合意した内容に沿ったもの。",
+    "note": "既存項目（10/21）で報じた3会派の妥協案は87.5%で、今回の委員会案は95%と数値が異なる。どちらが本会議の交渉ポジションになるかは記事からは判断できない（要確認）。2021年基準値を仮に約116g/km（WLTP、仮定値）とすると、95%削減で約5.8g/km、87.5%で約14.5g/km、90%で約11.6g/km。"
+   },
+   "en": {
+    "title": "EU Parliament industry and transport committees vote to relax CO2 rules in the Auto Package: 95% cut by 2035 vs. 2021",
+    "summary": "On October 22 the European Parliament's Industry and Transport committees held the first committee votes on the Auto Package, with majorities backing relaxed CO2 rules. The text adopted would require a 95% rather than 100% cut in new-car CO2 by 2035 versus 2021, in line with what the centrist groups had agreed internally shortly before.",
+    "note": "An earlier item (Oct. 21) reported a three-group compromise of 87.5%; the committee text says 95%. The article does not make clear which will become the plenary position (to be confirmed). Taking the 2021 baseline as about 116 g/km WLTP (assumed value), a 95% cut gives about 5.8 g/km, 87.5% about 14.5 g/km and 90% about 11.6 g/km."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/23/eu-auto-package-committee-vote-to-relax-co%e2%82%82-rules/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-23-canada-co2-freeze-2029",
+   "date": "2026-10-23",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "US",
+   "tags": [
+    "規制"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "カナダ、乗用車・小型商用車のCO2フリート基準を2029年まで2026年水準（172g/mile）で据え置き",
+    "summary": "カナダ連邦政府とオンタリオ州は10月21日の共同施策として、乗用車・小型商用車のフリート温室効果ガス基準を2026年水準の172g/mile（約107g/km）に2029年まで据え置くと発表した。年ごとの強化は2030年モデルイヤーから再開する。2035年にEV販売75%を目指すには、フリート平均を74g/mile（約46g/km）まで下げる必要があるとしている。",
+    "note": "換算：1mile＝1.609kmなので 172/1.609≒107g/km、74/1.609≒46g/km。2030〜2035年の6モデルイヤーで172→74g/mileに下げる場合、年率一定とすると (74/172)^(1/6)≒0.869、約13%/年の削減が必要（2030年を1年目とした仮定の試算）。"
+   },
+   "en": {
+    "title": "Canada freezes passenger-car and light-commercial CO2 fleet standards at the 2026 level (172 g/mile) through 2029",
+    "summary": "On October 21, as part of a joint package with Ontario, Canada's federal government said fleet greenhouse-gas limits for passenger cars and light commercial vehicles will stay at the 2026 level of 172 g/mile (about 107 g/km) through 2029. Annual tightening resumes from model year 2030. Reaching 75% EV sales by 2035 would require the fleet average to fall to 74 g/mile (about 46 g/km).",
+    "note": "Conversion: 1 mile = 1.609 km, so 172/1.609 ≈ 107 g/km and 74/1.609 ≈ 46 g/km. Going from 172 to 74 g/mile over six model years (2030–2035) at a constant rate needs (74/172)^(1/6) ≈ 0.869, i.e. about 13% per year (assumed calculation with 2030 as year one)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/23/canada-freezes-co2-standards-for-passenger-cars-until-2029/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-20-cn-ads-marker-light-draft",
+   "date": "2026-10-20",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "CN",
+   "tags": [
+    "規制",
+    "ADAS"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "中国、自動運転状態表示灯の統一規格案：L3以上にターコイズ色マーカーランプを任意装着、2028年1月1日施行予定",
+    "summary": "中国は自動運転の作動状態を外部に示す灯火の統一ルール案を示した。L3以上の自動運転システム搭載車にターコイズ色のマーカーランプを任意で装着できるようにする。施行は2028年1月1日を予定し、灯火での文字・顔表示や一部の音声・ジェスチャー操作も制限する。",
+    "note": "ターコイズ（青緑）色のADSマーカーランプは、UNECE WP.29でも議論されている色と同じ系統とみられる（要確認）。任意装着のため、表示の有無が他の道路利用者に与える意味をどう統一するかが論点になる（推測）。"
+   },
+   "en": {
+    "title": "China drafts uniform rules for automated-driving status lamps: optional turquoise marker lights for Level 3+ vehicles from Jan. 1, 2028",
+    "summary": "China has proposed uniform rules for external lights signaling automated-driving status, allowing vehicles with Level 3 or higher systems to carry optional turquoise marker lights. The standard would take effect on January 1, 2028, and would also restrict text and facial displays on vehicle lights as well as some voice and gesture controls.",
+    "note": "The turquoise (blue-green) ADS marker color appears to match the color discussed at UNECE WP.29 (to be confirmed). Because fitment is optional, a key issue will be how consistently its presence or absence is understood by other road users (assumption)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/20/china-proposes-uniform-rules-automated-driving-lights/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-23-bosch-subsidiary-restructure",
+   "date": "2026-10-23",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ボッシュ、モビリティ事業など4部門を2027年8月1日に100%子会社化：ドイツの約6万2500人が対象に",
+    "summary": "ボッシュはRobert Bosch GmbH傘下の4部門を100%出資の独立子会社に移す組織再編を進める。モビリティ事業は2027年8月1日から独立子会社となり、他に3部門も子会社化される。ドイツで約6万2500人の従業員が影響を受ける。同社は競争力の維持と柔軟な運営を理由に挙げている。",
+    "note": ""
+   },
+   "en": {
+    "title": "Bosch to move four divisions, including Mobility, into wholly owned subsidiaries from Aug. 1, 2027; about 62,500 employees in Germany affected",
+    "summary": "Bosch is restructuring by moving four divisions previously under Robert Bosch GmbH into independent, wholly owned subsidiaries. The Mobility business will become an independent subsidiary from August 1, 2027, along with three other areas. About 62,500 employees in Germany face changes. Bosch cites the need to stay competitive and operate more flexibly.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/23/bosch-faces-radical-corporate-restructuring-amid-competitive-pressures/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-23-vw-adas-oneteam-audi",
+   "date": "2026-10-23",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "ADAS",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "VWグループ、ADAS・自動運転開発を「OneTeam」に集約しアウディ開発担当役員の下へ：Cariadは独国内で約1,000人削減",
+    "summary": "VWはADASと自動運転の開発を加速するため「OneTeam」と呼ぶ組織を設けるとみられる。CariadのManuel Birke氏が率い、アウディの開発担当取締役Rouven Mohr氏に報告する体制と報じられた。L2+まではCariadとボッシュが共同開発したスタックを電動コンパクトカーIDで初採用する計画で、L4までには追加の技術開発が必要としている。Cariadはドイツで約1,000人を削減する。",
+    "note": ""
+   },
+   "en": {
+    "title": "VW Group reportedly centralizes ADAS and automated-driving development in a 'OneTeam' unit under Audi's development chief; Cariad cuts about 1,000 jobs in Germany",
+    "summary": "Volkswagen is reportedly setting up a unit called 'OneTeam' to speed up ADAS and automated-driving development. Cariad manager Manuel Birke will lead it and report to Audi development board member Rouven Mohr. Up to SAE Level 2+, a stack co-developed by Cariad and Bosch is to debut in the planned electric compact ID model; Level 4 still requires further technology. Cariad is cutting around 1,000 jobs in Germany.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/23/vw-centralising-adas-development-under-audis-leadership/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-19-toyota-corolla-ev-china-2028",
+   "date": "2026-10-19",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "戦略",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "次期トヨタ・カローラ、2028年から一汽トヨタでEVを生産へ（日経報道）：HV・ガソリン車と併産、1/2モーターで航続250マイル以上",
+    "summary": "日経の報道として、トヨタは次期カローラを2028年から中国の一汽トヨタで生産し、EVをHV・ガソリン車と並行して作る計画と伝えられた。EVは1モーターと2モーターの構成で、航続は少なくとも250マイルとされる。カローラは1966年の発売以来、累計5,700万台以上を販売している。",
+    "note": "250マイル＝約402km。測定モード（EPA/CLTC等）は記事に記載がない（要確認）。2モーター版はAWDと推測されるが未確認。"
+   },
+   "en": {
+    "title": "Next Toyota Corolla EV to be built at FAW Toyota in China from 2028 (Nikkei): alongside hybrid and gas versions, single/dual motor, 250+ miles",
+    "summary": "Citing Nikkei, Toyota plans to build the next-generation Corolla at FAW Toyota in China from 2028, producing an EV alongside hybrid and gasoline versions. The EV is expected in single- and dual-motor versions with at least 250 miles of range. Toyota has sold more than 57 million Corollas since 1966.",
+    "note": "250 miles ≈ 402 km. The test cycle (EPA, CLTC, etc.) is not stated (to be confirmed). The dual-motor version is presumably AWD, but this is unconfirmed."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/19/toyotas-best-selling-corolla-going-electric/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-toyota-e2e-l2pp-arene",
+   "date": "2026-10-21",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "JP",
+   "tags": [
+    "ADAS",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、2028年投入のE2E「レベル2++」自動運転は独自AIとガードレール機構で、SDV基盤「Arene」上に構築",
+    "summary": "トヨタは2028年から、E2E（エンドツーエンド）の自律型AIによるレベル2++自動運転を搭載した車両を市場投入するとしており、手頃な価格帯の車にも搭載する方針。VLAなど外部モデルではなく、独自開発のAIと独自のガードレールモデルを使う。この車両はSDV基盤Arene上で構築され、Areneは新型RAV4で既に導入されている。搭載車種は未公表で、Car Watchは次期カローラを有力候補とみている（推測）。",
+    "note": "E2Eは認識〜計画を1つの学習モデルで出力し、ガードレールはその出力（目標軌跡・加減速）をルールベースの安全制約（例：車間 d≥v·t_h＋d_0、横加速度上限など）で検査・制限する構成と考えられる（一般的な構成からの推測、トヨタの具体的な層構造は未公表）。"
+   },
+   "en": {
+    "title": "Toyota's 2028 end-to-end 'Level 2++' system uses in-house AI and a guardrail mechanism, built on the Arene SDV platform",
+    "summary": "Toyota says it will launch vehicles with end-to-end autonomous AI 'Level 2++' driving from 2028, including affordable models. Rather than external models such as VLA, it uses in-house AI and an in-house guardrail model. The system is built on the Arene SDV platform, already introduced with the new RAV4. The first model has not been named; Car Watch sees the next Corolla as the likely candidate (speculation).",
+    "note": "End-to-end means one learned model outputs everything from perception to planning; the guardrail likely checks and limits that output (target path, acceleration) against rule-based safety constraints (e.g., gap d ≥ v·t_h + d_0, lateral-acceleration limits) (assumption based on common architectures; Toyota's layer structure is not public)."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2149984.html"
+    },
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2149103.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-mercedes-drive-assist-pro-de",
+   "date": "2026-10-21",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "EU",
+   "tags": [
+    "ADAS"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "メルセデス、市街地対応のL2運転支援「MB.Drive Assist Pro」をドイツに導入：独で初、対応車は1か月無償試用",
+    "summary": "メルセデス・ベンツは、市街地でも使えるSAEレベル2の運転支援MB.Drive Assist Proをドイツに導入し、中国・米国に続きドイツで同種の機能を提供する初のメーカーになるとした。対応車の顧客は1か月無料で試用できる。米国では3年3,950ドル（約3,520ユーロ）のサブスクリプションで提供している。展開は2026年末から。",
+    "note": ""
+   },
+   "en": {
+    "title": "Mercedes brings urban Level 2 'MB.Drive Assist Pro' to Germany, a first there; compatible cars get a one-month free trial",
+    "summary": "Mercedes-Benz is introducing MB.Drive Assist Pro, an SAE Level 2 system that also works in cities, in Germany, making it the first automaker to offer such a function there after China and the US. Customers with compatible models can try it free for one month. In the US it is sold as a subscription at $3,950 (about €3,520) for three years. Deployment begins from late 2026.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/21/mercedes-launches-new-driver-assist-system-in-first-for-germany/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-catl-ehgv-dual-battery",
+   "date": "2026-10-21",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "CN",
+   "tags": [
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "CATL、大型EVトラック向けデュアル電池：交換式メイン432/513kWh＋固定式77kWh補助電池（3C充電）、交換ステーションを2027年に2,000か所へ",
+    "summary": "CATLは大型EVトラック向けに、車体下の交換式メイン電池と、キャブ後方に固定した77kWhの航続延長用補助電池を組み合わせたシステムを発表した。メイン電池は2サイズに標準化され、ホイールベース3.8m用の260#（432kWh）と4.2m用の300#（513kWh）で、合計容量は509kWhまたは590kWh。メイン電池はリースで提供する。補助電池は3C充電に対応し、予備電源も担う。重トラック用電池交換ステーションを2026年末に900か所、2027年に2,000か所へ増やす計画。",
+    "note": "3C充電は1時間の1/3で満充電相当の電流、つまり77kWh×3＝約231kWの充電電力に相当する（定格容量基準の単純計算）。補助電池でSOC 0→80%なら約0.8/3h＝16分（CC区間のみの理想値、仮定）。"
+   },
+   "en": {
+    "title": "CATL dual battery for heavy e-trucks: swappable 432/513 kWh main pack plus fixed 77 kWh 3C auxiliary pack; 2,000 swap stations planned by 2027",
+    "summary": "CATL has presented a system for heavy electric trucks combining a swappable underbody main battery with a fixed 77 kWh range-extension battery behind the cab. The main pack comes in two standard sizes: the 260# (432 kWh) for 3.8 m wheelbases and the 300# (513 kWh) for 4.2 m, giving totals of 509 or 590 kWh. Main packs are offered on lease. The auxiliary pack supports 3C charging and provides backup power. CATL plans 900 heavy-truck swap stations by end-2026 and 2,000 by 2027.",
+    "note": "3C means a current that would fill the pack in 1/3 hour, about 77 kWh × 3 ≈ 231 kW of charging power (simple calculation on rated capacity). Charging the auxiliary pack from 0 to 80% would take about 0.8/3 h ≈ 16 minutes (idealized constant-current value, assumption)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/21/catl-unveils-new-battery-solution-for-ehgvs/"
+    },
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/20/catl-dual-battery-system-heavy-truck-electrification/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-22-fraunhofer-si-anode-1000cyc",
+   "date": "2026-10-22",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "EU",
+   "tags": [
+    "電池"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "フラウンホーファーISE、シリコンリッチ負極の25Ahパウチセルで1,000サイクル後も容量83%超を維持",
+    "summary": "フラウンホーファーISEは「StrOboBatt」プロジェクトで自作した、シリコンリッチ負極の25Ahパウチセルを1,000回以上フルサイクルさせ、試験後も容量の83%超を維持したと発表した。1,000サイクルで80%以上の容量維持は、商用利用の最低要件とされている。",
+    "note": "Siの理論容量は約3,580mAh/g（Li15Si4、一般値）で黒鉛372mAh/gの約9.6倍だが、リチウム化で約280%体積膨張するためSEI破壊とサイクル劣化が課題。1,000サイクルで83%は、1サイクルあたり平均 1−0.83^(1/1000)≒0.019%の容量低下に相当（等比劣化の仮定）。セルのエネルギー密度は記事抜粋に記載がない（要確認）。"
+   },
+   "en": {
+    "title": "Fraunhofer ISE silicon-rich anode 25 Ah pouch cell keeps over 83% capacity after 1,000 cycles",
+    "summary": "Fraunhofer ISE says a 25 Ah pouch cell with a silicon-rich anode, built in-house in the 'StrOboBatt' project, ran more than 1,000 full cycles and kept over 83% of its capacity. Retaining at least 80% after 1,000 cycles is considered the minimum for commercial use.",
+    "note": "Silicon's theoretical capacity is about 3,580 mAh/g (Li15Si4, typical value), about 9.6× graphite's 372 mAh/g, but it swells by about 280% on lithiation, damaging the SEI and causing fade. 83% after 1,000 cycles equals an average loss of 1 − 0.83^(1/1000) ≈ 0.019% per cycle (assuming geometric fade). Cell energy density is not given in the excerpt (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/22/greater-range-at-the-same-weight-silicon-battery-passes-laboratory-test/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-20-byd-seagull-gen2-flash",
+   "date": "2026-10-20",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "電池"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "BYD、第2世代「シーガル（海鴎）」を発売：6.59万〜9.99万元、全長425mm延長で5人乗り、420km仕様は10→70%を5分で急速充電",
+    "summary": "BYDは10月20日に河南省鄭州で第2世代シーガルを発売した。5グレードで公式指導価格は65,900元（9,810ドル）〜99,900元。全長を425mm延ばし、定員を4人から5人に増やした。航続420kmの3グレードはフラッシュ充電に対応し、SOC 10%→70%を5分で充電できるとしている。",
+    "note": "5分で60%分を充電するには平均Cレート＝0.6/(5/60h)＝7.2C。電池容量は記事に記載がないため、仮に40kWh（仮定値）とすると平均充電電力は約288kWになる。"
+   },
+   "en": {
+    "title": "BYD launches the second-generation Seagull from 65,900 yuan: 425 mm longer, five seats, 420 km versions charge 10–70% in 5 minutes",
+    "summary": "BYD launched the second-generation Seagull in Zhengzhou, Henan, on October 20. Five versions are priced from 65,900 yuan ($9,810) to 99,900 yuan. The car is 425 mm longer and seats five instead of four. Three versions with 420 km range support flash charging, from 10% to 70% in five minutes.",
+    "note": "Adding 60% in five minutes means an average C-rate of 0.6/(5/60 h) = 7.2C. The battery size is not stated; assuming 40 kWh (assumed value), average charging power would be about 288 kW."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/20/byd-launches-second-gen-seagull/"
     }
    ]
   }
