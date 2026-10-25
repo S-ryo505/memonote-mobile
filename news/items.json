@@ -1,6 +1,95 @@
 {
- "updated": "2026-10-24T09:51:08+09:00",
+ "updated": "2026-10-26T08:57:41+09:00",
  "items": [
+  {
+   "id": "2026-10-24-nhtsa-cyan-ads-lamp",
+   "date": "2026-10-24",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "US",
+   "tags": [
+    "規制",
+    "ADAS"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "NHTSA、自動運転中を示すシアン色灯火を規則案で提案：ロボタクシー等の識別用",
+    "summary": "米NHTSAは10月23日（金）に公表した規則案のドラフトで、車両が自動運転で走行中であることを外部に示す灯火色として、新たにシアン（青緑）を加えることを提案した。この案はメルセデスがレベル3システム「DRIVE PILOT」とともに先行して提起していたもので、自動運転車の普及に向けた他の追加項目も含まれる。現時点では提案段階で、採択・施行時期は記事に記載がない。",
+    "note": "灯火色は米国ではFMVSS No.108（灯火・反射器）で規定されており、本件はその色区分に新色を追加する変更になるとみられる（条文番号・改正対象は要確認）。シアン灯の点灯条件は、システムが運転責任を負うL3以上の作動中に限る運用が想定される（推測）。L2（ドライバー責任）との区別を外部に示す点が要件設計上の論点になる。"
+   },
+   "en": {
+    "title": "NHTSA proposes cyan lamps to signal automated driving, aimed at identifying robotaxis",
+    "summary": "In a draft proposal released on Friday, October 23, the US NHTSA suggested adding cyan as a new lamp color to show other road users that a vehicle is operating autonomously. The idea was first put forward by Mercedes together with its Level 3 DRIVE PILOT system, and the draft also includes other additions to prepare for autonomous vehicles. It is still a proposal, and the article gives no date for adoption or entry into force.",
+    "note": "In the US, lamp colors are governed by FMVSS No. 108 (lamps and reflective devices), so this would likely add a new color category to that standard (exact clauses to be confirmed). The lamp would presumably be lit only while an L3-or-higher system is responsible for driving (speculation). How to visibly distinguish this from L2 systems, where the driver stays responsible, is a key design question for the requirement."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/24/nhtsa-proposes-cyan-lights-for-robotaxis-following-mercedes-china/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-24-toyota-gr-yaris-m-6mt",
+   "date": "2026-10-24",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "JP",
+   "tags": [
+    "4WD",
+    "PT",
+    "シャシー"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、ミッドシップ4WD「GRヤリス風Mコンセプト」をS耐岡山に投入：8速AT（GR-DAT）から6速MTへ変更",
+    "summary": "トヨタはスーパー耐久第6戦岡山（10月24〜25日）に、ミッドシップ4WD開発車「GRヤリスMコンセプト」の改良版「GRヤリス風Mコンセプト」を投入した。変速機を2年間開発してきた8速ATのGR-DATから6速MTに変更し、左ハンドル仕様となっている。同時に投入したFR車「GR86 Future FRコンセプト」には新型2.0L直列4気筒自然吸気エンジンを搭載した。",
+    "note": "ミッドシップ化で後軸荷重が増えると、加速時の後軸垂直荷重は N_r = m·g·l_f/L + m·a_x·h/L（l_f：重心〜前軸距離、L：ホイールベース、h：重心高）となり、後輪の駆動力上限 F_xr ≤ μ·N_r が上がる。4WDでは前後トルク配分を荷重配分 N_f:N_r に近づけるほど前後輪が同時に摩擦限界に達し、加速性能を最大化できる。本車の前後重量配分・トルク配分値は記事になく要確認。ドライバーのシフトミスを受け、シートとシフトレバーの位置がトヨタ社内基準値から2mmずれていたことが確認されたという。"
+   },
+   "en": {
+    "title": "Toyota fields mid-engine AWD 'GR Yaris-style M Concept' at Super Taikyu Okayama, switching from the 8-speed GR-DAT to a 6-speed manual",
+    "summary": "At Round 6 of the Super Taikyu series at Okayama (October 24-25), Toyota entered the 'GR Yaris-style M Concept', an updated version of its mid-engine AWD development car, the GR Yaris M Concept. Its transmission has been changed from the 8-speed GR-DAT automatic, developed over two years, to a 6-speed manual, and the car is left-hand drive. Toyota also entered the rear-drive 'GR86 Future FR Concept', fitted with a new 2.0-liter naturally aspirated inline-four.",
+    "note": "Moving the engine amidships raises rear axle load. Under acceleration the rear normal load is N_r = m·g·l_f/L + m·a_x·h/L (l_f: CG to front axle, L: wheelbase, h: CG height), which raises the rear traction limit F_xr ≤ μ·N_r. With AWD, setting the front/rear torque split close to the load split N_f:N_r lets both axles reach their friction limits together, maximizing acceleration. The car's weight distribution and torque split are not given in the article (to be confirmed). After the driver made several shift errors, engineers found the seat and shifter positions were 2 mm off Toyota's internal reference values."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2150935.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-26-ud-condor-wheel-detach-detect",
+   "date": "2026-10-26",
+   "kind": "flash",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "シャシー",
+    "品質",
+    "4WD"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "UDトラックス「コンドル」、GVW14.5t以上の全車に車輪脱落予兆検知を標準装備：全輪駆動車などの特装系車型も追加",
+    "summary": "UDトラックスは10月22日、中型トラック「コンドル」に4HK1エンジン搭載のGVW14.5〜20tクラス特装系車型を追加して発売した。14.5tクラスに全輪駆動車、16tクラスに消防車向けシャシ、20tクラスにミキサー車向けシャシを設定した。既存車型を含むGVW14.5t以上の全車に車輪脱落予兆検知システムを標準装備し、ホイールナットの緩みによる異常を検知すると警告表示とブザーで知らせる（検知対象は後軸タイヤのみ）。",
+    "note": "検知原理は記事に記載がない（要確認）。一般的な手法として、ナットが緩むと車輪が偏心・振れ回りし、車輪1回転ごとに周期的な変動が生じる。車速v、タイヤ動半径rなら回転周波数は f = v/(2πr)（例：v=60km/h=16.7m/s、r=0.5mの仮定値で約5.3Hz）で、車輪速センサや加速度信号のこの成分の振幅増大を左右輪差などで判定する方式が考えられる（推測）。"
+   },
+   "en": {
+    "title": "UD Trucks makes wheel-detachment warning standard on all Condor models of GVW 14.5 t and above, and adds AWD and other special-purpose variants",
+    "summary": "On October 22, UD Trucks launched new special-purpose variants of its medium-duty Condor truck in the GVW 14.5-20 t class, powered by the 4HK1 engine. It added an all-wheel-drive model in the 14.5 t class, a fire-engine chassis in the 16 t class and a concrete-mixer chassis in the 20 t class. All Condor trucks of GVW 14.5 t and above, including existing models, now come standard with a wheel-detachment warning system that detects problems caused by loose wheel nuts and alerts the driver with a display and a buzzer (it monitors the rear-axle tires only).",
+    "note": "The article does not describe the detection principle (to be confirmed). A common approach: a loose wheel runs eccentrically, causing a periodic fluctuation once per wheel revolution. At vehicle speed v and tire rolling radius r, that frequency is f = v/(2πr) (about 5.3 Hz for assumed values v = 60 km/h = 16.7 m/s and r = 0.5 m), so a system could flag growth of this component in wheel-speed or acceleration signals, for example by comparing left and right wheels (speculation)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/26/418190.html"
+    }
+   ]
+  },
   {
    "id": "2026-10-22-honda-mitsubishi-triton",
    "date": "2026-10-22",
