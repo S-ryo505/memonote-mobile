@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T08:57:41+09:00",
+ "updated": "2026-10-27T09:05:00+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -5756,6 +5756,147 @@
     {
      "name": "CnEVPost",
      "url": "https://cnevpost.com/2026/10/20/byd-launches-second-gen-seagull/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-26-audi-georgia-plant",
+   "date": "2026-10-26",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "アウディ、米ジョージア州に約40億ドルで初の米国工場：年産最大20万台、2030年代初頭に生産開始",
+    "summary": "アウディは約40億ドルを投じ、同ブランド初の米国生産拠点をジョージア州のMiddle Georgia Mega Siteに建設する。建設は来年着工、年産能力は最大20万台、生産開始は2030年代初頭の予定で、雇用は約4,500人。記事によると関税負担は昨年だけで14億ドルに達していた。",
+    "note": ""
+   },
+   "en": {
+    "title": "Audi to invest about $4 billion in its first US plant in Georgia: up to 200,000 vehicles a year from the early 2030s",
+    "summary": "Audi will spend about $4 billion to build the brand's first US production plant at the Middle Georgia Mega Site. Construction starts next year, annual capacity will be up to 200,000 vehicles, and production is planned for the early 2030s, creating about 4,500 jobs. According to the article, tariffs cost Audi $1.4 billion last year alone.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2296419/audi-confirms-usa-factory-georgia/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-26-audi-china-faw-saic-split",
+   "date": "2026-10-26",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "アウディ、中国事業の役割分担を正式発表：一汽アウディは「フォーリングス」、上汽アウディは文字ロゴ「AUDI」ブランドに集中",
+    "summary": "アウディは中国の合弁2社の分担を公表した。一汽アウディはフォーリングスブランドのNEVとエンジン車を担当し、上汽アウディは「AUDI」文字ロゴブランドとNEVに集中する。上汽アウディは2027年末までフォーリングス車の販売を継続できる。",
+    "note": ""
+   },
+   "en": {
+    "title": "Audi confirms China split: FAW Audi to handle the four-ring brand, SAIC Audi the 'AUDI' letter-logo brand",
+    "summary": "Audi announced a new division of roles between its two Chinese partners. FAW Audi will cover NEVs and combustion models under the four-ring brand, while SAIC Audi will focus on the AUDI letter-logo brand and NEVs. SAIC Audi may keep selling four-ring models until the end of 2027.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/26/audi-china-business-split/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-26-gm-vac-magnet-contract-end",
+   "date": "2026-10-26",
+   "kind": "flash",
+   "cat": "supplier",
+   "region": "US",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "GM、独磁石メーカーVacuumschmelze（VAC）との永久磁石供給契約を終了と報道",
+    "summary": "GMとVACは2023年初めに、北米向けEVモーター用レアアース永久磁石を最低10年間供給する契約を結び、VACは米サウスカロライナ州サムターに工場を設けた（ロイターによると2025年末から稼働）。この契約が終了したと報じられた。VACは6月にEnergy Fuelsが19億ドルで買収すると発表されている。",
+    "note": "PMSMのトルクは T = (3/2)·p·[ψm·iq + (Ld−Lq)·id·iq]（p:極対数、ψm:磁石鎖交磁束）。第1項が磁石トルクで、磁石の調達先変更は ψm（残留磁束密度Br・保磁力）の仕様差を通じてトルク定数や高温減磁余裕に影響しうる。GMの代替調達先は記事に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "GM reportedly ends its permanent-magnet supply contract with Germany's Vacuumschmelze (VAC)",
+    "summary": "In early 2023 GM and VAC signed a deal for at least ten years of rare-earth permanent magnets for EV motors in North America, and VAC built a plant in Sumter, South Carolina (operating since late 2025, per Reuters). The contract has reportedly been terminated. In June, Energy Fuels announced it would buy VAC for $1.9 billion.",
+    "note": "PMSM torque is T = (3/2)·p·[ψm·iq + (Ld−Lq)·id·iq] (p: pole pairs, ψm: magnet flux linkage). The first term is magnet torque, so a change of magnet supplier can affect the torque constant and high-temperature demagnetization margin through differences in ψm (remanence Br, coercivity). GM's replacement source is not stated (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/26/gm-terminates-contract-with-vacuumschmelze/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-26-svolt-semisolid-100kwh-6c",
+   "date": "2026-10-26",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "CN",
+   "tags": [
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "Svolt、100kWh半固体急速充電パック「Dragon Armor」の量産を常州で開始：900V・6C、12分で500km分",
+    "summary": "蜂巣能源（Svolt）は江蘇省常州で100kWh半固体急速充電パックの量産初号ロットをラインオフしたと発表した。上下面の両側液冷を採用し、900V・6C充電で12分間に航続500km分を充電できるとしている。底面は6層の保護構造で、耐衝撃性は中国国家基準の3倍としている。",
+    "note": "6Cのピーク電力は 100kWh×6 ＝ 600kW、900V時の電流は I＝P/V ≒ 667A。500km分のエネルギーを電費15kWh/100km（仮定値）で見積もると75kWhで、12分（0.2h）での平均電力は75/0.2 ＝ 375kW（平均約3.75C）。ピーク6Cは低SOC域のみで、高SOC側は電圧上限・析出リチウム回避のため絞られると推測。"
+   },
+   "en": {
+    "title": "Svolt starts mass production of its 100 kWh 'Dragon Armor' semi-solid fast-charging pack in Changzhou: 900 V, 6C, 500 km in 12 minutes",
+    "summary": "Svolt said the first mass-produced batch of its 100 kWh semi-solid fast-charging packs rolled off the line in Changzhou, Jiangsu. The pack has liquid cooling on both top and bottom and supports 900 V, 6C charging, adding 500 km of range in 12 minutes. Its underside has six layers of protection, with impact resistance three times China's national standard requirement.",
+    "note": "Peak power at 6C is 100 kWh × 6 = 600 kW; at 900 V the current is I = P/V ≈ 667 A. Assuming 15 kWh/100 km (assumed value), 500 km needs 75 kWh, so the average over 12 minutes (0.2 h) is 75/0.2 = 375 kW (about 3.75C). The 6C peak likely applies only at low SOC, with the current reduced at high SOC to respect voltage limits and avoid lithium plating (speculation)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/26/svolt-begins-mass-production-100-kwh-semi-solid-packs/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-26-fuso-bus-foxconn-start",
+   "date": "2026-10-26",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "三菱ふそうと鴻海の新バスメーカー「FUSO BUS」、11月2日業務開始：出資比率は各50%",
+    "summary": "三菱ふそうトラック・バスと鴻海精密工業は10月26日、新会社FUSO BUSの業務開始日を2026年11月2日とし、役員構成で合意したと発表した。出資は両社50%ずつで、社長は高羅克人氏。非常勤取締役には鴻海側から関潤氏（EV事業CSO）ら3名、三菱ふそう側から2名が就く。2026年1月22日の最終合意に基づくバス専業会社。",
+    "note": ""
+   },
+   "en": {
+    "title": "Mitsubishi Fuso and Foxconn's new bus maker 'FUSO BUS' starts operations on November 2, owned 50:50",
+    "summary": "Mitsubishi Fuso Truck and Bus and Hon Hai Precision Industry (Foxconn) announced on October 26 that FUSO BUS will begin operations on November 2, 2026, and agreed on its board. Each company holds 50%, and Katsuhito Takara will be president. Non-executive directors include three from Foxconn, among them EV business CSO Jun Seki, and two from Mitsubishi Fuso. The bus-only company is based on the final agreement announced on January 22, 2026.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2151204.html"
     }
    ]
   }
