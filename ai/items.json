@@ -1,6 +1,94 @@
 {
-  "updated": "2026-10-24T10:02:42+09:00",
+  "updated": "2026-10-26T09:00:36+09:00",
   "items": [
+    {
+      "id": "2026-10-25-openai-discounts-anthropic-customers",
+      "date": "2026-10-25",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "料金",
+        "コーディング",
+        "仕事で使える"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "OpenAI、Anthropicの大口顧客に最大90%の値引きで乗り換えを提案と報道。Replitは年1億ドル超の契約で30%超引き",
+        "summary": "The Decoderによると、OpenAIは大幅な値引きでAnthropicの大口顧客を獲得している。Ripplingではコーディング用途のOpenAI比率が16%から52%に上がりAnthropicは57%から18%に下がった、Replitは年1億ドル超の契約で30%超の値引きを受けて移行した、DataCampはコストが80〜90%減ったと各社が説明している。資産70億ドル超の米銀行ではChatGPTの席数が追加料金なしで500人分に倍増し、1人あたり通常20ドル以上のところ7ドル未満になったという。",
+        "note": "仕事での使いどころ：ChatGPT Enterprise・API・Claude等の契約更新時に、他社見積もりを取って価格交渉する材料になる。注意点：値引きは大口・個別交渉の事例で、一般の料金表が下がったわけではない。条件や期間は記事からは不明（要確認）。乗り換え時は出力品質・データ取り扱い条件の再評価が必要。Anthropicの成長鈍化は投資家向けメモに基づく報道。"
+      },
+      "en": {
+        "title": "OpenAI reportedly offers discounts of up to 90% to win Anthropic's biggest customers; Replit got over 30% off a $100M+ annual contract",
+        "summary": "According to The Decoder, OpenAI is winning large Anthropic customers with steep discounts. Rippling says OpenAI's share of its coding workload rose from 16% to 52% while Anthropic's fell from 57% to 18%, Replit switched after getting more than 30% off a contract worth over $100 million a year, and DataCamp says its costs fell 80-90%. A US bank with more than $7 billion in assets reportedly had its ChatGPT seats doubled to 500 at no extra cost, paying under $7 per user instead of the usual $20 or more.",
+        "note": "How to use it at work: When renewing ChatGPT Enterprise, API, or Claude contracts, get competing quotes and use them in price negotiations. Caveats: These are negotiated deals for large customers; list prices have not changed. Terms and duration are not stated in the article (needs confirmation). Switching vendors means re-checking output quality and data-handling terms. The claim that Anthropic's growth slowed comes from a reported investor memo."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-25-anthropic-single-agent-guidance",
+      "date": "2026-10-25",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "advanced",
+      "tags": [
+        "エージェント",
+        "コーディング"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Anthropic、「複数サブエージェントより、必要時に文脈を読み込む単一エージェント」を推奨。移行キットをGitHubで公開",
+        "summary": "Anthropicは企業での導入経験をもとに、サブエージェントを並べる構成より、スキルや道具を必要なときだけ読み込む単一エージェントの方が品質・コスト・待ち時間で上回る例が多いとして、統合を検討するよう呼びかけた。比較例では単一エージェント構成が約2倍速く、Opus 4.5以降（Opus 5.5、Fable 5.1を含む）なら複雑な計画を1つのループで処理できるとしている。Claude Codeの新しいモデル向けシステムプロンプトは80%以上短くしたという。",
+        "note": "仕事での使いどころ：社内で多段のエージェント構成（役割ごとに別エージェント）を作っている場合、1エージェント＋スキル化で速度とトークン費用を下げられるか検証する指針になる。注意点：Anthropic自身の事例に基づく主張で、他社モデルや自社業務で同じ結果になるかは要確認。移行キットの中身は記事からは詳細不明。"
+      },
+      "en": {
+        "title": "Anthropic recommends a single agent that loads context on demand over many subagents, and publishes a migration kit on GitHub",
+        "summary": "Based on enterprise deployments, Anthropic says a single agent that loads skills and tools only when needed often beats multi-subagent setups on quality, cost, and latency, and urges companies to consider consolidating. In one comparison the single-agent setup ran about twice as fast, and Anthropic says models from Opus 4.5 onward, including Opus 5.5 and Fable 5.1, can handle complex plans in one loop. It also says it cut the Claude Code system prompt for newer models by more than 80%.",
+        "note": "How to use it at work: If your team has built multi-step agent pipelines with a separate agent per role, use this as a reason to test whether one agent plus skills cuts latency and token costs. Caveats: This is based on Anthropic's own experience; whether it holds for other vendors' models or your own tasks needs confirmation. The article gives few details on what the migration kit contains."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-24-pennsylvania-ai-ad-labels",
+      "date": "2026-10-24",
+      "kind": "flash",
+      "cat": "reg",
+      "level": "all",
+      "tags": [
+        "規制",
+        "画像・動画"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "米ペンシルベニア州、AIで生成・大幅加工した広告に表示義務。知事が「AI欺瞞的広告法」に署名",
+        "summary": "ペンシルベニア州のジョシュ・シャピロ知事は木曜日（10月22日）、「Artificial Intelligence Deceptive Advertising Act」に署名した。AIで生成された、またはAIで大きく加工された広告について、静止画・動画・音声・文章のどの形式でも開示を求める。大企業のテレビCMから飲食店のチラシまで対象になるとThe Vergeは伝えている。",
+        "note": "仕事での使いどころ：米国向けのカタログ、販売店向け販促物、SNS広告で生成AI画像・動画を使う場合、表示ルールの確認対象になる。注意点：施行日、「大きく加工」の基準、表示方法、罰則は記事からは不明（要確認）。州法のため他州・連邦の規制は別途確認が必要。"
+      },
+      "en": {
+        "title": "Pennsylvania will require labels on ads generated or heavily modified by AI after the governor signs the AI Deceptive Advertising Act",
+        "summary": "On Thursday (Oct. 22), Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act. It requires a disclosure on any ad that has been generated or significantly modified by AI, whether it is a still image, video, audio, or text. According to The Verge, it covers everything from big companies' TV commercials to restaurant flyers.",
+        "note": "How to use it at work: If US catalogs, dealer promotional materials, or social media ads use AI-generated images or video, check them against these labeling rules. Caveats: The effective date, the threshold for \"significantly modified,\" how labels must be shown, and penalties are not stated in the article (needs confirmation). This is a state law, so other states' and federal rules must be checked separately."
+      },
+      "src": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act"
+        }
+      ]
+    },
     {
       "id": "2026-10-22-php2shell-exploited",
       "date": "2026-10-22",
