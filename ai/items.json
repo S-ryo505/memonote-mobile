@@ -1,6 +1,106 @@
 {
-  "updated": "2026-10-26T09:00:36+09:00",
+  "updated": "2026-10-27T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-10-27-gpt-61-terra",
+      "date": "2026-10-27",
+      "kind": "flash",
+      "cat": "model",
+      "level": "all",
+      "tags": [
+        "モデル",
+        "料金",
+        "エージェント",
+        "コーディング"
+      ],
+      "prio": 3,
+      "conf": "primary",
+      "ja": {
+        "title": "OpenAI「GPT-6.1 Terra」公開：API料金は前モデルGPT-5.6 Terraの半額（入力$1・出力$5/100万トークン）",
+        "summary": "OpenAIが中位モデル「GPT-6.1 Terra」を公開し、PC操作（computer use）を主な用途に掲げた。API料金は100万トークンあたり入力1ドル・出力5ドルで、GPT-5.6 Terra（2ドル・12ドル）から下がり、キャッシュ入力は0.05ドル（従来の4分の1）。ChatGPT Work・CodexのPlus/Pro/Enterprise/Edu利用者とAPIで提供開始。",
+        "note": "使いどころ：定型的なPC操作の自動化や大量の文書処理など、件数が多くコストが効く用途の試行候補。注意点：The Decoderの比較ではClaude Sonnet 5.5は入力2ドル・出力10ドル。性能比較の詳細（ベンチマーク値）はRSS要約に無く要確認。社内でのAPI利用可否は情報管理部門の承認範囲を確認のこと。"
+      },
+      "en": {
+        "title": "OpenAI releases GPT-6.1 Terra at half the API price of GPT-5.6 Terra ($1 in / $5 out per million tokens)",
+        "summary": "OpenAI launched GPT-6.1 Terra, a mid-range model positioned for computer use. API pricing is $1 per million input tokens and $5 per million output tokens, down from $2 and $12 for GPT-5.6 Terra, and cached input drops to $0.05, a quarter of the previous rate. It is available to Plus, Pro, Enterprise and Edu users in ChatGPT Work and Codex, and via the API.",
+        "note": "Where it helps: a candidate for high-volume work where cost matters, such as automating routine PC operations or bulk document processing. Caveats: The Decoder lists Claude Sonnet 5.5 at $2 in / $10 out for comparison. Detailed benchmark figures were not in the feed summary — to be confirmed. Check whether API use falls within your company's approved data-handling scope."
+      },
+      "src": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/introducing-gpt-6-1-terra"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/gpt-6-1-terra-halves-openais-api-prices-and-still-gains-ground-on-its-larger-models/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-27-anthropic-s1-ipo",
+      "date": "2026-10-27",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "料金"
+      ],
+      "prio": 2,
+      "conf": "primary",
+      "ja": {
+        "title": "Anthropic、米SECにS-1を提出しナスダック上場へ（ティッカー「ANT」）。2026年上期の売上は163億ドル",
+        "summary": "AnthropicがIPOに向けS-1をSECへ提出し、ナスダックにティッカー「ANT」で上場する計画を示した。2026年上期の売上は163億ドル（前年同期12億ドル）、営業損失は6.93億ドル、転換社債関連の非現金調整により純損失は807億ドル。年10万ドル以上利用する顧客の半数超が、Claudeプラットフォーム（API）とClaude Code・Coworkなどの自社アプリを併用している。",
+        "note": "仕事での影響：主要AIベンダーの財務・契約構造が公開情報になり、調達先評価の材料が増える。注意点：The Decoderは第2四半期単独で初の営業黒字9.74億ドル、長期の計算資源契約が7,800〜8,100億ドルと報じている。上場後の価格・提供条件の変化は現時点で不明（推測しない）。"
+      },
+      "en": {
+        "title": "Anthropic files S-1 with the SEC for a Nasdaq listing under \"ANT\"; H1 2026 revenue was $16.3 billion",
+        "summary": "Anthropic filed its S-1 with the SEC and plans to list on Nasdaq under the ticker \"ANT.\" Revenue for the first half of 2026 was $16.3 billion (up from $1.2 billion a year earlier), with a $693 million operating loss and an $80.7 billion net loss driven largely by non-cash adjustments tied to convertible debt. More than half of customers spending $100,000+ a year use both the Claude Platform and a first-party app such as Claude Code or Cowork.",
+        "note": "Impact at work: a major AI vendor's finances and contract structure are now public, which helps when evaluating suppliers. Caveats: The Decoder reports a first operating profit of $974 million in Q2 alone and long-term compute commitments of $780–810 billion. Any change to pricing or terms after listing is unknown at this point."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/anthropic-opens-its-books-for-wall-street-showing-record-revenue-and-mounting-obligations/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-27-ios-272-siri-ai-japanese",
+      "date": "2026-10-27",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える",
+        "セキュリティ"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Apple、iOS／macOS 27.2を配信。Siri AIが日本語に対応、Siriがアクセスできるアプリを除外する設定も追加",
+        "summary": "AppleがiOS・macOSなど各OSの27.2アップデートを配信した。Siri AIの対応言語に日本語・フランス語・韓国語・ポルトガル語・スペイン語の5言語が加わった（欧州と中国本土では引き続き利用不可）。「Excluded Apps」設定で、Siri・検索・提案がアクセスできるアプリを選べるようになり、macOS 27.2ではSiriの文脈記憶にも対応した。",
+        "note": "使いどころ：会社支給のiPhone/Macで日本語のSiri AIが使えるようになる可能性。注意点：業務アプリ（メール、社内チャット等）をSiriの参照対象から外す設定が追加されたので、会社のMDM方針・情報管理ルールを確認してから使う。日本での提供条件の詳細は要確認。"
+      },
+      "en": {
+        "title": "Apple ships iOS/macOS 27.2: Siri AI now supports Japanese, plus a setting to exclude apps from Siri",
+        "summary": "Apple released the 27.2 updates across its operating systems. Siri AI gains five languages beyond English: Japanese, French, Korean, Portuguese and Spanish, though it remains unavailable in Europe and mainland China. A new \"Excluded Apps\" option lets users choose which apps Siri, Search and suggestions can access, and macOS 27.2 adds contextual memory for Siri.",
+        "note": "Where it helps: Japanese-language Siri AI may become usable on company iPhones and Macs. Caveats: since you can now exclude work apps (mail, internal chat, etc.) from Siri's access, check your company's MDM policy and data-handling rules first. Details of availability in Japan — to be confirmed."
+      },
+      "src": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/"
+        }
+      ]
+    },
     {
       "id": "2026-10-25-openai-discounts-anthropic-customers",
       "date": "2026-10-25",
