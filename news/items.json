@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T09:05:00+09:00",
+ "updated": "2026-10-28T09:00:00+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -5897,6 +5897,160 @@
     {
      "name": "Car Watch",
      "url": "https://car.watch.impress.co.jp/docs/news/2151204.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27-vw-xpeng-arch-europe",
+   "date": "2026-10-27",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略",
+    "制御"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "VW、Xpengと共同開発した中国の電子電気アーキテクチャ/ソフトを欧州車に転用を検討と報道：VW・シュコダ・クプラ次世代車の約75%が対象案",
+    "summary": "Manager Magazin等の報道によると、VWブランド責任者トーマス・シェーファー氏が10月27日、Xpengと中国で共同開発したアーキテクチャを欧州向け次世代車に使う案をグループ経営陣に提示する予定だった。対象はVW・シュコダ・クプラ3ブランドの次世代車の約75%で、最重要セグメントで40億〜50億ユーロの開発費削減が試算されている。社内には適合コストと技術リスクへの懸念があり、58億ドルを投じるRivianとの提携との関係も論点。VWはコメントしていない。",
+    "note": "未決定の社内提案段階（報道ベース）。欧州法規（UNECE R155/R156のサイバー・ソフト更新要件）への適合範囲は記事に記載なし、要確認。"
+   },
+   "en": {
+    "title": "VW reportedly considers bringing its Xpeng co-developed Chinese architecture and software to European cars, covering about 75% of next-gen VW, Skoda and Cupra models",
+    "summary": "According to Manager Magazin and other reports, VW brand chief Thomas Schaefer was due to present a proposal to group management on October 27 to use the architecture co-developed with Xpeng in China for next-generation European models. It would cover about 75% of upcoming VW, Skoda and Cupra models, and internal estimates put savings at 4 to 5 billion euros in the most important segment. Concerns remain internally about adaptation costs and technical risk, and the fit with the 5.8-billion-dollar Rivian partnership is an open question. VW declined to comment.",
+    "note": "Still an internal proposal (based on reports). How it would meet European rules such as UNECE R155/R156 is not covered in the articles; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/27/vw-considers-xpeng-co-developed-architecture-europ/"
+    },
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/813348/vw-report-chinese-software-european-cars/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27-gm-hybrid-traverse-enclave-acadia",
+   "date": "2026-10-27",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "GM、3列SUVのシボレー・トラバース、ビュイック・エンクレーブ、GMCアカディアにハイブリッド追加と報道",
+    "summary": "ロイター報道として、GMがトラバース、エンクレーブ、アカディアにハイブリッド仕様を設定する計画と伝えられた。GMは2024年初めにEV一本化方針の見直しを示していた。米国の第3四半期販売ではハイブリッド比率が16%で、EVの約6%を上回った。",
+    "note": "システム構成（シリーズ/パラレル、モーター数、AWD方式）は記事に記載なし、要確認。一般論として、パラレル式では駆動力 F = (T_eng·i_g + T_mg·i_m)·i_f·η / r_w で、モーター分の T_mg が低速域のトルクを補い、3列SUVの重い車重 m に対して加速 a = (F − F_res)/m を確保する狙いと推測。"
+   },
+   "en": {
+    "title": "GM reportedly adding hybrids to the three-row Chevrolet Traverse, Buick Enclave and GMC Acadia",
+    "summary": "Citing Reuters, the report says GM plans hybrid versions of the Traverse, Enclave and Acadia. GM first signaled a move away from its all-in EV strategy in early 2024. In the third quarter, hybrids made up 16% of US car sales, ahead of roughly 6% for EVs.",
+    "note": "The system layout (series/parallel, number of motors, AWD type) is not given; needs confirmation. In general, for a parallel hybrid the tractive force is F = (T_eng·i_g + T_mg·i_m)·i_f·η / r_w; the motor term T_mg fills in low-speed torque so a heavy three-row SUV of mass m keeps acceleration a = (F − F_res)/m (inference)."
+   },
+   "src": [
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/813459/gm-hybrid-suvs-chevy-buick-gmc/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27-nhtsa-ford-73-godzilla-probe",
+   "date": "2026-10-27",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "US",
+   "tags": [
+    "PT",
+    "品質",
+    "規制"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "NHTSA、フォード7.3L V8「Godzilla」のカム・リフター故障を調査：大型ピックアップ5万4,000台超が対象",
+    "summary": "NHTSAの欠陥調査局（ODI）は、2026年6月13日に受けた請願を受け、7.3L V8のカムシャフトとリフター故障の調査を始めた。請願は低アイドル時の油潤滑不足を指摘し、フォードがアイドル回転を約1,000rpmに上げるソフト較正を出していると主張している。調査対象は5万4,000台超の大型トラック。",
+    "note": "容積式オイルポンプの吐出量は Q ≈ V_p·n·η_v（V_p: 1回転当たり押しのけ容積、n: 回転数、η_v: 体積効率）で回転数に比例し、油圧は p ≈ Q·R（R: 油路の流れ抵抗）で決まる。アイドルを上げると n とともに Q・p が上がり、カム-ローラーリフター接触部への給油が増える理屈。元のアイドル回転数は記事に記載なし、要確認。まだリコールではない。"
+   },
+   "en": {
+    "title": "NHTSA probes Ford's 7.3-liter 'Godzilla' V8 for cam and lifter failures, covering more than 54,000 heavy-duty trucks",
+    "summary": "NHTSA's Office of Defects Investigation opened the probe after a petition received on June 13, 2026, alleging camshaft and lifter failures in the 7.3-liter V8. The petition says oil lubrication is inadequate at low idle and that Ford has released a software calibration raising idle speed to about 1,000 rpm. More than 54,000 heavy-duty trucks are under investigation.",
+    "note": "A positive-displacement oil pump delivers Q ≈ V_p·n·η_v (V_p: displacement per revolution, n: speed, η_v: volumetric efficiency), so flow scales with rpm, and pressure follows p ≈ Q·R (R: flow resistance of the oil circuit). Raising idle increases n, and with it Q and p, improving oil supply to the cam/roller-lifter contact. The original idle speed is not stated; needs confirmation. This is not yet a recall."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2298378/nhtsa-investigates-ford-godzilla-v8-cam-failure/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27-audi-q4-etron-recall-80pct",
+   "date": "2026-10-27",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "電池",
+    "品質"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "VWの電池リコールがアウディに拡大：米国でQ4 e-tron 9,048台、恒久対策まで充電80%までと指示",
+    "summary": "VWグループ・オブ・アメリカは2026年10月21日にNHTSAへ不適合報告を出し、2024・2025年型のQ4 e-tronとQ4スポーツバックe-tron計9,048台を対象とした。高電圧電池の故障が火災につながるおそれがあり、恒久対策は未完成で、所有者には充電を80%までに抑えるよう求めている。NHTSAのVIN検索には10月23日に登録された。今月初めの米国ID.4（2万2,524台）リコールと同じ対応。",
+    "note": "電池の蓄積エネルギーは E ≈ SOC·Q_cell·V_nom（セル容量×公称電圧）で、上限を100%から80%にすると E は約2割減り、熱連鎖（thermal propagation）時の放出エネルギーも減る。加えて高SOCでは負極電位が低くリチウム析出が起きやすいため、上限制限で内部短絡の起点を減らす狙いと推測。根本原因は記事に記載なし、要確認。"
+   },
+   "en": {
+    "title": "VW's battery recall spreads to Audi: 9,048 Q4 e-trons in the US, owners told to charge only to 80% until a fix",
+    "summary": "Volkswagen Group of America filed a noncompliance report with NHTSA on October 21, 2026, covering 9,048 model-year 2024 and 2025 Q4 e-tron and Q4 Sportback e-tron vehicles. A high-voltage battery failure could cause a fire, the permanent fix is not ready, and owners are asked to limit charging to 80%. NHTSA added the VINs to its lookup tool on October 23. The measure mirrors this month's US recall of 22,524 ID.4s.",
+    "note": "Stored energy is roughly E ≈ SOC·Q_cell·V_nom, so capping charge at 80% instead of 100% cuts E by about 20% and reduces the energy released if thermal propagation occurs. At high SOC the anode potential is also lower and lithium plating is more likely, so the cap likely reduces internal-short triggers (inference). The root cause is not given; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/813371/audi-q4-e-tron-recall/"
+    },
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/27/vws-ev-recall-spreads-to-audi-owners-told-stop-at-80-charge/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27-ep-fleet-ev-quota-voluntary",
+   "date": "2026-10-27",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "欧州議会、大企業の社用車EV義務枠を任意目標に格下げの見通し：EPPなど中道会派が多数確保と報道",
+    "summary": "EU委員会が2025年末に示した自動車パッケージ案は、2030年から加盟国ごとに異なる社用車電動化の義務目標を課す内容だった。Automobilwoche報道によると、欧州議会ではEPPを含む中道会派が多数を確保し、この義務枠は任意目標に変わる見込み。運輸委員会委員長のイェンス・ギーゼケ議員（EPP）は、フリート事業者の負担を避ける妥協ができたと述べた。",
+    "note": "議会の立場が固まった段階の報道で、本会議採決や理事会との三者協議の結果は未定、要確認。"
+   },
+   "en": {
+    "title": "European Parliament set to downgrade binding EV quotas for large corporate fleets to voluntary targets, as EPP-led centre groups secure a majority",
+    "summary": "The Auto Package the EU Commission presented at the end of 2025 would have set country-specific mandatory targets for electrifying company cars from 2030. According to Automobilwoche, centre groups including the EPP now have a majority in Parliament, and the binding quotas are likely to become voluntary targets. Transport Committee chair Jens Gieseke (EPP) said they had found a compromise that protects fleet operators from major burdens.",
+    "note": "This reports Parliament's emerging position; the plenary vote and trilogue with the Council are still pending; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/27/evp-secures-majority-against-binding-ev-quotas-for-large-corporate-fleets/"
     }
    ]
   }
