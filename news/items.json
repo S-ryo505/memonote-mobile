@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T09:00:00+09:00",
+ "updated": "2026-10-29T08:56:00+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -6051,6 +6051,149 @@
     {
      "name": "electrive",
      "url": "https://www.electrive.com/2026/10/27/evp-secures-majority-against-binding-ev-quotas-for-large-corporate-fleets/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-28-toyota-sienna-seatback-recall",
+   "date": "2026-10-28",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "品質"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、米国でシエナ・ハイブリッド228,367台をリコール：前面衝突時に2列目シートバックのロックが外れるおそれ",
+    "summary": "トヨタは米国で2022〜2026年モデルのシエナ・ハイブリッド（7人乗りの一部、2021年9月16日〜2026年7月20日生産）228,367台をリコールする。衝突試験で、前面衝突時に2列目のシートバックのロックが解除される場合があることが判明した。修理は販売店で無償、装備により対策内容が異なり、所有者への通知は2026年12月7日に開始予定。",
+    "note": "制動・操舵・駆動系ではなく乗員保護（シート強度/ロック機構）の不具合。対象台数が10万台超のため掲載。具体的な対策部品・原因部位は記事要約に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Toyota recalls 228,367 Sienna Hybrids in the US because second-row seat backs may unlock in a frontal crash",
+    "summary": "Toyota is recalling 228,367 Sienna Hybrid minivans in the US, covering certain 2022-2026 seven-passenger models built between September 16, 2021 and July 20, 2026. Crash tests showed the second-row seat backs can come unlocked in a frontal collision. Dealers will fix the vehicles for free, with the remedy depending on equipment, and owner letters are due to go out from December 7, 2026.",
+    "note": "This is an occupant-protection defect (seat lock/strength), not a brake, steering or driveline issue; it is listed because it exceeds 100,000 units. The specific parts and root cause are not given in the summary; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/813563/toyota-sienna-hybrid-recall-targets/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-28-uk-adopts-euro7",
+   "date": "2026-10-28",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "電池"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "英国、EUのEuro 7を採用：2027年11月から新規登録の乗用車・小型商用車に適用、英国独自の認証は設けず",
+    "summary": "英国運輸省（DfT）はグレートブリテンでEuro 7排出ガス基準を採用すると確認した。2027年11月以降、新規登録される全乗用車と小型商用車に適用される。英国独自の型式認証手続きは設けず、EU・UNECEの型式認証をそのまま認めるため、追加試験なしでEUと英国の両方で販売できる。Euro 7はブレーキ・タイヤ摩耗粒子の上限と、BEV/PHEV電池の容量保持要件（5年または10万kmで初期容量の80%以上）を含む。",
+    "note": "電池耐久要件は SOH = C_now / C_initial ≥ 0.8（5年または100,000 km時点）と表せる。C_now は現時点の使用可能容量、C_initial は新品時容量。たとえば初期75 kWh（仮定値）なら、5年/10万km時点で60 kWh以上が必要。容量の測定方法（車載SOH表示か試験による実測か）の扱いは記事要約になく要確認。ブレーキ粒子規制は回生ブレーキ配分（摩擦ブレーキ使用率）の設計にも関係する（推測）。"
+   },
+   "en": {
+    "title": "UK adopts the EU's Euro 7 standard for new cars and vans registered from November 2027, with no separate GB approval",
+    "summary": "The UK Department for Transport confirmed that Great Britain will adopt the Euro 7 emissions standard. From November 2027, all newly registered passenger cars and light commercial vehicles must comply. There will be no GB-specific type-approval process; EU and UNECE approvals will be accepted, so models can be sold in both markets without extra testing. Euro 7 includes limits on brake and tyre wear particles and a battery durability rule requiring BEV and PHEV batteries to keep at least 80% of original capacity after five years or 100,000 km.",
+    "note": "The battery rule can be written as SOH = C_now / C_initial ≥ 0.8 at 5 years or 100,000 km, where C_now is the usable capacity at that point and C_initial is the capacity when new. For a 75 kWh pack (assumed value), at least 60 kWh must remain. How capacity is measured (on-board SOH reading or physical test) is not stated in the summary; needs confirmation. The brake-particle limit may also affect how regenerative and friction braking are blended (speculation)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/28/rules-for-battery-lifespan-uk-adopts-eus-euro-7-standard/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-28-vw-china-l3-test-hefei",
+   "date": "2026-10-28",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "ADAS",
+    "規制"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "VWグループ中国、合肥でL3自動運転の公道試験許可を取得：2027年量産を目標、Xpengは広州でL4ロボタクシー実演へ",
+    "summary": "フォルクスワーゲン・グループ・チャイナは、合肥市の公道でSAEレベル3の運転支援システムを試験する許可を得た。技術はHorizon Roboticsとの合弁会社Carizonと共同開発したもので、2027年の量産搭載を目標とし、自社のAI世界モデル「GAIA 2.0」も開発に用いる。同じ報道で、Xpengが広州でL4ロボタクシーの実演走行の承認を得たことも伝えられた。",
+    "note": "L3は、定められた条件（ODD）の範囲内でシステムが運転を担い、範囲外ではドライバーへ引き継ぐ段階。今回は公道「試験」許可で、量産車の型式承認（MIITのL3パイロット承認）とは別の手続き（要確認）。"
+   },
+   "en": {
+    "title": "VW Group China gets Level 3 public-road test approval in Hefei, targeting series production in 2027; Xpeng to start Level 4 robotaxi demos in Guangzhou",
+    "summary": "Volkswagen Group China has been granted permission to test an SAE Level 3 driving system on public roads in Hefei. The technology was developed with Carizon, its joint venture with Horizon Robotics, and VW aims to bring it to series production in 2027, using its in-house AI world model GAIA 2.0. The same report says Xpeng received approval for Level 4 robotaxi demonstration drives in Guangzhou.",
+    "note": "At Level 3 the system drives within defined conditions (the ODD) and hands control back to the driver outside them. This is a public-road test permit, which is likely separate from MIIT's L3 pilot approval for production vehicles (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/28/vw-receives-level-3-test-approval-in-china-xpeng-begins-level-4-demos/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-28-toyota-engine-external-sales",
+   "date": "2026-10-28",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、次世代エンジンを他社へ外販し2032年までに年約15億ユーロ（17億ドル）の売上を見込むと報道",
+    "summary": "Automotive Newsの報道として、トヨタは開発中の次世代内燃エンジン群を他の自動車メーカーに販売し、2032年までに外部向けパワートレイン販売で年間約15億ユーロ（約17億ドル）を得る見通しだと伝えられた。記事は、多くのメーカーがEuro 7などに対応するため既存エンジンの改良にとどめている点と対比している。",
+    "note": "外販先・対象エンジン（排気量・気筒数）・供給開始時期は要約に記載がなく要確認。数値は報道ベースで、トヨタの公式発表ではない。"
+   },
+   "en": {
+    "title": "Toyota reportedly expects about €1.5 billion ($1.7 billion) a year by 2032 from selling its next-generation engines to other automakers",
+    "summary": "Citing Automotive News, the report says Toyota plans to sell its new family of internal combustion engines to other automakers and expects external powertrain sales of around €1.5 billion ($1.7 billion) a year by 2032. The article contrasts this with most automakers, which are only updating existing engines to meet rules such as Euro 7.",
+    "note": "Customers, the specific engines (displacement, cylinder count) and supply start date are not given in the summary; needs confirmation. The figure comes from a media report, not an official Toyota announcement."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/813488/toyota-sell-new-engines-other-companies/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-28-mercedes-m252ls-eturbo",
+   "date": "2026-10-28",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "EU",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "メルセデス、電動アシスト・ターボ付き4気筒「M 252 LS」を通常モデルに展開：AMG以外で初",
+    "summary": "メルセデス・ベンツは、2025年に投入した4気筒ガソリンエンジンM 252を基にした新型「M 252 LS」に、電動アシスト付きターボチャージャーを採用した。この技術はAMG Oneで初採用され、その後AMGの43・63シリーズに広がっており、今回AMG以外の通常モデルに展開される。",
+    "note": "電動ターボはターボ軸上にモーターを置く。軸の回転は J·dω/dt = τ_t + τ_m − τ_c で表せる（J：回転体慣性、ω：軸角速度、τ_t：タービントルク、τ_m：モータートルク、τ_c：コンプレッサー負荷トルク）。低回転で排気エネルギーが少なく τ_t が小さいときに τ_m を加えて ω を早く上げ、過給遅れ（ターボラグ）を減らす。出力・トルク値、モーター出力、48V系か否かは要約になく要確認。"
+   },
+   "en": {
+    "title": "Mercedes brings an electrically assisted turbo to regular models with the four-cylinder M 252 LS, its first use outside AMG",
+    "summary": "Mercedes-Benz has fitted an electrically assisted turbocharger to the new M 252 LS, a four-cylinder petrol engine based on the M 252 launched in 2025. The technology first appeared on the AMG One and then spread to AMG 43 and 63 models; it is now moving to mainstream Mercedes models.",
+    "note": "An e-turbo places a motor on the turbo shaft. Shaft dynamics follow J·dω/dt = τ_t + τ_m − τ_c (J: rotating inertia, ω: shaft speed, τ_t: turbine torque, τ_m: motor torque, τ_c: compressor load torque). At low engine speed, when exhaust energy and τ_t are small, adding τ_m spins the shaft up faster and cuts turbo lag. Power and torque figures, motor output and whether it uses a 48 V system are not in the summary; needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/813562/mercedes-new-gas-engine-electric-turbo/"
     }
    ]
   }
