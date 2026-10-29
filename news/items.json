@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T08:56:00+09:00",
+ "updated": "2026-10-30T08:57:34+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -6194,6 +6194,131 @@
     {
      "name": "Motor1",
      "url": "https://www.motor1.com/news/813562/mercedes-new-gas-engine-electric-turbo/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-29-mitsubishi-pajero-launch",
+   "date": "2026-10-29",
+   "kind": "flash",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "4WD",
+    "制御",
+    "シャシー"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "三菱、新型「パジェロ」を12月17日発売：2.4Lディーゼル＋8速AT、S-AWCとスーパーセレクト4WD-IIを採用、619万3000円から",
+    "summary": "三菱自動車は10月29日、5代目となる新型パジェロを12月17日に国内発売すると発表した。全車2.4Lクリーンディーゼルターボと8速ATの3列7人乗りで、車両運動統合制御「S-AWC」と「スーパーセレクト4WD-II」を搭載し、価格は619万3000円〜795万800円の4グレード構成。10月1日開始の予約受注は28日時点で約5500台と年度目標を上回り、ボディは全長4920×全幅1925×全高1910mm（GSR/GLSは1900mm）、タイヤは255/55R20または255/65R18。",
+    "note": "S-AWCは左右輪の制駆動力差でヨーモーメントを作る制御。左右前後力差ΔFx、トレッドtとすると付加ヨーモーメントは Mz = ΔFx·t/2。目標ヨーレートは定常円旋回の式 γref = V·δ/{(1+A·V²)·L}（V：車速、δ：前輪実舵角、L：ホイールベース、A：スタビリティファクタ）で作り、実ヨーレートとの差を減らす方向にMzを与える。本車のS-AWCがブレーキ制御のみか、AYC等の差動機構を併用するかは要約になく要確認。スーパーセレクト4WD-IIは先代では2H/4H/4HLc/4LLcを選べるフルタイム/パートタイム兼用方式だったが、新型の機構詳細（センターデフ形式・ロック方式）は要確認。"
+   },
+   "en": {
+    "title": "Mitsubishi to launch the new Pajero on December 17: 2.4L diesel with 8-speed AT, S-AWC and Super Select 4WD-II, from ¥6.193 million",
+    "summary": "Mitsubishi Motors announced on October 29 that the fifth-generation Pajero goes on sale in Japan on December 17. Every version is a three-row, seven-seat SUV with a 2.4-liter clean diesel turbo and an 8-speed automatic, plus the S-AWC integrated vehicle dynamics control and Super Select 4WD-II; four grades are priced from ¥6,193,000 to ¥7,950,800. Pre-orders opened on October 1 and reached about 5,500 by October 28, already above the fiscal-year target; the body measures 4,920 mm long, 1,925 mm wide and 1,910 mm tall (1,900 mm for GSR/GLS), on 255/55R20 or 255/65R18 tires.",
+    "note": "S-AWC generates a yaw moment from a left-right difference in braking/driving force. With a longitudinal force difference ΔFx and track width t, the added yaw moment is Mz = ΔFx·t/2. A target yaw rate comes from the steady-state cornering equation γref = V·δ/{(1+A·V²)·L} (V: speed, δ: front road-wheel angle, L: wheelbase, A: stability factor), and Mz is applied to shrink the error to the actual yaw rate. Whether this S-AWC uses brakes only or also an active differential such as AYC is not in the summary; needs confirmation. In the previous generation, Super Select 4WD-II offered 2H/4H/4HLc/4LLc modes; the new model's hardware details (center-diff type, locking method) need confirmation."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/29/418355.html"
+    },
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2152021.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-29-toyota-nextgen-hybrid-15pct",
+   "date": "2026-10-29",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "Global",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、新プラットフォームと次世代ハイブリッドを組み合わせ：新1.5L直4で燃費15%超改善を目標",
+    "summary": "トヨタは、小型・軽量化した次世代ハイブリッドシステムを新しいプラットフォームと組み合わせ、燃費を15%以上改善する目標を示した。中核となる新開発の1.5L直列4気筒は電動化専用設計で、自然吸気版と過給版があり、現行の1.5L直3と1.8L直4を置き換える。改善要因として機械摩擦の低減、熱マネジメントの改善、電気損失の低減が挙げられ、HEVとPHEVの両方に使われる。",
+    "note": "燃料消費量は mf = ∫ BSFC·Pe dt（BSFC：正味燃料消費率[g/kWh]、Pe：エンジン正味出力）。Pe はタイヤ駆動に必要な仕事に電気系損失（モーター・インバーター・電池の効率 η）を上乗せした値になるため、①摩擦低減で正味効率を上げBSFCを下げる、②熱マネジメントで低BSFC域を広げる、③電気損失低減でηを上げ必要Peを減らす、の3つが積で効く。なお「燃費（km/L）15%向上」は燃料消費量では 1−1/1.15 ≈ 13%減に相当し、Carscoopsは「15%少ない燃料」と書いているため、どちらの定義かは要確認。"
+   },
+   "en": {
+    "title": "Toyota pairs a new platform with its next-gen hybrid: new 1.5L four-cylinder targets over 15% better fuel economy",
+    "summary": "Toyota said its next-generation hybrid system, made smaller and lighter, will be combined with a new platform and aims to improve fuel economy by more than 15%. Its core is a newly developed 1.5-liter inline-four designed specifically for electrified use, offered naturally aspirated and turbocharged, replacing today's 1.5-liter three-cylinder and 1.8-liter four-cylinder. The gains come from lower mechanical friction, better thermal management and smaller electrical losses, and the engine will serve both hybrids and plug-in hybrids.",
+    "note": "Fuel used is mf = ∫ BSFC·Pe dt (BSFC: brake specific fuel consumption in g/kWh, Pe: engine brake power). Pe equals the wheel work plus the electrical losses (efficiency η of motor, inverter and battery), so three levers multiply: (1) less friction raises brake efficiency and lowers BSFC, (2) thermal management widens the low-BSFC region, (3) fewer electrical losses raise η and reduce the Pe required. Note that a 15% gain in fuel economy (km/L) equals a 1−1/1.15 ≈ 13% cut in fuel consumption, while Carscoops says '15% less gas'; which definition Toyota uses needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/813639/toyota-new-platform-gas-engine/"
+    },
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/813645/new-toyota-hybrid-engine-more-efficient-smaller/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-29-vw-china-csp-global",
+   "date": "2026-10-29",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "電池",
+    "ADAS",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "VWグループ中国、中国開発の技術パッケージを世界展開へ：850Vの「CSP」で10→80%充電13分、L2++「HS 8」も",
+    "summary": "フォルクスワーゲン・グループ中国は、現地で開発した新技術パッケージを公開し、中国外の市場にも展開する計画を示した。プレミアム向けの「China Scalable Platform（CSP）」は850V系で10→80%充電を13分とし、BEVで航続800km超・電費13kWh/100km未満を目標とする。運転支援ではソフト子会社Carizonが初の自社開発L2++「HyperSense 8（HS 8）」を開発し、同社は中国拠点を開発・輸出のハブにする方針。",
+    "note": "充電時間は t = ΔSOC·E / P̄（E：電池容量、P̄：平均充電電力）。仮定値として E=100kWh とすると、70%分の70kWhを13分で入れるには P̄ ≈ 70/(13/60) ≈ 323kW。電流は I = P/V で、850V系なら約380A、400V系なら約810Aとなり、ケーブル・端子の発熱 I²R を約1/4.5にできるのが高電圧化の利点。また航続800kmを13kWh/100kmで走るには E ≈ 104kWh以上が必要（推測、CLTC基準）。実際の容量は要確認。"
+   },
+   "en": {
+    "title": "VW Group China to take its China-developed tech package global: 850V 'CSP' charges 10-80% in 13 minutes, plus L2++ 'HS 8'",
+    "summary": "Volkswagen Group China presented a locally developed technology package and plans to market it outside China as well. For the premium segment, the China Scalable Platform (CSP) uses an 850-volt architecture that charges from 10 to 80% in 13 minutes, with BEV range targeted above 800 km and consumption below 13 kWh/100 km. For assisted driving, software subsidiary Carizon has developed its first in-house L2++ system, HyperSense 8 (HS 8), and VW plans to turn its China base into an innovation and export hub.",
+    "note": "Charging time is t = ΔSOC·E / P̄ (E: pack capacity, P̄: average charging power). Assuming E = 100 kWh (assumed value), adding 70 kWh (70%) in 13 minutes needs P̄ ≈ 70/(13/60) ≈ 323 kW. Current is I = P/V: about 380 A at 850 V versus about 810 A at 400 V, cutting I²R heating in cables and contacts to roughly 1/4.5, which is the main benefit of higher voltage. Covering 800 km at 13 kWh/100 km needs E of at least about 104 kWh (estimate, CLTC basis); the actual capacity needs confirmation."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/29/vw-unveils-global-plans-for-new-tech-package-developed-in-china/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-29-rivian-van-awd-129kwh",
+   "date": "2026-10-29",
+   "kind": "flash",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "4WD",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "リヴィアン、商用EVバンに2モーターAWDと129kWh LFPパックを追加：航続30%増、10月上旬から納車",
+    "summary": "リヴィアンは2026年第3四半期の株主向け資料で、商用EVバンの改良版の納車を10月上旬に始めたと確認した。2021年の生産開始以来初の大きなハード変更で、容量を増やした129kWhのLFP電池により航続を約30%延ばし、新たに2モーターのAWD仕様を設定した。従来の定格航続は約160マイルだった。",
+    "note": "航続 R = E_usable / e（e：電費[kWh/km]）。電費が同じなら30%増は約160→208マイル（計算値）。LFPはNMCより重量当たりエネルギー密度が低いため、同じ電費を保てているかは車重増の影響を含め要確認。2モーターAWDでは前後トルク配分 T_f : T_r を各輪の路面反力に比例させる（T_i ∝ μ·Fz_i）ほど、各軸のスリップ余裕がそろう。積載で後軸荷重が大きく変わるバンでは、Fz_r の変化に応じて配分を変えられる点が利点（推測）。"
+   },
+   "en": {
+    "title": "Rivian adds dual-motor AWD and a 129 kWh LFP pack to its electric van: 30% more range, deliveries began in early October",
+    "summary": "In its Q3 2026 shareholder presentation, Rivian confirmed that deliveries of its upgraded electric van began in early October. It is the first major hardware change since production started in 2021: a larger 129 kWh LFP pack extends range by about 30%, and a new dual-motor AWD version is offered. The previous rated range was about 160 miles.",
+    "note": "Range R = E_usable / e (e: consumption in kWh/km). At the same consumption, a 30% increase means about 160 to 208 miles (calculated). LFP has lower gravimetric energy density than NMC, so whether consumption holds despite the extra weight needs confirmation. With dual-motor AWD, splitting front/rear torque T_f : T_r in proportion to each axle's normal load (T_i ∝ μ·Fz_i) equalizes the slip margin on both axles. For a van whose rear-axle load changes a lot with cargo, being able to shift the split as Fz_r changes is an advantage (estimate)."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/29/rivian-electric-van-awd-30-percent-more-range/"
     }
    ]
   }
