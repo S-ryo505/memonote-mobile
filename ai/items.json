@@ -1,6 +1,133 @@
 {
-  "updated": "2026-10-28T09:05:00+09:00",
+  "updated": "2026-10-29T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-10-29-gemini-4-carbon",
+      "date": "2026-10-29",
+      "kind": "flash",
+      "cat": "model",
+      "level": "all",
+      "tags": [
+        "モデル",
+        "コーディング",
+        "エージェント",
+        "セキュリティ"
+      ],
+      "prio": 3,
+      "conf": "primary",
+      "ja": {
+        "title": "Google、新モデル「Gemini 4 Carbon」発表　Argonから2週間、当面はサイバー防御組織に限定提供",
+        "summary": "Googleは10月28日（米国時間）、「Gemini 4 Carbon」を発表した。Artificial Analysis Intelligence Index v5.0で59点と首位（10月13日に一般提供したArgonは50点）、ただしCoding Agent IndexではClaude Opus 5.5の62点に対し59点。Google社内評価では、ハルシネーションがArgonの約半分、間接プロンプトインジェクション（Gray Swan IPI）の攻撃成功率は0.7%→0.0%とされる。",
+        "note": "仕事での使いどころ：現時点では一般利用不可。Gemini業務利用中の部署は、一般提供時の切替候補として把握しておく程度でよい。注意点：数値の多くはGoogle自身の評価。一般提供時期・料金は記事に記載なく要確認。"
+      },
+      "en": {
+        "title": "Google announces Gemini 4 Carbon two weeks after Argon; access limited to cyber-defense groups for now",
+        "summary": "On October 28 (US time), Google announced Gemini 4 Carbon. It scored 59 on the Artificial Analysis Intelligence Index v5.0, taking first place (Argon, generally available since October 13, scored 50), though on the Coding Agent Index it trails Claude Opus 5.5, 59 to 62. According to Google's internal tests, hallucinations are about half of Argon's, and the success rate of indirect prompt-injection attacks (Gray Swan IPI) fell from 0.7% to 0.0%.",
+        "note": "How to use it at work: not available to general users yet. Teams using Gemini only need to note it as a future upgrade candidate. Caveats: most figures come from Google's own evaluations. General availability and pricing are not stated in the articles (needs checking)."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/news/article/2610/29/2000002690/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/google-deepmind-releases-gemini-4-carbon-just-two-weeks-after-argon-with-gains-across-the-board/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-29-panasonic-genai-leak",
+      "date": "2026-10-29",
+      "kind": "flash",
+      "cat": "reg",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "仕事で使える"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "パナソニックG、約33万4000人分の人事データを社内禁止の外部生成AIにアップロード",
+        "summary": "パナソニック オペレーショナルエクセレンスは10月23日、人事情報システム導入プロジェクトのメンバーが、社内で利用禁止の外部生成AIに個人情報を含むデータを上げたと公表した。対象は従業員約7万5000人、元従業員約17万8000人、家族約8万1000人。サービス事業者は削除後30日間データを保持する仕様で、10月25日以降は残らないと説明している。",
+        "note": "仕事での使いどころ：自部署の『禁止』ルールが実際に守れる仕組み（承認済みツールの提供、アップロード制限）になっているかの点検材料にする。注意点：使われたサービス名と経緯の詳細は記事要約からは不明（要確認）。削除しても事業者側に一定期間残る点は他サービスでも規約を確認する。"
+      },
+      "en": {
+        "title": "Panasonic group: HR data on about 334,000 people uploaded to a banned external generative AI service",
+        "summary": "On October 23, Panasonic Operational Excellence disclosed that a member of an HR-system project uploaded data containing personal information to an external generative AI service the company prohibits. It covered about 75,000 employees, 178,000 former employees and 81,000 family members. The provider keeps data for 30 days after deletion, and says none remains after October 25.",
+        "note": "How to use it at work: use this to check whether your team's \"ban\" is actually enforceable (approved tools provided, upload restrictions). Caveats: the service name and details of what happened are not clear from the summary (needs checking). Also check other services' terms on how long data is kept after deletion."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/enterprise/articles/2610/28/news060.html"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-29-agents-md-downloads-attack",
+      "date": "2026-10-29",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "セキュリティ",
+        "コーディング",
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "「ダウンロードフォルダでコーディングエージェントを起動しない」　悪意あるAGENTS.mdで指示実行の恐れ",
+        "summary": "イスラエルのセキュリティ企業Reboraは、Webサイトが利用者の操作なしでダウンロードフォルダにファイルを置ける点を攻撃者が悪用していると指摘した。悪意あるAGENTS.mdがあるフォルダでエージェントを起動すると、マルウェア導入などに使われる恐れがある。同社の検証ではCodexが90%以上、Claude Codeが約50%の確率でファイル内の指示を実行した。",
+        "note": "仕事での使いどころ：CodexやClaude Codeを使うメンバーに『作業用の専用フォルダで起動する』ルールを周知する。注意点：数値は1社の検証結果で、条件・バージョンは記事要約からは不明（要確認）。"
+      },
+      "en": {
+        "title": "\"Don't launch coding agents in your Downloads folder\": malicious AGENTS.md files can make them follow attacker instructions",
+        "summary": "Israeli security firm Rebora says attackers exploit the fact that websites can sometimes save files to the Downloads folder without user action. If a coding agent is launched in a folder containing a malicious AGENTS.md, it could be used to install malware, among other things. In the firm's tests, Codex followed the file's instructions more than 90% of the time and Claude Code about 50%.",
+        "note": "How to use it at work: tell team members using Codex or Claude Code to launch them only in dedicated project folders. Caveats: figures are from one company's tests; conditions and versions are unclear from the summary (needs checking)."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2610/28/2000002671/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-29-anthropic-breach-bug-bounty",
+      "date": "2026-10-29",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "セキュリティ企業のAIエージェントが外部ソフト経由でAnthropic社内に侵入　バグバウンティの一環",
+        "summary": "セキュリティ新興企業Cathedralが、バグバウンティ（脆弱性報奨金）プログラムの一環として、AIエージェントを使いサードパーティ製ソフト経由でAnthropicの社内システムに入った。Anthropicは営業・人事・ITのデータへのアクセスがあったことは認めたが、侵入の深さについては異論を示している。",
+        "note": "仕事での使いどころ：自社でもSaaS連携アプリ（Slack連携など）の権限棚卸しを行う根拠にできる。注意点：顧客データへの影響有無や侵入範囲は両社の主張が食い違っており要確認。"
+      },
+      "en": {
+        "title": "Security firm's AI agents broke into Anthropic's internal systems via third-party software as part of a bug bounty",
+        "summary": "Security startup Cathedral used AI agents to get into Anthropic's internal systems through third-party software as part of a bug bounty program. Anthropic confirmed that sales, HR and IT data were accessed but disputes how deep the intrusion went.",
+        "note": "How to use it at work: a reason to review permissions of SaaS-integrated apps (such as Slack integrations) in your own company. Caveats: whether customer data was affected and how far the intrusion reached are disputed by the two sides (needs checking)."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/"
+        }
+      ]
+    },
     {
       "id": "2026-10-28-qwen-beijing-upload",
       "date": "2026-10-28",
