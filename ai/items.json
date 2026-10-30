@@ -1,6 +1,129 @@
 {
-  "updated": "2026-10-29T09:05:00+09:00",
+  "updated": "2026-10-30T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-10-30-chatgpt-plan-api-credit",
+      "date": "2026-10-30",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "仕事で使える",
+        "料金",
+        "コーディング"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "ChatGPTのPro・BusinessプランにAPI利用枠が付与　月最大500ドル分",
+        "summary": "OpenAIは10月28日（米国時間）、ChatGPTのProとBusinessプランの契約者がOpenAIのAPIを使える利用枠を付けると発表した。Pro（月額100・200・500ドル）は月額と同じ金額分、Businessは1シートあたりスタンダードで月20ドル分、プレミアムで月100ドル分。いずれも1ワークスペースあたり月500ドル分が上限。",
+        "note": "仕事での使いどころ：Business契約がある部署では、社内ツールや評価スクリプトのAPI試作を追加予算なしで始められる可能性がある。注意点：APIでのデータ取扱い・社内規程上の扱い、枠の繰越可否や適用開始日は記事に記載がなく要確認。"
+      },
+      "en": {
+        "title": "ChatGPT Pro and Business plans now include API credits of up to $500 a month",
+        "summary": "On October 28 (US time), OpenAI announced that ChatGPT Pro and Business subscribers will get credits for using its API. Pro plans ($100, $200 and $500 a month) receive credits equal to their monthly fee, while Business plans get $20 per standard seat and $100 per premium seat each month. Every workspace is capped at $500 a month.",
+        "note": "How to use it at work: teams on a Business plan may be able to prototype internal tools or evaluation scripts on the API without a separate budget. Caveats: data handling for API use, internal policy approval, whether unused credits roll over, and the start date are not in the article (needs checking)."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2610/29/2000002728/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-30-chatgpt-pro-limits-double",
+      "date": "2026-10-30",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "料金",
+        "コーディング"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "OpenAI、ChatGPT Pro 100とPro 500のWork・Codex利用上限を2倍に　Pro 200の削減計画は撤回",
+        "summary": "OpenAIはPro 100とPro 500プランで、WorkとCodexの利用上限を従来の2倍に引き上げた。Pro 200では低い側の上限を2倍にし、ユーザーの反発を受けて予定していた上限削減を取り消した。The DecoderはAnthropicの上場を前にした法人向け競争の一環と位置づけている。",
+        "note": "仕事での使いどころ：Codexで長時間のコード作業をする担当者は、上限到達で作業が止まる頻度が下がる見込み。注意点：変更前後の具体的な回数は記事に記載がなく要確認。競争要因は媒体の見方（推測を含む）。"
+      },
+      "en": {
+        "title": "OpenAI doubles Work and Codex limits on ChatGPT Pro 100 and Pro 500, drops planned Pro 200 cut",
+        "summary": "OpenAI has doubled the Work and Codex usage limits on its Pro 100 and Pro 500 plans. On Pro 200, it doubled the lower quota and reversed a planned reduction after users pushed back. The Decoder frames the move as part of the B2B competition ahead of Anthropic's IPO.",
+        "note": "How to use it at work: people who run long coding sessions in Codex should hit the cap less often. Caveats: the article does not give the exact limits before and after (needs checking). The competition angle is the outlet's interpretation (partly speculative)."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/openai-doubles-usage-limits-on-pro-plans-as-competition-with-anthropic-heats-up/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-30-gemini-file-editing",
+      "date": "2026-10-30",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える",
+        "資料作成",
+        "データ分析"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Gemini、チャット内でGoogleドキュメント・スプレッドシート・スライド・PDFを生成・編集可能に",
+        "summary": "Googleは、Geminiのチャット画面上でPDF、Googleドキュメント、Googleスプレッドシート、スライド、Markdown、テキスト、コードのファイルを作成・プレビュー・編集できる機能を全Geminiユーザーに提供開始した。PDFのプレビュー・編集はWebとモバイルの両方、その他の形式は現時点で片方の環境のみ（The Vergeの要約が途中で切れており、どちらかは要確認）。",
+        "note": "仕事での使いどころ：会議メモから表やスライドの下書きをチャット内で作り、そのまま手直しできる。注意点：社外秘ファイルを扱う場合は会社のGemini利用規程（Workspace契約の有無）を確認。対応環境は要確認。"
+      },
+      "en": {
+        "title": "Gemini can now create and edit Google Docs, Sheets, slides and PDFs right inside the chat",
+        "summary": "Google has rolled out a feature that lets all Gemini users create, preview and edit PDFs, Google Docs, Google Sheets, slide decks, Markdown, text and code files directly in a Gemini chat. PDF preview and editing work on both web and mobile, while the other formats are available on only one of them for now (The Verge's summary is cut off, so which one needs checking).",
+        "note": "How to use it at work: you can turn meeting notes into a draft table or slide deck in the chat and refine it there. Caveats: before handling confidential files, check your company's Gemini policy (whether you are on a Workspace contract). Supported platforms need checking."
+      },
+      "src": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-30-mistral-large-4-weights",
+      "date": "2026-10-30",
+      "kind": "flash",
+      "cat": "model",
+      "level": "advanced",
+      "tags": [
+        "モデル",
+        "コーディング",
+        "セキュリティ"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Mistral、約1兆パラメータの「Mistral Large 4」の重みを公開　自社サーバーで運用可能",
+        "summary": "仏Mistralは、総パラメータ約1兆・アクティブ520億の「Mistral Large 4」（通称Le Chonk）の重みを、プレビューから3週間後にHugging Faceで公開した。改変版MITライセンスで自社ハードウェアでの運用が可能。Artificial Analysis Intelligence Indexは26点で、DeepSeek V4.1 FlashやGLM-5.3の32点を下回るが、出力速度は毎秒161トークン、有害なサイバー攻撃系依頼の拒否率は96.6%とされる。",
+        "note": "仕事での使いどころ：機密データを社外に出せない用途（設計情報を扱う社内チャットなど）でオンプレ運用する候補の一つ。注意点：1兆パラメータ規模の運用には大規模なGPU環境が必要（必要台数は記事に記載なく要確認）。性能は首位級モデルより下。ライセンスの改変点も要確認。"
+      },
+      "en": {
+        "title": "Mistral releases weights for its roughly one-trillion-parameter Mistral Large 4, deployable on your own servers",
+        "summary": "France's Mistral has published the weights of Mistral Large 4 (nicknamed Le Chonk), with about one trillion total and 52 billion active parameters, on Hugging Face three weeks after its preview. Under a modified MIT license it can run on your own hardware. It scores 26 on the Artificial Analysis Intelligence Index, below the 32 of DeepSeek V4.1 Flash and GLM-5.3, but outputs 161 tokens per second and reportedly refuses 96.6% of harmful cyberattack requests.",
+        "note": "How to use it at work: one option for on-premises use where confidential data cannot leave the company, such as an internal chat over design data. Caveats: running a trillion-parameter model requires large GPU infrastructure (the article gives no exact requirement; needs checking). It trails the top models, and the license changes also need checking."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/paris-based-mistral-releases-le-chonk-a-strong-coding-model-that-still-trails-china-overall/"
+        }
+      ]
+    },
     {
       "id": "2026-10-29-gemini-4-carbon",
       "date": "2026-10-29",
