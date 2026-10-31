@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T08:57:34+09:00",
+ "updated": "2026-10-31T09:55:00+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -6319,6 +6319,711 @@
     {
      "name": "Electrek",
      "url": "https://electrek.co/2026/10/29/rivian-electric-van-awd-30-percent-more-range/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-30-chery-exeed-emb",
+   "date": "2026-10-30",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "CN",
+   "tags": [
+    "制御",
+    "シャシー"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "BASF・奇瑞（Chery）・オリエントモーション、量産型EMB（電気機械式ブレーキ）バイ・ワイヤを発表：EXEED「EX7」に搭載",
+    "summary": "BASF、Chery、蘇州のOrient Motionの3社が、量産車向けとしては世界初とするEMBバイ・ワイヤシステムを発表した。中国で開発され、Cheryの上級ブランドEXEEDのEX7に採用されている。中国汽車技術研究中心（CATARC）の試験では、制動応答・制御精度・冗長性で優位性が示されたとしている。",
+    "note": "EMBは油圧配管を持たず、各輪のモータ＋減速機＋ボールねじでパッドを押す。押付力の目安は F = 2π·η·i·T_m / p（T_m：モータトルク、i：減速比、p：ボールねじリード、η：効率）、制動トルクは T_b = 2·μ_p·F·r_eff（μ_p：パッド摩擦係数、r_eff：有効半径）。油圧の遅れがないため ESC/ABS の輪別圧力制御が直接モータ電流制御になり、ステアbyWireや回生協調と統合しやすい。一方、油圧のバックアップがないので電源・通信の二重化（ASIL D相当）が要件になる（一般論、EX7の具体構成は要確認）。BASFの役割は記事要約からは不明（材料提供と推測）。"
+   },
+   "en": {
+    "title": "BASF, Chery and Orient Motion unveil a mass-production EMB (electro-mechanical brake) by-wire system, fitted to the EXEED EX7",
+    "summary": "BASF, Chery and Suzhou-based Orient Motion announced what they call the world's first mass-production EMB brake-by-wire system. Developed in China, it is fitted to the EX7 from Chery's premium brand EXEED. According to tests by the China Automotive Technology and Research Center (CATARC), it showed advantages in braking response, control accuracy and safety redundancy.",
+    "note": "An EMB has no hydraulic lines; at each wheel a motor, reduction gear and ball screw push the pads. Clamping force is roughly F = 2π·η·i·T_m / p (T_m: motor torque, i: reduction ratio, p: ball-screw lead, η: efficiency), and brake torque is T_b = 2·μ_p·F·r_eff. With no hydraulic lag, per-wheel ESC/ABS pressure control becomes direct motor-current control, which makes integration with steer-by-wire and regenerative blending easier. With no hydraulic backup, however, redundant power and communication (ASIL D level) are required (general point; the EX7's actual architecture needs confirmation). BASF's role is not stated in the summary (materials supply is a guess)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/30/418432.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-26-byd-seal07-gen2-disus-m",
+   "date": "2026-10-26",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "シャシー",
+    "制御",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BYD、第2世代「Seal 07」の予約受付を開始：全長5,080mm、磁性流体（MR）ボディ制御「DiSus-M」と第2世代ブレードバッテリーを採用",
+    "summary": "BYDは大型化した第2世代Seal 07の予約受付を始めた。全長は5,080mmで、磁性流体を使うボディ制御「DiSus-M」を装備し、第2世代ブレードバッテリーとフラッシュ充電に対応する。充電性能は「5分で走れる、9分で満充電」とうたっている。外観は9月28日、内装は10月23日に公開済み。",
+    "note": "MRダンパーは電流で磁性流体の降伏応力を変え、減衰力を連続可変にする。代表的なモデル（Bingham）は F = c₀·v + F_y(I)·sgn(v)（v：ピストン速度、F_y：電流Iで決まる降伏力）。応答時間は一般に数ms〜十数msで、スカイフック制御 F_target = c_sky·ż_body を近似しやすい。外観予告（9/28）時点の項目から、今回は予約開始とDiSus-M・電池の確定が新情報。"
+   },
+   "en": {
+    "title": "BYD opens reservations for the second-gen Seal 07: 5,080 mm long, with DiSus-M magnetorheological body control and the second-gen Blade Battery",
+    "summary": "BYD has opened reservations for the larger second-generation Seal 07. It is 5,080 mm long, uses the DiSus-M magnetorheological body control system, and supports the second-generation Blade Battery and flash charging. BYD promotes the charging as 'ready in 5 minutes, full in 9 minutes.' The exterior was shown on September 28 and the cabin on October 23.",
+    "note": "An MR damper changes the yield stress of its fluid with current, giving continuously variable damping. A typical (Bingham) model is F = c₀·v + F_y(I)·sgn(v) (v: piston velocity, F_y: yield force set by current I). Response times are typically a few to a dozen-plus ms, which makes it easy to approximate skyhook control F_target = c_sky·ż_body. Compared with the exterior preview (Sep 28), the new facts are the opening of reservations and confirmation of DiSus-M and the battery."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/26/byd-opens-reservations-2nd-gen-seal-07/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-26-lancia-gamma-hf-integrale",
+   "date": "2026-10-26",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "4WD",
+    "PT",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ランチア「ガンマ HF インテグラーレ」をパリで公開：前後2モーター375HP・509Nm、正味97.2kWhで航続676km",
+    "summary": "ランチアはパリモーターショー2026で、約30年ぶりに「HF インテグラーレ」の名を使ったガンマの高性能版を公開した。前後軸に1基ずつモーターを置く2モーター4WDで、最高出力375HP、最大トルク509Nm、0-100km/h 5.1秒、最高速190km/h。床下に構造部材として組み込んだ正味97.2kWhの電池で最大航続676kmとしている。",
+    "note": "電費の逆算：e = E/R = 97.2 kWh / 676 km ≈ 14.4 kWh/100km（計算値。試験モードは要約に記載なし、WLTPと推測）。2モーター4WDの前後配分は、加速時の荷重移動 ΔFz = m·a_x·h/L を考えると後軸寄りにするほど各軸の摩擦円の余裕がそろう（T_f/T_r ≈ Fz_f/Fz_r）。初代デルタHFインテグラーレのような機械式センターデフ＋ビスカスと異なり、配分はモータ指令だけで瞬時に変えられる。ヨー制御への前後配分の使い方は要確認。"
+   },
+   "en": {
+    "title": "Lancia unveils the Gamma HF Integrale in Paris: front and rear motors with 375 hp and 509 Nm, 97.2 kWh net for 676 km of range",
+    "summary": "At the 2026 Paris Motor Show, Lancia revealed a high-performance Gamma that revives the 'HF Integrale' name after about 30 years. It is a dual-motor 4WD with one motor on each axle, making 375 hp and 509 Nm, with 0-100 km/h in 5.1 s and a 190 km/h top speed. A 97.2 kWh net battery, built into the floor as a structural member, gives up to 676 km of range.",
+    "note": "Back-calculating consumption: e = E/R = 97.2 kWh / 676 km ≈ 14.4 kWh/100 km (calculated; the test cycle is not stated, presumably WLTP). For front/rear split in a dual-motor 4WD, considering load transfer under acceleration ΔFz = m·a_x·h/L, biasing toward the rear evens out the friction-circle margin of each axle (T_f/T_r ≈ Fz_f/Fz_r). Unlike the original Delta HF Integrale's mechanical centre differential with viscous coupling, the split can be changed instantly by motor commands alone. How the split is used for yaw control needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/26/418212.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27-outlander-diamond-trail",
+   "date": "2026-10-27",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "4WD"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "三菱、2028年型「アウトランダー」に悪路向け「Diamond Trail Edition」：ロックモード追加、アプローチ角18.3°→20.5°",
+    "summary": "三菱は11月3日からのSEMAショー（ラスベガス）で、2028年型アウトランダーの悪路仕様「Diamond Trail Edition」を公開する。SEMAへの単独出展は2012年以来。ドライブモードに「ロック」を追加し、18インチの黒ホイール、ネクセン製オールテレーンタイヤ「Roadian ATX」、新しい前後バンパーを装着した。アプローチ角は18.3°から20.5°、リア側の角度は22.2°から23.1°に増えた。",
+    "note": "アプローチ角 θ = arctan(h/L_oh)（h：前端下部の地上高、L_oh：前輪接地点からバンパー下端までの水平距離）。2.2°の拡大はバンパー下端の切り上げで得たもので、タイヤ外径の変更有無は要約に記載なし（要確認）。ロックモードの制御内容（S-AWCのブレーキLSD制御ゲイン、トルク配分）は要約からは不明。"
+   },
+   "en": {
+    "title": "Mitsubishi adds an off-road 'Diamond Trail Edition' to the 2028 Outlander: new Rock mode, approach angle up from 18.3° to 20.5°",
+    "summary": "Mitsubishi will reveal the 2028 Outlander Diamond Trail Edition, a trail-focused version, at the SEMA Show in Las Vegas from November 3. It is the brand's first own booth at SEMA since 2012. It adds a 'Rock' drive mode, 18-inch black wheels, Nexen Roadian ATX all-terrain tires and new front and rear bumpers. The approach angle rises from 18.3° to 20.5°, and the rear angle from 22.2° to 23.1°.",
+    "note": "Approach angle θ = arctan(h/L_oh) (h: ground clearance at the front lower edge, L_oh: horizontal distance from the front contact patch to that edge). The 2.2° gain comes from raising the bumper's lower edge; whether tire diameter changed is not stated (needs confirmation). What Rock mode changes (S-AWC brake-LSD gains, torque split) is not given in the summaries."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2298165/2028-mitsubishi-outlander-diamond-trail-edition-sema/"
+    },
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/813242/2028-mitsubishi-outlander-diamond-trail/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-30-ford-ev-30pct-efficiency",
+   "date": "2026-10-30",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "PT",
+    "電池",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "フォードCEO、新EV駆動系（モーター・ギアボックス・インバーター）はBYD比で約30%高効率と発言：電池容量を減らしてコスト低減",
+    "summary": "フォードのジム・ファーリーCEOは第3四半期決算説明会で、新しいモーター、EV用ギアボックス、インバーターの効率がBYDより約30%高く、その分電池を小さく設計できると述べた。これがUEVプラットフォームのコスト低減の柱の一つで、同プラットフォームは28,350ドルのピックアップ「Fathom」で初採用される。",
+    "note": "必要電池容量は E = e·R / DoD（e：電費、R：目標航続、DoD：使用可能比率）。駆動系効率 η_dt が上がると e ∝ 1/η_dt で下がる。ただし「30%高効率」が損失の30%減なのか効率値の30%増なのかで意味が大きく違う：η=90%→93%（損失10%→7%で30%減）なら e は約3%減にとどまる（計算例・仮定値）。発言の定義は要確認。"
+   },
+   "en": {
+    "title": "Ford CEO says its new EV drive hardware (motors, gearbox, inverters) is about 30% more efficient than BYD's, allowing a smaller battery",
+    "summary": "On Ford's Q3 earnings call, CEO Jim Farley said its new motors, EV gearbox and inverters are about 30% more efficient than BYD's, which lets Ford design a smaller battery. This is one of the keys to lowering cost on the UEV platform, which debuts with the $28,350 Fathom pickup.",
+    "note": "Required battery capacity is E = e·R / DoD (e: consumption, R: target range, DoD: usable fraction). Higher drivetrain efficiency η_dt lowers consumption as e ∝ 1/η_dt. But it matters whether '30% more efficient' means 30% fewer losses or a 30% higher efficiency figure: going from η = 90% to 93% (losses 10% to 7%, a 30% cut) lowers e by only about 3% (worked example, assumed values). The definition behind the claim needs confirmation."
+   },
+   "src": [
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/813781/ford-byd-motors-30-fathom/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-29-ford-fathom-unicasting",
+   "date": "2026-10-29",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "US",
+   "tags": [
+    "シャシー",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "フォード「Fathom」、前後2つの大型一体鋳造（ユニキャスティング）で従来146点の構造部品を置き換え",
+    "summary": "フォードは2028年型の小型EVピックアップ「Fathom」の製造工程を追加説明した。車体前部と後部にそれぞれ1つの大型一体鋳造部品を使い、通常の車両構造なら146点になる構造部品を2点に集約する。価格はCarscoopsが29,945ドル、InsideEVsが28,350ドルと記載しており、送料等を含むかの違いと推測される（要確認）。",
+    "note": "部品集約の効果は、接合点（スポット溶接・リベット）と治具・工程の削減。一方で大型ダイカストは肉厚・合金（非熱処理Al-Si系が多い）で延性が限られ、衝突時の変形モードや補修性（部分交換ができない）が課題。シャシー視点では、サスペンション取付部を鋳物に直接設けると取付点剛性 k が上がり、ブッシュ側でのコンプライアンス設計がしやすくなる（一般論・推測）。"
+   },
+   "en": {
+    "title": "Ford's Fathom uses two large unicastings, front and rear, to replace 146 structural parts",
+    "summary": "Ford gave more detail on how it will build the 2028 Fathom, a compact electric pickup. It uses one large single-piece casting at the front and one at the rear, replacing what would be 146 structural components in a conventional body. Carscoops lists the price as $29,945 and InsideEVs as $28,350; the gap is probably whether destination is included (needs confirmation).",
+    "note": "Consolidation cuts joints (spot welds, rivets), fixtures and process steps. On the other hand, large die castings have limited ductility depending on wall thickness and alloy (often non-heat-treated Al-Si), which raises issues for crash deformation and repairability (no partial replacement). From a chassis viewpoint, putting suspension mounts directly on the casting raises mount stiffness k, making it easier to tune compliance in the bushings (general point, speculation)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2299787/2028-ford-fathom-uses-tesla-trick-unicasting/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-29-catl-ssb-20ah",
+   "date": "2026-10-29",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "CN",
+   "tags": [
+    "電池"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "CATL、全固体電池の開発が20Ahセル段階に：2027年に小規模生産、量産は2030年前後",
+    "summary": "CATLは投資家の質問に答え、全固体電池の開発が20Ahセルに進んだことを明らかにした。2027年に小規模生産を始め、当初の生産量は限定的で、2030年前後に量産へ移行する計画を改めて示した。SNE Researchによると、CATLの2026年上半期の世界EV電池シェアは39.9%。見出しでは500Wh/kgが視野に入ったとしている。",
+    "note": "セルのエネルギー E = Q·V_nom。20Ah×3.7V（仮定値）≈ 74Wh で、500Wh/kgなら質量は約0.15kg（計算値）。EV用セルは一般に50〜150Ah級のため、20Ahは量産前の中間段階と位置づけられる。500Wh/kgは目標値で、現時点の達成値かは要確認。"
+   },
+   "en": {
+    "title": "CATL's all-solid-state battery program reaches 20 Ah cells: small-scale production in 2027, mass production around 2030",
+    "summary": "Answering investor questions, CATL said its all-solid-state battery development has advanced to 20 Ah cells. It reiterated plans to start small-scale production in 2027, with limited output at first, moving to mass production around 2030. According to SNE Research, CATL held 39.9% of the global EV battery market in the first half of 2026. The headline says 500 Wh/kg is in sight.",
+    "note": "Cell energy E = Q·V_nom. With 20 Ah × 3.7 V (assumed) ≈ 74 Wh, a 500 Wh/kg cell would weigh about 0.15 kg (calculated). EV cells are typically in the 50-150 Ah class, so 20 Ah is an intermediate pre-production stage. Whether 500 Wh/kg is a target or already achieved needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/28/catl-pushes-ahead-20-ah-solid-state-ev-batteries-500-wh-kg/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27-byd-qin-plus-dmi-gen3",
+   "date": "2026-10-27",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BYD、第3世代「秦PLUS DM-i」を発売：EV航続最大220km、期間限定7.69万元から、LiDARをオプション設定",
+    "summary": "BYDは中国で、PHEVセダン秦PLUS DM-iの第3世代を3グレードで発売した。車体を大きくし、EV走行距離を最大220kmに延ばし、LiDARをオプションにした。期間限定価格は7.69万〜9.79万元、正式な指導価格は7.99万〜10.09万元。秦シリーズの1〜9月累計販売は前年比54.71%減で、今回の刷新はその立て直しの位置づけ。",
+    "note": "DM-iは低速域をシリーズ（エンジン→発電機→モーター）、高速巡航をエンジン直結（パラレル）で走る方式。EV航続 R_EV = E_usable / e で、e = 12〜14 kWh/100km（仮定値）なら220km（CLTCと推測）に必要な使用可能容量は約26〜31kWh（計算値）。実際の電池容量は要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "BYD launches the third-gen Qin Plus DM-i: up to 220 km of electric range, from 76,900 yuan for a limited time, optional LiDAR",
+    "summary": "BYD launched the third-generation Qin Plus DM-i plug-in hybrid sedan in China in three variants. It has a larger body, electric range extended to up to 220 km, and optional LiDAR. Limited-time prices run from 76,900 to 97,900 yuan; official guide prices are 79,900 to 100,900 yuan. Cumulative Qin family sales were down 54.71% year-on-year in the first nine months, and the refresh is meant to turn that around.",
+    "note": "DM-i runs in series mode (engine → generator → motor) at low speeds and with a direct engine drive (parallel) when cruising at high speed. Electric range is R_EV = E_usable / e; at e = 12-14 kWh/100 km (assumed), 220 km (presumably CLTC) needs about 26-31 kWh usable (calculated). The actual battery capacity is not given (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/10/27/byd-launches-3rd-gen-qin-plus-dm-i/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27-cybercab-lfp-ready",
+   "date": "2026-10-27",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "US",
+   "tags": [
+    "電池"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "テスラ「Cybercab」、電池パックを将来のLFP化を前提に設計：現行は4680 NMC、目標寿命50万マイル",
+    "summary": "テスラの技術者は動画で、Cybercabが現在は自社設計の4680セル（NMC系）を使う一方、パックは将来LFPに切り替えられるよう設計したと説明した。車両の設計寿命は50万マイルで、モジュールを取り外しやすくして電池交換費用を下げる構造にしたとしている。",
+    "note": "50万マイル ≈ 80.5万km。1サイクル＝300km走行（仮定値）とすると約2,700等価フルサイクル（計算値）。NMCは一般に1,000〜2,000サイクル、LFPは3,000サイクル超とされるため、高稼働ロボタクシーではLFPのサイクル寿命が効く。代償はセル重量エネルギー密度の低下（同容量で質量増）と低温出力の低下。"
+   },
+   "en": {
+    "title": "Tesla designed the Cybercab's battery pack for a future switch to LFP: 4680 NMC cells today, 500,000-mile design life",
+    "summary": "In a video, Tesla engineers explained that the Cybercab currently uses in-house 4680 cells with NMC chemistry, but the pack was designed so it can move to LFP in the future. The vehicle is designed to last 500,000 miles, and the pack makes modules easier to remove to cut battery replacement costs.",
+    "note": "500,000 miles ≈ 805,000 km. Assuming one full cycle per 300 km, that is about 2,700 equivalent full cycles (calculated). NMC is typically rated at 1,000-2,000 cycles and LFP at over 3,000, so LFP's cycle life matters for a high-utilization robotaxi. The trade-offs are lower gravimetric energy density (more mass for the same capacity) and reduced cold-weather power."
+   },
+   "src": [
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/813324/tesla-cybercab-lfp-battery-chemistry/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27-onosokki-50krpm",
+   "date": "2026-10-27",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "JP",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "小野測器、5万rpm超の超高回転電動パワートレイン評価システムを開発へ：TRAMIと共同でNEDO事業に採択",
+    "summary": "小野測器は、自動車用動力伝達技術研究組合（TRAMI）と共同で提案した事業が、NEDOの2026年度「脱炭素社会実現に向けた省エネルギー技術の研究開発・社会実装促進プログラム」の交付決定を受け、開発に着手した。モーターを5万rpm超まで高回転化し、電動パワートレインを大幅に小型化するための共通技術基盤づくりを目指す。",
+    "note": "出力 P = T·ω より、同じ出力ならトルクは回転数に反比例する。1.5万→5万rpmでトルクは0.3倍（計算値）。モーター体格はトルクにほぼ比例（D²L ∝ T）するため小型化できるが、減速比は約3.3倍必要になり、ギアのかみ合い周波数・軸受dn値・ロータ遠心応力 σ ∝ ρ·ω²·r² が課題。評価システム（ダイナモ）側も5万rpm超の吸収・計測が必要になる。"
+   },
+   "en": {
+    "title": "Ono Sokki to develop a test system for e-powertrains above 50,000 rpm, under a NEDO program jointly proposed with TRAMI",
+    "summary": "Ono Sokki said a project it proposed jointly with the Transmission Research Association for Mobility Innovation (TRAMI) has been approved for funding under NEDO's FY2026 program for R&D and deployment of energy-saving technology for a decarbonized society, and development has started. The aim is a common technology base for much smaller e-powertrains, built around motors running above 50,000 rpm.",
+    "note": "From P = T·ω, for the same power torque is inversely proportional to speed: going from 15,000 to 50,000 rpm cuts torque to 0.3x (calculated). Motor size scales roughly with torque (D²L ∝ T), so it shrinks, but the reduction ratio must rise about 3.3x, and gear mesh frequency, bearing dn value and rotor centrifugal stress σ ∝ ρ·ω²·r² become the challenges. The test system (dynamometer) must also absorb and measure above 50,000 rpm."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/27/418247.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-30-mazda-skyactiv-x-phaseout",
+   "date": "2026-10-30",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "Global",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "マツダ、SKYACTIV-Xを段階的に縮小か：MAZDA3の2.0L設定を廃止、次世代「SKYACTIV-Z」は新2.5L直4＋自社HV",
+    "summary": "Auto Expressによると、マツダは次のモデルイヤーでMAZDA3から2.0Lエンジンの設定をなくし、2.5LのSKYACTIV-Gのみにする。SKYACTIV-XはCX-30には残るが、存続は不透明とされる。後継のSKYACTIV-Zは新開発の2.5L直4と自社開発のハイブリッドを組み合わせ、新型CX-5で来年末までに初採用される。SKYACTIV-Xは2019年に投入された。",
+    "note": "SKYACTIV-XはSPCCI（火花点火制御圧縮着火）で、希薄混合気（λ>1）を点火プラグの火炎で圧縮し自着火させる。理論熱効率 η = 1 − 1/ε^(κ−1) は比熱比κが大きい希薄燃焼ほど高い。SKYACTIV-Zはこの燃焼知見をλ=1近傍の燃焼に反映するとされるが、具体的な燃焼方式は要約に記載なし（要確認）。欧州向けMAZDA3の2.0LがXかGかは記事の表現上あいまい（要確認）。"
+   },
+   "en": {
+    "title": "Mazda appears to be winding down Skyactiv-X: Mazda3 loses its 2.0L option, and the next-gen Skyactiv-Z pairs a new 2.5L four with an in-house hybrid",
+    "summary": "According to Auto Express, Mazda will drop the 2.0-liter engine from the Mazda3 for the next model year, leaving only the 2.5-liter Skyactiv-G. Skyactiv-X stays in the CX-30 for now, but its future is uncertain. Its successor, Skyactiv-Z, combines an all-new 2.5-liter four-cylinder with an in-house hybrid system and will debut in the new CX-5 by the end of next year. Skyactiv-X launched in 2019.",
+    "note": "Skyactiv-X uses SPCCI (spark-controlled compression ignition): a spark-ignited flame compresses a lean mixture (λ > 1) until it auto-ignites. Ideal thermal efficiency η = 1 − 1/ε^(κ−1) rises with lean burn because the specific-heat ratio κ is higher. Skyactiv-Z is said to carry these combustion lessons into near-λ=1 combustion, but the actual combustion concept is not given (needs confirmation). Whether the Mazda3's 2.0L in question is X or G is ambiguous in the wording (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/813735/mazda-skyactiv-x-compression-ignition-engine-future/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-30-subaru-2025-policy-tech",
+   "date": "2026-10-30",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "シャシー",
+    "制御",
+    "4WD",
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "スバル、「SUBARU 2025方針」の技術内容を公開：新水平対向で熱効率50%目標、次世代PFで最大約100kg軽量化、統合ECU",
+    "summary": "スバルは研究実験センター（栃木県佐野市）で、2025年11月発表の「SUBARU 2025方針」の具体的な開発内容を公開した。3つのコア技術は「次世代プラットフォーム」「次世代パワーソース」「制御統合ECU／E/Eアーキテクチャ」。プラットフォームは現行比で最大約100kg軽いゾーンを目標にし、入力に対する車体のエネルギー伝播時間を約30%短縮する。新型水平対向エンジンでは過給とCAE（3次元燃焼解析）を使い熱効率50%を目指す。同時に公開されたBEV試作車は前後モーターの4WDで、試作期間を従来の約半分に短縮した。",
+    "note": "エネルギー伝播時間：入力点（タイヤ接地点）から乗員・ステアリングまで力が伝わる時間で、車体の局所剛性 k と質量 m の比で決まる波動速度 c ∝ √(k/m) に依存する。30%短縮は c を約1.43倍（√(k/m) で約2倍の k/m）にすることに相当（計算値・単純化モデル）。熱効率50%は、現行量産ガソリンエンジンの最高値（約40〜41%）から約9ポイント以上の上積みで、達成時期は要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "Subaru details the tech behind its 'SUBARU 2025 Policy': 50% thermal efficiency target for a new boxer, up to ~100 kg lighter next-gen platform, integrated control ECU",
+    "summary": "At its research and testing center in Sano, Tochigi, Subaru presented the concrete development work behind the 'SUBARU 2025 Policy' announced in November 2025. The three core technologies are the next-generation platform, next-generation power source, and an integrated control ECU / E/E architecture. The platform targets a zone up to about 100 kg lighter than today, and cuts the body's energy propagation time for inputs by about 30%. A new boxer engine aims for 50% thermal efficiency using boosting and CAE, including 3D combustion analysis. A BEV prototype shown at the same time has front and rear motors for 4WD and was built in about half the usual prototype time.",
+    "note": "Energy propagation time is how long it takes force to travel from the input point (tire contact) to the occupant and steering; it depends on the wave speed c ∝ √(k/m), set by local body stiffness k and mass m. A 30% reduction equals raising c by about 1.43x, i.e. roughly doubling k/m (calculated, simplified model). 50% thermal efficiency would be at least 9 points above today's best production gasoline engines (about 40-41%); no timing is given (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2151312.html"
+    },
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/impression/2151673.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-29-uacj-al-anode-alloy",
+   "date": "2026-10-29",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "JP",
+   "tags": [
+    "電池"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "UACJと東北大、リチウムイオン電池の負極に使える新アルミ合金を開発：箔1枚で容量と寿命を両立",
+    "summary": "UACJと東北大学は、次世代リチウムイオン電池向けの新しいアルミ合金を共同開発し、Springer Natureの「Communications Materials」に掲載された。一般的な負極は銅箔に黒鉛を塗るが、アルミ箔そのものを負極にすると理論容量を約2.7倍にできる。課題だった寿命と容量の両立を、合金化したアルミ箔1枚で実現したとしている。",
+    "note": "理論容量の根拠：黒鉛 LiC₆ は 372 mAh/g、アルミ LiAl は 993 mAh/g で、比は 993/372 ≈ 2.67（≈2.7倍）。AlはLi合金化で体積が約100%膨張し、割れ・微粉化で寿命が短くなるのが課題。箔が集電体と活物質を兼ねるため銅箔と塗工層も省ける。サイクル数などの具体値は要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "UACJ and Tohoku University develop a new aluminum alloy that can serve as a Li-ion anode, balancing capacity and life in a single foil",
+    "summary": "UACJ and Tohoku University jointly developed a new aluminum alloy for next-generation lithium-ion batteries; the work was published in Springer Nature's Communications Materials. A typical anode is copper foil coated with graphite, but using aluminum foil itself as the anode can raise theoretical capacity about 2.7x. The new alloy is said to achieve both capacity and cycle life, the main hurdle, with a single foil.",
+    "note": "Basis for the capacity figure: graphite (LiC₆) is 372 mAh/g and aluminum (LiAl) is 993 mAh/g, a ratio of 993/372 ≈ 2.67 (≈2.7x). Al expands about 100% in volume when alloying with Li, and cracking and pulverization shorten its life. Because the foil serves as both current collector and active material, the copper foil and coating layer can also be eliminated. Cycle numbers are not given (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/29/418388.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-30-wrx-prototype-ty85",
+   "date": "2026-10-30",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "Global",
+   "tags": [
+    "4WD",
+    "PT"
+   ],
+   "prio": 1,
+   "conf": "rumor",
+   "ja": {
+    "title": "スバルWRXの試作車をニュルで目撃：リアを延長した外観、先代WRX STIと同じ6速MT「TY85」搭載と報道",
+    "summary": "Carscoopsのスクープによると、黒いスバルWRXの試作車がリアパネルを延長し、新しいリップスポイラーを付けた状態でニュルブルクリンクで撮影された。米国仕様の6速MT「TY75」とは別物の、先代WRX STIと同じ「TY85」を積んでいるとしている。STIの復活か、別のパッケージかは不明。",
+    "note": "先代STIのTY85はセンターデフにDCCD（ドライバーズ・コントロール・センターデフ：遊星歯車のトルク配分＋電磁クラッチで差動制限）を組み合わせていた。差動制限トルク T_LSD をクラッチ電流で可変にし、前後回転差 Δω を抑える構成。今回の試作車がDCCDまで採用しているかは不明（推測・要確認）。"
+   },
+   "en": {
+    "title": "Subaru WRX prototype spotted at the Nürburgring: stretched rear and reportedly the TY85 six-speed from the previous WRX STI",
+    "summary": "According to a Carscoops scoop, a black Subaru WRX prototype was photographed at the Nürburgring with stretched rear panels and a new lip spoiler. It reportedly uses the TY85 gearbox from the previous-generation WRX STI, unrelated to the TY75 six-speed manual in the US model. Whether it previews an STI or another package is unknown.",
+    "note": "In the previous STI, the TY85 was paired with DCCD (Driver's Control Center Differential: planetary torque split plus an electromagnetic clutch for limited slip). The limited-slip torque T_LSD is varied by clutch current to restrain the front/rear speed difference Δω. Whether this prototype also gets DCCD is unknown (speculation, needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2301876/subaru-wrx-prototype-scoop-nurburgring/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-30-bentley-supersports-convertible",
+   "date": "2026-10-30",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT"
+   ],
+   "prio": 1,
+   "conf": "rumor",
+   "ja": {
+    "title": "ベントレー「スーパースポーツ」のコンバーチブル試作車をスクープ：HVなし・後輪駆動、4.0L V8ツインターボ666ps",
+    "summary": "Responseのスクープ班が、ベントレーの高性能オープンの試作車を撮影した。スーパースポーツ（クーペ）のコンバーチブル版とみられる。クーペは4.0L V8ツインターボで666ps・800Nm、8速DCTで後輪を駆動し、通常モデル比約455kg軽い2,000kg未満。コンチネンタルGTのハイブリッド版（782ps・1,000Nm）より数値は低い。クーペは500台限定・約49万ドルで、オープンも500台程度の限定になる可能性がある。",
+    "note": "パワーウエイトレシオ：クーペは 2,000kg / 666ps ≈ 3.0 kg/ps 以下（計算値、車重は「2,000kg未満」の上限で計算）。HVと4WDを外すことで、PHEV電池・前輪駆動系の質量を削り、前軸荷重を下げてステア応答を優先したと読める（推測）。オープン化に伴う補強で車重がどれだけ増えるかは要確認。"
+   },
+   "en": {
+    "title": "Bentley Supersports convertible prototype spotted: no hybrid, rear-wheel drive, 666 PS 4.0L twin-turbo V8",
+    "summary": "Response's scoop photographers caught a prototype of a high-performance open Bentley, believed to be a convertible version of the Supersports coupe. The coupe has a 4.0L twin-turbo V8 with 666 PS and 800 Nm, drives the rear wheels through an 8-speed DCT, and weighs under 2,000 kg, about 455 kg less than the regular model. Its figures are below the Continental GT hybrid (782 PS, 1,000 Nm). The coupe is limited to 500 units at about $490,000, and the convertible may also be limited to around 500.",
+    "note": "Power-to-weight: the coupe is at most 2,000 kg / 666 PS ≈ 3.0 kg/PS (calculated using the 'under 2,000 kg' upper bound). Dropping the hybrid and 4WD removes PHEV battery and front-drive mass and lowers front-axle load, suggesting steering response was prioritized (speculation). How much weight the convertible's extra bracing adds needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/30/418439.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27-nipponsteel-2g-hotstamp-elgrand",
+   "date": "2026-10-27",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "JP",
+   "tags": [
+    "シャシー"
+   ],
+   "prio": 1,
+   "conf": "primary",
+   "ja": {
+    "title": "日本製鉄の耐水素脆化2.0GPa級ホットスタンプ鋼板、日産新型「エルグランド」の車体下部補強部品に採用",
+    "summary": "日本製鉄は、水素脆化に強い2.0GPa級アルミめっきホットスタンプ用鋼板「2.0G AL-HS材」が、日産の新型エルグランドの車体骨格下部の補強部品に採用されたと発表した。海外の自動車メーカーでも車体上屋の補強部品に使われている。高強度鋼板ほど侵入水素による割れが起きやすいという課題を、製法の最適化で解決したとしている。",
+    "note": "部材の曲げ強度は概ね σ_y·Z（Z：断面係数）に比例するため、同じ荷重を受けるなら板厚 t は σ_y にほぼ反比例して薄くできる（t ∝ 1/σ_y の単純化）。1.5GPa→2.0GPaで板厚約25%減（計算値・単純化）。高強度ほど遅れ破壊（水素脆化）の感受性が上がるため、Alめっき層と組織制御で拡散性水素を抑える必要がある（一般論）。"
+   },
+   "en": {
+    "title": "Nippon Steel's hydrogen-embrittlement-resistant 2.0 GPa hot-stamping steel is used in lower-body reinforcements of Nissan's new Elgrand",
+    "summary": "Nippon Steel announced that its 2.0 GPa-class aluminum-coated hot-stamping steel '2.0G AL-HS', which resists hydrogen embrittlement, is used in reinforcement parts of the lower body structure of Nissan's new Elgrand. An overseas automaker also uses it in upper-body reinforcements. The company says it overcame the tendency of high-strength steel to crack from absorbed hydrogen by optimizing the production process.",
+    "note": "A member's bending strength is roughly proportional to σ_y·Z (Z: section modulus), so for the same load the sheet thickness t can shrink roughly in inverse proportion to σ_y (simplified t ∝ 1/σ_y). Going from 1.5 to 2.0 GPa cuts thickness by about 25% (calculated, simplified). Higher strength raises sensitivity to delayed fracture (hydrogen embrittlement), so diffusible hydrogen must be suppressed via the Al coating and microstructure control (general point)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/10/27/418261.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-31-eu-gpsr-ev-battery-rescission",
+   "date": "2026-10-31",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "電池",
+    "品質"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "独オッフェンブルク地裁、電池リコール対象のCupra Bornで売買契約の解除を認容：EU製品安全規則（2023/988）第37条を明示",
+    "summary": "ドイツのオッフェンブルク地方裁判所は、電池の不具合でリコール（キャンペーン93S4）対象となったCupra Bornについて、購入者による契約解除を認めた（事件番号2 O 356/25）。判決はEU製品安全規則（Regulation 2023/988）第37条に基づくSeatへの請求の可能性に明示的に触れた。2026年3月発表のこのリコールは、VWのID.3/4/5/ID.Buzz系74,579台とCupra Born 19,452台の計約10万台が対象。",
+    "note": "GPSR第37条は、リコール時に事業者が購入者へ「修理・交換・返金」の少なくとも2つを提示する義務を定めている（条文内容は一般知識、判決での具体的な適用範囲は要確認）。恒久対策が出るまでの充電上限指示などの暫定措置が続くと、購入者が返金を選べる余地が広がる。地裁判決のため上級審での判断は未確定。"
+   },
+   "en": {
+    "title": "German court in Offenburg allows rescission of a Cupra Born purchase under a battery recall, citing Article 37 of the EU General Product Safety Regulation (2023/988)",
+    "summary": "The Offenburg Regional Court in Germany allowed a buyer to rescind the purchase of a Cupra Born covered by a recall for a potentially faulty battery (campaign 93S4; case 2 O 356/25). The court explicitly cited Article 37 of the EU Product Safety Regulation (2023/988) regarding possible claims against Seat. The recall, announced in March 2026, covers almost 100,000 vehicles: 74,579 VW ID.3/ID.4/ID.5/ID.Buzz units worldwide and 19,452 Cupra Borns.",
+    "note": "GPSR Article 37 requires businesses, in a recall, to offer buyers at least two of repair, replacement or refund (provision from general knowledge; the court's exact application needs confirmation). The longer interim measures such as charge limits remain in place before a permanent fix, the more room buyers have to choose a refund. This is a regional court ruling, so higher courts may decide differently."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/30/oems-may-have-to-take-back-evs-with-faulty-batteries/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-26-rangerover-recall-camera",
+   "date": "2026-10-26",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "US",
+   "tags": [
+    "品質",
+    "規制"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "JLR、米国でレンジローバー93,997台をリコール：テールゲート付近の水たまりでリアカメラが故障",
+    "summary": "ジャガー・ランドローバーは、2021年7月8日〜2024年6月4日に生産した2022〜2026年型レンジローバー93,997台を米国でリコールする。テールゲート付近に水がたまり、リアビューカメラが映らなくなるおそれがある。2022年8月以降、関連する保証請求・市場報告は2,295件（対象台数の約2.4%）。12月に所有者へ通知し、販売店でテールゲートに排水穴を追加してカメラを点検する。",
+    "note": "不具合率：2,295 / 93,997 ≈ 2.44%（計算値）。米国ではFMVSS 111で後方視界（リアカメラ映像）が義務化されているため、映像が出ない状態は法規不適合としてリコール対象になる。"
+   },
+   "en": {
+    "title": "JLR recalls 93,997 Range Rovers in the US: water pooling near the tailgate can knock out the rearview camera",
+    "summary": "Jaguar Land Rover is recalling 93,997 2022-2026 model year Range Rovers in the US, built between July 8, 2021 and June 4, 2024. Water can pool near the tailgate and disable the rearview camera. Since August 2022 there have been 2,295 related claims and field reports, about 2.4% of affected vehicles. Owners will be notified in December, and dealers will drill new tailgate drains and inspect the cameras.",
+    "note": "Failure rate: 2,295 / 93,997 ≈ 2.44% (calculated). In the US, FMVSS 111 mandates rear visibility (a rearview camera image), so a missing image is a compliance failure and triggers a recall."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/813238/nearly-94-000-range-rovers/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-26-iihs-moderate-overlap-kicks",
+   "date": "2026-10-26",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "US",
+   "tags": [
+    "規制",
+    "品質"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "IIHSの新しい中程度オフセット前面衝突試験（後席保護重視）、日産キックスが後席ベルト改良で「Poor」→「Good」：Q3・RAV4・トレイルブレイザーは届かず",
+    "summary": "IIHSの更新版中程度オフセット前面衝突試験は、後席乗員の保護を重視している。新型キックスは2025年に「Poor」だったが、2026年6月以降生産分で後席シートベルトを改良し、「Good」となってトップセーフティピックを獲得した。アウディQ3、トヨタRAV4、シボレー・トレイルブレイザーも同じ試験を受けたが、いずれも基準に届かなかった。",
+    "note": "後席保護の評価は、ダミーの頭部前方移動量、胸部変位、ベルトが骨盤から腹部へずれる「サブマリン」の有無が中心。後席には前席のようなプリテンショナー・ロードリミッターが付かない車が多く、胸部荷重 F ≈ m·a を下げるロードリミッター追加が改良の定番（一般論、キックスの具体的変更点は要確認）。"
+   },
+   "en": {
+    "title": "In IIHS's updated moderate overlap front test (focused on the rear seat), the Nissan Kicks moves from Poor to Good after rear-belt changes; Audi Q3, Toyota RAV4 and Chevrolet Trailblazer fall short",
+    "summary": "IIHS's updated moderate overlap front test focuses on rear-seat occupant protection. The redesigned Kicks scored Poor in 2025, but after Nissan revised the rear seat belts on vehicles built from June 2026 it earned Good and a Top Safety Pick award. The Audi Q3, Toyota RAV4 and Chevrolet Trailblazer took the same test and none of them passed.",
+    "note": "Rear-seat ratings center on the dummy's forward head movement, chest deflection, and 'submarining' (the belt sliding from the pelvis onto the abdomen). Many cars lack front-style pretensioners and load limiters in the rear, so adding a load limiter to lower chest load F ≈ m·a is the usual fix (general point; the Kicks' specific change needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/813211/iihs-crash-test-results-nissan/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-31-gm-privacy-settlement-220m",
+   "date": "2026-10-31",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "US",
+   "tags": [
+    "規制"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "GM、運転データの無断収集・販売疑惑で36州＋DCと和解：2億2,000万ドル支払い、プライバシー評価と販売店研修を義務化",
+    "summary": "GMは、運転者の個人情報を不適切に集めて販売したとの疑いについて、36州とワシントンD.C.に2億2,000万ドルを支払って和解する。ワシントン州とオレゴン州が主導した調査では、GMが2014〜2024年に「Smart Driver」プログラムへ数百万人を登録させていた。販売店従業員は登録数に応じた報奨金を得ており、同意なしに登録した例があったとされる。和解条件にはプライバシー評価と販売店研修の実施が含まれる。",
+    "note": ""
+   },
+   "en": {
+    "title": "GM settles with 36 states and DC over alleged collection and sale of driving data: $220 million, plus required privacy assessments and dealer training",
+    "summary": "GM will pay $220 million to 36 states and the District of Columbia to settle allegations that it improperly collected and sold drivers' personal information. The investigation, led by Washington and Oregon, found that from 2014 to 2024 GM enrolled millions of drivers in its Smart Driver program. Dealership staff were paid bonuses based on sign-ups and allegedly enrolled people without consent. The settlement also requires privacy assessments and dealership training.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/813942/general-motors-privacy-settlement-36-states/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-30-toyota-waymo-bz4x-japan",
+   "date": "2026-10-30",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "ADAS",
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "primary",
+   "ja": {
+    "title": "トヨタとWaymo、自動運転「bZ4X」の車両群を2027年に日本で運用開始へ：国内生産の完全自動運転配車サービスにつなげる",
+    "summary": "トヨタとWaymoは、2025年4月の基本合意に続く協業の次の段階を発表した。2027年に日本で自動運転bZ4Xの車両群の試験・検証運用を始め、その後の数年で英国などWaymoの展開市場にも投入する。車両はトヨタがWaymo Driverを組み込んだ専用仕様として日本の生産ラインで造り、後席足元の拡大、自動ドア、電動リアゲート、アンビエント照明などを加える。",
+    "note": "SAEレベル4の車両では、ブレーキ・ステア・電源の冗長化（フェイルオペレーショナル）が前提になる。量産ラインでセンサー・計算機を組み込む方式は、後付けに比べセンサー取付位置の公差とキャリブレーション工数を抑えられる（一般論）。bZ4Xベースの具体的な冗長系構成は要確認。"
+   },
+   "en": {
+    "title": "Toyota and Waymo will start operating an autonomous bZ4X fleet in Japan in 2027, paving the way for a domestically built fully autonomous ride-hailing service",
+    "summary": "Toyota and Waymo announced the next phase of their collaboration, following the preliminary agreement of April 2025. In 2027 they will begin initial operations to test and validate an autonomous bZ4X fleet in Japan, then deploy it in the UK and other Waymo markets in the following years. Toyota will build a dedicated version with the Waymo Driver integrated on its production line in Japan, with extra rear legroom, automatic doors, a power liftgate and ambient lighting.",
+    "note": "SAE Level 4 vehicles require redundant (fail-operational) braking, steering and power. Integrating sensors and compute on the production line, rather than retrofitting, reduces sensor-mount tolerances and calibration work (general point). The specific redundancy layout of the bZ4X base needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Toyota Newsroom",
+     "url": "https://global.toyota/en/newsroom/corporate/44960881.html"
+    },
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/30/waymo-toyota-bz4x-robotaxi-japan-2027/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-31-vw-pauses-id-golf",
+   "date": "2026-10-31",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "VW、次期「ID.ゴルフ」の開発を一時停止：コスト圧力が理由、ブランドグループCoreの1〜9月純キャッシュフローは43.4億→14.3億ユーロ",
+    "summary": "フォルクスワーゲンは、将来のID.ゴルフの開発作業を一時的に止めた。理由はコスト圧力の高さで、必要な投資を確保でき次第再開するとしている。ブランドグループCoreの2026年1〜9月の純キャッシュフローは43.4億ユーロから14.3億ユーロへ減少し、売上高は1,064億ユーロでほぼ横ばい、営業利益は47.2億ユーロから43.3億ユーロ（売上高営業利益率4.4%→4.1%）。VWブランド単体とみられる営業利益は14.8億ユーロから8.13億ユーロ、利益率1.3%で、リストラ費用などの特殊要因を除くと2.6%。",
+    "note": "売上高営業利益率 = 営業利益 / 売上高：4.33 / 106.4 ≈ 4.07%（計算値、記事の4.1%と一致）。「14.8億→8.13億ユーロ」の主語がVWブランドかは要約の文脈からの推測（要確認）。"
+   },
+   "en": {
+    "title": "VW pauses development of the next ID.Golf over cost pressure; Brand Group Core's nine-month net cash flow falls from €4.34bn to €1.43bn",
+    "summary": "Volkswagen has temporarily paused development of the future ID.Golf, citing high cost pressure, and plans to resume once the needed investment can be secured. In the first nine months of 2026, Brand Group Core's net cash flow fell from €4.34 billion to €1.43 billion; revenue was nearly flat at €106.4 billion, and operating profit fell from €4.72 billion to €4.33 billion (return on sales 4.4% to 4.1%). Operating profit apparently for the VW brand itself fell from €1.48 billion to €813 million, a 1.3% margin, or 2.6% excluding special items such as restructuring.",
+    "note": "Operating return on sales = operating profit / revenue: 4.33 / 106.4 ≈ 4.07% (calculated, matching the reported 4.1%). That the €1.48bn to €813m figure refers to the VW brand is inferred from context (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/10/30/volkswagen-pauses-development-of-the-id-golf/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-29-byd-q3-2026-results",
+   "date": "2026-10-29",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "BYD、2026年7〜9月期の純利益は100.2億元（前年比+28.1%）：輸出が四半期で50万台超、在庫は年初比60%増",
+    "summary": "BYDの2026年第3四半期は、売上高2,214.9億元（前年比+13.6%）、株主帰属純利益100.2億元（+28.1%）、一時項目を除く純利益86.3億元（+25.3%）だった。この3カ月で50万台超を中国国外へ出荷した。一方で在庫は1月から60%増え、手元資金はほぼ半減し、1〜9月累計の利益は前年を下回っている。",
+    "note": "純利益率 = 10.02 / 221.49 ≈ 4.5%（計算値）。"
+   },
+   "en": {
+    "title": "BYD's Q3 2026 net profit rises 28.1% to ¥10.02bn on more than 500,000 exports in the quarter, but inventory is up 60% since January",
+    "summary": "In Q3 2026, BYD posted revenue of ¥221.49 billion (up 13.6% year-on-year), net profit attributable to shareholders of ¥10.02 billion (up 28.1%), and ¥8.63 billion excluding one-time items (up 25.3%). It shipped more than half a million vehicles out of China in the three months. On the other hand, inventory is up 60% since January, its cash pile has nearly halved, and nine-month profit is still down year-on-year.",
+    "note": "Net margin = 10.02 / 221.49 ≈ 4.5% (calculated)."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/10/29/byd-q3-2026-earnings-profit-exports-inventory/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-29-eu-q3-bev-over-ice",
+   "date": "2026-10-29",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略",
+    "規制"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "欧州の2026年7〜9月期、BEV販売71万580台がガソリン車＋ディーゼル車の合計65万5,540台を上回る（T&E集計）",
+    "summary": "環境団体Transport & Environment（T&E）の集計で、2026年第3四半期の欧州のBEV販売は710,580台となり、ガソリン車とディーゼル車の合計655,540台を初めて上回った。EU27カ国のうち13カ国でBEV販売が過去最高となり、10市場でBEVが最も売れたパワートレインだった。第2四半期にはBEVがガソリン車単独を上回っていた。",
+    "note": "BEV / (ガソリン＋ディーゼル) = 710,580 / 655,540 ≈ 1.08（計算値）。HEV・PHEVを含む全体に占めるBEV比率は要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "Europe's BEV sales of 710,580 in Q3 2026 beat petrol and diesel combined (655,540), per T&E",
+    "summary": "According to Transport & Environment (T&E), Europe sold 710,580 battery-electric cars in Q3 2026, more than petrol and diesel cars combined at 655,540. Thirteen of the 27 EU countries recorded their highest-ever BEV sales, and BEVs were the best-selling powertrain in 10 markets. In Q2, BEVs had already outsold petrol cars alone.",
+    "note": "BEV / (petrol + diesel) = 710,580 / 655,540 ≈ 1.08 (calculated). BEV share of the total market including HEVs and PHEVs is not given (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/813621/ev-beats-ice-europe-sales/"
     }
    ]
   }
