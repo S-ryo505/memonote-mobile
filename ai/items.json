@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T09:05:00+09:00",
+  "updated": "2026-10-31T10:05:00+09:00",
   "items": [
     {
       "id": "2026-10-30-chatgpt-plan-api-credit",
@@ -4298,6 +4298,556 @@
         {
           "name": "ITmedia AI+",
           "url": "https://www.itmedia.co.jp/aiplus/article/2610/21/2000002475/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-31-cursor-claude-extension-backdoor",
+      "date": "2026-10-31",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "セキュリティ",
+        "コーディング",
+        "エージェント"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "Cursorの拡張機能マーケットで、Anthropic公式アカウント配布のClaude Code拡張に不正コード混入　最大5,000人に影響",
+        "summary": "Cursor（VS Code系エディタ）の拡張機能マーケットで、Anthropicの公式アカウントから配布されたClaude Code拡張のバージョン2.1.313に不正なコードが入っていた。公開は約11〜12時間で、影響は最大5,000ユーザー。利用者のデータを盗み、外部から遠隔操作できる状態を作ろうとする動作だった。数時間後に2.1.314が出され、Cursorはマーケット全体を一時停止し、危険がないと確認してから再開した。",
+        "note": "仕事での使いどころ：社内でCursorやVS Codeの拡張機能を使っている開発・解析担当に、インストール済みのClaude Code拡張のバージョンが2.1.313でないか確認してもらう。注意点：攻撃者が公式アカウントに入れた経路は記事時点で不明。『公式だから安全』とは言えないため、自動更新の設定と、該当PCで使った認証情報（APIキー等）の扱いは社内のセキュリティ担当に相談する。被害範囲の詳細は要確認。"
+      },
+      "en": {
+        "title": "Claude Code extension on Cursor's marketplace, published from Anthropic's official account, was tampered with; up to 5,000 users affected",
+        "summary": "Version 2.1.313 of the Claude Code extension, distributed through Anthropic's official account on the Cursor (VS Code-based editor) extension marketplace, contained malicious code. It was available for about 11–12 hours and affected up to 5,000 users, attempting to steal user data and set up remote access. Version 2.1.314 followed several hours later, and Cursor took the whole marketplace offline, restoring it after confirming there was no further risk.",
+        "note": "How to use it at work: ask developers and analysts who use Cursor or VS Code extensions to check that their installed Claude Code extension is not version 2.1.313. Caveats: how the attackers got into the official account was still unknown at the time of reporting. 'Official' does not mean 'safe', so consult your security team about auto-update settings and any credentials (API keys, etc.) used on affected PCs. The full scope of damage needs checking."
+      },
+      "src": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/malicious-claude-code-extension-in-cursors-marketplace-attempted-remote-access-and-data-theft/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-30-glm53-firefox-exploits",
+      "date": "2026-10-30",
+      "kind": "weekly",
+      "cat": "model",
+      "level": "advanced",
+      "tags": [
+        "セキュリティ",
+        "モデル"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "公開モデル「GLM 5.3」がFirefoxの攻撃コードを人手なしで作成、1件約1,000ドル　Epoch AIが検証",
+        "summary": "Epoch AIの研究者によると、中国の公開重みモデルGLM 5.3は、公開済みのセキュリティ修正内容から、実際に動く攻撃コード（エクスプロイト）を人の手を介さず48時間以内に作った。9月17日〜10月26日に出たFirefox 6バージョンで成功し、API料金は1件あたり約1,000ドル。試したどの提供元の安全対策にも止められなかった。",
+        "note": "仕事での使いどころ：直接の業務利用ではなく、『修正が公開されてから利用者に届くまでの間』が狙われやすくなっている事例として、社内PCのブラウザ更新を後回しにしない根拠に使える。注意点：検証は研究者による報告で、条件の詳細は要確認。車載ソフトでも修正公開から配布までの期間の管理が論点になる（推測）。"
+      },
+      "en": {
+        "title": "Open-weight model GLM 5.3 built working Firefox exploits with no human input for about $1,000 each, Epoch AI finds",
+        "summary": "According to Epoch AI researchers, the Chinese open-weight model GLM 5.3 turned published security fixes into working exploits within 48 hours without human involvement. It succeeded against six Firefox versions released between September 17 and October 26, at roughly $1,000 in API fees per exploit, and none of the providers' safeguards they tested stopped it.",
+        "note": "How to use it at work: not a tool to use, but a case showing that the gap between a fix being published and reaching users is a target—useful when arguing that browser updates on office PCs should not be postponed. Caveats: this is a researcher report; test conditions need checking. The same 'fix-to-deployment window' may matter for in-vehicle software (speculation)."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/open-weight-model-glm-5-3-built-full-firefox-exploit-chains-with-zero-human-input-in-under-48-hours/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-30-openai-model-spec-update",
+      "date": "2026-10-30",
+      "kind": "weekly",
+      "cat": "model",
+      "level": "all",
+      "tags": [
+        "モデル",
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "primary",
+      "ja": {
+        "title": "OpenAI、AIの行動指針「Model Spec」を改定　5つの価値観で再構成し、記憶の扱いや人間による監督を明記",
+        "summary": "OpenAIは10月29日（米国時間）、GPTモデルの望ましい振る舞いを定めた公開文書「Model Spec」を8月18日以来に改定した。『人間の意図への忠実さ』『害の最小化』『誠実さと透明性』『人間の主体性』『配慮』の5つで全体を組み直し、会話履歴・メモリの扱いや、エージェントとして自律的に動くときに人間の監督に従うことを新たに定めた。人格設定や細かな文体の規定は大半を削り、呼称を『the assistant』から『GPT』に変えた。",
+        "note": "仕事での使いどころ：社内でChatGPTを使ったエージェント（自動で作業するAI）を検討するとき、『AIはどこまで自分で判断し、どこで人に確認するのか』をメーカーがどう定めているかの参考資料になる。注意点：指針は目標であり、実際の振る舞いが必ずこの通りになる保証ではない。社内ルール側でも承認が必要な操作を決めておく。"
+      },
+      "en": {
+        "title": "OpenAI revises its Model Spec around five values, adding rules on memory use and human oversight",
+        "summary": "On October 29 (US time), OpenAI published a revised Model Spec, the public document describing how its GPT models should behave, its first update since August 18. It is now organized around five values—faithfulness to human intent, minimizing harm, honesty and transparency, human agency, and care—and adds rules on handling conversation history and memory, and on deferring to human oversight when acting autonomously as an agent. Most persona and detailed style rules were removed, and the model is now called 'GPT' rather than 'the assistant'.",
+        "note": "How to use it at work: when considering ChatGPT-based agents (AI that carries out tasks on its own), it is a reference for how the vendor defines what the AI may decide alone and when it should check with a person. Caveats: the spec states goals, not guarantees of actual behavior. Your internal rules should still define which actions require approval."
+      },
+      "src": [
+        {
+          "name": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/30/2000002735/"
+        },
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/updated-model-spec"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-30-sarashina-32-mini-thinking",
+      "date": "2026-10-30",
+      "kind": "weekly",
+      "cat": "model",
+      "level": "intermediate",
+      "tags": [
+        "モデル"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "国産LLM「Sarashina」初の思考モデル「Sarashina3.2 mini thinking」　思考の深さを3段階で指定、APIで提供",
+        "summary": "ソフトバンク傘下のSB Intuitionsは10月29日、フルスクラッチ開発の『Sarashina』シリーズで初めての思考モデル（時間をかけて考えてから答えるモデル）『Sarashina3.2 mini thinking』を発表した。思考の深さをlow・medium・highの3段階で選べ、長文処理・エージェント性能・Web検索能力・安全性を改善した。同社は複数のベンチマークで、国立情報学研究所のllm-jp-4.1-33b-thinking、AlibabaのQwen3-235B-A22B-Thinking-2507、OpenAIのgpt-oss-120bに並ぶスコアとしている。",
+        "note": "仕事での使いどころ：国内開発モデルを社内システムに組み込む候補を比べる際の選択肢の1つ。思考の深さを変えて、速度と精度の兼ね合いを試せる。注意点：ベンチマークは発表元の数値。API料金、データの保存先・学習利用の条件は記事では確認できず要確認。"
+      },
+      "en": {
+        "title": "SB Intuitions releases Sarashina3.2 mini thinking, the first reasoning model in Japan's Sarashina series, via API",
+        "summary": "On October 29, SoftBank subsidiary SB Intuitions announced Sarashina3.2 mini thinking, the first reasoning model (one that takes time to think before answering) in its from-scratch Sarashina series. Users can set thinking depth to low, medium or high, and the model improves long-context handling, agent performance, web search and safety. The company says it matches NII's llm-jp-4.1-33b-thinking, Alibaba's Qwen3-235B-A22B-Thinking-2507 and OpenAI's gpt-oss-120b on several benchmarks.",
+        "note": "How to use it at work: one option when comparing domestically developed models for internal systems; you can trade speed against accuracy by changing thinking depth. Caveats: benchmark figures come from the developer. API pricing, data storage location and training-use terms were not in the article (needs checking)."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2610/30/2000002743/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-28-plamo-31-prime",
+      "date": "2026-10-28",
+      "kind": "weekly",
+      "cat": "model",
+      "level": "intermediate",
+      "tags": [
+        "モデル",
+        "料金"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "PFN、国産フラグシップ「PLaMo 3.1 Prime」提供開始　オンプレでDeep Research、API無料プランも",
+        "summary": "Preferred Networksは10月27日、国内でフルスクラッチ開発する『PLaMo 3.1 Prime』の提供を始めた。社内サーバー（オンプレミス）でも使える調査機能『Deep Research』を備え、8つのハルシネーション（もっともらしい誤答）関連ベンチマークで前モデル3.0 Primeよりスコアが平均約15%改善、処理速度は投機的デコーディングで1.7倍とした。同社の35種のテストでは安全性はQwen 3.8 27B・gpt-oss-120B・Gemma 4 31Bより高い一方、STEM・コーディング・Web検索を伴う回答は競合を下回った。",
+        "note": "仕事での使いどころ：社外に出せない設計資料をもとに調べ物をさせたい場合、オンプレで動くDeep Researchは検討候補になる。API無料プランでまず試せる。注意点：計算・コーディングは競合より弱いと発表元自身が示している。無料プランの上限やオンプレ導入の費用・必要なGPUは要確認。"
+      },
+      "en": {
+        "title": "PFN launches flagship Japanese model PLaMo 3.1 Prime with on-premises Deep Research and a free API plan",
+        "summary": "On October 27, Preferred Networks began offering PLaMo 3.1 Prime, developed from scratch in Japan. It includes a Deep Research feature that can run on in-house servers, improves scores on eight hallucination-related benchmarks by about 15% on average over PLaMo 3.0 Prime, and runs 1.7 times faster using speculative decoding. In PFN's 35 tests, it scored higher on safety than Qwen 3.8 27B, gpt-oss-120B and Gemma 4 31B, but trailed competitors in STEM, coding and answers requiring web search.",
+        "note": "How to use it at work: if you want AI research over design documents that cannot leave the company, on-premises Deep Research is worth evaluating, and the free API plan allows a first trial. Caveats: the developer itself shows weaker math and coding than rivals. Free-plan limits and the cost and GPU requirements for on-premises use need checking."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2610/28/2000002652/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-29-nemotron-35-transcribe",
+      "date": "2026-10-29",
+      "kind": "weekly",
+      "cat": "model",
+      "level": "advanced",
+      "tags": [
+        "モデル",
+        "会議"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Nvidia、文字起こし・翻訳・話者識別を1つで行う公開モデル「Nemotron 3.5 Transcribe」　GPU1枚で動作",
+        "summary": "Nvidiaは公開音声認識モデル『Nemotron 3.5 Transcribe』を出した。最大40言語の文字起こし・翻訳・話者識別を1つのモデルで行い、文章で指示を与えたり、録音の内容について質問したりできる。パラメータは300億だが1回に動くのは40億で、GPU1枚で動く。844,000時間分の音声データセット『Granary v2』と、医療など専門分野向けに調整するツールも公開した。",
+        "note": "仕事での使いどころ：社外クラウドに会議音声を出せない場合に、社内サーバーで動く文字起こし・話者分離の候補になる。英語の会議を日本語に翻訳しながら記録する用途も考えられる。注意点：日本語が40言語に含まれるかは記事で確認できず要確認。導入にはGPUサーバーと担当者が必要。ライセンス条件も要確認。"
+      },
+      "en": {
+        "title": "Nvidia releases Nemotron 3.5 Transcribe, an open model combining transcription, translation and speaker recognition on a single GPU",
+        "summary": "Nvidia released Nemotron 3.5 Transcribe, an open speech model that handles transcription, translation and speaker recognition for up to 40 languages in one model, takes instructions as text, and can answer questions about a recording. It has 30 billion parameters but only 4 billion active per step, so it runs on a single GPU. Nvidia also released Granary v2, a dataset with 844,000 hours of audio, plus tools for adapting the model to fields such as medicine.",
+        "note": "How to use it at work: a candidate for in-house transcription and speaker separation when meeting audio cannot go to an external cloud; it could also record English meetings with Japanese translation. Caveats: whether Japanese is among the 40 languages was not confirmed in the article (needs checking). You need a GPU server and someone to run it; license terms also need checking."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/nvidias-open-nemotron-3-5-transcribe-combines-transcription-translation-and-speaker-recognition/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-28-notion-ai-credits",
+      "date": "2026-10-28",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える",
+        "料金"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Notion AIがクレジット制へ、既存ワークスペースは11月2日移行　「Auto」で同等品質・平均コスト約90%減と同社",
+        "summary": "Notion AIは毎月付与されるクレジットを消費する方式に変わる。ビジネス・エンタープライズプランでは1人あたり毎月、Notionがモデルを選ぶ作業用の『スタンダード』1,500と、自分でモデルを選ぶ作業やカスタムエージェント用の『セレクト』500が付く。新規ワークスペースは適用済みで、既存は11月2日に移行。Notionの検証では、メール推敲でAutoが5、Claude Opus 5.5指定が50クレジット、データベース作成では25対150だった。",
+        "note": "仕事での使いどころ：Notionを使っている部署は、普段はモデル選択を『Auto』のままにし、上位モデルの指定は難しい作業に限るとクレジットが持つ。開発責任者は、関連情報を1カ所にまとめておくとAIの検索のやり直しが減りコストが下がると説明している。注意点：クレジットを使い切った後の扱いと追加料金は記事で確認できず要確認。"
+      },
+      "en": {
+        "title": "Notion AI moves to monthly credits, with existing workspaces switching on November 2; Notion says 'Auto' cuts average cost about 90% at similar quality",
+        "summary": "Notion AI is moving to a system of monthly credits. On Business and Enterprise plans, each member gets 1,500 'standard' credits per month for tasks where Notion picks the model, and 500 'select' credits for tasks where users pick the model or run custom agents. New workspaces already use it; existing ones switch on November 2. In Notion's tests, polishing an email cost 5 credits on Auto versus 50 with Claude Opus 5.5, and building a database cost 25 versus 150.",
+        "note": "How to use it at work: teams on Notion can keep model selection on 'Auto' and reserve top models for hard tasks to make credits last. The product lead says keeping related information in one place reduces repeated searches by the AI and lowers cost. Caveats: what happens when credits run out and any extra charges were not in the article (needs checking)."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2610/28/2000002666/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-30-gemini-notebook-textbooks",
+      "date": "2026-10-30",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Gemini Notebook、米国・インドの出版社が提供する数百冊の教科書を無料でソースに追加可能に　日本でも利用可",
+        "summary": "Googleは10月29日（米国時間）、AIノート機能『Gemini Notebook』の中で、米国とインドの出版社などが提供する数百冊の教科書に無料でアクセスできるようにした。日本でも使える。8月に発表した、Google Playで購入した書籍をソースに追加できる機能『Expert Intelligence』を広げたものと位置付けられている。",
+        "note": "仕事での使いどころ：新人教育や自分の学び直しで、教科書をソースにして『この章の要点を3行で』『この式の導出を途中式付きで説明して』と質問できる。注意点：収録される教科書の分野・言語（日本語書籍があるか）は記事で確認できず要確認。業務資料を同じノートに入れる場合は、社内のGoogleアカウント利用ルールを確認する。"
+      },
+      "en": {
+        "title": "Gemini Notebook adds free access to hundreds of textbooks from US and Indian publishers, available in Japan too",
+        "summary": "On October 29 (US time), Google made hundreds of textbooks from US and Indian providers freely accessible inside Gemini Notebook, its AI notebook feature, including in Japan. It is described as an extension of 'Expert Intelligence', announced in August, which lets users add books bought on Google Play as sources.",
+        "note": "How to use it at work: for onboarding or self-study, you can use a textbook as a source and ask, for example, 'Summarize this chapter in three lines' or 'Explain the derivation of this equation step by step.' Caveats: which subjects and languages (including any Japanese books) are covered was not in the article (needs checking). If you add work documents to the same notebook, check your company's rules on Google account use."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2610/30/2000002760/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-29-chrome-autofill-gmail",
+      "date": "2026-10-29",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "セキュリティ",
+        "エージェント"
+      ],
+      "prio": 1,
+      "conf": "report",
+      "ja": {
+        "title": "ChromeのAI自動入力がGmailの中身を使って入力欄を埋めるように　Firefoxも開いたタブから自動入力",
+        "summary": "GoogleはChromeのAI自動入力を拡張し、利用者の許可があれば、Gmailにある航空券の確認メール・配送の追跡番号・注文内容などを読み取ってフォームに入れられるようにした。GeminiにGoogleのアプリをつなぐ『Personal Intelligence』の延長で、デスクトップ版と、iOS・Android版のGemini in Chromeが対象。Mozillaも、Firefoxの『Smart Window』に開いているタブの内容からフォームを埋める機能を追加し、その際にページの内容がGoogleのGemini 3.1 Flash Liteに送られると説明している。",
+        "note": "仕事での使いどころ：個人の手続きでは入力の手間が減る。注意点：会社のPCで業務メールや社内ページを開いたまま使うと、その内容がAIに渡る可能性がある。業務端末では社内の情報システム部門の方針を確認し、方針がなければオフにしておくのが無難（推測）。日本での提供状況は要確認。"
+      },
+      "en": {
+        "title": "Chrome's AI autofill can now use your Gmail to fill in forms; Firefox adds autofill from open tabs",
+        "summary": "Google expanded Chrome's AI autofill so that, with permission, it can pull flight confirmations, tracking numbers and order details from Gmail to fill out forms. It builds on Personal Intelligence, which connects Google apps to Gemini, and covers desktop as well as the iOS and Android apps for Gemini in Chrome. Mozilla also added form filling from open tabs to Firefox's Smart Window, noting that page data is sent to Google's Gemini 3.1 Flash Lite to generate the suggestions.",
+        "note": "How to use it at work: it saves typing for personal tasks. Caveats: on a work PC with business email or internal pages open, that content may be passed to the AI. On company devices, check IT's policy, and if there is none, keeping it off is the safer choice (speculation). Availability in Japan needs checking."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-28-ai-phishing-studies",
+      "date": "2026-10-28",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "メール・英語"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "AIで作る「その人専用」詐欺メールはクリック率10%（一斉送信は3.9%）、AI音声の詐欺電話は平均16.5%が応じる恐れ　大規模実験2件",
+        "summary": "ベルリン工科大学などが大学職員を対象に行った実験では、ネット上の情報からLLMで個人向けに作ったフィッシングメールのクリック率は10%で、同じ文面の一斉送信（3.9%）の2.74倍だった。約4,000通の作成にかかったのは約50時間・1通約0.03ドルで、大学の迷惑メールフィルターは3,949通中1通しか不審と判定しなかった。別に、ハーバード大学やMetaなどが米国の成人4,100人で調べた実験では、AI音声の詐欺電話に『応じる』『分からない』と答えた人が平均16.5%、クローン音声で『困っている姉妹』を装う設定では36.1%だった。",
+        "note": "仕事での使いどころ：部署内の情報セキュリティ教育で『文面が自然で、自分の経歴や業務に触れているメールほど注意』と具体的な数字付きで伝えられる。電話で急ぎの送金・パスワード・データ送付を求められたら、いったん切って既知の番号にかけ直す、を部内ルールにする。注意点：いずれも海外の研究で、日本語環境での効果は要確認。"
+      },
+      "en": {
+        "title": "AI-personalized phishing emails got a 10% click rate (vs 3.9% for mass emails), and 16.5% may comply with AI voice scam calls: two large studies",
+        "summary": "In a study by TU Berlin and others with university staff, phishing emails personalized by an LLM from online information had a 10% click rate, 2.74 times the 3.9% of identical mass emails. Producing about 4,000 emails took about 50 hours at roughly $0.03 each, and the university's spam filter flagged only 1 of 3,949. In a separate study by Harvard, Meta and others with 4,100 US adults, an average of 16.5% said they would comply or were unsure when receiving AI voice scam calls, rising to 36.1% in a scenario using a cloned voice of a sister in trouble.",
+        "note": "How to use it at work: in team security training, you can explain with concrete numbers that natural-sounding emails referring to your background or work deserve more caution. Make it a team rule to hang up and call back on a known number when asked by phone for urgent payments, passwords or data. Caveats: both are overseas studies; effects in Japanese-language settings need checking."
+      },
+      "src": [
+        {
+          "name": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/27/2000002550/"
+        },
+        {
+          "name": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/28/2000002612/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-30-anthropic-agent-opinion-study",
+      "date": "2026-10-30",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "仕事で使える",
+        "データ分析",
+        "エージェント"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "Anthropicの実験：専門家50人が、コイン投げで決めたAIエージェントの意見に最大86%従い、多くは自分の結論だと認識",
+        "summary": "Anthropicは、因果推論の専門家50人に、明確な正解がない分析課題4つをAIエージェントと一緒に解いてもらった。題材は架空の農業協同組合の観察データから、任意参加の営農指導プログラムによる生産性向上を見積もるもの。エージェントの好み（どちらの手法・判断を推すか）はコイン投げで決めていたが、判断が分かれる場面で専門家は最大86%の割合でエージェントの好みに従い、多くは最終結果を自分の考えだと思っていた。",
+        "note": "仕事での使いどころ：試験データの解析方針や設計判断をAIと相談するときは、AIに聞く前に自分の見立てを1行メモしておくと、引っ張られたかどうかを後で確かめられる（下の使い方特集を参照）。注意点：実験はAnthropic自身によるもので、課題の設計の詳細は要確認。分野や課題の種類によって結果が変わる可能性がある。"
+      },
+      "en": {
+        "title": "Anthropic study: 50 experts followed an AI agent's coin-flip preferences up to 86% of the time and mostly believed the conclusions were their own",
+        "summary": "Anthropic had 50 causal-inference experts work through four analytical tasks with no clearly right answer alongside an AI agent. One task used observational data from a fictional farming cooperative to estimate productivity gains from a voluntary advisory program. The agent's preferences were set by coin toss, yet on judgment calls the experts followed them in up to 86% of cases, and most believed the final result was their own.",
+        "note": "How to use it at work: when discussing test-data analysis plans or design decisions with AI, jot down your own view in one line before asking, so you can later check whether you were swayed (see this week's how-to). Caveats: the experiment was run by Anthropic itself; task design details need checking, and results may differ by field and task type."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/experts-adopt-ai-agents-random-opinions-and-think-theyre-their-own-anthropic-study-finds/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-27-kyoto-copilot-chatai",
+      "date": "2026-10-27",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "仕事で使える",
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "京都府庁、職員約7,000人で「Copilot Chat」と社内マニュアル検索用「ChatAI」を使い分け　利用率71%と45%",
+        "summary": "京都府庁は2025年1月にCopilot Chatを全庁導入し、同年4月に庁内マニュアル検索のためRAG（社内文書を検索して答える仕組み）付きの『ユーザーローカル ChatAI』を追加した。文章作成やアイデア出しはCopilot Chat、マニュアル検索はChatAIと一本化せず使い分けている。書類チェックでは『ルールを読み取る』『書類をチェックする』『結果を整理する』の3つの子エージェントと、それをまとめる親エージェントを組んだ。庁内調査で利用率はCopilot Chat 71%、ChatAI 45%、満足度は95%と93%。",
+        "note": "仕事での使いどころ：部署の規程類・設計基準書の検索と、文章作成とでツールを分ける考え方は、全社AIだけでは現場の困りごとが残る場合の参考になる。書類チェックを『ルール抽出→照合→整理』の3段に分ける構成は、図面・仕様書のチェック手順にも当てはめやすい（推測）。注意点：導入費用は記事で確認できず要確認。"
+      },
+      "en": {
+        "title": "Kyoto Prefectural Government splits AI use between Copilot Chat and a manual-search 'ChatAI' for about 7,000 staff, with usage at 71% and 45%",
+        "summary": "Kyoto Prefecture rolled out Copilot Chat to all departments in January 2025 and added User Local ChatAI, which uses RAG (answering by searching internal documents), in April for searching internal manuals. Rather than consolidating, it uses Copilot Chat for writing and ideas and ChatAI for manual search. For document checks it built three sub-agents—reading rules, checking documents, organizing results—coordinated by a parent agent. Internal surveys show usage of 71% for Copilot Chat and 45% for ChatAI, with satisfaction of 95% and 93%.",
+        "note": "How to use it at work: separating tools for searching department rules or design standards from tools for writing is a useful idea when a company-wide AI alone does not solve frontline problems. Splitting document checks into 'extract rules → compare → organize' maps well onto drawing and spec review (speculation). Caveats: implementation cost was not in the article (needs checking)."
+      },
+      "src": [
+        {
+          "name": "ITmedia キーマンズネット",
+          "url": "https://kn.itmedia.co.jp/kn/article/2610/27/2000002599/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-30-us-robot-imports-security",
+      "date": "2026-10-30",
+      "kind": "weekly",
+      "cat": "reg",
+      "level": "all",
+      "tags": [
+        "規制"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "トランプ大統領、輸入ロボットを「国家安全保障上の脅威」と宣言　産業機械・部品の輸入調整を180日以内に交渉、関税も示唆",
+        "summary": "トランプ米大統領は10月28日の大統領布告で、外国製の産業用ロボットなどの輸入を国家安全保障上の問題と位置付け、ロボット・産業機械とその部品の輸入を調整する協定を、布告日から180日以内に貿易相手国とまとめるよう指示した。関税の可能性も示している。米FCCは2026年7月に、ロボット掃除機・四足歩行ロボット・人型ロボットなど外国製ロボットの新機種を禁止している。",
+        "note": "仕事での使いどころ：米国に工場や試験拠点を持つ場合、生産設備・試験設備（ロボット、産業機械）の調達計画に影響する可能性があるとして、調達・生産技術部門と共有しておく。注意点：対象となる品目・国の範囲と関税率は記事では示されておらず要確認。"
+      },
+      "en": {
+        "title": "Trump declares robot imports a national security threat, orders trade talks on industrial machinery within 180 days and threatens tariffs",
+        "summary": "In an October 28 presidential proclamation, President Trump framed imports of foreign-made industrial robots as a national security issue and directed the US to reach agreements with trading partners to adjust imports of robotics, industrial machinery and their components within 180 days, with tariffs possible. The FCC had already banned new models of foreign-made robots such as robot vacuums, four-legged robots and humanoids in July 2026.",
+        "note": "How to use it at work: if you have plants or test sites in the US, share this with procurement and production engineering, as it may affect plans to buy robots and industrial equipment. Caveats: which products, countries and tariff rates are covered was not stated in the article (needs checking)."
+      },
+      "src": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/gadgets/2026/10/trump-declares-robot-imports-a-national-security-threat/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-28-discord-search-indexing",
+      "date": "2026-10-28",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "セキュリティ"
+      ],
+      "prio": 1,
+      "conf": "report",
+      "ja": {
+        "title": "Discord、メンバー1,000人以上の公開サーバーの会話を検索エンジンの対象に　11月16日からAI要約、12月中旬から本文　日本は初期設定オン",
+        "summary": "Discordは10月27日（米国時間）、メンバー1,000人以上で誰でも参加できる『Discoverable Server』（6万3,000以上）の会話を、Googleなどの検索で見つけられるようにすると発表した。11月16日以降の会話はAIによる要約を公開ページに載せ、12月中旬からは投稿本文も載せる。12月中旬より前の投稿と10代ユーザーの投稿は対象外。日本では初期設定でオンのため、除外するには設定変更が必要。",
+        "note": "仕事での使いどころ：技術コミュニティや開発ツールの公開Discordで業務の質問をしたことがある人は、今後の投稿が検索結果に出る前提で書く。注意点：社名・製品名・未公開情報を含む書き込みは避ける。サーバー管理者側の除外手順は記事で確認できず要確認。"
+      },
+      "en": {
+        "title": "Discord will make conversations on public servers with 1,000+ members searchable: AI summaries from Nov 16, full messages from mid-December, on by default in Japan",
+        "summary": "On October 27 (US time), Discord announced that conversations on 'Discoverable Servers'—open servers with at least 1,000 members, numbering over 63,000—will become findable through search engines such as Google. AI summaries of conversations from November 16 onward will appear on public pages, and from mid-December message text itself will be shown. Messages posted before mid-December and messages from teenage users are excluded. In Japan the setting is on by default, so opting out requires changing it.",
+        "note": "How to use it at work: if you have asked work-related questions on public Discord servers for tech communities or developer tools, assume future posts may appear in search results. Caveats: avoid posts mentioning your company, products or unreleased information. The opt-out procedure for server admins was not in the article (needs checking)."
+      },
+      "src": [
+        {
+          "name": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2610/28/2000002656/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-31-howto-drbfm-draft",
+      "date": "2026-10-31",
+      "kind": "weekly",
+      "cat": "howto",
+      "level": "intermediate",
+      "tags": [
+        "仕事で使える",
+        "資料作成"
+      ],
+      "prio": 3,
+      "conf": "guide",
+      "ja": {
+        "title": "【使い方特集】設計変更のDRBFM（心配点の洗い出し）を、AIに「変更点→心配点→確認方法」の表で下書きさせる",
+        "summary": "設計・制御ロジックを変えるときのDRBFMの最初の下書きをAIに作らせる方法。変更前後の違いを箇条書きで渡し、①変更点 ②その変更で起こりうる心配点 ③影響する機能・部品 ④確認方法（机上・HILS・実車） の4列で出させる。例文：『あなたはシャシー制御の設計レビュー担当です。次の変更点について、DRBFMの下書きを表で作ってください。列は「変更点／心配点（どんな条件で何が起こるか）／影響範囲／確認方法（机上・HILS・実車のどれか）／確度（高・中・低）」。心配点は1つの変更点につき最低3つ、低μ路・高温・センサ故障時など条件を変えて考えてください。根拠のない推測は確度を「低」にしてください。変更点：ESCのアンダーステア判定しきい値を〇〇から△△に変更。目的：〜』。",
+        "note": "仕事での使いどころ：白紙から考えるより、AIの下書きに担当者が追記・削除するほうがレビュー前の準備が早い。『条件を変えて』と指定すると、通常条件だけの心配点に偏るのを防げる。注意点：AIは自社の過去不具合や車両固有の事情を知らないため、抜けは必ず残る前提で、過去トラブル集と照合する。数値や部品名など社外秘の情報は、社内で許可されたAI環境でのみ入力する。"
+      },
+      "en": {
+        "title": "[How-to] Have AI draft a DRBFM for a design change as a 'change → concern → verification' table",
+        "summary": "This shows how to get a first DRBFM draft from AI when changing a design or control logic. Give it a bulleted list of before/after differences and ask for four columns: (1) change, (2) possible concerns, (3) affected functions/parts, (4) verification method (desk study, HILS, vehicle test). Example prompt: 'You are a chassis-control design reviewer. Create a draft DRBFM table for the change below. Columns: Change / Concern (what happens under which condition) / Affected area / Verification (desk, HILS or vehicle) / Confidence (high, medium, low). List at least three concerns per change, varying conditions such as low-μ roads, high temperature and sensor failure. Mark unsupported guesses as low confidence. Change: the ESC understeer detection threshold changes from X to Y. Purpose: ...'",
+        "note": "How to use it at work: editing an AI draft is faster than starting from a blank sheet before a review, and asking it to vary conditions keeps it from listing only normal-condition concerns. Caveats: the AI does not know your company's past failures or vehicle-specific details, so assume gaps remain and cross-check against your lessons-learned database. Enter confidential figures or part names only into an AI environment your company has approved."
+      },
+      "src": []
+    },
+    {
+      "id": "2026-10-31-howto-weekly-report-digest",
+      "date": "2026-10-31",
+      "kind": "weekly",
+      "cat": "howto",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える",
+        "資料作成",
+        "会議"
+      ],
+      "prio": 2,
+      "conf": "guide",
+      "ja": {
+        "title": "【使い方特集】メンバーの週報を束ねて、AIに「遅れ・判断待ち・他部署依存」だけを抜き出させる",
+        "summary": "マネージャーが複数メンバーの週報を読むときの下ごしらえ。週報をまとめて貼り、進捗の要約ではなく、手を打つべき項目だけを表にさせる。例文：『以下はチーム5人の今週の週報です。マネージャーが対応すべき項目だけを表にしてください。列は「担当者／項目／種類（遅れ・判断待ち・他部署依存・リスク）／期限／週報の該当文（原文のまま）」。週報に書かれていないことは推測で補わず、空欄にしてください。最後に、来週の定例で私が確認すべき質問を3つ挙げてください。（ここに週報を貼る）』。",
+        "note": "仕事での使いどころ：『週報の該当文（原文のまま）』の列を入れると、AIの言い換えによる取り違えをすぐ確かめられる。定例会議の議題作りにそのまま使える。注意点：人事評価に関わる記述や個人情報を含む週報は、社内で許可されたAI環境でのみ扱う。AIの『種類』の振り分けは判断が分かれることがあるため、最終判断は自分で行う。"
+      },
+      "en": {
+        "title": "[How-to] Combine team weekly reports and have AI extract only delays, pending decisions and cross-team dependencies",
+        "summary": "A prep step for managers reading several members' weekly reports. Paste them together and ask for a table of only the items that need action, not a progress summary. Example prompt: 'Below are this week's reports from my five team members. List only the items a manager needs to act on. Columns: Member / Item / Type (delay, pending decision, depends on another team, risk) / Due date / Quote from the report (verbatim). Do not fill in anything that is not written—leave it blank. Finally, suggest three questions I should ask at next week's meeting. (paste reports here)'",
+        "note": "How to use it at work: the verbatim-quote column lets you quickly catch misreadings caused by the AI's paraphrasing, and the table can feed directly into your weekly meeting agenda. Caveats: handle reports with evaluation-related or personal information only in an AI environment your company has approved. The AI's classification of 'type' can be debatable, so make the final call yourself."
+      },
+      "src": []
+    },
+    {
+      "id": "2026-10-31-howto-own-view-first",
+      "date": "2026-10-31",
+      "kind": "weekly",
+      "cat": "howto",
+      "level": "all",
+      "tags": [
+        "仕事で使える",
+        "データ分析"
+      ],
+      "prio": 3,
+      "conf": "guide",
+      "ja": {
+        "title": "【使い方特集】AIに引っ張られないために：聞く前に「自分の見立て」を書き、AIに「自分の案と別案の両方」を評価させる",
+        "summary": "今週のAnthropicの実験では、専門家がAIのランダムな好みに最大86%従っていた。対策として、AIに相談する前に自分の見立てを1〜2行書いてから聞き、AIには1つの答えではなく比較を出させる。例文：『試験データの解析方針を相談します。私の現時点の見立ては「ヨーレート応答の遅れは、車速より路面μの影響が大きい」です。この見立てを支持する見方と、否定する見方をそれぞれ3つ挙げ、どのデータを見れば決着がつくかを示してください。私の見立てに合わせる必要はありません。最後に、あなた自身が別の仮説を立てるならどうするかを1つ挙げてください。』。",
+        "note": "仕事での使いどころ：設計判断・解析方針・不具合の要因推定など、正解が1つに決まらない相談で使う。最初に書いた見立てとAI相談後の結論を並べて記録しておくと、レビューで『なぜ方針を変えたか』を説明しやすい。注意点：AIが挙げる『決着をつけるデータ』が実際に取得済みか、計測可能かは自分で確認する。AIが根拠として挙げた文献・規格は原文で確認する。"
+      },
+      "en": {
+        "title": "[How-to] Avoid being swayed by AI: write down your own view first, then have AI assess both your view and alternatives",
+        "summary": "This week's Anthropic study found experts followed an AI's random preferences up to 86% of the time. As a countermeasure, write your own view in one or two lines before consulting AI, and ask for a comparison rather than a single answer. Example prompt: 'I want to discuss how to analyze test data. My current view is: \"The lag in yaw-rate response is driven more by road friction than by vehicle speed.\" Give three arguments supporting this view and three against it, and show which data would settle the question. You do not need to agree with me. Finally, suggest one alternative hypothesis you would propose yourself.'",
+        "note": "How to use it at work: use it for questions without a single right answer, such as design decisions, analysis plans or root-cause estimates. Recording your initial view alongside the conclusion after consulting AI makes it easier to explain in reviews why the plan changed. Caveats: check yourself whether the 'deciding data' the AI suggests already exists or can be measured, and verify any papers or standards it cites against the originals."
+      },
+      "src": []
+    },
+    {
+      "id": "2026-10-29-tool-kddi-iret-ai-cases",
+      "date": "2026-10-29",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "【こんなのもあるよ】KDDIアイレット、社内のAI活用事例113件を特設サイトで無料公開　エンジニア職63件・その他50件",
+        "summary": "KDDIグループのKDDIアイレットが、社内で集めたAI活用事例113件を特設サイトで無料公開している。内訳はエンジニア職63件、営業・人事などエンジニア職以外が50件。各事例に概要スライド1枚、詳細・ポイント・削減時間が載っている。『Gemini Notebook』を稟議データのチェック支援に使う例もある。事例は7月までに社内で募ったもの。",
+        "note": "仕事での使いどころ：部内でAI活用の勉強会を開くとき、『削減時間』付きの他社事例を題材にすると、自分の業務に置き換えた議論がしやすい。注意点：事例の多くはGoogle系ツール前提の可能性があり、自社で使えるツールとの対応は要確認。7月時点の事例のため、ツールの機能や画面は変わっている場合がある。サイトの利用条件は要確認。"
+      },
+      "en": {
+        "title": "[Worth a look] KDDI iret publishes 113 internal AI use cases for free: 63 from engineers and 50 from other roles",
+        "summary": "KDDI group company KDDI iret has published a free website with 113 AI use cases collected internally—63 from engineering roles and 50 from non-engineering roles such as sales and HR. Each case has a one-slide overview plus details, key points and time saved. One example uses Gemini Notebook to help check approval-request (ringi) data. The cases were collected internally through July.",
+        "note": "How to use it at work: when running an AI study session in your team, cases with 'time saved' figures make it easy to discuss how they would apply to your own work. Caveats: many cases may assume Google tools, so check how they map to tools your company allows. The cases date from July, so features and screens may have changed. Site terms of use need checking."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2610/29/2000002685/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-30-tool-granola-dictation",
+      "date": "2026-10-30",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "会議",
+        "メール・英語"
+      ],
+      "prio": 1,
+      "conf": "report",
+      "ja": {
+        "title": "【こんなのもあるよ】会議メモAI「Granola」に音声入力機能　どのアプリでも話してメモ・メール返信・プロンプト入力",
+        "summary": "会議メモAIのGranolaが、どのアプリの上でも使える音声入力（ディクテーション）機能を出した。話すだけでメモの作成、AIへのプロンプト入力、メールやメッセージへの返信ができる。音声入力アプリのWisprは逆に会議メモ機能を加えており、FirefliesやSpeechifyなども会議メモと音声入力の両方を持つ形に寄ってきている。企業評価額はGranolaが15億ドル、Wisprが20億ドル。",
+        "note": "仕事での使いどころ：長いプロンプトや報告メールの下書きを、キーボードより速く話して入力できる。試験後の気づきを忘れないうちに口頭でメモする使い方も考えられる。注意点：料金、日本語の認識精度、音声データの保存先と学習利用の有無は記事で確認できず要確認。社内の会議を録音・送信する場合は社内ルールの確認が必要。"
+      },
+      "en": {
+        "title": "[Worth a look] Meeting-notes app Granola adds dictation that works in any app for notes, email replies and prompts",
+        "summary": "Granola, known for its AI meeting notetaker, launched a dictation feature that works across all apps, letting users speak to write notes, enter prompts for AI, and reply to emails and messages. Dictation app Wispr has gone the other way by adding meeting notes, and others such as Fireflies and Speechify are converging on both features. Granola is valued at $1.5 billion and Wispr at $2 billion.",
+        "note": "How to use it at work: you can speak long prompts or report-email drafts faster than typing, or record observations right after a test before you forget them. Caveats: pricing, Japanese recognition accuracy, where audio is stored and whether it is used for training were not in the article (needs checking). Check internal rules before recording or sending company meetings."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/"
         }
       ]
     }
