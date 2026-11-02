@@ -1,6 +1,124 @@
 {
-  "updated": "2026-10-31T10:05:00+09:00",
+  "updated": "2026-11-02T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-11-01-chatgpt-chat-work-token-quota",
+      "date": "2026-11-01",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "仕事で使える",
+        "料金",
+        "コーディング"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "ChatGPT、ChatとWorkの2モードを1画面に統合へ　12月からChatGPTとCodexでトークン制の共通利用枠",
+        "summary": "OpenAIはChatGPTの「Chat」と「Work」の2つのモードを1つの画面にまとめる。12月から、Plus・Pro・Businessプランでは、ChatGPTとCodexが同じトークン単位の利用枠を共有する方式になる。処理の重いモデルほど枠を多く消費し、簡単な即答チャット（Instant）は枠に数えない。",
+        "note": "仕事での使いどころ：日常の短い質問はInstant、資料作成やコード生成など重い作業は上位モデル、と使い分けると枠を節約できる。注意点：ChatGPTとCodexを両方使う人は、片方の使いすぎでもう片方が使えなくなる可能性がある。モデルごとの消費量や枠の大きさは記事に記載がなく要確認。The Decoderは低価格プランの多用者では品質が下がると見ているが、これは同誌の見立て（推測）。"
+      },
+      "en": {
+        "title": "ChatGPT to merge Chat and Work modes; ChatGPT and Codex will share a token-based quota from December",
+        "summary": "OpenAI is combining ChatGPT's Chat and Work modes into a single interface. Starting in December, Plus, Pro and Business plans will draw on one shared, token-based quota for both ChatGPT and Codex. More demanding models use up more of the quota, while simple instant chats do not count toward it.",
+        "note": "How to use it at work: save quota by using instant chat for quick questions and saving the stronger models for heavy tasks like drafting documents or generating code. Caveats: if you use both ChatGPT and Codex, heavy use of one could leave you short on the other. How much each model consumes and the size of the quota are not in the article (needs checking). The Decoder expects quality to drop for heavy users on cheaper plans, but that is the outlet's own view (speculation)."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/openais-upcoming-chat-and-work-merger-in-chatgpt-signals-the-end-of-all-you-can-prompt-pricing/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-31-openai-daybreak-blue-training",
+      "date": "2026-10-31",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "セキュリティ",
+        "仕事で使える"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "OpenAI、11月29日から「Daybreak Blue」のセッションデータを学習に利用　学習オフ設定でも対象、反発受け別途オプトアウトを約束",
+        "summary": "OpenAIは11月29日から、サイバーセキュリティ関連のサービス「Daybreak Blue」で行われたセッションのデータをモデルの学習に使う。利用者が学習への利用をオフにしていても対象になるとしていたが、反発を受けて、後から送ったメールで専用のオプトアウト手段を用意すると約束した。",
+        "note": "仕事での使いどころ：Daybreak Blueを使っている、または検討中のセキュリティ担当部署は、11月29日より前にオプトアウトの手続きと契約条件を確認する。注意点：「学習オフ」設定がすべての機能に効くとは限らない例になる。社内でAIツールを使う際は、機能ごと・サービスごとの学習データ規約を確認したい。Daybreak Blueの対象プランやオプトアウトの具体的な方法は記事からは不明で要確認。"
+      },
+      "en": {
+        "title": "OpenAI to train on Daybreak Blue session data from November 29, even with training turned off; separate opt-out promised after backlash",
+        "summary": "Starting November 29, OpenAI will use data from sessions in Daybreak Blue, its cybersecurity-related offering, to train its models. This was set to apply even to users who had turned off training, but after a backlash, a follow-up email promised a separate opt-out.",
+        "note": "How to use it at work: security teams using or evaluating Daybreak Blue should check the opt-out process and contract terms before November 29. Caveats: this shows that a 'training off' setting may not cover every feature, so check the data-use terms for each service and feature your company uses. Which plans are affected and how exactly to opt out are not clear from the article (needs checking)."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/openai-plans-to-train-models-on-daybreak-blue-cybersecurity-session-data-that-was-previously-off-limits/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-31-claude-watermark-eu-ai-act",
+      "date": "2026-10-31",
+      "kind": "flash",
+      "cat": "reg",
+      "level": "intermediate",
+      "tags": [
+        "規制",
+        "モデル",
+        "セキュリティ"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Anthropic、EU AI法の12月期限に向けClaude旧モデル4種にもテキスト透かし　Opus 4.6・Sonnet 4.6は設定次第で外れる",
+        "summary": "AnthropicはAPI利用者へのメールで、Claude Mythos 5、Opus 4.7、Opus 4.6、Sonnet 4.6の出力にもテキストの透かしを入れると伝えた。Opus 5.5など新しいモデルにはすでに入っている。Opus 4.6とSonnet 4.6では、3つのサンプリング設定を初期値のままにした場合だけ透かしが入り、設定を変えると外れる。Amazon Bedrockでの適用は数日遅れる場合がある。",
+        "note": "仕事での使いどころ：EU向けの文書や製品にClaudeの出力を使う部署は、どのモデル・設定で透かしが入るかを把握しておくと、AI生成物の表示義務への対応を説明しやすい。注意点：透かしを意図的に外す設定変更はコンプライアンス上の問題になり得る（Anthropicは警告で対応）。Mythos 5とOpus 4.7は設定に関係なく透かしが入ると読めるが、メールに明記はなく推測。"
+      },
+      "en": {
+        "title": "Anthropic adds text watermarks to four older Claude models ahead of EU AI Act's December deadline; Opus 4.6 and Sonnet 4.6 can drop it via settings",
+        "summary": "In an email to API customers, Anthropic said it will watermark output from Claude Mythos 5, Opus 4.7, Opus 4.6 and Sonnet 4.6; newer models such as Opus 5.5 already carry the mark. On Opus 4.6 and Sonnet 4.6, the watermark applies only when the three sampling parameters are left at their defaults, so changing them removes it. The rollout on Amazon Bedrock may take a few extra days.",
+        "note": "How to use it at work: teams that use Claude output in documents or products for the EU can more easily explain how they meet AI-content labeling rules if they know which models and settings carry the watermark. Caveats: deliberately changing settings to remove the watermark could be a compliance problem (Anthropic only issues a warning). The watermark appears to apply to Mythos 5 and Opus 4.7 regardless of settings, but the email does not say so explicitly (speculation)."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-01-robots-txt-ai-training-signal",
+      "date": "2026-11-01",
+      "kind": "flash",
+      "cat": "reg",
+      "level": "intermediate",
+      "tags": [
+        "規制",
+        "セキュリティ"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "AI学習への利用拒否をrobots.txtで各社一括指定へ　OpenAI・Google・Microsoftが共通の仕組みへの対応を表明",
+        "summary": "OpenAI、Google、Microsoftは10月30日（米国時間）、Webサイト運営者がrobots.txtに共通の記述をするだけで、AI学習へのコンテンツ利用の可否を複数社にまとめて伝えられる仕組みに対応すると発表した。Googleは2027年の対応を目指し、Microsoftは2027年2月1日から新設定の読み取りを始める。Anthropicは担当者が個人名義で実装を表明している。",
+        "note": "仕事での使いどころ：自社の製品サイトや技術資料ページをAI学習に使わせたくない場合、広報・Web担当がrobots.txtで一括指定できるようになる。注意点：Microsoftは従来の「NoArchive」「NoCache」を使うサイトに2027年3月1日までの新設定への移行を求めている。Anthropicの対応は会社としての正式表明ではなく、具体的な記述方法も記事からは不明で要確認。"
+      },
+      "en": {
+        "title": "One robots.txt line to opt out of AI training: OpenAI, Google and Microsoft back a shared signal",
+        "summary": "On October 30 (US time), OpenAI, Google and Microsoft announced support for a shared mechanism that lets website operators tell multiple AI companies at once, via a common entry in robots.txt, whether their content may be used for AI training. Google aims to support it in 2027, and Microsoft will start reading the new setting on February 1, 2027. At Anthropic, an employee has said in a personal capacity that it will be implemented.",
+        "note": "How to use it at work: if you do not want your company's product or technical pages used for AI training, your PR or web team will be able to opt out of several AI companies through robots.txt. Caveats: Microsoft is asking sites that use the older NoArchive and NoCache settings to switch to the new one by March 1, 2027. Anthropic's support is not an official company statement, and the exact syntax is not given in the article (needs checking)."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/news/article/2611/01/2000002776/"
+        }
+      ]
+    },
     {
       "id": "2026-10-30-chatgpt-plan-api-credit",
       "date": "2026-10-30",
