@@ -1,6 +1,103 @@
 {
-  "updated": "2026-11-02T09:05:00+09:00",
+  "updated": "2026-11-03T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-11-03-claude-code-game-clone-rule",
+      "date": "2026-11-03",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "コーディング",
+        "エージェント",
+        "セキュリティ"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "Claude Code、既存ゲームの再現を避ける指示をプロンプトに追加　Opus 5.5向け、10月30日公開の2.1.314で確認",
+        "summary": "AnthropicはClaude Code（Opus 5.5使用時）のシステムプロンプトに2文を追加し、他人の特定のゲームを作り直す依頼から離れるよう誘導した。Anthropic側は、知的財産の侵害に使うことは利用規約違反だと説明している。XDAは10月30日公開のバージョン2.1.314でこのルールを確認したと報じた。",
+        "note": "仕事での使いどころ：ゲームに限らず、既存製品のコピーに近い依頼（他社ソフトの再現など）は断られたり方向転換されたりする可能性がある、と社内の開発者に共有しておくとよい。注意点：プロンプト追加はゲーム再現が対象で、他の分野に広がるかは記事に記載がなく要確認。Ars Technicaは「1社の制限ではAIによるコピーの流れは止まらない」との見方を示している（同誌の見解）。"
+      },
+      "en": {
+        "title": "Claude Code adds instructions to steer away from recreating existing games; found in version 2.1.314 released Oct 30 for Opus 5.5",
+        "summary": "Anthropic added two sentences to Claude Code's system prompt when running on Opus 5.5, steering it away from recreating someone else's specific game. Anthropic says using Claude to infringe intellectual property violates its usage policy. XDA reported that it verified the rule in version 2.1.314, released on October 30.",
+        "note": "How to use it at work: let your developers know that requests close to copying an existing product, not only games, may be declined or redirected. Caveats: the added prompt targets game recreation; whether it will extend to other areas is not stated in the articles (needs checking). Ars Technica argues that one company's limits won't stop the wider AI copying trend (the outlet's view)."
+      },
+      "src": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-03-grok-bot-limits-cut",
+      "date": "2026-11-03",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "エージェント",
+        "料金"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "SpaceXSI、AIエージェント「Grok Bot」の利用上限を引き下げ　マスク氏「収益に対しコストが高すぎる」",
+        "summary": "SpaceXSIはAIエージェントGrok Botの利用上限を引き下げたとみられる。マスク氏はXで、運用コストが収益に比べて持続できないほど高いと説明した。利用者からは、使用量の表示が50%から100%に跳ね上がったという報告が出ている。",
+        "note": "仕事での使いどころ：定額プランのAIエージェントは、提供側の都合で利用枠が予告なく減ることがある前提で業務に組み込む。注意点：The Decoderによれば、Anthropicはエージェント処理は単純なチャットの4〜15倍のコストがかかるとしており、OpenAIやAnthropicも定額プランを絞っている。新しい上限の具体的な値は記事に記載がなく要確認。"
+      },
+      "en": {
+        "title": "SpaceXSI cuts usage limits for its Grok Bot AI agent; Musk says costs are too high relative to revenue",
+        "summary": "SpaceXSI appears to have lowered the usage limits for its AI agent Grok Bot. Musk wrote on X that operating costs were unsustainably high compared with revenue. Some users reported their usage meter jumping from 50% to 100%.",
+        "note": "How to use it at work: when you build flat-rate AI agents into workflows, assume the provider may shrink quotas without notice. Caveats: according to The Decoder, Anthropic says an agent costs 4 to 15 times as much as a simple chat, and OpenAI and Anthropic are also tightening flat-rate plans. The exact new limits are not given in the articles (needs checking)."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/spacexsi-apparently-cuts-grok-bot-quotas-weeks-after-musk-called-it-his-fastest-growing-product/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-03-goldman-ai-coding-engineers-only",
+      "date": "2026-11-03",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "コーディング",
+        "セキュリティ",
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "ゴールドマン・サックス、Claude CodeやGitHub Copilotの利用をエンジニアに限定　トレーダー・バンカーは対象外に",
+        "summary": "Goldman Sachsは、Claude CodeやGitHub CopilotなどのAIコーディングツールをトレーダーやバンカーから外し、エンジニアだけが使える形にした。理由として「生産性とリスク管理」を挙げている。7月にはCIOのMarco Argenti氏が非エンジニアによる「バイブコーディング」を公に評価していた。",
+        "note": "仕事での使いどころ：非エンジニアにAIコーディングツールを広げる際の社内ルール（誰が使えるか、作ったツールのレビュー体制）を考える参考事例になる。注意点：具体的にどんなリスクや問題があったのかは記事の要約に記載がなく要確認。"
+      },
+      "en": {
+        "title": "Goldman Sachs limits Claude Code and GitHub Copilot to engineers, removing access for traders and bankers",
+        "summary": "Goldman Sachs is removing AI coding tools such as Claude Code and GitHub Copilot from traders and bankers, so that only engineers can use them. The bank cites \"productivity and risk management\" as the reason. In July, CIO Marco Argenti had publicly praised \"vibe coding\" by non-technical staff.",
+        "note": "How to use it at work: a useful reference when setting internal rules for rolling out AI coding tools to non-engineers, such as who gets access and how the tools they build are reviewed. Caveats: what specific risks or problems led to the change is not in the article summary (needs checking)."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/"
+        }
+      ]
+    },
     {
       "id": "2026-11-01-chatgpt-chat-work-token-quota",
       "date": "2026-11-01",
