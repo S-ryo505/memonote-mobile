@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T09:10:00+09:00",
+ "updated": "2026-11-04T09:00:00+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -7146,6 +7146,150 @@
     {
      "name": "レスポンス",
      "url": "https://response.jp/article/2026/11/03/418531.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-03-schaeffler-3500-jobs",
+   "date": "2026-11-03",
+   "kind": "flash",
+   "cat": "supplier",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "シャシー",
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "シェフラー、欧州で約3,500人削減へ：ドイツ約2,660人＋その他欧州約800人、年3億ユーロのコスト削減",
+    "summary": "シェフラーはコスト改善プログラムとして、ドイツで約2,660人、ドイツ以外の欧州で約800人の人員を減らす計画で、年約3億ユーロの削減を見込む。削減の内訳は生産50%、研究開発30%、その他部門20%で、欧州16拠点が対象となり、内燃機関向け部品を作るPowertrain & Chassis部門のドルトムント工場（430人）とモルバッハ拠点（160人）も含まれる。e-モビリティ関連部門は1〜9月のEBITマージンが−14.8%、損失5億7,100万ユーロだった。",
+    "note": "EBITマージン＝EBIT÷売上高。−14.8%で損失5.71億ユーロなら、同部門の1〜9月売上は 5.71/0.148 ≈ 38.6億ユーロと逆算できる（記事の数値からの計算で、部門の範囲は要確認）。年3億ユーロ÷約3,460人 ≈ 1人あたり約8.7万ユーロ/年で、人件費削減だけを前提にした目安（推測）。"
+   },
+   "en": {
+    "title": "Schaeffler to cut about 3,500 jobs in Europe: ~2,660 in Germany plus ~800 elsewhere, saving €300 million a year",
+    "summary": "Under a cost improvement programme, Schaeffler plans to cut about 2,660 jobs in Germany and around 800 in the rest of Europe, aiming to save roughly €300 million per year. About 50% of the cuts fall on production, 30% on R&D and 20% on other functions, across 16 European sites, including the Dortmund plant (430 staff) and the Morbach site (160 staff) of the Powertrain & Chassis division, which make combustion-engine parts. The e-mobility division posted a −14.8% EBIT margin for January–September, with a loss of €571 million.",
+    "note": "EBIT margin = EBIT ÷ revenue. A −14.8% margin with a €571M loss implies January–September revenue of about 571/0.148 ≈ €3.86 billion for that division (calculated from the article's figures; the division's scope needs checking). €300M per year ÷ ~3,460 jobs ≈ €87k per head per year, a rough figure assuming the savings come only from labour costs (inference)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/03/schaeffler-to-cut-almost-3500-jobs/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-03-tata-iveco-closing",
+   "date": "2026-11-03",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "タタ・モーターズ、イヴェコ買収の第1段決済を完了：株式の約89.42%を取得し傘下に",
+    "summary": "タタ・モーターズはオランダ子会社TML CV Holdingsを通じてイヴェコの株式資本の約89.42%を保有し、買収の第1段決済を終えた。10月16日のイヴェコ株主総会で定めた最低応募率80%を上回り、応募率は87.8%に達した。1株14.40ユーロ（当初提示は14.10ユーロ、10月に引き上げ）での追加応募は11月6日まで受け付ける。",
+    "note": ""
+   },
+   "en": {
+    "title": "Tata Motors completes first settlement of its Iveco takeover, taking about 89.42% of the shares",
+    "summary": "Through its Dutch subsidiary TML CV Holdings, Tata Motors now holds about 89.42% of Iveco's share capital, completing the first settlement stage of the acquisition. Acceptance reached 87.8%, above the 80% minimum threshold set at Iveco's general meeting on October 16. Remaining shareholders can still tender at €14.40 per share (raised in October from an initial €14.10) until November 6.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/03/commercial-vehicle-manufacturer-iveco-now-officially-part-of-tata-motors/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-03-bosch-semiconductor-division",
+   "date": "2026-11-03",
+   "kind": "flash",
+   "cat": "supplier",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ボッシュ、2028年1月1日に半導体事業を独立事業部化：2030年に半導体売上50億ユーロを目標",
+    "summary": "ボッシュはモビリティ部門の中に「Semiconductors」事業部を2028年1月1日付で新設し、マイコン・センサーの開発・製造・販売を移す。残るMobility Electronicsは車両用ECUとパワーエレクトロニクスに集中する。自動車に加えロボティクスやAI向けにも販売を広げ、2030年までに半導体売上を50億ユーロに増やす計画。",
+    "note": "パワーエレクトロニクス（インバーター等）とパワー半導体（SiCなど）の担当部門が分かれる形になる。ESC・EPS・byWire向けのECUとそこに載るマイコン・慣性センサー（加速度・ヨーレート）の供給元は同じボッシュのまま、事業部が分かれる構成（体制変更の詳細は要確認）。"
+   },
+   "en": {
+    "title": "Bosch to spin its chip business into a separate division on January 1, 2028, targeting €5 billion in semiconductor sales by 2030",
+    "summary": "Bosch will create a new 'Semiconductors' division within its Mobility business sector on January 1, 2028, taking over the development, manufacturing and sales of microchips and sensors. The remaining Mobility Electronics unit will focus on vehicle ECUs and power electronics. Bosch aims to sell chips beyond automotive, into robotics and AI, and raise semiconductor sales to €5 billion by 2030.",
+    "note": "Power electronics (such as inverters) and power semiconductors (such as SiC) will sit in different divisions. ECUs for ESC, EPS and by-wire systems and the microcontrollers and inertial sensors (acceleration, yaw rate) on them will still come from Bosch, but from separate divisions (details of the new structure need checking)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/03/bosch-to-restructure-semiconductor-business-from-2028/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-03-thailand-ev-import-tax-35",
+   "date": "2026-11-03",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "Global",
+   "tags": [
+    "規制",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "タイ、2027年1月1日から輸入EVの物品税を35%に引き上げ：BEVは10%、EREVは15%から",
+    "summary": "タイは2027年1月1日から輸入電動車の物品税を35%に統一し、BEV（現行10%）とレンジエクステンダーEV（現行15%）が対象になる。国家EV政策委員会が2025年と2026年に決めた内容に基づくもので、中国からの輸入を抑え、海外メーカーの現地生産と雇用を促す狙い。2026年はタイの新車登録に占める電動車の比率が初めて55%に達したが、伸びの多くは輸入車だった。",
+    "note": "税込み価格を P_tax = P_base·(1 + t) とすると、BEVで t が0.10→0.35 になれば価格は 1.35/1.10 ≈ 1.227 倍、EREVでは 1.35/1.15 ≈ 1.174 倍。物品税の課税ベースが実際に何か（CIF価格か卸売価格か）は記事に記載がなく要確認で、この倍率は単純化した目安。"
+   },
+   "en": {
+    "title": "Thailand to raise excise tax on imported EVs to 35% from January 1, 2027, up from 10% for BEVs and 15% for EREVs",
+    "summary": "From January 1, 2027, Thailand will apply a uniform 35% excise tax on imported electric vehicles, covering BEVs (currently 10%) and range-extended EVs (currently 15%). The change follows decisions made in 2025 and 2026 by the National Committee for Electric Vehicle Policy and aims to curb imports from China and push foreign carmakers to build plants and create jobs locally. Electrified vehicles reached 55% of new registrations in Thailand for the first time in 2026, but most of that growth came from imports.",
+    "note": "If the taxed price is P_tax = P_base·(1 + t), raising t from 0.10 to 0.35 for a BEV multiplies the price by 1.35/1.10 ≈ 1.227, and for an EREV by 1.35/1.15 ≈ 1.174. The article does not say what the tax base is (CIF or wholesale price), so this needs checking and the ratios are a simplified guide."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/03/thailand-drastically-increases-tax-on-ev-imports/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-03-bmw-brilliance-1800-cuts",
+   "date": "2026-11-03",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "rumor",
+   "ja": {
+    "title": "BMWブリリアンス、約1,800人（従業員の約10%）を削減と報道：11月2日から開始、主に生産部門",
+    "summary": "中国メディアAI4Roboが複数の従業員の話として報じたところでは、BMWの中国合弁BMWブリリアンスが11月2日から約1,800人、従業員の約10%にあたる人員削減を始めた。対象は複数の職種にわたり、主に生産現場の従業員。補償は一律「n+5」（nは税引前月給、追加5か月分は業績給などを除く基本給で計算）とされる。会社側の公式発表は記事中に示されていない。",
+    "note": ""
+   },
+   "en": {
+    "title": "BMW Brilliance reportedly cutting about 1,800 jobs, roughly 10% of its workforce, mainly in production",
+    "summary": "According to Chinese outlet AI4Robo, citing several employees, BMW's main Chinese joint venture, BMW Brilliance, began cutting about 1,800 jobs, roughly 10% of its workforce, on November 2. The cuts span several job types but mainly affect production workers. Severance is reportedly a uniform 'n+5' package, where n is based on monthly pretax pay and the extra five months on base salary excluding performance pay. The article cites no official company statement.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/03/bmw-brilliance-cuts-jobs-report/"
     }
    ]
   }
