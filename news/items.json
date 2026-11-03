@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T09:55:00+09:00",
+ "updated": "2026-11-03T09:10:00+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -7024,6 +7024,128 @@
     {
      "name": "InsideEVs",
      "url": "https://insideevs.com/news/813621/ev-beats-ice-europe-sales/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-02-toyota-rav4-multi-terrain",
+   "date": "2026-11-02",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "JP",
+   "tags": [
+    "4WD",
+    "制御",
+    "シャシー"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、RAV4を一部改良：4WD車に「マルチテレインセレクト」（MUD＆SAND／ROCK＆DIRT）を新搭載",
+    "summary": "トヨタは11月2日にRAV4の一部改良版を発売し、従来のTRAILモードを路面別に分けた2モードのマルチテレインセレクトを追加した。MUD＆SANDは泥・砂でタイヤの空転をある程度許して駆動力配分とブレーキ制御を行い、ROCK＆DIRTは凹凸路向けに駆動力配分とブレーキ制御を行う。価格はHEVの「Z」が495万円、「Adventure」が454万9,600円で、PHEV（Z、GR SPORT）は2027年1月6日発売。",
+    "note": "ブレーキLSDの原理：オープンデフでは左右の駆動トルクが等しい（T_L = T_R = T_d/2）。空転側に制動トルクT_bを加えると、デフが出せるトルクは T_d/2 ≤ μ_low·N·r + T_b まで上がり、接地側にも同じT_d/2が伝わる（μ_low：空転側の路面摩擦係数、N：輪荷重、r：タイヤ半径）。つまりT_bの分だけ接地側の駆動力を上積みできる。スリップ率 s = (rω − V)/(rω) の目標値を、MUD＆SANDでは高め（空転で泥を掻き出す）、ROCK＆DIRTでは低め（空転を早く止めて接地輪へ配分）に設定していると推測。実際の目標スリップ値や後輪へのトルク配分量は記事に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "Toyota updates the RAV4, adding Multi-Terrain Select (Mud & Sand / Rock & Dirt) to 4WD models",
+    "summary": "Toyota launched an updated RAV4 on November 2, adding Multi-Terrain Select with two modes that split the previous Trail mode by surface type. Mud & Sand allows a certain amount of wheelspin while managing drive-force distribution and brake control in mud or sand, and Rock & Dirt uses drive-force distribution and brake control for uneven surfaces. The HEV Z is priced at 4.95 million yen and the Adventure at 4,549,600 yen; the PHEV (Z and GR Sport) goes on sale on January 6, 2027.",
+    "note": "Brake-LSD principle: an open differential splits torque equally (T_L = T_R = T_d/2). Applying brake torque T_b to the spinning wheel raises the torque the diff can carry to T_d/2 ≤ μ_low·N·r + T_b, and the same T_d/2 reaches the wheel with grip (μ_low: friction on the slipping side, N: wheel load, r: tyre radius). So T_b adds directly to usable drive force on the gripping wheel. With slip ratio s = (rω − V)/(rω), the target is presumably set higher in Mud & Sand (spin to clear mud) and lower in Rock & Dirt (stop spin quickly and send torque to wheels with grip) — this is an inference. Actual slip targets and rear torque split are not given in the articles (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2153153.html"
+    },
+    {
+     "name": "レスポンス",
+     "url": "https://response.jp/article/2026/11/02/418520.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-02-lincoln-hybrid-neutral-recall",
+   "date": "2026-11-02",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "PT",
+    "品質"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "フォード、リンカーン「ノーチラス」「コルセア」のHV計1万1,623台をリコール：変速機モジュール内の腐食で走行中にニュートラルへ",
+    "summary": "フォードは、変速機関連モジュール（パーキングモジュール）内部の腐食により警告なしにニュートラルへ切り替わり、駆動力を失うおそれがあるとして、ハイブリッドSUV計1万1,623台をリコールした。対象は2026〜2027年型ノーチラス・ハイブリッド（1万1,560台）と2027年型コルセア・ハイブリッド。所有者への暫定通知は11月2日から送付され、恒久対策は販売店へ展開中。",
+    "note": "ニュートラル化すると駆動力F_x = 0となり、車両は走行抵抗だけで減速する：m·a = −(C_rr·m·g + ½·ρ·C_d·A·V²)。仮定値 m = 2,100 kg、C_rr = 0.010、C_d·A = 0.75 m²、ρ = 1.2 kg/m³、V = 100 km/h（27.8 m/s）で、転がり抵抗206 N＋空気抵抗348 N = 554 N、a ≈ 0.26 m/s²（約0.027 G）。急減速ではなく「加速・登坂・合流ができない」ことが主なリスク。腐食の部位や原因（シール・水侵入など）は記事要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "Ford recalls 11,623 Lincoln Nautilus and Corsair hybrids: corrosion in a transmission module can shift them into neutral while driving",
+    "summary": "Ford is recalling 11,623 hybrid SUVs because corrosion inside a transmission-related (park) module can shift the vehicle into neutral without warning, cutting drive power. The campaign covers 2026–2027 Nautilus Hybrids (11,560 units) and 2027 Corsair Hybrids. Interim owner letters began going out on November 2, and the permanent fix is still being rolled out to dealers.",
+    "note": "In neutral the drive force F_x = 0, so the car slows only from road load: m·a = −(C_rr·m·g + ½·ρ·C_d·A·V²). With assumed values m = 2,100 kg, C_rr = 0.010, C_d·A = 0.75 m², ρ = 1.2 kg/m³, V = 100 km/h (27.8 m/s): rolling 206 N + aero 348 N = 554 N, a ≈ 0.26 m/s² (about 0.027 g). The main risk is not hard deceleration but being unable to accelerate, climb or merge. The exact corrosion location and cause (seal, water ingress, etc.) are not stated (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/814060/lincoln-hybrid-recall-over-sudden/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-02-webasto-battery-sale",
+   "date": "2026-11-02",
+   "kind": "flash",
+   "cat": "supplier",
+   "region": "EU",
+   "tags": [
+    "電池",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "独Webasto、電池システム事業を売却へ：戦略投資家2社と最終段階の交渉、2025年の同事業売上は約3億ユーロ",
+    "summary": "独Handelsblattなどの報道によると、Tier1のWebastoは電池システム部門の売却を目指しており、CEOのJörg Buchheim氏は戦略投資家2社と交渉が進んでいると述べた。年内の合意もあり得るとされ、売却益は経営が苦しい同社の財務改善に充てる。同事業は2019年に独シアリング工場で電池パック生産を始め、韓国・唐津にも組立拠点を持ち、2025年の売上は約3億ユーロ。",
+    "note": "CEOは電池事業について「魅力はあるが多額の投資が必要」としている。売却先の候補名・売却額は記事に記載なし（要確認）。Tier1による電池パック内製・受託からの撤退の一例として、パック調達先の見直しに関わる可能性がある（推測）。"
+   },
+   "en": {
+    "title": "Germany's Webasto to sell its battery systems business: advanced talks with two strategic investors; the unit had about €300M in 2025 revenue",
+    "summary": "According to Handelsblatt and Automobilwoche, Tier 1 supplier Webasto aims to divest its battery systems division, and CEO Jörg Buchheim said talks with two strategic investors are at an advanced stage. A deal could be signed later this year, with the proceeds easing pressure on the struggling supplier. The unit began building battery packs at Schierling, Germany, in 2019, also has an assembly site in Dangjin, South Korea, and generated about €300 million in revenue in 2025.",
+    "note": "The CEO said the battery business is attractive but requires heavy investment. Bidder names and deal value are not reported (needs confirmation). As an example of a Tier 1 exiting battery-pack manufacturing, it may affect pack sourcing decisions (inference)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/02/webasto-poised-to-sell-its-battery-systems-business/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-03-mercedes-c-e-stall-recall-jp",
+   "date": "2026-11-03",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "制御",
+    "品質"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "メルセデス・ベンツ日本、C200／E200系10車種の計1万88台をリコール：ECUが失火を誤検知し、アイドリング中にエンストのおそれ",
+    "summary": "メルセデス・ベンツ日本は10月22日、C200・E200（4MATIC、ワゴン、クーペ、カブリオレを含む10車種）の計1万88台（2018年4月16日〜2024年4月8日輸入）について国土交通省にリコールを届け出た。エンジンECUの制御プログラムが不適切で、アイドリング中の負荷による回転変動を失火と誤検知して気筒の燃焼を休止させ、警告灯点灯・排ガス基準超過、最悪の場合エンストに至る。不具合は43件、事故はなく、2023年3月15日届出のリコールの対象拡大にあたる。",
+    "note": "一般的な失火検出は、クランク角速度ωの気筒ごとの変動から行う：燃焼行程区間の所要時間T_iを測り、ΔT_i = T_i − T_(i−1) などの指標がしきい値を超えると失火と判定する。アイドル時はωが小さく、補機負荷（エアコン・発電機など）の急変でもΔT_iが大きく出るため、負荷変動補正やしきい値設定が不十分だと誤検知が起きる。失火判定後は触媒保護のため該当気筒の噴射を止める（燃焼休止）ので、低回転では残りの気筒だけでトルクが不足しエンストに至る、という流れと考えられる（推測、メルセデスの具体的な判定ロジックは記事に記載なし）。"
+   },
+   "en": {
+    "title": "Mercedes-Benz Japan recalls 10,088 C200/E200-family cars across 10 models: ECU can misread idle as misfire and stall the engine",
+    "summary": "On October 22, Mercedes-Benz Japan filed a recall with the transport ministry covering 10,088 C200 and E200 cars across 10 variants (including 4MATIC, wagon, coupe and cabriolet) imported between April 16, 2018 and April 8, 2024. An improper engine-ECU program can misjudge load-induced rpm fluctuations at idle as a misfire and shut down combustion in a cylinder, lighting the warning lamp, pushing emissions over the limit and, in the worst case, stalling the engine at idle. There have been 43 failures and no accidents, and the filing extends a recall submitted on March 15, 2023.",
+    "note": "Misfire detection generally relies on per-cylinder variation in crankshaft speed ω: the time T_i for each combustion segment is measured, and a misfire is flagged when an index such as ΔT_i = T_i − T_(i−1) exceeds a threshold. At idle ω is low, so sudden accessory loads (A/C, alternator) also produce large ΔT_i; weak load compensation or thresholds lead to false detection. After a misfire is flagged, injection to that cylinder is cut to protect the catalyst, and at low rpm the remaining cylinders may not make enough torque, causing a stall (inference; Mercedes's actual detection logic is not described)."
+   },
+   "src": [
+    {
+     "name": "レスポンス",
+     "url": "https://response.jp/article/2026/11/03/418531.html"
     }
    ]
   }
