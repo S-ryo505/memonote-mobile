@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T09:00:00+09:00",
+ "updated": "2026-11-05T09:00:00+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -7290,6 +7290,94 @@
     {
      "name": "CnEVPost",
      "url": "https://cnevpost.com/2026/11/03/bmw-brilliance-cuts-jobs-report/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-04-gm-ev-brake-software-recall",
+   "date": "2026-11-04",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "品質",
+    "制御",
+    "シャシー"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "GM、キャデラック／シボレーのEV 67,380台をリコール：ブレーキ制御ソフトの不具合で一時的に制動力が失われるおそれ",
+    "summary": "GMは10月29日付のNHTSA宛て書面で、ソフトウェア不具合により一時的に制動が効かなくなるおそれがあるとして、2023〜2027年型キャデラック・リリック、2025〜2026年型セレスティック、2026〜2027年型ヴィスティック、2024〜2027年型シボレー・ブレイザーEVなど計67,380台のリコールを届け出た。発端は2024年型リリックが低速で車庫に衝突した事案で、2026年4月10日に社内技術者が社内の安全報告制度へ報告し、社内試験で現象を再現した。GMは2024年にも類似のリコールを実施している。",
+    "note": "BEVの制動は回生と摩擦のブレンド制御が一般的：要求制動力 F_req = F_regen + F_fric、F_regen ≤ min(T_mot,max·i/r, P_chg,max/v)。低速域では回生が効かなくなり F_regen→0 となるため、摩擦側へ配分を移す切替が必要になる。今回の不具合がこの配分切替に関係するかは記事に記載がなく推測（要確認）。低速での車庫衝突という発生状況はこの領域と一致する。"
+   },
+   "en": {
+    "title": "GM recalls 67,380 Cadillac and Chevy EVs over brake software flaw that can cause temporary loss of braking",
+    "summary": "In an October 29 filing with NHTSA, GM recalled 67,380 vehicles, including certain 2023–2027 Cadillac Lyriq, 2025–2026 Celestiq, 2026–2027 Vistiq and 2024–2027 Chevy Blazer EV models, because a software defect can temporarily cause braking to be lost. The issue surfaced after a 2024 Lyriq hit a garage at low speed; a GM technical expert reported it to the company's internal safety reporting program on April 10, 2026, and GM reproduced it in internal tests. GM issued a similar recall in 2024.",
+    "note": "EV braking typically blends regenerative and friction braking: F_req = F_regen + F_fric, with F_regen ≤ min(T_mot,max·i/r, P_chg,max/v). At low speed, regeneration fades (F_regen→0), so the controller must shift the load to the friction brakes. The article does not say whether this defect involves that handover; this is speculation (to be confirmed). The low-speed garage crash does fall in that regime."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/04/gm-recalls-67000-cadillac-chevy-evs-over-brake-software-defect/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-04-waymo-exits-uber-austin-atlanta",
+   "date": "2026-11-04",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "US",
+   "tags": [
+    "ADAS",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "Waymo、オースティンとアトランタでUberとの提携を2028年1月に終了し自社アプリへ移行",
+    "summary": "Waymo共同CEOのテケドラ・マワカナ氏はBloombergに対し、オースティンとアトランタでのUberとの提携から2028年1月に離脱すると述べた。以降は両都市でも、すでに20以上の米国都市で行っているのと同様に自社アプリで配車を提供する。同氏は提携の成果を不確実なものだったと評価した。",
+    "note": ""
+   },
+   "en": {
+    "title": "Waymo to end its Uber partnership in Austin and Atlanta in January 2028 and switch to its own app",
+    "summary": "Waymo co-CEO Tekedra Mawakana told Bloomberg that the company will leave its partnership with Uber in Austin and Atlanta starting in January 2028. From then on, rides in both cities will be offered through Waymo's own app, as it already does in more than two dozen other US cities. She described the partnership's results as uncertain.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/814451/waymo-uber-robotaxi-partnership-is-ending/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-04-mercedes-power-converter-800v",
+   "date": "2026-11-04",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "メルセデス、電池の充電状態に関係なく800Vを一定供給する「Power Converter」を開発中",
+    "summary": "メルセデスは、セル単位ごとに小型コンバーターを置き、電池の充電状態（SOC）に左右されずに高電圧系へ常時800Vを供給する技術を開発している。現行方式ではSOCの低下とともにシステム電圧が下がるが、新方式ではトラクションインバーターの入力が常に800Vとなり、変動する入力電圧に合わせた設計が不要になる。",
+    "note": "従来：V_pack = N_s·V_cell(SOC)。例として直列192セル、V_cell = 3.0〜4.2V（仮定値）なら V_pack ≈ 576〜806V。SVPWMインバーターの出力相電圧（ピーク）の上限は V_dc/√3 で、逆起電力 λ·ω がこれに達する点がモーターの基底回転数になるため ω_base ∝ V_dc/λ（λ：鎖交磁束）。したがってSOC低下で V_dc が約3割下がると、弱め界磁の開始回転数も同程度下がり、高速域の出力が落ちる。V_dc を一定にすればトルク-回転数特性がSOCに依存しなくなる。代わりにセルごとのコンバーター損失（効率η<1）とコスト・体積が増えるが、その数値は記事になく要確認。"
+   },
+   "en": {
+    "title": "Mercedes developing a 'Power Converter' that supplies a constant 800 V regardless of battery state of charge",
+    "summary": "Mercedes is developing technology that places small converters on each cell unit so the high-voltage system always receives 800 V, regardless of the battery's state of charge (SOC). With current designs, system voltage falls as SOC drops; with the new approach, the traction inverter always gets an 800 V input and no longer has to be designed for a varying input voltage.",
+    "note": "Conventional: V_pack = N_s·V_cell(SOC). For example, with 192 cells in series and V_cell = 3.0–4.2 V (assumed values), V_pack ≈ 576–806 V. The motor base speed scales as ω_base ∝ V_dc/λ (λ: flux linkage), so a roughly 30% drop in V_dc at low SOC lowers the field-weakening onset speed by about the same amount and cuts high-speed power. Holding V_dc constant makes the torque-speed envelope independent of SOC. The trade-off is added converter loss (η<1), cost and volume per cell; the article gives no figures, so this needs confirmation."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/04/mercedes-power-converter-decouples-high-voltage-supply-from-battery-state/"
     }
    ]
   }
