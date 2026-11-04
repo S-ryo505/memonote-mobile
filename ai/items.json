@@ -1,6 +1,128 @@
 {
-  "updated": "2026-11-03T09:05:00+09:00",
+  "updated": "2026-11-04T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-11-04-openai-astra-hardware-engineering",
+      "date": "2026-11-04",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "仕事で使える",
+        "エージェント",
+        "コーディング",
+        "モデル"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "OpenAI、GPT-6 AstraとCodexでCAD・基板設計・シミュレーションを支援する事例を公開　社内でハード機器を1週間未満で設計",
+        "summary": "OpenAIのハードウェアチームは、Codexと会話するための機器をGPT-6 Astraで筐体・回路基板・ファームウェアまで設計し、1週間未満で仕上げたと説明した。製造公差を考慮しきれず、量産前に複数回の手直しが必要だった。3D部品の再構成や基板の接続判定を問うBenchCAD 2.0では、GPT-6 Astra（最高推論設定）が0.594、より新しい社内モデルが0.875で、社内ハード部門のトークン利用量は2月から23倍に増えたという。",
+        "note": "仕事での使いどころ：CADモデル、製造図面、シミュレーションの下準備など、設計の初期案づくりや検討の叩き台に使える可能性がある。注意点：数値はOpenAI自身の発表（自社ベンチマーク）で、第三者の検証はない。公差を外した例が示されている通り、出力は必ず設計者が図面・公差・規格を確認する前提で使うこと。社内モデルの公開時期は記事に記載なし（要確認）。"
+      },
+      "en": {
+        "title": "OpenAI shows GPT-6 Astra and Codex helping with CAD, PCB design and simulation; its own team designed a hardware device in under a week",
+        "summary": "OpenAI's hardware team says it used GPT-6 Astra to design a device for talking to Codex, from the enclosure and circuit board to the firmware, in under a week. The model did not always account for manufacturing tolerances, so several revision rounds were needed before production. On the BenchCAD 2.0 benchmark, which tests 3D part reconstruction and PCB connection identification, GPT-6 Astra at its highest reasoning level scored 0.594 and a newer internal model scored 0.875; token use by its hardware teams has grown 23x since February.",
+        "note": "How to use it at work: it may help with first drafts of CAD models, manufacturing drawings and simulation setup. Caveats: the figures come from OpenAI itself on its own benchmark, with no independent verification. As the tolerance issue shows, engineers must check drawings, tolerances and standards themselves. No release date for the internal model is given (needs checking)."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/"
+        },
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-03-claude-api-message-threads",
+      "date": "2026-11-03",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "advanced",
+      "tags": [
+        "エージェント",
+        "コーディング"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Anthropic、Messages APIに「Message Threads」を追加　長い会話で最初の応答までの時間を約35%短縮",
+        "summary": "AnthropicはClaudeのMessages API向けに「Message Threads」を公開した。毎回会話全体を送り直す代わりに、前回からの差分だけを送る方式になる。Anthropicによると、50万〜100万トークンのリクエストで最初のトークンが返るまでの時間が約35%短くなる。",
+        "note": "仕事での使いどころ：社内でClaude APIを使った長時間のエージェントやチャットボットを作っている場合、応答待ちの短縮に使える。注意点：効果の数値はAnthropic発表で、50万トークン未満の会話での効果や料金への影響は記事に記載がなく要確認。ChatGPTやClaudeの画面で使う一般利用者には直接関係しない。"
+      },
+      "en": {
+        "title": "Anthropic adds Message Threads to its Messages API, cutting time to first token by about 35% in long conversations",
+        "summary": "Anthropic released Message Threads for Claude's Messages API. Instead of resending the whole conversation every turn, clients send only what has changed since the last message. Anthropic says time to first token drops by about 35% for requests between 500,000 and one million tokens.",
+        "note": "How to use it at work: if your team builds long-running agents or chatbots on the Claude API, this can shorten response wait times. Caveats: the figure comes from Anthropic; the effect on conversations under 500,000 tokens and any pricing impact are not stated (needs checking). It does not directly affect people using the Claude or ChatGPT apps."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/anthropics-message-threads-cut-time-to-first-token-by-35-percent-for-long-conversations/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-04-gemini-slides-bulk-edit",
+      "date": "2026-11-04",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える",
+        "資料作成",
+        "料金"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Googleスライドの Gemini、プレゼン全体を一括で編集する機能を追加　12月1日以降は利用上限を適用",
+        "summary": "Googleは10月30日、Googleスライド内のGeminiでプレゼンテーション全体をまとめて編集する機能を発表した。前日の10月29日にはGeminiでファイルの生成・プレビュー・編集を行う機能も発表している。複数スライドの資料をGeminiで作る際の利用上限は12月1日までは緩和され、それ以降はユーザーごとの上限がかかる予定。",
+        "note": "仕事での使いどころ：複数ページの体裁統一や、全スライドの言い回し修正など「作った後の手直し」をまとめて頼む用途に向く。注意点：12月1日以降の具体的な上限回数や、どの契約プランで使えるかは記事に記載がなく要確認。社内でGoogle Workspaceを使っていない場合は対象外。"
+      },
+      "en": {
+        "title": "Gemini in Google Slides can now edit an entire presentation at once; per-user limits apply after December 1",
+        "summary": "On October 30, Google announced a feature that lets Gemini in Google Slides edit a whole presentation in one go. A day earlier, on October 29, it announced that Gemini can generate, preview and edit files. Usage limits for creating multi-slide presentations with Gemini are relaxed until December 1, after which per-user limits will apply.",
+        "note": "How to use it at work: useful for bulk clean-up after a first draft, such as unifying formatting or rewording across all slides. Caveats: the exact limits after December 1 and which plans include the feature are not stated (needs checking). Not relevant if your company does not use Google Workspace."
+      },
+      "src": [
+        {
+          "name": "ITmedia",
+          "url": "https://kn.itmedia.co.jp/kn/article/2611/04/2000002816/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-03-openai-bug-bounty-172k",
+      "date": "2026-11-03",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "intermediate",
+      "tags": [
+        "セキュリティ"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "OpenAI、脆弱性報奨金を4倍に引き上げ　ChatGPT・Codexの重大な脆弱性で最大3万ドル、上乗せ込みで約17.2万ドル",
+        "summary": "OpenAIはバグ報奨金を4倍に引き上げ、ChatGPTやCodexなど主要製品の重大な脆弱性に対して外部研究者に最大3万ドルを支払う。特に優れた発見は最大10万ドルで、品質・継続・キャンペーンの加算を含めると合計約17.2万ドルになる。直近30日に報告した人には新旧の差額をさかのぼって支払い、前回の社内セキュリティ強化期間では製品エンジニアの25%が脆弱性探しに参加したという。",
+        "note": "仕事での使いどころ：ChatGPTやCodexを業務導入している部署は、OpenAIが製品の脆弱性対策に人員と予算を増やしている材料として、セキュリティ審査の説明に使える。注意点：報奨金の増額は脆弱性が見つかっていることの裏返しでもあり、個別の脆弱性内容は記事に記載がない。自社側の設定（データ共有・権限）の見直しは別途必要。"
+      },
+      "en": {
+        "title": "OpenAI quadruples bug bounty payouts: up to $30,000 for critical ChatGPT and Codex flaws, about $172,000 with bonuses",
+        "summary": "OpenAI has quadrupled its bug bounty payouts, now paying outside researchers up to $30,000 for critical vulnerabilities in core products like ChatGPT and Codex. Exceptional findings can earn up to $100,000, and with quality, loyalty and campaign bonuses the total can reach about $172,000. Anyone who reported a flaw in the last 30 days will receive the difference retroactively, and OpenAI says 25% of its product engineers took part in vulnerability hunting during its last internal security sprint.",
+        "note": "How to use it at work: teams deploying ChatGPT or Codex can cite this in security reviews as evidence that OpenAI is investing more people and money in product security. Caveats: higher bounties also reflect that vulnerabilities exist, and no specific flaws are described. You still need to review your own settings, such as data sharing and permissions."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/bug-hunters-can-now-earn-up-to-172000-from-openai-as-company-ramps-up-security/"
+        }
+      ]
+    },
     {
       "id": "2026-11-03-claude-code-game-clone-rule",
       "date": "2026-11-03",
