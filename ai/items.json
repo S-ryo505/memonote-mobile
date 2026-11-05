@@ -1,6 +1,131 @@
 {
-  "updated": "2026-11-04T09:05:00+09:00",
+  "updated": "2026-11-05T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-11-05-chatgpt-images-26-gif",
+      "date": "2026-11-05",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "仕事で使える",
+        "画像・動画",
+        "資料作成",
+        "モデル"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "ChatGPT、新画像モデル「Images 2.6」でアニメーションGIFを作成可能に　全ユーザーに順次提供",
+        "summary": "OpenAIはChatGPTに新しい画像モデル「Images 2.6」を導入し、文章の指示や写真からアニメーションGIFを作れるようにした。再生速度やコマ単位の修正、共有ができ、画像生成全体の速度も上がるとしている。Web・デスクトップ・モバイルのChatGPTとCodexの全ユーザーに順次提供され、API向けには高速の「GPT-Image-2.6 Flare」と高品質の「Sunburst」が出る。",
+        "note": "仕事での使いどころ：操作手順や部品の動き、工程の流れを短いGIFにして、社内説明資料やマニュアルに入れる用途。注意点：生成物の正確さ（寸法・動作の正しさ）は保証されないため、技術説明に使う場合は必ず内容を確認すること。社外公開時は生成AI画像の扱いに関する社内規程を要確認。API料金は記事に記載なし。"
+      },
+      "en": {
+        "title": "ChatGPT can now make animated GIFs with the new Images 2.6 model, rolling out to all users",
+        "summary": "OpenAI has added a new image model, Images 2.6, to ChatGPT, letting users create animated GIFs from text prompts or photos. Users can adjust playback speed, edit individual frames and share the result, and OpenAI says image generation is faster overall. It is rolling out to all ChatGPT and Codex users on web, desktop and mobile, and the API gets two variants: GPT-Image-2.6 Flare for speed and Sunburst for higher quality.",
+        "note": "How to use it at work: turn operating steps, part movements or process flows into short GIFs for internal slides and manuals. Caution: accuracy (dimensions, correct motion) is not guaranteed, so check the content before using it in technical explanations. Check your company rules on AI-generated images before publishing externally. API pricing is not stated in the articles."
+      },
+      "src": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/chatgpt-can-now-turn-text-prompts-and-photos-into-animated-gifs-with-openais-images-2-6-model/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-04-github-copilot-fusion-ga",
+      "date": "2026-11-04",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "仕事で使える",
+        "コーディング",
+        "エージェント",
+        "モデル"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "GitHub、「Copilot Fusion」を正式リリース　タスクに応じてAIモデルの組み合わせを自動で選択",
+        "summary": "GitHubは10月28〜29日の年次イベント「GitHub Universe 2026」で、Copilot Fusionの正式リリースを発表した。タスクに合わせて3つの処理パターンから1つを選び、その1つは、あるモデルが作った案を別系統のモデルがレビューし、指摘を受けて元のモデルが1回だけ修正する方式。パブリックプレビューとして、手元にインストールしたMAI Code 1.1 FlashやQwen3.8 Flash Nextで実行する選択肢もある。",
+        "note": "仕事での使いどころ：社内ツールや解析スクリプトの作成で、別モデルによる相互レビューを自動で挟める。ローカルモデルの選択肢は、コードを社外に出したくない案件の検討材料になる。注意点：料金や対象プラン、残り2つのパターンの詳細は記事の抜粋に記載がなく要確認。ローカル実行はプレビュー段階。"
+      },
+      "en": {
+        "title": "GitHub makes Copilot Fusion generally available, automatically choosing how to combine AI models for each task",
+        "summary": "At its annual GitHub Universe 2026 event on October 28-29, GitHub announced the general release of Copilot Fusion. It picks one of three processing patterns depending on the task; in one of them, one model drafts a solution, a model from a different family reviews it independently, and the first model revises once based on the feedback. As a public preview, users can also run tasks on locally installed MAI Code 1.1 Flash or Qwen3.8 Flash Next models.",
+        "note": "How to use it at work: when writing internal tools or analysis scripts, it can automatically add a cross-review by a different model. The local-model option is worth considering for projects where code must not leave the company. Caution: pricing, eligible plans and the details of the other two patterns are not in the excerpts, so check them. Local execution is still in preview."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002869/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-04-claude-plan-rename-ultra",
+      "date": "2026-11-04",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "料金",
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Claude、有料プラン名を「Max」「Ultra」に変更　価格は月110ドル・220ドルで据え置き、「容量半減」の声は公式が否定",
+        "summary": "Anthropicは10月30日、Claudeのプラン名「Max 5x」を「Max」、「Max 20x」を「Ultra」に変更した。価格は月110ドルと220ドルのままで、Ultraは5時間ごとの利用制限がなくなり「Proの10倍の週次制限」だけになった。「20倍から10倍に減った」との指摘に対し、同社のプロダクト責任者は、旧名の20倍は5時間制限の倍率で、週次制限は以前からProの10倍だったと説明した。",
+        "note": "仕事での使いどころ：部内でClaudeの上位プランを契約・申請する際、新しいプラン名と制限の数え方（週次）で見積もり直す。注意点：実際の利用可能量は倍率表記だけでは判断できないため、ヘビーユーザーは週次制限に当たる頻度を確認すること。法人向けプランへの影響は記事に記載なし（要確認）。"
+      },
+      "en": {
+        "title": "Claude renames paid plans to Max and Ultra; prices stay at $110 and $220 a month, and Anthropic denies claims that capacity was halved",
+        "summary": "On October 30, Anthropic renamed Claude's Max 5x plan to Max and Max 20x to Ultra. Prices are unchanged at $110 and $220 per month, and Ultra no longer has a five-hour usage limit, leaving only a weekly limit of 10x Pro. Responding to claims that usage had dropped from 20x to 10x, the company's head of product explained that the old 20x referred to the five-hour limit, and the weekly limit had always been 10x Pro.",
+        "note": "How to use it at work: when buying or requesting a higher Claude plan for your team, re-estimate using the new names and the weekly limit. Caution: the multiplier alone does not tell you how much you can actually use, so heavy users should check how often they hit the weekly cap. Any impact on business plans is not covered in the article (to be confirmed)."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2611/04/2000002862/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-05-claude-watermark-delay-expand",
+      "date": "2026-11-05",
+      "kind": "flash",
+      "cat": "reg",
+      "level": "intermediate",
+      "tags": [
+        "規制",
+        "セキュリティ",
+        "モデル"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Claudeのテキスト透かし、Opus 4.6は11月16日に延期　Opus 4.5・Sonnet 4.5・Haiku 4.5も同日から対象に",
+        "summary": "Anthropicは、EU AI法の12月期限に向けたテキスト透かしの対象を広げ、11月16日からClaude Opus 4.6、Opus 4.5、Sonnet 4.5、Haiku 4.5に適用するとした。Opus 4.6は当初11月3日適用の予定で、延期理由は示されていない。Opus 4.6やSonnet 4.6など旧モデルでは、API利用者がサンプリング設定を1つ変えるだけで透かしを外せ、同社の対応は規約順守の警告にとどまるとThe Decoderは報じている。",
+        "note": "仕事での使いどころ：EU向け製品・文書にClaude出力を使う部署は、使っているモデルごとの適用日を一覧にしておくと、AI生成物の表示義務の説明がしやすい。注意点：Mythos 5、Opus 4.7、Sonnet 4.6が11月3日に予定通り適用されたかは記事の推測で要確認。透かしを意図的に外す設定は社内のコンプライアンス違反になり得る。"
+      },
+      "en": {
+        "title": "Claude text watermarking for Opus 4.6 delayed to November 16; Opus 4.5, Sonnet 4.5 and Haiku 4.5 added on the same date",
+        "summary": "Anthropic is widening its text watermarking ahead of the EU AI Act's December deadline, applying it to Claude Opus 4.6, Opus 4.5, Sonnet 4.5 and Haiku 4.5 from November 16. Opus 4.6 was originally due on November 3, and no reason for the delay was given. The Decoder reports that on older models such as Opus 4.6 and Sonnet 4.6, API users can remove the watermark by changing a single sampling parameter, and Anthropic's only response is a compliance warning.",
+        "note": "How to use it at work: teams using Claude output in products or documents for the EU should list the start date for each model they use, which makes it easier to explain how they meet AI-labeling duties. Caution: whether Mythos 5, Opus 4.7 and Sonnet 4.6 were watermarked on November 3 as planned is the article's inference and needs confirmation. Deliberately disabling the watermark may breach company compliance rules."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models/"
+        }
+      ]
+    },
     {
       "id": "2026-11-04-openai-astra-hardware-engineering",
       "date": "2026-11-04",
