@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T09:00:00+09:00",
+ "updated": "2026-11-06T08:57:33+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -7378,6 +7378,99 @@
     {
      "name": "electrive",
      "url": "https://www.electrive.com/2026/11/04/mercedes-power-converter-decouples-high-voltage-supply-from-battery-state/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-eu-envi-co2-875",
+   "date": "2026-11-05",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "PT",
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "欧州議会の環境委員会もCO2規制緩和に賛成：2035年の削減目標を2021年比100%→87.5%に、本会議の採決は12月見込み",
+    "summary": "欧州議会の環境委員会は11月4日、「Auto Package」の乗用車・小型商用車CO2規制案について、2035年の削減目標を2021年基準比100%から87.5%へ下げる案に賛成した。適格燃料のみで走る車両を認める提案にも賛成しており、これで産業・運輸委員会に続き主要3委員会が緩和を支持した。欧州議会全体の採決は12月に行われる見込みで、業界団体ACEAは追加の柔軟性を一定程度評価している。",
+    "note": "フリート平均の目標値：E_2035 = E_ref2021 × (1 − r)。r = 1.0 なら E_2035 = 0 g/km（実質BEV/FCEVのみ）、r = 0.875 なら E_2035 = 0.125·E_ref。E_ref ≈ 93.6 g/km（WLTP、2021年基準の参考値。記事になく要確認）とすると E_2035 ≈ 11.7 g/km。BEV比率 x、内燃・PHEV車の平均 E_ice とすると (1−x)·E_ice ≤ 11.7 なので、E_ice = 100 g/km（仮定値）なら x ≥ 約88%、残り約12%を内燃系に充てられる計算。クレジット・適格燃料の扱いで実効値は変わる（推測）。"
+   },
+   "en": {
+    "title": "European Parliament's Environment Committee also backs easing CO2 rules: 2035 reduction target cut from 100% to 87.5% vs. 2021, plenary vote expected in December",
+    "summary": "On 4 November, the European Parliament's Environment Committee voted for the Auto Package's CO2 draft for cars and vans, lowering the 2035 reduction target from 100% to 87.5% relative to the 2021 baseline. It also backed a proposal to allow vehicles running exclusively on eligible fuels, meaning three key committees, after Industry and Transport, now support the relaxation. The full Parliament is expected to vote in December, and the industry body ACEA gave the added flexibility a cautious welcome.",
+    "note": "Fleet-average target: E_2035 = E_ref2021 × (1 − r). With r = 1.0, E_2035 = 0 g/km (effectively BEV/FCEV only); with r = 0.875, E_2035 = 0.125·E_ref. Taking E_ref ≈ 93.6 g/km (WLTP 2021 reference; not in the article, needs confirmation) gives E_2035 ≈ 11.7 g/km. With BEV share x and combustion/PHEV average E_ice, (1−x)·E_ice ≤ 11.7, so for E_ice = 100 g/km (assumed value) x ≥ about 88%, leaving roughly 12% for combustion vehicles. Credits and eligible-fuel rules would shift the effective figure (speculation)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/05/eu-parliament-environment-committee-votes-to-relax-co2-rules/"
+    },
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/new-cars/car-makers-win-reprieve-eu-eases-2035-emissions-rules"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-toyota-one-platform-a-c",
+   "date": "2026-11-05",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "戦略",
+    "PT",
+    "シャシー"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "トヨタ、次世代のA〜Cセグメント車を1つの「マルチパスウェイプラットフォーム」に統合へ：宮崎副社長が決算会見で表明",
+    "summary": "トヨタは11月5日の2027年3月期第2四半期決算発表で、宮崎洋一副社長が次世代のA〜Cセグメント車を1つのプラットフォームに刷新すると説明した。このプラットフォームはBEV・HEV・PHEV・ICE（カーボンニュートラル燃料を含む）を共通で成立させるもので、次世代カローラ（カローラコンセプト）が代表車種とされる。現行のTNGA GA-A／GA-B／GA-Cを1本化する形で、ヤリス、ヤリスクロス、プリウスなども対象になると報じられている。",
+    "note": "1つの骨格でA〜Cセグメントを賄うには、ホイールベース L・トレッド t の可変域が広くなる。定常円旋回のステア特性 δ = L/R + K_us·a_y（K_us = W_f/C_f − W_r/C_r、W：軸荷重、C：コーナリングパワー）で、パワートレイン別（BEVは床下電池、HEVはフロント重量増）に W_f/W_r が変わるため、同一サスペンション形式でも K_us を揃えるにはブッシュ・スタビ・タイヤでの調整幅が必要になる（推測）。具体的なホイールベース範囲やサスペンション形式は記事になく要確認。"
+   },
+   "en": {
+    "title": "Toyota to consolidate next-generation A- to C-segment cars on a single 'multi-pathway platform', says Vice President Miyazaki at earnings briefing",
+    "summary": "At its fiscal 2027 second-quarter results on 5 November, Toyota Vice President Yoichi Miyazaki said next-generation A- to C-segment vehicles will move to a single platform. The platform is designed to support BEV, HEV, PHEV and ICE (including carbon-neutral fuels) on a common base, with the next-generation Corolla (Corolla Concept) as the lead model. It effectively merges the current TNGA GA-A, GA-B and GA-C, and is reported to cover models such as the Yaris, Yaris Cross and Prius.",
+    "note": "Covering A- to C-segments with one architecture requires a wide range of wheelbase L and track t. In steady-state cornering, δ = L/R + K_us·a_y (K_us = W_f/C_f − W_r/C_r; W: axle load, C: cornering stiffness). Because W_f/W_r changes by powertrain (underfloor battery for BEV, heavier front for HEV), matching K_us on the same suspension layout needs tuning room in bushings, anti-roll bars and tires (speculation). Wheelbase range and suspension type are not in the article and need confirmation."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2153956.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-gm-patent-traction-steer-camber",
+   "date": "2026-11-05",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "US",
+   "tags": [
+    "シャシー",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "GM、路面を予測してキャンバー角と車高を事前に変える「トラクションステア」対策の米国特許を取得（US 12,780,181 B1）",
+    "summary": "GMの米国特許US 12,780,181 B1が11月3日に公開された。左右タイヤのグリップ差で加速・制動時に車両が意図せず曲がる現象をGMは「トラクションステア」と呼び、その対策としてアクティブサスペンションでキャンバー角と車高を変える技術を記載している。システムは前方の路面が安定性を損なうかをリアルタイムで予測し、グリップを失う前に調整する構想と報じられている。",
+    "note": "μスプリット路での駆動時、左右の駆動力差 ΔF_x = F_xL − F_xR がヨーモーメント M_z ≈ ΔF_x·t/2（t：トレッド）を生み、キングピンのスクラブ半径 r_s があればステアリング軸まわりにも T_s ≈ ΔF_x·r_s が働く。キャンバー角 γ を付けるとキャンバースラスト F_yγ ≈ C_γ·γ が発生し、車高変更は輪荷重 F_z の配分（左右ロール剛性配分）を変えて各輪の最大駆動力 μ·F_z を変える。これらで M_z を打ち消す方向に横力・荷重を作るのが狙いと考えられる（推測）。特許は量産採用を意味しない。具体的な制御則や作動量は記事になく要確認。"
+   },
+   "en": {
+    "title": "GM granted US patent (US 12,780,181 B1) for countering 'traction steer' by predicting the road and pre-adjusting camber and ride height",
+    "summary": "GM's US patent 12,780,181 B1 was published on 3 November. It targets what GM calls 'traction steer', where grip differences between the left and right tires make the vehicle pull or turn unexpectedly under acceleration or braking, by using active suspension to change camber and ride height. The system is reported to predict in real time whether the road surface ahead will upset stability and to adjust before traction is lost.",
+    "note": "On a split-μ surface under drive, the left-right force difference ΔF_x = F_xL − F_xR produces a yaw moment M_z ≈ ΔF_x·t/2 (t: track), and with a kingpin scrub radius r_s it also produces a steering-axis torque T_s ≈ ΔF_x·r_s. Adding camber γ generates camber thrust F_yγ ≈ C_γ·γ, while ride-height changes shift wheel loads F_z (roll-stiffness distribution) and thus each wheel's maximum traction μ·F_z. The likely aim is to create lateral force and load shifts that cancel M_z (speculation). A patent does not mean production use; the control law and actuation ranges are not in the article and need confirmation."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2308479/gm-patent-active-suspension-camber-ride-height/"
     }
    ]
   }
