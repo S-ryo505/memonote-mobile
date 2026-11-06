@@ -1,6 +1,142 @@
 {
-  "updated": "2026-11-05T09:05:00+09:00",
+  "updated": "2026-11-06T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-11-06-openai-gpt6-cyber",
+      "date": "2026-11-06",
+      "kind": "flash",
+      "cat": "model",
+      "level": "advanced",
+      "tags": [
+        "セキュリティ",
+        "モデル",
+        "エージェント"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "OpenAI、セキュリティ特化の「GPT-6 Cyber」を公開　審査済みの防御側ユーザー限定で提供",
+        "summary": "OpenAIは11月5日（米国時間）、汎用モデル「GPT-6 Astra」を土台に脆弱性探索・エクスプロイト作成・修正提案の能力を強化した「GPT-6 Cyber」を発表した。提供は防御者向けプログラム「Daybreak Red」の承認ユーザーに限られる。同社によると、既知脆弱性の悪用テスト「ExploitGym」で48.5％（前世代GPT-5.6 Cyberは32.1％）、Firefoxで未知の高深刻度脆弱性81件を発見、Linuxカーネルでは948件で動くエクスプロイトを作成し、テスト中の想定範囲外の行動は約5％から1％未満に減ったという。",
+        "note": "仕事での使いどころ：一般社員が直接使うものではないが、車載ソフトや社内システムの脆弱性診断をAIで行う流れが加速している指標になる。セキュリティ部門・委託先の診断体制の見直し材料。注意点：数値はOpenAIの自社発表で第三者検証は要確認。同等の能力が攻撃側に渡るリスクもあるため、パッチ適用の速さがより重要になる（推測）。"
+      },
+      "en": {
+        "title": "OpenAI releases GPT-6 Cyber, a security-focused model limited to vetted defenders",
+        "summary": "On November 5 (US time), OpenAI announced GPT-6 Cyber, built on its general-purpose GPT-6 Astra model with stronger abilities to find vulnerabilities, write exploits and suggest fixes. Access is limited to approved users of its Daybreak Red program for defenders. OpenAI says it scored 48.5% on the ExploitGym benchmark (versus 32.1% for GPT-5.6 Cyber), found 81 unknown high-severity bugs in Firefox, built working exploits for 948 Linux kernel vulnerabilities, and went out of bounds in testing less than 1% of the time, down from about 5%.",
+        "note": "How to use it at work: regular employees won't use it directly, but it signals that AI-driven vulnerability testing of in-vehicle software and internal systems is speeding up, which is worth raising with your security team or vendors. Caution: the figures are OpenAI's own claims and need independent verification. Similar capabilities could reach attackers, so fast patching matters even more (speculation)."
+      },
+      "src": [
+        {
+          "name": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002931/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/openais-gpt-6-cyber-can-both-break-into-systems-and-propose-how-to-fix-them/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-06-gemini-omni-12-flash",
+      "date": "2026-11-06",
+      "kind": "flash",
+      "cat": "model",
+      "level": "intermediate",
+      "tags": [
+        "画像・動画",
+        "料金",
+        "モデル",
+        "資料作成"
+      ],
+      "prio": 2,
+      "conf": "primary",
+      "ja": {
+        "title": "Google「Gemini Omni 1.2 Flash」一般提供　動画は最長15秒、料金は30％下げ720pで1秒0.07ドル",
+        "summary": "Googleは動画生成モデル「Gemini Omni 1.2 Flash」を一般提供した。生成できる長さは3〜15秒（従来は最長10秒）になり、会話で部分修正を重ねる編集にも対応した。料金は前版Omni 1.1から30％下がり720pで1秒あたり0.07ドルで、360p/720pで下書きして最終版だけ1080pや4Kにアップスケールする使い方も示されている。Gemini API、AI Studio、Google Cloud、Google Vids、Gemini アプリ（AI Ultra契約者）などで順次使える。",
+        "note": "仕事での使いどころ：Google Vidsでの社内説明動画や研修動画の短いカット作成。15秒の720p動画なら単純計算で約1.05ドル。注意点：アップスケール時の料金は記事に記載なし（要確認）。社内でGoogle Workspaceの生成AI機能が許可されているか、生成動画の社外利用ルールを確認すること。"
+      },
+      "en": {
+        "title": "Google makes Gemini Omni 1.2 Flash generally available: clips up to 15 seconds, 30% cheaper at $0.07 per second for 720p",
+        "summary": "Google has made its video-generation model Gemini Omni 1.2 Flash generally available. Clips can now run from 3 to 15 seconds (up from a 10-second maximum), and users can refine them through multi-turn conversational edits. Pricing is 30% lower than Omni 1.1 at $0.07 per second for 720p, and Google suggests drafting at 360p or 720p and upscaling only the final version to 1080p or 4K. It is rolling out via the Gemini API, AI Studio, Google Cloud, Google Vids and the Gemini app for AI Ultra subscribers.",
+        "note": "How to use it at work: short clips for internal explainer or training videos in Google Vids. A 15-second 720p clip works out to roughly $1.05. Caution: upscaling costs are not stated (needs checking). Confirm whether your company allows Google Workspace AI features and what the rules are for using generated video externally."
+      },
+      "src": [
+        {
+          "name": "Google Blog",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/googles-gemini-omni-1-2-flash-stretches-ai-video-clips-to-15-seconds-and-cuts-pricing-by-30-percent/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-06-claude-personal-finance",
+      "date": "2026-11-06",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "データ分析",
+        "セキュリティ"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Claudeに「Personal Finance」機能　Plaid経由で銀行・カード口座をつなぎ支出を分析",
+        "summary": "Anthropicは、Plaidを通じて銀行口座やカード口座をClaudeに接続し、家計について質問できる「Personal Finance」機能を発表した。「今月お金は何に使ったか」といった質問に支出の概要を返し、次の給料日までに残る支払い、旅行などの大きな出費が可能か、毎月いくら貯められるかにも答える。APRなどの用語説明や、過去1年に払った利息の計算も示すとしている。",
+        "note": "仕事での使いどころ：個人向け機能で業務利用の対象ではない。ただ、AIに外部口座データを直接つなぐ連携の例として、社内データ連携のリスク検討の参考になる。注意点：提供地域・対象プラン・料金は記事に記載なし（日本で使えるかは要確認）。会社アカウントで個人の金融口座を接続しないこと。"
+      },
+      "en": {
+        "title": "Claude gets a Personal Finance feature that connects bank and card accounts via Plaid",
+        "summary": "Anthropic has announced Personal Finance for Claude, which lets users connect bank and card accounts through Plaid and ask questions about their money. Asked something like \"where did my money go this month,\" it returns a spending overview, and it can also say which bills remain before the next payday, whether a big purchase such as a trip is affordable, and how much could be saved each month. It can explain terms like APR and calculate how much interest was paid over the past year.",
+        "note": "How to use it at work: it is a consumer feature, not meant for business use, but it is a useful example when assessing the risks of connecting AI directly to external account data. Caution: availability by region, eligible plans and pricing are not stated (check whether it is available in Japan). Do not connect personal financial accounts to a company account."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1027652/anthropic-claude-plaid-personal-finance"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-06-perplexity-teammates",
+      "date": "2026-11-06",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "エージェント",
+        "仕事で使える",
+        "料金"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Perplexity、常時稼働の業務エージェント「Teammates」を発表　月200ドルのMaxプランが必要",
+        "summary": "Perplexityは、ワークスペース内で複数の役割を担い24時間動き続ける業務向けAIエージェント「Teammates」を発表した。既存のPerplexityツールからプロジェクト・スキル・メモリーを引き継ぎ、端末上でエージェントを動かす「Perplexity Computer」とも連携する。OpenAIの「Dots」やAnthropicの「Claude Duet」と同種の機能だが、利用には月額200ドルのMaxプランの契約が必要。",
+        "note": "仕事での使いどころ：調べ物や定型レポートを常時エージェントに任せる構成の比較対象。注意点：月200ドル/人と高額で、具体的にできる作業や社内データとの接続範囲は記事からは不明（要確認）。常時動くエージェントに社内情報を渡す前に、情報システム部門の利用可否確認が必要。"
+      },
+      "en": {
+        "title": "Perplexity unveils Teammates, always-on work agents that require the $200/month Max plan",
+        "summary": "Perplexity has announced Teammates, work-focused AI agents that can take on multiple roles in a workspace and run 24/7. They carry over projects, skills and memory from existing Perplexity tools and integrate with Perplexity Computer, which can deploy agents on your device. The feature is similar to OpenAI's Dots and Anthropic's Claude Duet, but it requires a subscription to Perplexity's $200-per-month Max plan.",
+        "note": "How to use it at work: a point of comparison for setups where an agent handles research or routine reports around the clock. Caution: at $200 per user per month it is expensive, and the articles don't make clear exactly what tasks it can do or how far it connects to internal data (needs checking). Get IT approval before giving an always-on agent access to company information."
+      },
+      "src": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work"
+        }
+      ]
+    },
     {
       "id": "2026-11-05-chatgpt-images-26-gif",
       "date": "2026-11-05",
