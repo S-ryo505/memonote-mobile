@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T08:57:33+09:00",
+ "updated": "2026-11-07T09:51:52+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -7471,6 +7471,751 @@
     {
      "name": "Carscoops",
      "url": "https://www.carscoops.com/2308479/gm-patent-active-suspension-camber-ride-height/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-zf-high-revolution-drive",
+   "date": "2026-11-06",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "EU",
+   "tags": [
+    "PT"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "ZF、最高3万rpmの電動駆動「High Revolution Drive」を開発：減速比約18、ホイール端トルク3,500Nm、磁石使用量50%減が目標",
+    "summary": "ZFはモーター・インバーター・2段平行軸ギア（減速比約18:1）を一体化した3-in-1の電動駆動「High Revolution Drive」を開発した。最高出力200kW、ホイール端の最大トルク3,500Nmで、最高1万8,000rpmの同社「SELECT」駆動（同じ200kW）に比べ搭載スペースと重量がそれぞれ約25%小さい。磁石の使用量は50%削減を目指す。",
+    "note": "ホイール端トルク T_w = T_m·i·η より T_m ≈ 3,500/(18×0.97) ≈ 200 Nm（η=0.97は仮定値）。P = T·ω から、200 Nmで200 kWに達する回転は ω = 200,000/200 = 1,000 rad/s ≈ 9,550 rpm（基底回転数の推測値）、3万rpm時の軸トルクは200,000/3,142 ≈ 64 Nm。モーターのトルクはおおむね体積（ロータ径²×積厚）に比例するため、同じ出力を高回転・低トルクで出せば体積と磁石量を減らせる、というのが高回転化の狙い。3万rpm時の車輪回転は30,000/18 ≈ 1,667 rpmで、タイヤ半径0.35 m（仮定値）なら約220 km/h。量産時期・採用車種は記事に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "ZF develops 'High Revolution Drive' e-drive up to 30,000 rpm: ~18:1 ratio, 3,500 Nm at the wheel, targeting 50% less magnet material",
+    "summary": "ZF has developed the High Revolution Drive, a 3-in-1 unit that integrates the motor, inverter and a two-stage spur-gear transmission with a ratio of about 18:1. It delivers 200 kW peak power and 3,500 Nm peak torque at the wheel, and compared with ZF's SELECT drive of the same 200 kW (max 18,000 rpm) it needs about 25% less space and is about 25% lighter. ZF aims to cut magnet usage by 50%.",
+    "note": "From wheel torque T_w = T_m·i·η, T_m ≈ 3,500/(18×0.97) ≈ 200 Nm (η = 0.97 is an assumed value). From P = T·ω, 200 Nm reaches 200 kW at ω = 200,000/200 = 1,000 rad/s ≈ 9,550 rpm (estimated base speed); at 30,000 rpm the shaft torque is 200,000/3,142 ≈ 64 Nm. Motor torque roughly scales with active volume (rotor diameter² × stack length), so producing the same power at high speed and low torque shrinks the machine and its magnets. At 30,000 rpm the wheel turns at 30,000/18 ≈ 1,667 rpm, about 220 km/h with a 0.35 m tire radius (assumed). Production timing and applications are not stated (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/06/zf-develops-30000-rpm-electric-drive/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-gm-patent-camera-launch-control",
+   "date": "2026-11-06",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "US",
+   "tags": [
+    "制御",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "GM、ドラッグレースのスタートツリーをカメラで読み取り自動発進する米国特許（US 12,780,203）を取得",
+    "summary": "GMの米国特許12,780,203が11月3日に成立した。名称は「レース用車両のローンチコントロール協調の方法とシステム」で、2025年1月出願、2026年7月公開。カメラでProツリー／Sportsmanツリーの点灯パターンを認識し、ブレーキ解除・駆動トルク・スロットルのタイミングを制御する。特定の将来モデル名は記載されていない。",
+    "note": "Proツリーでは3つのアンバーが同時点灯し、0.4秒後にグリーンが点く。ドライバーの反応時間 t_r（一般に0.1〜0.3 s程度、要確認）を制御で置き換えると、スタートは「灯火認識→ブレーキ解除→トルク立上り」の遅れ t_cam + t_brake + t_torque で決まる。発進時はトラクション限界 F_x ≤ μ·F_zr（後輪荷重は加速時に m·a·h/L だけ増加）を超えないようトルクを整形する必要があり、これは既存のローンチコントロールの役割。レースでの使用が規則上許されるかは記事に記載なし（要確認）。特許は量産採用を意味しない。"
+   },
+   "en": {
+    "title": "GM granted US patent 12,780,203 for a camera that reads drag-strip start lights and launches the car automatically",
+    "summary": "GM's US Patent 12,780,203 was granted on November 3. Titled 'Methods and Systems for Coordinating Launch Control for Vehicles for Racing', it was filed in January 2025 and published in July 2026. A camera recognizes Pro Tree and Sportsman Tree light patterns and times brake release, drive torque and throttle. No future GM model is named.",
+    "note": "On a Pro Tree all three ambers light together and green follows 0.4 s later. If control replaces the driver's reaction time t_r (typically about 0.1–0.3 s, needs confirmation), the start is set by the chain delay t_cam + t_brake + t_torque from light recognition to brake release to torque build-up. Torque must still be shaped to stay within the traction limit F_x ≤ μ·F_zr (rear load rises by m·a·h/L under acceleration), which is the job of existing launch control. Whether racing rules allow it is not stated (needs confirmation). A patent does not mean production use."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/814671/gm-patents-camera-controlled-drag/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-astemo-eicma-spring-rate-in-wheel-motor",
+   "date": "2026-11-05",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "EU",
+   "tags": [
+    "シャシー",
+    "制御",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "アステモ、EICMA 2026で二輪向け「スプリングレート2段可変」サスとインホイールモーター（2030年投入目標）を展示",
+    "summary": "アステモは11月3日開幕のEICMA 2026（ミラノ）に出展し、スプリングを交換せずにサスペンション全体の実効ばね定数を2段階に切り替える機構を示した。前フォーク・リアショックの両方に使え、SHOWAの電子制御減衰「EERA」と組み合わせられ、BMW「R 1300 R」「R 1300 RS」に採用済み。電動系では2030年の市場投入を目指す二輪用インホイールモーターの試作を『Ninja e-1』に搭載して展示した。",
+    "note": "ばね上固有振動数 f = (1/2π)·√(k/m)、減衰比 ζ = c/(2√(k·m))。kだけを2段で切り替えると f は √k に比例して変わり、同じ減衰係数 c では ζ が 1/√k で変わるため、減衰（EERA）を同時に調整できる構成が意味を持つ。インホイールモーターはばね下質量を増やすため、路面入力に対するタイヤ接地荷重変動が大きくなる方向（一般論）。モーターの出力・質量は記事に記載なし（要確認）。四輪への展開は記事に記載なし。"
+   },
+   "en": {
+    "title": "Astemo shows two-stage variable spring rate suspension and a motorcycle in-wheel motor (targeting 2030) at EICMA 2026",
+    "summary": "At EICMA 2026 in Milan, which opened on November 3, Astemo showed a mechanism that switches the effective spring rate of the whole suspension between two stages without changing the spring. It works on both front forks and rear shocks, can be combined with SHOWA's EERA electronic damping, and is already used on the BMW R 1300 R and R 1300 RS. On the electric side, it displayed a prototype in-wheel motor for motorcycles, fitted to a Ninja e-1, aiming for market launch in 2030.",
+    "note": "Sprung natural frequency f = (1/2π)·√(k/m) and damping ratio ζ = c/(2√(k·m)). Switching only k changes f in proportion to √k and, at the same damping coefficient c, changes ζ by 1/√k, which is why pairing it with adjustable damping (EERA) matters. An in-wheel motor adds unsprung mass, which generally increases tire load fluctuation over road inputs. Motor output and mass are not given (needs confirmation). No application to cars is mentioned."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/05/418649.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-toyota-next-corolla-hybrid-100mpg",
+   "date": "2026-11-05",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "Global",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "rumor",
+   "ja": {
+    "title": "トヨタ次期カローラ、新1.5L直4ハイブリッドで実用燃費100mpg近くと報道：同一PFでHEV/PHEV/BEV/ICE、2030年までに投入",
+    "summary": "Autocarによると、13代目カローラは2030年までに投入され、HEV・PHEV・BEV・エンジン車を同じプラットフォームで用意する。新開発の1.5L直4（ターボ有無の両対応）を使う新ハイブリッドは日常使用で約100mpg、燃費15%改善とされる。Responseは、セダンとハッチバックをリフトバック1車型に統合する可能性、システム出力約136ps、BEVにデュアルモーターAWDが期待されるとの海外報道を紹介している。",
+    "note": "Autocarは英国媒体のため英ガロン基準と推測：1 mpg(UK) = 1.609344 km / 4.54609 L ≈ 0.354 km/L → 100 mpg ≈ 35.4 km/L（測定モードは記事に記載なし、要確認）。燃費（距離/燃料）15%改善は燃料消費率では 1 − 1/1.15 ≈ 13%減に相当。Responseの記事は海外報道の紹介と予想で、出力や燃費改善幅（10〜20%）は未確認情報。既報（10/29）の「新1.5L直4で燃費15%超改善」の続報で、車型統合とパワートレイン4種が新しい情報。"
+   },
+   "en": {
+    "title": "Next Toyota Corolla to near 100 mpg with new 1.5-litre four-cylinder hybrid, reports say: HEV/PHEV/BEV/ICE on one platform by 2030",
+    "summary": "According to Autocar, the 13th-generation Corolla will launch by 2030 with HEV, PHEV, BEV and combustion versions on the same platform. The new hybrid, based on a newly developed 1.5-litre four-cylinder that can run with or without a turbo, is said to return almost 100 mpg in daily use and improve fuel economy by 15%. Response cites overseas reports that the sedan and hatchback may merge into a single liftback body, with about 136 PS system output and a possible dual-motor AWD BEV.",
+    "note": "Autocar is a UK outlet, so imperial gallons are presumed: 1 mpg (UK) = 1.609344 km / 4.54609 L ≈ 0.354 km/L, so 100 mpg ≈ 35.4 km/L (test cycle not stated, needs confirmation). A 15% gain in fuel economy (distance/fuel) equals 1 − 1/1.15 ≈ 13% lower fuel consumption. The Response piece relays overseas reports and forecasts, so the output and the 10–20% gain are unconfirmed. This follows the 29 October item on the new 1.5L I4; the body consolidation and four powertrains are new."
+   },
+   "src": [
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/new-cars/radical-new-toyota-corolla-hybrid-set-nudge-100mpg"
+    },
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/04/418577.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-honda-avancier-honda-hybrid",
+   "date": "2026-11-06",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "Global",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ホンダ、次世代ハイブリッド「Honda Hybrid」搭載の新型「アヴァンシア」を近日発売と予告",
+    "summary": "ホンダは11月6日、公式SNSで次世代ハイブリッド「Honda Hybrid」を積む新型「AVANCIER（アヴァンシア）」を近日発売すると予告した。Honda Hybridは「e:HEV」のエンジン・ドライブユニットなどの部品と制御を進化させたもので、2027年から世界で順次投入し、2029年度までに北米をはじめ15車種に搭載する計画。",
+    "note": "e:HEVは低中速を発電用エンジン＋走行モーターのシリーズ走行、高速巡航をエンジン直結（クラッチ締結）で走る方式。直結時はモーター→発電機の二重変換損失（効率 η_gen·η_inv·η_mot）を避けられる。Honda Hybridでの具体的な改良内容（熱効率、モーター出力、AWD構成など）は記事に記載なし（要確認）。発売地域・日付も未記載。"
+   },
+   "en": {
+    "title": "Honda teases the new Avancier, coming soon with its next-generation 'Honda Hybrid' system",
+    "summary": "On November 6, Honda announced on its official social media that the new AVANCIER, fitted with the next-generation 'Honda Hybrid' system, will go on sale soon. Honda Hybrid evolves the engine, drive unit and control technology of e:HEV; Honda plans to roll it out globally from 2027 and fit it to 15 models, starting with North America, by fiscal 2029.",
+    "note": "e:HEV runs as a series hybrid (engine drives a generator, motor drives the wheels) at low to medium speed and uses a direct engine drive (clutch engaged) at highway cruise. Direct drive avoids the double conversion loss (efficiency η_gen·η_inv·η_mot). Specific improvements in Honda Hybrid (thermal efficiency, motor output, AWD layout, etc.) are not given (needs confirmation), nor are the launch market and date."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2154299.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-toyota-2027-rav4-phev-nacs-woodland",
+   "date": "2026-11-06",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "PT",
+    "シャシー"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "米トヨタ2027年型RAV4：PHEV全車にNACSポートとDC急速充電、EV航続最大52マイル、「Woodland」は車高アップのサス",
+    "summary": "トヨタは11月5日に2027年型RAV4の価格と仕様を公表した。PHEV全グレードに北米充電規格（NACS）ポートとDC急速充電を標準装備し、EV航続は最大52マイル。HEVとPHEVで、FFまたはAWDを選べる。「Woodland」グレードは車高を上げ全地形向けのサスペンション部品を採用。HEVの価格は配送料1,595ドル込みで33,895ドルからで、前年より400ドル高い。",
+    "note": "52 mi × 1.609 ≈ 83.7 km。車高を上げると重心高 h が上がり、旋回時の左右荷重移動 ΔF_z = m·a_y·h/t（t：トレッド）が増えるため、同じロール剛性ではロール角・内輪荷重抜けが大きくなる方向（一般論）。Woodlandの車高アップ量・ばね/ダンパー仕様、DC充電の最大kWは記事要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "2027 Toyota RAV4 in the US: NACS port and DC fast charging on every PHEV, up to 52 miles EV range, raised suspension for Woodland",
+    "summary": "Toyota released 2027 RAV4 pricing and specifications on November 5. Every PHEV trim gets a factory North American Charging Standard (NACS) port and DC fast charging, with up to 52 miles of EV range. HEV and PHEV versions are offered with front- or all-wheel drive. The Woodland trim gets a higher ride height and all-terrain suspension hardware. The hybrid starts at $33,895 including a $1,595 destination charge, $400 more than last year.",
+    "note": "52 mi × 1.609 ≈ 83.7 km. Raising ride height raises the centre of gravity h, which increases lateral load transfer in cornering ΔF_z = m·a_y·h/t (t: track), so with the same roll stiffness roll angle and inner-wheel unloading tend to grow (general principle). The Woodland lift amount, spring/damper specs and peak DC charging power are not given in the summaries (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/05/toyota-updates-rav4-phev-nacs-port-52-miles-ev-range/"
+    },
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/814660/2027-toyota-rav4-woodland-pricing/"
+    },
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/814708/2027-toyota-rav4-nacs-port-fast-charging/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-hyundai-alabama-engine-plant-hybrid-erev",
+   "date": "2026-11-06",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ヒョンデ、アラバマ工場に約4.5億ドル投資：ハイブリッドとレンジエクステンダー車の生産能力を拡大",
+    "summary": "ヒョンデはアラバマ州モンゴメリー工場に約4億5,000万ドルを投じ、パワートレイン生産能力を広げてハイブリッド車とレンジエクステンダー（EREV）車の生産を増やす。発表は10月28日。2027年前半に販売店へ届くEREVは航続600マイル超が見込まれる。同社は2026年のCEOインベスターデイで、北米でハイブリッドが販売の半分を占めるため2030年までに10車種超のハイブリッドを用意すると説明した。",
+    "note": "600 mi ≈ 966 km。EREVの総航続は概算で R ≈ E_batt/e_EV + V_fuel·η_gen·LHV/e_EV（e_EV：電費 kWh/km、η_gen：燃料→電力の効率）。電池容量・タンク容量・発電効率は記事に記載なし。記事中の対象モデル（GV90 EREV、サンタフェ）と600マイルの対応は要確認。"
+   },
+   "en": {
+    "title": "Hyundai invests about $450 million in its Alabama plant to expand hybrid and range-extender production",
+    "summary": "Hyundai is investing nearly $450 million in its Montgomery, Alabama plant to expand powertrain capability and raise output of hybrid and range-extender (EREV) vehicles; the announcement was celebrated on October 28. An EREV arriving at dealers in the first half of 2027 is expected to have more than 600 miles of range. At its 2026 CEO Investor Day, Hyundai said North America would get more than 10 hybrid models by 2030 because hybrids make up half of the regional sales mix.",
+    "note": "600 mi ≈ 966 km. EREV total range is roughly R ≈ E_batt/e_EV + V_fuel·η_gen·LHV/e_EV (e_EV: energy use in kWh/km, η_gen: fuel-to-electricity efficiency). Battery size, tank size and generator efficiency are not stated. Which model (GV90 EREV or Santa Fe) the 600-mile figure applies to needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2307739/hyundai-alabama-plant-expansion/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-04-gm-hybrid-big-suv-lansing",
+   "date": "2026-11-04",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "GM、米国のハイブリッド展開は3列シートの大型SUVから：ランシング工場に12.5億ドル",
+    "summary": "GMが米国で生産するハイブリッドは現状コルベットE-Ray、Grand Sport X、ZR1Xのみで、3列SUVから本格展開すると報じられた。ランシング工場にはハイブリッド対応の改修として12.5億ドルを投資する。10月上旬の報道では最初のPHEVは来年か2028年初めに出る見込みで、EV航続は最大70マイル（113km）、エクイノックスとシルバラードが候補とされる。",
+    "note": "PHEVのUF（ユーティリティファクター：総走行距離のうち電気で走る割合）はEV航続が長いほど大きくなり、米国のCO2/燃費規制上の評価値に効く（一般論）。70マイル級は大型SUVとしては長い部類。電池容量やハイブリッド方式（パラレル/シリーズ）は記事に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "GM's US hybrid push will start with its big three-row SUVs, backed by $1.25 billion at Lansing",
+    "summary": "GM's only current hybrids are the Corvette E-Ray, Grand Sport X and ZR1X, and its broader hybrid rollout is reported to start with a three-row SUV. GM is investing $1.25 billion at its Lansing site for the upgrades needed to build hybrids. An early-October report said the first plug-in hybrids would launch next year or in early 2028 with up to 70 miles (113 km) of electric range, with the Chevrolet Equinox and Silverado among the expected models.",
+    "note": "A PHEV's utility factor (the share of total distance driven on electricity) rises with EV range and affects its rating under US CO2/fuel-economy rules (general principle). Around 70 miles is long for a large SUV. Battery size and hybrid architecture (parallel/series) are not given (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2305942/gm-hybrid-three-row-big-suv/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-03-horse-b20-waterproof-engine",
+   "date": "2026-11-03",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "Global",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "Horse Powertrain、水深1.1mで運転できる防水2.0L直4「B20」：IPX8、ミラーサイクルで熱効率48%",
+    "summary": "ルノーと吉利の合弁Horse Powertrainは、9月上旬に発表した防水エンジン「B20」の詳細を示した。水深1.1mまで運転でき、ハイブリッド向けで、勾配100%の登坂など高負荷のオフロードでも連続出力を維持できるとする。2.0L直4で、出力189〜280bhp、トルク221〜280lb ftは条件により異なる。防水等級はIPX8、ミラーサイクルで燃料エネルギーの48%を機械仕事に変える。",
+    "note": "単位換算：189〜280 bhp × 0.7457 ≈ 141〜209 kW、221〜280 lb ft × 1.3558 ≈ 300〜380 Nm。勾配100%は tanθ = 1 → θ = 45°で、登坂に必要な駆動力は F = m·g·sinθ ≈ 0.71·m·g（転がり抵抗除く）。ミラーサイクルは吸気弁を遅閉じ（または早閉じ）して有効圧縮比 < 膨張比とし、膨張仕事を増やしてポンプ損失を減らす。水没時の吸気をどう確保するか（シュノーケル等）は記事要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "Horse Powertrain's waterproof 2.0-litre four 'B20' runs 1.1 m under water: IPX8, Miller cycle, 48% thermal efficiency",
+    "summary": "Horse Powertrain, the Renault–Geely joint venture, detailed the waterproof B20 engine it announced in early September. It can operate at a depth of up to 1.1 m, is suited to hybrids, and is said to sustain output under extreme off-road loads including 100% gradients. The 2.0-litre inline four makes 189–280 bhp and 221–280 lb ft depending on conditions, meets IPX8, and runs the Miller cycle, converting 48% of fuel energy into mechanical work.",
+    "note": "Conversions: 189–280 bhp × 0.7457 ≈ 141–209 kW; 221–280 lb ft × 1.3558 ≈ 300–380 Nm. A 100% gradient means tanθ = 1, θ = 45°, so the tractive force needed is F = m·g·sinθ ≈ 0.71·m·g (excluding rolling resistance). The Miller cycle closes the intake valve late (or early) so the effective compression ratio is below the expansion ratio, increasing expansion work and cutting pumping loss. How intake air is supplied when submerged (snorkel etc.) is not stated (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/technology/new-horse-petrol-engine-can-run-underwater"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-03-jeep-wrangler-scrambler-srt-ifs",
+   "date": "2026-11-03",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "シャシー",
+    "4WD"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "ジープ「ラングラー スクランブラー SRT」コンセプト：ラングラー初の独立懸架フロントとトロフィートラック式リア、V8搭載",
+    "summary": "ステランティスは11月2日、SEMA 2026で2ドアピックアップのコンセプト「ラングラー スクランブラー SRT」を公開した。前輪をリジッドアクスルから独立懸架に替えたのはラングラーの名を持つ車で初めてで、後輪はトロフィートラック式アクスル。高速の砂漠走行を狙う。エンジンはMotor1が6.4L Hemi V8と報じ、Carscoopsはジープが詳細を出しておらずスーパーチャージャー付き6.2L Hemiを示唆と書いており、媒体間で記載が異なる。",
+    "note": "独立懸架はばね下質量を減らし（デフをばね上に置ける）、高速での路面追従性 ＝ タイヤ接地荷重変動の低減に有利。一方、リジッドアクスルは片輪が持ち上がると反対輪が押し下げられるため、低速の岩場での接地性（アーティキュレーション）に強い。エンジン排気量は媒体で6.4Lと6.2Lに分かれるため要確認。市販予定はない（コンセプト）。"
+   },
+   "en": {
+    "title": "Jeep Wrangler Scrambler SRT concept: first Wrangler with independent front suspension, Trophy Truck-style rear and a V8",
+    "summary": "Stellantis revealed the Wrangler Scrambler SRT concept, a two-door pickup, at SEMA 2026 on November 2. It is the first Wrangler-branded vehicle with independent front suspension instead of a solid axle, paired with a Trophy Truck-style rear axle for high-speed desert running. Motor1 reports a 6.4-litre Hemi V8, while Carscoops says Jeep did not share specs and hints at a supercharged 6.2-litre Hemi, so the outlets differ.",
+    "note": "Independent suspension cuts unsprung mass (the differential can sit on the sprung body), which helps keep tire load steady at high speed. A solid axle, by contrast, pushes the opposite wheel down when one wheel is lifted, which favours articulation and grip on slow rock trails. Engine displacement differs between outlets (6.4 vs 6.2 L), needs confirmation. It is a concept with no production plan announced."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/814161/jeep-wrangler-scrambler-srt-concept/"
+    },
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2305158/jeep-scrambler-sema-2026/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-yangwang-u9-xtreme-503kmh",
+   "date": "2026-11-06",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "BYD「仰望U9 Xtreme」、市販車で初めて500km/hを超える503.17km/h：4モーター合計2,220kW",
+    "summary": "BYDの高級ブランド仰望は、全電動スーパーカー「U9 Xtreme」がアブダビの公道で行った最高速チャレンジで503.17km/h（312.66mph）を記録したと発表した。4つのモーターの合計出力は2,220kWで、生産は世界30台限定。",
+    "note": "空気抵抗の所要動力 P = ½·ρ·C_d·A·v³。v = 503.17/3.6 = 139.8 m/s、ρ = 1.2 kg/m³、C_d·A = 0.6 m²（仮定値）とすると P ≈ 0.5×1.2×0.6×139.8³ ≈ 983 kW。動力はv³に比例するため、速度を10%上げるには約33%多い動力が必要。転がり抵抗・駆動系損失は別途。実際のC_d·Aやタイヤ仕様、計測方法は記事に記載なし（要確認）。なお同車は11月2〜3日の試験中に約280mphで事故を起こしたと報じられている（Electrek）。"
+   },
+   "en": {
+    "title": "BYD's Yangwang U9 Xtreme becomes the first production car past 500 km/h at 503.17 km/h, with four motors totalling 2,220 kW",
+    "summary": "Yangwang, BYD's ultra-premium brand, announced that the all-electric U9 Xtreme reached 503.17 km/h (312.66 mph) in a top-speed run on public roads in Abu Dhabi. Its four motors produce a combined 2,220 kW, and production is limited to 30 units worldwide.",
+    "note": "Aerodynamic power demand P = ½·ρ·C_d·A·v³. With v = 503.17/3.6 = 139.8 m/s, ρ = 1.2 kg/m³ and C_d·A = 0.6 m² (assumed), P ≈ 0.5×1.2×0.6×139.8³ ≈ 983 kW. Because power scales with v³, 10% more speed needs about 33% more power. Rolling and driveline losses come on top. The real C_d·A, tire spec and measurement method are not given (needs confirmation). Electrek also reported a crash at about 280 mph during testing in early November."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/06/byd-yangwang-u9-xtreme-breaches-500-km-h/"
+    },
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/03/byds-ev-crashes-at-280-mph-watch-driver-escape-unharmed/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-03-geely-xingyao-6-ef-methanol-hybrid",
+   "date": "2026-11-03",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "吉利「銀河 星耀6 EF」発売：メタノールとガソリンを同じタンクで任意比率に混ぜられるハイブリッドセダン、7.68万元から",
+    "summary": "吉利汽車は11月3日、メタノール・ガソリン・電気で走る「Galaxy Xingyao 6 EF」を発売した。2つの液体燃料は同じタンク内で任意の比率で混ぜられる。期間限定価格は76,800元（約11,440ドル）から、CLTCのEV航続は最大230km、満タン・満充電時の総航続は1,880km。同社は量産メタノールハイブリッドセダンとして世界初としている。",
+    "note": "メタノールの低位発熱量は約20 MJ/kg、ガソリンは約43〜44 MJ/kg（一般値、要確認）で、同じエネルギーには約2倍強の質量の燃料が必要。理論空燃比もメタノール約6.5、ガソリン約14.7と大きく違うため、混合比を燃料センサー等で推定して噴射量を補正する制御（フレックス燃料と同じ考え方）が必要と推測される。総航続1,880kmが燃料の種類でどう変わるかは記事に記載なし。"
+   },
+   "en": {
+    "title": "Geely launches Galaxy Xingyao 6 EF, a hybrid sedan that runs on any mix of methanol and gasoline in one tank, from 76,800 yuan",
+    "summary": "On November 3, Geely Auto launched the Galaxy Xingyao 6 EF, which can run on methanol, gasoline or electricity, with the two liquid fuels blended in any ratio in the same tank. It starts at 76,800 yuan (about $11,440) under a limited-time offer, has up to 230 km of CLTC electric range and 1,880 km combined range with a full tank and full battery. Geely calls it the world's first production methanol hybrid sedan.",
+    "note": "Methanol's lower heating value is about 20 MJ/kg versus about 43–44 MJ/kg for gasoline (typical values, needs confirmation), so roughly twice the fuel mass is needed for the same energy. The stoichiometric air-fuel ratio also differs (about 6.5 for methanol vs 14.7 for gasoline), so the controller presumably estimates the blend (e.g. with a fuel sensor) and corrects injection, as in flex-fuel engines (inference). How the 1,880 km range changes with fuel type is not stated."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/03/geely-launches-xingyao-6-ef-methanol-hybrid-sedan/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-02-ev-battery-share-jan-sep",
+   "date": "2026-11-02",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "Global",
+   "tags": [
+    "電池",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "2026年1〜9月の車載電池シェア：CATL 39.1%、BYD 15.2%。中国以外の市場でも中国勢6社が56.4%に",
+    "summary": "CnEVPostがまとめた世界の車載電池搭載量（1〜9月）はCATL 389.2GWh（39.1%）、BYD 150.9GWh（15.2%）、LGES 81.9GWh（8.2%）の順で、上位10社に入る中国7社の合計は73.0%（前年比+3.5ポイント）。SNEリサーチによる中国以外の市場は426.7GWh（前年比+24.7%）で、CATL・BYDなど中国6社の合計シェアは43.1%から56.4%に上がった。上位10社で搭載量が減ったのはSK OnとPanasonicのみ。",
+    "note": "世界合計の概算 = 389.2/0.391 ≈ 995 GWh（計算値）。中国以外での中国6社の搭載量 ≈ 426.7×0.564 ≈ 241 GWh（計算値）。SNEの「13.3%上昇」は43.1→56.4%の差でありポイント（pp）の意味。両社の集計範囲（EV・PHEV・HEVの含め方）が同じかは要確認。"
+   },
+   "en": {
+    "title": "EV battery share Jan–Sep 2026: CATL 39.1%, BYD 15.2%; Chinese suppliers reach 56.4% even outside China",
+    "summary": "CnEVPost's global EV battery installation data for January–September show CATL at 389.2 GWh (39.1%), BYD at 150.9 GWh (15.2%) and LGES at 81.9 GWh (8.2%); the seven Chinese companies in the top 10 held 73.0%, up 3.5 points year on year. SNE Research puts the non-China market at 426.7 GWh (+24.7%), with six Chinese companies including CATL and BYD rising from 43.1% to 56.4%. SK On and Panasonic were the only top-10 suppliers whose installations fell.",
+    "note": "Implied global total = 389.2/0.391 ≈ 995 GWh (calculated). Chinese six outside China ≈ 426.7 × 0.564 ≈ 241 GWh (calculated). SNE's '13.3 per cent rise' is the gap from 43.1% to 56.4%, i.e. percentage points. Whether both sources count EVs, PHEVs and HEVs the same way needs confirmation."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/02/global-ev-battery-market-share-in-jan-sept-2026/"
+    },
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/06/sne-research-chinese-oems-increasingly-dominate-global-ev-battery-market/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-vw-id-sw391-battery-preconditioning",
+   "date": "2026-11-06",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "EU",
+   "tags": [
+    "電池"
+   ],
+   "prio": 1,
+   "conf": "primary",
+   "ja": {
+    "title": "VW、旧世代ID.モデルにOTAでDC急速充電前のバッテリー予熱機能を追加（ID.Software 3.9.1）",
+    "summary": "VWはソフトウェア3.9.1をOTAで配信し、DC急速充電の前に高電圧バッテリーを手動で予熱（プレコンディショニング）できるようにする。対象はソフトウェア第3世代の車両で、主に2023年10月以前生産のID.4・ID.5と2024年までのID.3など。熱管理、AC充電、システム安定性も改善する。機能はインフォテインメントの追加画面から起動する。",
+    "note": "低温ではリチウムイオンの拡散と電荷移動が遅くなり（反応速度はアレニウス式 k ∝ exp(−E_a/RT) に従う）、大電流で充電すると負極でリチウム析出が起きやすいため、BMSは充電電流を絞る。事前に電池温度を上げると許容電流が増え、充電時間が短くなる。改善後の充電時間や目標温度は記事に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "VW adds pre-DC-fast-charge battery preconditioning to older ID. models via OTA (ID. Software 3.9.1)",
+    "summary": "VW will distribute software 3.9.1 over the air, allowing drivers to manually precondition the high-voltage battery before DC fast charging. It targets software generation 3.x vehicles, mainly ID.4 and ID.5 built before October 2023 and ID.3 built up to 2024. The update also improves thermal management, AC charging and system stability, and the function is started from an additional infotainment screen.",
+    "note": "At low temperature, lithium-ion diffusion and charge transfer slow down (reaction rate follows Arrhenius, k ∝ exp(−E_a/RT)), and high-current charging risks lithium plating on the anode, so the BMS limits current. Warming the battery beforehand raises the allowable current and shortens charging. The resulting charge time and target temperature are not stated (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/06/volkswagen-introduces-battery-preconditioning-for-older-id-models/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-nio-ceo-heavy-cars-road-damage",
+   "date": "2026-11-06",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "電池",
+    "シャシー"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "NIO李斌CEO、中国車の重量増に警鐘：120kWh・700〜800kgの電池も、重量1.2倍で路面損傷は2.07倍",
+    "summary": "NIOの李斌CEOは11月5日、烏鎮の世界インターネット大会のフォーラムで、120kWhで700〜800kgの電池を積む車があると述べ、重量が1.2倍になると道路への損傷は2.07倍になると指摘した。NIOの電池パックは通常400〜500kgで、その分容量と航続を抑えていると認めた。",
+    "note": "2.07倍は舗装工学の「4乗則」（AASHO道路試験に基づく経験則）：損傷 D ∝ (軸重/基準軸重)^4 → 1.2^4 = 2.07 と一致する。電池パック重量エネルギー密度の目安は 120 kWh / 750 kg（中央値で仮定）≈ 160 Wh/kg。重量増はサスペンションばね定数・タイヤ荷重指数・ブレーキ熱容量の要求も上げる（一般論）。4乗則は主に大型車の軸重で使われるもので、乗用車への適用の妥当性は要確認。"
+   },
+   "en": {
+    "title": "Nio CEO warns about ever-heavier Chinese cars: 120 kWh packs weigh 700–800 kg, and 1.2x weight means 2.07x road damage",
+    "summary": "Speaking at a forum of the 2026 World Internet Conference in Wuzhen on November 5, Nio CEO William Li said some cars carry 120 kWh batteries weighing 700–800 kg, and that 1.2 times the weight causes 2.07 times the road damage. He acknowledged that Nio's packs, typically 400–500 kg, mean accepting smaller capacity and shorter range.",
+    "note": "The 2.07 figure matches pavement engineering's 'fourth power law' (an empirical rule from the AASHO Road Test): damage D ∝ (axle load / reference load)^4, so 1.2^4 = 2.07. Pack-level specific energy is about 120 kWh / 750 kg (midpoint assumed) ≈ 160 Wh/kg. Extra weight also raises demands on spring rates, tire load index and brake thermal capacity (general principle). The fourth power law is mainly applied to heavy-vehicle axle loads, so its validity for passenger cars needs confirmation."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/06/nio-ceo-warns-ever-heavier-cars/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-02-mitsubishi-outlander-diamond-trail",
+   "date": "2026-11-02",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "4WD",
+    "シャシー"
+   ],
+   "prio": 1,
+   "conf": "primary",
+   "ja": {
+    "title": "三菱、米SEMAで「アウトランダー ダイヤモンドトレイルエディション」を初公開：アプローチ角20.5°、デパーチャー角23.1°",
+    "summary": "三菱自動車の米国部門は2012年以来となるSEMAショー出展で、「アウトランダー ダイヤモンドトレイルエディション」を世界初公開した。北米向け長期計画「モメンタム2030」の一環。フロントのアプローチアングルは18.3°から20.5°に、リアのデパーチャーアングルは22.2°から23.1°に改善し、マルチビューカメラの作動上限を時速10kmから30kmに広げた。18×7.5インチのホイールにネクセン「ロードアン ATX」タイヤを履く。",
+    "note": "アプローチ角 θ_a ≈ arctan(h_bumper / L_overhang)（バンパー下端高さ h、前オーバーハング L）。角度が18.3→20.5°（+2.2°）に増えたのは、バンパー形状変更か車高アップによると推測されるが、どちらかは記事に記載なし（要確認）。4WD制御（S-AWC）の変更有無も記載なし。"
+   },
+   "en": {
+    "title": "Mitsubishi debuts the Outlander Diamond Trail Edition at SEMA: 20.5° approach and 23.1° departure angles",
+    "summary": "Mitsubishi's US arm returned to the SEMA Show for the first time since 2012 and premiered the Outlander Diamond Trail Edition, part of its North American 'Momentum 2030' plan. The front approach angle improves from 18.3° to 20.5° and the rear departure angle from 22.2° to 23.1°, and the multi-view camera now works up to 30 km/h instead of 10 km/h. It rides on 18×7.5-inch wheels with Nexen Roadian ATX tires.",
+    "note": "Approach angle θ_a ≈ arctan(h_bumper / L_overhang) (bumper lower-edge height h, front overhang L). The 18.3→20.5° (+2.2°) gain presumably comes from a reshaped bumper or a lift, but the article does not say which (needs confirmation). Any change to the S-AWC 4WD control is not mentioned."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/02/418498.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-gmc-sierra-2027-v8-mpg",
+   "date": "2026-11-06",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "PT",
+    "4WD"
+   ],
+   "prio": 1,
+   "conf": "primary",
+   "ja": {
+    "title": "2027年型GMCシエラ1500の新V8、EPA燃費はディーゼルに及ばず：5.7L V8（2WD）は複合17mpg、3.0Lディーゼルは25mpg",
+    "summary": "GMが公表した2027年型シエラ1500の燃費表によると、刷新されたV8エンジンはすべての2WD・4WD仕様で3.0L「Duramax」ディーゼルを複合燃費で下回る。2WDの5.7L V8は市街地15・高速19・複合17mpg、同等の2WD仕様のディーゼルは複合25mpg。V8は出力が上がった一方で効率が下がった。",
+    "note": "US mpg → km/L：1 mpg = 1.609344/3.78541 ≈ 0.4251 km/L。V8 2WD：市街地 6.4、高速 8.1、複合 7.2 km/L。ディーゼル複合 10.6 km/L。燃料消費比 = 17/25 = 0.68 → V8はディーゼルより約47%多く燃料を使う（25/17 = 1.47）。ただし軽油は体積あたりの発熱量がガソリンより約1割多い（一般値、要確認）ため、エネルギー基準の差はこれより小さい。4WD仕様の数値と新V8の出力値は要約に記載なし。"
+   },
+   "en": {
+    "title": "2027 GMC Sierra 1500's new V8s trail the diesel on EPA ratings: 17 mpg combined for the 5.7L V8 2WD vs 25 mpg for the 3.0L diesel",
+    "summary": "GM's 2027 fuel-economy table for the Sierra 1500 shows every V8 version, in both two- and four-wheel drive, trailing the 3.0-litre Duramax diesel in combined mpg. The 2WD 5.7-litre V8 is rated 15 mpg city, 19 highway and 17 combined, while comparable 2WD diesel trims are rated 25 mpg combined. The V8s gained power but lost efficiency.",
+    "note": "US mpg to km/L: 1 mpg = 1.609344/3.78541 ≈ 0.4251 km/L. V8 2WD: 6.4 city, 8.1 highway, 7.2 combined km/L; diesel combined 10.6 km/L. 25/17 = 1.47, so the V8 burns about 47% more fuel by volume. Diesel holds roughly 10% more energy per litre than gasoline (typical value, needs confirmation), so the energy-based gap is smaller. 4WD figures and the new V8 outputs are not in the summary."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/814635/2027-gmc-sierra-v8-mpg/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-02-daihatsu-hijet-cargo-atrai-fuel-economy",
+   "date": "2026-11-02",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT"
+   ],
+   "prio": 1,
+   "conf": "primary",
+   "ja": {
+    "title": "ダイハツ「ハイゼット カーゴ」「アトレー」一部改良で燃費向上：NA・CVTでWLTC 16.6km/L",
+    "summary": "ダイハツは11月2日、軽商用車「ハイゼット カーゴ」「アトレー」の燃費を改善する一部改良を行い発売した。ハイゼット カーゴのWLTCモード燃費は自然吸気CVTが16.6km/L、自然吸気5速MTが15.5km/L、ターボCVTが15.5km/L、アトレー（ターボCVT）は15.5km/L。価格はハイゼット カーゴが115万5,000〜188万1,000円、アトレーが173万8,000〜225万5,000円。",
+    "note": "燃料消費率換算：100/16.6 ≈ 6.0 L/100km、100/15.5 ≈ 6.5 L/100km。改良前の燃費値と、何を変えて改善したか（エンジン制御、CVT、転がり抵抗など）は記事要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "Daihatsu updates Hijet Cargo and Atrai for better fuel economy: 16.6 km/L WLTC for the naturally aspirated CVT",
+    "summary": "On November 2, Daihatsu released updated Hijet Cargo and Atrai kei vans with improved fuel economy. WLTC figures for the Hijet Cargo are 16.6 km/L for the naturally aspirated CVT, 15.5 km/L for the naturally aspirated 5-speed manual and 15.5 km/L for the turbo CVT; the Atrai (turbo CVT) is 15.5 km/L. Prices are 1,155,000–1,881,000 yen for the Hijet Cargo and 1,738,000–2,255,000 yen for the Atrai.",
+    "note": "In consumption terms: 100/16.6 ≈ 6.0 L/100 km and 100/15.5 ≈ 6.5 L/100 km. The previous figures and what was changed (engine control, CVT, rolling resistance, etc.) are not in the summary (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2152993.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-chery-recall-rear-axle-weld",
+   "date": "2026-11-06",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "CN",
+   "tags": [
+    "品質",
+    "シャシー"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "奇瑞、中国でOmoda・Tiggo 5xの53,882台をリコール：リアアクスルの溶接不良の可能性、マレーシアのリコールに続く",
+    "summary": "中国の国家市場監督管理総局（SAMR）の発表によると、奇瑞は2022年6月6日〜2023年12月31日に生産したTiggo 5xとOmodaシリーズ計53,882台を11月27日からリコールする。リアアクスルの溶接不良の可能性が理由。奇瑞は10月に同様の問題でマレーシアのOmoda 5を8,878台リコールし、中国の同ロット車を点検していた。",
+    "note": "アクスルの溶接部は走行中の繰り返し荷重を受けるため、溶込み不足などの欠陥があると疲労き裂の起点になりやすい（S-N曲線で寿命が大きく短くなる、一般論）。リアアクスルの形式（トーションビーム等）や不具合の詳しい内容、事故の有無は記事に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "Chery recalls 53,882 Omoda and Tiggo 5x cars in China over possible rear-axle weld defects, after a Malaysian recall",
+    "summary": "According to China's State Administration for Market Regulation (SAMR), Chery will recall 53,882 Tiggo 5x and Omoda series vehicles built between June 6, 2022 and December 31, 2023, starting November 27, due to a potential rear-axle welding defect. Last month Chery recalled 8,878 Omoda 5 cars in Malaysia over a similar issue and began inspecting same-batch vehicles in China.",
+    "note": "Axle welds see repeated loads in service, so defects such as incomplete penetration readily become fatigue-crack origins and sharply shorten life on the S-N curve (general principle). The rear-axle type (e.g. torsion beam), failure details and any incidents are not stated (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/06/chery-recalls-omoda-tiggo-5x-china/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-07-tesla-cybercab-nhtsa-confidential",
+   "date": "2026-11-07",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "US",
+   "tags": [
+    "規制",
+    "ADAS"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "テスラ、Cybercabの安全基準適合に関するNHTSAの21項目への回答を非公開にするよう要求：ペダルなしでFMVSS 135をどう満たすか",
+    "summary": "NHTSAは9月10日の特別命令でCybercabの認証方法について21項目を照会した。テスラは9月30日の期限に8週間の延長を求め、NHTSAは10月30日を期限とした。テスラは回答で連邦安全基準を満たすと主張する一方、その文書を公開しないよう求めている。照会には「常用ブレーキは足で操作する装置で作動させる」とするFMVSS 135の満たし方も含まれ、Cybercabには足踏みペダルがない。",
+    "note": "FMVSS（連邦自動車安全基準）は自己認証制度で、メーカーが適合を自ら宣言し、NHTSAが事後に確認する。手動操作装置を前提とする条文（FMVSS 135のフットコントロールなど）をペダルなし車両がどう扱うかは、適用除外（Part 555）申請か基準改正が論点になる（一般論）。テスラがどの方法を取ったかは記事に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "Tesla says Cybercab meets federal safety standards but wants its answers to NHTSA's 21 questions kept secret, including on FMVSS 135 without pedals",
+    "summary": "In a September 10 Special Order, NHTSA asked Tesla 21 questions about how it certified the Cybercab. Tesla sought an eight-week extension on the September 30 deadline, and NHTSA set October 30 instead. Tesla says the vehicle meets federal standards but wants the response kept from the public. One question asks how it meets FMVSS 135, which requires service brakes to be applied by a foot control, although the Cybercab has no foot pedal.",
+    "note": "FMVSS works by self-certification: the maker declares compliance and NHTSA checks afterwards. For clauses that assume manual controls (such as the FMVSS 135 foot control), a pedal-less vehicle typically needs an exemption (Part 555) or a rule change (general principle). Which route Tesla took is not stated (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2309239/tesla-cybercab-safety-standards-confidential/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-04-rdw-tesla-assisted-driving-speed-margin",
+   "date": "2026-11-04",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "ADAS"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "オランダRDW、テスラの運転支援の速度超過マージンを50%→10%に制限する更新を承認：名称も「Tesla Assisted Driving」に",
+    "summary": "4月10日に「FSD Supervised」を承認したオランダの認証機関RDWは11月3日、検知した制限速度からのずれを許す「速度マージン」の上限を+50%から+10%に下げ、名称を「Tesla Assisted Driving」に改める更新を承認したと確認した。+50%では制限100km/hの高速道路で150km/h、30km/h区域で45km/hまで設定できた。EU加盟国が全域承認を投票する数週間前の変更。",
+    "note": "設定上限速度 v_set = v_limit × (1 + m)。m = 0.5 → 0.1 で、100 km/h区間は150 → 110 km/h、30 km/h区間は45 → 33 km/h。運動エネルギーは v² に比例するため、30 km/h区域で45 km/hと33 km/hの差は (45/33)² ≈ 1.86倍。EU全域承認の投票日程は記事要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "Dutch RDW approves update capping Tesla's driver-assist speed margin at 10% instead of 50%, renamed 'Tesla Assisted Driving'",
+    "summary": "The Netherlands' RDW, which approved 'FSD Supervised' on April 10, confirmed on November 3 that it signed off on an update cutting the 'speed margin' above the detected limit from +50% to +10% and renaming the system 'Tesla Assisted Driving'. At +50%, the car could be set to 150 km/h on a 100 km/h highway and 45 km/h in a 30 km/h zone. The change comes weeks before EU member states could vote on bloc-wide approval.",
+    "note": "Set speed v_set = v_limit × (1 + m). With m going from 0.5 to 0.1, a 100 km/h road goes from 150 to 110 km/h and a 30 km/h zone from 45 to 33 km/h. Kinetic energy scales with v², so 45 vs 33 km/h is (45/33)² ≈ 1.86 times. The EU vote date is not in the summary (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/03/tesla-assisted-driving-rdw-speed-cap-10-percent-europe/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-03-bmw-city-assistant-dcas-2027",
+   "date": "2026-11-03",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "ADAS",
+    "規制"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "BMW、市街地向けレベル2運転支援を2027年に欧州で展開：DCAS規則に対応、2027年初めの型式承認を目指す",
+    "summary": "BMWは既存の「City Assistant」（対応市場で信号での停止・再発進を行う）を発展させ、DCAS規則に沿った市街地の複雑な走行を扱う更新を2027年に投入する。BMW Mapsの経路案内とドライバー注意監視カメラを使い、SAEレベル2のままで運転者の前方監視は必要。2027年初めの承認を目指し、ドイツから欧州各国へ順次展開する。",
+    "note": "DCAS（Driver Control Assistance Systems）はUNECE規則R171（補足：記事要約には規則番号の記載なし、要確認）で、運転者が監視責任を持つレベル2システムの要件を定める。レベル2では制御が横・縦の両方を担っても、責任は運転者にあり、運転者監視（DMS）が前提になる。"
+   },
+   "en": {
+    "title": "BMW to roll out urban Level 2 driver assistance in Europe from 2027, targeting DCAS rules and approval in early 2027",
+    "summary": "BMW will extend its existing City Assistant, which already stops and restarts at traffic lights in supported markets, with an update for complex urban maneuvers under the DCAS rules, launching in 2027. It uses BMW Maps guidance and a driver-attention camera and stays at SAE Level 2, so the driver must watch the road. BMW targets regulatory approval in early 2027, starting in Germany and then other European markets.",
+    "note": "DCAS (Driver Control Assistance Systems) is UNECE Regulation R171 (added context: the summary does not give the regulation number, needs confirmation), which sets requirements for Level 2 systems supervised by the driver. At Level 2, even when the system handles both lateral and longitudinal control, responsibility stays with the driver, and driver monitoring is assumed."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/814170/bmw-brings-level-2-city/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-02-china-eu-hybrid-export-quota",
+   "date": "2026-11-02",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "CN",
+   "tags": [
+    "規制",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "中国のEU向けハイブリッド車輸出枠、初年度35万台・以後年6%増の案：自動車各社が北京で配分を協議と報道",
+    "summary": "報道によると、中国からEUへのハイブリッド車輸出枠は初年度35万台、その後毎年6%増とする案で、複数の自動車メーカーが限られた枠の配分を求めて北京で協議している。中国の王文涛商務相とEUのシェフチョビッチ通商担当委員は10月8〜9日に北京で会談し、ハイブリッド車の貿易について合意を発表していた。",
+    "note": "枠の推移 Q_n = 350,000 × 1.06^(n−1)：2年目 371,000台、3年目 約393,000台、5年目 約442,000台（計算値）。配分方法、PHEV/HEVの区分、関税との関係は記事要約に記載なし（要確認）。報道ベースで正式決定ではない。"
+   },
+   "en": {
+    "title": "China's EU hybrid export quota proposed at 350,000 in year one, rising 6% a year; automakers reportedly meet in Beijing over allocation",
+    "summary": "According to a report, the proposed plan would set China's hybrid export quota to the EU at 350,000 vehicles in the first year, rising 6% annually after that, and several automakers are in Beijing seeking shares of the limited quota. Chinese Commerce Minister Wang Wentao and EU Trade Commissioner Maroš Šefčovič met in Beijing on October 8–9 and announced an understanding on hybrid vehicle trade.",
+    "note": "Quota path Q_n = 350,000 × 1.06^(n−1): about 371,000 in year 2, 393,000 in year 3 and 442,000 in year 5 (calculated). The allocation method, the PHEV/HEV split and the link to tariffs are not in the summary (needs confirmation). This is a report, not a final decision."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/02/chinese-automakers-beijing-talks-eu-hybrid-export-quotas/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-vw-cea-75pct-europe",
+   "date": "2026-11-06",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "VWグループ、Xpengと共同開発した中国向け電子アーキテクチャ「CEA」を欧州の主力モデルの最大75%に採用検討",
+    "summary": "VWブランドCEOでグループ取締役のトーマス・シェーファー氏は、VW・クプラ・シュコダの欧州主力モデルのうち最大75%が、将来的に中国で開発した電子アーキテクチャ「CEA（China Electronic Architecture）」を使う可能性があると社内議論を認めた。VWとXpengの初の共同開発車は「ID. Unyx 08」。",
+    "note": "ゾーン型E/Eアーキテクチャでは、中央計算機とゾーンECUにより配線長・ECU数を減らし、OTAでの機能更新を容易にする（一般論）。車両運動制御（ブレーキ・ステア・駆動）のECUがCEA上でどう統合されるかは記事に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "VW Group weighs using its China-developed CEA electrical architecture, co-developed with Xpeng, in up to 75% of European core models",
+    "summary": "VW brand CEO and group board member Thomas Schäfer confirmed internal discussions that up to 75% of the group's European core models across VW, Cupra and Skoda could eventually use the China Electronic Architecture (CEA). The ID. Unyx 08 is the first car co-developed by VW and Xpeng.",
+    "note": "Zonal E/E architectures cut harness length and ECU count through a central computer and zone controllers, and make OTA feature updates easier (general principle). How vehicle-dynamics ECUs (brakes, steering, drive) would be integrated on CEA is not stated (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/new-cars/vw-group-could-put-chinese-tech-architecture-75-european-cars"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-tesla-cybertruck-wind-down",
+   "date": "2026-11-06",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "テスラ、サイバートラックの生産を2027年半ばに縮小・終了へ：販売は計画25万台/年の約1割",
+    "summary": "イーロン・マスクCEOは11月6日、テキサス工場でのサイバートラック生産を2027年半ばごろに「縮小」し、Cybercabの生産を増やすと発表した。同工場のラインは年25万台を想定していたが、販売はその約1割にとどまる。2026年第3四半期の「その他モデル」の納車は8,295台（前年比48%減）で、Electrekはうち7,000〜8,000台をサイバートラックと推定している。",
+    "note": "Electrekの推定 7,000〜8,000台/四半期 × 4 ≈ 2.8〜3.2万台/年 → 計画比 約11〜13%（計算値）。生産を別工場に移すか完全終了かは記事で不明確（要確認）。"
+   },
+   "en": {
+    "title": "Tesla to wind down Cybertruck production around mid-2027 as sales run at about 10% of its 250,000-a-year plan",
+    "summary": "CEO Elon Musk announced on November 6 that Tesla will 'wind down' Cybertruck production at Gigafactory Texas around mid-2027 to make room for more Cybercab output. The line was built for 250,000 units a year, but sales run at roughly a tenth of that. Tesla delivered 8,295 'Other Models' in Q3 2026, down 48% year on year, and Electrek estimates 7,000–8,000 of those were Cybertrucks.",
+    "note": "Electrek's estimate of 7,000–8,000 per quarter × 4 ≈ 28,000–32,000 a year, or about 11–13% of plan (calculated). Whether production moves elsewhere or ends entirely is unclear (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/06/tesla-ending-cybertruck-production-sales-10-percent-plan/"
+    },
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/814629/tesla-cybertruck-production-decrease-2027/"
     }
    ]
   }
