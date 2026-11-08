@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T09:51:52+09:00",
+ "updated": "2026-11-09T08:59:19+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -8216,6 +8216,40 @@
     {
      "name": "Motor1",
      "url": "https://www.motor1.com/news/814629/tesla-cybertruck-production-decrease-2027/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-08-yangwang-altior-flagship",
+   "date": "2026-11-08",
+   "kind": "flash",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT",
+    "4WD",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BYD傘下の仰望（Yangwang）、4モーターの電動フラッグシップセダン「Altior」を公開",
+    "summary": "BYDの高級ブランド仰望が、電動フラッグシップセダン「Altior」を発表した。車体寸法は全長5,600mm・全幅2,030mm・全高1,590mm、ホイールベース3,500mmで、Autocarによれば延長版メルセデスSクラスより400mm長い。駆動は4モーター構成で、航続距離は621マイル（約1,000km）とされ、4座の室内に冷蔵庫2台・スピーカー39個を備える。",
+    "note": "4モーター（1輪1モーター）なら左右独立の駆動/回生トルクで直接ヨーモーメント制御（DYC）が可能。左右の駆動力差による付加ヨーモーメントは ΔMz ≈ (t_f/2)(Fx_FR−Fx_FL) + (t_r/2)(Fx_RR−Fx_RL)（t：トレッド、Fx：各輪の駆動力。舵角による成分は省略）。ブレーキ介入型ESCと違い減速を伴わずにヨーを付加でき、3,500mmの長いホイールベースで生じやすい回頭性の不足を補う用途が考えられる（推測）。定常円旋回のヨーレートゲインは r/δ = V/[L(1+K·V²)]（K：スタビリティファクタ）で、同じKならLが大きいほど同一舵角でのヨーレートは小さい。航続621マイルの試験モード（CLTC等）は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "BYD's Yangwang unveils Altior, a four-motor electric flagship sedan",
+    "summary": "Yangwang, BYD's luxury brand, has revealed the Altior, an electric flagship sedan. It measures 5,600 mm long, 2,030 mm wide and 1,590 mm tall on a 3,500 mm wheelbase, which Autocar says makes it 400 mm longer than the long-wheelbase Mercedes S-Class. It uses four electric motors, is quoted with a 621-mile (about 1,000 km) range, and its four-seat cabin includes two refrigerators and 39 speakers.",
+    "note": "With four motors (one per wheel), independent left/right drive and regen torque allow direct yaw moment control (DYC). The added yaw moment from left/right force differences is roughly ΔMz ≈ (t_f/2)(Fx_FR−Fx_FL) + (t_r/2)(Fx_RR−Fx_RL) (t: track width, Fx: longitudinal force at each wheel; steering-angle terms omitted). Unlike brake-based ESC, this adds yaw without slowing the car, which could offset the reduced agility a 3,500 mm wheelbase tends to bring (speculation). The steady-state yaw-rate gain is r/δ = V/[L(1+K·V²)] (K: stability factor), so for the same K a longer wheelbase L gives a lower yaw rate per steering angle. The test cycle behind the 621-mile figure (e.g. CLTC) is not stated and needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/814760/byd-yangwang-altior-revealed/"
+    },
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/new-cars/huge-new-yangwang-altior-byds-answer-rolls-royce-phantom"
     }
    ]
   }
