@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T09:01:51+09:00",
+ "updated": "2026-11-11T09:05:00+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -8374,6 +8374,156 @@
     {
      "name": "InsideEVs",
      "url": "https://insideevs.com/news/814874/bmw-confirms-lfp-batteries-evs/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-toyota-scion-kei01-us",
+   "date": "2026-11-10",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "戦略",
+    "4WD"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、米国で「Scion by Toyota」ブランドを復活：1号車はダイハツ「ハイゼットトラック ジャンボ」ベースの軽トラ「KEI-01」、2027年後半に米国で組立開始",
+    "summary": "Car Watchによると、TMNAは11月10日（現地時間）に新ブランド「Scion by Toyota」を発表し、第1弾としてダイハツ「ハイゼットトラック ジャンボ」と同じ超小型トラック「KEI-01」を2027年後半から米国内でセミノックダウン生産する。投資額は3400万ドル（約54億円）、新規雇用は約50人で、米国生産車も右ハンドルのまま、エアコン・AT・4WDを装備する。軽規格の車両が米国で生産されるのは初めて。",
+    "note": "空車の軽トラは荷台側（後輪）の荷重が小さく、FRのままでは駆動力の上限が下がる。駆動力の上限は概略 F_x,max ≈ μ·W_drive（W_drive：駆動輪にかかる荷重）で、2WD(FR)は μ·W_r、4WDは μ·(W_f+W_r)=μ·m·g。仮定値として空車時の後輪荷重比を40%とすると、4WDの駆動力上限は2WDの約2.5倍（=1/0.4）になる。米国仕様の4WD方式（パートタイム／フルタイム、デフロックの有無）は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Toyota revives the Scion brand in the US; first model is the KEI-01 kei truck based on the Daihatsu Hijet Truck Jumbo, with US assembly from late 2027",
+    "summary": "According to Car Watch, TMNA announced the new 'Scion by Toyota' brand on November 10 (local time), and its first model, the KEI-01 micro utility truck, which is the Daihatsu Hijet Truck Jumbo, will be built in the US by semi-knockdown assembly from late 2027. Toyota is investing US$34 million (about 5.4 billion yen) and creating about 50 jobs; the US-built trucks keep right-hand drive and come with air conditioning, an automatic transmission and 4WD. It is the first time a kei-standard vehicle will be produced in the US.",
+    "note": "An unladen kei truck carries little load on the rear (bed-side) axle, so a rear-drive layout limits the available traction. The traction limit is roughly F_x,max ≈ μ·W_drive (W_drive: load on the driven wheels): μ·W_r for 2WD (FR) versus μ·(W_f+W_r)=μ·m·g for 4WD. Assuming a 40% rear-axle load share when unladen (assumed value), the 4WD traction limit is about 2.5 times (=1/0.4) that of 2WD. The type of 4WD in the US version (part-time/full-time, diff lock or not) is not stated in the article and needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2154647.html"
+    },
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2155344.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-nhtsa-ford-explorer-side-airbag-pe",
+   "date": "2026-11-10",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "US",
+   "tags": [
+    "品質",
+    "規制"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "NHTSA、フォード「エクスプローラー」2021〜2026年型 約123.6万台の予備調査を開始：シート内蔵サイドエアバッグ展開時のやけど",
+    "summary": "Motor1によると、NHTSAは2021〜2026年型フォード・エクスプローラーについて、シート内蔵サイドエアバッグの展開時に運転者・助手席乗員がやけどを負ったとの報告を受け、予備調査（Preliminary Evaluation）を開始した。対象は約123万6155台で、やけどの報告は前席のみ。",
+    "note": "NHTSAの不具合調査は一般に 予備調査(PE) → 技術分析(EA) → リコール要請／自主リコール の順に進むため、現時点ではリコールではない。エアバッグはインフレータのガス発生剤の燃焼で袋を展開する構造で、高温ガスの排出口や布の位置と乗員の距離がやけどに関係しうるが、今回の原因は記事に記載がなく推測の域を出ない（要確認）。"
+   },
+   "en": {
+    "title": "NHTSA opens a preliminary evaluation of about 1.236 million 2021-2026 Ford Explorers over burns from seat-mounted side airbags",
+    "summary": "According to Motor1, NHTSA has opened a preliminary evaluation of 2021-2026 Ford Explorer SUVs after reports that drivers and front passengers were burned when the seat-mounted side airbag deployed. The probe covers about 1,236,155 vehicles, and burns have been reported only in the front row.",
+    "note": "NHTSA defect investigations generally proceed from Preliminary Evaluation (PE) to Engineering Analysis (EA) and then to a recall request or a voluntary recall, so this is not yet a recall. An airbag is deployed by gas from burning propellant in the inflator, and the position of hot-gas vents and fabric relative to the occupant may be related to burns, but the article gives no cause, so this is speculation (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/815005/ford-explorer-airbag-probe-targets/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-nhtsa-waymo-school-bus-recall-review",
+   "date": "2026-11-10",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "US",
+   "tags": [
+    "ADAS",
+    "品質",
+    "規制"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "NHTSA、Waymoのロボタクシー約3000台を「リコール審査」：停車中のスクールバス追い越しが2025年末のソフト更新後も継続",
+    "summary": "electriveによると、NHTSAはWaymoの無人タクシーが停車中のスクールバスを違法に追い越した事例について、新たな調査を始めた。対象は約3000台で、2025年末に配信したソフトウェア更新で問題が直らなかった理由を確認する「リコール審査」の位置づけ。Waymoは2025年11月に全対象車へ修正を適用したと発表していたが、記録された違反の多くはその後に発生し、テキサス州オースティンだけで19件、1件あたり300ドルの罰金が科された。",
+    "note": "リコール審査は、すでに実施したリコール（今回はOTAのソフト修正）の対策が十分かを確認する手続きで、不十分と判断されれば追加の修正が求められる。認識・判断側の不具合を1回のソフト更新で潰しきれなかった点は、OTA時代の「対策の有効性検証」（更新後の実走データでの再発監視）の重要性を示す。"
+   },
+   "en": {
+    "title": "NHTSA opens a 'recall review' of about 3,000 Waymo robotaxis as illegal passing of stopped school buses continued after a late-2025 software update",
+    "summary": "According to electrive, NHTSA has started a new investigation into Waymo's driverless taxis illegally passing stopped school buses. It covers nearly 3,000 vehicles and is classified as a recall review to find out why a software update rolled out at the end of 2025 did not fix the problem. Waymo said in November 2025 that the fix had been installed on all affected vehicles, but most recorded violations happened after that; in Austin, Texas alone there were 19 incidents, each fined US$300.",
+    "note": "A recall review checks whether the remedy of a recall already carried out (here, an OTA software fix) is adequate; if it is judged insufficient, further fixes are required. The fact that a perception/decision fault was not fully resolved by one software update shows why remedy-effectiveness verification (monitoring recurrence with real-world data after the update) matters in the OTA era."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/10/faulty-software-waymo-faces-potential-new-recall/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-infineon-sic-300mm",
+   "date": "2026-11-10",
+   "kind": "flash",
+   "cat": "supplier",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "インフィニオン、300mmウェハで初めてSiCパワーデバイスを試作：200mm比でチップ数約2.3倍",
+    "summary": "electriveによると、インフィニオンはオーストリア・フィラッハ工場の実生産条件下で300mmのSiCウェハを初めて処理し、動作するSiCパワーデバイスを作った。同社によると300mmウェハ1枚から取れるチップ数は200mmの約2.3倍。既存の200mm SiC生産のロードマップも並行して進める。",
+    "note": "ウェハ1枚あたりのチップ数の近似式は DPW ≈ π(d/2)²/S − π·d/√(2S)（d：ウェハ径、S：チップ面積）。第1項は面積比で (300/200)² = 2.25倍、第2項の外周ロスは d に比例するだけなので、径が大きいほど相対的に小さくなり、2.25倍を少し上回る（記事の約2.3倍と整合）。EVのトラクションインバータ用SiC MOSFETのコスト低下につながる可能性があるが、量産時期・歩留まりは記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Infineon makes its first SiC power devices on 300 mm wafers, about 2.3 times as many chips as 200 mm",
+    "summary": "According to electrive, Infineon has for the first time processed 300 mm silicon carbide wafers under real production conditions at its Villach plant in Austria and produced functional SiC power devices. Infineon says a 300 mm wafer yields about 2.3 times as many chips as a 200 mm wafer. Its existing roadmap for 200 mm SiC production will continue in parallel.",
+    "note": "An approximation for dies per wafer is DPW ≈ π(d/2)²/S − π·d/√(2S) (d: wafer diameter, S: die area). The first term scales with area, (300/200)² = 2.25, while the edge loss in the second term only scales with d, so it becomes relatively smaller on a bigger wafer and the ratio ends up slightly above 2.25 (consistent with the article's ~2.3). This could lower the cost of SiC MOSFETs for EV traction inverters, but mass-production timing and yield are not in the article and need confirmation."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/10/infineon-processes-sic-on-300-mm-wafers-for-the-first-time/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-mercedes-ends-eqe-eqs-suv",
+   "date": "2026-11-10",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "メルセデス・ベンツ、EQEセダン・EQE SUV・EQS SUVの受注を終了：EVA2系4車種で残るのはEQSセダンのみ",
+    "summary": "electriveによると、メルセデス・ベンツはEQEセダン、EQE SUV、EQS SUVの個別仕様での注文受付を終えた。EVA2プラットフォームの大型EV4車種で残るのは、2026年4月に800Vシステム・新モーター・大容量電池へ改良したEQSセダンのみで、EQS 450+のWLTP航続は最大926km。EQEの後継としては電動Eクラスが2027年に予告されている。",
+    "note": "800V化の効果は P = V·I から、同じ出力なら電流が半分になり、導体の抵抗損失 P_loss = I²·R は1/4になる点にある（同じ抵抗の場合）。急速充電でも同じ電流上限で電力を約2倍にできる。EQS SUVには同様の800V改良が発表されておらず、今回の終了につながったかどうかは記事に記載がなく推測。"
+   },
+   "en": {
+    "title": "Mercedes-Benz stops taking orders for the EQE sedan, EQE SUV and EQS SUV; only the EQS sedan remains of the four EVA2 models",
+    "summary": "According to electrive, Mercedes-Benz no longer accepts individually configured orders for the EQE sedan, EQE SUV and EQS SUV. Of the four large EVs on the EVA2 platform, only the EQS sedan remains; it was revised in April 2026 with an 800-volt system, new motors and a larger battery, giving the EQS 450+ a WLTP range of up to 926 km. An all-electric E-Class has been announced for 2027 as the EQE's successor.",
+    "note": "The benefit of 800 V comes from P = V·I: at the same power the current is halved, so conductor resistive loss P_loss = I²·R drops to one quarter (for the same resistance). For fast charging, power can roughly double at the same current limit. No similar 800 V update has been announced for the EQS SUV; whether this led to its discontinuation is not stated in the article and is speculation."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/10/mercedes-discontinues-eqe-eqe-suv-and-eqs-suv/"
     }
    ]
   }
