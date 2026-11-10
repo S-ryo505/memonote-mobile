@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T08:59:19+09:00",
+ "updated": "2026-11-10T09:01:51+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -8250,6 +8250,130 @@
     {
      "name": "Autocar",
      "url": "https://www.autocar.co.uk/car-news/new-cars/huge-new-yangwang-altior-byds-answer-rolls-royce-phantom"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-09-eu-euro7-brake-tyre-nov29",
+   "date": "2026-11-09",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "シャシー",
+    "電池"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "EUのEuro 7が11月29日に適用開始：初めてブレーキ粉じん・タイヤ摩耗とEV電池耐久性を規制",
+    "summary": "Autocarによると、EU域内でEuro 7排出規制が11月29日から適用される。排気ガスに加えてブレーキ由来の粒子とタイヤ摩耗も対象となり、ブレーキ粒子の上限はEVが3mg/km、エンジン車が7mg/km。EVには電池耐久性要件も課され、最初の5年または10万kmは初期容量の80%以上、5〜8年または16万kmまでは72%以上を保つ必要がある（いずれも先に到達した方）。",
+    "note": "EVの上限が低いのは、減速エネルギーの一部を回生で賄い摩擦ブレーキの仕事量が減るためと考えられる（推測）。減速時のエネルギー収支は E_brake = E_regen + E_fric で、摩耗粉の量はおおむね摩擦仕事 E_fric に比例すると仮定すると、回生分担率 ρ = E_regen/E_brake を上げるほど粒子排出は (1−ρ) に比例して減る。例：仮定値 ρ=0.6 なら摩擦仕事は全回生なしの0.4倍。ブレーキブレンディング制御（回生と摩擦の配分）とパッド・ディスク材料の両方が適合手段になる。試験サイクル（UN GTR No.24のブレーキ試験サイクルを使う想定）と粒子の粒径区分は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "EU Euro 7 takes effect on 29 November, regulating brake dust, tyre wear and EV battery durability for the first time",
+    "summary": "According to Autocar, the Euro 7 emissions standard will apply across the EU from 29 November. Besides exhaust emissions it also covers particles from brakes and tyre wear, with brake-particle limits of 3 mg/km for EVs and 7 mg/km for combustion cars. EVs also face battery durability requirements: at least 80% of original capacity for the first five years or 100,000 km, and at least 72% from five to eight years or 160,000 km, whichever comes first.",
+    "note": "The lower EV limit is likely because regenerative braking absorbs part of the deceleration energy and reduces friction-brake work (speculation). The braking energy balance is E_brake = E_regen + E_fric; assuming wear debris scales roughly with friction work E_fric, raising the regen share ρ = E_regen/E_brake cuts particle emissions in proportion to (1−ρ). Example: with an assumed ρ = 0.6, friction work is 0.4 times that without regen. Both brake-blending control (the regen/friction split) and pad/disc materials are compliance levers. The test cycle (presumably the UN GTR No.24 brake cycle) and particle size class are not stated in the article and need confirmation."
+   },
+   "src": [
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/technology/new-emissions-rules-month-target-brake-dust-and-tyre-wear"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-honda-ohio-hv-plant",
+   "date": "2026-11-10",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "ホンダ、米オハイオ州にHV向け完成車新工場：投資30億ドル（約4,700億円）、2029年稼働・年産約24万台",
+    "summary": "ホンダの米国法人が会見で、オハイオ州の既存2工場の近くに完成車の新工場を建てると発表したと日経などが報じた。投資額は30億ドル（約4,700億円）、2029年中の稼働予定で、フル稼働時の能力は約24万台、雇用は2,000人超を見込む。北米で8番目、米国では約20年ぶりの新工場となり、北米の年間生産能力は約1割増えて191万台になるという。",
+    "note": "米国で需要が増えているハイブリッド車の増産対応が目的と報じられている。能力増の検算：191万台のうち新工場24万台なので、既存能力は約167万台、増加率は 24/167 ≈ 14%（記事の「約1割増」とは差があり、既存能力の定義の違いなどは要確認）。"
+   },
+   "en": {
+    "title": "Honda to build new US vehicle plant in Ohio for hybrids: $3 billion (about ¥470 billion), start in 2029, about 240,000 units a year",
+    "summary": "Honda's US unit announced at a press conference that it will build a new vehicle assembly plant near its two existing plants in Ohio, as reported by Nikkei and others. The investment is $3 billion (about ¥470 billion), with operations planned to start in 2029, a full capacity of about 240,000 vehicles and more than 2,000 jobs. It will be Honda's eighth North American plant and its first new US vehicle plant in about 20 years, lifting North American annual capacity by about 10% to 1.91 million units.",
+    "note": "The plant is reported to target higher output of hybrids, for which US demand is rising. Cross-check: if 240,000 of the 1.91 million units come from the new plant, existing capacity is about 1.67 million, an increase of 24/167 ≈ 14% (which differs from the reported 'about 10%'; the definition of existing capacity needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/10/418797.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-09-zf-30000rpm-motor",
+   "date": "2026-11-09",
+   "kind": "flash",
+   "cat": "supplier",
+   "region": "EU",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ZF、30,000rpmの高回転EVモーターを開発：磁石量半減・駆動ユニット重量と体積を約25%削減、2030年量産目標",
+    "summary": "InsideEVsによると、ZFは最高30,000rpmで回る新しいEV駆動ユニットを開発した。同等システムと比べて磁石材料を半分にし、駆動ユニットの重量と体積をそれぞれ約25%減らしたと同社は説明している。量産は2030年を目標としているが、搭載車種は公表されていない。",
+    "note": "出力 P = T·ω なので、同じ出力なら回転数を上げるほど必要トルクが下がる。モーターのトルクはおおむねロータ体積に比例（T ∝ D²L、D：ロータ径、L：積厚）するため、トルクを下げられれば体積・磁石量を小さくできる。例：仮定値で最高回転を15,000→30,000rpmにするとトルク要求は約1/2。その代わり減速比 i を上げて車輪トルク T_w = T_m·i·η を確保する必要があり、ギヤ段数や軸受・ロータの遠心強度（応力 ∝ ρω²r²）が設計課題になる。比較対象の回転数と磁石量の基準は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "ZF develops a 30,000 rpm EV motor: half the magnet material, about 25% less drive-unit weight and bulk, production targeted for 2030",
+    "summary": "According to InsideEVs, ZF has developed a new EV drive unit that spins at up to 30,000 rpm. The company says it uses half the magnet material of a comparable system and cuts drive-unit weight and bulk by nearly 25%. Production is targeted for 2030, but ZF has not named any vehicles that will use it.",
+    "note": "Since power P = T·ω, a higher speed means less torque is needed for the same power. Motor torque scales roughly with rotor volume (T ∝ D²L, D: rotor diameter, L: stack length), so lower torque allows a smaller motor with less magnet material. Example with assumed values: raising maximum speed from 15,000 to 30,000 rpm roughly halves the torque requirement. In exchange, the reduction ratio i must increase to keep wheel torque T_w = T_m·i·η, and the gear stages plus bearing and rotor centrifugal strength (stress ∝ ρω²r²) become design challenges. The baseline speed and magnet quantity used for comparison are not stated and need confirmation."
+   },
+   "src": [
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/814857/zf-new-high-rpm-motor/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-09-bmw-gen6-cells-lges-sdi",
+   "date": "2026-11-09",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "Global",
+   "tags": [
+    "電池",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BMW、ノイエ・クラッセ用Gen6電池セルの調達先にSamsung SDI（欧州）とLGES（米国）を追加、LFPの部分採用も確認",
+    "summary": "electriveによると、BMWはノイエ・クラッセ向け第6世代（Gen6）高電圧電池のセル調達先として、欧州でSamsung SDI、米国でLG Energy Solutionを新たに加える。供給開始は2020年代末の予定で、「地産地消（local for local）」の方針に沿ったもの。また同社CEOのミラン・ネデリコビッチ氏は第3四半期決算の電話会見で、NMC円筒セルに加えてLFP電池もノイエ・クラッセに限定的に導入すると述べ、中国向けiX3 30LがすでにLFPを採用している。",
+    "note": "LFPは正極に鉄・リン酸を使うため材料費がNMCより低いが、セル公称電圧（一般にLFP約3.2V、NMC約3.6〜3.7V）と重量エネルギー密度が低い。パックエネルギーは E = N_s·N_p·V_cell·C_cell で、同じ直列数ならLFPは電圧が約1割低い分、容量か並列数を増やす必要がある（電圧値は一般値で記事記載ではない）。InsideEVsによればiX3 30LのLFPパックは77kWh・CLTC航続630kmで、単純計算の電費は 77,000Wh/630km ≈ 122Wh/km（CLTCはWLTPやEPAより楽観的な値になる）。"
+   },
+   "en": {
+    "title": "BMW adds Samsung SDI (Europe) and LGES (US) as Gen6 cell suppliers for the Neue Klasse, and confirms partial use of LFP",
+    "summary": "According to electrive, BMW is adding Samsung SDI in Europe and LG Energy Solution in the US as cell suppliers for the sixth-generation (Gen6) high-voltage batteries of the Neue Klasse. Deliveries are expected to start at the end of the 2020s, in line with its 'local for local' approach. CEO Milan Nedeljković also said on the Q3 earnings call that LFP batteries will be introduced selectively in the Neue Klasse alongside NMC round cells, and the China-specific iX3 30L already uses LFP.",
+    "note": "LFP uses an iron-phosphate cathode, so its material cost is lower than NMC, but its nominal cell voltage (typically about 3.2 V for LFP vs 3.6–3.7 V for NMC) and gravimetric energy density are lower. Pack energy is E = N_s·N_p·V_cell·C_cell, so with the same series count an LFP pack needs more capacity or more parallel cells to make up for roughly 10% lower voltage (the voltages are typical values, not from the article). According to InsideEVs, the iX3 30L's LFP pack is 77 kWh with a CLTC range of 630 km, giving a simple consumption of 77,000 Wh / 630 km ≈ 122 Wh/km (CLTC tends to be more optimistic than WLTP or EPA)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/09/bmw-to-source-battery-cells-from-lges-and-samsung-sdi/"
+    },
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/09/bmw-to-partially-use-lfp-batteries-in-neue-klasse/"
+    },
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/814874/bmw-confirms-lfp-batteries-evs/"
     }
    ]
   }
