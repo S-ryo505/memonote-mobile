@@ -1,6 +1,143 @@
 {
-  "updated": "2026-11-10T09:05:00+09:00",
+  "updated": "2026-11-11T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-11-11-gemini-4-carbon-ga",
+      "date": "2026-11-11",
+      "kind": "flash",
+      "cat": "model",
+      "level": "all",
+      "tags": [
+        "モデル",
+        "料金",
+        "コーディング",
+        "エージェント"
+      ],
+      "prio": 3,
+      "conf": "primary",
+      "ja": {
+        "title": "Google「Gemini 4 Carbon」を一般提供　API料金は11月30日まで入力2ドル・出力10ドル、12月1日から倍額に",
+        "summary": "Googleは11月10日（米国時間）、10月28日に発表した最上位モデルGemini 4 Carbonを開発者・企業・一般向けに提供開始した。API料金は100万トークンあたり入力2ドル・出力10ドル（Argonと同額）で、12月1日以降は入力4ドル・出力20ドルに上がる。Geminiアプリと検索のAIモードでは月額1万4,500円のGoogle AI Ultra契約が必要で、複数のAIエージェントに設計・コーディング・検証を分担させる「/swarm」もプレビューで公開された。",
+        "note": "仕事での使いどころ：多段階のコーディングやデバッグなど重い作業向けで、一般的な作業は従来のArgonが想定用途とされる。API評価をするなら料金が上がる前の11月中に試すと費用を抑えられる。注意点：CursorBench 4.0で約59％などの成績はGoogle側の発表が中心。CarbonはArgonよりトークン消費が多いとされ、単価が同じでも1タスクあたりの費用は高くなる可能性がある（推測）。Workspace（法人版）での提供条件は記事に記載がなく要確認。"
+      },
+      "en": {
+        "title": "Google makes Gemini 4 Carbon generally available: API priced at $2 input / $10 output until Nov 30, doubling from Dec 1",
+        "summary": "On November 10 (US time), Google opened Gemini 4 Carbon, the top model it announced on October 28, to developers, businesses and consumers. API pricing is $2 per million input tokens and $10 per million output tokens (the same as Argon) until November 30, rising to $4 and $20 from December 1. In the Gemini app and AI Mode in Search it requires the Google AI Ultra plan (14,500 yen per month in Japan), and a preview of \"/swarm\", which splits design, coding and testing across multiple AI agents, was also released.",
+        "note": "Where it helps at work: it is aimed at heavy tasks such as multi-step coding and debugging, while Argon remains the model for general work. If you plan to evaluate the API, testing in November keeps costs down before the price rise. Caveats: results such as about 59% on CursorBench 4.0 come mainly from Google. Carbon reportedly uses more tokens than Argon, so cost per task may be higher even at the same unit price (our inference). Availability terms for Workspace business plans were not stated and need checking."
+      },
+      "src": [
+        {
+          "name": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2611/11/2000003083/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/gemini-4-carbon-arrives-just-in-time-to-feel-like-yesterdays-news-in-the-fastest-model-cycle-yet/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-11-claude-meetings-sheets",
+      "date": "2026-11-11",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "仕事で使える",
+        "会議",
+        "資料作成",
+        "エージェント"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "Anthropic、Claudeに「Sheets」「Whiteboards」と会議参加機能「Claude Meetings」　Adobe・Atlassian・HubSpotのアプリをClaude内で操作可能に",
+        "summary": "Anthropicは11月10日、Claudeに表計算のSheets、ホワイトボードのWhiteboards、外部アプリをClaude画面内で開ける「Interactive Connectors」を追加すると発表した。Interactive ConnectorsにはAdobe、Atlassian、HubSpot、Salesforceなどが参加する。Claude Meetingsは会議に参加してメモを取り、議論中の計画の下書き、ホワイトボードへの日程整理、会議チャットでの質問回答、連携アプリからの過去データ取得を行う。",
+        "note": "仕事での使いどころ：会議の議事録から計画・日程表までを1つの画面で作れるため、定例会議の議事録とToDo整理の手間を減らせる可能性がある。JiraやConfluence（Atlassian）を使っている部署は画面切替なしで参照できる。注意点：Claude Meetingsについては「提供開始」とする報道（TechCrunch）と「近日提供」とする報道（The Decoder）があり、提供時期・対象プランは要確認。会議を録音・記録するため、社外参加者がいる会議での同意取得や社内規程の確認が必要。"
+      },
+      "en": {
+        "title": "Anthropic adds Sheets, Whiteboards and the meeting assistant \"Claude Meetings\" to Claude; Adobe, Atlassian and HubSpot apps can run inside Claude",
+        "summary": "On November 10, Anthropic announced that Claude is getting Sheets for spreadsheets, Whiteboards, and \"Interactive Connectors\" that open external apps inside the Claude window. Partners for Interactive Connectors include Adobe, Atlassian, HubSpot and Salesforce. Claude Meetings joins calls and takes notes, drafts the plan under discussion, lays out a timeline on a whiteboard, answers questions in the meeting chat, and pulls past figures from connected work apps.",
+        "note": "Where it helps at work: you can go from meeting notes to a plan and schedule on one screen, which could cut the effort of writing minutes and to-do lists for regular meetings. Teams using Jira or Confluence (Atlassian) can refer to them without switching tabs. Caveats: TechCrunch describes Claude Meetings as launched, while The Decoder says it is coming soon, so the release date and eligible plans need checking. Because it records meetings, get consent from external participants and check internal rules first."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/anthropic-turns-claude-into-a-full-workspace-with-plugins-spreadsheets-whiteboards-and-soon-meeting-notes/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-11-grok-build-app-leak",
+      "date": "2026-11-11",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "コーディング",
+        "エージェント"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "コーディングエージェント「Grok Build」で作られたアプリ約3万5,000件が誰でも閲覧可能な状態に　開発元SpaceXSIの社外秘資料も",
+        "summary": "研究者の調査で、Grok Buildの利用者がアプリを共有するためのリンクから、約3万5,000件のアプリのデータが閲覧できる状態だったことが分かった。URLはランダム化されていたが、見つけようとすれば見つかる状態だったとされる。開発元SpaceXSI（SpaceXとxAIの合併会社）自身が作った24件のアプリからも、営業担当の社外秘の受け入れ計画、594社分の営業担当地図、社内システムのアドレス、広告提案書が見つかった。",
+        "note": "仕事での使いどころ：AIでアプリや資料を作るツールの「共有リンク」は、URLを知らなくても見つかる場合がある前提で扱う。社内でこの種のツールを試すときは、共有範囲の設定と、機密データを入れない運用ルールを先に決める。注意点：どの方法で見つけられたかの技術的な詳細と、SpaceXSI側の対応状況は記事の要約に記載がなく要確認。"
+      },
+      "en": {
+        "title": "About 35,000 apps built with the coding agent \"Grok Build\" were open to anyone, including confidential files from developer SpaceXSI",
+        "summary": "A researcher found that data from about 35,000 apps was accessible through the links Grok Build users create to share their apps. The URLs were randomized, but they could still be found by anyone who looked for them. Twenty-four apps built by SpaceXSI itself (the merged SpaceX and xAI) exposed a confidential onboarding plan for a sales hire, a sales territory map covering 594 accounts, internal system addresses and advertising proposals.",
+        "note": "Where it helps at work: treat \"share links\" in AI app and document builders as potentially discoverable even if nobody is given the URL. Before trying such tools internally, set sharing scopes and a rule against entering confidential data. Caveats: the technical method used to find the apps and SpaceXSI's response were not in the summary and need checking."
+      },
+      "src": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-11-ny-ai-safety-law-registration",
+      "date": "2026-11-11",
+      "kind": "flash",
+      "cat": "reg",
+      "level": "intermediate",
+      "tags": [
+        "規制",
+        "セキュリティ"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "米ニューヨーク州のAI安全法、施行準備へ　年売上5億ドル超の開発企業は2027年1月1日までに登録、重大事故は72時間以内に報告",
+        "summary": "ニューヨーク州は11月10日、大規模なAI開発企業向けの登録窓口を開設し、OpenAIやAnthropicなどは2027年1月1日までの登録が求められる。年間売上5億ドル超の開発企業は、安全対策の方針をウェブで公開し、重大な安全事故を72時間以内に報告し、モデルの透明性報告を公表する必要がある。罰金は1回目の違反で最大100万ドル、2回目以降は最大300万ドル。",
+        "note": "仕事での使いどころ：直接の対象はAIモデルの開発企業で、利用する側の自動車会社に新たな義務は生じない。ただし、各社が公開する安全方針・透明性報告は、社内でAIサービスを選ぶときの比較資料として使える。注意点：記事は2027年6月1日に施行される別の法律にも触れているが、その内容は要約からは読み取れず要確認。"
+      },
+      "en": {
+        "title": "New York prepares to enforce its AI safety law: developers with over $500M in revenue must register by Jan 1, 2027 and report critical incidents within 72 hours",
+        "summary": "On November 10, New York State opened a registration portal for large AI developers, and companies such as OpenAI and Anthropic must register by January 1, 2027. Developers with more than $500 million in annual revenue must publish their safety frameworks online, report critical safety incidents within 72 hours, and release model transparency reports. Fines can reach $1 million for a first violation and $3 million for later ones.",
+        "note": "Where it helps at work: the law targets AI model developers, so it creates no new obligations for car companies that use AI. Still, the safety frameworks and transparency reports that providers publish can serve as comparison material when choosing AI services. Caveats: the article also mentions a separate law taking effect on June 1, 2027, but its content is unclear from the summary and needs checking."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/"
+        }
+      ]
+    },
     {
       "id": "2026-11-10-claude-fable-mythos-52",
       "date": "2026-11-10",
