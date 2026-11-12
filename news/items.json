@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T09:05:00+09:00",
+ "updated": "2026-11-12T09:04:41+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -8524,6 +8524,95 @@
     {
      "name": "electrive",
      "url": "https://www.electrive.com/2026/11/10/mercedes-discontinues-eqe-eqe-suv-and-eqs-suv/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-honda-acura-eps-recall-635k",
+   "date": "2026-11-11",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "制御",
+    "シャシー",
+    "品質"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "ホンダ、米国で約63.6万台をリコール：電動パワステ（EPS）がフェイルセーフに入りアシストを失うおそれ",
+    "summary": "Motor1によると、ホンダは米国でホンダ・アキュラ両ブランドの計635,808台をリコールする。ソフトウェアの不具合により、EPSが予期せずフェイルセーフモードへ移行して操舵アシストが止まる可能性がある。NHTSAの届出で対象は2021〜2025年型TLX、2022〜2024年型MDX、2023〜2025年型Pilotで、修理は無償。",
+    "note": "EPSのアシストは概ね T_assist = K(v)·T_s（T_s：トルクセンサ検出値、K：車速依存ゲイン）で与えられ、ドライバ操舵トルクは T_d ≈ F_rack·r_p/η − T_assist となる（F_rack：ラック軸力、r_p：ピニオン有効半径、η：機構効率）。フェイルセーフで T_assist = 0 になると全軸力をドライバが受け持つ。仮定値 F_rack = 8 kN（据え切り）、r_p = 8 mm、η = 0.9 では T_d ≈ 71 N·m となり、低速・据え切りほど影響が大きい。誤ってフェイルセーフへ入る条件（センサ値の妥当性判定など）の詳細は記事になく要確認。"
+   },
+   "en": {
+    "title": "Honda recalls about 636,000 vehicles in the US: electric power steering (EPS) may enter failsafe mode and lose assist",
+    "summary": "According to Motor1, Honda is recalling a total of 635,808 Honda- and Acura-brand vehicles in the US. A software glitch can cause the EPS to unexpectedly switch to failsafe mode and stop providing steering assist. Per the NHTSA filing, the recall covers 2021–2025 TLX, 2022–2024 MDX and 2023–2025 Pilot models, and the fix is free of charge.",
+    "note": "EPS assist is roughly T_assist = K(v)·T_s (T_s: torque-sensor reading, K: speed-dependent gain), and driver steering torque is T_d ≈ F_rack·r_p/η − T_assist (F_rack: rack force, r_p: effective pinion radius, η: mechanism efficiency). In failsafe, T_assist = 0, so the driver carries the entire rack force. With assumed values F_rack = 8 kN (stationary steering), r_p = 8 mm and η = 0.9, T_d ≈ 71 N·m, so the impact is greatest at low speed and when parking. The exact conditions that trigger the false failsafe (e.g., sensor plausibility checks) are not in the article and need confirmation."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/815103/honda-recall-power-steering-failure/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-grmn-corolla-190",
+   "date": "2026-11-11",
+   "kind": "flash",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "4WD",
+    "シャシー",
+    "制御",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "GAZOO Racing、6MT・4WD・2シーターの「GRMNカローラ」を国内190台限定で発表：980万円、415N·mに向上",
+    "summary": "Car Watchによると、GAZOO Racingは11月11日、特別仕様車「GRMNカローラ」の購入希望受付を開始した（11月22日23時55分まで、発売は2027年1月上旬予定）。直列3気筒ターボは224kW・415N·m（GRカローラRZ比＋15N·m）、6速クロスミッション、後席撤去で約30kg軽量化し、専用の4WD制御・パワステチューニング・倒立式フロントダンパー・Pilot Sport Cup 2を装備する。",
+    "note": "縦加速度は a = (T_e·i_g·i_f·η/r_w − F_res)/m_eq で表せる（T_e：エンジントルク、i_g・i_f：変速比・終減速比、r_w：タイヤ動半径、m_eq：回転慣性込み等価質量）。トルク＋15N·m（400→415で＋3.75%）とクロスレシオ化はギヤ間の駆動力落ち込みを縮め、軽量化は Δa/a ≈ −Δm/m（仮定値 m = 1,500kg なら約2%）で効く。4WD制御の中身（前後配分の可変範囲や制御則の変更点）は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "GAZOO Racing announces the GRMN Corolla, a 6MT, AWD two-seater limited to 190 units in Japan: ¥9.8 million, torque raised to 415 N·m",
+    "summary": "According to Car Watch, GAZOO Racing began accepting purchase applications for the special-edition GRMN Corolla on November 11 (until 23:55 on November 22, with sales planned for early January 2027). The turbocharged inline three-cylinder makes 224 kW and 415 N·m (+15 N·m over the GR Corolla RZ), paired with a close-ratio six-speed gearbox; removing the rear seats saves about 30 kg, and it gets dedicated AWD control, power-steering tuning, inverted front dampers and Pilot Sport Cup 2 tires.",
+    "note": "Longitudinal acceleration can be written as a = (T_e·i_g·i_f·η/r_w − F_res)/m_eq (T_e: engine torque, i_g and i_f: gear and final-drive ratios, r_w: tire dynamic radius, m_eq: equivalent mass including rotating inertia). The +15 N·m (400→415, +3.75%) and closer ratios reduce the drop in tractive force between gears, while weight savings act through Δa/a ≈ −Δm/m (about 2% with an assumed m = 1,500 kg). Details of the AWD control (front/rear split range or control-law changes) are not in the article and need confirmation."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2155417.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-quantumscape-osprey-assb",
+   "date": "2026-11-11",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "US",
+   "tags": [
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "QuantumScape、全固体セル「Osprey」を発表：硫化物電解質で1気圧・1,000サイクル後に容量80%",
+    "summary": "Electrekによると、QuantumScapeは新プラットフォーム「Osprey」で、正極側の液体電解質（カソライト）を硫化物系固体電解質に置き換え、全固体化した。セラミックセパレータとアノードフリー構造は従来のQSE（サンプル出荷中のQSE-5）から引き継ぎ、拘束圧1気圧で容量80%まで1,000フルサイクルを達成したと同社は説明している。",
+    "note": "1,000サイクルで80%の場合、サイクル当たり保持率は一定劣化を仮定すると 0.8^(1/1000) ≈ 0.99978（約0.022%/サイクル）。硫化物系は充放電に伴う活物質の体積変化で粒子と電解質の界面接触が失われやすく、一般に高い拘束圧（数MPa級とされる、要確認）を掛けて抵抗増加を抑える。1気圧（約0.1MPa）で寿命が出れば、モジュールの拘束構造を軽くでき、パック質量・コストに効く。エネルギー密度・充電レート・温度条件は記事の抜粋になく要確認。"
+   },
+   "en": {
+    "title": "QuantumScape unveils its all-solid-state 'Osprey' cell: 80% capacity after 1,000 cycles at 1 atm with a sulfide electrolyte",
+    "summary": "According to Electrek, QuantumScape's new Osprey platform replaces the liquid electrolyte in the cathode (catholyte) with a sulfide solid electrolyte, making the cell all-solid-state. It keeps the ceramic separator and anode-free design of the earlier QSE platform (the QSE-5 is shipping as samples), and the company says the cells reached 1,000 full cycles to 80% capacity at a stack pressure of one atmosphere.",
+    "note": "80% after 1,000 cycles implies, assuming constant fade, a per-cycle retention of 0.8^(1/1000) ≈ 0.99978 (about 0.022% per cycle). In sulfide cells, active-material volume change during cycling tends to break particle–electrolyte contact, so high stack pressure (said to be in the several-MPa range; needs confirmation) is generally applied to limit resistance growth. Achieving this life at 1 atm (about 0.1 MPa) would allow lighter module compression structures, helping pack mass and cost. Energy density, charge rate and temperature conditions are not in the article excerpts and need confirmation."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/11/quantumscape-osprey-all-solid-state-sulfide-battery/"
     }
    ]
   }
