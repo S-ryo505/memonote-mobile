@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T09:04:41+09:00",
+ "updated": "2026-11-13T08:57:27+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -8613,6 +8613,96 @@
     {
      "name": "Electrek",
      "url": "https://electrek.co/2026/11/11/quantumscape-osprey-all-solid-state-sulfide-battery/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-daihatsu-rocky-raize-alt-pulley-recall",
+   "date": "2026-11-12",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "品質",
+    "PT"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "ダイハツ、ロッキー/ライズ/レックス計17万6683台をリコール：オルタネータプーリ不具合で低速時エンストのおそれ",
+    "summary": "Car Watchによると、ダイハツは11月12日、1.2Lエンジン搭載の「ロッキー」、トヨタ「ライズ」、スバル「レックス」計17万6683台（製作期間2021年11月1日〜2026年9月1日）のリコールを国土交通省に届け出た。設計不備によりオルタネータのプーリ内部のスプリングが損傷し、異音や警告灯点灯が起き、最悪の場合は低速でエンストして再始動できなくなる可能性がある。不具合情報は933件、事故は報告されていない。",
+    "note": "内部にスプリングを持つプーリは、一般にクランク回転変動をベルト系から切り離すデカップラ（OAD）型と考えられる（推測、型式は要確認）。ねじりばねの伝達トルクは T = k·Δθ（k：ばね定数、Δθ：ハブとプーリの相対角）で、ばね破損で発電機が駆動されなくなると、電装負荷はバッテリーだけで賄われる。持続時間の目安は t ≈ C/I_load（例：C=30Ah、I_load=30A なら約1時間、仮定値）で、電圧が下がると点火・燃料噴射・ECUが維持できずエンストに至る。異音→充電警告灯→エンストという順序はこの経路と矛盾しない（推測）。"
+   },
+   "en": {
+    "title": "Daihatsu recalls 176,683 Rocky, Raize and Rex SUVs: alternator pulley defect may cause stalling at low speed",
+    "summary": "According to Car Watch, Daihatsu filed a recall with Japan's transport ministry on November 12 covering 176,683 vehicles with the 1.2-liter engine: the Daihatsu Rocky, Toyota Raize and Subaru Rex built between November 1, 2021 and September 1, 2026. A design flaw can damage a spring inside the alternator pulley, causing abnormal noise and a warning light, and in the worst case the engine may stall at low speed and fail to restart. There have been 933 defect reports and no reported accidents.",
+    "note": "A pulley with an internal spring is most likely a decoupler (OAD) type that isolates crankshaft speed fluctuation from the belt drive (an assumption; the exact design needs confirmation). The torsion spring transmits T = k·Δθ (k: spring rate, Δθ: relative angle between hub and pulley). If the spring breaks and the alternator is no longer driven, the electrical load is supplied by the battery alone, lasting roughly t ≈ C/I_load (e.g. about one hour with C = 30 Ah and I_load = 30 A, assumed values). As voltage drops, ignition, fuel injection and ECUs can no longer be sustained and the engine stalls. The sequence of noise, then a charging warning light, then a stall is consistent with this path (inference)."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2155941.html"
+    },
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/13/418964.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-vw-scraps-gamechanger",
+   "date": "2026-11-12",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "VW、SSP向け生産構想「Gamechanger」を中止：ヴォルフスブルクの大型鋳造センター建設も取りやめ",
+    "summary": "electriveによると、フォルクスワーゲンは次世代EVプラットフォーム「SSP」の生産効率化を狙った製造構想「Gamechanger」と、本社ヴォルフスブルクでの大型鋳造センター建設を、コスト削減のため取りやめる。同グループは2027〜2031年の設備投資と研究開発に計1,350億ユーロを計画しているが、10月末に発表したアウディの米ジョージア州新工場の第1期（約40億ドル）はこの枠に含まれていない。",
+    "note": "大型一体鋳造（ギガキャスト）は部品点数・溶接工程を減らす代わりに、鋳造機・金型への初期投資が大きい。単純化すると、部品当たりコスト c ≈ F/N + v（F：設備・金型の固定費、N：生産台数、v：変動費）で、Nが計画を下回るとF/N項が増える。SSPの量産時期や台数見通しの変化が判断に影響した可能性がある（推測、記事抜粋に理由の詳細はなく要確認）。"
+   },
+   "en": {
+    "title": "VW scraps its 'Gamechanger' production concept for SSP and drops plans for a large casting center in Wolfsburg",
+    "summary": "According to electrive, Volkswagen is cancelling 'Gamechanger', a manufacturing concept meant to make production of EVs on its next-generation SSP platform more efficient, and is abandoning construction of a large casting center at its Wolfsburg headquarters as part of cost cuts. The group plans €135 billion of capital spending and R&D for 2027–2031, but the first phase of Audi's new plant in Georgia, announced at the end of October at about $4 billion, is not included in that budget.",
+    "note": "Large single-piece casting (giga-casting) cuts part counts and welding steps but requires heavy upfront investment in casting machines and dies. Simplified, cost per part c ≈ F/N + v (F: fixed equipment and tooling cost, N: production volume, v: variable cost), so if N falls below plan the F/N term grows. Changes in SSP launch timing or volume expectations may have influenced the decision (inference; the article excerpts give no detailed reason, needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/12/vw-scraps-gamechanger-manufacturing-project-amid-cost-cutting-drive/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-honda-vezel-rs-splus-shift",
+   "date": "2026-11-12",
+   "kind": "flash",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ホンダ、ヴェゼルに「S+ Shift」搭載の新グレード「e:HEV RS」「e:HEV TRAILSPORT」を今冬追加",
+    "summary": "Car Watchによると、ホンダは10月にマイナーチェンジしたヴェゼルに、疑似変速機能「Honda S+ Shift」を搭載した新グレード「e:HEV RS」（スポーティ仕様）と「e:HEV TRAILSPORT」（トレイル仕様）を今冬追加することを自社サイトで明らかにし、先行予約を始めた。10月時点のグレードはガソリン「G」とe:HEV「X」「Z」「Z PlaYパッケージ」の4つだった。",
+    "note": "e:HEVは主に発電用エンジン＋駆動モーターで走るため、エンジン回転数が車速と独立に決まり、加速時に回転だけ先に上がる感覚が出やすい。疑似変速では仮想ギア比 i_v を段ごとに設定し、目標エンジン回転を N_eng = (60/(2π r))·i_v·V（r：タイヤ動半径、V：車速）に沿わせ、段を切り替える瞬間に回転を落とす。必要な発電電力は P_gen ≈ P_drive − P_batt で、回転数を車速に縛る分の過不足をバッテリー入出力で補う（一般的な原理の説明。ヴェゼルでの具体的な制御・段数は要確認）。"
+   },
+   "en": {
+    "title": "Honda to add 'e:HEV RS' and 'e:HEV TRAILSPORT' Vezel grades with S+ Shift this winter",
+    "summary": "According to Car Watch, Honda has announced on its website that it will add two new grades to the Vezel, which received a facelift in October: the sporty 'e:HEV RS' and the trail-style 'e:HEV TRAILSPORT', both equipped with the 'Honda S+ Shift' simulated-gearshift function. Pre-orders have already opened. The October lineup had four grades: the gasoline 'G' and the e:HEV 'X', 'Z' and 'Z PlaY Package'.",
+    "note": "Because e:HEV mostly drives through a traction motor with the engine acting as a generator, engine speed is independent of road speed, and revs tend to rise ahead of acceleration. A simulated shift sets a virtual gear ratio i_v for each step and makes target engine speed follow N_eng = (60/(2π r))·i_v·V (r: dynamic tire radius, V: vehicle speed), dropping revs at each 'shift'. Generator power is roughly P_gen ≈ P_drive − P_batt, so the battery absorbs or supplies the difference created by tying engine speed to road speed (general principle; the Vezel's specific control and number of steps need confirmation)."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2155987.html"
     }
    ]
   }
