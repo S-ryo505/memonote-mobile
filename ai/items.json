@@ -1,6 +1,137 @@
 {
-  "updated": "2026-11-11T09:05:00+09:00",
+  "updated": "2026-11-12T09:15:00+09:00",
   "items": [
+    {
+      "id": "2026-11-12-gemini-decisions-api",
+      "date": "2026-11-12",
+      "kind": "flash",
+      "cat": "model",
+      "level": "advanced",
+      "tags": [
+        "モデル",
+        "料金",
+        "エージェント",
+        "データ分析"
+      ],
+      "prio": 3,
+      "conf": "primary",
+      "ja": {
+        "title": "Google「Gemini Decisions API」発表　文章を生成せず選択肢ごとの確率を返す判定専用モデル、入力100万トークン0.1ドル・出力課金なし",
+        "summary": "Googleは11月11日（米国時間）、用意した選択肢から答えを選ぶ用途に絞ったAPIを公開した。専用モデル「Gemini Decision 1」が、はい/いいえ・2〜255択・段階採点の3形式の質問を1リクエストで最大1,000問まとめて評価し、各選択肢の確率と0〜1の信頼度を150〜250ミリ秒で返す。入力はテキスト・画像・音声・動画・PDFで最大25万6,000トークン、料金は入力100万トークンあたり0.1ドルで、Googleは3.5 Flash-Liteの約5分の1としている。",
+        "note": "仕事での使いどころ：問い合わせや不具合票の分類、規程違反チェック、エージェントのツール選択など「答えが決まった形の判定」を大量に回す処理に向く。信頼度が低いものだけ人の確認に回す運用が組みやすい。注意点：速度・コストの数値はGoogle発表値で、自社データでの精度は要確認。自由記述の回答や理由の説明は出せない仕組みのため、判定根拠の記録が必要な業務では別の仕組みが要る（推測）。"
+      },
+      "en": {
+        "title": "Google launches Gemini Decisions API: a decision-only model that returns probabilities per option instead of text, at $0.10 per million input tokens with no output charge",
+        "summary": "On November 11 (US time), Google released an API built only for picking answers from a predefined set of options. Its dedicated model, Gemini Decision 1, evaluates up to 1,000 questions per request in three formats (yes/no, choosing one of 2 to 255 options, and rubric scoring) and returns a probability for each option plus a 0-to-1 confidence score in 150 to 250 milliseconds. It accepts text, images, audio, video and PDFs up to 256,000 tokens and costs $0.10 per million input tokens, which Google says is about one-fifth the cost of Gemini 3.5 Flash-Lite.",
+        "note": "Where it helps at work: high-volume, fixed-format judgments such as sorting inquiries or defect tickets, checking policy violations, or choosing tools inside an agent. It is easy to route only low-confidence cases to a person. Caveats: the speed and cost figures come from Google, so accuracy on your own data needs checking. Because it does not write free-text answers or explanations, tasks that require a recorded rationale will need something else (my inference)."
+      },
+      "src": [
+        {
+          "name": "Google Blog",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+        },
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2611/12/2000003123/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/google-joins-the-decision-model-wave-with-gemini-decision-1-scoring-1000-questions-in-a-single-pass/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-11-notion-ai-chat-leak",
+      "date": "2026-11-11",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "仕事で使える"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "Notion、委託先への不正アクセスで「Notion AI」のチャット記録が漏えいした恐れと発表　影響は全ワークスペースの1%未満",
+        "summary": "Notionを運営する米Notion Labsは11月9日（米国時間）、業務委託先が不正アクセスを受け、Notion AIでのチャット記録が外部に漏れた可能性があると公表した。同社は影響範囲を全ワークスペースの1%未満としており、日本語公式Xアカウントも11日に同じ内容を告知した。",
+        "note": "仕事での使いどころ：社内でNotion AIを使っている場合は、自社ワークスペースが対象か管理者経由でNotionからの通知を確認し、AIに貼り付けた機密情報の有無を洗い出しておく。注意点：漏れた項目（本文・添付・利用者情報など）や委託先の名前は今回の情報では分からず要確認。AIとの会話記録も通常の文書と同じく漏えい対象になり得る点を、利用ルールに反映するとよい。"
+      },
+      "en": {
+        "title": "Notion says Notion AI chat logs may have leaked after a contractor was breached; under 1% of workspaces affected",
+        "summary": "Notion Labs, the US company behind Notion, announced on November 9 (US time) that a contractor had suffered unauthorized access and that chat logs from Notion AI may have been exposed. The company puts the impact at less than 1% of all workspaces, and its Japanese account on X posted the same notice on the 11th.",
+        "note": "Where it helps at work: if your company uses Notion AI, have admins check Notion's notices to see whether your workspace is affected, and list any confidential information that was pasted into the AI. Caveats: which data was exposed (content, attachments, user details, etc.) and the contractor's name are not stated in the available reports and need checking. It is worth adding to usage rules that AI chat histories can leak just like ordinary documents."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2611/11/2000003104/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-12-claude-enterprise-security-center",
+      "date": "2026-11-12",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "セキュリティ",
+        "仕事で使える",
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Claude Enterprise、チャット・Cowork・Claude Codeの設定を1ページで見る「セキュリティセンター」とDLP向けフック、強制サインアウトAPIを追加",
+        "summary": "Anthropicは11月5日、法人向けClaude Enterpriseの管理機能を拡充した。チャット・Cowork・Claude Codeのセキュリティ設定を一覧できるセキュリティセンター、入力文を外部のセキュリティ製品に送って検査する「プロンプトフック」とツール実行前に検査する「プリツールコールフック」、メンバーを組織から外さずに全端末からサインアウトさせるAdmin APIが入った。個人アカウントでの利用を遮断する機能も含まれる。",
+        "note": "仕事での使いどころ：情報システム部門が既存のDLP（情報漏えい防止）製品と組み合わせ、設計情報などの持ち出しを入力時点で止める設定を検討できる。端末紛失や異動時のサインアウトも一括でできる。注意点：対応するDLP・EDR製品名や個人アカウント遮断の方式は今回の情報からは分からず要確認。Enterprise契約が前提で、TeamやPro契約で使えるかも要確認。"
+      },
+      "en": {
+        "title": "Claude Enterprise adds a Security Center covering chat, Cowork and Claude Code settings, DLP hooks and a forced sign-out API",
+        "summary": "On November 5, Anthropic expanded admin features in Claude Enterprise, its plan for businesses. New are a Security Center that lists security settings for chat, Cowork and Claude Code on one page; a \"prompt hook\" that sends inputs to an outside security product for inspection and a \"pre-tool-call hook\" that inspects before a tool runs; and an Admin API call that signs a member out of every device without removing them from the organization. A feature to block use through personal accounts is also included.",
+        "note": "Where it helps at work: IT teams can combine it with their existing DLP (data loss prevention) products to stop design data and similar material from leaving at the moment it is typed in. Sign-outs after a lost device or a transfer can be done in one step. Caveats: the supported DLP/EDR products and how personal accounts are blocked are not clear from this report and need checking. It requires an Enterprise contract; whether it works on Team or Pro plans also needs checking."
+      },
+      "src": [
+        {
+          "name": "ITmedia（キーマンズネット）",
+          "url": "https://kn.itmedia.co.jp/kn/article/2611/12/2000003082/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-12-chatgpt-enterprise-aws",
+      "date": "2026-11-12",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "intermediate",
+      "tags": [
+        "仕事で使える",
+        "料金"
+      ],
+      "prio": 2,
+      "conf": "primary",
+      "ja": {
+        "title": "OpenAI、「ChatGPT Enterprise」をAWS Marketplaceで販売開始　既存のAWS契約・請求でまとめて購入可能に",
+        "summary": "OpenAIは11月9日、法人向けChatGPT EnterpriseをAWSのソフトウェア販売サービスAWS Marketplaceで扱い始めた。企業はすでに持っているAWSアカウントや購買・請求の契約を使って申し込みと支払いができる。",
+        "note": "仕事での使いどころ：社内でAWSの購買ルートが整っている会社では、新しい取引先登録をせずにChatGPT Enterpriseの導入を検討できる可能性がある。注意点：価格・最低契約数・AWSの既存契約枠（利用額コミット）に算入できるかは今回の情報になく要確認。データの保存先や管理機能は通常のChatGPT Enterpriseと同じかも確認が必要。"
+      },
+      "en": {
+        "title": "OpenAI starts selling ChatGPT Enterprise on AWS Marketplace, letting companies buy it through existing AWS contracts and billing",
+        "summary": "On November 9, OpenAI began offering ChatGPT Enterprise, its plan for businesses, through AWS Marketplace, Amazon's software sales service. Companies can sign up and pay using the AWS accounts and purchasing and billing agreements they already have.",
+        "note": "Where it helps at work: companies that already buy through AWS may be able to evaluate ChatGPT Enterprise without registering a new vendor. Caveats: pricing, minimum seat counts, and whether spending counts toward existing AWS commitments are not in the available information and need checking. Also confirm whether data storage location and admin features are the same as regular ChatGPT Enterprise."
+      },
+      "src": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace"
+        },
+        {
+          "name": "ITmedia（キーマンズネット）",
+          "url": "https://kn.itmedia.co.jp/kn/article/2611/12/2000003080/"
+        }
+      ]
+    },
     {
       "id": "2026-11-11-gemini-4-carbon-ga",
       "date": "2026-11-11",
