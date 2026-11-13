@@ -1,6 +1,79 @@
 {
-  "updated": "2026-11-12T09:15:00+09:00",
+  "updated": "2026-11-13T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-11-13-gemini-4-hydrogen",
+      "date": "2026-11-13",
+      "kind": "flash",
+      "cat": "model",
+      "level": "all",
+      "tags": [
+        "モデル",
+        "コーディング",
+        "エージェント",
+        "料金"
+      ],
+      "prio": 3,
+      "conf": "primary",
+      "ja": {
+        "title": "Google「Gemini 4 Hydrogen」公開　3.8 Flashの後継で処理は約2.5倍速、API料金は入力1.5ドル・出力7.5ドル/100万トークン",
+        "summary": "Googleは11月12日（米国時間）、Gemini 4シリーズ3つ目のモデル「Gemini 4 Hydrogen」を公開し、各製品で「Gemini 3.8 Flash」を置き換えた。思考レベルはlow/medium/high/xhighの4段階（xhighは新設）、コンテキストは100万トークンで、3.8 Flash比でタスク完了が約2.5倍速い。Artificial Analysis Intelligence Indexでは標準設定51点・xhigh 54点で上位のArgon（50点）を上回り、API料金は入力1.50ドル・出力7.50ドル/100万トークン。無料ユーザーやGoogle検索でも使える。",
+        "note": "仕事での使いどころ：Geminiアプリや検索で使われる標準モデルが変わるため、日常の調べもの・要約・定型コードの生成で回答の質が変わる可能性がある。APIで3.8 Flashを使う社内ツールは、移行時に料金と出力を比較する。注意点：Google比較の10項目のうちTerminal-Bench 4.1やOSWorld-2.1など3項目はClaude Sonnet 5.5が上回っており、エージェント型のコーディングでは優位と言い切れない。3.8 FlashのAPI提供終了時期は記事からは不明で要確認。"
+      },
+      "en": {
+        "title": "Google releases Gemini 4 Hydrogen, replacing 3.8 Flash: about 2.5x faster, API at $1.50 input / $7.50 output per million tokens",
+        "summary": "On November 12 (US time), Google released Gemini 4 Hydrogen, the third model in the Gemini 4 series, replacing Gemini 3.8 Flash across its products. It offers four thinking levels (low, medium, high and the new xhigh), a one-million-token context window, and finishes tasks about 2.5 times faster than 3.8 Flash. It scores 51 on the Artificial Analysis Intelligence Index at the default level and 54 at xhigh, above the larger Argon (50), and the API costs $1.50 per million input tokens and $7.50 per million output tokens. Free users and Google Search also get it.",
+        "note": "How to use it at work: the default model behind the Gemini app and Search is changing, so answer quality for everyday research, summaries and routine code may shift. If internal tools call 3.8 Flash via the API, compare cost and output before switching. Caveats: in Google's own 10-item comparison, Claude Sonnet 5.5 led on three items including Terminal-Bench 4.1 and OSWorld-2.1, so Hydrogen is not clearly ahead for agentic coding. When 3.8 Flash will be retired from the API is not stated (needs checking)."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003162/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/googles-gemini-4-hydrogen-outscores-the-bigger-argon-just-four-weeks-after-its-launch/"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/"
+        },
+        {
+          "name": "Google Blog",
+          "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-12-openai-api-japan-inference",
+      "date": "2026-11-12",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "セキュリティ",
+        "料金",
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "OpenAI API、「GPT-6 Luna」に限り日本国内での推論が可能に　Responses APIとChat Completions APIが対象",
+        "summary": "OpenAIのAPIで、軽量モデル「gpt-6-luna」に限って推論処理を日本国内で行えるようになった。対象はResponses APIとChat Completions APIで、OpenAI日本法人の社員が11月11日にXで告知した。GPT-6 LunaのAPI料金は入力0.1ドル・出力0.5ドル/100万トークン。",
+        "note": "仕事での使いどころ：データを国外で処理しないことが社内規程や取引先との契約で求められる用途（社内文書の分類・要約など）で、OpenAI APIを検討する根拠になり得る。注意点：OpenAIは既定で不正利用監視のため最大30日間プロンプトや回答を保持するとしており、国内推論でデータの保存場所も国内になるかは記事からは不明で要確認。告知が社員のX投稿である点も、正式な公式ドキュメントで条件を確かめてから使うこと。"
+      },
+      "en": {
+        "title": "OpenAI API now supports in-Japan inference, but only for GPT-6 Luna via the Responses and Chat Completions APIs",
+        "summary": "OpenAI's API can now run inference inside Japan, limited to the lightweight model gpt-6-luna. It covers the Responses API and the Chat Completions API, and was announced on X on November 11 by an employee of OpenAI's Japanese subsidiary. GPT-6 Luna costs $0.10 per million input tokens and $0.50 per million output tokens.",
+        "note": "How to use it at work: for tasks where internal rules or customer contracts require data not to be processed overseas (such as classifying or summarizing internal documents), this may give grounds to consider the OpenAI API. Caveats: by default OpenAI retains prompts and responses for up to 30 days for abuse monitoring, and the article does not say whether in-Japan inference also keeps stored data in Japan (needs checking). Since the announcement came via an employee's post on X, confirm the conditions in official documentation before use."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2611/12/2000003129/"
+        }
+      ]
+    },
     {
       "id": "2026-11-12-gemini-decisions-api",
       "date": "2026-11-12",
