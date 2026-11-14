@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T08:57:27+09:00",
+ "updated": "2026-11-14T09:50:43+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -8703,6 +8703,749 @@
     {
      "name": "Car Watch",
      "url": "https://car.watch.impress.co.jp/docs/news/2155987.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-14-lotus-esprit-horse-v8-hybrid",
+   "date": "2026-11-14",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "Global",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "次期ロータス「エスプリ」（Type 135）、Horse製4.0L ツインターボV8ハイブリッドを搭載：見出し値で986hp超",
+    "summary": "Carscoopsによると、2028年投入予定のロータスのエンジン搭載スーパーカー（Type 135、エスプリ名の復活が有力）は、ルノーと吉利の合弁Horse Powertrainの「W40」を使う。W40は排気量4.0Lのツインターボ V8で、ターボをバンク内側に置くホットV配置。これにハイブリッド駆動と高速変速の変速機を組み合わせ、システム出力は986hp超とされる。",
+    "note": "986 hp × 0.7457 ≈ 735 kW。ホットVはタービンを排気ポート直近に置くため、排気マニホールド容積 V_ex が小さくなり、過給圧の立ち上がり時定数 τ ∝ V_ex/Q_ex（Q_ex：排気体積流量）が短くなる方向（一般論）。エンジン単体出力とモーター出力の内訳、モーター配置は記事要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "Next Lotus 'Esprit' (Type 135) to use Horse's 4.0-litre twin-turbo V8 hybrid, rated above 986 hp in the headline",
+    "summary": "According to Carscoops, Lotus's combustion-powered supercar due in 2028 (Type 135, widely expected to revive the Esprit name) will use the 'W40' from Horse Powertrain, the Renault-Geely joint venture. The W40 is a 4.0-litre twin-turbo V8 with a hot-vee layout, placing the turbos inside the bank. It is paired with a hybrid drive and a fast-shifting transmission, for a system output said to exceed 986 hp.",
+    "note": "986 hp × 0.7457 ≈ 735 kW. A hot vee puts the turbines right next to the exhaust ports, reducing exhaust manifold volume V_ex, so the boost build-up time constant τ ∝ V_ex/Q_ex (Q_ex: exhaust volumetric flow) tends to shorten (general principle). The split between engine and motor output and the motor layout are not in the summary (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2316638/next-gen-lotus-esprit-twin-turbo-v8-hybrid-engine/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-13-tesla-model-y-awd-41990-dropped",
+   "date": "2026-11-13",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "4WD",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "テスラ、米国で41,990ドルの「Model Y AWD」を注文画面から削除：最安のAWDは49,990ドルに",
+    "summary": "Electrekによると、テスラは2月に投入した41,990ドルのModel Y AWD（航続294マイル、0-60mph 4.6秒）を米国の構成画面から外した。現在注文できる最安の2モーター車はModel Y Premium AWD（49,990ドル、327マイル、4.3秒）で、差額は8,000ドル。RWDは39,990ドル（348マイル、6.8秒）で残る。",
+    "note": "0-60mph（26.8 m/s）の平均加速度 a = 26.8/t：AWD 4.3秒→6.2 m/s²（0.64G）、RWD 6.8秒→3.9 m/s²（0.40G）。後輪駆動の発進加速の上限は a ≤ μ·g·W_r/W（W_r/W：加速時の後輪荷重比）で決まり、前後駆動にすると上限が a ≤ μ·g に広がる（転がり・空気抵抗は無視した一般式）。294 mi ≈ 473 km、327 mi ≈ 526 km。"
+   },
+   "en": {
+    "title": "Tesla drops the $41,990 Model Y AWD from its US configurator; cheapest AWD now $49,990",
+    "summary": "According to Electrek, Tesla has removed the $41,990 Model Y AWD (294 miles of range, 0-60 mph in 4.6 s), launched in February, from its US configurator. The cheapest dual-motor version now is the Model Y Premium AWD at $49,990 (327 miles, 4.3 s), an $8,000 difference. The RWD remains at $39,990 (348 miles, 6.8 s).",
+    "note": "Average acceleration over 0-60 mph (26.8 m/s) is a = 26.8/t: AWD 4.3 s → 6.2 m/s² (0.64 g), RWD 6.8 s → 3.9 m/s² (0.40 g). For rear-drive launch the limit is a ≤ μ·g·W_r/W (W_r/W: rear load share under acceleration); driving both axles widens it to a ≤ μ·g (general equation ignoring rolling and aero drag). 294 mi ≈ 473 km, 327 mi ≈ 526 km."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/13/tesla-kills-41990-model-y-awd-configurator/"
+    },
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/815395/tesla-model-y-awd-discontinued/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-13-honda-crv-next-gen-hybrid-only",
+   "date": "2026-11-13",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "PT",
+    "シャシー",
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "ホンダ、次期CR-Vを予告：米国はハイブリッドのみ、新中型プラットフォームで90kg軽量化",
+    "summary": "Carscoopsによると、来年登場する次期CR-Vは1年前に発表された新しい中型アーキテクチャを使い、現行のハイブリッド用プラットフォームより198lb（90kg）軽くなる。同プラットフォームの車種間で部品の60%超を共通化する目標。新ハイブリッド「Honda Hybrid」は2030年3月31日までに投入する次世代HV 15車種に使われる。米国ではRAV4と同様にハイブリッド専用になる。",
+    "note": "質量 m を Δm 減らすと、転がり抵抗 F_r = μ_r·m·g と加速に必要な力 F = m·a がともに Δm/m 比で下がる。仮定値として車重1,700kgなら 90/1700 ≈ 5.3%。同時にばね上質量が減るとばね上固有振動数 f = (1/2π)√(k/m) が上がるため、同じ乗り心地を狙うならばね定数 k の見直しが必要（一般論）。"
+   },
+   "en": {
+    "title": "Honda previews next-gen CR-V: hybrid-only in the US, 90 kg lighter on a new mid-size platform",
+    "summary": "According to Carscoops, the next CR-V arriving next year uses the new mid-size architecture announced a year ago and is 198 lb (90 kg) lighter than the current hybrid platform. Honda aims to share more than 60% of parts across models on it. The new 'Honda Hybrid' powertrain will be used in 15 next-generation hybrid models launched by March 31, 2030. In the US, the CR-V becomes hybrid-only, like the RAV4.",
+    "note": "Cutting mass m by Δm lowers both rolling resistance F_r = μ_r·m·g and the force needed to accelerate F = m·a by Δm/m. With an assumed 1,700 kg curb weight, 90/1700 ≈ 5.3%. A lighter sprung mass also raises the sprung natural frequency f = (1/2π)√(k/m), so spring rate k must be revisited to keep the same ride (general principle)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2315611/honda-previews-all-new-crv-hybrid/"
+    },
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/815194/2028-honda-cr-v-hybrid-only/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-13-aistaland-gt7-erev",
+   "date": "2026-11-13",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "広汽・ファーウェイの「Aistaland」、GT7にEREV追加：CLTC航続1,300km、21.99万元から",
+    "summary": "CnEVPostによると、広汽集団とファーウェイの共同ブランドAistalandは、シューティングブレーク「GT7」にレンジエクステンダー（EREV）仕様を初めて追加した。期間限定価格は221,900元（約33,044ドル）から。EREVの総合航続はCLTCで1,300km、BEV仕様は770km。販売の立ち上がりが遅いことが追加の背景とされる。",
+    "note": "EREVの総航続 ≈ EV航続 + 燃料タンク容量×（発電走行の燃費）。EV単独航続と燃料タンク容量は記事要約に記載なし（要確認）。CLTCはWLTPより低速・低負荷寄りのため、同一車でCLTC値はWLTP値より大きく出る傾向（一般論）。"
+   },
+   "en": {
+    "title": "GAC-Huawei brand Aistaland adds an EREV to the GT7: 1,300 km CLTC range, from 221,900 yuan",
+    "summary": "According to CnEVPost, Aistaland, the brand jointly developed by GAC Group and Huawei, has added an extended-range (EREV) powertrain to its GT7 shooting brake for the first time. The limited-time price starts at 221,900 yuan (about $33,044). The EREV has a combined CLTC range of 1,300 km, versus 770 km for the BEV. The move follows a slow sales ramp-up.",
+    "note": "Total EREV range ≈ EV range + fuel tank capacity × (fuel economy in generator mode). EV-only range and tank capacity are not in the summary (needs confirmation). CLTC is lower-speed and lower-load than WLTP, so CLTC figures tend to exceed WLTP for the same car (general principle)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/13/aistaland-adds-erev-variant-gt7/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-13-nissan-compact-minivan-epower3",
+   "date": "2026-11-13",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "4WD"
+   ],
+   "prio": 2,
+   "conf": "rumor",
+   "ja": {
+    "title": "【スクープ】日産の小型3列ミニバン、全長4.2m級・5ナンバー幅で検討：第3世代e-POWERと電動4WDが候補",
+    "summary": "Responseのスクープ班によると、日産が2028年度以降の国内投入を検討する小型ミニバンは全長4,200mm台、全幅1,700mm未満の5ナンバーサイズ、両側スライドドアと3列シート（6〜7人乗り）が有力。全長4.3m級のシエンタやフリードより短い。パワートレインはモーター・インバーター・減速機・発電機・増速機を一体化した「5-in-1」の第3世代e-POWERが有力で、後輪をモーターで駆動する電動4WDも検討候補という。",
+    "note": "第3世代e-POWERはシリーズHVで、駆動はモーターのみ：P_drive = T_m·ω_m、発電は P_gen = η_g·T_e·ω_e。電動4WDでは前後モーターのトルク配分比 k_r = T_r/(T_f+T_r) を自由に設定でき、加速時は荷重移動 ΔW = m·a_x·h/L に合わせて後輪側を増やせる（一般論）。2028年度以降の投入方針は日産幹部の発言、寸法・パワートレインはスクープ情報（未確認）。"
+   },
+   "en": {
+    "title": "[Scoop] Nissan's compact three-row minivan studied at about 4.2 m long and 5-number width, with 3rd-gen e-POWER and e-4WD as candidates",
+    "summary": "According to Response's scoop team, the compact minivan Nissan is considering for Japan from fiscal 2028 or later is likely to be in the 4,200 mm length range and under 1,700 mm wide (5-number size), with dual sliding doors and three rows (6-7 seats). That is shorter than the roughly 4.3 m Sienta and Freed. The likely powertrain is the third-generation e-POWER with a '5-in-1' unit integrating motor, inverter, reducer, generator and speed-increasing gear, and an e-4WD with a rear motor is also a candidate.",
+    "note": "Third-gen e-POWER is a series hybrid, so only the motor drives the wheels: P_drive = T_m·ω_m, while generation is P_gen = η_g·T_e·ω_e. With e-4WD the front-rear torque share k_r = T_r/(T_f+T_r) can be set freely, and under acceleration the rear share can be raised to follow load transfer ΔW = m·a_x·h/L (general principle). The fiscal-2028-or-later plan comes from a Nissan executive; dimensions and powertrain are scoop information (unconfirmed)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/13/418978.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-subaru-boxer-50pct-thermal",
+   "date": "2026-11-12",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "JP",
+   "tags": [
+    "PT"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "スバル、次世代水平対向エンジンで正味熱効率50%を目標に：単独の技術では届かないと認める",
+    "summary": "Motor1によると、スバルは次世代の水平対向4気筒の詳細を示し、熱効率50%を目標に掲げた。トヨタ・マツダ・スバルは2024年に新しい内燃機関の共同開発を発表している。スバルは複数の追加技術を検討中だが、それらだけでは50%に届かない可能性が高いとしている。",
+    "note": "正味熱効率 η = P_e/(ṁ_f·LHV)。正味燃料消費率 BSFC[g/kWh] = 3600/(η·LHV[MJ/kg])。ガソリンLHVを43MJ/kg（仮定値）とすると、η=0.40 → 209 g/kWh、η=0.50 → 167 g/kWh で、同じ仕事に対し燃料は約20%減。水平対向は燃焼室が扁平になりやすく冷却損失面で不利とされる点が課題（一般論、記事中の具体策は要確認）。"
+   },
+   "en": {
+    "title": "Subaru targets 50% thermal efficiency for its next-generation boxer, admitting individual technologies won't be enough",
+    "summary": "According to Motor1, Subaru has shown details of its next-generation flat-four and set a 50% thermal-efficiency target. Toyota, Mazda and Subaru announced a joint effort on new combustion engines in 2024. Subaru is studying several additional technologies but says they alone are probably not enough to reach 50%.",
+    "note": "Brake thermal efficiency η = P_e/(ṁ_f·LHV). BSFC [g/kWh] = 3600/(η·LHV [MJ/kg]). With an assumed gasoline LHV of 43 MJ/kg, η = 0.40 → 209 g/kWh and η = 0.50 → 167 g/kWh, about 20% less fuel for the same work. Boxer combustion chambers tend to be flat, which is considered a disadvantage for heat loss (general principle; the specific measures in the article need confirmation)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/815223/subaru-new-boxer-engine-details/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-borgwarner-inverter-emotor-orders",
+   "date": "2026-11-12",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "Global",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "ボルグワーナー、大手OEMの次世代BEV向け高電圧インバーターと、中国OEMからEREV/BEV/HV向けeモーターを受注",
+    "summary": "Responseが伝えたボルグワーナーの発表によると、同社は現在インバーターを供給している世界大手OEMから、将来の新開発BEV向け次世代高電圧トラクションインバーターを新たに受注した。別件で、中国の大手OEMからレンジエクステンダー、BEV、ハイブリッドの3用途のeモーターを複数受注し、生産開始は2027〜2028年の予定。OEM名は公表されていない。",
+    "note": "インバーターは電池の直流をモーター駆動用の三相交流に変換する：P_ac = √3·V_LL·I·cosφ、出力周波数 f = p·n/60（p：極対数、n：回転数rpm）。例：p=4、n=15,000rpm で f=1,000Hz（仮定値）。損失 P_loss = P_cond + P_sw で、SiC素子はスイッチング損失を下げる。今回の受注品の素子種類（Si/SiC）・電圧クラスは記事要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "BorgWarner wins next-gen high-voltage inverter business for a major OEM's new BEV, and eMotor orders from Chinese OEMs for EREV, BEV and hybrids",
+    "summary": "According to BorgWarner announcements reported by Response, the company won a new order for next-generation high-voltage traction inverters for a future BEV from a major global OEM it already supplies with inverters. Separately, it won multiple eMotor orders from major Chinese OEMs covering range-extender, BEV and hybrid applications, with production starting in 2027-2028. The OEMs were not named.",
+    "note": "An inverter converts battery DC into three-phase AC for the motor: P_ac = √3·V_LL·I·cosφ, output frequency f = p·n/60 (p: pole pairs, n: speed in rpm). Example: p = 4, n = 15,000 rpm gives f = 1,000 Hz (assumed values). Losses are P_loss = P_cond + P_sw, and SiC devices reduce switching losses. The device type (Si/SiC) and voltage class of these orders are not in the summary (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/12/418943.html"
+    },
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/12/418920.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-nissan-h1-fy26-profit",
+   "date": "2026-11-11",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "日産、2026年度上期は営業利益800億円で黒字転換：売上高6兆720億円、Re:Nissanのコスト削減は上期1,100億円",
+    "summary": "日産は11月11日に2026年度上期（4〜9月）決算を発表した。売上高は前年同期比8.8%増の6兆720億円、営業利益は前年同期の277億円の赤字から800億円の黒字となり、営業利益率は1.3%（1.8ポイント改善）。経常損益は360億円の黒字、純損失は397億円（前年同期2,219億円）。再建計画「Re:Nissan」のコスト削減は上期1,100億円、累計3,650億円。",
+    "note": "営業利益率 = 800/60,720 ≈ 1.32%。前年同期の売上高は 60,720/1.088 ≈ 55,810億円で、前年の利益率は −277/55,810 ≈ −0.50%、差は約1.8ポイントで発表値と一致。"
+   },
+   "en": {
+    "title": "Nissan returns to profit in H1 FY2026 with ¥80 billion operating income on ¥6.072 trillion revenue; Re:Nissan saved ¥110 billion in the half",
+    "summary": "Nissan reported results for the first half of fiscal 2026 (April-September) on November 11. Revenue rose 8.8% to ¥6.072 trillion, and operating income swung from a ¥27.7 billion loss to an ¥80 billion profit, a 1.3% margin (up 1.8 points). Ordinary income was ¥36 billion, and the net loss narrowed to ¥39.7 billion from ¥221.9 billion. Cost cuts under the Re:Nissan plan were ¥110 billion in the half and ¥365 billion cumulative.",
+    "note": "Operating margin = 800/60,720 ≈ 1.32%. Prior-year revenue is 60,720/1.088 ≈ ¥5.581 trillion, so last year's margin was −277/55,810 ≈ −0.50%; the 1.8-point gap matches the reported figure."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/12/418917.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-byd-seal07-cloud-carriage",
+   "date": "2026-11-12",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "CN",
+   "tags": [
+    "制御",
+    "シャシー",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BYD、2代目「Seal 07」でインテリジェント車体制御「Cloud Carriage（雲輦）」の動作を動画で公開",
+    "summary": "Electrekによると、BYDは先週発売した2代目Seal 07で、車体制御システム「Cloud Carriage」の動作を動画で示した。Seal 07は全長5,080mm・全幅1,960mm・全高1,495mm・ホイールベース2,960mm。価格はPHEVが139,900元（約2.1万ドル）、EVが149,900元（約2.25万ドル）から。EVは第2世代ブレードLFP電池76.7kWhでCLTC航続775km。",
+    "note": "電費の目安：76.7 kWh/775 km ≈ 9.9 kWh/100km（CLTC）。可変減衰/車高制御のスカイフック則は F_d = −c_sky·ż_s（ż_s：ばね上上下速度）で、セミアクティブでは実際の減衰力をこの目標に近づける（一般論）。Seal 07に載るCloud Carriageの方式（ダンパー型/エア型）と動画の内容は記事要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "BYD shows its 'Cloud Carriage' intelligent body control in action on the second-generation Seal 07",
+    "summary": "According to Electrek, BYD published a video of its 'Cloud Carriage' body control system on the second-generation Seal 07 launched last week. The Seal 07 measures 5,080 mm long, 1,960 mm wide and 1,495 mm high on a 2,960 mm wheelbase. Prices start at 139,900 yuan (about $21,000) for the PHEV and 149,900 yuan (about $22,500) for the EV. The EV uses a 76.7 kWh second-generation Blade LFP battery for a CLTC range of 775 km.",
+    "note": "Rough efficiency: 76.7 kWh / 775 km ≈ 9.9 kWh/100 km (CLTC). The skyhook law for adaptive damping is F_d = −c_sky·ż_s (ż_s: sprung-mass vertical velocity); semi-active systems drive the actual damper force toward this target (general principle). The type of Cloud Carriage on the Seal 07 (damper-based or air) and the video content are not in the summary (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/11/byd-shows-new-cloud-carriage-body-control-system-video/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-byd-da-tang-wheel-mixup",
+   "date": "2026-11-11",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "品質",
+    "シャシー"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BYD、旗艦SUV「大唐（Great Tang）」の一部で前後ホイールの取り違え：サプライヤーのコード入力ミス、無償交換と保証期間リセット",
+    "summary": "CnEVPostとCarscoopsによると、BYDは大唐EVの一部で前輪用と後輪用のホイールリムが逆に組み付けられたとして謝罪した。原因はサプライヤーのコード入力ミスとしている。無償で点検とリム交換を行い、代車または交通費を補償し、車両保証期間を11月11日から起算し直す。対象台数は公表されていない。",
+    "note": "前後でリム幅やオフセットが異なる場合、取り違えるとトレッド t とスクラブ半径 r_s が設計値からずれ、制駆動力 F_x によるキングピン回りモーメント M = F_x·r_s が変わり、ブレーキ時のステア引っ張りやタイヤ干渉の原因になる（一般論）。大唐の前後リム寸法差は記事要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "BYD swapped front and rear wheels on some 'Great Tang' flagship SUVs: supplier coding error, free replacement and warranty reset",
+    "summary": "According to CnEVPost and Carscoops, BYD apologized after front and rear wheel rims were installed in the wrong positions on some Da Tang (Great Tang) EVs, blaming a code-entry error by a supplier. It will inspect and swap the rims free of charge, provide loaner cars or cover transport costs, and restart the vehicle warranty from November 11. The number of affected vehicles was not disclosed.",
+    "note": "If the front and rear rims differ in width or offset, swapping them shifts track t and scrub radius r_s away from design, changing the kingpin moment M = F_x·r_s from braking/drive forces, which can cause brake pull or tire interference (general principle). The front/rear rim dimensions of the Da Tang are not in the summary (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/11/byd-apologizes-da-tang-wheel-rim-mix-up/"
+    },
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2313907/byd-recall-wheels-backwards-flagship/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-astemo-hydraulic-ride-height",
+   "date": "2026-11-11",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "JP",
+   "tags": [
+    "シャシー",
+    "制御"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "アステモ、油圧ユニットで車高を調整する「次世代車高調整システム」を公開：エアサス相当の機能を低コストで",
+    "summary": "Responseによると、アステモはメディア向けの「Astemo Tech Show, Japan 2026」で、油圧ユニットを使う次世代車高調整システムを展示した。エアサスは車高を無段階に変えられる一方、車高に応じてばね定数が変わるため、セミアクティブダンパーとの組み合わせに難しさがある。会場ではカメラの3Dセンシングと2D認識を組み合わせた走路理解の技術も示された。",
+    "note": "空気ばねのばね定数は近似的に k ≈ n·p·A_e²/V（n：ポリトロープ指数、p：内圧、A_e：有効受圧面積、V：容積）。車高を下げると V が減り k が上がるため、ばね上固有振動数 f = (1/2π)√(k/m) も変わり、ダンパーの最適減衰比 ζ = c/(2√(k·m)) の設定がずれる。油圧で金属ばねの座面を動かす方式なら k は車高によらずほぼ一定（推測：アステモ方式の構造詳細は要確認）。"
+   },
+   "en": {
+    "title": "Astemo shows a 'next-generation ride-height system' using a hydraulic unit, offering air-suspension-like functions at lower cost",
+    "summary": "According to Response, Astemo exhibited a next-generation ride-height system based on a hydraulic unit at its media event 'Astemo Tech Show, Japan 2026'. Air suspension allows stepless height changes, but its spring rate changes with ride height, which makes pairing it with semi-active dampers difficult. The event also showed road-understanding technology combining camera-based 3D sensing and 2D recognition.",
+    "note": "An air spring's rate is roughly k ≈ n·p·A_e²/V (n: polytropic index, p: internal pressure, A_e: effective area, V: volume). Lowering the car reduces V and raises k, which shifts the sprung natural frequency f = (1/2π)√(k/m) and moves the optimal damping ratio ζ = c/(2√(k·m)). If hydraulics move the seat of a steel spring, k stays nearly constant regardless of height (speculation: the details of Astemo's design need confirmation)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/11/418883.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-amg-gt63-suv-1153bhp",
+   "date": "2026-11-11",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "4WD"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "メルセデスAMG初の独自開発SUV「GT 63 SUV」試乗：3モーター合計1,153bhp、車重2,695kg",
+    "summary": "Autocarの試乗記によると、新型GT 63 SUVはAMG史上最強のロードカーで、3基の電気モーターで1,153bhpを出す。AMGが単独で開発した初のSUVで、全長5,084mm、5人乗り、荷室は最大607L、車重は2,695kg。",
+    "note": "1,153 bhp × 0.7457 ≈ 860 kW、パワーウエイトレシオ 860/2,695 ≈ 0.32 kW/kg。3モーターで後輪2基とした場合（推測、配置は記事要約に記載なし）、左右独立トルクでヨーモーメント Mz = (T_RR − T_RL)·t_r/(2·r_w)（t_r：後トレッド、r_w：タイヤ半径）を直接作れる。"
+   },
+   "en": {
+    "title": "Mercedes-AMG GT 63 SUV, its first in-house SUV, driven: 1,153 bhp from three motors, 2,695 kg",
+    "summary": "According to Autocar's drive, the new GT 63 SUV is Mercedes-AMG's most powerful road car, producing 1,153 bhp from three electric motors. It is AMG's first independently developed SUV: 5,084 mm long, five seats, up to 607 litres of luggage space and a weight of 2,695 kg.",
+    "note": "1,153 bhp × 0.7457 ≈ 860 kW, a power-to-weight ratio of 860/2,695 ≈ 0.32 kW/kg. If two of the three motors are at the rear (speculation; the layout is not in the summary), independent left/right torque directly creates a yaw moment Mz = (T_RR − T_RL)·t_r/(2·r_w) (t_r: rear track, r_w: tire radius)."
+   },
+   "src": [
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/features/amg-hyper-suv-driven-1153bhp-cayenne-chaser-breaks-rules-physics"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-rwth-115-emotors-study",
+   "date": "2026-11-11",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "Global",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "RWTHアーヘン工科大、EV80車種・115基のモーターを比較：PMSMの平均最大出力密度は2019年1.68→2024-25年2.43kW/kg",
+    "summary": "electriveによると、RWTHアーヘン工科大のPEM講座は2019〜2025年型のEV80車種から115基の駆動モーターを調べ、学術誌Energiesに発表した。中国・欧州・米国の基本設計の差は小さく、材料と構造の細部で違いがある。2022年以降はモーター・変速機・パワーエレクトロニクスを一体化した構成が主流で、永久磁石同期モーターの平均最大出力密度は約45%上がった。",
+    "note": "増加率 2.43/1.68 = 1.446（+44.6%）。仮定値として最大出力200kWのモーターでは、質量 m = P/ρ_P が 200/1.68 ≈ 119kg → 200/2.43 ≈ 82kg（−37kg）。出力 P = T·ω のため、出力密度向上は主に高回転化（ω↑）と冷却強化（電流密度↑によるT↑）で得られる（一般論、論文の内訳は要確認）。"
+   },
+   "en": {
+    "title": "RWTH Aachen compares 115 motors from 80 EVs: average peak power density of PMSMs rose from 1.68 kW/kg (2019) to 2.43 kW/kg (2024-25)",
+    "summary": "According to electrive, RWTH Aachen's PEM chair examined 115 traction motors from 80 EVs of model years 2019-2025 and published the results in the journal Energies. Basic designs from China, Europe and the US differ little; differences lie in materials and construction details. Since 2022, integrated units combining motor, transmission and power electronics have dominated, and the average peak power density of permanent-magnet synchronous motors rose about 45%.",
+    "note": "Growth = 2.43/1.68 = 1.446 (+44.6%). For an assumed 200 kW motor, mass m = P/ρ_P falls from 200/1.68 ≈ 119 kg to 200/2.43 ≈ 82 kg (−37 kg). Since P = T·ω, higher power density comes mainly from higher speed (ω↑) and better cooling (higher current density, T↑) (general principle; the paper's breakdown needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/11/german-study-compares-electric-motors-from-china-europe-and-the-usa/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-09-eu-envi-vote-2035-soften",
+   "date": "2026-11-09",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "PT"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "欧州議会環境委員会、2035年の乗用車・バンCO2目標の緩和案を賛成48・反対30・棄権2で可決：低炭素鋼クレジットも",
+    "summary": "Motor1によると、欧州議会の環境委員会（ENVI）は11月4日、2035年のエンジン車実質禁止を緩める案を賛成48、反対30、棄権2で可決した。案では2035年以降も台数を絞ってエンジン車の販売を認め、乗用車・バンの目標を下げる。低炭素鋼の使用によるクレジットを、目標達成の別の手段として加える。",
+    "note": "メーカーのフリート平均 CO2_fleet = Σ(n_i·CO2_i)/Σn_i を目標値と比べる。仮に目標が2021年比100%削減でなく87.5%削減（10月の3会派妥協案の数値）なら、2021年基準を仮定値 95 g/km として許容平均は 95×0.125 ≈ 11.9 g/km となり、エンジン車の一部販売が残る計算。委員会可決案の最終数値と本会議・理事会の日程は記事要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "European Parliament environment committee backs softer 2035 CO2 targets for cars and vans, 48-30-2, with low-carbon steel credits",
+    "summary": "According to Motor1, the European Parliament's Environment Committee (ENVI) voted on November 4 by 48 to 30 with two abstentions to water down the EU's 2035 combustion-engine phase-out. The text would allow combustion cars to stay on sale in reduced numbers after 2035 and lowers the targets for cars and vans. It adds credits for low-carbon steel as another way to meet the targets.",
+    "note": "A maker's fleet average CO2_fleet = Σ(n_i·CO2_i)/Σn_i is compared with the target. If the target were an 87.5% cut versus 2021 (the figure in October's three-group compromise) rather than 100%, and assuming a 2021 baseline of 95 g/km, the allowed average is 95 × 0.125 ≈ 11.9 g/km, leaving room for some combustion sales. The final figure in the committee text and the plenary/Council timetable are not in the summary (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/814805/eu-parliament-proposal-soften-2035/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-eu-uk-ev-tariff-delay",
+   "date": "2026-11-12",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "EUと英国、2027年1月から予定のEV相互関税10%の再延期を検討：原産地規則は車両55%、電池パック70%",
+    "summary": "electriveによると、欧州委員会は英国とのEV貿易に2027年から課す予定の関税の延期を検討しており、英政府も支持しているとされる。現行の経過措置は2026年末で終わり、合意がなければ2027年1月1日から一部EVに10%の関税がかかる。2027年以降、車両価値の55%以上、電池セル・モジュールは65%、電池パックは70%をEU/英国由来にする必要がある。ACEAは数十億ユーロ規模の負担を警告している。",
+    "note": "原産地判定は地域付加価値率 RVC = (V_total − V_non_originating)/V_total ≥ 閾値。電池が車両価格の約3〜4割を占める（仮定値）ため、アジア製セルを使うとセル・パックの閾値（65%/70%）を満たせず、車両の55%判定も下回りやすい。"
+   },
+   "en": {
+    "title": "EU and UK consider delaying again the 10% mutual EV tariff due from January 2027; rules of origin require 55% for vehicles, 70% for battery packs",
+    "summary": "According to electrive, the European Commission is considering postponing tariffs on EV trade with the UK planned for 2027, and the UK government reportedly supports a delay. The current transitional rules end at the end of 2026; without a deal, a 10% duty would apply to certain EVs from January 1, 2027. From 2027, at least 55% of vehicle value must come from the EU or UK, rising to 65% for battery cells and modules and 70% for battery packs. ACEA warns of a multi-billion-euro burden.",
+    "note": "Origin is judged by regional value content RVC = (V_total − V_non_originating)/V_total ≥ threshold. With the battery around 30-40% of vehicle value (assumed), Asian-made cells make it hard to meet the cell/pack thresholds (65%/70%) and also push the vehicle below 55%."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/12/eu-and-uk-could-delay-mutual-ev-tariffs-once-more/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-ford-ev-battery-health-100k",
+   "date": "2026-11-10",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "電池",
+    "品質"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "フォード、EV電池は10万マイル後も平均90%超の健全度：Mach-E 3.6万台・20億マイルのデータで平均92%",
+    "summary": "Electrekなどによると、フォードは2021年型以降のMustang Mach-E 36,000台超、米国・カナダでの走行20億マイル分のデータを集計し、Mach-Eの電池は過去5年で平均92%の健全度を保ったと発表した。F-150 LightningやE-Transitを含む全EVで、10万マイル走行後の電池健全度は平均90%超としている。",
+    "note": "健全度 SOH = C_now/C_new。10万マイル ≈ 160,934 km。仮に年1.5万マイル走行（仮定値）なら10万マイルは約6.7年。容量劣化はカレンダー劣化（≈ a·√t）とサイクル劣化（≈ b·Ah_throughput）の和で近似されることが多く（経験式）、SOH 90%は航続が新車時の約90%になることを意味する。"
+   },
+   "en": {
+    "title": "Ford says its EV batteries keep over 90% health on average after 100,000 miles; Mach-E averages 92% across 36,000 vehicles and 2 billion miles",
+    "summary": "According to Electrek and others, Ford analysed data from more than 36,000 Mustang Mach-Es from model year 2021 onward, covering 2 billion miles in the US and Canada, and said the Mach-E battery retained 92% health on average over five years. Across its EV lineup, including the F-150 Lightning and E-Transit, battery health averaged more than 90% after 100,000 miles.",
+    "note": "State of health SOH = C_now/C_new. 100,000 miles ≈ 160,934 km; at an assumed 15,000 miles a year that is about 6.7 years. Capacity fade is often approximated as calendar ageing (≈ a·√t) plus cycle ageing (≈ b·Ah throughput) (empirical model); 90% SOH means range is about 90% of new."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/09/fords-ev-batteries-retain-over-90-health-after-100000-miles/"
+    },
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/814780/ford-mustang-mach-e-battery-degradation-range-study/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-09-messe-nagoya-jtekt-sbw-aisin-eaxle",
+   "date": "2026-11-09",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "JP",
+   "tags": [
+    "制御",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "メッセナゴヤ2026（11月11〜13日）：ジェイテクトがステア・バイ・ワイヤ「シンカステア」、アイシンがeAxleと回生協調ブレーキを展示",
+    "summary": "Responseによると、ジェイテクトはポートメッセなごやで開かれるメッセナゴヤ2026で、運転者の操作を電気信号に変えて車輪に伝えるステア・バイ・ワイヤ「Syncusteer（シンカステア）」を含む最新技術2点をパネルで紹介する。アイシンは「生産と製品の両軸でめざすカーボンニュートラル」をテーマに、eAxleや回生協調ブレーキなどのEV関連製品を一体型展示で示す。",
+    "note": "SBWではハンドル角 θ_sw と転舵角 δ の機械的結合がなく、δ = θ_sw/N(V)（N：車速依存の可変ギア比）を自由に設定できる。回生協調ブレーキは要求制動力 F_req = F_regen + F_fric を満たすよう、モーターの回生上限 F_regen,max = T_m,max·i/r_w を超える分だけ摩擦ブレーキで補う。展示品の具体仕様は記事要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "Messe Nagoya 2026 (Nov 11-13): JTEKT shows 'Syncusteer' steer-by-wire, Aisin shows eAxle and regenerative cooperative braking",
+    "summary": "According to Response, JTEKT will present two latest technologies on panels at Messe Nagoya 2026 at Port Messe Nagoya, including the 'Syncusteer' steer-by-wire system that converts driver inputs into electrical signals sent to the wheels. Aisin, under the theme of carbon neutrality through both production and products, will show EV products such as its eAxle and regenerative cooperative braking in an integrated display.",
+    "note": "With SBW there is no mechanical link between steering-wheel angle θ_sw and road-wheel angle δ, so δ = θ_sw/N(V) (N: speed-dependent variable ratio) can be set freely. Cooperative regenerative braking meets the demanded force F_req = F_regen + F_fric, with friction brakes covering only what exceeds the regen limit F_regen,max = T_m,max·i/r_w. Specific specs of the exhibits are not in the summary (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/09/418771.html"
+    },
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/09/418775.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-mobileye-aeb-iso21448",
+   "date": "2026-11-10",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "Global",
+   "tags": [
+    "ADAS",
+    "規制"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "Mobileye、AEBの開発プロセスがISO 21448（SOTIF）に適合とTÜV SÜDから初の検査証明",
+    "summary": "Responseによると、MobileyeはAEB（衝突被害軽減ブレーキ）の開発プロセスについて、独TÜV SÜDから初の検査証明書を取得した。評価対象はAEBの作動性能ではなく、設計どおりに動いても生じ得る危険を開発段階で特定・評価・低減する手順で、それが「意図した機能の安全性（SOTIF）」の国際規格ISO 21448に合うと確認された。",
+    "note": "ISO 26262が故障（ランダム/系統的）による危険を扱うのに対し、ISO 21448は故障がなくても性能限界や誤認識で生じる危険を扱う。AEBでは誤作動（False Positive）と不作動（False Negative）のトレードオフがあり、作動判定の TTC = d/v_rel（d：距離、v_rel：相対速度）の閾値設定が両者のバランスを決める（一般論）。"
+   },
+   "en": {
+    "title": "Mobileye receives TÜV SÜD's first certificate that its AEB development process complies with ISO 21448 (SOTIF)",
+    "summary": "According to Response, Mobileye received its first inspection certificate from Germany's TÜV SÜD for its automatic emergency braking (AEB) development process. The assessment did not cover AEB performance itself but the procedures for identifying, evaluating and reducing hazards that can arise even when the system works as designed, confirming compliance with ISO 21448, the standard for Safety of the Intended Functionality (SOTIF).",
+    "note": "ISO 26262 deals with hazards from faults (random or systematic), while ISO 21448 covers hazards from performance limits or misperception without any fault. AEB trades off false positives against false negatives, and the threshold on TTC = d/v_rel (d: distance, v_rel: closing speed) sets that balance (general principle)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/10/418792.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-09-hyundai-kona-ev-airbag-recall",
+   "date": "2026-11-09",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "US",
+   "tags": [
+    "品質",
+    "規制"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "ヒョンデ、米国で初代コナ・エレクトリック29,058台をリコール：事故時にエアバッグとプリテンショナーが作動しないおそれ",
+    "summary": "InsideEVsによると、ヒョンデは米国で初代Kona Electric（2019〜2023年型）29,058台をリコールする。衝突時にエアバッグとシートベルトのプリテンショナーが意図どおり作動しないおそれがある。対象は2018年8月28日〜2023年7月26日に韓国で生産された車両。",
+    "note": ""
+   },
+   "en": {
+    "title": "Hyundai recalls 29,058 first-generation Kona Electrics in the US because airbags and pretensioners may not deploy",
+    "summary": "According to InsideEVs, Hyundai is recalling 29,058 first-generation Kona Electric crossovers (model years 2019-2023) in the US because their airbags and seatbelt pretensioners may not work as intended in a crash. The vehicles were built in South Korea between August 28, 2018 and July 26, 2023.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/814850/hyundai-kona-electric-airbag-recall/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-07-toyota-multipathway-platform",
+   "date": "2026-11-07",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "戦略",
+    "PT"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、次世代カローラ・ヤリスなどA〜Cセグを1つの「マルチパスウェイプラットフォーム」に統合：BEV・PHEV・HV・ICE・CN燃料に対応",
+    "summary": "Car Watchによると、トヨタの宮崎洋一副社長は11月5日の上期決算会見で、A・B・Cセグメントの主要車種を1つの車台で賄う「マルチパスウェイプラットフォーム」を説明した。BEV、PHEV、HV、ICE、CN燃料車を同じ車台で作り、量を束ねて原価競争力を高める。アジアの車種構成はA〜Cセグが6割で、そのうちBEVは23%。カローラとヤリスを同じ車台にすると衝突基準などでカローラ級に合わせた開発になる課題も挙げた。",
+    "note": "共通化による原価低減の目安として、学習曲線 C(N) = C_1·N^(−b)（N：累積生産量）を使うと、学習率80%（b ≈ 0.32、仮定値）で生産量2倍ごとに単価が20%下がる。小型車を大きいクラスの衝突要件に合わせると構造質量が増える方向になる点が、記事で触れられたトレードオフ。"
+   },
+   "en": {
+    "title": "Toyota to merge A-to-C segment models such as the next Corolla and Yaris onto one 'multi-pathway platform' for BEV, PHEV, HV, ICE and CN fuels",
+    "summary": "According to Car Watch, Toyota Executive Vice President Yoichi Miyazaki explained at the November 5 half-year results briefing a 'multi-pathway platform' covering the main A, B and C segment models with one architecture. BEVs, PHEVs, hybrids, ICE and carbon-neutral-fuel cars will share it, bundling volume to improve cost competitiveness. In Asia, A-C segments make up 60% of the mix, of which 23% are BEVs. He noted that putting the Corolla and Yaris on one platform means developing to Corolla-class requirements, including crash standards.",
+    "note": "As a rough guide to cost reduction from commonality, the learning curve C(N) = C_1·N^(−b) (N: cumulative output) with an 80% learning rate (b ≈ 0.32, assumed) cuts unit cost by 20% each time volume doubles. Designing a small car to a larger class's crash requirements tends to add structural mass, the trade-off mentioned in the article."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2154605.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-mercedes-ice-10-15-years",
+   "date": "2026-11-10",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "メルセデス・ベンツのケレニウス会長「内燃機関は最低10年、おそらく15年残る」：Euro 7対応エンジンとディーゼルも継続",
+    "summary": "Motor1がAutocar Indiaの取材を引いて伝えたところでは、ケレニウス会長は内燃機関が少なくとも10年、おそらく15年は残ると述べた。電動化への移行は2030年や2035年で終わるものではなく、20〜25年かかる産業変革だという。ディーゼル、Euro 7に対応して開発したエンジン、増えるEVを顧客需要に応じて一つの戦略に組み合わせるとしている。",
+    "note": ""
+   },
+   "en": {
+    "title": "Mercedes chairman Källenius: combustion engines will last at least 10, probably 15 more years; Euro 7-ready engines and diesel continue",
+    "summary": "Citing an interview with Autocar India, Motor1 reports that chairman Ola Källenius said the combustion engine will be around for at least 10, probably 15 more years. He described the shift to electric mobility as a 20-25-year industrial transformation that does not wrap up by 2030 or 2035, combining diesel, engines developed to be Euro 7-ready and a growing EV lineup in one strategy driven by customer demand.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/814959/mercedes-benz-plans-keep-gas/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-lexus-rz-imd-engine-sound",
+   "date": "2026-11-12",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "制御",
+    "4WD"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "レクサス「RZ」一部改良：RZ550eの疑似MT「IMD」SPORTモードに新開発エンジンサウンド、価格815万〜975万円",
+    "summary": "Car Watchによると、レクサスは11月12日にRZを一部改良して発売した。RZ550eに搭載するインタラクティブマニュアルドライブ（IMD）のSPORTモードに、新開発の「インタラクティブマニュアルドライブエンジンサウンド」を採用した。価格はRZ550e F SPORT 975万円、RZ500e version L（AWD）875万円、RZ350e version L（FWD）815万円。RZは2025年にDIRECT4の特性見直しやステアバイワイヤの採用を受けている。",
+    "note": "疑似MTでは仮想ギア比 i_v と仮想エンジン回転 N_v = (60/(2π r_w))·i_v·V を計算し、N_v に応じて音と駆動トルク T_wheel = T_v(N_v)·i_v を作る。DIRECT4は前後モーターのトルク配分を走行状態で変える四輪駆動力制御で、配分比の範囲は記事要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "Lexus RZ update: new engine sound for the RZ550e's simulated-manual 'IMD' SPORT mode; priced ¥8.15-9.75 million",
+    "summary": "According to Car Watch, Lexus updated the RZ on November 12. The Interactive Manual Drive (IMD) on the RZ550e gets a newly developed 'Interactive Manual Drive engine sound' in SPORT mode. Prices are ¥9.75 million for the RZ550e F SPORT, ¥8.75 million for the RZ500e version L (AWD) and ¥8.15 million for the RZ350e version L (FWD). In 2025 the RZ received revised DIRECT4 characteristics and steer-by-wire.",
+    "note": "A simulated manual computes a virtual gear ratio i_v and virtual engine speed N_v = (60/(2π r_w))·i_v·V, then generates sound and wheel torque T_wheel = T_v(N_v)·i_v from it. DIRECT4 is all-wheel-drive torque control that varies front/rear motor torque split by driving condition; the split range is not in the summary (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2155879.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-silverado-hd-2027-83l-duramax",
+   "date": "2026-11-10",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "2027年型シボレー・シルバラードHD試乗：新8.3L「Mongoose」Duramaxディーゼルは1,230lb-ft、牽引最大38,000lb",
+    "summary": "Carscoopsは標高約8,000フィートのツーソン郊外で2027年型シルバラードHDを試乗した。改良型6.6LガソリンV8（ライトデューティー用とは別物）と、新しい8.3Lターボディーゼル「Mongoose」Duramaxの2機種を用意する。ディーゼルは1,230lb-ftを発生し、装備によってはグースネックトレーラー38,000lbを牽引できる。",
+    "note": "1,230 lb-ft × 1.3558 ≈ 1,668 N·m、38,000 lb × 0.4536 ≈ 17,237 kg。高地では空気密度 ρ = p/(R·T) が下がり、標高8,000ft（約2,440m）では海面比およそ75%（標準大気の近似）。自然吸気の出力は概ね ρ に比例して落ち、過給機関はブーストで補える分だけ影響が小さい（一般論）。"
+   },
+   "en": {
+    "title": "2027 Chevy Silverado HD driven: new 8.3-litre 'Mongoose' Duramax diesel makes 1,230 lb-ft and tows up to 38,000 lb",
+    "summary": "Carscoops drove the 2027 Silverado HD near Tucson at nearly 8,000 feet. It offers an updated 6.6-litre gasoline V8 (different from the light-duty engine) and the new 8.3-litre 'Mongoose' Duramax turbodiesel. The diesel makes 1,230 lb-ft and, depending on equipment, can tow a gooseneck trailer of up to 38,000 lb.",
+    "note": "1,230 lb-ft × 1.3558 ≈ 1,668 N·m; 38,000 lb × 0.4536 ≈ 17,237 kg. At altitude, air density ρ = p/(R·T) drops to roughly 75% of sea level at 8,000 ft (about 2,440 m, standard-atmosphere approximation). Naturally aspirated output falls roughly in proportion to ρ, while turbocharged engines lose less because boost compensates (general principle)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2311673/2027-chevrolet-silverado-hd-first-drive-towing-duramax/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-china-nev-exports-oct-606k",
+   "date": "2026-11-11",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "中国の10月NEV輸出は60.6万台で前年同月比140%増：NEV全体194万台の31.2%が輸出、国内販売は8.6%減",
+    "summary": "electriveによると、中国の10月のNEV販売は前年同月比13.1%増の194万台で、国内133.4万台と輸出60.6万台の合計。輸出は前年比140%増、9月の57.1万台からも6.1%増え、NEVの31.2%が輸出された。一方、中国国内の販売は8.6%減った。",
+    "note": "輸出比率 = 60.6/194 ≈ 31.2%（記事値と一致）。前年10月の輸出は 60.6/2.40 ≈ 25.3万台と逆算できる。"
+   },
+   "en": {
+    "title": "China's October NEV exports hit 606,000, up 140%: 31.2% of 1.94 million NEVs went abroad as domestic sales fell 8.6%",
+    "summary": "According to electrive, China's NEV sales in October rose 13.1% year on year to 1.94 million, made up of 1.334 million domestic sales and 606,000 exports. Exports rose 140% year on year and 6.1% from September's 571,000, so 31.2% of NEVs were exported. Domestic sales in China fell 8.6%.",
+    "note": "Export share = 60.6/194 ≈ 31.2% (matches the article). Working back, last October's exports were about 60.6/2.40 ≈ 253,000."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/11/chinas-electric-car-exports-surge-by-140-per-cent/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-rav4-woodland-2027-suspension",
+   "date": "2026-11-10",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "シャシー",
+    "4WD"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "2027年型RAV4「Woodland」の続報：専用ばね・ショックで最低地上高を8.5→9.1インチに",
+    "summary": "Carscoopsによると、2027年型RAV4 Woodlandは全地形タイヤに加えて新しいばねとショックアブソーバーを採用し、最低地上高を従来の8.5インチから9.1インチに上げた。悪路走破性の向上が狙い。",
+    "note": "8.5 in → 9.1 in は 216 mm → 231 mm（+15 mm）。重心高 h が同程度上がると、旋回時の左右荷重移動 ΔF_z = m·a_y·h/t（t：トレッド）が h の比で増える。例：h = 600 mm（仮定値）で +15 mm なら +2.5%。ばね定数・減衰力の数値は記事要約に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "2027 RAV4 Woodland follow-up: new springs and shocks raise ground clearance from 8.5 to 9.1 inches",
+    "summary": "According to Carscoops, the 2027 RAV4 Woodland adds new springs and shock absorbers on top of its all-terrain tires, raising ground clearance from 8.5 inches on the previous version to 9.1 inches, aimed at better off-road capability.",
+    "note": "8.5 in → 9.1 in is 216 mm → 231 mm (+15 mm). If the centre of gravity h rises by a similar amount, lateral load transfer ΔF_z = m·a_y·h/t (t: track) grows in proportion to h; e.g. +15 mm on an assumed h = 600 mm is +2.5%. Spring and damping values are not in the summary (needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2310972/2027-toyota-rav4-woodland-suspension-upgrades/"
     }
    ]
   }
