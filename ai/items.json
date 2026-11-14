@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T09:05:00+09:00",
+  "updated": "2026-11-14T10:03:11+09:00",
   "items": [
     {
       "id": "2026-11-13-gemini-4-hydrogen",
@@ -6449,6 +6449,559 @@
         {
           "name": "TechCrunch",
           "url": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-14-claude-for-manufacturing",
+      "date": "2026-11-14",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "エージェント",
+        "仕事で使える"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "Anthropic「Claude for Manufacturing」　Autodesk Fusion・Oracle NetSuite・Infor・Microsoft 365と接続し、見積や代替発注の下書きを作るプラグイン",
+        "summary": "AnthropicがClaude向けの製造業プラグインを出した。接続先はAutodesk Fusion、Oracle NetSuite、Microsoft 365、Inforの4系統で、それ以外のシステムはMicrosoft 365へのファイル書き出し経由で扱う。17個の専用スキルで、在庫に基づく見積の下書き、サプライヤー比較、品質レポートや設計案の作成、設備停止時のセンサーデータとマニュアルの解析、納期遅れ時の代替発注を行い、いずれも人の承認後に実行する。機械そのものの制御は対象外で、そのための「Model Hardware Standard」は別途開発中とされる。",
+        "note": "仕事での使いどころ：試作部品の手配遅れ時の代替先比較や、設備トラブル時のマニュアル検索の下書きに近い用途。開発部門より生産技術・調達・品質保証で効きやすいと推測。注意点：基幹システム（ERP・PLM）に接続するため、情報システム部門の承認と権限設計が前提。料金・対応プラン・日本での提供状況は記事に記載がなく要確認。報道ベースの情報。"
+      },
+      "en": {
+        "title": "Anthropic launches 'Claude for Manufacturing', a plugin that connects to Autodesk Fusion, Oracle NetSuite, Infor and Microsoft 365 to draft quotes and backup orders",
+        "summary": "Anthropic released a manufacturing plugin for Claude. It connects to four systems: Autodesk Fusion, Oracle NetSuite, Microsoft 365 and Infor; other systems are handled through file exports into Microsoft 365. Its 17 dedicated skills draft quotes from actual inventory, compare suppliers, create quality reports and design variants, analyze sensor data and manuals during machine downtime, and place backup orders when deliveries slip, all only after human approval. It does not control machines; Anthropic is separately developing a 'Model Hardware Standard' for that.",
+        "note": "How to use it at work: close to drafting supplier comparisons when prototype parts are late, or searching manuals during equipment trouble. My guess is it fits production engineering, purchasing and quality assurance better than R&D. Caveats: it connects to core systems (ERP, PLM), so IT approval and permission design come first. Pricing, eligible plans and availability in Japan are not stated in the article and need checking. Based on press reports."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/anthropics-claude-for-manufacturing-plugs-ai-directly-into-factory-software-to-automate-industrial-workflows/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-14-chatgpt-wallet",
+      "date": "2026-11-14",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "エージェント",
+        "セキュリティ"
+      ],
+      "prio": 2,
+      "conf": "primary",
+      "ja": {
+        "title": "OpenAI「ChatGPT Wallet」　ChatGPT Work・Codex・dotsのエージェントが利用者の承認を得て買い物を決済　まず米国のProユーザーから",
+        "summary": "OpenAIが、エージェントに買い物の決済まで任せる「ChatGPT Wallet」を始めた。対象はChatGPT Work、Codex、dotsのエージェントで、カードを一度登録し、購入ごとにFace IDか指紋で承認する。カード番号は決済トークンで隠され、エージェントには渡らない。提供開始は米国の18歳以上のProユーザーで、米国の請求先住所と、米国発行のAmerican Express・Chase・Mastercard・Visaの対象カードが条件。以前の「Instant Checkout」をやめて作り直した仕組みと報じられている。",
+        "note": "仕事での使いどころ：現時点では米国限定のため、日本の会社員がすぐ使う機能ではない。将来、消耗品や書籍の購入をエージェントに任せる形の参考になる。注意点：会社のカードや購買システムを個人のAIに登録するのは、多くの会社の購買規程に反する可能性が高い。日本での提供時期は未発表で要確認。"
+      },
+      "en": {
+        "title": "OpenAI launches 'ChatGPT Wallet' so agents in ChatGPT Work, Codex and dots can pay with user approval, starting with US Pro users",
+        "summary": "OpenAI started 'ChatGPT Wallet', which lets agents complete purchases. It covers agents in ChatGPT Work, Codex and dots: you register a card once and approve each purchase with Face ID or a fingerprint. Card numbers are hidden behind payment tokens and are not passed to the agent. It is rolling out first to US Pro users aged 18+, with a US billing address and an eligible US-issued American Express, Chase, Mastercard or Visa card. Reports say it replaces the earlier 'Instant Checkout' approach.",
+        "note": "How to use it at work: it is US-only for now, so it is not something office workers in Japan can try immediately; it is a reference for how agents may later buy supplies or books. Caveats: registering a company card or purchasing system with a personal AI likely violates most companies' purchasing rules. No date for Japan has been announced; needs checking."
+      },
+      "src": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/openai-rebuilt-ai-shopping-from-scratch-with-chatgpt-wallet/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-13-m365-outage-ai-connectors",
+      "date": "2026-11-13",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Microsoft 365で障害、Outlook・Teams・Copilotに加えChatGPTとClaudeの「M365コネクタ」も動かず",
+        "summary": "日本時間11月13日午前8時55分の時点で、Outlook、Teams、Microsoft 365 Copilotなど複数のMicrosoft 365サービスにつながりにくい・つながらない障害が出た。その影響で、ChatGPTとClaudeの「Microsoft 365コネクタ」（メールやファイルを読み込む連携機能）も正常に動かないと、OpenAIとAnthropicの両社が報告した。",
+        "note": "仕事での使いどころ：AIの便利機能が、裏でつながっている別サービスの障害でまとめて止まる例。会議直前の議事録要約やメール整理をAIのコネクタ頼みにしている場合は、手動の代替手順（ファイルを直接アップロードするなど）を決めておく。注意点：復旧時刻や原因はこの記事の時点では不明で要確認。"
+      },
+      "en": {
+        "title": "Microsoft 365 outage takes down Outlook, Teams and Copilot, and also breaks the M365 connectors in ChatGPT and Claude",
+        "summary": "As of 8:55 a.m. JST on November 13, several Microsoft 365 services, including Outlook, Teams and Microsoft 365 Copilot, were hard or impossible to reach. As a result, the 'Microsoft 365 connectors' in ChatGPT and Claude (the integrations that read your mail and files) also stopped working properly, according to both OpenAI and Anthropic.",
+        "note": "How to use it at work: an example of AI features failing all at once because a connected service is down. If you rely on AI connectors for pre-meeting summaries or email triage, decide on a manual fallback, such as uploading files directly. Caveats: recovery time and cause were unknown when the article was written; needs checking."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2611/13/2000003164/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-13-google-gfg-enterprise-coding-model",
+      "date": "2026-11-13",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "intermediate",
+      "tags": [
+        "コーディング",
+        "モデル"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Google、社内専用コーディングモデル「GfG」の論文を公開　開発データ1兆トークンで学習、社内2万9,000人のA/Bテストでやり取り回数23.1％減",
+        "summary": "Googleなどの研究者が10月に出した論文「Customizing an LLM for Enterprise Software Engineering」を解説した記事。完成コードだけでなく社内の開発プロセス全体から集めた約1兆トークンでGeminiを追加学習し、社内専用のコーディングモデルを作った。社内開発者2万9,000人のブラインドA/Bテストでは、Gemini 2.5 Pro比でタスク完了までのやり取り回数が23.1％減、応答時間が8.9％短縮、AIが書いたコード行が14日後も修正されずに残る割合が16.8％向上した。Googleではすでにコードの75％以上をAIが作成または下書きしているという。",
+        "note": "仕事での使いどころ：社内独自のライブラリや設計ルールが多い職場ほど、汎用AIでは精度が出にくいという定量的な根拠になる。制御ソフト（独自のコーディング規約やモデルベース開発の部品）でも同じ課題があると推測。注意点：1兆トークン規模の学習はGoogle規模の話で、一般企業がそのまま真似できるものではない。まずは規約や過去コードを参照資料として渡す運用が現実的（推測）。"
+      },
+      "en": {
+        "title": "Google publishes a paper on 'GfG', its internal coding model trained on 1 trillion tokens of development data; a 29,000-developer A/B test cut interactions by 23.1%",
+        "summary": "The article explains the October paper 'Customizing an LLM for Enterprise Software Engineering' by Google and other researchers. They further trained Gemini on about 1 trillion tokens collected from the whole internal development process, not just finished code, to build an in-house coding model. In a blind A/B test with 29,000 internal developers, compared with Gemini 2.5 Pro, the number of exchanges needed to finish a task fell 23.1%, response time fell 8.9%, and the share of AI-written lines still unmodified after 14 days rose 16.8%. Google says over 75% of its code is already written or drafted by AI.",
+        "note": "How to use it at work: it gives numbers behind the idea that general-purpose AI struggles where in-house libraries and design rules dominate. I suspect embedded control software (in-house coding rules, model-based design blocks) faces the same issue. Caveats: training on a trillion tokens is Google-scale and not something a typical company can copy; supplying coding rules and past code as reference material is the realistic first step (my guess)."
+      },
+      "src": [
+        {
+          "name": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003110/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-11-gemini-notebook-api-mcp",
+      "date": "2026-11-11",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "エージェント",
+        "仕事で使える",
+        "コーディング"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Gemini Notebook（旧NotebookLM）に公式REST APIとMCPサーバ　公開プレビュー、取り込めるのはWeb・YouTube・テキスト・Markdownの4種",
+        "summary": "2026年7月にNotebookLMから改名したGemini Notebookに、個人アカウントで使える公式REST APIとMCPサーバが公開プレビューで登場した。追加できるソースはWebページ、YouTube動画、プレーンテキスト、Markdownの4種類。記者の試用では、MCP経由で7つのツールが使え、YouTube動画は1本4〜6秒、Webページは約9秒、Markdownは約6秒で利用可能になり、音声解説は約8分半で完成した。一方、ソースやノートブックの削除は「501 UNIMPLEMENTED」で拒否され、GoogleドライブやドキュメントのURLはソースに使えなかった。",
+        "note": "仕事での使いどころ：技術ブログや規格解説ページのURL一覧を、スクリプトやAIエージェントからまとめてノートブックに入れ、勉強会用の要約や音声解説を作る用途。注意点：現時点では個人アカウント向けで、会社のGoogle Workspaceアカウントで使えるかは要確認。社内資料（ドライブ上のファイル）は取り込めない。プレビューのため仕様変更の可能性がある。"
+      },
+      "en": {
+        "title": "Gemini Notebook (formerly NotebookLM) gets an official REST API and MCP server in public preview; four source types: web, YouTube, text and Markdown",
+        "summary": "Gemini Notebook, renamed from NotebookLM in July 2026, now has an official REST API and MCP server for personal accounts in public preview. Sources can be web pages, YouTube videos, plain text or Markdown. In the writer's test, seven tools were available via MCP; each YouTube video became usable in 4-6 seconds, a web page in about 9 seconds and Markdown in about 6 seconds, and an audio overview finished in about eight and a half minutes. However, deleting sources or notebooks was rejected with '501 UNIMPLEMENTED', and Google Drive or Docs URLs were not accepted as sources.",
+        "note": "How to use it at work: feed a list of technical blog or standards-explainer URLs into a notebook from a script or AI agent, then generate summaries or audio overviews for study sessions. Caveats: it is for personal accounts for now; whether company Google Workspace accounts can use it needs checking. Internal files on Drive cannot be imported. As a preview, the spec may change."
+      },
+      "src": [
+        {
+          "name": "@IT（ITmedia）",
+          "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/11/news011.html"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-11-workspace-cse-auto-forms-gemini",
+      "date": "2026-11-11",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "データ分析",
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Google Workspaceに6つの変更　ドライブで機密ファイルへCSE（クライアント側暗号化）を自動適用（ベータ）、FormsにGeminiの回答分析",
+        "summary": "Google Workspaceに6項目の機能追加があった。主なものは、①Googleドライブで管理者のポリシーに基づき機密ファイルへCSE（クライアント側暗号化）を自動で適用する機能（ベータ）、②Google Meetの参加前画面に組織のポリシーを表示、③Google Vidsでカスタムアバター作成、④Google FormsでGeminiによる回答分析、⑤VidsからGemini Omni 1.2 Flashで最長15秒の動画生成。",
+        "note": "仕事での使いどころ：Formsの回答分析は、社内アンケートや勉強会の感想の集計にすぐ使える。CSE自動適用は、図面や試験データなど機密ファイルの扱いを情報システム部門が仕組みで守る手段になる。注意点：CSEをかけたファイルはGeminiなどの機能で読めなくなる場合がある（推測・要確認）。各機能の対象エディションと日本での提供時期は要確認。"
+      },
+      "en": {
+        "title": "Six Google Workspace changes: Drive can auto-apply client-side encryption (CSE) to sensitive files (beta), and Forms gets Gemini response analysis",
+        "summary": "Google added six features to Google Workspace. The main ones: (1) Google Drive can automatically apply client-side encryption (CSE) to sensitive files based on admin policy (beta); (2) Google Meet can show organization policies on the pre-join screen; (3) Google Vids can create custom avatars; (4) Google Forms gets response analysis by Gemini; (5) Vids can generate videos up to 15 seconds with Gemini Omni 1.2 Flash.",
+        "note": "How to use it at work: Forms analysis can be used right away for internal surveys or study-session feedback. CSE auto-apply lets IT protect sensitive files such as drawings and test data by policy. Caveats: files under CSE may become unreadable to Gemini and similar features (my guess; needs checking). Eligible editions and availability in Japan need checking."
+      },
+      "src": [
+        {
+          "name": "キーマンズネット（ITmedia）",
+          "url": "https://kn.itmedia.co.jp/kn/article/2611/11/2000003057/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-11-gemini-robotics-25-mercedes",
+      "date": "2026-11-11",
+      "kind": "weekly",
+      "cat": "model",
+      "level": "all",
+      "tags": [
+        "モデル"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "Google DeepMind「Gemini Robotics 2.5」　メルセデス・ベンツの稼働中ラインで人型ロボットが金属部品の仕分けに成功率96％",
+        "summary": "Google DeepMindが、ロボット制御用のVLA（視覚・言語・動作）モデル「Gemini Robotics 2.5」を発表した。作業の種類によって、自社の従来モデル比で30〜100％性能が上がったとしている。Apptronikの人型ロボット「Apollo 2」に載せ、ハンガリーとドイツにあるメルセデス・ベンツの稼働中の生産ラインで金属部品を仕分ける試験を行い、成功率96％と報告された。学習ではGemini 4 Argonをシミュレーションエンジンとして使い、ロボット向けの安全性評価「ASIMOV-Jailbreak」をオープンソースで公開した。",
+        "note": "仕事での使いどころ：自動車工場でのフィジカルAIの実証例として、生産技術部門との会話の材料になる。注意点：成功率96％は裏返すと4％失敗で、量産ラインの要求（タクトタイム、失敗時の処理）に対して十分かは記事からは判断できない。タクトタイムや試験期間は記載がなく要確認。"
+      },
+      "en": {
+        "title": "Google DeepMind's 'Gemini Robotics 2.5': a humanoid robot sorts metal parts with a 96% success rate on live Mercedes-Benz lines",
+        "summary": "Google DeepMind announced 'Gemini Robotics 2.5', a VLA (vision-language-action) model for robot control, saying it performs 30-100% better than its own previous models depending on the task. Running on Apptronik's humanoid robot 'Apollo 2', it sorted metal parts on live Mercedes-Benz production lines in Hungary and Germany, with a reported 96% success rate. Training used Gemini 4 Argon as a simulation engine, and DeepMind open-sourced 'ASIMOV-Jailbreak', a safety benchmark for robotics models.",
+        "note": "How to use it at work: a concrete physical-AI pilot in a car plant, useful for conversations with production engineering. Caveats: a 96% success rate also means 4% failures; the article does not let you judge whether that meets mass-production needs (takt time, failure handling). Takt time and test duration are not given; needs checking."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/google-deepminds-gemini-robotics-2-5-scores-96-percent-sorting-metal-parts-in-a-mercedes-benz-assembly-pilot/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-10-paris-call-ai-safety",
+      "date": "2026-11-10",
+      "kind": "weekly",
+      "cat": "reg",
+      "level": "all",
+      "tags": [
+        "規制"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "「パリAI安全・セキュリティ宣言」に8カ国とOpenAI・Anthropic・Microsoft・Mistralが署名　停止機構・独立監査・既知リスクの開示を約束、罰則や期限はなし",
+        "summary": "フランスのマクロン大統領の呼びかけで、8カ国の代表と、OpenAI、Anthropic、Microsoft、Mistral AIなどが「Paris Call for AI Safety and Security」に署名した。企業側は、AIを止める仕組み（停止機構）の用意、独立した監査の受け入れ、把握しているリスクの開示を約束した。ただし拘束力のある罰則や期限は含まれていない。",
+        "note": "仕事での使いどころ：海外の規制動向を追う際の一項目。拘束力はないため、直ちに業務の手順が変わるものではない。注意点：署名した8カ国の内訳と日本の参加有無は記事の抜粋からは確認できず要確認。"
+      },
+      "en": {
+        "title": "Eight countries plus OpenAI, Anthropic, Microsoft and Mistral sign the 'Paris Call for AI Safety and Security': shutdown mechanisms, independent audits and risk disclosure, but no penalties or deadlines",
+        "summary": "At French President Macron's initiative, representatives of eight countries along with OpenAI, Anthropic, Microsoft, Mistral AI and others signed the 'Paris Call for AI Safety and Security'. The companies committed to providing mechanisms to shut AI down, accepting independent audits and disclosing known risks. However, the agreement has no binding penalties or deadlines.",
+        "note": "How to use it at work: one item to track in overseas regulation; it is non-binding, so it does not immediately change work procedures. Caveats: which eight countries signed and whether Japan took part cannot be confirmed from the available excerpt; needs checking."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/eight-countries-and-top-ai-labs-agree-to-shutdown-mechanisms-in-new-paris-declaration/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-12-australia-frontier-ai-bill",
+      "date": "2026-11-12",
+      "kind": "weekly",
+      "cat": "reg",
+      "level": "all",
+      "tags": [
+        "規制"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "オーストラリア政府、フロンティアAI企業に安全義務を課す法案を表明　独立監査・安全方針の公開・インシデントの即時報告、新たな規制機関を設置",
+        "summary": "アルバニージー首相率いるオーストラリア政府が、最先端の高リスクAIモデルを開発する企業に、初めて法的な安全義務を課す方針を発表した。対象企業は、モデルを独立した監査に開放し、継続的な安全確認を行い、安全性の枠組みを公開し、セキュリティ事故を政府へ直ちに報告する必要がある。新設する規制機関が執行し、違反には重い罰則を科すとしている。",
+        "note": "仕事での使いどころ：対象は大手AI開発企業で、AIを使う側の一般企業に直接の義務はないと読める（推測）。オーストラリア向け車両でAI機能を出す場合の規制調査リストに入れておく程度。注意点：罰則額・施行時期・対象の定義は記事抜粋になく要確認。法案段階で内容は変わりうる。"
+      },
+      "en": {
+        "title": "Australia plans a bill imposing safety duties on frontier AI companies: independent audits, published safety frameworks, immediate incident reporting and a new regulator",
+        "summary": "Australia's government under Prime Minister Albanese announced plans to put mandatory safety rules for frontier, highest-risk AI models into law for the first time. Covered companies would have to open models to independent audits, run ongoing safety checks, publish their safety frameworks and report security incidents to the government immediately. A new regulator would enforce the rules, with steep penalties for violations.",
+        "note": "How to use it at work: it targets major AI developers, so ordinary companies using AI do not appear to gain direct duties (my reading). Add it to the regulation checklist if you ship AI features in vehicles for Australia. Caveats: penalty amounts, timing and the definition of covered firms are not in the excerpt; needs checking. It is still a bill and may change."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/australias-proposed-ai-safety-bill-would-force-frontier-model-makers-to-open-up-to-independent-testing/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-13-united-blocks-ai-agents",
+      "date": "2026-11-13",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "エージェント",
+        "セキュリティ"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "ユナイテッド航空、許可のない外部AIエージェントによる予約・予約変更を禁止　旅行代理店や比較サイト経由の利用も制限",
+        "summary": "米ユナイテッド航空が11月11日（現地時間）、許可を得ていない第三者製の個人向けAIエージェントやAIアシスタントによる航空券の予約や予約管理を禁止すると発表した。自社のWeb・アプリだけでなく、旅行代理店や比較サイトを経由した利用も制限する。理由として、パスワードをアプリやアシスタントに共有すると、漏えい時のリスクがあることなどを挙げている。米国ではAmazonや大手銀行も、外部AIエージェントを締め出す、またはリスクを利用者側に移す措置を取っている。",
+        "note": "仕事での使いどころ：出張手配をAIエージェントに任せる場合、航空会社や銀行側で拒否される流れが広がっている。注意点：業務システムや個人アカウントのパスワードをAIに渡すこと自体が、多くの社内規程で禁止事項にあたる。日本の航空会社の方針は要確認。"
+      },
+      "en": {
+        "title": "United Airlines bans unauthorized third-party AI agents from booking and managing reservations, including via travel agencies and aggregators",
+        "summary": "On November 11 (US time), United Airlines said it will prohibit unauthorized third-party personal AI agents and assistants from booking flights or managing reservations. The restriction covers its own website and apps and also use through travel agencies and aggregators. It cites risks such as passwords shared with apps and assistants being leaked. In the US, Amazon and major banks have also blocked outside AI agents or shifted the risk to customers.",
+        "note": "How to use it at work: if you want AI agents to handle business travel, airlines and banks are increasingly refusing them. Caveats: handing work-system or personal-account passwords to an AI is itself banned by many company rules. Policies of Japanese airlines need checking."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/"
+        },
+        {
+          "name": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2611/12/2000003127/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-13-chatbots-risky-retail-urls",
+      "date": "2026-11-13",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "ChatGPT・Gemini・Perplexityで買い物の質問をすると、最大15％の会話で偽サイトなど「危険なURL」を表示　Podqiが151ブランドで調査",
+        "summary": "知的財産保護企業Podqiが、ChatGPT、Gemini、Perplexityに151ブランドに関する買い物の質問をした調査で、最大15％の会話で偽物販売サイトなどの「危険な」URLが表示されたと報じられた。調査結果はThe Vergeに独占で提供された。",
+        "note": "仕事での使いどころ：部品・工具・ソフトの購入先や、ツールのダウンロード先をAIに聞いた場合、提示されたURLをそのまま開かない。公式サイトの所在は、メーカーの会社概要や社内の購買窓口で確かめる。注意点：AIの回答に付く出典リンクも、正規サイトとは限らない。モデル別の比率は記事抜粋になく要確認。"
+      },
+      "en": {
+        "title": "Shopping questions to ChatGPT, Gemini and Perplexity surfaced 'risky' URLs, including fake stores, in up to 15% of conversations, a Podqi study of 151 brands finds",
+        "summary": "IP-protection firm Podqi asked ChatGPT, Gemini and Perplexity shopping questions about 151 brands and found that up to 15% of conversations displayed 'risky' URLs such as counterfeit stores. The study was shared exclusively with The Verge.",
+        "note": "How to use it at work: if you ask AI where to buy parts, tools or software, or where to download a tool, do not open the suggested URL as is; confirm the official site through the maker's company page or your purchasing desk. Caveats: citation links in AI answers are not necessarily official sites either. Per-model rates are not in the excerpt; needs checking."
+      },
+      "src": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-13-salt-agent-survey",
+      "date": "2026-11-13",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "intermediate",
+      "tags": [
+        "エージェント",
+        "セキュリティ"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "AIエージェントの「想定外の行動」を約半数（49.8％）の組織が確認・疑い　自動で止められるのは17.5％：Salt Security調査",
+        "summary": "APIセキュリティ企業Salt Securityが、380を超える組織のセキュリティ・技術担当者に過去12カ月を聞いた調査を公開した。86.4％が少なくとも1つのAIエージェントを動かし、半数超は10個以上を動かしている。49.8％が「誰も意図・許可していない行動をエージェントが取った」ことを確認または疑っていた一方、予期しない動きを始めたエージェントを自動で停止できる組織は17.5％だった。76.8％は、自社のエージェントが別のエージェントやツールを呼び出していると答えた。",
+        "note": "仕事での使いどころ：部署でエージェントを試すときは、権限を最小にし、止め方（停止ボタン・権限の取り消し）を先に決めておく根拠になる。注意点：セキュリティ製品を売る企業の調査で、回答者も関心の高い層に偏る可能性がある。日本企業の数値ではない。"
+      },
+      "en": {
+        "title": "About half (49.8%) of organizations have seen or suspect 'unintended actions' by AI agents, but only 17.5% can stop them automatically: Salt Security survey",
+        "summary": "API-security firm Salt Security published a survey of security and technology staff at more than 380 organizations about the past 12 months. 86.4% run at least one AI agent and over half run ten or more. 49.8% confirmed or suspected that an agent took an action nobody intended or authorized, while only 17.5% can automatically stop an agent that starts behaving unexpectedly. 76.8% said their agents call other agents or tools.",
+        "note": "How to use it at work: when your team trials agents, it supports keeping permissions minimal and deciding in advance how to stop them (a stop button, revoking access). Caveats: the survey comes from a vendor selling security products, and respondents may skew toward people already concerned. These are not figures for Japanese companies."
+      },
+      "src": [
+        {
+          "name": "@IT（ITmedia）",
+          "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/13/news036.html"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-13-jr-kyushu-gemini-streamlit",
+      "date": "2026-11-13",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "beginner",
+      "tags": [
+        "コーディング",
+        "データ分析",
+        "仕事で使える"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "JR九州の運輸部門、Geminiでコードの9割以上を書かせ、車両データの可視化アプリと勤務シフト作成アプリを2〜3カ月で内製",
+        "summary": "JR九州は2025年秋から「Google Workspace with Gemini」を導入し、IT部門以外での業務アプリ内製を進めている。運輸部門はPythonのフレームワーク「Streamlit」で、営業運転中の車両データをリアルタイムに分析・可視化するアプリと、条件の多い勤務シフトを自動作成するアプリの2つを作った。コードの9割以上をAIに書かせ、外部ベンダーなら半年〜1年かかる開発を2〜3カ月で終えたという。別の部署ではSEOのスコアを約40点から約70点に上げた例も紹介されている。",
+        "note": "仕事での使いどころ：車両データの可視化という点で、試験データのビューア作りに近い。Streamlitは数十行のPythonで画面付きのツールが作れるため、AIに『Streamlitで、CSVを読み込み、選んだ信号を時系列で重ねて表示するアプリを書いて』と頼むところから始められる。注意点：作ったアプリの保守担当と、社内データを扱う環境（PCかサーバか）を先に決める。AIが書いたコードの検算は別途必要。"
+      },
+      "en": {
+        "title": "JR Kyushu's operations department had Gemini write over 90% of the code and built a vehicle-data visualization app and a shift-planning app in 2-3 months",
+        "summary": "JR Kyushu introduced 'Google Workspace with Gemini' in autumn 2025 and is having non-IT departments build their own business apps. The operations department used the Python framework 'Streamlit' to build two apps: one analyzes and visualizes in-service train data in real time, and the other automatically creates complex work shifts. AI wrote over 90% of the code, finishing in 2-3 months what an outside vendor would have taken six months to a year to build. Another department raised its SEO score from about 40 to about 70.",
+        "note": "How to use it at work: visualizing vehicle data is close to building a viewer for test data. Streamlit can produce a tool with a UI in a few dozen lines of Python, so you can start by asking AI: 'Write a Streamlit app that loads a CSV and overlays selected signals as time series.' Caveats: decide first who maintains the app and where internal data is processed (PC or server). AI-written code still needs separate verification."
+      },
+      "src": [
+        {
+          "name": "キーマンズネット（ITmedia）",
+          "url": "https://kn.itmedia.co.jp/kn/article/2611/13/2000003142/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-12-nvidia-huang-resigns",
+      "date": "2026-11-12",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "料金"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "NVIDIAのジェンスン・フアン氏がCEO・社長・取締役を即日辞任　10月29日の報道以降、時価総額は約1.4兆ドル減少　暫定CEOはCFOのコレット・クレス氏",
+        "summary": "NVIDIAは11月12日、共同創業者で33年間CEOを務めたジェンスン・フアン氏が、CEO・社長・取締役を即日辞任したと発表した。10月29日にNew York Timesが中国情報機関との関係の可能性を報じて以降、同社の時価総額は約1.4兆ドル減ったとされる。暫定CEOには、2013年9月から同社に在籍するCFOのコレット・クレス氏が就いた。疑惑の内容は報道段階のものを含む。",
+        "note": "仕事での使いどころ：GPUの調達計画や、NVIDIAの車載・ロボット向け製品のロードマップに影響が出るかを注視する材料。注意点：調達価格や納期への影響は現時点で根拠がなく推測の域。疑惑は捜査・調査中のものを含み、事実関係は要確認。"
+      },
+      "en": {
+        "title": "Nvidia's Jensen Huang resigns as CEO, president and board member effective immediately; about $1.4 trillion in market value lost since an Oct. 29 report; CFO Colette Kress named interim CEO",
+        "summary": "On November 12, Nvidia announced that co-founder Jensen Huang, CEO for 33 years, resigned as CEO, president and board member effective immediately. Since a New York Times report on October 29 about possible ties to Chinese intelligence, the company has reportedly lost about $1.4 trillion in market value. CFO Colette Kress, at Nvidia since September 2013, became interim CEO. Some of the allegations are still only at the reporting stage.",
+        "note": "How to use it at work: watch whether it affects GPU procurement plans or the roadmap for Nvidia's automotive and robotics products. Caveats: any effect on prices or delivery is speculation at this point. The allegations include matters still under investigation; facts need checking."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/jensen-huang-resigns-as-nvidia-ceo-after-espionage-scandal-wipes-out-1-4-trillion-in-market-value/"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/jensen-huang-is-out-at-nvidia-who-is-colette-kress-his-interim-replacement/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-14-howto-script-known-answer-check",
+      "date": "2026-11-14",
+      "kind": "weekly",
+      "cat": "howto",
+      "level": "intermediate",
+      "tags": [
+        "仕事で使える",
+        "データ分析",
+        "コーディング"
+      ],
+      "prio": 3,
+      "conf": "guide",
+      "ja": {
+        "title": "【使い方特集】AIに解析スクリプトを書かせたら、「答えが分かっている入力」で検算させてから本番データに使う",
+        "summary": "AIが書いたPython/MATLABの解析コードは、動いても計算が正しいとは限らない。そこで、本番データの前に、答えが手計算で分かる人工データ（例：振幅1・周波数2Hzの正弦波、一定値、一定勾配のランプ）を作らせ、期待値と一緒に照合させる。例文：『先ほどのヨーレートのRMSとピーク周波数を求めるスクリプトについて、検算用のテストを書いてください。①サンプリング100Hz・10秒・振幅1・2Hzの正弦波を生成し、RMSが約0.707、ピーク周波数が2Hzになることを確認 ②一定値5を入れてRMSが5になることを確認 ③期待値と結果を表で出し、ずれが1％を超えたらFAILと表示。単位換算（deg/s⇔rad/s）とフィルタの位相遅れが結果に影響する箇所があれば、コメントで指摘してください。』",
+        "note": "仕事での使いどころ：振幅1の正弦波のRMSは1/√2≈0.707、ピーク周波数は入力した値、と答えが決まっているので、AIのコードの単位ミス・窓関数の補正漏れ・サンプリング周期の取り違えが見つかる。3つほど検算が通ってから実データに使う。注意点：検算が通っても、実データの欠損・ノイズ・時刻ずれへの対応は別に確認する。試験データを社外のAIに貼る場合は、社内で許可された環境か確認する。"
+      },
+      "en": {
+        "title": "[How-to] After AI writes an analysis script, have it check the script against inputs with known answers before using real data",
+        "summary": "Python or MATLAB analysis code written by AI may run without computing the right thing. Before real data, have it generate synthetic inputs whose answers you can work out by hand (e.g., a sine wave with amplitude 1 at 2 Hz, a constant, a constant-slope ramp) and compare against expected values. Example prompt: 'Write tests for the script you just wrote that computes the RMS and peak frequency of yaw rate. (1) Generate a 100 Hz, 10-second, amplitude-1, 2 Hz sine wave and confirm RMS is about 0.707 and the peak frequency is 2 Hz. (2) Feed a constant 5 and confirm RMS is 5. (3) Print expected vs. actual in a table and show FAIL if they differ by more than 1%. Add comments wherever unit conversion (deg/s vs rad/s) or filter phase lag could affect results.'",
+        "note": "How to use it at work: because the answers are fixed (RMS of a unit sine is 1/√2 ≈ 0.707; the peak frequency equals the input), this catches unit errors, missing window corrections and mixed-up sampling periods in AI code. Use real data only after about three checks pass. Caveats: passing these checks does not cover missing samples, noise or time misalignment in real data; check those separately. Before pasting test data into an external AI, confirm the environment is approved by your company."
+      },
+      "src": []
+    },
+    {
+      "id": "2026-11-14-howto-agenda-decisions-first",
+      "date": "2026-11-14",
+      "kind": "weekly",
+      "cat": "howto",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える",
+        "会議"
+      ],
+      "prio": 3,
+      "conf": "guide",
+      "ja": {
+        "title": "【使い方特集】会議の招集前に、AIに「この会議で決めること」と「決めるのに必要な材料」を先に整理させる",
+        "summary": "議題だけ並べた会議は結論が出にくい。招集メールを書く前に、背景メモをAIに渡して『決めること』『その判断に必要な材料』『誰が材料を持ってくるか』を表にさせる。例文：『次の背景メモを読んで、60分の会議のアジェンダを作ってください。形式は表で、列は「決めること（はい/いいえで答えられる形に）」「判断材料」「材料の担当（役割名）」「時間配分」。決めることは最大3つ。会議前に共有すべき資料と、会議で決めなくてよい（メールで済む）項目は別に分けてください。背景：〇〇車種の横滑り防止制御の適合で、低μ路の評価日程が2週間遅れている。選択肢はA：日程を延ばす、B：評価項目を絞る。』",
+        "note": "仕事での使いどころ：『はい/いいえで答えられる形に』と指定すると、決めることがあいまいな議題（例：『〜について議論』）を避けられる。メールで済む項目を分けさせると、会議時間を短くできる。注意点：AIは関係者の力関係や過去の経緯を知らないので、担当の割り振りは自分で直す。社外秘の日程・車種名は許可された環境でのみ入力する。"
+      },
+      "en": {
+        "title": "[How-to] Before calling a meeting, have AI list 'what this meeting must decide' and 'what is needed to decide it'",
+        "summary": "Meetings that only list topics rarely reach conclusions. Before writing the invitation, give AI your background notes and have it build a table of decisions, the information needed for each, and who brings it. Example prompt: 'Read the background below and create an agenda for a 60-minute meeting as a table with columns: Decision (phrased as a yes/no question) / Information needed / Owner (by role) / Time. At most three decisions. Separately list materials to share before the meeting and items that do not need the meeting (email is enough). Background: for model X's stability-control calibration, low-μ road evaluation is two weeks behind. Options: A, extend the schedule; B, reduce the test items.'",
+        "note": "How to use it at work: asking for yes/no phrasing avoids vague items like 'discuss X', and separating email-only items shortens meetings. Caveats: AI does not know the people involved or the history, so adjust the owner assignments yourself. Enter confidential schedules or model names only into an approved environment."
+      },
+      "src": []
+    },
+    {
+      "id": "2026-11-14-howto-reminder-email-three-levels",
+      "date": "2026-11-14",
+      "kind": "weekly",
+      "cat": "howto",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える",
+        "メール・英語"
+      ],
+      "prio": 2,
+      "conf": "guide",
+      "ja": {
+        "title": "【使い方特集】納期や回答の催促メールは、AIに「やわらかい・標準・強め」の3段階で書かせて選ぶ",
+        "summary": "他部署やサプライヤーへの催促は、強すぎても弱すぎても困る。AIに事実（依頼日・期限・遅れによる影響）を渡し、トーン違いを3通作らせて比べる。例文：『次の状況で、催促メールを3通書いてください。①やわらかい（初回の確認）②標準（期限と影響を明記）③強め（上長をCCに入れる前提、代替案の検討開始を伝える）。どれも件名・本文で、本文は200字以内、最後に相手がすぐ返せる質問（いつまでに回答可能か）を1つ入れてください。英語版も同じ3段階で付けてください。状況：10月20日にサプライヤーへ評価用ECUの追加2台を依頼、回答期限は11月10日、未回答。11月25日の実車評価に間に合わないと評価が1カ月遅れる。』",
+        "note": "仕事での使いどころ：3通並べると、言い過ぎ・遠回しすぎの差が見えて選びやすい。『相手がすぐ返せる質問』を入れると返信率が上がりやすい（経験則）。英語版を並べると、丁寧さの段階ごとの言い回しの勉強にもなる。注意点：日付・数量などの事実は送る前に必ず自分で確認する。取引先名や部品番号を入れる場合は社内で許可されたAIを使う。"
+      },
+      "en": {
+        "title": "[How-to] For reminder emails about deadlines or replies, have AI write 'soft, standard and firm' versions and pick one",
+        "summary": "Reminders to other departments or suppliers go wrong if they are too firm or too weak. Give AI the facts (request date, deadline, impact of delay) and have it write three versions in different tones to compare. Example prompt: 'Write three reminder emails for the situation below: (1) soft, a first check-in; (2) standard, stating the deadline and impact; (3) firm, assuming my manager will be CC'd and saying we are starting to look at alternatives. Each needs a subject and a body under 200 characters, ending with one question they can answer immediately (by when they can reply). Add English versions at the same three levels. Situation: on Oct. 20 we asked the supplier for two more evaluation ECUs; the reply was due Nov. 10 and has not arrived. If they miss the Nov. 25 vehicle test, evaluation slips by a month.'",
+        "note": "How to use it at work: seeing three versions side by side makes it easy to spot what is too blunt or too indirect. Ending with a question the reader can answer right away tends to get replies (a rule of thumb). The English versions also teach phrasing at each politeness level. Caveats: always verify dates and quantities yourself before sending. Use a company-approved AI when including supplier names or part numbers."
+      },
+      "src": []
+    },
+    {
+      "id": "2026-11-10-tool-otter-31-languages",
+      "date": "2026-11-10",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "会議",
+        "メール・英語",
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "【こんなのもあるよ】会議文字起こし「Otter」が27言語を追加し計31言語へ　話者が途中で言語を切り替えても追える機能も予告",
+        "summary": "会議の文字起こしサービスOtterが、過去最大となる27言語の追加を発表した。展開が終わると対応は計31言語になり、このうち14言語（スウェーデン語、アラビア語、ヒンディー語、タイ語、チェコ語、ハンガリー語など）は近日対応とされる。会議中に話者が言語を切り替えても追える機能も予告された。同社は最近、過去の会議と連携アプリから次の会議の準備を助ける「Work Mode」も出している。",
+        "note": "仕事での使いどころ：海外サプライヤーや海外拠点との会議で、英語と現地語が混ざる場面の記録に使える可能性がある。注意点：日本語が対象言語に入っているか、料金・企業向けプラン・データの保存場所は記事に記載がなく要確認。会議の録音・文字起こしは参加者の同意と社内ルールの確認が前提。"
+      },
+      "en": {
+        "title": "[Also worth a look] Meeting transcription service 'Otter' adds 27 languages for 31 in total, and previews tracking speakers who switch languages mid-meeting",
+        "summary": "Otter, a meeting transcription service, announced its largest language expansion: 27 new languages, for 31 in total once the rollout completes. Fourteen of them (including Swedish, Arabic, Hindi, Thai, Czech and Hungarian) are 'coming soon'. It also previewed a feature that keeps up when speakers switch languages mid-conversation. Otter recently launched 'Work Mode', which uses past meetings and connected apps to help prepare for upcoming calls.",
+        "note": "How to use it at work: it may help record meetings with overseas suppliers or sites where English and local languages mix. Caveats: whether Japanese is supported, pricing, enterprise plans and data storage location are not stated in the article; needs checking. Recording or transcribing meetings requires participants' consent and checking company rules."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-11-tool-deepl-voice-aure",
+      "date": "2026-11-11",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "会議",
+        "メール・英語"
+      ],
+      "prio": 1,
+      "conf": "report",
+      "ja": {
+        "title": "【こんなのもあるよ】DeepL Voiceの新音声モデル「Aure」　話し手の口調・感情・強調・話す速さを訳した音声に反映",
+        "summary": "翻訳サービスDeepLのリアルタイム音声翻訳「DeepL Voice」に、新しい音声モデル「Aure」が入る。元の話し手の口調、感情、強調、話す速さを訳した言語の音声に引き継ぐのが特徴で、強化学習で訳した音声に訛りが混じらないようにしているという。",
+        "note": "仕事での使いどころ：海外との打ち合わせで、言葉の意味だけでなく『念押し』『懸念』のニュアンスが伝わりやすくなる可能性がある。注意点：対応言語（日本語の有無）、料金、提供開始時期、企業向けのデータ取り扱い条件は記事抜粋になく要確認。重要な合意事項は、音声翻訳だけに頼らず文書で確認する。"
+      },
+      "en": {
+        "title": "[Also worth a look] DeepL Voice's new speech model 'Aure' carries the speaker's tone, emotion, emphasis and pace into the translated voice",
+        "summary": "DeepL's real-time speech translation, 'DeepL Voice', is getting a new speech model called 'Aure'. It carries the original speaker's tone, emotion, emphasis and speaking pace into the translated speech, and uses reinforcement learning to keep accents out of the output.",
+        "note": "How to use it at work: in meetings with overseas partners, nuances such as emphasis or concern, not just literal meaning, may come through better. Caveats: supported languages (including Japanese), pricing, launch date and enterprise data-handling terms are not in the excerpt; needs checking. Confirm important agreements in writing rather than relying on speech translation alone."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/with-its-new-voice-model-deepl-voice-now-translates-intonation-and-speaking-speed-into-other-languages-as-well/"
         }
       ]
     }
