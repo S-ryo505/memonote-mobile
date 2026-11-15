@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T09:50:43+09:00",
+ "updated": "2026-11-16T09:00:00+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -9446,6 +9446,78 @@
     {
      "name": "Carscoops",
      "url": "https://www.carscoops.com/2310972/2027-toyota-rav4-woodland-suspension-upgrades/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-14-subaru-wrx-sti-sport-r-6mt",
+   "date": "2026-11-14",
+   "kind": "flash",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "4WD",
+    "シャシー"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "スバル、6速MT「TY85」搭載の「WRX STI Sport R」を正式発表：548万円、11月19日受注開始",
+    "summary": "スバルは11月14日、2.4L水平対向4気筒直噴ターボ（202kW/5,600rpm、375Nm/2,000〜4,800rpm）に歴代STIで使ってきた6速MT「TY85」を組み合わせたWRX STI Sport Rを発表した。価格548万円、月販計画330台で、今後導入するMT車3車種の第1弾となるカタログモデル。シフトの遊びは先代WRX比で最大60%減、ブレンボ製の前6・後2ピストン対向キャリパーとドリルドローターを備え、車重は1,560kg、WLTC燃費10.0km/L。",
+    "note": "MTの車輪駆動トルクは T_w = T_e · i_g · i_f · η。i_g（各段ギヤ比）・最終減速比 i_f・センターデフの前後配分は要約に記載なし（要確認）。仮定値 i_1=3.45, i_f=4.11, η=0.9 なら1速で T_w ≈ 375×3.45×4.11×0.9 ≈ 4.8kNm（4輪合計）。車重1,560kgとタイヤ半径0.33m（仮定値）で駆動力上限 F = T_w/r ≈ 14.5kN は μ=1.0 時の路面限界 m·g ≈ 15.3kN に近く、AWDで4輪に分散する意味が出る領域。Carscoopsは北米には導入しないと報道。"
+   },
+   "en": {
+    "title": "Subaru officially launches the WRX STI Sport R with the TY85 six-speed manual: ¥5.48 million, orders from Nov 19",
+    "summary": "On November 14 Subaru announced the WRX STI Sport R, which pairs the 2.4-litre direct-injection turbo flat-four (202 kW at 5,600 rpm, 375 Nm from 2,000-4,800 rpm) with the TY85 six-speed manual used in past STI models. Priced at ¥5.48 million with a sales target of 330 units a month, it is a regular catalogue model and the first of three manual models Subaru plans to introduce. Shift free play is cut by up to 60% versus the previous WRX, it gets Brembo six-piston front and two-piston rear calipers with drilled rotors, and it weighs 1,560 kg with WLTC economy of 10.0 km/L.",
+    "note": "Wheel torque for a manual is T_w = T_e · i_g · i_f · η. Gear ratios, final drive i_f and the centre-diff torque split are not in the summaries (needs confirmation). With assumed values i_1=3.45, i_f=4.11, η=0.9, first gear gives T_w ≈ 375×3.45×4.11×0.9 ≈ 4.8 kNm (all four wheels). With 1,560 kg and an assumed 0.33 m tyre radius, the drive force F = T_w/r ≈ 14.5 kN is close to the μ=1.0 grip limit m·g ≈ 15.3 kN, which is where spreading torque over four wheels with AWD matters. Carscoops reports it will not be sold in North America."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2156444.html"
+    },
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2156490.html"
+    },
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2316816/subaru-wrx-sti-sport-r/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-13-tesla-cybercab-orders-29990",
+   "date": "2026-11-13",
+   "kind": "flash",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "ADAS",
+    "制御",
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "テスラ、ハンドル・ペダルのない「Cybercab」の個人向け注文を一部顧客に開始：29,990ドル＋月299ドル",
+    "summary": "テスラは「一部の顧客」を対象にCybercabの個人購入の受付を始めた。車両価格は税別29,990ドル（Model 3より7,000ドル安い）で、返金不可の手付金1,000ドルが必要。走行には月299ドルの「Autonomy Subscription」が必須（初月込み）で、運行はテキサス・フロリダのRobotaxiサービスエリア内に限られ、オースティンでの納車予定は2026年12月。2人乗りで、21インチのセンタータッチスクリーンを備え、ハンドルとペダルはない。",
+    "note": "ハンドル・ペダルがないため、操舵・制動はすべて電気指令（steer-by-wire／brake-by-wire）で行う構成になる。人が介入できない分、操舵系・制動系の冗長化（2系統の電源・ECU・アクチュエータ）が前提になる（推測。冗長構成の詳細は要約に記載なし、要確認）。米国のFMVSSはハンドルやペダルを前提とした条文を含むため、認証の扱いは既存項目（2026-11-07のNHTSA照会）と合わせて追う必要がある。"
+   },
+   "en": {
+    "title": "Tesla opens personal-use orders for the steering-wheel-free Cybercab to select customers: $29,990 plus $299 a month",
+    "summary": "Tesla has started taking orders from \"select customers\" for personal ownership of the Cybercab. The car costs $29,990 before tax ($7,000 less than a Model 3) and requires a $1,000 non-refundable deposit. It cannot move without a $299-per-month \"Autonomy Subscription\" (first month included), it only operates inside Tesla's Robotaxi service areas in Texas and Florida, and estimated delivery in Austin is December 2026. It is a two-seater with a 21-inch centre touchscreen and no steering wheel or pedals.",
+    "note": "With no steering wheel or pedals, steering and braking must be fully commanded electrically (steer-by-wire / brake-by-wire). Since no human can intervene, redundant steering and braking systems (dual power supplies, ECUs and actuators) are effectively a prerequisite (my inference; redundancy details are not in the summaries, needs confirmation). US FMVSS rules include text that assumes a steering wheel and pedals, so certification should be tracked together with the earlier item on NHTSA's inquiry (2026-11-07)."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/13/tesla-cybercab-personal-use-orders-299-subscription-geofence/"
+    },
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/815473/tesla-cybercab-pricing-sales-announced/"
     }
    ]
   }
