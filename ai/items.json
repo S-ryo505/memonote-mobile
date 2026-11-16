@@ -1,6 +1,64 @@
 {
-  "updated": "2026-11-14T10:03:11+09:00",
+  "updated": "2026-11-16T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-11-15-opus-55-prompting-guide",
+      "date": "2026-11-15",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "仕事で使える",
+        "モデル",
+        "料金"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "Anthropic、Claude Opus 5.5を全有料プランの既定モデルに　「think hard」不要、推論量は既定のMediumから始めるよう指針",
+        "summary": "Anthropicは有料プランすべてでClaude Opus 5.5を既定モデルとし、旧世代向けのプロンプトの癖をやめるよう求める指針を公開した。主な推奨は「think hard」などの指示を外し、推論量（effort）を既定のMediumで始めること。同社の社内試験では、Opus 5.5のMediumが前モデルOpus 5のHighと同等の性能だったとしている。",
+        "note": "仕事での使いどころ：社内のプロンプト集やテンプレートに「よく考えて」型の指示が残っていれば見直す材料になる。まずMediumで試し、不足する作業だけ上げる運用が勧められている。注意点：Sonnetを常にExtra High／Maxで使うと費用はOpus 5.5とほぼ同じになると同社は説明しており、モデルと推論量の組み合わせでコストを比べる必要がある。性能比較は同社の社内試験に基づく数値で、第三者検証は記事に記載なし（要確認）。"
+      },
+      "en": {
+        "title": "Anthropic makes Claude Opus 5.5 the default on all paid plans and says to drop \"think hard\" and start at Medium effort",
+        "summary": "Anthropic has made Claude Opus 5.5 the default model on every paid plan and published guidance asking users to drop prompting habits carried over from older models. The main advice is to remove instructions such as \"think hard\" and start at the default Medium effort level. In Anthropic's internal tests, Opus 5.5 on Medium matched its predecessor Opus 5 on High.",
+        "note": "How to use it at work: if your team's prompt libraries or templates still contain \"think carefully\"-style instructions, this is a reason to review them. The suggested approach is to start at Medium and raise the effort only for tasks that need it. Caveats: Anthropic says that running Sonnet at Extra High or Max all the time costs about the same as Opus 5.5, so compare costs by model and effort level together. The performance comparison comes from Anthropic's internal tests; no independent verification was mentioned (needs checking)."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-15-us-congress-ai-chip-export",
+      "date": "2026-11-15",
+      "kind": "flash",
+      "cat": "reg",
+      "level": "intermediate",
+      "tags": [
+        "規制"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "米議会、NVIDIA前CEOのスパイ疑惑を受けAIチップ輸出規制の強化へ　「Remote Access Security Act」に再び注目",
+        "summary": "NVIDIA前CEOジェンスン・フアン氏と中国のスパイと疑われる人物を巡る問題を受け、米議会で民主・共和両党からAIチップの輸出規制を強める法案や措置への支持が出ている。2025年4月に下院で提出され上院で止まっていたRemote Access Security Actなどが再び検討対象になっている。議会はフアン氏らNVIDIA幹部の証言も求めている。",
+        "note": "仕事での使いどころ：海外拠点（特に中国）でAI計算資源やクラウドGPUを使う計画がある場合、調達・契約条件の前提が変わる可能性を把握しておく材料になる。注意点：現時点は法案への支持表明の段階で、成立や施行時期、対象範囲は記事に記載がなく未定（要確認）。法案名から遠隔（クラウド）経由の利用も対象になり得ると読めるが、内容は推測。"
+      },
+      "en": {
+        "title": "US Congress moves to tighten AI chip export rules after the Nvidia spy scandal, reviving the Remote Access Security Act",
+        "summary": "Following the scandal involving former Nvidia CEO Jensen Huang and a suspected Chinese spy, lawmakers from both parties in Congress have backed bills and measures to tighten AI chip export controls. Bills such as the Remote Access Security Act, introduced in the House in April 2025 but stalled in the Senate, are being considered again. Congress has also asked Huang and other Nvidia leaders to testify.",
+        "note": "How to use it at work: if you plan to use AI compute or cloud GPUs at overseas sites, especially in China, this is a signal that procurement and contract assumptions could change. Caveats: so far this is only support for bills; passage, timing and scope were not stated (needs checking). The bill's name suggests remote (cloud) access could be covered, but that is our inference."
+      },
+      "src": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china"
+        }
+      ]
+    },
     {
       "id": "2026-11-13-gemini-4-hydrogen",
       "date": "2026-11-13",
