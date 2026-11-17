@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T09:00:00+09:00",
+ "updated": "2026-11-17T09:05:00+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -9518,6 +9518,132 @@
     {
      "name": "InsideEVs",
      "url": "https://insideevs.com/news/815473/tesla-cybercab-pricing-sales-announced/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-bmw-water-pump-recall-720k",
+   "date": "2026-11-16",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "品質",
+    "PT"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "BMW、ウォーターポンプ用コネクタの短絡による火災リスクで米国720,796台をリコール：対策完了まで屋外駐車を要請",
+    "summary": "BMWは2012〜2018年式の3・5シリーズ、Z4、X1、X3、X4、X5と一部の2・4シリーズ計720,796台について、ウォーターポンプの電気コネクタに液体が入り短絡し、駐車・停止中でも発火するおそれがあるとして11月4日にNHTSAへ届け出た。対象は2024年8月に同じ不具合でリコールした台数と同数で、既に対策済みの車両でも2025年6月に米国で類似事例が確認されたため、新たな修理方法が用意されるまで屋外駐車を求めている。所有者への通知は12月に送付される。",
+    "note": "電動ウォーターポンプはイグニッションOFF後もアフターラン（余熱冷却）で通電する設計が一般的で、コネクタ部の常時給電または後駆動が駐車中の発火につながりうる（本件の給電条件は要確認）。浸水による短絡では、端子間の絶縁抵抗Rが低下するとリーク電流 I=V/R が流れ、発熱 P=I²R（≒V²/R、Rが下がるほど増える。ただし電源側の保護が働かない範囲）で樹脂が炭化し、さらにRが下がるトラッキングに進む。前回対策後に再発したため、シール構造かヒューズ設定の見直しが必要になった可能性がある（推測）。"
+   },
+   "en": {
+    "title": "BMW recalls 720,796 US vehicles over water-pump connector short-circuit fire risk, tells owners to park outside",
+    "summary": "BMW filed a recall with NHTSA on November 4 covering 720,796 vehicles from the 2012–2018 model years, including older 3 Series, 5 Series, Z4, X1, X3, X4, X5 and some 2 Series and 4 Series models, because liquid can enter the water pump's electrical connector and cause a short that may start a fire even when the car is parked and off. The population matches a recall from August 2024 for the same issue; after a similar incident was found in the US in June 2025 on a car that already had the remedy, owners are being told to park outside until a new repair is ready. Owner notification letters go out in December.",
+    "note": "Electric water pumps usually keep running after the ignition is switched off to cool the engine (after-run), so a powered or post-run connector could explain a fire while parked (the actual supply condition needs to be confirmed). When moisture lowers the insulation resistance R between terminals, a leakage current I = V/R flows and generates heat P = I²R (≈ V²/R, which grows as R drops, as long as the circuit protection does not trip). This can char the plastic and lower R further, a process called tracking. Because the defect recurred after the earlier fix, the seal design or fuse rating may need revising (speculation)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/815578/bmw-recall-26v733000-warning/"
+    },
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2317926/bmw-nhtsa-recall-fire-risk-park-outside/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-tesla-berlin-cybercab-3bn",
+   "date": "2026-11-16",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略",
+    "ADAS",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "テスラ、独グリューンハイデ工場に30億ユーロを投資しCybercab専用棟を新設：年最大100万台、2029年生産開始",
+    "summary": "テスラはギガ・ベルリン（ブランデンブルク州グリューンハイデ）の拡張に第1弾として30億ユーロを投じると発表した。既存工場の北側に年最大100万台のCybercabを生産する新棟と付帯施設、2つ目の排水処理施設を建て、年内に建築申請、2027年前半に着工、2029年に生産開始する計画で、電池セル生産の拡大も含む。一方、現行のEU規則では無人運転車は1車種あたり年1,500台までしか登録できない。",
+    "note": "年100万台を年間稼働日数で割ると、1日あたり約4,000台（仮定値：250日稼働）、2直16時間稼働ならタクトタイム ≒ 16×3600/4000 ≒ 14秒/台（仮定値に基づく試算）。一般的な乗用車ラインの約60秒前後と比べ大幅に短く、テスラが説明してきた「Unboxed」方式（並行サブアセンブリ）が前提とみられる（推測）。EUの年1,500台上限との差が大きく、欧州域内での販売よりも輸出や規則改正を見込んだ計画とみられる（推測）。"
+   },
+   "en": {
+    "title": "Tesla to invest €3 billion at Grünheide for a Cybercab hall: up to 1 million units a year, production from 2029",
+    "summary": "Tesla announced a first €3 billion investment to expand Giga Berlin in Grünheide, Brandenburg. The money covers a new production hall north of the existing plant, designed for up to 1 million Cybercabs a year, plus ancillary buildings and a second wastewater treatment plant; Tesla plans to file the building application before year-end, break ground in the first half of 2027 and start production in 2029, and battery cell production will also be expanded. Under current EU rules, however, a driverless vehicle model is capped at 1,500 registrations a year.",
+    "note": "Dividing 1 million units a year by about 250 working days gives roughly 4,000 cars a day (assumed value); with two shifts totaling 16 hours, takt time ≈ 16 × 3600 / 4000 ≈ 14 s per car (estimate based on assumed values). That is far shorter than the roughly 60 s typical of conventional car lines, which suggests Tesla's 'Unboxed' process with parallel subassemblies (speculation). Given the large gap to the EU's 1,500-unit cap, the plan likely assumes exports or a rule change rather than sales inside the EU (speculation)."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/16/tesla-cybercab-giga-berlin-3-billion-1-million/"
+    },
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/16/tesla-announces-multi-billion-euro-expansion-of-gigafactory-grunheide/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-honda-crv-7th-gen-official",
+   "date": "2026-11-16",
+   "kind": "flash",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "PT",
+    "4WD",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ホンダ米国、第7世代CR-Vを2027年投入と正式発表：全車2モーターHV、新開発の電動AWDユニット",
+    "summary": "ホンダの米国部門は、7代目となる新型CR-Vを2027年に米国で発売すると発表した。パワートレインは第5世代の2モーター方式を発展させた新ハイブリッドのみで、エンジンを高効率域で使える範囲を広げ、ハイブリッドユニットの駆動効率を上げた。AWDは新開発の電動ユニットとなり、新プラットフォームとの組み合わせで燃費は10%以上向上するとしている。",
+    "note": "電動AWD（後輪をモーターで駆動する方式と推測、構成は要確認）では、前後配分を機械式カップリングではなくモータートルク指令で決めるため、応答はモーター電流制御の時定数（数ms〜数十ms程度、一般値）で決まり、機械式の油圧カップリング（約100ms級、一般値）より速い。前後配分の目標は荷重移動から決めるのが基本で、加速時の後輪荷重 Wr = W·lf/L + m·ax·h/L（lf：重心〜前軸距離、h：重心高、L：ホイールベース）に比例して後輪トルク比を上げると、前後輪の駆動力利用率 Fx/(μFz) をそろえられる。2モーターHVのシリーズ走行域では後輪モーターの電力も発電機出力から賄うため、AWD作動頻度と燃費のトレードオフが制御設計の論点になる（推測）。"
+   },
+   "en": {
+    "title": "Honda's US arm officially announces the 7th-generation CR-V for 2027: two-motor hybrid only, with a new electric AWD unit",
+    "summary": "Honda's US division announced that the seventh-generation CR-V will go on sale in the US in 2027. It will use only a new hybrid evolved from the fifth-generation two-motor system, which widens the range where the engine runs efficiently and improves the drive efficiency of the hybrid unit. AWD versions get a newly developed electric unit, and together with the new platform Honda says fuel economy improves by more than 10%.",
+    "note": "With electric AWD (presumably a motor driving the rear wheels; the layout needs to be confirmed), the front/rear split is set by a motor torque command rather than a mechanical coupling, so the response depends on the motor current-control time constant (a few to tens of ms, typical value) and is faster than a hydraulic coupling (around 100 ms, typical value). The target split is usually based on load transfer: the rear axle load under acceleration is Wr = W·lf/L + m·ax·h/L (lf: CG-to-front-axle distance, h: CG height, L: wheelbase), and raising the rear torque share in proportion to it keeps the friction utilization Fx/(μFz) equal front and rear. In the series-drive region of a two-motor hybrid, the rear motor's power also comes from the generator, so the trade-off between AWD use and fuel economy is a key control design issue (speculation)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/16/419063.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-cn-miit-supplier-payment-check",
+   "date": "2026-11-16",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "CN",
+   "tags": [
+    "規制",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "中国MIIT、BYD・NIO・小米など17社の部品代金「60日以内支払い」の履行を審査へ：2027年1月31日までに報告提出",
+    "summary": "中国はBYD、NIO、小米を含む主要自動車メーカー17社を対象に、サプライヤーへの支払いを60日以内に行うという誓約が守られているかを審査する。各社は2026年通年と第4四半期の支払い実績の報告を2027年1月31日までに工業情報化部（MIIT）へ提出し、これが初回審査の基礎になる。中国汽車工業協会（CAAM）はメーカーごとに少なくとも15社のサプライヤーを抜き取りで確認する。",
+    "note": "Tier1側の運転資金は概算で 売上債権 ≒ 年間売上 × 回収日数/365 で決まるため、回収日数が例えば120日から60日に縮むと売上債権は半分になる（数値は仮定値）。中国に部品を供給する日系サプライヤーにとっては資金繰りの改善要因となり得るが、審査の罰則や対象範囲（外資系サプライヤーを含むか）は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "China's MIIT to check whether 17 automakers including BYD, Nio and Xiaomi pay suppliers within 60 days; reports due January 31, 2027",
+    "summary": "China will assess 17 major automakers, including BYD, Nio and Xiaomi, to see whether they keep their pledge to pay suppliers within 60 days. Each automaker must submit reports on its payment practices for full-year 2026 and the fourth quarter to the Ministry of Industry and Information Technology (MIIT) by January 31, 2027, which will form the basis of the first assessment. The China Association of Automobile Manufacturers (CAAM) will randomly check at least 15 suppliers per automaker.",
+    "note": "A supplier's receivables are roughly annual sales × collection days / 365, so cutting collection from, say, 120 to 60 days halves the receivables (assumed values). This could ease cash flow for Japanese suppliers selling into China, but the article does not say what penalties apply or whether foreign-owned suppliers are covered, so this needs to be confirmed."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/16/china-steps-up-supplier-payment-oversight/"
     }
    ]
   }
