@@ -1,6 +1,140 @@
 {
-  "updated": "2026-11-17T09:01:00+09:00",
+  "updated": "2026-11-18T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-11-18-gpt-62-astra-sol",
+      "date": "2026-11-18",
+      "kind": "flash",
+      "cat": "model",
+      "level": "all",
+      "tags": [
+        "モデル",
+        "料金",
+        "コーディング",
+        "仕事で使える"
+      ],
+      "prio": 3,
+      "conf": "primary",
+      "ja": {
+        "title": "OpenAI、GPT-6.2 AstraとSolを公開　AstraのAPI料金は前世代比20%減",
+        "summary": "OpenAIは11月17日（現地時間）、専門業務向けのGPT-6.2 Astraと日常利用向けのGPT-6.2 Solを公開し、ChatGPT Work・Codex・APIで提供を始めた。ChatGPTではPlus、Pro、Enterprise、Eduの各プランで利用でき、AstraのAPI料金は前世代より20%安い。第三者評価のArtificial Analysis Intelligence IndexではAstraがClaude Fable 5.2に次ぐ2位とされた。",
+        "note": "仕事での使いどころ：報告書作成やコーディングなど負荷の高い作業はAstra、日常の問い合わせはSolと使い分けられる。API利用中の部署はコスト見直しの候補。注意点：OpenAIは自社基準でAstraをAI自己改良リスクの「High」水準に達した最初のモデルと位置づけている（The Decoder報道）。社内システムへの組み込み前に、自社の評価データでの精度確認が必要。具体的なトークン単価は要確認。"
+      },
+      "en": {
+        "title": "OpenAI releases GPT-6.2 Astra and Sol, with Astra's API price cut by 20%",
+        "summary": "On November 17 (US time), OpenAI released GPT-6.2 Astra for demanding professional work and GPT-6.2 Sol for everyday use, available in ChatGPT Work, Codex, and the API. In ChatGPT they are offered on Plus, Pro, Enterprise, and Edu plans, and Astra's API price is 20% lower than its predecessor. On the independent Artificial Analysis Intelligence Index, Astra ranked second behind Claude Fable 5.2.",
+        "note": "How to use it at work: Astra suits heavy tasks such as report writing and coding, while Sol covers everyday questions. Teams using the API should review their costs. Caution: by OpenAI's own scale, Astra is the first model to reach the \"High\" threshold for AI self-improvement risk (per The Decoder). Validate accuracy on your own data before integrating it into internal systems. Exact per-token prices need to be confirmed."
+      },
+      "src": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-18-gemini-chat-retention-2months",
+      "date": "2026-11-18",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "仕事で使える"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "Geminiアプリ、履歴オフや一時チャットの保存期間を72時間から約2か月に延長",
+        "summary": "Googleは、Geminiアプリの一時チャットと履歴オフ時の会話の保存期間を、従来の72時間から約2か月に延ばす。今後数週間で全世界に展開し、理由は安全性とセキュリティの向上としている。あわせて、AI学習への利用とチャット履歴の保存を別々に設定できるよう、アクティビティ設定のスイッチが分けられた。",
+        "note": "仕事での使いどころ：個人アカウントのGeminiを業務に使っている場合、「履歴オフなら72時間で消える」という前提が変わるため、社内ルールの更新材料になる。設定はGoogleアカウントの「データとプライバシー」>「マイアクティビティ」>「Geminiアプリ アクティビティ」から確認できる。注意点：比較としてChatGPTの一時チャットは最大30日、Claudeのシークレットチャットは標準30日保存とされる。Google Workspaceの企業契約に同じ変更が及ぶかは記事から読み取れず要確認。"
+      },
+      "en": {
+        "title": "Gemini app extends retention of history-off and temporary chats from 72 hours to about two months",
+        "summary": "Google will keep temporary Gemini chats and conversations made with history turned off for about two months, up from the previous 72 hours. The change rolls out globally over the coming weeks, and Google says it is meant to improve safety and security. Google also split the activity settings so that AI training and chat history now have separate toggles.",
+        "note": "How to use it at work: if staff use personal Gemini accounts for work, the assumption that history-off chats disappear after 72 hours no longer holds, so internal rules may need updating. Settings are under Google Account > Data and Privacy > My Activity > Gemini Apps Activity. Caution: for comparison, ChatGPT may keep temporary chats for up to 30 days, and Claude keeps incognito chats for 30 days by default. Whether the same change applies to Google Workspace business contracts is not stated and needs to be confirmed."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/11/google-will-let-you-opt-out-of-ai-training-in-gemini-without-losing-your-history/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-18-gemini-tasks-free",
+      "date": "2026-11-18",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "エージェント",
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "primary",
+      "ja": {
+        "title": "Google、エージェント機能「Gemini Tasks」を無料化　日本を含む6か国で提供",
+        "summary": "Googleは試験提供していたエージェント機能「Gemini Spark」を「Tasks」に改称し、Gemini 4 Hydrogenを使う形で無料提供を始めた。対象は米国、日本、韓国、カナダ、オーストラリア、インド。電話の代行、ウェブサイトへのログイン、購入手続き、カレンダー管理、メールからの定期支出の洗い出しなどを行える。",
+        "note": "仕事での使いどころ：日程調整や情報の洗い出しなど、複数手順の定型作業を任せる試行に使える。注意点：ログインや購入をAIが代行するため、業務アカウントや会社のカードと連携させる前に社内の権限ルール確認が必要。日本で電話代行など全機能が使えるかは要確認。"
+      },
+      "en": {
+        "title": "Google makes its Gemini Tasks agent free in six countries, including Japan",
+        "summary": "Google has renamed its trial agent feature Gemini Spark as \"Tasks\" and is offering it free, powered by Gemini 4 Hydrogen. It is available in the US, Japan, Korea, Canada, Australia, and India. It can make phone calls, log into websites, complete purchases, manage calendars, and search emails for recurring expenses.",
+        "note": "How to use it at work: it can be trialed for multi-step routine work such as scheduling or pulling together information. Caution: because the AI logs in and makes purchases on your behalf, check internal permission rules before linking work accounts or company cards. Whether all features, such as phone calls, work in Japan needs to be confirmed."
+      },
+      "src": [
+        {
+          "name": "Google Blog",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-18-gas-gemini-ga",
+      "date": "2026-11-18",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "コーディング",
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Google Apps ScriptのGeminiサイドパネルが一般提供に",
+        "summary": "Googleは11月16日、Google Apps Script（GAS）のGeminiサイドパネルを一般提供に移した。2026年初頭のベータ版を経たもので、自然言語からのスクリプト生成、コード変更のブロック単位での確認、ランタイムエラーのワンクリック修正の3機能を持つ。11月12日から段階展開しており、使えるまで最大15日かかる見込み。",
+        "note": "仕事での使いどころ：スプレッドシートの集計やメール送信の自動化を、コードを書かずに指示で作れる。注意点：生成スクリプトはドライブやメールへのアクセス権限を求める場合があるため、IT管理者側で権限設定の確認が必要。動作確認せずに業務データへ実行しないこと。"
+      },
+      "en": {
+        "title": "Gemini side panel in Google Apps Script becomes generally available",
+        "summary": "On November 16, Google made the Gemini side panel in Google Apps Script (GAS) generally available, following a beta in early 2026. It has three features: generating scripts from natural language, reviewing code changes block by block, and fixing runtime errors with one click. The rollout began on November 12 and may take up to 15 days to reach all users.",
+        "note": "How to use it at work: you can build automations such as spreadsheet aggregation or email sending by giving instructions instead of writing code. Caution: generated scripts may request access to Drive or Gmail, so IT administrators should check permission settings. Do not run them on business data without testing first."
+      },
+      "src": [
+        {
+          "name": "ITmedia",
+          "url": "https://kn.itmedia.co.jp/kn/article/2611/18/2000003256/"
+        }
+      ]
+    },
     {
       "id": "2026-11-17-california-sues-openai-rogue-agents",
       "date": "2026-11-17",
