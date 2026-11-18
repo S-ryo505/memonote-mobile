@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T09:05:00+09:00",
+ "updated": "2026-11-18T09:00:37+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -9644,6 +9644,125 @@
     {
      "name": "CnEVPost",
      "url": "https://cnevpost.com/2026/11/16/china-steps-up-supplier-payment-oversight/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-meti-cev-subsidy-early-end",
+   "date": "2026-11-18",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "JP",
+   "tags": [
+    "規制",
+    "電池",
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "経産省、CEV補助金の申請受付を11月20〜30日に前倒し終了の見込み：1100億円の予算残高は11月16日時点で約121億円",
+    "summary": "経済産業省は、EV・FCVなどの購入を対象とする国の補助金（2025年度補正予算、1100億円）の受付終了見込みを、従来の12月ごろから11月20〜30日へ早めた。11月16日時点の残りは約121億円で、EV購入の申請が想定を上回るペースで増えたことが理由とされる。EVの補助額は最大130万円で、2026年の国内EV新車販売は年間で初めて10万台を超えたと報じられている。",
+    "note": "予算の消化日数は 残日数 ≒ 残高 ÷ 1日あたり交付額 で見積もれる。仮に1台平均100万円・1日1000台の申請とすると1日10億円、残高121億円は約12日分となり、11月下旬終了という見込みと整合する（台数・単価は仮定値）。2027年1月1日以降の新規登録から上限が75万円に下がる既報（10/23）と合わせ、年度末までの国内EV需要の段差に注意。令和9年度の扱いは未定と公表されている（要確認）。"
+   },
+   "en": {
+    "title": "METI expects to close CEV subsidy applications early, between November 20 and 30; about ¥12.1bn of the ¥110bn budget left as of November 16",
+    "summary": "Japan's Ministry of Economy, Trade and Industry has moved up the expected end of applications for its purchase subsidy for EVs, FCVs and similar vehicles (¥110 billion from the FY2025 supplementary budget) from around December to November 20–30. About ¥12.1 billion remained as of November 16, because applications for EV purchases grew faster than expected. The subsidy for EVs was up to ¥1.3 million, and domestic new EV sales in 2026 reportedly topped 100,000 units for the first time in a single year.",
+    "note": "The remaining days can be estimated as remaining budget ÷ daily payout. Assuming an average of ¥1 million per vehicle and 1,000 applications a day, the payout is ¥1 billion a day, so ¥12.1 billion lasts about 12 days, which matches a late-November end (assumed values). Combined with the earlier report (Oct 23) that the cap drops to ¥750,000 for registrations from January 1, 2027, expect a step change in domestic EV demand toward the end of the fiscal year. Treatment for FY2027 has not been decided (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/18/419152.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-17-nhtsa-honda-idle-stop-1m",
+   "date": "2026-11-17",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "US",
+   "tags": [
+    "品質",
+    "PT",
+    "規制"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "NHTSA、ホンダ車約103万台を調査：アイドリングストップ後にエンジンが再始動しない不具合、苦情701件",
+    "summary": "米NHTSAは、2024〜2026年式のOdyssey、Passport、Ridgeline、Pilotの計1,033,632台について、アイドリングストップでエンジンが止まった後に再始動しない事象の調査を開始した。苦情は701件寄せられており、NHTSAはリコールが必要かを判断する。苦情例には走行約2.1万マイルでのバッテリー低下警告の表示も含まれる。",
+    "note": "再始動不可は補機12Vバッテリーの状態と関係しやすい。再始動時はスタータ突入電流で端子電圧が V = OCV − I·R_int まで低下し（例：I=600A、R_int=5mΩで3V低下、仮定値）、ECUの最低動作電圧を下回ると再始動に失敗する。通常はSOC/SOH推定でアイドリングストップを禁止するが、その判定しきい値や推定誤差が原因かは記事に記載がなく推測。"
+   },
+   "en": {
+    "title": "NHTSA investigates about 1.03 million Hondas over engines that fail to restart after auto stop; 701 complaints",
+    "summary": "The U.S. NHTSA has opened an investigation into 1,033,632 vehicles — 2024–2026 Odyssey, Passport, Ridgeline and Pilot models — over engines that may not restart after shutting off in a stop/start event. It has received 701 complaints and will decide whether a recall is needed. One complaint describes a low-battery warning appearing at around 21,000 miles.",
+    "note": "Restart failures are often tied to the condition of the 12 V auxiliary battery. During a restart the starter inrush current pulls terminal voltage down to V = OCV − I·R_int (e.g. I = 600 A and R_int = 5 mΩ give a 3 V drop, assumed values); if it falls below the ECU's minimum operating voltage, the restart fails. Systems normally inhibit auto stop based on SOC/SOH estimates, but whether those thresholds or estimation errors are the cause is not stated in the article (speculation)."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2318996/honda-start-stop-investigation/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-waymo-halts-highway-nationwide",
+   "date": "2026-11-18",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "US",
+   "tags": [
+    "ADAS",
+    "規制"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "Waymo、全米で高速道路走行を停止：警察の封鎖を通過しようとした動画を受けカリフォルニア州DMVが州内停止を命令",
+    "summary": "カリフォルニア州自動車局（DMV）がWaymoに州内での高速道路走行の一時停止を命じたことを受け、Waymoは全米で高速道路から車両を引き上げた。発端は、Waymo車が警察の封鎖を通り抜けようとする動画がSNSで拡散したこと。Waymoは15地域でレベル4のロボタクシーを運行しており、累計2億7100万マイルの走行で841件の負傷を防いだと主張していた。",
+    "note": "レベル4はODD（運行設計領域）内でシステムが全責任を負うため、緊急車両・警察の手信号や封鎖など「例外的な交通規制」の認識がODD定義の要件になる。11/10のスクールバス追い越しに続く事例で、規制当局がODDの一部（高速道路）を個別に止める運用が出てきた点が注目。高速道路再開の条件は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Waymo halts highway operation nationwide after California DMV orders an in-state pause following a video of a Waymo trying to pass a police blockade",
+    "summary": "Waymo has pulled its vehicles from highways across the U.S. after the California Department of Motor Vehicles ordered it to pause highway operation in the state. The trigger was a viral video showing a Waymo trying to pass a police blockade. Waymo runs Level 4 robotaxis in 15 areas and had claimed its vehicles prevented 841 injuries over 271 million miles.",
+    "note": "At Level 4 the system is fully responsible within its ODD (operational design domain), so recognizing exceptional traffic control — emergency vehicles, police hand signals, blockades — is an ODD requirement. Following the school bus passing case on Nov 10, regulators are now switching off part of an ODD (highways) on its own. The conditions for resuming highway service are not stated in the article (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/17/waymo-halts-highway-operation-nationwide-after-ca-dmv-pause/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-17-toyota-chr-plus-bms-recall",
+   "date": "2026-11-17",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "Global",
+   "tags": [
+    "品質",
+    "電池",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、電動SUV「C-HR+」約1.9万台を世界でリコール：電池管理システムの不具合で駆動系が停止するおそれ",
+    "summary": "トヨタはe-TNGAベースのBEV「C-HR+」を世界で約1万9000台リコールする。ドイツでは1,096台が対象で、ドイツ連邦自動車庁（KBA）のデータベースでは2025年6月17日〜2026年7月9日生産分とされる。電池管理システム（BMS）の不具合により、最悪の場合は電動駆動系が停止する。北米でも同じソフトの問題でC-HR EV約1万台（うちカナダ1,310台）がリコールされている。",
+    "note": "BMSはセル電圧・温度・電流からSOC・許容出力 P_max = V·I_max を計算し、異常検知時はコンタクタを開放してHV系を遮断する。誤検知や演算異常でこの保護が作動すると、走行中に駆動力がゼロになる（ESC等の制動系は12V系で維持されるのが一般的、推測）。不具合の具体的な内容（センサー系かソフト判定か）は記事に記載がなく要確認。"
+   },
+   "en": {
+    "title": "Toyota recalls about 19,000 C-HR+ electric SUVs worldwide; battery management fault could shut down the electric drivetrain",
+    "summary": "Toyota is recalling about 19,000 units of its e-TNGA-based C-HR+ BEV worldwide, including 1,096 in Germany, where the Federal Motor Transport Authority (KBA) database lists vehicles built between June 17, 2025 and July 9, 2026. A fault in the battery management system (BMS) could, in the worst case, shut down the electric drivetrain. Around 10,000 C-HR EVs, including 1,310 in Canada, have also been recalled in North America for the same software issue.",
+    "note": "A BMS calculates SOC and allowable power P_max = V·I_max from cell voltage, temperature and current, and opens the contactors to disconnect the HV system when it detects a fault. If this protection trips because of a false detection or calculation error, drive torque drops to zero while driving (brakes such as ESC usually stay powered from the 12 V system — speculation). The specific nature of the fault (sensor or software logic) is not stated in the article (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/17/toyota-recalls-c-hr-worldwide-due-to-battery-control-unit-issue/"
     }
    ]
   }
