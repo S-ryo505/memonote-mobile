@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T09:00:37+09:00",
+ "updated": "2026-11-19T09:00:25+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -9763,6 +9763,161 @@
     {
      "name": "electrive",
      "url": "https://www.electrive.com/2026/11/17/toyota-recalls-c-hr-worldwide-due-to-battery-control-unit-issue/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-vw-troc-r-evo5-mhev",
+   "date": "2026-11-18",
+   "kind": "flash",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "4WD",
+    "制御"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "VW、新型「T-Roc R」を発表：EA888 EVO5＋48Vマイルドハイブリッド＋電動スーパーチャージャーで325bhp、ドリフトモード搭載",
+    "summary": "フォルクスワーゲンは2代目「T-Roc R」を公開した。エンジンはGolf Rの2.0L直4ターボEA888を発展させたEVO5で、Euro 7対応のため48Vマイルドハイブリッドと電動駆動のスーパーチャージャーを追加し、出力は325bhp。プラットフォームはMQBで、Carscoopsはドリフトモードを備えると報じている。米国では販売されない。",
+    "note": "電動スーパーチャージャーはタービン回転上昇を待たず48V電源でコンプレッサを駆動するため、低回転域の過給遅れを補う。必要電力の目安は P = ṁ·c_p·T1·(π^((κ−1)/κ) − 1)/η_c（ṁ:空気流量、π:圧力比）。例として ṁ=0.08 kg/s、π=1.4、η_c=0.7、T1=300K（いずれも仮定値）なら約3.4kWで、48V系で約70A。ドリフトモードは後軸2つのクラッチで外輪側へトルクを寄せるGolf Rの「R Performance Torque Vectoring」（後軸トルクの最大100%を外輪へ）と同系統と推測されるが、T-Roc Rへの搭載仕様は要確認。外輪への駆動力差 ΔFx により付加ヨーモーメント M_z = ΔFx·t_r/2（t_r:後輪トレッド）が生じ、旋回を助ける。"
+   },
+   "en": {
+    "title": "VW unveils the new T-Roc R: EA888 EVO5 with 48V mild hybrid and electric supercharger, 325bhp and a drift mode",
+    "summary": "Volkswagen has revealed the second-generation T-Roc R. Its engine is the EVO5 evolution of the Golf R's 2.0-litre turbo four-cylinder EA888, which adds 48V mild-hybrid assistance and an electrically driven supercharger to meet Euro 7, for an output of 325bhp. It sits on the MQB platform, and Carscoops reports that it has a drift mode. It will not be sold in the US.",
+    "note": "An electric supercharger spins its compressor from the 48V supply without waiting for the turbine to spool, filling in boost lag at low rpm. Required power is roughly P = ṁ·c_p·T1·(π^((κ−1)/κ) − 1)/η_c (ṁ: air mass flow, π: pressure ratio). With ṁ=0.08 kg/s, π=1.4, η_c=0.7 and T1=300K (all assumed values), that is about 3.4kW, or about 70A on the 48V system. The drift mode is probably related to the Golf R's 'R Performance Torque Vectoring', which uses two rear-axle clutches to send up to 100% of rear torque to the outside wheel (speculation; the T-Roc R's exact hardware needs confirmation). A drive-force difference ΔFx at the outside wheel creates an extra yaw moment M_z = ΔFx·t_r/2 (t_r: rear track) that helps the car turn."
+   },
+   "src": [
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/new-cars/volkswagen-t-roc-r-returns-325bhp-hot-suv-%E2%80%93-hybrid-power"
+    },
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2320162/vw-tiguan-r-debut-2027/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-toyota-tundra-camshaft-recall",
+   "date": "2026-11-18",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "品質",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ、米国で「タンドラ」約6.2万台をリコール：カムシャフトが走行中に折損するおそれ",
+    "summary": "トヨタは米国でピックアップ「タンドラ」約6万2000台をリコールする。対象は特定のエンジンロットで作られた2022〜2023年型と2025〜2026年型の非ハイブリッド車で、カムシャフトが走行中に折れるおそれがある。実際に不良カムシャフトが組み込まれた可能性があるのは約300台で、残りは予防的な点検対象。",
+    "note": "カムシャフトはクランク2回転で1回転し、カムプロファイルでバルブリフトを決める。折損するとそのバンクの吸排気バルブが動かなくなり、エンジン出力の急低下やエンスト（駆動力喪失）につながる。折損の原因（材料・熱処理・加工のどれか）は記事に記載がなく要確認。対象エンジンの型式も要確認。"
+   },
+   "en": {
+    "title": "Toyota recalls about 62,000 Tundra pickups in the US: camshafts could snap while driving",
+    "summary": "Toyota is recalling about 62,000 Tundra pickups in the US. The recall covers non-hybrid 2022–2023 and 2025–2026 model-year trucks built with a particular engine lot, whose camshafts could break while the truck is moving. Only about 300 trucks may actually have a defective camshaft; the rest are being inspected as a precaution.",
+    "note": "The camshaft turns once for every two crankshaft revolutions, and its cam profile sets valve lift. If it breaks, the intake and exhaust valves on that bank stop moving, which can cause a sudden loss of engine power or a stall (loss of drive). The cause of the breakage (material, heat treatment or machining) is not given in the article and needs confirmation, as does the exact engine type."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/815859/toyota-tundra-recall-camshaft-risk/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-ford-lfp-blueoval-michigan-start",
+   "date": "2026-11-18",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "電池",
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "フォード、ミシガン州マーシャルの「BlueOval Battery Park」でLFP電池の生産を開始：最初は「Fathom」試作車向け",
+    "summary": "フォードは投資額30億ドルのミシガン州マーシャルの工場でLFP（リン酸鉄リチウム）電池の生産を始め、ケンタッキー州で作るEVピックアップ「Fathom」の試作車向けに出荷している。工場は延床200万平方フィート、年産能力20GWhで、セルは毎分40個、パックは毎時50個を組み立てられる。パック工場の本格稼働は予定より早い2027年で、Fathomは2027年初めに予約を始め、標準航続モデルは28,350ドルから。",
+    "note": "LFPはニッケル・コバルトを使わないためセルコストが低い一方、セル電圧が約3.2V（NMCは約3.6〜3.7V）と低く、質量エネルギー密度も低い（一般値）。パックのエネルギーは E = n_s·n_p·V_cell·Q_cell で、同じ電圧・容量を得るには直列数・セル容量を増やす必要がある。またLFPは開回路電圧曲線が平坦でdV/dSOCが小さいため、電圧からのSOC推定が難しく、電流積算と定期的な満充電でのリセットを組み合わせるのが一般的。"
+   },
+   "en": {
+    "title": "Ford starts LFP battery production at BlueOval Battery Park in Marshall, Michigan; first cells go to Fathom prototypes",
+    "summary": "Ford has begun producing lithium-iron-phosphate (LFP) batteries at its $3 billion plant in Marshall, Michigan, and is shipping them to prototypes of the Fathom electric pickup built in Kentucky. The 2 million-square-foot plant has annual capacity of 20GWh and can assemble 40 cells per minute and 50 packs per hour. The pack plant is due to be fully running in 2027, ahead of schedule, and Fathom preorders open in early 2027 from $28,350 for the standard-range model.",
+    "note": "LFP uses no nickel or cobalt, so cell cost is low, but cell voltage is about 3.2V (versus about 3.6–3.7V for NMC) and gravimetric energy density is lower (typical values). Pack energy is E = n_s·n_p·V_cell·Q_cell, so reaching the same voltage and capacity needs more cells in series or larger cells. LFP's open-circuit voltage curve is also flat (small dV/dSOC), which makes voltage-based SOC estimation hard; current integration combined with periodic resets at full charge is the usual approach."
+   },
+   "src": [
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/815927/ford-fathom-blueoval-battery-park-lfp-cells/"
+    },
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/18/fords-first-lfp-batteries-en-route-30k-fathom-ev-pickup/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-resonac-anode-exit",
+   "date": "2026-11-18",
+   "kind": "flash",
+   "cat": "supplier",
+   "region": "JP",
+   "tags": [
+    "電池",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "レゾナック、リチウムイオン電池用負極材事業から撤退",
+    "summary": "レゾナック・ホールディングス傘下のレゾナックは、リチウムイオン電池用の負極材事業から撤退すると発表した。理由として、EV市場の成長が鈍って自動車メーカーが投資計画を見直したこと、新規案件の立ち上げが遅れたこと、価格競争が厳しくなったことを挙げている。撤退の時期や対象の拠点・売上規模は記事に記載がない。",
+    "note": "負極材（主に黒鉛）はセル容量 Q = 比容量 × 活物質量 を決める部材で、黒鉛の理論比容量は372mAh/g（LiC6、一般値）。黒鉛負極は中国メーカーの供給比率が高いとされ、日本勢の撤退は調達先の集中を強める方向（推測）。"
+   },
+   "en": {
+    "title": "Resonac exits the lithium-ion battery anode materials business",
+    "summary": "Resonac, a subsidiary of Resonac Holdings, announced that it will exit the anode materials business for lithium-ion batteries. It cited automakers revising their investment plans as EV market growth slows, delays in launching new projects, and tougher price competition. The article does not give the timing, the sites involved or the size of the business.",
+    "note": "Anode material (mostly graphite) sets cell capacity via Q = specific capacity × active material mass; graphite's theoretical specific capacity is 372mAh/g (LiC6, typical value). Chinese makers are said to hold a large share of graphite anode supply, so a Japanese supplier leaving would further concentrate sourcing (speculation)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/18/419181.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-jama-parts-commonization",
+   "date": "2026-11-19",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "戦略",
+    "品質"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "自工会、メーカー間で鉄・樹脂・ワイヤハーネスの基準や部品を一部共通化する方針（報道）",
+    "summary": "日本自動車工業会（自工会）が、メーカーの垣根を越えて素材・部品の一部を共通化する方針を固めたと、日経・毎日などが11月19日に報じた。日本自動車部品工業会（部工会）と連携し、まず鉄・樹脂・ワイヤハーネスの3品目を対象とする。鉄は各社の評価基準を統一し、樹脂はリサイクル樹脂の規格・評価方法をそろえる。佐藤恒治会長体制の「新7つの課題」の一つとされる。",
+    "note": ""
+   },
+   "en": {
+    "title": "JAMA plans to standardize some parts and standards across automakers, starting with steel, plastics and wiring harnesses (report)",
+    "summary": "The Japan Automobile Manufacturers Association (JAMA) has decided to standardize some materials and parts across its member automakers, Nikkei, Mainichi and others reported on November 19. Working with the Japan Auto Parts Industries Association (JAPIA), it will start with three items: steel, plastics and wiring harnesses. For steel, each company's evaluation standards will be unified; for plastics, standards and test methods for recycled resin will be aligned. It is described as one of the 'new seven tasks' under chairman Koji Sato.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/19/419201.html"
     }
    ]
   }
