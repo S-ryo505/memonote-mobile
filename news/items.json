@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T09:00:25+09:00",
+ "updated": "2026-11-20T09:00:28+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -9918,6 +9918,133 @@
     {
      "name": "Response",
      "url": "https://response.jp/article/2026/11/19/419201.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-byd-fcb-tai9-dms-folding-wheel",
+   "date": "2026-11-19",
+   "kind": "flash",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT",
+    "シャシー",
+    "制御"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "BYD方程豹、大型SUV「泰9（Tai 9）」発売　新DMSハイブリッド初搭載、最上級に格納式ステアリング",
+    "summary": "BYDのサブブランド方程豹が11月19日、旗艦SUV「Tai 9」を3グレード27.99万〜32.99万元で発売した。BYDの新ハイブリッド基盤「DMS」の初搭載車。最上級グレード（32.99万元）は、ステアリングホイールが隠しヒンジで180度回転し約10秒でダッシュ内に収まる機構を標準装備し、耐久は8万回、運転席は165度までリクライニングする。",
+    "note": "ホイールをダッシュに格納するには、ホイールと転舵機構の機械的な連結を外す必要がある。そのためステアバイワイヤ（SbW）採用の可能性が高いが、記事に明記はなく推測（要確認）。SbWでは前輪舵角 δ_f = θ_sw / G(v)（G：車速vで変える可変ギア比）で、路面からの反力は反力モータで模擬トルク T_fb = f(横G, ヨーレート, θ_sw) として作る。DMSの構成（モータ数・変速機）は抜粋に記載がなく要確認。"
+   },
+   "en": {
+    "title": "BYD's Fang Cheng Bao launches Tai 9 large SUV: first with new DMS hybrid platform, top trim gets a stowable steering wheel",
+    "summary": "On November 19, BYD sub-brand Fang Cheng Bao launched its flagship Tai 9 SUV in three trims priced from 279,900 to 329,900 yuan. It is the first model on BYD's new DMS hybrid platform. The top trim (329,900 yuan) comes standard with a steering wheel that swings 180 degrees on a hidden hinge and stows in the dash in about 10 seconds; the mechanism is rated for 80,000 cycles, and the driver's seat reclines to 165 degrees.",
+    "note": "Stowing the wheel in the dash requires mechanically decoupling it from the steering rack, so steer-by-wire (SbW) is likely, but the articles do not say so (speculation, to be confirmed). With SbW, road-wheel angle is δ_f = θ_sw / G(v) (G: speed-dependent variable ratio), and road feel is synthesized by a feedback motor as T_fb = f(lateral g, yaw rate, θ_sw). The DMS layout (number of motors, transmission) is not given in the excerpts (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/19/byd-fang-cheng-bao-launches-tai-9/"
+    },
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/19/byd-folding-steering-wheel-tai-9-production/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-genesis-g80-gv80-hybrid",
+   "date": "2026-11-19",
+   "kind": "flash",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ジェネシス、G80とGV80にハイブリッド追加　2.5Lターボ＋モータ2基、347hp",
+    "summary": "ジェネシスが11月18日（米国時間）、セダン「G80」とSUV「GV80」のハイブリッド仕様を発表した。2.5L直4ターボと電動モータ2基を組み合わせ、7速ATを介してシステム出力347hp・トルク391lb-ft（約530Nm）を出す。航続距離は500マイル（約805km）超とされる。ジェネシスとして米国ハイブリッド市場への初参入で、ヒョンデの米国販売に占めるハイブリッド比率は29%。",
+    "note": "駆動輪トルクは概算で T_wheel = (T_eng + T_mot)·i_g·i_f·η（i_g：変速比、i_f：終減速比、η：伝達効率）。モータ2基の場合、1基は始動・発電用（P1相当）、1基は走行用（P2相当、エンジンとATの間）という配置が一般的だが、本車の配置は記事に記載がなく推測。航続距離 = 燃料タンク容量 × 燃費 で、両方の数値は抜粋になく要確認。"
+   },
+   "en": {
+    "title": "Genesis adds hybrid G80 and GV80: 2.5-liter turbo plus two motors, 347 hp",
+    "summary": "Genesis revealed hybrid versions of its G80 sedan and GV80 SUV on November 18 (US time). A turbocharged 2.5-liter four-cylinder is paired with two electric motors and a seven-speed automatic, for a system output of 347 hp and 391 lb-ft (about 530 Nm). Range is quoted at over 500 miles (about 805 km). It is Genesis's first entry into the US hybrid market; hybrids make up 29% of Hyundai's US sales.",
+    "note": "Approximate wheel torque: T_wheel = (T_eng + T_mot)·i_g·i_f·η (i_g: gear ratio, i_f: final drive, η: driveline efficiency). With two motors, a common layout is one for starting/generating (P1) and one for traction (P2, between engine and transmission), but the layout of this car is not stated (speculation). Range = tank capacity × fuel economy; neither figure is in the excerpts (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/816133/genesis-g80-gv80-hybrids-revealed/"
+    },
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/816122/genesis-gv80-and-g80-hybrids/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-hyundai-elantra-8th-gen",
+   "date": "2026-11-19",
+   "kind": "flash",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ヒョンデ、8代目「エラントラ」をLAショーで世界初公開　全長3.4インチ延長、HVは複合53mpg目標",
+    "summary": "ヒョンデが2026年ロサンゼルス・オートショーで8代目エラントラを公開した。全長は先代比3.4インチ（約86mm）長い。2027年型の標準モデルが先に発売され、出力を高めた新ハイブリッドを積む2028年型エラントラ・ハイブリッドが続き、米国複合燃費で最大53mpgを目標とする。",
+    "note": "燃費換算：km/L = mpg × 1.609/3.785 ≈ mpg × 0.425 → 53mpg ≈ 22.5km/L。L/100km = 235.2/mpg → 約4.44L/100km。いずれもEPA複合値（目標値）で、日本のWLTCとは試験モードが異なるため直接比較はできない。"
+   },
+   "en": {
+    "title": "Hyundai debuts eighth-generation Elantra at LA show: 3.4 inches longer, hybrid targets 53 mpg combined",
+    "summary": "Hyundai unveiled the eighth-generation Elantra at the 2026 Los Angeles Auto Show. It is 3.4 inches (about 86 mm) longer than before. The standard 2027 Elantra goes on sale first, followed by the 2028 Elantra Hybrid with a more powerful hybrid system targeting up to 53 mpg combined.",
+    "note": "Conversion: km/L = mpg × 1.609/3.785 ≈ mpg × 0.425, so 53 mpg ≈ 22.5 km/L; L/100km = 235.2/mpg ≈ 4.44 L/100km. This is an EPA combined target and is not directly comparable with Japan's WLTC figures because the test cycles differ."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/816136/2027-hyundai-elantra-revealed-details-specs-mpg/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-bmw-ix5-spartanburg-sop",
+   "date": "2026-11-19",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "電池",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BMW、米スパータンバーグで「iX5」量産開始　米国初生産のBEV、日産約70台",
+    "summary": "BMWがサウスカロライナ州スパータンバーグ工場で電動SUV「iX5」の量産を始めた。BMWが米国で生産する初のBEVで、現在の生産は1日約70台、2027年は年6万台を見込む。工場には過去2年で17億ドルを投資し、電池パックは約15マイル離れたウッドラフ新工場（11月13日に量産開始）から供給する。電池容量は141kWh、販売店への納車は2027年第1四半期の予定。",
+    "note": "電池需要の概算：60,000台/年 × 141kWh = 8.46GWh/年。日産70台 × 稼働250日（仮定値）≈ 17,500台/年で、年6万台には日産約240台（仮定値の250日稼働で）が必要＝今後の増産が前提。"
+   },
+   "en": {
+    "title": "BMW starts iX5 series production in Spartanburg, its first US-built EV, at about 70 units a day",
+    "summary": "BMW has begun series production of the iX5 electric SUV at its Spartanburg plant in South Carolina. It is the first BEV BMW builds in the US; output is currently about 70 units a day, with 60,000 expected in 2027. BMW invested $1.7 billion in the site over two years, and battery packs come from the new Woodruff plant about 15 miles away, which started series production on November 13. The battery is 141 kWh, and deliveries to dealers are planned for Q1 2027.",
+    "note": "Battery demand estimate: 60,000 units/yr × 141 kWh = 8.46 GWh/yr. At 70 units/day × 250 operating days (assumed) ≈ 17,500 units/yr, so 60,000/yr needs about 240 units/day (with the same assumption), implying a further ramp-up."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/19/bmw-ix5-enters-series-production/"
+    },
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/816052/bmw-ix5-us-production-spartanburg/"
     }
    ]
   }
