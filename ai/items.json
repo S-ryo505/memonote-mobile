@@ -1,6 +1,130 @@
 {
-  "updated": "2026-11-19T09:05:00+09:00",
+  "updated": "2026-11-20T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-11-20-gemini-mac-computer-use",
+      "date": "2026-11-20",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "仕事で使える",
+        "エージェント",
+        "資料作成",
+        "セキュリティ"
+      ],
+      "prio": 2,
+      "conf": "primary",
+      "ja": {
+        "title": "Gemini macOSアプリに「コンピューター操作」　ローカルファイル・Macアプリ・Webをまたぐ作業を代行",
+        "summary": "Googleは11月19日、macOS向けGeminiアプリにコンピューター操作機能を追加したと発表した。ローカルファイル、Macのネイティブアプリ、Webをまたぐ複数手順の作業（フォーム入力、プレゼン作成、ファイル整理など）をAIが代わりに進める。利用者はGeminiがアクセスできるアプリを選べ、作業の様子はチャット内の別ウィンドウでライブ表示される。",
+        "note": "仕事での使いどころ：定型の転記やファイル整理、資料のたたき台作成など、複数アプリを行き来する作業の省力化。注意点：Appleは同時期にAIエージェントの『フルディスクアクセス』を制限する方針で（macOS 27.3ベータで設定を先行公開）、社用Macでの許可範囲は情報システム部門のルール確認が必要。対応プラン・日本での提供状況は記事抜粋になく要確認。"
+      },
+      "en": {
+        "title": "Gemini's macOS app gets computer use, handling tasks across local files, Mac apps and the web",
+        "summary": "On November 19, Google added computer use to the Gemini app for macOS. The AI can carry out multi-step tasks that span local files, native Mac apps and the web, such as filling in forms, making presentations and organizing files. Users choose which apps Gemini may access, and a separate window in the chat shows a live preview of its work.",
+        "note": "How to use it at work: cutting down on routine copy-paste, file organization and first drafts of slides that require switching between apps. Caveats: Apple is introducing restrictions on 'full disk access' for AI agents around the same time (settings previewed in the macOS 27.3 beta), so check your IT department's rules before granting permissions on a work Mac. Supported plans and availability in Japan are not in the excerpt; needs checking."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-20-chatgpt-live-dictation",
+      "date": "2026-11-20",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "仕事で使える",
+        "会議",
+        "メール・英語"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "ChatGPT「Live Dictation」　話しながら文字起こし、音声入力の10分制限も撤廃",
+        "summary": "OpenAIはChatGPTの音声入力に、録音終了を待たずに話した内容をその場で文字にする「Live Dictation」を追加した。あわせて音声入力の10分の録音上限を撤廃した。全プランを対象に、Web、デスクトップアプリ、iOS／Androidアプリで世界的に順次提供している。",
+        "note": "仕事での使いどころ：移動中に報告メモや指示文を口述し、そのまま要約・メール文に整える用途。10分制限がなくなったため長めの口述メモにも使いやすい。注意点：日本語での精度は記事に記載がなく要確認。社外秘の内容を話す場合は、会社のChatGPT利用ルール（データ学習の設定など）を確認する。"
+      },
+      "en": {
+        "title": "ChatGPT's 'Live Dictation' transcribes as you speak and drops the 10-minute voice limit",
+        "summary": "OpenAI added Live Dictation to ChatGPT's voice input, which turns speech into text as you talk instead of waiting for the recording to end. It also removed the 10-minute recording limit on dictation. The feature is rolling out globally on all plans across the web, the desktop app, and the iOS and Android apps.",
+        "note": "How to use it at work: dictating reports or instructions on the go and having ChatGPT turn them into a summary or an email. Without the 10-minute cap, longer spoken notes become practical. Caveats: accuracy in Japanese is not mentioned; needs checking. Before speaking confidential content, check your company's ChatGPT usage rules (such as data-training settings)."
+      },
+      "src": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-20-meta-muse-data-mixup",
+      "date": "2026-11-20",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "エージェント"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "MetaのAIエージェント「Muse」、他人の会話や口座残高を表示か　報道で個人情報露出の疑い",
+        "summary": "報道によると、Metaの社員らが、AIエージェント「Muse」が自分の頼んでいない育児の依頼、注文していない商品、他人の銀行口座残高などを表示したと報告した。天気の質問への回答に、Capital OneとCharles Schwabの具体的な残高が付け加えられた例もあったという。Museは9月の公開以降1000万ダウンロードを超えている。",
+        "note": "仕事での使いどころ：直接の活用ではなく、個人向けAIエージェントを業務に持ち込む際のリスク事例として共有できる。注意点：報道ベースで、原因や影響範囲は未確定（Metaのコメント内容は記事抜粋になく要確認）。他アプリ連携を許可した覚えがないとの証言もあり、私物アプリと業務アカウントの連携は避けるのが無難（推測を含む）。"
+      },
+      "en": {
+        "title": "Meta's AI agent Muse reportedly shows other people's conversations and bank balances",
+        "summary": "According to a report, Meta employees said the AI agent Muse surfaced childcare requests they never made, products they never ordered and bank balances that were not theirs. In one case, a reply about weather and tides came with specific Capital One and Charles Schwab balances attached. Muse has passed 10 million downloads since its launch in September.",
+        "note": "How to use it at work: not a tool to adopt, but a case worth sharing about the risks of bringing consumer AI agents into work. Caveats: this is based on a report, and the cause and scope are unconfirmed (Meta's comment is not in the excerpt; needs checking). One employee said she never granted access to other apps, so avoiding links between personal apps and work accounts seems prudent (partly speculation)."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-20-llm-api-router-attacks",
+      "date": "2026-11-20",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "セキュリティ",
+        "コーディング",
+        "エージェント"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "AIエージェントとモデルを中継する「APIルーター」428個を調査　9個が悪意あるコードを注入、認証情報の窃取も",
+        "summary": "UCSBなどの研究チームが、AIエージェントと外部モデルを仲介するAPIルーター428個（有料28、無料400）を調べ、有料1個・無料8個がAIの返すコマンドを書き換えて悪意あるコードを注入していたと報告した。無料ルーター17個では、通過させたおとりのAWS認証情報が実際に不正利用され、1個はおとりのイーサリアム秘密鍵から資金を抜き取った。最初の50回は正常に動作して51回目から攻撃する、自動実行モードのRust／Goプロジェクトだけを狙う、といった検知を避ける手口も確認された。",
+        "note": "仕事での使いどころ：開発部門でコーディングエージェントを使う際の調達・利用ルールの根拠資料になる。注意点：『格安』『無料』の非公式APIや中継サービスを経由させない、APIキーやクラウド認証情報をエージェントの通信経路に流さない、自動実行モードの範囲を限定する、などの対策が必要。論文の再現条件の詳細は記事抜粋になく要確認。"
+      },
+      "en": {
+        "title": "Study of 428 'API routers' between AI agents and models finds 9 injecting malicious code and some stealing credentials",
+        "summary": "Researchers including a team at UC Santa Barbara examined 428 API routers (28 paid, 400 free) that sit between AI agents and external models, and found that one paid and eight free routers rewrote commands returned by the AI to inject malicious code. With 17 free routers, decoy AWS credentials passed through them were later actually misused, and one drained funds from a decoy Ethereum private key. Evasion tricks included behaving normally for the first 50 calls before attacking on the 51st, and targeting only Rust or Go projects running in fully automatic mode.",
+        "note": "How to use it at work: useful evidence for setting procurement and usage rules for coding agents in development teams. Caveats: avoid routing traffic through 'cheap' or free unofficial APIs and relay services, keep API keys and cloud credentials out of the agent's traffic, and limit where fully automatic mode is allowed. Details of the paper's test conditions are not in the excerpt; needs checking."
+      },
+      "src": [
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/19/2000003310/"
+        }
+      ]
+    },
     {
       "id": "2026-11-19-gemini-4-neon",
       "date": "2026-11-19",
