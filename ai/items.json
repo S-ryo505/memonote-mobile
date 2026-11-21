@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T09:05:00+09:00",
+  "updated": "2026-11-21T10:01:58+09:00",
   "items": [
     {
       "id": "2026-11-20-gemini-mac-computer-use",
@@ -7570,6 +7570,531 @@
           "url": "https://the-decoder.com/with-its-new-voice-model-deepl-voice-now-translates-intonation-and-speaking-speed-into-other-languages-as-well/"
         }
       ]
+    },
+    {
+      "id": "2026-11-21-openai-reasoning-extraction-defense",
+      "date": "2026-11-21",
+      "kind": "weekly",
+      "cat": "model",
+      "level": "intermediate",
+      "tags": [
+        "セキュリティ",
+        "モデル"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "OpenAI、GPT-6.2 Astra／Solの「内部の推論」を抜き出す攻撃への対策を強化　過去リクエストからの抽出成功率は54.0％→0.2％",
+        "summary": "OpenAIの社内自動テストでは、過去のリクエストから保護された推論を引き出す攻撃の成功率が、GPT-6 Astra（旧対策）の54.0％からGPT-6.2 Astraでは0.2％に、処理中のリクエストへの攻撃は22.9％から0.9％に下がった。OpenAIは、他社モデルの学習用に出力を大量に集める「蒸留」目的の組織的な利用で、毎週数千〜数万のアカウントを停止しているとしている。一部の改善はGPT-6 Astraにも順次適用する。",
+        "note": "仕事での使いどころ：利用者側の操作は変わらない。社内でAPIを使ったツールを作る場合、モデルの推論過程そのものは取り出せない前提で設計する（最終回答と根拠の説明を出力させる）。注意点：数値はOpenAI自身の社内テストの値で、第三者検証ではない。大量の自動リクエストを送る社内ツールは、利用規約の蒸留禁止条項に触れないか要確認。"
+      },
+      "en": {
+        "title": "OpenAI hardens GPT-6.2 Astra and Sol against attacks that extract their hidden reasoning; success rate from prior requests falls from 54.0% to 0.2%",
+        "summary": "In OpenAI's internal automated tests, attacks that pull protected reasoning from earlier requests succeeded 54.0% of the time on GPT-6 Astra with the old safeguards, versus 0.2% on GPT-6.2 Astra; attacks on in-progress requests fell from 22.9% to 0.9%. OpenAI says it suspends thousands to tens of thousands of accounts each week over coordinated 'distillation' campaigns that harvest outputs to train other models. Some of the improvements are coming to GPT-6 Astra as well.",
+        "note": "How to use it at work: nothing changes for ordinary users. If you build internal tools on the API, design them assuming the model's internal reasoning cannot be retrieved; ask for a final answer plus an explanation of the basis instead. Caveats: the figures come from OpenAI's own internal tests, not independent verification. Internal tools that send large volumes of automated requests should be checked against the terms of use on distillation."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-21-signal-blocks-ai-agents",
+      "date": "2026-11-21",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Signal、画面を読むAIエージェント対策でスクリーンショットを遮断　iOS 27と一部Androidで、macOSは未対応",
+        "summary": "メッセージアプリSignalは、AppleのSiri AI、GoogleのGemini Intelligence、MetaのMuseなど端末上のAIエージェントが画面からチャットを読み取ることを防ぐため、iOS 27でスクリーンショットを遮断し、対応するAndroidではAIアシスタントが画面にアクセスしようとすると保護を働かせる。Signalはこれをプライバシーへの「存亡に関わる脅威」と呼び、macOSなど保護が不完全な部分が残ることも認めた。Apple・Google・Microsoftに、アプリ側がAIエージェントを簡単に締め出せる仕組みを求めている。",
+        "note": "仕事での使いどころ：スマホやPCの「画面を見て操作するAI」は、開いている他のアプリ（社内チャット、メール、顧客情報）も読める可能性がある。業務端末でこうした機能を有効にする前に、どのアプリが読まれうるかを確認する。注意点：会社支給端末での画面操作AIの可否は情報システム部門のルールに従う。Signal以外のアプリが同様の対策をしているかは要確認。"
+      },
+      "en": {
+        "title": "Signal blocks screenshots to stop screen-reading AI agents on iOS 27 and some Android versions; macOS still unprotected",
+        "summary": "To stop on-device AI agents such as Apple's Siri AI, Google's Gemini Intelligence and Meta's Muse from reading chats off the screen, Signal now blocks screenshots on iOS 27 and, on supported Android versions, triggers protection when an AI assistant tries to access the screen. Signal calls this an 'existential threat' to privacy and admits gaps remain, including on macOS. It is asking Apple, Google and Microsoft to give apps an easy way to block AI agents entirely.",
+        "note": "How to use it at work: AI features that 'look at the screen and operate it' on phones or PCs may also read other open apps (internal chat, email, customer data). Before enabling them on a work device, check which apps they could read. Caveats: follow your IT department's rules on screen-operating AI on company devices. Whether apps other than Signal have similar protections needs checking."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/signal-blocks-screenshots-on-ios-27-and-android-to-stop-ai-agents-from-reading-private-chats/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-21-apple-own-agent-macos-14-steps",
+      "date": "2026-11-21",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Apple、端末を操作する自社AIエージェントを開発中と報道　macOS 27.3では他社エージェントにMac操作を許可する手順が4→14ステップに",
+        "summary": "Meta・OpenAI・Anthropic・Googleに続き、Appleも端末を操作するAIエージェントを開発していると報じられた。権限モデルやサンドボックス（隔離した実行環境）でプライバシーを重視する設計になる見込み。一方でmacOS 27.3では、ChatGPTなど他社のエージェントにMacの操作を許可するのに必要な手順が4ステップから14ステップに増えた。",
+        "note": "仕事での使いどころ：Macで他社AIのコンピューター操作機能を使っている場合、OS更新後に許可設定のやり直しが必要になる可能性がある。注意点：Apple製エージェントの機能・時期・提供地域は公式発表がなく未確定（報道ベース）。社用Macでの操作許可は情報システム部門に確認する。"
+      },
+      "en": {
+        "title": "Apple reportedly building its own device-controlling AI agent; macOS 27.3 raises the steps to let third-party agents control a Mac from 4 to 14",
+        "summary": "Following Meta, OpenAI, Anthropic and Google, Apple is reported to be building an AI agent that operates the device, with privacy built around permission models and sandboxing (isolated execution environments). Meanwhile, macOS 27.3 now requires 14 steps instead of four for users to let third-party agents such as ChatGPT control their Macs.",
+        "note": "How to use it at work: if you use a third-party AI's computer-use feature on a Mac, you may need to redo the permission settings after an OS update. Caveats: Apple has not officially announced its agent; features, timing and regions are unconfirmed (based on reports). Check with IT before granting control permissions on a company Mac."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/apple-joins-the-race-for-ai-agents-that-control-your-device-while-raising-new-barriers-for-competitors/"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-21-ai-broker-canaries-shadow-api",
+      "date": "2026-11-21",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "セキュリティ",
+        "料金"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "AIの「中継サービス」2つの調査：200万件の目印入りリクエストで情報の行方を追跡、非公式の格安APIは17種類が論文187本で利用",
+        "summary": "1つ目の調査では、OpenRouterやVercelのような仲介（ブローカー）サービスを経由するAIサービス網に、追跡可能な固有の秘密を含む200万件のリクエストを流し、送った機密情報がどこへ渡るかを調べた。2つ目はドイツCISPAとカナダ・ウォータールー大学の論文で、公式APIを安く仲介する非公式の「シャドーAPI」を17種類特定し、計187本の論文（うち約62％の116本は査読付き会議・学術誌）で使われていたこと、17のうち15は運営者の身元が確認できず4つは既に停止していたことを報告した。",
+        "note": "仕事での使いどころ：社内ツールでAPIを使う場合、契約先が公式APIか仲介サービスかを確認する。仲介を使うと、入力データが追加の事業者を通ることになる。注意点：公式より極端に安いAPIは、中身が別モデルの可能性や情報が外部に渡る可能性がある（調査の結論の詳細は原文で要確認）。業務データは社内で承認されたAPI・契約経由でのみ送る。"
+      },
+      "en": {
+        "title": "Two studies of AI 'middlemen': 2 million tagged requests trace where data goes, and 17 unofficial cheap APIs turn up in 187 research papers",
+        "summary": "In the first study, researchers sent 2 million requests containing unique, trackable secrets through a network of AI services that rely on brokers such as OpenRouter or Vercel, to see where sensitive information ends up. The second, a paper from Germany's CISPA and Canada's University of Waterloo, identified 17 unofficial 'shadow APIs' that resell access to official APIs cheaply; they were used in 187 papers (about 62%, or 116, in peer-reviewed venues), 15 of the 17 were run by operators whose identity could not be verified, and 4 had already shut down.",
+        "note": "How to use it at work: when internal tools call an AI API, check whether the contract is with the official API or a broker; brokers add another company that sees your input. Caveats: APIs far cheaper than official prices may serve a different model or pass data on to others (check the original reports for detailed conclusions). Send business data only through company-approved APIs and contracts."
+      },
+      "src": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/"
+        },
+        {
+          "name": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2611/19/2000003309/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-20-autodesk-navpack-nvidia-aero",
+      "date": "2026-11-20",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "advanced",
+      "tags": [
+        "データ分析"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Autodesk、自動車デザイナー向け「NavPack」にNVIDIA技術を統合する計画　車体形状を変えながら空力性能をAIで予測",
+        "summary": "米Autodeskは10月21日のNVIDIA GTC Berlinで、自動車デザイナー向けソリューション「Autodesk NavPack」にNVIDIAの技術を統合する計画を発表した。対応するAIモデルのアーキテクチャを広げることと、ワークフローの一部をGPUで高速化することが目的で、形状を変更しながら空力性能をAIで予測する用途を想定している。",
+        "note": "仕事での使いどころ：CFDを毎回回す前の形状案の絞り込みに、AIの代理モデル（サロゲート）を使う流れの一例。シャシー部門でも、空力が操安・高速安定性に効く案件では、デザイン部門・空力部門がどの段階でAI予測を使うかを把握しておくと議論しやすい。注意点：提供時期・料金・予測精度は記事では確認できず要確認。AI予測は学習データの範囲外の形状で誤差が大きくなりうるため、最終判断はCFD・風洞で確認する。"
+      },
+      "en": {
+        "title": "Autodesk plans to integrate NVIDIA technology into 'NavPack' for automotive designers, using AI to predict aerodynamics as the body shape changes",
+        "summary": "At NVIDIA GTC Berlin on Oct. 21, Autodesk announced plans to integrate NVIDIA technology into Autodesk NavPack, its solution for automotive designers. The goals are to support more AI model architectures and to accelerate parts of the workflow on GPUs, aimed at predicting aerodynamic performance with AI while the shape is being changed.",
+        "note": "How to use it at work: an example of using AI surrogate models to narrow down shape candidates before running full CFD each time. Where aerodynamics affects handling and high-speed stability, it helps chassis teams to know at which stage the design and aero teams rely on AI predictions. Caveats: availability, pricing and prediction accuracy could not be confirmed in the article. AI predictions can have large errors for shapes outside the training data, so confirm final decisions with CFD or wind-tunnel tests."
+      },
+      "src": [
+        {
+          "name": "MONOist（ITmedia）",
+          "url": "https://monoist.itmedia.co.jp/mn/articles/2611/20/news029.html"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-20-chatgpt-dots-plus-business-standard",
+      "date": "2026-11-20",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "仕事で使える",
+        "エージェント",
+        "料金"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "ChatGPTの常時稼働エージェント「dots」、Plus（月額3,000円）の一部と法人向けBusiness Standardに拡大",
+        "summary": "OpenAIは、9月に発表した常時稼働型エージェント「dots」を、個人向けPlusプラン（月額3,000円）の一部ユーザーと法人向けBusiness Standardに提供すると発表した。これまでは個人向けPro（月額16,800円から）と法人向けBusiness Premium・Enterpriseのみだった。OpenAI Japanによると、dotsの週間アクティブユーザー数は日本が世界2位。",
+        "note": "仕事での使いどころ：定期的な情報収集や、決まった時刻のまとめ作成など、繰り返しの作業を任せる用途を低い料金のプランで試せるようになる。注意点：Plusは『一部ユーザー』からの段階提供で、全員がすぐ使えるとは限らない。会社のBusiness契約でdotsを有効にするかは管理者設定次第（要確認）。常時動くエージェントにメールやファイルの権限を渡す範囲は、最小限にする。"
+      },
+      "en": {
+        "title": "ChatGPT's always-on agent 'dots' expands to some Plus users (¥3,000/month) and to Business Standard",
+        "summary": "OpenAI will offer dots, the always-on agent it announced in September, to some users on the personal Plus plan (¥3,000 per month) and to the Business Standard plan. Previously it was limited to the personal Pro plan (from ¥16,800 per month) and the Business Premium and Enterprise plans. According to OpenAI Japan, Japan ranks second in the world in weekly active dots users.",
+        "note": "How to use it at work: you can now try handing off recurring work, such as regular information gathering or summaries at a fixed time, on a cheaper plan. Caveats: Plus is rolling out to 'some users' first, so not everyone gets it immediately. Whether dots is enabled on your company's Business contract depends on admin settings (check). Keep the email and file permissions you give an always-running agent to the minimum."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2611/20/2000003359/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-20-antigravity-third-party-terms",
+      "date": "2026-11-20",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "コーディング",
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Google Antigravityを他社AIツール経由で使うとアカウント停止の可能性　追加利用規約6条に明記",
+        "summary": "開発ツール「Google Antigravity」をヘッドレス起動する「agy -p」コマンドなどを他社ツールから使うと、Googleアカウントごと停止されるのではという懸念がXで広がった（整理した投稿の表示は49万回）。「Google Antigravity 追加利用規約」6条は、サードパーティのソフトやサービスで本サービスにアクセスすること（例：OpenClawをAntigravityのOAuthで使う）を違反とし、AntigravityやGemini CLIのアカウント停止・終了の理由になりうると定めている。Google Cloudの「Service Terms」19条には、他社AIエージェントの使用に起因する責任を否認する記載もある。",
+        "note": "仕事での使いどころ：複数のAIツールを組み合わせて自動化する前に、各ツールの規約で『他社ツールからの接続』が許されているかを確認する。注意点：記事の範囲では、Googleアカウント全体が止まるのか、Antigravity・Gemini CLIのアカウントに限られるのかは規約の文言から明確ではない（要確認）。業務アカウントで試す前に、情報システム部門と規約を確認する。"
+      },
+      "en": {
+        "title": "Using Google Antigravity through third-party AI tools can get your account suspended, per Section 6 of its additional terms",
+        "summary": "Concerns spread on X (a summary post drew 490,000 views) that using Google Antigravity's headless 'agy -p' command from other tools could get an entire Google account suspended. Section 6 of the 'Google Antigravity Additional Terms of Service' says accessing the service through third-party software or services (for example, using OpenClaw with Antigravity OAuth) is a violation and may be grounds for suspending or terminating Antigravity and/or Gemini CLI accounts. Section 19 of Google Cloud's Service Terms also disclaims liability arising from the use of third-party AI agents.",
+        "note": "How to use it at work: before chaining several AI tools for automation, check whether each tool's terms allow connections from other tools. Caveats: based on the article, the wording does not make clear whether a whole Google account or only the Antigravity/Gemini CLI account is affected (needs checking). Review the terms with IT before trying this on a work account."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2611/20/2000003353/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-20-microsoft-perception",
+      "date": "2026-11-20",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "advanced",
+      "tags": [
+        "セキュリティ",
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Microsoft、AIエージェントでサイバー攻撃に対抗する「Microsoft Perception」を提供開始　レッド・ブルー・グリーンの3チーム構成",
+        "summary": "Microsoftは11月18日（日本時間）開幕のIgnite 2026で、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」の提供開始を発表した。攻撃役の「レッドチーム」、防御役の「ブルーチーム」、「グリーンチーム」の3つのエージェントが「プレイブック」と呼ぶ手順書に沿って日常的に連携し、攻撃の予防と、攻撃発生時の機械速度での対応を行う。",
+        "note": "仕事での使いどころ：一般社員が直接使う製品ではなく、情報システム・セキュリティ部門向け。AIを使った攻撃と防御が自動化していく流れを知っておくと、社内のAI利用ルール見直しの背景が理解しやすい。注意点：料金・提供地域・日本語対応は記事では確認できず要確認。グリーンチームの役割の詳細も原文で要確認。"
+      },
+      "en": {
+        "title": "Microsoft launches 'Microsoft Perception', using red, blue and green teams of AI agents to counter cyberattacks",
+        "summary": "At Ignite 2026, which opened on Nov. 18 (Japan time), Microsoft announced Microsoft Perception, a service that uses AI agents to counter AI-driven cyberattacks. Three team agents (red for attack, blue for defense, and green) work together day to day following written procedures called 'playbooks', to prevent attacks and to respond at machine speed when one happens.",
+        "note": "How to use it at work: this is for IT and security teams rather than everyday employees. Knowing that attack and defense with AI are becoming automated helps explain why internal AI rules are being revised. Caveats: pricing, regions and Japanese support could not be confirmed in the article. Details of the green team's role should be checked in the original."
+      },
+      "src": [
+        {
+          "name": "ITmedia NEWS（Publickey転載）",
+          "url": "https://www.itmedia.co.jp/news/article/2611/20/2000003368/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-20-salesforce-paige-japan",
+      "date": "2026-11-20",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "エージェント"
+      ],
+      "prio": 1,
+      "conf": "report",
+      "ja": {
+        "title": "Salesforce、社内問い合わせ対応AIエージェント「Paige」を国内提供　SlackやTeamsで24時間対応",
+        "summary": "セールスフォース・ジャパンは11月18日、Agentforceの新製品群「Job-Ready Agents」から3製品の国内提供を発表した。IT・人事向けの「Paige」はSlack、Microsoft Teams、社内ポータル、Webチャットで24時間365日社内問い合わせに答え、専門サブエージェントやSlack・Teamsでの利用は同日から提供。営業向けの「Piper」は国内パイロット中で、「Piper for Sales」は2027年3月提供予定。",
+        "note": "仕事での使いどころ：情シスや総務への定型的な問い合わせ（パスワード、申請手順など）を減らす仕組みの選択肢。社内FAQが整っているほど効果が出やすい（推測）。注意点：料金と日本語の回答品質は記事では確認できず要確認。Salesforce契約がない会社では導入のハードルが高い。"
+      },
+      "en": {
+        "title": "Salesforce launches 'Paige' in Japan, an AI agent that answers internal help requests around the clock in Slack and Teams",
+        "summary": "On Nov. 18, Salesforce Japan announced the domestic launch of three products from Agentforce's new 'Job-Ready Agents' lineup. Paige, for IT and HR, answers employee questions 24/7 in Slack, Microsoft Teams, internal portals and web chat; its specialist sub-agents and Slack/Teams use became available the same day. Piper, for sales, is in a domestic pilot, and Piper for Sales is planned for March 2027.",
+        "note": "How to use it at work: one option for reducing routine questions to IT or general affairs (passwords, application procedures). It likely works better the more complete your internal FAQ is (our guess). Caveats: pricing and the quality of Japanese answers could not be confirmed in the article. Adoption is harder for companies without a Salesforce contract."
+      },
+      "src": [
+        {
+          "name": "キーマンズネット（ITmedia）",
+          "url": "https://kn.itmedia.co.jp/kn/article/2611/20/2000003331/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-19-sakura-ai-engine-free-models",
+      "date": "2026-11-19",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "料金",
+        "モデル"
+      ],
+      "prio": 1,
+      "conf": "report",
+      "ja": {
+        "title": "さくらのAI Engine、「GLM-5.3-Flash」「DeepSeek-V4.1-Flash-1017」を試験提供　月3,000リクエストまで無料",
+        "summary": "さくらインターネットは11月18日、推論API基盤「さくらのAI Engine」で中国Z.aiの「GLM-5.3-Flash」と中国DeepSeekの「DeepSeek-V4.1-Flash-1017」の試験提供を始めた。1カ月3,000リクエストまで無料で、通常料金は両モデルとも1万トークンあたり入力0.4円・出力4.0円。",
+        "note": "仕事での使いどころ：国内事業者の基盤で公開モデルを試せる選択肢。社内ツールの試作で、API料金を気にせず動作確認するのに使える。注意点：中国企業が開発したモデルを業務で使ってよいかは、会社の方針で要確認。データの保存場所・学習利用の有無はさくらの規約で確認する。試験提供のため、条件は変わる可能性がある。"
+      },
+      "en": {
+        "title": "Sakura's AI Engine trials GLM-5.3-Flash and DeepSeek-V4.1-Flash-1017, free up to 3,000 requests a month",
+        "summary": "On Nov. 18, Sakura Internet began trial service of Z.ai's GLM-5.3-Flash and DeepSeek's DeepSeek-V4.1-Flash-1017 on its inference API platform, Sakura AI Engine. Up to 3,000 requests per month are free; the regular price for both is ¥0.4 input and ¥4.0 output per 10,000 tokens.",
+        "note": "How to use it at work: an option for trying open models on a Japanese provider's infrastructure, useful for testing internal tool prototypes without worrying about API costs. Caveats: check company policy on using models developed by Chinese companies for work. Check Sakura's terms for where data is stored and whether it is used for training. As a trial, terms may change."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2611/19/2000003339/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-19-anthropic-ipo",
+      "date": "2026-11-19",
+      "kind": "weekly",
+      "cat": "biz",
+      "level": "all",
+      "tags": [],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Anthropicが上場、調達額813億ドルで過去最大のIPO　公開価格83ドル、初値段階で111.50ドル",
+        "summary": "Anthropicは公開価格を1株83ドル（想定レンジ70〜78ドルを上回る）とし、IPOで813億ドルを調達して、それまで最大だったSpaceXの記録を上回った。Nasdaqでの取引開始直後の株価は111.50ドルで公開価格を33％上回った。2026年1〜9月の売上高は332.4億ドル、純損失は主に負債の再評価により1,040億ドル。上場後はAmazonとGoogleが合わせて約30％を保有する。",
+        "note": "仕事での使いどころ：Claudeを業務で使う会社にとって、提供元の財務情報が開示される点は、継続性やリスクの評価材料になる。注意点：株価・時価総額は日々変わる。投資判断の材料にはしない（本記事は投資助言ではない）。料金やサービス内容が変わるかは現時点で不明。"
+      },
+      "en": {
+        "title": "Anthropic goes public with a record $81.3 billion IPO; priced at $83, shares opened around $111.50",
+        "summary": "Anthropic priced its shares at $83 (above the projected $70-78 range) and raised $81.3 billion, beating SpaceX's previous IPO record. Shortly after trading began on Nasdaq, shares were at $111.50, 33% above the offering price. Revenue for the first nine months of 2026 was $33.24 billion, and net losses were $104 billion, mostly from liability revaluations. After the IPO, Amazon and Google together will own nearly 30%.",
+        "note": "How to use it at work: for companies using Claude, public financial disclosures from the provider become input for judging continuity and risk. Caveats: share prices and market cap change daily. Do not use this as investment input (this is not investment advice). Whether pricing or services will change is unknown for now."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/anthropics-81-3-billion-ipo-shatters-spacexs-record-as-rising-rates-and-political-headwinds-shake-the-sector/"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-17-ai-chat-trackers-42-services",
+      "date": "2026-11-17",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "仕事で使える"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "AIチャット42サービスを米大が調査　21サービスで会話の要約タイトルが外部の広告トラッカーへ、9サービスはプロンプトそのものを送信",
+        "summary": "米ストーニーブルック大学の研究者らの論文（IEEE S&P 2027採択）は、ChatGPT・Claude・Geminiなど汎用AI25種と、健康・法律・教育の専門AI17種の計42サービスを調べた。21サービスで会話から自動生成される要約タイトルが外部トラッカーに送られ、うち9サービスでは入力したプロンプトがそのまま送信されていた。会話の漏えいが見つかったサービスでは、汎用AI13種中11種、専門AI8種中8種で登録メールアドレスも外部へ送られ、汎用AI25種ではブラウザ通信平均540件のうち約22％（118件）がトラッカー向けだった。",
+        "note": "仕事での使いどころ：ブラウザ版AIに業務情報を入れる前に、会社が契約した法人版（管理者がいる環境）を使っているか確認する。チャットのタイトルにも内容が反映されるため、機密を含む相談は承認済みの環境だけで行う。注意点：どのサービスが該当したかの一覧は記事要約では確認できず、原論文で要確認。法人版で同じ挙動があるかも不明。"
+      },
+      "en": {
+        "title": "US study of 42 AI chat services: 21 sent auto-generated chat titles to outside ad trackers, and 9 sent the prompts themselves",
+        "summary": "A paper by Stony Brook University researchers (accepted at IEEE S&P 2027) examined 42 services: 25 general-purpose AIs such as ChatGPT, Claude and Gemini, and 17 specialist AIs for health, law and education. In 21 services, chat titles generated from the conversation were sent to third-party trackers, and in 9 the user's prompts were sent as-is. Among services with conversation leaks, 11 of 13 general AIs and 8 of 8 specialist AIs also sent the account's email address; across the 25 general AIs, about 22% (118) of an average 540 browser requests went to trackers.",
+        "note": "How to use it at work: before entering work information into a browser-based AI, make sure you are using the company-contracted business version with an administrator. Chat titles reflect the content too, so discuss anything confidential only in approved environments. Caveats: the list of which services were affected was not available in the article summary; check the paper. Whether business editions behave the same way is unknown."
+      },
+      "src": [
+        {
+          "name": "ITmedia NEWS",
+          "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003241/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-18-gemini-skills-drive-files-sharing",
+      "date": "2026-11-18",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える",
+        "資料作成"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "Geminiの「スキル」が他ユーザーとの共有とGoogleドライブのファイル追加に対応　1スキル100MBまで、常に最新版を参照",
+        "summary": "Googleは11月16日、Geminiで繰り返し使えるカスタム指示「スキル」（10月中旬にGemの後継として登場）に、他ユーザーへの共有機能と、Googleドライブなど自社サービスのファイルを追加する機能を付けた。追加したファイルは最新の内容を参照して動く。アップロード容量は1スキル100MBまで。11月12日から段階的に展開し、完了まで最大15日かかる見込み。",
+        "note": "仕事での使いどころ：例として『試験報告書の書式チェック』スキルに、ドライブ上の報告書テンプレートと用語集を追加してチームに共有すると、テンプレートを更新しても全員が最新版でチェックできる。注意点：共有するスキルに入れたファイルを、共有相手が閲覧できる権限になっているかは要確認。Google Workspaceの管理者設定で機能が無効の場合もある。"
+      },
+      "en": {
+        "title": "Gemini 'skills' can now be shared with others and include Google Drive files, up to 100MB per skill, always referencing the latest version",
+        "summary": "On Nov. 16, Google added sharing and file attachments from Google services such as Drive to Gemini 'skills', the reusable custom instructions that replaced Gems in mid-October. Attached files are referenced in their latest state. Uploads are capped at 100MB per skill. The rollout began on Nov. 12 and may take up to 15 days to complete.",
+        "note": "How to use it at work: for example, attach the Drive test-report template and glossary to a 'test report format check' skill and share it with the team; when the template is updated, everyone checks against the latest version. Caveats: check whether the people you share with have permission to view the attached files. The feature may be disabled by Google Workspace admin settings."
+      },
+      "src": [
+        {
+          "name": "キーマンズネット（ITmedia）",
+          "url": "https://kn.itmedia.co.jp/kn/article/2611/18/2000003259/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-21-tool-cheap-ocr-models",
+      "date": "2026-11-21",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "データ分析",
+        "料金"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "【こんなのもあるよ】公開OCRモデルで紙の資料を文字データ化：100万ページあたりGPU代65〜130ドル、18カ月で約5分の1に",
+        "summary": "研究者のvan Strien氏が、古い博物誌・1771年版ブリタニカ百科事典・タイプ打ちの古文書など850ページで公開OCRモデルを比較した。全モデルをHugging Face経由で1時間2.75ドルで借りたNVIDIA RTX PRO 6000で動かすと、2025年4月のRolmOCRは1,000ページ約51セント、2026年10月の「LightOnOCR-3-0.8B」は10セント弱だった。100万ページの処理費は資料により65〜130ドル。",
+        "note": "仕事での使いどころ：スキャンしただけの古い試験報告書・設計基準書を検索できるテキストにする用途。公開モデルは社内サーバーで動かせるため、外部に資料を出さずに済む可能性がある（社内GPUの有無次第）。注意点：比較に使ったのは古書・古文書で、表や数式の多い技術文書での精度は要確認。導入の手順や料金は自社環境で要確認。"
+      },
+      "en": {
+        "title": "[Also worth knowing] Turn paper documents into text with open OCR models: $65-130 of GPU time per million pages, roughly a fifth of the cost 18 months ago",
+        "summary": "Researcher van Strien compared open OCR models on 850 pages from old natural-history books, the 1771 Encyclopaedia Britannica and typed archival documents. Running every model on an NVIDIA RTX PRO 6000 rented via Hugging Face at $2.75 per hour, RolmOCR from April 2025 cost about 51 cents per 1,000 pages, while LightOnOCR-3-0.8B from October 2026 came in just under 10 cents. A million pages costs $65-130 depending on the material.",
+        "note": "How to use it at work: making old scanned test reports and design standards searchable as text. Because open models can run on internal servers, documents may not need to leave the company (depends on whether you have in-house GPUs). Caveats: the comparison used old books and archives; accuracy on technical documents full of tables and formulas needs checking. Setup steps and costs need checking for your own environment."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/ocr-models-now-digitize-a-million-pages-for-under-130-as-costs-drop-fivefold-in-18-months/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-21-tool-google-search-ai-sidebar",
+      "date": "2026-11-21",
+      "kind": "weekly",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "【こんなのもあるよ】Google検索のトップに折りたたみ式サイドバー　AIモードの過去の検索を再開でき、履歴に残らない「一時スレッド」も",
+        "summary": "Googleは、PC版の検索トップページに折りたたみ式のサイドバーを全世界で展開している。AIモードでは最近のAI検索や検索スレッドを開き直したり、ノートブックを作成したりできる。検索履歴に保存されず今後のおすすめにも影響しない「一時スレッド」も世界で提供を始めた。",
+        "note": "仕事での使いどころ：数日にわたる技術調査（例：海外の規格動向）を、前回のAI検索の続きから再開できる。ちょっとした私的な調べ物は一時スレッドにすると、業務の検索履歴と混ざらない。注意点：一時スレッドでも入力内容がGoogleに送られる点は同じで、機密情報は入れない。会社のGoogleアカウントでAIモードが使えるかは管理者設定次第（要確認）。"
+      },
+      "en": {
+        "title": "[Also worth knowing] Google Search's home page gets a collapsible sidebar to reopen past AI Mode searches, plus 'temporary threads' kept out of history",
+        "summary": "Google is rolling out a collapsible sidebar on the desktop search home page worldwide. In AI Mode, it lets you reopen recent AI searches and search threads and create notebooks. 'Temporary threads', which are not saved to search history and do not influence future recommendations, are also launching worldwide.",
+        "note": "How to use it at work: you can pick up multi-day technical research (for example, overseas standards trends) where your last AI search left off. Use temporary threads for quick personal lookups so they do not mix with work search history. Caveats: input in temporary threads is still sent to Google, so do not enter confidential information. Whether AI Mode is available on your company Google account depends on admin settings (check)."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/googles-latest-homepage-update-pushes-its-search-engine-further-toward-an-ai-answer-engine/"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode/"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-21-howto-veteran-interview-sheet",
+      "date": "2026-11-21",
+      "kind": "weekly",
+      "cat": "howto",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える",
+        "会議"
+      ],
+      "prio": 3,
+      "conf": "guide",
+      "ja": {
+        "title": "【使い方特集】ベテランの異動・退職前に、AIに「ノウハウ聞き取りシート」を作らせて1時間の面談で暗黙知を残す",
+        "summary": "ベテランに『知っていることを書いて』と頼んでも、本人が当たり前と思っていることは出てこない。担当業務の一覧をAIに渡し、具体的な場面を聞く質問票を作らせる。例文：『次の業務一覧を担当するベテラン技術者に、1時間で聞き取り面談をします。質問票を作ってください。条件：①各業務につき「判断に迷った具体的な場面」「そのとき何を見て決めたか（数値・波形・音など）」「新人がよく間違えること」を聞く質問を2〜3個、②はい/いいえで終わる質問は使わない、③最後に「この人に聞けば分かる、という社内外の人・資料」を聞く質問を入れる、④表形式（業務／質問／回答欄）。業務一覧：ESCの低μ路適合、実車評価の判定（ドライバーの官能評価との突き合わせ）、サプライヤーとの仕様調整。』面談後は録音の文字起こしをAIに渡し、『判断基準』『例外』『参考資料』に分けて整理させる。",
+        "note": "仕事での使いどころ：異動・退職・定年の引き継ぎ、属人化している適合作業の標準化に使える。『何を見て決めたか』を聞くと、数値基準になっていない判断（波形の形、乗り味）が言葉になりやすい。注意点：面談の録音・文字起こしは本人の同意を取り、社内で承認されたツールで行う。AIの整理結果は、本人に読んでもらって誤りを直してから共有する。"
+      },
+      "en": {
+        "title": "[How-to] Before a veteran moves on or retires, have AI build an 'interview sheet' to capture tacit know-how in a one-hour session",
+        "summary": "Asking a veteran to 'write down what you know' misses what they take for granted. Give AI a list of their duties and have it write questions about specific situations. Example prompt: 'I will interview a veteran engineer for one hour about the duties below. Create a question sheet. Conditions: (1) for each duty, 2-3 questions on a specific situation where the decision was hard, what they looked at to decide (numbers, waveforms, sounds), and mistakes newcomers often make; (2) no yes/no questions; (3) end with a question on which people or documents, inside or outside the company, know the answer; (4) table format (duty / question / answer column). Duties: ESC calibration on low-μ roads, judging vehicle tests (matching against drivers' subjective ratings), specification coordination with suppliers.' After the interview, give AI the transcript and have it sort the content into decision criteria, exceptions and reference materials.",
+        "note": "How to use it at work: useful for handovers due to transfers or retirement, and for standardizing calibration work that depends on one person. Asking 'what did you look at to decide' helps put judgments that are not numerical criteria (waveform shapes, ride feel) into words. Caveats: get consent for recording and transcription and use company-approved tools. Have the interviewee read and correct AI's summary before sharing it."
+      },
+      "src": []
+    },
+    {
+      "id": "2026-11-21-howto-log-data-dictionary",
+      "date": "2026-11-21",
+      "kind": "weekly",
+      "cat": "howto",
+      "level": "intermediate",
+      "tags": [
+        "仕事で使える",
+        "データ分析"
+      ],
+      "prio": 3,
+      "conf": "guide",
+      "ja": {
+        "title": "【使い方特集】試験ログを解析に回す前に、AIに「列の定義表（単位・符号・サンプリング）」の下書きを作らせる",
+        "summary": "解析のやり直しの多くは、単位や符号の取り違え（deg と rad、左旋回が正か負か）から起きる。ログの先頭数十行と信号名の一覧をAIに渡し、各列の意味の推定と『確認が必要な点』を表にさせる。例文：『次は車両試験ログ（CSV）の先頭50行です。各列について表を作ってください。列：信号名／推定される物理量／推定単位／符号の向き（例：左旋回で正）／サンプリング周期（時刻列から計算）／根拠／要確認。推定の根拠がない列は「不明」と書き、勝手に決めないでください。また、時刻の飛び・同じ値が続く区間・物理的にありえない値（例：横加速度が±15m/s²超）があれば行番号を挙げてください。』出来た表は計測担当者に確認してもらい、確定版を解析スクリプトの先頭にコメントとして貼る。",
+        "note": "仕事での使いどころ：サプライヤーや他部署から受け取ったログ、前任者が残したデータの解析前のチェックに使える。サンプリング周期を時刻列から計算させると、欠損や周期の混在に早く気づける。注意点：AIの推定はあくまで仮説で、信号名が略語だと誤りやすい。必ず計測仕様書・担当者で確定させる。実データを社外のAIに入れる場合は、社内ルールで許可されているか確認する（数値を伏せず入力するのは承認済み環境のみ）。"
+      },
+      "en": {
+        "title": "[How-to] Before analyzing a test log, have AI draft a 'column definition table' covering units, sign conventions and sampling",
+        "summary": "Much re-analysis is caused by mixing up units or signs (deg vs. rad, whether a left turn is positive or negative). Give AI the first few dozen rows of the log and the signal names, and have it tabulate its guess at each column's meaning plus points to confirm. Example prompt: 'Below are the first 50 rows of a vehicle test log (CSV). Make a table for each column: signal name / estimated physical quantity / estimated unit / sign convention (e.g., positive for a left turn) / sampling period (calculated from the time column) / basis / to confirm. If there is no basis for a guess, write \"unknown\" instead of deciding. Also list row numbers for time jumps, stretches of repeated identical values and physically impossible values (e.g., lateral acceleration beyond ±15 m/s²).' Have the measurement engineer review the table, then paste the confirmed version as a comment at the top of the analysis script.",
+        "note": "How to use it at work: useful as a pre-analysis check on logs from suppliers or other departments, or data left by a predecessor. Calculating the sampling period from the time column catches missing data or mixed rates early. Caveats: AI's guesses are only hypotheses and are often wrong for abbreviated signal names; always confirm with the measurement spec or the engineer. Check company rules before putting real data into an external AI (enter unmasked values only in approved environments)."
+      },
+      "src": []
+    },
+    {
+      "id": "2026-11-21-howto-mask-before-input",
+      "date": "2026-11-21",
+      "kind": "weekly",
+      "cat": "howto",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える",
+        "セキュリティ"
+      ],
+      "prio": 2,
+      "conf": "guide",
+      "ja": {
+        "title": "【使い方特集】AIに相談する前に、車種名・取引先名・数値を「置き換え表」で伏せてから入力し、回答を元に戻す",
+        "summary": "今週の調査記事のように、AIサービスによっては入力内容や会話タイトルが外部に送られる例がある。社内で承認されたAIを使うのが前提だが、文章の書き方の相談など内容自体が不要な場合は、固有名詞と数値を伏せて入力できる。手順：①相談したい文章をメモ帳に貼る、②車種名→『車種A』、取引先→『サプライヤーX』、部品番号→『部品1』、具体的な数値→『（数値1）』のように置き換え、対応表は手元だけに残す、③AIに例文：『次の文章は固有名詞と数値を記号に置き換えています。記号はそのまま残して、上司向けに読みやすく書き直してください。記号の意味を推測して書き換えないでください。』④返ってきた文章の記号を対応表で元に戻す。",
+        "note": "仕事での使いどころ：報告書・メールの文章の推敲、英訳、構成の相談など、中身の数値がなくても成り立つ作業に向く。『記号はそのまま残して』と指示すると、AIが記号を勝手に別の言葉に変えるのを防げる。注意点：伏せても文脈から推測できる場合がある（例：発売時期と特徴の組み合わせ）。伏せれば何を入れてもよいわけではなく、社内ルールが優先。数値の妥当性の確認など、中身が必要な相談は承認済み環境で行う。"
+      },
+      "en": {
+        "title": "[How-to] Before asking AI, mask model names, supplier names and figures with a 'substitution table', then restore them in the answer",
+        "summary": "As this week's research shows, some AI services send input or chat titles to outside parties. Using a company-approved AI comes first, but when the content itself is not needed, such as advice on wording, you can mask proper nouns and numbers. Steps: (1) paste the text into a text editor; (2) replace the model name with 'Model A', the supplier with 'Supplier X', part numbers with 'Part 1' and specific figures with '(Value 1)', keeping the mapping only on your own machine; (3) prompt: 'Proper nouns and numbers in the text below are replaced with placeholders. Keep the placeholders as they are and rewrite the text so it is easy for my manager to read. Do not guess what the placeholders mean or replace them.' (4) restore the placeholders in the reply using your mapping.",
+        "note": "How to use it at work: suited to polishing reports and emails, translating into English, or advice on structure, where the actual numbers are not needed. Saying 'keep the placeholders as they are' stops AI from changing them into other words. Caveats: masked content may still be guessable from context (e.g., a launch date combined with features). Masking does not make anything acceptable to enter; company rules come first. Questions that need the real content, such as checking whether figures are plausible, belong in an approved environment."
+      },
+      "src": []
     }
   ]
 }
