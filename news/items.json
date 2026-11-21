@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T09:00:28+09:00",
+ "updated": "2026-11-21T09:55:00+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -10045,6 +10045,754 @@
     {
      "name": "Motor1",
      "url": "https://www.motor1.com/news/816052/bmw-ix5-us-production-spartanburg/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-honda-avancier-dual-power-eawd",
+   "date": "2026-11-20",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "4WD",
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "primary",
+   "ja": {
+    "title": "ホンダ、3列ラージSUV「アヴァンシア」を世界初公開　次世代「Honda Hybrid」と「デュアルパワーeAWD」を初搭載、国内は2027年春発売",
+    "summary": "ホンダは11月20日、3列シートSUV「アヴァンシア」をオンラインで初公開した。新開発プラットフォームと次世代ハイブリッド「Honda Hybrid」を初採用し、EV向け開発・生産リソースをハイブリッドへ振り向けて前倒しした次世代ハイブリッド群（2029年度までに世界15車種）の第1弾となる。国内SUV市場（年約100万台）の15.8%を占めるラージ区分への初参入で、四輪駆動は前後に動力を振り分ける「デュアルパワーeAWD」。",
+    "note": "eAWDの前後配分の考え方（一般式）：加速時の前後荷重移動 ΔFz = m·a_x·h/L（h：重心高、L：ホイールベース）。後輪荷重比は Fz_r/(m·g) = l_f/L + a_x·h/(g·L) となるため、発進時に後輪トルク比を上げると各輪の駆動力/荷重比（μ利用率）をそろえられる。発進時の後輪寄せと路面状況に応じた前後配分の変更はMotor1の記述。モーター出力・配分範囲・機構（後軸モーター単独か等）は本データに記載なし＝要確認。"
+   },
+   "en": {
+    "title": "Honda reveals the Avancier three-row large SUV with its next-gen 'Honda Hybrid' and 'DualPower eAWD'; Japan launch in spring 2027",
+    "summary": "Honda revealed the three-row Avancier SUV online on November 20. It is the first model with a new platform and the next-generation 'Honda Hybrid' system, and it leads a hybrid lineup (15 models worldwide by FY2029) brought forward by shifting EV development and production resources to hybrids. It marks Honda's entry into Japan's large-SUV segment, 15.8% of a roughly 1-million-unit SUV market, and uses 'DualPower eAWD' that sends drive to the front and rear.",
+    "note": "General logic of front/rear split: under acceleration the load shift is ΔFz = m·a_x·h/L (h: CG height, L: wheelbase). Rear load share is Fz_r/(m·g) = l_f/L + a_x·h/(g·L), so raising rear torque share at launch evens out the drive-force-to-load ratio (friction utilization) at each axle. The launch rear bias and road-dependent split come from Motor1. Motor outputs, split range and layout are not in this data: to be confirmed."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2158052.html"
+    },
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2158053.html"
+    },
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/20/419266.html"
+    },
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/816173/honda-avancier-hybrid-suv-debut/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-lamborghini-temerario-spyder",
+   "date": "2026-11-19",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "4WD",
+    "シャシー"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ランボルギーニ「テメラリオ スパイダー」発表　同社初の格納式ハードトップ、開放時に重心3mm低下",
+    "summary": "ランボルギーニは11月19日、テメラリオのオープン版を発表した。ルーフは同社初の格納式ハードトップで、10個の電動アクチュエーターによる垂直収納式とし電気油圧回路を廃止した。ルーフを開くと重心は3mm下がり、従来の水平格納式（重心約7mm上昇・後軸側へ11mm移動）より重量配分への影響が小さい。パワートレインはクーペと同じ4.0L V8ツインターボ（800CV、最高1万250rpm）＋モーター3基でシステム920CV（677kW）、0-100km/h 2.7秒。モーターはエンジンと8速DCTの間に1基、前軸に2基。",
+    "note": "重心高変化の影響：横方向荷重移動 ΔFz_lat = m·a_y·h/t。h=450mm（仮定値）なら3mm低下は荷重移動を約0.7%減らし、従来式の7mm上昇（約+1.6%）との差は約2.2%。前軸2モーターは左右独立駆動が可能な配置で、左右トルク差ΔTによるヨーモーメントは Mz = ΔT·t/(2·r_w)。トルクベクタリング制御の内容は本データに記載なし＝要確認。"
+   },
+   "en": {
+    "title": "Lamborghini reveals the Temerario Spyder with the brand's first retractable hard top; CG drops 3 mm when open",
+    "summary": "Lamborghini revealed the open-top Temerario on November 19. Its first retractable hard top folds vertically, driven by 10 electric actuators instead of an electro-hydraulic circuit. With the roof open the CG is 3 mm lower, versus about 7 mm higher and 11 mm rearward with a conventional horizontal stowage. The drivetrain matches the coupe: a 4.0-litre twin-turbo V8 (800 CV, up to 10,250 rpm) plus three motors for 920 CV (677 kW), 0-100 km/h in 2.7 s. One motor sits between the engine and the 8-speed DCT, two on the front axle.",
+    "note": "Effect of CG height: lateral load transfer ΔFz_lat = m·a_y·h/t. With h = 450 mm (assumed), a 3 mm drop cuts load transfer by about 0.7%, about 2.2% better than a 7 mm rise (+1.6%). Two front motors allow independent left/right drive; a torque difference ΔT gives a yaw moment Mz = ΔT·t/(2·r_w). Details of torque vectoring control are not in this data: to be confirmed."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/21/419294.html"
+    },
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/new-cars/temerario-spyder-revealed-lambo%E2%80%99s-first-folding-hard-top"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-toyota-corolla-deck-hev-ffv",
+   "date": "2026-11-19",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "Global",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "トヨタ、ブラジルで「カローラデッキ」発表　カローラクロスベースのモノコック小型ピックアップ、HEV＋フレックス燃料",
+    "summary": "トヨタ・ド・ブラジルは11月18日（現地時間）、中南米専用のピックアップ「カローラデッキ」を発表した。カローラクロスがベースのモノコック車で、ハイブリッドとフレックス燃料（HEV FFV）を組み合わせる。同日開所したソロカバ第2工場（年10万台、ブラジル内総能力は年27万台）で2027年前半に生産を始める。新工場は旧インダイアトゥバ工場比で1台当たりCO2を約42%、VOCを約60%、水使用量を52%削減した。",
+    "note": "FFVの燃費の考え方：同じ仕事に必要な燃料体積は低位発熱量に反比例。体積当たり発熱量はガソリン約32MJ/L、エタノール約21MJ/L（一般値・要確認）なので、E100では体積燃費が約2/3になる（21/32≈0.66）。HEVの回生とエンジン高効率点運転はこの不利を部分的に補う方向。"
+   },
+   "en": {
+    "title": "Toyota unveils the Corolla Deck in Brazil: a Corolla Cross-based unibody compact pickup with a hybrid flex-fuel powertrain",
+    "summary": "Toyota do Brasil unveiled the Corolla Deck, a pickup for Latin America only, on November 18 local time. It is a unibody truck based on the Corolla Cross and pairs a hybrid with flex-fuel capability (HEV FFV). Production starts in the first half of 2027 at the new Sorocaba 2 plant (100,000 units a year, raising Toyota's Brazilian capacity to 270,000), which opened the same day. Versus the old Indaiatuba plant, it cuts CO2 per vehicle by about 42%, VOC by about 60% and water use by 52%.",
+    "note": "FFV economy: fuel volume for the same work is inversely proportional to lower heating value. Gasoline is about 32 MJ/L and ethanol about 21 MJ/L (typical values, to be confirmed), so on E100 volumetric economy drops to about two-thirds (21/32 ≈ 0.66). Hybrid regeneration and running the engine at efficient points partly offset this."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2158389.html"
+    },
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2321419/toyota-corolla-deck/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-toyota-sienna-2027-6th-gen-hybrid",
+   "date": "2026-11-20",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "2027年型トヨタ「シエナ」、第6世代ハイブリッドに切替　システム出力245→251hp",
+    "summary": "2027年型シエナは外観を変えずに第6世代ハイブリッドを搭載する。2.5L直4に124.0kWの駆動モーターと1.15kWhのリチウムイオン電池を組み合わせ、前輪を駆動する。システム出力は245hpから251hpへ上がり、トルクは176lb-ftのまま。燃費も改善するとしている。",
+    "note": "換算：251hp×0.7457 ≈ 187kW、176lb-ft×1.356 ≈ 239N·m。出力向上は+6hp（+2.4%）。電池出力の目安：モーターが124kWを出す際に電池から仮に40kWを供給すると（仮定値）、40/1.15 ≈ 35C相当となり、HEV用電池がエネルギーより出力密度重視で設計される理由を示す。燃費の数値は本データに記載なし。"
+   },
+   "en": {
+    "title": "2027 Toyota Sienna switches to the sixth-generation hybrid; system output rises from 245 to 251 hp",
+    "summary": "The 2027 Sienna keeps its styling but adopts Toyota's sixth-generation hybrid. A 2.5-litre four-cylinder works with a 124.0 kW drive motor and a 1.15 kWh lithium-ion battery to drive the front wheels. System output rises from 245 hp to 251 hp, with torque unchanged at 176 lb-ft, and Toyota says fuel use improves.",
+    "note": "Conversions: 251 hp × 0.7457 ≈ 187 kW; 176 lb-ft × 1.356 ≈ 239 N·m. The gain is +6 hp (+2.4%). Battery power check: if the battery supplied 40 kW (assumed) while the motor delivers 124 kW, that is 40/1.15 ≈ 35C, showing why hybrid packs are designed for power density rather than energy. Fuel economy figures are not in this data."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/816162/2027-toyota-sienna-hybrid-changes/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-lexus-tx-2027-phev-dropped",
+   "date": "2026-11-19",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "US",
+   "tags": [
+    "PT",
+    "4WD",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "レクサス「TX」2027年型、PHEV「TX 550h+」を廃止　TX 350とTX 500hの2本立てに",
+    "summary": "レクサスは米国で2027年型TXを発表し、PHEVのTX 550h+を廃止した。パワートレインは2.4L直4ターボ（275hp、317lb-ft）＋8速ATのTX 350と、ハイブリッドのTX 500hの2種類。TX 350の電子制御フルタイムAWDは前後配分を75:25〜50:50で可変し、真空ブレーキブースターの調整とブレーキホールドの改良も加えた。TX 500hのバッジは「DIRECT4」から「AWD」表記に変わる。",
+    "note": "換算：275hp ≈ 205kW、317lb-ft ≈ 430N·m。前後配分75:25〜50:50は後輪トルクT_r = (0.25〜0.50)·T_drive。後輪比を上げると前輪の縦力負担が減り、摩擦円上で前輪に使える横力の余裕が増える（√(μFz)²−Fx²）。配分の決め方（入力信号・マップ）は本データに記載なし。"
+   },
+   "en": {
+    "title": "2027 Lexus TX drops the TX 550h+ PHEV, leaving the TX 350 and TX 500h",
+    "summary": "Lexus announced the 2027 TX in the US and dropped the TX 550h+ plug-in hybrid. Two powertrains remain: the TX 350 with a 2.4-litre turbo four (275 hp, 317 lb-ft) and an 8-speed automatic, and the TX 500h hybrid. The TX 350's electronically controlled full-time AWD varies the front/rear split between 75:25 and 50:50, and it gets retuned vacuum brake booster and brake hold. The TX 500h badge changes from 'DIRECT4' to 'AWD'.",
+    "note": "Conversions: 275 hp ≈ 205 kW; 317 lb-ft ≈ 430 N·m. A 75:25-50:50 split means rear torque T_r = (0.25-0.50)·T_drive. More rear share lowers front longitudinal force, leaving more lateral capacity on the friction circle (√((μFz)² − Fx²)). How the split is decided (inputs, maps) is not in this data."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/19/419207.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-alpine-a290-awd-gtx-plan",
+   "date": "2026-11-16",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "4WD",
+    "PT",
+    "電池"
+   ],
+   "prio": 1,
+   "conf": "rumor",
+   "ja": {
+    "title": "アルピーヌ「A290」、2027年にモーター強化と航続約280マイル化を計画　296bhpのAWD版「GTX」も検討",
+    "summary": "Autocarによると、アルピーヌはA290を2027年に改良し、より強力なモーターと最大約280マイル（約450km）の航続距離を与える計画。296bhpの4WD版「GTX」も検討されている。A290は2026年上期に欧州で5,890台売れ、前年同期比60%増で同ブランド最多量販車になっている。",
+    "note": "換算：296bhp×0.7457 ≈ 221kW、280マイル×1.609 ≈ 451km。AWD化の具体的な構成（後軸モーター追加など）は本データに記載なし＝推測の域。報道ベースの計画情報。"
+   },
+   "en": {
+    "title": "Alpine plans a 2027 A290 update with a stronger motor and about 280 miles of range; a 296 bhp AWD 'GTX' is being considered",
+    "summary": "According to Autocar, Alpine plans to update the A290 in 2027 with a more powerful motor and up to about 280 miles (about 450 km) of range, and is considering a 296 bhp four-wheel-drive 'GTX'. The A290 sold 5,890 units in Europe in H1 2026, up 60% year on year, making it Alpine's best seller.",
+    "note": "Conversions: 296 bhp × 0.7457 ≈ 221 kW; 280 miles × 1.609 ≈ 451 km. The AWD layout (e.g., an added rear motor) is not in this data, so any detail is speculation. Plan reported by the press."
+   },
+   "src": [
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/new-cars/2027-alpine-a290-line-range-boost-and-296bhp-awd-variant"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-bmw-i3-m60-stages-sim-shift",
+   "date": "2026-11-16",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "EU",
+   "tags": [
+    "制御",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BMW、新型「i3 M60」に疑似変速「Stages」を採用へ　ヒョンデ「アイオニック5 N」に触発",
+    "summary": "Carscoopsによると、BMWは来年発売の新型i3のうちMパフォーマンス仕様（現時点ではi3 M60のみ）に、パドル操作による疑似変速機能「Stages」を搭載する。開発中にヒョンデがアイオニック5 Nを投入したことが追加のきっかけになったとBMW側が認めている。",
+    "note": "疑似変速の一般的な実現法（推測）：駆動トルク指令を T_cmd = T_req·(1 − k·g(t)) とし、変速イベント時に短時間（g(t)：数十〜百数十ms程度のパルス、仮定値）トルクを抜いて戻すことで前後加速度に段差（ジャーク j = da_x/dt）を作り、モーター回転数に連動した音と組み合わせる。BMWの実装内容は本データに記載なし＝要確認。"
+   },
+   "en": {
+    "title": "BMW will give the new i3 M60 simulated shifts called 'Stages', inspired by Hyundai's Ioniq 5 N",
+    "summary": "According to Carscoops, BMW will fit paddle-operated simulated gear shifts called 'Stages' to M Performance versions of the new i3 (currently only the i3 M60) when it goes on sale next year. BMW admits Hyundai's Ioniq 5 N, launched during the i3's development, pushed it to add the feature.",
+    "note": "Common way to implement simulated shifts (speculation): drive torque command T_cmd = T_req·(1 − k·g(t)), where g(t) is a short pulse (tens to a little over a hundred ms, assumed) at each shift event, creating a step in longitudinal acceleration (jerk j = da_x/dt), combined with sound tied to motor speed. BMW's implementation is not in this data: to be confirmed."
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2318529/bmw-ev-fake-shift-hyundai/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-daihatsu-rocky-update-hev-control",
+   "date": "2026-11-16",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "制御",
+    "ADAS",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "ダイハツ「ロッキー」一部改良　ハイブリッド制御を変更、対歩行者の衝突回避支援を80km/hまで拡大",
+    "summary": "ダイハツは11月16日、ロッキーを一部改良し特別仕様車「パワフル」を追加して発売した（185万7900〜263万4500円）。見出しでハイブリッドの制御変更をうたい、予防安全では対歩行者の作動最高速度を60km/hから80km/hへ引き上げ、ACCの先行車検知距離と精度も改善した。メーターには4種類の表示グラフィックを追加した。",
+    "note": "作動速度上限の意味：一定減速度aで停止するのに必要な距離 d = v²/(2a)。a = 0.8g（仮定値）なら60km/h（16.7m/s）で約17.7m、80km/h（22.2m/s）で約31.5m と約1.8倍（(80/60)² = 1.78）。検知距離もこれ以上必要になる。ハイブリッド制御変更の具体内容は本データに記載なし＝要確認。"
+   },
+   "en": {
+    "title": "Daihatsu updates the Rocky: revised hybrid control and pedestrian collision avoidance extended to 80 km/h",
+    "summary": "Daihatsu updated the Rocky on November 16 and added a 'Powerful' special edition (¥1,857,900-2,634,500). The headline cites revised hybrid control; on the safety side, the maximum operating speed for pedestrians rises from 60 to 80 km/h, and ACC lead-vehicle detection range and accuracy improve. The meter gets four display graphics.",
+    "note": "Why the speed limit matters: stopping distance at constant deceleration a is d = v²/(2a). At a = 0.8g (assumed), 60 km/h (16.7 m/s) needs about 17.7 m and 80 km/h (22.2 m/s) about 31.5 m, about 1.8 times ((80/60)² = 1.78), and detection range must exceed that. Details of the hybrid control change are not in this data: to be confirmed."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2156724.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-byd-atto3-ex-awd-test",
+   "date": "2026-11-19",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "4WD",
+    "電池",
+    "シャシー"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "BYD「ATTO 3 EX」AWD試乗記　FF→RR化とツインモーター4WD追加、電池はセル・トゥ・ボディー構造に",
+    "summary": "Responseの試乗記によると、2026年春のビッグマイナーチェンジでATTO 3はATTO 3 EXとなり、駆動方式が前輪駆動から後輪駆動に変わり、ツインモーター4WDも追加された。eプラットフォーム3.0のまま構造をシール登場時の仕様に更新し、LFP電池はセル・トゥ・パックから車体床面と電池上面を一体化したセル・トゥ・ボディーに変わった。評者は従来のBYD車についてブレーキ踏力と制動力の関係やバネ下の追従性に粗さを指摘していた。",
+    "note": "後輪駆動化の利点：加速時の荷重移動 ΔFz = m·a_x·h/L で後輪荷重が増えるため、駆動輪の摩擦限界 μ·Fz_r が加速とともに上がる（前輪駆動では逆に下がる）。セル・トゥ・ボディーは電池上面を床として使うため、床構造の重量・高さを削れる一方、ボディ剛性に電池が寄与する設計になる（一般論）。出力・電池容量は本データに記載なし。"
+   },
+   "en": {
+    "title": "BYD Atto 3 EX AWD test drive: switch from FWD to RWD, new twin-motor AWD and a cell-to-body battery",
+    "summary": "Response's test drive explains that the spring 2026 major update renamed the Atto 3 as the Atto 3 EX, switched it from front- to rear-wheel drive and added a twin-motor AWD version. It stays on e-Platform 3.0 but adopts the structure updated with the Seal, and the LFP pack moves from cell-to-pack to cell-to-body, with the pack top forming the floor. The reviewer had earlier noted rough brake pedal force-to-decel feel and unsprung-mass compliance on BYD models.",
+    "note": "Why RWD helps: under acceleration ΔFz = m·a_x·h/L adds load to the rear, so the driven wheels' friction limit μ·Fz_r rises with acceleration (it falls with FWD). Cell-to-body uses the pack top as the floor, cutting floor weight and height, while the pack contributes to body stiffness (general point). Power and battery capacity are not in this data."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/19/419246.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-jlr-defender-sport-ev-2027",
+   "date": "2026-11-16",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "4WD",
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "JLR、小型電動「ディフェンダー スポーツ」を2027年末までにヘイルウッドで生産開始へ",
+    "summary": "JLRのPB・バラジCEOは第2四半期決算説明で、電動の「ディフェンダー スポーツ」を英ヘイルウッド工場で2027年末までに生産開始すると明らかにした。ディフェンダー90の下に位置し、既存90の電動化版ではない。開発陣はデュアルモーター四輪駆動と通常のディフェンダーと同等のオフロード試験を目標にしている。次期フルサイズ・ディフェンダーは2030年代初めに後ろ倒しした。",
+    "note": "デュアルモーター4WDは前後軸間の機械式センターデフがなく、前後トルク配分 T_f : T_r をソフトで決める。悪路では各軸のスリップ率 s = (ω·r_w − V)/V を監視し、スリップ側のトルクを減らす制御が基本（一般論）。性能値は本データに記載なし。"
+   },
+   "en": {
+    "title": "JLR will start building the smaller electric Defender Sport at Halewood by the end of 2027",
+    "summary": "JLR CEO PB Balaji said on the Q2 earnings call that the electric Defender Sport will enter production at the UK Halewood plant by the end of 2027. It sits below the Defender 90 and is not an electrified version of the current 90. Engineers target dual-motor four-wheel drive and the full Defender off-road test program. The next full-size Defender has been pushed into the early 2030s.",
+    "note": "Dual-motor AWD has no mechanical center differential; the front/rear split T_f : T_r is set in software. Off road, the basic control watches each axle's slip ratio s = (ω·r_w − V)/V and cuts torque on the slipping axle (general point). Performance figures are not in this data."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/815553/jlr-electric-defender-sport-2027/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-chery-icar-v25-erev",
+   "date": "2026-11-19",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT",
+    "4WD"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "奇瑞iCar「V25」発売　EREVの箱型SUV、RWD/AWDで総合航続最大1,240km、12.98万元から",
+    "summary": "奇瑞のEVブランドiCarは11月19日、EREVの箱型SUV「V25」を発売した。4グレードで公式価格は12.98万〜15.98万元、期間限定価格は11.98万〜14.98万元。RWD Pro/RWD MaxとAWD Max+/AWD Ultraがあり、総合航続距離は最大1,240km。",
+    "note": "EREV（シリーズHV）の燃料→駆動の効率：η = η_eng·η_gen·η_inv·η_mot。η_eng=0.38、η_gen=0.95、η_inv=0.97、η_mot=0.94（いずれも仮定値）なら η ≈ 0.33。エンジンを最高効率点に固定できる利点と、機械直結がない損失のトレードオフ。電池容量・出力は本データに記載なし。"
+   },
+   "en": {
+    "title": "Chery iCar launches the V25 boxy EREV SUV with RWD and AWD, up to 1,240 km combined range, from 129,800 yuan",
+    "summary": "Chery's EV brand iCar launched the V25 boxy extended-range SUV on November 19. Four trims carry official prices of 129,800-159,800 yuan, with limited-time prices of 119,800-149,800 yuan. Versions are RWD Pro, RWD Max, AWD Max+ and AWD Ultra, with up to 1,240 km of combined range.",
+    "note": "Fuel-to-wheel efficiency of an EREV (series hybrid): η = η_eng·η_gen·η_inv·η_mot. With 0.38, 0.95, 0.97 and 0.94 (all assumed), η ≈ 0.33. The trade-off is running the engine at its best point versus losses from having no direct mechanical path. Battery capacity and power are not in this data."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/19/chery-icar-launches-v25/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-14-dongfeng-nissan-nx7-phev",
+   "date": "2026-11-14",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT",
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "東風日産「NX7」PHEVが受注開始　40kWhのLFPでEV航続最大320km、約2万ドル",
+    "summary": "東風日産は新型PHEV「NX7」の先行受注を始めた。40kWhのLFP電池でEV走行最大320km（約198マイル）をうたい、価格は約2万ドル。",
+    "note": "公称値からの電費：40kWh ÷ 320km = 12.5kWh/100km（全容量を使える前提＝仮定。実使用可能容量や試験モード（CLTC等）は本データに記載なし＝要確認）。PHEVとしてはBEV並みの電池を積み、日常の大半をEVで走る設計思想。"
+   },
+   "en": {
+    "title": "Dongfeng Nissan opens orders for the NX7 PHEV: 40 kWh LFP battery, up to 320 km electric range, about $20,000",
+    "summary": "Dongfeng Nissan opened early orders for its new NX7 plug-in hybrid. It claims up to 320 km (about 198 miles) of electric range from a 40 kWh LFP battery, at about $20,000.",
+    "note": "Implied consumption: 40 kWh ÷ 320 km = 12.5 kWh/100 km (assuming the full capacity is usable; usable capacity and test cycle such as CLTC are not in this data: to be confirmed). The idea is a near-BEV-sized pack so most daily driving is electric."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/14/20k-nissan-nx7-phev-goes-on-sale-with-nearly-200-miles-of-electric-range/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-cn-oct-battery-install-99gwh-lfp",
+   "date": "2026-11-19",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "CN",
+   "tags": [
+    "電池",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "中国の10月車載電池搭載量は過去最高の99.4GWh　LFP比率86.9%、CATL40.00%・BYD21.36%",
+    "summary": "中国汽車動力電池産業創新連盟（CABIA）によると、10月の車載電池搭載量は99.4GWhで前年比18.2%増、前月比14.0%増となり、2025年12月の98.1GWhを上回り月間最高となった。LFPは86.3GWhで比率86.9%。メーカー別はCATL 39.60GWh（40.00%）、BYD 21.14GWh（21.36%）、CALB 8.55GWh（8.64%）、国軒 5.99GWh（6.05%）の順で、CATLとBYDの差は5か月連続で縮んだ。",
+    "note": "逆算：前年10月 ≈ 99.4/1.182 ≈ 84.1GWh、前月 ≈ 99.4/1.140 ≈ 87.2GWh。上位2社合計は61.36%、上位4社は76.05%。LFP以外（主に三元系）は 99.4−86.3 = 13.1GWh。"
+   },
+   "en": {
+    "title": "China's October EV battery installations hit a record 99.4 GWh; LFP share 86.9%, CATL 40.00%, BYD 21.36%",
+    "summary": "According to CABIA, China's October power battery installations were 99.4 GWh, up 18.2% year on year and 14.0% month on month, beating the December 2025 high of 98.1 GWh. LFP reached 86.3 GWh, an 86.9% share. By maker: CATL 39.60 GWh (40.00%), BYD 21.14 GWh (21.36%), CALB 8.55 GWh (8.64%) and Gotion 5.99 GWh (6.05%); the CATL-BYD gap narrowed for a fifth month.",
+    "note": "Back-calculation: October last year ≈ 99.4/1.182 ≈ 84.1 GWh; September ≈ 99.4/1.140 ≈ 87.2 GWh. Top two combined 61.36%, top four 76.05%. Non-LFP (mainly NMC) = 99.4 − 86.3 = 13.1 GWh."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/19/china-oct-2026-power-battery-installations/"
+    },
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/19/top-battery-makers-share-china-oct-2026/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-envision-aesc-46120-10m",
+   "date": "2026-11-19",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "CN",
+   "tags": [
+    "電池"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "エンビジョンAESC、46120円筒セルの出荷1,000万個超　BMW iX5が初採用、次はiX7",
+    "summary": "エンビジョンAESCは大型円筒セル「46120」の出荷が1,000万個を超えたと発表した。江蘇・河北の中国工場で2026年7月に量産を開始し、2022年の大型契約に基づき主にBMWへ供給する。初採用車は今週量産が始まったBMW iX5（2027年は6万台見込み）で、2車種目はiX7に決まっている。",
+    "note": "寸法の意味：46120＝直径46mm×高さ120mm。体積 V = π·(23mm)²·120mm ≈ 199cm³ で、4680（高さ80mm、≈133cm³）の約1.5倍。セル数が減れば溶接点・BMS監視点が減る一方、径方向の熱抵抗は直径で決まるため4680と同等。"
+   },
+   "en": {
+    "title": "Envision AESC ships over 10 million 46120 cylindrical cells; BMW iX5 is the first user, iX7 next",
+    "summary": "Envision AESC says deliveries of its large 46120 cylindrical cells have passed 10 million. Series production began in July 2026 at its Jiangsu and Hebei plants in China, mainly supplying BMW under a 2022 contract. The first model is the BMW iX5, which entered series production this week (60,000 expected in 2027), and the iX7 is confirmed as the second.",
+    "note": "What the size means: 46120 = 46 mm diameter × 120 mm height. Volume V = π·(23 mm)²·120 mm ≈ 199 cm³, about 1.5 times a 4680 (80 mm tall, ≈ 133 cm³). Fewer cells mean fewer welds and BMS sense points, while radial thermal resistance, set by diameter, stays the same as the 4680."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/19/envision-aesc-surpasses-production-volume-milestone-for-46120-battery-cells/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-bosch-brazil-truck-edrive",
+   "date": "2026-11-19",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "Global",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ボッシュ、ブラジル・カンピナス工場で2027年からトラック用電動ドライブを生産　Suspensysと電動アクスルで協業",
+    "summary": "ボッシュはカンピナス工場で2027年からトラック・トレーラー駆動用の電動モーターと、インバーター、制御ユニット、変速機などの商用車電動化部品を生産する。ランドンコープ傘下のSuspensysとは中南米向け電動ドライブアクスルで協業する。2026年4月に発表した10億レアル（約1億5,500万ユーロ）の投資の一部。",
+    "note": "トレーラー電動アクスルは連結車の駆動・回生を分担する。回生で得られるエネルギーの目安 E = m·g·Δh·η（下り坂）。m=40t、Δh=100m、η=0.7（仮定値）で E ≈ 40,000·9.81·100·0.7 ≈ 27.5MJ ≈ 7.6kWh。"
+   },
+   "en": {
+    "title": "Bosch to build truck electric drivetrains at Campinas, Brazil from 2027 and work with Suspensys on e-axles",
+    "summary": "From 2027 Bosch's Campinas plant will build electric motors for truck and trailer drivetrains plus inverters, control units and transmissions for commercial-vehicle electrification. It will work with Suspensys, part of Randoncorp, on electrified drive axles for Latin America. The move is part of a 1 billion real (about €155 million) investment announced in April 2026.",
+    "note": "A trailer e-axle shares drive and regeneration for the combination. Rough downhill regen energy: E = m·g·Δh·η. With m = 40 t, Δh = 100 m, η = 0.7 (assumed), E ≈ 40,000·9.81·100·0.7 ≈ 27.5 MJ ≈ 7.6 kWh."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/19/bosch-to-manufacture-electric-drivetrains-for-trucks-in-brazil/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-toyotsu-denso-software-jv",
+   "date": "2026-11-20",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "JP",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "primary",
+   "ja": {
+    "title": "豊田通商、車載ソフト新会社「豊通デフィネックス」設立　2027年1月始動、デンソーが20%出資へ",
+    "summary": "豊田通商は車載ソフトウェア専業の新会社「豊通デフィネックス」を設立した。2027年1月に事業を始め、その後デンソーを引受先とする第三者割当増資でデンソーが株式の20%を持つ。豊田通商は子会社ネクスティ エレクトロニクスを通じて20年以上、車載ソフトの受託開発や流通プラットフォーム、標準化団体運営を手がけてきた。SDV化で大規模化するソフト開発の人材確保が背景。",
+    "note": ""
+   },
+   "en": {
+    "title": "Toyota Tsusho sets up in-vehicle software company 'Toyotsu Definex'; starts January 2027, Denso to take 20%",
+    "summary": "Toyota Tsusho has set up Toyotsu Definex, a company dedicated to in-vehicle software. It starts operations in January 2027, after which a third-party allotment will give Denso a 20% stake. Through its subsidiary Nexty Electronics, Toyota Tsusho has spent over 20 years on contract software development, software distribution platforms and running standards bodies. The aim is securing talent as SDV software grows in scale.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/20/419265.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-topre-us-new-plant-hybrid",
+   "date": "2026-11-19",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "US",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "primary",
+   "ja": {
+    "title": "東プレ、米子会社で新工場建設を決議　北米のハイブリッド車増産に対応",
+    "summary": "東プレは米国子会社Topre America Corporationでの新工場建設と設備投資を取締役会で決議した。EV需要の見直しや環境規制の動きで北米のハイブリッド車需要が伸び、日系自動車メーカーが現地生産を強化していることに合わせる。投資額や稼働時期は本データに記載がない。",
+    "note": ""
+   },
+   "en": {
+    "title": "Topre approves a new plant at its US subsidiary to meet rising North American hybrid output",
+    "summary": "Topre's board approved building a new plant and related investment at its wholly owned subsidiary Topre America Corporation. The move follows rising hybrid demand in North America, driven by a rethink of EV demand and regulatory trends, and Japanese automakers' plans to expand local output. Investment amount and start date are not in this data.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/20/419248.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-tesla-fsd-italy-provisional",
+   "date": "2026-11-20",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "ADAS",
+    "規制"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "イタリア運輸省、テスラ「FSD（監視付き）」を暫定承認　EU大国で初、欧州12か国目",
+    "summary": "イタリア運輸省は、欧州で「Tesla Assisted Driving」と呼ばれるFSD（Supervised）を暫定承認した。欧州で12か国目、EU主要市場では初めて。システムはレベル2のまま。最初はオランダRDWがEU型式認可規則第39条に基づき4月10日に承認し、その後ベルギーなど10か国が続いた。EU全体での相互承認を決める委員会の採決は早くても12月の見込み。",
+    "note": "人口比（記事の数値）：既承認11か国 約7,000万人（EUの約15%）＋イタリア約5,900万人 ＝ 約1.29億人で約30%弱。第39条は新技術に対する例外的な認可手続きで、他国は個別に追認する（制度の詳細は要確認）。"
+   },
+   "en": {
+    "title": "Italy provisionally approves Tesla's FSD (Supervised), the first large EU market and 12th European country",
+    "summary": "Italy's transport ministry granted provisional approval to Tesla Assisted Driving, the European name for FSD (Supervised). Italy is the 12th European country and the first large EU market to allow it; it remains Level 2. The Dutch RDW approved it first on April 10 under Article 39 of the EU type-approval regulation, followed by ten others such as Belgium. The EU committee vote on bloc-wide recognition is expected in December at the earliest.",
+    "note": "Population share (article figures): the 11 earlier countries have about 70 million people (about 15% of the EU), plus about 59 million in Italy, about 129 million or just under 30%. Article 39 is an exemption route for new technologies, which other states recognize individually (details to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/20/tesla-fsd-italy-approval-assisted-driving/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-17-toyota-l2pp-7-cameras-hev",
+   "date": "2026-11-17",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "JP",
+   "tags": [
+    "ADAS",
+    "制御"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタのレベル2++開発車に北米で同乗　カメラ7台のみ、ハイブリッド車で市街地支援、2028年市販目標",
+    "summary": "Car Watchは、トヨタが2028年の市販車搭載を目指すレベル2++（E2E／NOA型の市街地運転支援）の開発実験車に北米で同乗した。センサーはカメラ7台のみでハイブリッド車に搭載している。トヨタは開発進捗を「富士山の7合目」と表現し、手ごろな車種に導入する方針。記事は次世代ソフト基盤Arene搭載車での展開を予測している（記者の推測）。",
+    "note": "レベル2++はドライバー責任のまま、縦（アクセル・ブレーキ）と横（ステア）の両方を市街地でも支援する（自工会の定義）。E2Eはカメラ画像→軌道（または操作量）を一つのネットワークで出力し、車両側は目標軌道を横G・ジャーク制約内で追従する。HEVでは駆動力応答にエンジン始動の遅れが入るため、縦制御は駆動力指令とブレーキの協調が課題になる（推測）。"
+   },
+   "en": {
+    "title": "Riding in Toyota's Level 2++ prototype in North America: seven cameras only, on a hybrid, targeting production in 2028",
+    "summary": "Car Watch rode in Toyota's prototype for Level 2++ (E2E/NOA-style urban driving assistance), which Toyota aims to put in production cars in 2028. It uses only seven cameras and runs on a hybrid. Toyota describes progress as 'seventh station of Mt. Fuji' and plans to offer it on affordable models. The article expects it to arrive with Arene-based vehicles (the reporter's speculation).",
+    "note": "Level 2++ keeps driver responsibility while assisting both longitudinal (accelerator/brake) and lateral (steering) control in cities (JAMA definition). E2E maps camera images to a trajectory or controls with one network, and the vehicle tracks the target path within lateral-g and jerk limits. On a hybrid, engine start adds delay to drive-force response, so coordinating drive and brake commands becomes a challenge (speculation)."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2156901.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-14-toyota-airbag-re-recall-95927",
+   "date": "2026-11-14",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "JP",
+   "tags": [
+    "品質",
+    "規制"
+   ],
+   "prio": 1,
+   "conf": "primary",
+   "ja": {
+    "title": "トヨタ、30車種9万5,927台を再リコール　交換済みの乾燥剤入りタカタ製インフレーターも対象",
+    "summary": "トヨタは11月12日、カローラ、アルファードG、レクサスIS250など30車種9万5,927台（2000年8月〜2012年12月製）の助手席エアバッグについて国交省にリコールを届け出た。インフレーター内のガス発生剤の防湿が不十分で、温湿度変化の繰り返しで劣化し、展開時に容器が破損するおそれがある。対象は2013年4月〜2017年1月のリコールで乾燥剤入りタカタ製に交換した車両。不具合・事故は0件。",
+    "note": ""
+   },
+   "en": {
+    "title": "Toyota re-recalls 95,927 vehicles of 30 models; replacement Takata inflators with desiccant are affected",
+    "summary": "On November 12 Toyota filed a recall with MLIT for passenger airbags on 95,927 vehicles of 30 models, including the Corolla, Alphard G and Lexus IS250, built from August 2000 to December 2012. Moisture protection of the inflator propellant was insufficient; repeated temperature and humidity changes can degrade it so the housing may rupture on deployment. The vehicles had received desiccant-equipped Takata inflators in recalls filed from April 2013 to January 2017. No failures or accidents are reported.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/15/419026.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-15-toyota-alphard-vellfire-phev-wiring-recall",
+   "date": "2026-11-15",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "JP",
+   "tags": [
+    "品質",
+    "規制"
+   ],
+   "prio": 1,
+   "conf": "primary",
+   "ja": {
+    "title": "トヨタ「アルファード／ヴェルファイア」PHEV 3,026台リコール　助手席下配線の取り回し不良",
+    "summary": "トヨタは11月12日、アルファード／ヴェルファイアのPHEV計3,026台（2024年9月25日〜2025年10月16日製）のリコールを届け出た。助手席下の配線取り回しの作業指示が不十分で、配線が周辺部品に接触し、振動で損傷して警告灯が点く場合がある。最悪では前照灯が点灯しない、シートベルト警告灯が正しく作動しないおそれがある。不具合4件、事故なし。",
+    "note": ""
+   },
+   "en": {
+    "title": "Toyota recalls 3,026 Alphard/Vellfire PHEVs over wiring routed under the passenger seat",
+    "summary": "On November 12 Toyota filed a recall for 3,026 Alphard and Vellfire PHEVs built from September 25, 2024 to October 16, 2025. Insufficient work instructions let wiring under the passenger seat touch nearby parts, where vibration can damage it and turn on warning lights. In the worst case the headlights may not come on or the seat-belt warning may not work correctly. Four failures, no accidents.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/16/419045.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-fuso-canter-meter-recall-28611",
+   "date": "2026-11-19",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "JP",
+   "tags": [
+    "品質",
+    "規制"
+   ],
+   "prio": 1,
+   "conf": "primary",
+   "ja": {
+    "title": "三菱ふそう「キャンター」「eキャンター」2万8,611台リコール　メーター表示が消える不具合524件",
+    "summary": "三菱ふそうは11月17日、キャンターとeキャンター（2023年3月27日〜2026年7月14日製、36型式）計2万8,611台のリコールを届け出た。メータークラスターのソフトが不適切で、始動時や走行中にマルチインフォメーションディスプレイが表示されず速度計などが見えなくなるおそれがある。電気回路の設計検討不足で、バッテリー接続時のサージ電圧により回路の一部が損傷する問題もある。不具合524件、事故なし。",
+    "note": "サージの目安：配線インダクタンスLに流れる電流が急変すると V = L·di/dt。L=1µH、di/dt=10A/µs（仮定値）で10Vの過電圧が12/24V系に重なる。保護素子（TVS等）の定格選定が設計検討のポイント（一般論）。"
+   },
+   "en": {
+    "title": "Mitsubishi Fuso recalls 28,611 Canter and eCanter trucks; 524 cases of the meter display going blank",
+    "summary": "On November 17 Mitsubishi Fuso filed a recall for 28,611 Canter and eCanter trucks (36 type designations) built from March 27, 2023 to July 14, 2026. Faulty meter-cluster software can leave the multi-information display blank at start-up or while driving, hiding the speedometer. Insufficient circuit design review also lets surge voltage at battery connection damage part of the circuit. 524 failures, no accidents.",
+    "note": "Surge estimate: a rapid current change in wiring inductance L gives V = L·di/dt. With L = 1 µH and di/dt = 10 A/µs (assumed), a 10 V spike rides on the 12/24 V system. Sizing protection parts such as TVS diodes is the key design check (general point)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/20/419249.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-mlit-heavy-snow-truck-measures",
+   "date": "2026-11-20",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "JP",
+   "tags": [
+    "規制"
+   ],
+   "prio": 1,
+   "conf": "primary",
+   "ja": {
+    "title": "国交省、大雪時の大型車立ち往生対策を発表　冬用タイヤは溝50%以上を「プラットホーム」で確認",
+    "summary": "国土交通省は11月20日、令和2年12月以降の大雪立ち往生を踏まえ、「車両対策」「運送事業者対策」「荷主対策」の3本柱の対策を発表した。運行前に冬用タイヤの溝が新品時の50%以上残っていることをプラットホームで確かめること、チェーンの装着方法の事前確認と携行、立ち往生前の早めの装着を求めている。",
+    "note": ""
+   },
+   "en": {
+    "title": "MLIT announces measures against heavy trucks getting stuck in heavy snow; check winter tires keep 50% tread via the 'platform'",
+    "summary": "On November 20 MLIT announced measures against trucks getting stuck in heavy snow, based on incidents since December 2020, built on three pillars: vehicles, carriers and shippers. Before trips, operators must confirm via the tire's platform indicator that winter tires keep at least 50% of new tread depth, check and carry chains, and fit them early before getting stuck.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2158313.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-leapmotor-opel-c-suv-2028",
+   "date": "2026-11-20",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "零跑汽車とオペル、Cセグメント新型SUVの共同開発で契約　零跑が1億ユーロで開発受託、2028年にサラゴサで生産",
+    "summary": "零跑汽車（Leapmotor）はステランティス傘下のオペルと、Cセグメント新型SUVを共同開発する契約を正式に結んだ。零跑は総額1億ユーロ（約1.1億ドル）でエンジニアリングと開発サービスを提供する。生産はステランティスのスペイン・サラゴサ工場で、2028年発売の予定。",
+    "note": ""
+   },
+   "en": {
+    "title": "Leapmotor and Opel sign a deal to co-develop a C-segment SUV; Leapmotor paid €100 million for engineering, built in Zaragoza from 2028",
+    "summary": "Leapmotor has formally signed an agreement with Stellantis-owned Opel to co-develop a new C-segment SUV. Leapmotor will provide engineering and development services for a total of €100 million (about $110 million). The model will be built at Stellantis's Zaragoza plant in Spain and is due on sale in 2028.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/20/leapmotor-opel-deal-develop-suv-2028-launch/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-stellantis-ends-motorsport-report",
+   "date": "2026-11-20",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "ステランティス、モータースポーツ投資を全面停止へ（報道）　年約3億ユーロ、プジョー9X8のル・マン参戦も終了",
+    "summary": "Autocarが伝えた報道によると、ステランティスはコスト削減のためモータースポーツ事業への投資を止める計画。ステランティス・モータースポーツの運営費は年約3億ユーロで、プジョー9X8によるWEC（ル・マン含む）参戦も終わる。同社は7〜9月期に欧州で3億1,100万ユーロの損失を出している。",
+    "note": ""
+   },
+   "en": {
+    "title": "Stellantis to end all motorsport investment (report): about €300 million a year; Peugeot 9X8 Le Mans program to end",
+    "summary": "According to a report cited by Autocar, Stellantis plans to stop investing in motorsport to cut costs. Stellantis Motorsport costs about €300 million a year, and the Peugeot 9X8 WEC program, including Le Mans, would end. The company lost €311 million in Europe in the July-September quarter.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/new-cars/stellantis-end-all-motorsport-investment-%E2%80%93-report"
     }
    ]
   }
