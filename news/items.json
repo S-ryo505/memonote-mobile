@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T09:55:00+09:00",
+ "updated": "2026-11-23T08:56:19+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -10793,6 +10793,100 @@
     {
      "name": "Autocar",
      "url": "https://www.autocar.co.uk/car-news/new-cars/stellantis-end-all-motorsport-investment-%E2%80%93-report"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-21-byd-ti7-eu-injunction",
+   "date": "2026-11-21",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "オランダ裁判所、BYD「Ti7」のEU販売を差し止め　ランドローバー・ディフェンダーの意匠権侵害と判断",
+    "summary": "ハーグ地方裁判所は金曜日、BYD（方程豹ブランド）のPHEV SUV「Ti7」がJLRの登録EU意匠（ディフェンダー110、2018年登録）を侵害すると判断し、EU域内での販売を禁じる仮差止命令を出した。命令はハンガリーでのTi7生産も禁じ、違反時の制裁金は最大1,000万ユーロ。英国市場は対象外で、BYDは独自設計だとして控訴する方針。",
+    "note": "技術ではなく知財・事業リスクの件。欧州で現地生産（ハンガリー工場）を計画する中国OEMに対し、外観意匠権が販売と生産の両方を止め得る事例。"
+   },
+   "en": {
+    "title": "Dutch court bars EU sales of BYD Ti7, finding it infringes Land Rover Defender design rights",
+    "summary": "On Friday, the District Court of The Hague ruled that BYD's Ti7 plug-in hybrid SUV (Fang Cheng Bao brand) infringes JLR's registered EU design for the Defender 110, filed in 2018, and issued a temporary injunction banning its sale in the EU. The order also bars production of the Ti7 in Hungary, with penalties of up to €10 million. The UK is not covered, and BYD says it designed the car independently and will appeal.",
+    "note": "An IP and business-risk story rather than a technical one. It shows that a registered exterior design can block both sales and local production (BYD's Hungary plant) for a Chinese OEM in Europe."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/22/dutch-court-bars-eu-sales-byd-ti7-land-rover-defender-design/"
+    },
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/816327/byd-ti7-banned-eu-defender-design-copy/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-22-cybertruck-rws-tighter-turn",
+   "date": "2026-11-22",
+   "kind": "flash",
+   "cat": "tech",
+   "region": "US",
+   "tags": [
+    "シャシー",
+    "制御"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "テスラ、Cybertruckの最小回転半径をOTAで縮小　後輪操舵を拡大、2027年モデル限定",
+    "summary": "テスラはソフトウェア2026.44以降の更新でCybertruckの回転をさらに小さくすると発表した。対象は2027年モデルのみ。従来の縁石間回転直径は約13.25 m（43.5 ft）で、F-150 Lightning（約47.8 ft）やRivian R1T（44.9 ft）より小さい。発売当初の後輪切れ角は約3度だった（新しい角度は記事抜粋に記載なし）。",
+    "note": "低速の幾何学（アッカーマン）近似：R ≈ L / (tanδf + tanδr)（L：ホイールベース、δf/δr：前/後輪実舵角、後輪は逆位相）。後輪角δrを増やすと分母が増えRが縮む。例：L=3.6 m（仮定値）、δf=35°（仮定値）でδr 3°→10°とするとR ≈ 4.78 m → 4.11 m（車両中心の旋回半径）。縁石間の値はこれにトレッド・タイヤ幅分が加わる。2027年モデル限定の理由（アクチュエータ可動域・ハード差か）は要確認。"
+   },
+   "en": {
+    "title": "Tesla tightens Cybertruck turning circle via OTA by expanding rear-wheel steering, 2027 model year only",
+    "summary": "Tesla says an update with software 2026.44 or newer makes the Cybertruck turn even tighter, but only for 2027 model year trucks. The existing curb-to-curb turning circle is about 13.25 m (43.5 ft), smaller than the F-150 Lightning (about 47.8 ft) and the Rivian R1T (44.9 ft). At launch, the rear wheels steered only about 3 degrees; the new angle is not given in the excerpt.",
+    "note": "Low-speed (Ackermann) approximation: R ≈ L / (tan δf + tan δr), where L is the wheelbase and δf/δr are the front/rear road-wheel angles, rear in opposite phase. Increasing δr enlarges the denominator and shrinks R. Example: with L = 3.6 m (assumed) and δf = 35° (assumed), going from δr = 3° to 10° gives R ≈ 4.78 m → 4.11 m (radius at the vehicle center). Curb-to-curb values add track and tire width. Why it is limited to MY2027 (actuator travel or hardware differences?) needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/21/tesla-cybertruck-tighter-turning-radius-update/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-22-ferrari-296-challenge-stradale",
+   "date": "2026-11-22",
+   "kind": "flash",
+   "cat": "new",
+   "region": "EU",
+   "tags": [
+    "PT",
+    "シャシー"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "フェラーリ「296 Challenge Stradale」発表　ハイブリッドを外した純ICE仕様、670hp・1,330kg",
+    "summary": "フェラーリは296のサーキット志向版「296 Challenge Stradale（CS）」を発表した。PHEVシステムを外して軽量化し、出力670 hp（Autocar表記661 bhp）、車重2,932 lb（約1,330 kg）、155 mph（約249 km/h）時のダウンフォース1,360 lb（約617 kg）。2027年からワンメイクレースに投入する296 Challenge Evoと並行開発され、価格は約30.7万ドル／26万ポンド。",
+    "note": "パワーウエイトレシオ：1,330 kg / 670 hp ≈ 1.99 kg/hp。ダウンフォースからの揚力係数×面積：F = ½ρv²·(C_L·A) → C_L·A = 2F/(ρv²) = 2×6,050 N /(1.225 kg/m³（標準大気、仮定値）×69.4² m²/s²) ≈ 2.05 m²。速度の2乗で増えるため、100 km/hでは約99 kg相当。ハイブリッド撤去で電動前輪トルクやモーターによる応答補助は無くなり、ICE+後輪駆動のみの構成（駆動方式の詳細は記事抜粋になく要確認）。"
+   },
+   "en": {
+    "title": "Ferrari unveils 296 Challenge Stradale: hybrid removed, pure ICE, 670 hp and 1,330 kg",
+    "summary": "Ferrari has revealed the 296 Challenge Stradale (CS), a track-focused 296 that drops the plug-in hybrid system to save weight. It makes 670 hp (661 bhp per Autocar), weighs 2,932 lb (about 1,330 kg), and generates 1,360 lb (about 617 kg) of downforce at 155 mph (about 249 km/h). It was developed alongside the 296 Challenge Evo for Ferrari's one-make series from 2027, and costs about $307,000 / £260,000.",
+    "note": "Power-to-weight: 1,330 kg / 670 hp ≈ 1.99 kg/hp. Lift coefficient times area from downforce: F = ½ρv²·(C_L·A) → C_L·A = 2F/(ρv²) = 2 × 6,050 N / (1.225 kg/m³ (standard air, assumed) × 69.4² m²/s²) ≈ 2.05 m². Because it scales with v², it is about 99 kg at 100 km/h. Removing the hybrid removes electric torque fill; the layout becomes ICE only (drivetrain details not in the excerpt, needs confirmation)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/816314/ferrari-296-challenge-stradale-first-look-debut/"
+    },
+    {
+     "name": "Autocar",
+     "url": "https://www.autocar.co.uk/car-news/new-cars/new-ferrari-296-cs-%C2%A3260k-lightweight-661bhp-and-no-hybrid"
     }
    ]
   }
