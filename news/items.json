@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T08:56:19+09:00",
+ "updated": "2026-11-24T09:10:00+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -10887,6 +10887,119 @@
     {
      "name": "Autocar",
      "url": "https://www.autocar.co.uk/car-news/new-cars/new-ferrari-296-cs-%C2%A3260k-lightweight-661bhp-and-no-hybrid"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-23-honda-toyota-takata-recall",
+   "date": "2026-11-23",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "US",
+   "tags": [
+    "品質"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "ホンダとトヨタ、タカタ製エアバッグで米国約112万台をリコール　高温多湿地域の特定インフレーターロットが対象",
+    "summary": "ホンダとトヨタは、長年の高温・多湿環境で破裂するおそれのあるタカタ製インフレーターを理由に、米国で約112万台をリコールする（Motor1の見出しは計160万台）。ホンダ分は81万592台で、2012〜2013年型シビック・CR-V、2013年型アコード、2013年型アキュラILX・RDXが対象。トヨタ分はカローラ、タンドラ、セコイア、4ランナーと複数のレクサス車で、ホンダは12月18日から暫定通知を送付し、無償交換は少なくとも2027年初めまで続く予定。",
+    "note": "トヨタ分の台数は記事に明記なし。米国合計112万台−ホンダ81万592台から約31万台と計算できるが推測。見出しの160万台と米国112万台の差（米国外分か）は要確認。硝酸アンモニウム系ガス発生剤が吸湿・熱サイクルで劣化し燃焼速度が上がり、容器内圧が設計値を超えて破裂する、というのが従来から報告されている故障メカニズム（今回ロットの原因詳細は本データに記載なし）。"
+   },
+   "en": {
+    "title": "Honda and Toyota recall about 1.12 million US vehicles over Takata airbag inflators from specific lots in hot, humid regions",
+    "summary": "Honda and Toyota are recalling roughly 1.12 million vehicles in the US because Takata inflators can rupture after years of heat and humidity exposure (Motor1's headline puts the total at 1.6 million). Honda's share is 810,592 vehicles: the 2012-2013 Civic and CR-V, the 2013 Accord, and the 2013 Acura ILX and RDX. Toyota's covers the Corolla, Tundra, Sequoia, 4Runner and several Lexus models; Honda will mail interim letters from December 18, and free replacements are planned through at least early 2027.",
+    "note": "Toyota's unit count is not stated. Subtracting Honda's 810,592 from the 1.12 million US total gives about 310,000, but that is an estimate. The gap between the 1.6 million headline and the 1.12 million US figure (possibly non-US units) needs confirmation. The failure mechanism reported in past cases is that the ammonium-nitrate propellant absorbs moisture and degrades under thermal cycling, burns faster, and pushes chamber pressure above the design limit. The root cause for these specific lots is not given in this data."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/816411/honda-toyota-takata-airbag-recall/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-23-vw-china-export-300k",
+   "date": "2026-11-23",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "VW、中国生産車の輸出を2030年までに年約30万台へ　欧州主力車の最大75%にXpeng技術の採用も検討",
+    "summary": "フォルクスワーゲンは、中国で生産した車両を2030年までに年約30万台輸出する計画を示した。ジェッタVA3など低価格セダンを輸出に回すほか、欧州の主力車種の最大75%にXpeng（小鵬汽車）の技術スタックを採用することも検討している。背景として、中国の合弁会社の2026年1〜9月の国内販売は120万台で前年比35%減少している。",
+    "note": "技術スタックの範囲（E/Eアーキテクチャ、ADAS、パワートレイン制御など）は本データに記載なし＝要確認。「最大75%」が検討段階の数値である点に注意。"
+   },
+   "en": {
+    "title": "VW plans to export about 300,000 China-built cars a year by 2030 and weighs Xpeng technology for up to 75% of its core European lineup",
+    "summary": "Volkswagen has announced plans to export roughly 300,000 vehicles built in China each year by 2030. Alongside exports of low-cost sedans such as the Jetta VA3, it is considering adopting Xpeng's technology stack for up to 75% of its core European lineup. The backdrop is a 35% year-on-year drop in domestic sales at its Chinese joint ventures, to 1.2 million units in January-September 2026.",
+    "note": "The scope of the 'tech stack' (E/E architecture, ADAS, powertrain control, etc.) is not given in this data and needs confirmation. Note that 'up to 75%' is still under consideration."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/23/if-you-cant-beat-em-vw-to-export-300000-chinese-built-cars-per-year-by-2030/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-mercedes-kba-r171-drive-assist-pro",
+   "date": "2026-11-24",
+   "kind": "flash",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "ADAS",
+    "規制"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "メルセデス、市街地も含むL2「ドア・ツー・ドア」運転支援でドイツKBAの認可取得　UN R171ベースで独初",
+    "summary": "ドイツ連邦自動車庁（KBA）は、メルセデス・ベンツの「MB.Drive Assist Pro」をUN規則R171（DCAS）に基づいて認可した。ドイツの自動車メーカーとして初の認可で、市街地の複雑な交通を含む出発地から目的地までの運転支援を行うが、分類はSAEレベル2のままである。センサーはカメラ10個、レーダー5個、超音波12個の計27個で、処理は最大254TOPSのコンピューターで行う。",
+    "note": "R171（DCAS：運転者制御支援システム）はレベル2の範囲で、システムが縦・横方向制御を連続して行う一方、運転者は常に監視責任を負う枠組み（ドライバーモニタリングが前提）。レベル3のDrive Pilot（条件付きでアイズオフ可）とは責任分担が異なる。認可された機能の速度上限やハンズオフ可否の条件は本データに記載なし＝要確認。"
+   },
+   "en": {
+    "title": "Mercedes wins German KBA approval for an L2 door-to-door driving assistant, including city traffic, under UN R171, a first in Germany",
+    "summary": "Germany's Federal Motor Transport Authority (KBA) approved Mercedes-Benz's MB.Drive Assist Pro under UN Regulation R171 (DCAS). Mercedes is the first automaker in Germany to receive such approval; the system assists from origin to destination, including complex urban traffic, yet remains classified as SAE Level 2. It uses 27 sensors (10 cameras, 5 radars, 12 ultrasonic sensors) and a computer rated at up to 254 TOPS.",
+    "note": "R171 (DCAS, Driver Control Assistance Systems) covers Level 2: the system performs continuous longitudinal and lateral control, but the driver remains responsible for monitoring at all times (driver monitoring is required). Responsibility is split differently from the Level 3 Drive Pilot, which allows eyes-off driving under certain conditions. The approved speed limits and hands-off conditions are not in this data and need confirmation."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/23/mercedes-receives-kba-approval-for-door-to-door-driving-assistant/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-renault-office-cuts-factory-hires",
+   "date": "2026-11-24",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ルノー、事務職最大1,000人削減とEV工場で2,000人採用を計画　2028年までに実施",
+    "summary": "ルノーは、ホワイトカラー職を最大1,000人削減し、フランス国内工場でEV生産向けに2,000人を新規採用する組織再編を計画している。採用はR5やセニックなどのEV需要増に対応するもので、2028年までに完了する見込み。これらの車種はすでに増産しており、追加シフト分は現在派遣社員でまかなっている。",
+    "note": ""
+   },
+   "en": {
+    "title": "Renault plans to cut up to 1,000 office jobs and hire 2,000 EV factory workers by 2028",
+    "summary": "Renault plans a restructuring that cuts up to 1,000 white-collar jobs and hires 2,000 new workers for EV production at its French plants. The hiring responds to higher demand for EVs such as the R5 and Scenic and is expected to be complete by 2028. Output of these models has already risen, with the extra shifts currently staffed by temporary workers.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Carscoops",
+     "url": "https://www.carscoops.com/2321969/renault-new-jobs-job-cuts/"
     }
    ]
   }
