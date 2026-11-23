@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T10:01:58+09:00",
+  "updated": "2026-11-23T09:05:00+09:00",
   "items": [
     {
       "id": "2026-11-20-gemini-mac-computer-use",
@@ -8095,6 +8095,99 @@
         "note": "How to use it at work: suited to polishing reports and emails, translating into English, or advice on structure, where the actual numbers are not needed. Saying 'keep the placeholders as they are' stops AI from changing them into other words. Caveats: masked content may still be guessable from context (e.g., a launch date combined with features). Masking does not make anything acceptable to enter; company rules come first. Questions that need the real content, such as checking whether figures are plausible, belong in an approved environment."
       },
       "src": []
+    },
+    {
+      "id": "2026-11-23-mercari-notion-ai-fireworks-leak",
+      "date": "2026-11-23",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "仕事で使える"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "メルカリ、業務で使う「Notion AI」のチャット記録が流出した可能性　計3,796人分、AI処理の委託先Fireworksで2件の不正アクセス",
+        "summary": "メルカリグループは、業務利用しているNotion AIのチャット記録の一部が外部に出た可能性があると公表した。対象は顧客1,522人、取引先担当者など571人、採用応募者169人、退職者1,534人などの計3,796人分。AI処理を担うFireworksは11月17日、外部クラウド事業者経由の侵害（10月23〜30日、10月30日以前の全アカウントの情報・請求情報が対象）と、窃取した認証情報と脆弱性を使った不正アクセス（8月3日〜10月7日）の2件を公表し、封じ込めは完了したとしている。",
+        "note": "仕事での使いどころ：社内で使うAI機能（Notion AI、Copilot等）の「推論処理の再委託先」を一覧化し、契約・データ保持条件を見直すきっかけにする。注意点：Notionは影響ワークスペースを全体の1％未満としているが、自社が該当するかは各社の通知で要確認。FireworksとNotionの契約関係の詳細は記事抜粋からは確認できず要確認。"
+      },
+      "en": {
+        "title": "Mercari says Notion AI chat logs may have leaked: 3,796 people affected after two intrusions at AI processing vendor Fireworks",
+        "summary": "Mercari Group disclosed that some chat logs from Notion AI, which it uses at work, may have been exposed. The data covers 3,796 people in total, including 1,522 customers, 571 business contacts, 169 job applicants and 1,534 former employees. Fireworks, which handles the AI processing, reported on November 17 two separate incidents: a breach at an external cloud provider (Oct 23–30, exposing account and billing data for all accounts created before Oct 30) and unauthorized access using stolen credentials and a service vulnerability (Aug 3–Oct 7); it says both have been contained.",
+        "note": "How to use it at work: list the subcontractors that actually run inference behind your in-house AI features (Notion AI, Copilot, etc.) and review contracts and data-retention terms. Caution: Notion says fewer than 1% of workspaces were affected, but check vendor notices to see whether your company is one of them. The exact contractual link between Fireworks and Notion is not confirmed in the excerpt (needs checking)."
+      },
+      "src": [
+        {
+          "name": "ITmedia",
+          "url": "https://kn.itmedia.co.jp/kn/article/2611/23/2000003393/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-23-openai-gpt62-prompting-guide",
+      "date": "2026-11-21",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "仕事で使える",
+        "モデル",
+        "コーディング"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "OpenAI、GPT-6.2 Astra／Sol向けのプロンプト例を公開　「答えが短すぎる」「不要な質問」「テストのやり過ぎ」を抑える",
+        "summary": "OpenAIは、GPT-6.2 AstraとSol向けに、文体・自発性・コーディングの3分野のプロンプトテンプレートを公開し、移行する開発者にシステムプロンプトの見直しを勧めた。APIでは会話履歴を編集すると過去の推論内容が破棄され、トークン費用と回答品質に影響する場合がある。別途Artificial Analysisの評価では、両モデルの回答は前世代より34〜40％短くなった。",
+        "note": "仕事での使いどころ：社内のGPTベースのツールやボットで回答が短くなった・質問が増えたと感じたら、公開テンプレートを参考にシステムプロンプトを更新する。注意点：履歴を書き換える実装（要約による圧縮など）は推論内容が失われる可能性があり、費用と品質の再確認が必要。テンプレートの具体的な文面は記事抜粋になく要確認。"
+      },
+      "en": {
+        "title": "OpenAI publishes prompting templates for GPT-6.2 Astra and Sol to curb overly short answers, needless questions and excessive testing",
+        "summary": "OpenAI released prompt templates for GPT-6.2 Astra and Sol covering writing style, initiative and coding, and advised developers moving to these models to review their system prompts. In the API, editing a conversation's history can discard earlier reasoning content, which may affect token costs and answer quality. Separately, an Artificial Analysis evaluation found the two models' answers are 34–40% shorter than their predecessors'.",
+        "note": "How to use it at work: if an internal GPT-based tool or bot now gives shorter answers or asks more questions, update its system prompt using the published templates. Caution: implementations that rewrite history (e.g., compressing it by summarization) may lose reasoning content, so recheck cost and quality. The exact template wording is not in the excerpt (needs checking)."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-23-perplexity-monitor-api",
+      "date": "2026-11-22",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "advanced",
+      "tags": [
+        "エージェント",
+        "料金",
+        "仕事で使える"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Perplexity「Monitor API」　Webを定期検索し、関連する変化があったときだけWebhookで通知　1,000リクエスト1ドル",
+        "summary": "Perplexityは、Webを決まった間隔で検索し、関連する変化があったときだけWebhookでアプリやエージェントに知らせるMonitor APIの提供を始めた。料金は1,000リクエストあたり1ドルで、実行間隔は15分ごとから週1回、またはcron形式で指定でき、ページ監視では料金ページ・変更履歴・規約など最大10ページを追える。同社の60テーマでの比較では、最初の8時間に届けた関連ページは63件で、Firecrawl 20件、Exa 15件、Parallel 各10件だったとしている。",
+        "note": "仕事での使いどころ：競合の価格ページ、サプライヤーの規約変更、規制当局の発表などの定点監視を自動化する。注意点：比較結果はPerplexity自身の測定。日本語サイトでの精度や、社外APIに監視対象を渡すことの社内規程上の扱いは要確認。"
+      },
+      "en": {
+        "title": "Perplexity launches Monitor API: scheduled web searches that alert via webhook only on relevant changes, at $1 per 1,000 requests",
+        "summary": "Perplexity launched a Monitor API that searches the web on a schedule and notifies apps and agents via webhook only when relevant changes occur. It costs $1 per 1,000 requests, runs anywhere from every 15 minutes to weekly or on a custom cron schedule, and page monitors can track up to 10 pages such as pricing pages, changelogs or policies. In Perplexity's own test across 60 topics, it delivered 63 relevant pages in the first eight hours, versus 20 for Firecrawl, 15 for Exa and 10 each for Parallel.",
+        "note": "How to use it at work: automate watching competitor pricing pages, supplier terms, or regulator announcements. Caution: the comparison was measured by Perplexity itself. Accuracy on Japanese sites and whether internal rules allow sending monitoring targets to an external API need checking."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/"
+        }
+      ]
     }
   ]
 }
