@@ -1,6 +1,99 @@
 {
-  "updated": "2026-11-23T09:05:00+09:00",
+  "updated": "2026-11-24T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-11-24-claude-ship",
+      "date": "2026-11-24",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "コーディング",
+        "エージェント",
+        "仕事で使える"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "Anthropic「Claude Ship」発表　Claudeがプルリクエストのレビュー・修正・承認まで担当",
+        "summary": "Anthropicは11月23日（米国時間）、開発者向けの新製品群「Claude Ship」を発表した。ClaudeがPull Requestのレビューに加え、修正と承認まで行えるようになる。構成要素の「PR Steward」は、CIチェックの失敗、マージコンフリクト、Code Reviewや他のレビューツール・チームメンバーからの指摘に対応し、何を変更したかをコメントで残す。",
+        "note": "仕事での使いどころ：ソフト開発部門で、CI失敗の一次対応やレビュー指摘の反映など定型的な修正作業の待ち時間を減らす用途。注意点：AIによる自動承認は、車載ソフトなど機能安全・品質規程（レビュー記録や承認者の要件）と衝突する可能性があり、適用範囲は社内プロセスとの整合確認が必要。対応プラン・料金・提供時期は抜粋に記載がなく要確認。"
+      },
+      "en": {
+        "title": "Anthropic unveils Claude Ship, letting Claude review, fix and approve pull requests",
+        "summary": "On November 23 (US time), Anthropic announced Claude Ship, a new set of developer tools. Claude can now not only review pull requests but also fix and approve them. One component, PR Steward, responds to failing CI checks, merge conflicts and feedback from Code Review, other review tools or teammates, and leaves comments explaining what it changed.",
+        "note": "How to use it at work: in software teams, it can cut waiting time on routine fixes such as first-pass handling of CI failures and applying review comments. Caveats: AI auto-approval may conflict with functional-safety and quality rules (review records, approver requirements) for things like in-vehicle software, so check it against your internal processes before deciding where to use it. Supported plans, pricing and availability are not in the excerpt; needs checking."
+      },
+      "src": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-24-chatgpt-default-gpt62-sol",
+      "date": "2026-11-24",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "仕事で使える",
+        "モデル",
+        "画像・動画"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "ChatGPTのチャット既定モデルがGPT-6.2 Solに　画像理解は社内テストで47.4%→71.7%",
+        "summary": "OpenAIは、チャット向けに調整したGPT-6.2 SolをChatGPTのチャットタブの既定モデルとし、世界で順次提供を始めた。対象はPlus、Pro、Business、Enterpriseの各プラン。OpenAIの社内テストでは、GPT-6と比べて画像理解が47.4%から71.7%に、難しい指示への追従が62.5%から78.1%に上がったとしている。",
+        "note": "仕事での使いどころ：図表やスクリーンショットを読ませる質問、条件の多い依頼、Web検索を伴う調べ物で、回答の手戻りが減る可能性がある。注意点：数値はOpenAI社内ベンチマークによるもので第三者検証ではない。既定モデルが変わるため、社内で定型プロンプトを運用している場合は出力の変化を確認したい。Free・Goプランでの扱いは抜粋になく要確認。"
+      },
+      "en": {
+        "title": "ChatGPT's default chat model becomes GPT-6.2 Sol; image understanding rises from 47.4% to 71.7% in internal tests",
+        "summary": "OpenAI has made a chat-tuned version of GPT-6.2 Sol the default model in ChatGPT's chat tab and is rolling it out worldwide. It is available on the Plus, Pro, Business and Enterprise plans. In OpenAI's internal tests, compared with GPT-6, image understanding rose from 47.4% to 71.7% and following difficult instructions rose from 62.5% to 78.1%.",
+        "note": "How to use it at work: it may mean fewer redos for questions about charts or screenshots, requests with many conditions, and research that involves web search. Caveats: the figures come from OpenAI's internal benchmarks, not independent testing. Because the default model is changing, teams that rely on standard prompts should check whether outputs have shifted. How Free and Go plans are handled is not in the excerpt; needs checking."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/openai-updates-chatgpt-to-handle-complex-everyday-questions-web-searches-and-images-more-reliably/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-24-openai-cisco-shirudo",
+      "date": "2026-11-24",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "advanced",
+      "tags": [
+        "セキュリティ",
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "primary",
+      "ja": {
+        "title": "OpenAIとCisco、Linux向けOSS「Shirudo」公開　パッチ適用前の稼働中システムを再起動なしで防御",
+        "summary": "OpenAIとCiscoは、Linuxで動作するオープンソースのランタイム「Shirudo」を発表した。パッチの完成や再起動を待たずに、稼働中のシステムを特定の脆弱性から守る「シールド」を当てる仕組み。管理下のテストでは、Codexが生成したシールドが、稼働中のElasticsearchに対するJava4Shellの攻撃を再起動なしで遮断したとしている。",
+        "note": "仕事での使いどころ：工場や社内サーバなど止めにくいLinuxシステムで、脆弱性公表からパッチ適用までの空白期間を埋める一時対策の候補。注意点：効果の根拠はOpenAI側の管理下テストで、実運用での誤遮断や性能影響は未確認。生産設備側への導入は、IT・OT（制御系）のセキュリティ担当と検証手順を決めてからにしたい。対応ディストリビューションやライセンス条件は要確認。"
+      },
+      "en": {
+        "title": "OpenAI and Cisco release Shirudo, an open-source Linux runtime that shields running systems before patches land, without restarts",
+        "summary": "OpenAI and Cisco announced Shirudo, an open-source runtime for Linux. It applies a 'shield' that protects running systems from a specific vulnerability without waiting for a patch or a restart. In a controlled test, a shield generated by Codex blocked a Java4Shell exploit attempt against a running Elasticsearch service without a restart.",
+        "note": "How to use it at work: a possible stopgap for Linux systems that are hard to take down, such as factory or internal servers, during the gap between a vulnerability's disclosure and patching. Caveats: the evidence comes from OpenAI's controlled test; false blocks and performance impact in real operation have not been confirmed. Before using it near production equipment, agree on a validation process with your IT and OT (control systems) security teams. Supported distributions and license terms need checking."
+      },
+      "src": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/introducing-shirudo"
+        }
+      ]
+    },
     {
       "id": "2026-11-20-gemini-mac-computer-use",
       "date": "2026-11-20",
