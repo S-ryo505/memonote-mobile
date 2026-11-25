@@ -1,6 +1,123 @@
 {
-  "updated": "2026-11-24T09:05:00+09:00",
+  "updated": "2026-11-25T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-11-25-claude-artifacts-desktop-apps",
+      "date": "2026-11-25",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "beginner",
+      "tags": [
+        "仕事で使える",
+        "エージェント",
+        "セキュリティ"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Claudeのアーティファクトを、Mac・Windowsのデスクトップアプリとしてインストール可能に　無料アカウントでも利用可",
+        "summary": "Anthropicは、Claudeのチャットで作ったアーティファクトを、macOSとWindowsにアプリとしてインストールできるようにした。無料アカウントでも使え、コードを書かずにチャットで作成できる。インストールしたアプリはOSのAPI、コネクタ、Claude自体を使え、メニューバー項目の追加、通知の送信、透明ウィンドウの作成ができるとしている。",
+        "note": "仕事での使いどころ：日報入力フォーム、定型計算ツール、リマインダーなど、部署内の小さな業務ツールをプログラミングなしで作り、常駐させる。注意点：PCにアプリを入れる行為になるため、会社PCで許可されるかは情シス規程の確認が必要。コネクタ経由で社内データにアクセスする場合の権限範囲、配布・共有の可否は要確認。"
+      },
+      "en": {
+        "title": "Claude Artifacts can now be installed as desktop apps on Mac and Windows, even with a free account",
+        "summary": "Anthropic now lets users install Artifacts built in Claude chat as apps on macOS and Windows. A free account is enough, and the apps can be built in chat without writing code. Installed apps can use OS APIs, connectors and Claude itself, and can add menu bar items, send notifications and create transparent windows.",
+        "note": "How to use it at work: build small team tools such as daily-report forms, routine calculators or reminders without programming, and keep them running on the desktop. Caution: this means installing apps on your PC, so check whether IT policy allows it on company machines. The scope of permissions when apps reach internal data through connectors, and whether they can be distributed or shared, need checking."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/anthropic-turns-claude-artifacts-into-standalone-desktop-apps-for-macos-and-windows/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-25-mcp-700m-downloads-new-features",
+      "date": "2026-11-25",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "advanced",
+      "tags": [
+        "エージェント",
+        "コーディング"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "MCPのSDKが月7億ダウンロード超、Claude向けコネクタは1万超　ファイル受け渡しやバックグラウンド処理を追加へ",
+        "summary": "Anthropicによると、公開から2年でAIとツールをつなぐ標準規格MCPの開発者向けSDKは月7億ダウンロードを超え、Claude向けMCPコネクタは1万を超えた。新機能として、バックグラウンドタスク、ユーザーへの追加質問、ファイルアップロードを追加し、提供後はPDF・表計算・画像をMCPサーバーへ直接渡せるようになる。複数サーバー構成ではコンテキスト使用量を85%以上減らせるとしているほか、MCP AppsでClaudeの画面内（チャット横または全画面）に独自UIを埋め込める。",
+        "note": "仕事での使いどころ：社内の試験データ管理や文書管理システムをMCPサーバー化すれば、ClaudeからPDFや表を直接渡して処理させる構成が組みやすくなる。注意点：85%削減はAnthropic自身の数値。ファイル受け渡し機能は「提供後」とされており、提供時期は要確認。社外AIへ社内ファイルが渡る経路が増えるため、データ持ち出しルールとの整合が必要。"
+      },
+      "en": {
+        "title": "MCP SDK passes 700 million monthly downloads with over 10,000 Claude connectors; file passing and background tasks coming",
+        "summary": "Anthropic says that two years after launch, the developer SDK for MCP, the standard for connecting AI to tools, has passed 700 million monthly downloads, and there are more than 10,000 MCP connectors for Claude. New features include background tasks, follow-up questions to users and file uploads; once shipped, Claude will be able to pass PDFs, spreadsheets and images directly to MCP servers. Anthropic says this can cut context usage by more than 85% in multi-server setups, and MCP Apps lets developers embed full interfaces inside Claude, beside the chat or full screen.",
+        "note": "How to use it at work: wrapping internal test-data or document management systems as MCP servers makes it easier to have Claude receive PDFs and tables directly. Caution: the 85% figure is Anthropic's own. File passing is described as coming 'once it ships', so the release timing needs checking. It also adds paths for internal files to reach an external AI, so it must align with data-handling rules."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/anthropic-tops-700-million-monthly-mcp-sdk-downloads-and-expands-the-protocol-for-more-autonomous-ai-agents/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-25-cairn-ai-agents-0day",
+      "date": "2026-11-25",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "エージェント"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "攻撃者のAIエージェントが人手をほぼ介さずゼロデイ脆弱性を発見・悪用　19組織以上に25回の自律攻撃、10組織以上が侵入被害",
+        "summary": "Amazonは、攻撃者がAIエージェント用フレームワーク「Cairn」を使い、人の関与が少ない状態でゼロデイ脆弱性を見つけて悪用したと報告した。この攻撃活動では少なくとも19組織に対して25回の自律的な攻撃が行われ、少なくとも10組織が侵入された。Palo Alto NetworksはCairnがGLM 5.2、DeepSeek V4 Flash、DeepSeek V4 Proと組み合わせて使われた例も確認している。",
+        "note": "仕事での使いどころ：自社・サプライヤーのセキュリティ対策見直しの根拠資料として、「攻撃の自動化で試行回数が増える」前提を共有する。注意点：被害組織の業種や悪用された脆弱性の製品名は記事要約に含まれておらず要確認。AIエージェント用の汎用フレームワークが防御側・攻撃側の両方で使われている点に留意。"
+      },
+      "en": {
+        "title": "Attackers' AI agents found and exploited a zero-day with little human input: 25 autonomous operations against 19+ organizations, 10+ breached",
+        "summary": "Amazon reported that attackers used the AI agent framework Cairn to find and exploit a zero-day vulnerability with little human involvement. The campaign ran 25 autonomous operations against at least 19 organizations, and at least 10 of them were breached. Palo Alto Networks has also seen Cairn used with GLM 5.2, DeepSeek V4 Flash and DeepSeek V4 Pro.",
+        "note": "How to use it at work: use it as supporting material when reviewing security at your company and suppliers, sharing the premise that automated attacks mean far more attempts. Caution: the victims' industries and the affected product are not in the article summary and need checking. Note that a general-purpose AI agent framework is being used by both defenders and attackers."
+      },
+      "src": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-25-uk-ncsc-ai-cyberattacks-tech-debt",
+      "date": "2026-11-25",
+      "kind": "flash",
+      "cat": "reg",
+      "level": "all",
+      "tags": [
+        "セキュリティ",
+        "規制"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "英NCSC、AIを使ったサイバー攻撃が「顕著に増加」と警告　狙われているのは新種の脆弱性ではなく長年放置された基本的な弱点",
+        "summary": "英国政府のサイバーセキュリティ機関NCSCは、ここ数か月でAIを使ったサイバー攻撃が顕著に増えていると発表した。攻撃者は自律型のハッキングツールで単純な弱点を探して侵入しているという。NCSCは、悪用されているのは新しいメモリ破壊系の脆弱性や既知の未修正脆弱性ではなく、組織が長年ため込んだ技術的負債による対策されていない弱点だとし、基礎的な対策の重要性を強調した。",
+        "note": "仕事での使いどころ：古い社内サーバー、使われていないアカウント、設定の甘い試験用機器など、技術的負債の棚卸しを優先する根拠になる。注意点：英国の機関による警告で、日本での発生状況は別途要確認。具体的な増加率などの数値は記事要約に含まれていない。"
+      },
+      "en": {
+        "title": "UK's NCSC warns of a 'marked rise' in AI-driven cyberattacks exploiting years-old basic weaknesses rather than novel flaws",
+        "summary": "The UK government's cybersecurity agency, the NCSC, said it has seen a marked rise in AI-driven cyberattacks in recent months, with attackers using autonomous hacking tools to find simple weaknesses and break in. The NCSC said the issues being exploited are not new memory-corruption flaws or even known unpatched vulnerabilities, but unmitigated weaknesses left by years of accumulated technical debt, and stressed the importance of strong foundations.",
+        "note": "How to use it at work: it supports prioritizing an inventory of technical debt such as old internal servers, unused accounts and poorly configured test equipment. Caution: this is a UK agency's warning; the situation in Japan needs separate checking. No specific growth figures are given in the article summary."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/"
+        }
+      ]
+    },
     {
       "id": "2026-11-24-claude-ship",
       "date": "2026-11-24",
