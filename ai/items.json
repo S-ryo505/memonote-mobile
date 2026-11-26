@@ -1,6 +1,64 @@
 {
-  "updated": "2026-11-25T09:05:00+09:00",
+  "updated": "2026-11-26T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-11-26-chatgpt-chat-work-merge-limits",
+      "date": "2026-11-26",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "仕事で使える",
+        "料金"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "ChatGPT、「Chat」と「Work」を統合し利用上限を1つのメーターに一本化　ヘビーユーザーは上限到達が早まる可能性",
+        "summary": "OpenAIは、ChatGPTのChat（通常の対話）とWork（業務向けの作業機能）の2つの画面を1つにまとめ、利用量の上限を両方共通の単一メーターで管理する方式に変える。OpenAIは、使用量の多い利用者は従来より早く上限に達する場合があると説明している。",
+        "note": "仕事での使いどころ：ChatGPTで資料作成や調査をまとめて行う人は、1つの画面で作業が完結しやすくなる。注意点：対象プラン（Plus／Team／Enterpriseなど）、上限の具体的な量、開始日はRSS要約に記載がなく要確認。業務で大量に使う部署は、月末や締め切り前に上限に当たらないか運用を見直す必要がある（推測）。"
+      },
+      "en": {
+        "title": "ChatGPT merges Chat and Work into one usage meter; heavy users may hit limits sooner",
+        "summary": "OpenAI is combining ChatGPT's Chat experience and its Work experience into one, and usage limits will be tracked on a single meter shared across both. OpenAI says heavy users may reach their limits sooner than before.",
+        "note": "How to use it at work: people who use ChatGPT for drafting documents and research can do more of it in a single interface. Caution: the RSS summary does not say which plans (Plus, Team, Enterprise, etc.) are affected, how large the limits are, or when the change starts, so this needs checking. Teams that use it heavily may need to plan around hitting limits before deadlines (speculation)."
+      },
+      "src": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-26-openai-private-inference",
+      "date": "2026-11-26",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "intermediate",
+      "tags": [
+        "セキュリティ",
+        "モデル"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "OpenAI、企業データをOpenAI自身も見られない「Private Inference」をテスト中",
+        "summary": "OpenAIは「Private Inference」という新機能を試験している。企業が最上位クラスのモデルに問い合わせを送っても、その内容にOpenAIがアクセスできない仕組みとされ、機密性の高い業務での利用を狙っている。",
+        "note": "仕事での使いどころ：設計情報や未発表の製品情報など、これまで外部AIに入れられなかったデータを扱える可能性がある。注意点：現時点ではテスト段階で、提供時期・料金・対象モデル・技術的な保護方式（暗号化や専用環境など）はRSS要約に記載がなく要確認。社内の情報区分ルール上で使えるかは、正式な仕様と第三者監査の有無を見てから判断すべき。"
+      },
+      "en": {
+        "title": "OpenAI tests \"Private Inference\" so that even OpenAI cannot see enterprise data",
+        "summary": "OpenAI is testing a new feature called \"Private Inference\". It is meant to let companies send queries to OpenAI's most capable models without OpenAI being able to access the data, targeting sensitive business work.",
+        "note": "How to use it at work: it could allow data that could not previously go into an external AI, such as design information or unreleased product details. Caution: it is still in testing, and the RSS summary gives no launch date, pricing, model list, or technical protection method (encryption, dedicated environments, etc.), so these need checking. Whether it fits internal data-classification rules should be decided after seeing the official specs and any third-party audits."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data/"
+        }
+      ]
+    },
     {
       "id": "2026-11-25-claude-artifacts-desktop-apps",
       "date": "2026-11-25",
