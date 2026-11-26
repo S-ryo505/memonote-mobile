@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T09:10:00+09:00",
+ "updated": "2026-11-27T09:10:00+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -11204,6 +11204,68 @@
     {
      "name": "Autocar",
      "url": "https://www.autocar.co.uk/car-news/new-cars/suzuki-ignis-reborn-tiny-city-car-rival-renault-twingo-2027"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-subaru-ebox-belt-tensioner-recall",
+   "date": "2026-11-27",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "品質"
+   ],
+   "prio": 3,
+   "conf": "primary",
+   "ja": {
+    "title": "スバル、e-BOXER搭載車17万8,007台を国内リコール　原動機のベルトテンショナーに不具合",
+    "summary": "スバルは11月26日、e-BOXERを積む「フォレスター」「クロストレック」「インプレッサ」「XV」計17万8,007台について、原動機のベルトテンショナーの不具合で国土交通省にリコールを届け出た。対象は2020年6月12日〜2026年9月21日製作の車両で、不具合報告は240件、事故は0件。交換用部品を組み付けた可能性のある1,651台と、車両を特定できない補修部品462個も同じ措置の対象となる。",
+    "note": "ベルトテンショナーは補機ベルトの張力を保つ部品。ベルトが滑らずに伝えられる張力比はオイラーの式 T1/T2 = e^(μθ)（T1：張り側張力、T2：緩み側張力、μ：摩擦係数、θ：巻き付け角[rad]）で、伝達トルクは T = (T1−T2)·r（r：プーリ半径）。テンショナーが T2 を保てないと伝達可能トルクが下がり、ベルト滑りや異音につながる（一般論）。今回の具体的な故障モードと、e-BOXERのモーター/補機駆動への影響は要確認。"
+   },
+   "en": {
+    "title": "Subaru recalls 178,007 e-BOXER vehicles in Japan over a faulty engine belt tensioner",
+    "summary": "On November 26, Subaru filed a recall with Japan's transport ministry for a total of 178,007 e-BOXER-equipped Forester, Crosstrek, Impreza and XV models due to a defect in the engine's belt tensioner. The affected vehicles were built between June 12, 2020 and September 21, 2026; 240 failures have been reported and no accidents. The same fix also covers 1,651 vehicles that may have received replacement parts and 462 service parts that cannot be traced to a specific vehicle.",
+    "note": "A belt tensioner keeps the accessory belt under tension. The tension ratio a belt can transmit without slipping follows Euler's equation T1/T2 = e^(μθ) (T1: tight-side tension, T2: slack-side tension, μ: friction coefficient, θ: wrap angle in rad), and the transmitted torque is T = (T1 − T2)·r (r: pulley radius). If the tensioner cannot maintain T2, the transmittable torque drops, leading to belt slip or noise (general principle). The specific failure mode and any effect on the e-BOXER motor or accessory drive need confirmation."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2159735.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-suzuki-eliiy-lfp-domestic-2029",
+   "date": "2026-11-27",
+   "kind": "flash",
+   "cat": "oem",
+   "region": "JP",
+   "tags": [
+    "電池",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "スズキ、エリーパワーと共同でLFP電池を国内量産へ　2029年10月から静岡県湖西市で、経産省が供給確保計画を認定",
+    "summary": "新聞各紙の報道によると、スズキは出資先のエリーパワーと共同開発したLFP（リン酸鉄リチウムイオン）電池を2029年10月から静岡県湖西市の設備で生産する。これまで「eビターラ」などには中国製電池を使っており、輸出規制時の調達リスクを下げる狙いと報じられている。同じ11月26日、両社が申請した定置用リチウムイオン電池のセル・モジュール開発・量産計画が、経済安全保障推進法に基づく蓄電池の供給確保計画として経産省に認定された（認定番号「2026蓄電池第1号－1」）。",
+    "note": "LFPはニッケル・コバルトを使わない正極で、セル公称電圧は約3.2V（NMC系は約3.6〜3.7V、一般値）。パック容量は E[kWh] = V_nom × Q[Ah] × 直列数 × 並列数 / 1000 で、同じ容量なら電圧が低い分だけセル数か容量を増やす必要がある。報道では車載向け、経産省認定は定置用と書かれており、車載用の量産計画との関係は要確認。"
+   },
+   "en": {
+    "title": "Suzuki to mass-produce LFP batteries in Japan with Eliiy Power from October 2029 in Kosai, Shizuoka; METI certifies supply plan",
+    "summary": "According to newspaper reports, Suzuki will produce LFP (lithium iron phosphate) batteries, co-developed with its affiliate Eliiy Power, at a facility in Kosai, Shizuoka, starting in October 2029. Suzuki has so far used Chinese-made batteries in models such as the e Vitara, and the move is reported to reduce procurement risk in case of export restrictions. On the same day, November 26, METI certified the two companies' plan to develop and mass-produce stationary lithium-ion cells and modules as a battery supply-security plan under the Economic Security Promotion Act (certification no. \"2026 Battery No. 1-1\").",
+    "note": "LFP uses a cathode free of nickel and cobalt, with a nominal cell voltage of about 3.2 V (versus about 3.6–3.7 V for NMC; typical values). Pack energy is E[kWh] = V_nom × Q[Ah] × series count × parallel count / 1000, so for the same energy a lower voltage requires more cells or more capacity. The reports describe automotive batteries while the METI certification covers stationary use, so the link to an automotive production plan needs confirmation."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/27/419492.html"
+    },
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/27/419487.html"
     }
    ]
   }
