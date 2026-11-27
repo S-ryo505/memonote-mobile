@@ -1,6 +1,128 @@
 {
-  "updated": "2026-11-26T09:05:00+09:00",
+  "updated": "2026-11-27T09:05:00+09:00",
   "items": [
+    {
+      "id": "2026-11-26-gpt62-usage-billing-fix",
+      "date": "2026-11-26",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "all",
+      "tags": [
+        "仕事で使える",
+        "料金",
+        "モデル"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "GPT-6.2の使用量計算に誤り、修正で上限到達がAstraは40%・Solは25%早まる",
+        "summary": "OpenAIのティボー・ソティオ氏は11月25日、11月17日公開のGPT-6.2 AstraとSolで使用量が実際より少なく計上されていたとXで公表した。修正後は前週と比べ、Astraで40%、Solで25%早く利用上限に達する。お詫びとして有料プラン利用者に上限リセット1回分を付与し、The Decoderによると法人ユーザーには年末までFast Modeを無料提供する。",
+        "note": "仕事での使いどころ：先週の感覚で大量の資料作成やコード生成を計画している場合、上限に早く当たる前提で作業量を見直す。付与されたリセット権は締め切り前の重い作業に充てるとよい。注意点：The Decoderは修正後もGPT-6 Astra／GPT-6.1 Solの頃より枠は多いと伝えている。Fast Mode無料の対象プランと期間の詳細は要確認。"
+      },
+      "en": {
+        "title": "OpenAI fixes GPT-6.2 usage miscount; limits now hit 40% sooner on Astra, 25% on Sol",
+        "summary": "On November 25, OpenAI's Thibault Sottiaux said on X that usage for GPT-6.2 Astra and Sol, released November 17, had been undercounted. After the fix, users reach their limits 40% faster on Astra and 25% faster on Sol than last week. As an apology, paid subscribers get one extra limit reset, and according to The Decoder, business users get free Fast Mode through year-end.",
+        "note": "How to use it at work: if you planned heavy document or code work based on last week's experience, assume you will hit the cap sooner and adjust. Save the extra reset for heavy work before a deadline. Caveats: The Decoder says quotas still last longer than with GPT-6 Astra and GPT-6.1 Sol. Which plans get free Fast Mode, and for how long, needs confirmation."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2611/26/2000003495/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-26-claude-duet-japan",
+      "date": "2026-11-26",
+      "kind": "flash",
+      "cat": "tool",
+      "level": "intermediate",
+      "tags": [
+        "仕事で使える",
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "AnthropicのAIエージェント「Claude Duet」、研究プレビューが日本でも利用可能に",
+        "summary": "Anthropicの「Claude Duet」研究プレビューが11月26日（日本時間）から日本でも使えるようになった。同社のカラン・アフジャ氏が11月25日、対象を日本・インド・ブラジル・インドネシアに広げるとXで発表した。米国では10月21日からウェイトリスト制で提供しており、日本では登録済みのPro／Max／Ultraユーザーに招待が届き始めている。",
+        "note": "仕事での使いどころ：ウェイトリスト登録済みならメールの招待を確認し、定型業務の代行を小さな業務で試せる。研究プレビュー中はProに上限リセット3回、Max／Ultraに1回が付与され、未使用分は12月15日に失効する。注意点：研究プレビューのため機能や提供条件は変わる可能性がある。社内データを扱う前に、会社のAI利用ルールでの可否を要確認。"
+      },
+      "en": {
+        "title": "Anthropic's Claude Duet AI agent research preview now available in Japan",
+        "summary": "The research preview of Anthropic's Claude Duet became available in Japan on November 26 (JST). On November 25, Anthropic's Karan Ahuja announced on X that the preview is expanding to Japan, India, Brazil, and Indonesia. It has been offered in the U.S. via a waitlist since October 21, and invitations are now reaching Pro, Max, and Ultra users in Japan who joined the waitlist.",
+        "note": "How to use it at work: if you joined the waitlist, check your email for an invite and try it on a small routine task. During the preview, Pro users get three limit resets and Max/Ultra users get one; unused resets expire on December 15. Caveats: as a research preview, features and terms may change. Confirm whether your company's AI policy allows it before using internal data."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2611/26/2000003483/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-26-microsoft-artex-ai-attacks",
+      "date": "2026-11-26",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "advanced",
+      "tags": [
+        "セキュリティ",
+        "エージェント"
+      ],
+      "prio": 2,
+      "conf": "report",
+      "ja": {
+        "title": "Microsoft、国家系ハッカーが使うAI攻撃フレームワーク「ARTEX」の仕組みを公開",
+        "summary": "Microsoftは、2026年7月に公開されたAIペネトレーションテスト用フレームワーク「ARTEX」の技術構成を分析・公開した。ARTEXは専門化したエージェントとMetasploitなど既存ツールを組み合わせ、ほぼ人手なしで攻撃を実行し、中国・北朝鮮の国家系グループや犯罪組織がすでに使っている。ソースコードは7月にGitHubで公開され10月に削除されたが、複製は今も出回っている。",
+        "note": "仕事での使いどころ：情報システム部門との打ち合わせで、攻撃が人手を介さず機械の速度で進む前提で、パッチ適用や検知の速さを見直す材料になる。Microsoftはハニーポットや偽の成功シグナルを返すなどの欺瞞（デセプション）技術を対策として勧めている。注意点：被害件数など具体的な影響の規模はRSS要約に記載がなく要確認。"
+      },
+      "en": {
+        "title": "Microsoft details ARTEX, the AI framework state-backed hackers use to automate attacks",
+        "summary": "Microsoft published an analysis of the technical architecture of ARTEX, an AI penetration-testing framework released in July 2026. ARTEX combines specialized agents with existing tools such as Metasploit to run attacks with almost no human involvement, and state-backed groups from China and North Korea as well as criminal organizations already use it. The source code was posted on GitHub in July and deleted in October, but copies are still circulating.",
+        "note": "How to use it at work: in discussions with IT, use this to review patching and detection speed on the assumption that attacks now move at machine speed without humans. Microsoft recommends deception techniques such as honeypots and fake success signals. Caveats: the scale of damage, such as the number of victims, is not given in the feed summary and needs confirmation."
+      },
+      "src": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/microsoft-details-how-state-backed-hackers-use-the-artex-ai-framework-to-automate-cyberattacks/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-26-github-hidden-ai-text-study",
+      "date": "2026-11-26",
+      "kind": "flash",
+      "cat": "biz",
+      "level": "intermediate",
+      "tags": [
+        "セキュリティ",
+        "コーディング",
+        "エージェント"
+      ],
+      "prio": 3,
+      "conf": "report",
+      "ja": {
+        "title": "GitHub上のAI向け「隠し文字」を1億4500万件調査、2%はAIエージェントを狙う攻撃",
+        "summary": "RadwareとイスラエルのテクニオンはGitHubの投稿やREADME約1億4500万件を分析し、人には見えずAIには届く隠しテキスト（HTMLコメントなど）2281件を特定した。98%は自社AIへの指示や出力設定など攻撃目的ではなかったが、2%（43件）は他者のAIエージェントを狙う攻撃だった。攻撃の44%はMicrosoft・Google・OpenAIなど大手のリポジトリを標的とし、最多の目的は認証情報の窃取（44%）だった。",
+        "note": "仕事での使いどころ：Copilotなどのコーディングエージェントに外部リポジトリやIssueを読ませる運用では、環境変数や認証トークンにエージェントが触れられる範囲を絞る根拠になる。注意点：攻撃の21%は標的エージェントの実在するツール名を名指ししており、ワークフロー定義を公開リポジトリに置く場合は見直しが必要（推測）。論文段階の調査結果である点に留意。"
+      },
+      "en": {
+        "title": "Study of 145 million GitHub items finds hidden AI-directed text; 2% targets AI agents",
+        "summary": "Researchers from Radware and Israel's Technion analyzed about 145 million GitHub posts and READMEs and identified 2,281 hidden texts, such as HTML comments, that humans cannot see but AI can read. 98% were not attacks, such as teams instructing their own AI or setting output options, but 2% (43 cases) were attacks aimed at other people's AI agents. 44% of the attacks targeted repositories of major vendors such as Microsoft, Google, and OpenAI, and the most common goal was credential theft (44%).",
+        "note": "How to use it at work: if coding agents like Copilot read external repositories or issues, this supports limiting their access to environment variables and auth tokens. Caveats: 21% of attacks named real tool names of the target agent, so workflow definitions in public repositories may need review (speculation). These are findings from a research paper."
+      },
+      "src": [
+        {
+          "name": "ITmedia AI+",
+          "url": "https://www.itmedia.co.jp/news/article/2611/26/2000003460/"
+        }
+      ]
+    },
     {
       "id": "2026-11-26-chatgpt-chat-work-merge-limits",
       "date": "2026-11-26",
