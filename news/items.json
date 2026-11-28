@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T09:10:00+09:00",
+ "updated": "2026-11-28T10:05:00+09:00",
  "items": [
   {
    "id": "2026-10-24-nhtsa-cyan-ads-lamp",
@@ -11266,6 +11266,691 @@
     {
      "name": "Response",
      "url": "https://response.jp/article/2026/11/27/419487.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-byd-seal-awd-disus-c",
+   "date": "2026-11-27",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "JP",
+   "tags": [
+    "4WD",
+    "制御",
+    "シャシー"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "BYD「シール」AWD、電子制御サス「DiSus-C」に変更後の試乗記　国内価格572万円、WLTC航続575km",
+    "summary": "BYDは2025年10月にシールの足まわりを見直し、それまでAWDに付いていた機械式の油圧可変ダンパーをRWDに移し、AWDには電子制御サスペンション「DiSus-C」を採用した。評者は2025年3月の試乗でAWDの不整路面での突き上げと、操舵・アクセル操作に対する車体挙動のまとまりのなさを指摘していたが、今回は改善を評価している。満充電時の表示航続はWLTC値と同じ575km、車両本体価格は572万円。",
+    "note": "電子制御ダンパーの代表的な考え方はスカイフック制御：理想減衰力 F = −c_sky·ż_s（ż_s＝ばね上上下速度）を、実際のダンパーが出せる F = −c(t)·(ż_s−ż_u) で近似し、c(t) = c_sky·ż_s/(ż_s−ż_u)（符号が同じ時のみ、範囲内で飽和）とする。ばね下との相対速度ではなく車体の絶対速度を抑えるので、不整路の入力を「往なす」方向に働く。DiSus-Cの制御則・センサー構成は記事に記載なし（要確認）。記事ではヤンワンU9の「DiSus-X」と同系統の技術とされている。"
+   },
+   "en": {
+    "title": "BYD Seal AWD road test after switch to 'DiSus-C' electronic suspension; JPY 5.72M in Japan, 575 km WLTC range",
+    "summary": "In October 2025 BYD revised the Seal's suspension: the mechanical hydraulic adaptive dampers previously fitted to the AWD were moved to the RWD, and the AWD received the new 'DiSus-C' electronically controlled suspension. In a March 2025 test the reviewer had criticized the AWD's harsh response to rough roads and poorly coordinated body motion relative to steering and throttle inputs; this time he rates the changes as an improvement. At 100% charge the displayed range matches the 575 km WLTC figure, and the vehicle price is JPY 5.72 million.",
+    "note": "A typical concept for electronic dampers is skyhook control: the ideal force F = −c_sky·ż_s (ż_s = sprung-mass vertical velocity) is approximated by the real damper force F = −c(t)·(ż_s−ż_u), giving c(t) = c_sky·ż_s/(ż_s−ż_u) (only when signs match, saturated within the damper range). Because it suppresses the body's absolute velocity rather than the relative velocity, it helps absorb rough-road inputs. DiSus-C's actual control law and sensors are not described (to be confirmed). The article says it belongs to the same technology family as 'DiSus-X' on the Yangwang U9."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/27/419530.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-bmw-x5-g-gen5-japan-rws",
+   "date": "2026-11-27",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "4WD",
+    "シャシー",
+    "制御"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "BMW、5代目「X5」を国内発売　直6ディーゼル＋48V、後輪最大3.2度の統合アクティブステアリング、1311万円",
+    "summary": "国内仕様は「X5 40d xDrive M Sport」のみで、3.0L直6ディーゼル（210kW/650Nm）に48Vハイブリッドを組み合わせ、システム出力230kW/670Nm、8速AT・右ハンドル、価格1311万円。全長5010mm・ホイールベース3035mm・車重2400kg、前後重量配分は約50:50。4輪アダプティブエアサスと「インテグレーテッド・アクティブ・ステアリング」を採用し、低速時は後輪を前輪と逆位相に最大3.2度切る。",
+    "note": "低速の幾何学的旋回半径（後軸中心基準の近似）：R ≈ L/(tanδf + tanδr)。L=3.035m、前輪実舵角δf=35°（仮定値）とすると、後輪操舵なし R=3.035/0.700≈4.34m、逆位相3.2°（tan≈0.056）で R=3.035/0.756≈4.01m となり約0.3m（約8%）小さくなる。高速域では同位相に切ってヨーレートゲインを下げ安定性を上げるのが一般的だが、本車の高速時制御は記事に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "BMW launches 5th-generation X5 in Japan: inline-six diesel with 48V, integrated active steering up to 3.2° at the rear, JPY 13.11M",
+    "summary": "The only Japanese-market version is the 'X5 40d xDrive M Sport', combining a 3.0-liter inline-six diesel (210 kW/650 Nm) with a 48V hybrid system for 230 kW/670 Nm system output, an 8-speed automatic and right-hand drive, priced at JPY 13.11 million. It is 5,010 mm long with a 3,035 mm wheelbase, weighs 2,400 kg and has roughly 50:50 weight distribution. It uses four-wheel adaptive air suspension and 'Integrated Active Steering', which turns the rear wheels up to 3.2° opposite to the fronts at low speed.",
+    "note": "Low-speed geometric turning radius (approximation at rear-axle center): R ≈ L/(tanδf + tanδr). With L = 3.035 m and a front road-wheel angle δf = 35° (assumed value), R = 3.035/0.700 ≈ 4.34 m without rear steer and R = 3.035/0.756 ≈ 4.01 m with 3.2° counter-phase (tan ≈ 0.056), about 0.3 m (≈8%) smaller. At high speed the rear wheels are typically steered in phase to lower yaw-rate gain and improve stability, but this car's high-speed strategy is not described (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2159831.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-mb-s-class-brake-hose-recall-3559",
+   "date": "2026-11-27",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "JP",
+   "tags": [
+    "シャシー",
+    "品質"
+   ],
+   "prio": 3,
+   "conf": "report",
+   "ja": {
+    "title": "メルセデス「Sクラス」4MATIC系7車種3,559台リコール　前輪ブレーキホースに亀裂、制動力低下のおそれ",
+    "summary": "メルセデス・ベンツ日本は11月18日、2022年5月9日〜2025年5月12日に輸入されたS400d/S450d/S500/S580/S580e 4MATICとマイバッハS580/S680 4MATICの14型式・3,559台のリコールを国交省に届け出た。前輪ブレーキホースの設計検討が不十分で屈曲性が低く、応力集中で亀裂が生じてフルードが漏れる可能性がある。不具合報告は1件、事故報告はなし。対策は全車の前輪ブレーキホース交換。",
+    "note": "ディスクブレーキ1輪の制動トルクは T_b = 2·μ_pad·p·A_p·r_eff（両面パッド、p＝液圧、A_p＝ピストン総面積、r_eff＝有効半径）。フルードが漏れると p が確保できず T_b が低下する。ホースの亀裂は操舵・サスペンションストロークによる繰返し曲げで発生するため、ホース長と曲げ半径のレイアウトが疲労寿命を決める（一般論、本件の具体的原因箇所の寸法は記載なし）。"
+   },
+   "en": {
+    "title": "Mercedes recalls 3,559 S-Class 4MATIC-family vehicles (7 models) in Japan: front brake hoses may crack and reduce braking force",
+    "summary": "On November 18, Mercedes-Benz Japan notified MLIT of a recall of 3,559 vehicles (14 type designations) imported between May 9, 2022 and May 12, 2025: the S400d, S450d, S500, S580 and S580e 4MATIC and the Maybach S580 and S680 4MATIC. Due to insufficient design review, the front brake hoses have low flexibility, and stress concentration can cause cracks that leak brake fluid. One failure has been reported and no accidents. All vehicles will get new front brake hoses.",
+    "note": "Braking torque of one disc brake: T_b = 2·μ_pad·p·A_p·r_eff (two pad faces, p = hydraulic pressure, A_p = total piston area, r_eff = effective radius). A fluid leak prevents p from being maintained, so T_b falls. Hose cracks arise from repeated bending due to steering and suspension stroke, so hose length and bend radius in the layout determine fatigue life (general point; dimensions of the actual failure location are not given)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/27/419489.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-xiaomi-su7-ultra-update-miit",
+   "date": "2026-11-26",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT",
+    "4WD"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "シャオミ、改良型「SU7 Ultra」をMIITに申請　3モーターAWD・1,138kW、最高速318km/h、2人乗り仕様を追加",
+    "summary": "中国工業情報化部（MIIT）が11月26日に公表した販売認可予定車リストに、改良型SU7 Ultraが含まれた（意見募集は11月26日〜12月2日）。1,000kW超の3モーターAWDは維持し、申請上の最高速は318km/h。現行の5人乗りに加えて2人乗り仕様を設定し、寸法と外装部品を変更する。",
+    "note": "3モーター（現行型はフロント1基・リア2基と認識しているが本記事には記載なし、要確認）の場合、リア左右を独立駆動でき、ヨーモーメント Mz = ΔT·t/(2·r_w)（ΔT＝左右トルク差、t＝トレッド、r_w＝タイヤ動半径）を直接発生できる。例：ΔT=1,000Nm、t=1.6m、r_w=0.35m（いずれも仮定値）で Mz≈2,290Nm。機械式LSDと違い、外輪側を増やす方向にも配分できる。"
+   },
+   "en": {
+    "title": "Xiaomi files updated SU7 Ultra with MIIT: 1,138 kW tri-motor AWD, 318 km/h top speed, new two-seat version",
+    "summary": "The updated SU7 Ultra appeared in the list of models to be approved for sale published by China's Ministry of Industry and Information Technology (MIIT) on November 26, open for public comment from November 26 to December 2. It keeps the over-1,000 kW tri-motor AWD system, with a filed top speed of 318 km/h. A two-seat configuration is added alongside the current five-seat version, and dimensions and exterior parts are updated.",
+    "note": "With three motors (the current car is understood to have one front and two rear motors, but this article does not say so — to be confirmed), the rear wheels can be driven independently and a yaw moment Mz = ΔT·t/(2·r_w) (ΔT = left-right torque difference, t = track, r_w = dynamic tire radius) can be generated directly. Example: ΔT = 1,000 Nm, t = 1.6 m, r_w = 0.35 m (all assumed values) gives Mz ≈ 2,290 Nm. Unlike a mechanical LSD, torque can also be shifted toward the outer wheel."
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/26/xiaomi-files-updated-su7-ultra/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-audi-e7x-erev-miit",
+   "date": "2026-11-27",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "中国専用ブランド「AUDI」、E7XにEREV（レンジエクステンダー）版　1.5L・105kWを発電専用に、MIIT申請",
+    "summary": "上汽VW生産の「AUDI E7X」のEREV版がMIITに申請された。BEV版の300kWリアモーターに代え、連続165kW・最大244kWのモーターを使い、1.5Lガソリンエンジン（105kW）は車輪を駆動せず発電のみに使う。最高速は205km/h。EV専用として2024年に立ち上がった同ブランド初のエンジン搭載車となる。",
+    "note": "シリーズ方式では持続走行出力の上限はほぼ発電機出力で決まる。走行抵抗 P = (½ρC_dA·v² + m·g·C_rr)·v に、ρ=1.2、C_dA=0.75m²、m=2,400kg、C_rr=0.010（いずれも仮定値）を入れると、205km/h（56.9m/s）で空力約83kW＋転がり約13kW≒96kWとなり、105kWの発電機出力に近い。燃料→車輪の効率は η = η_eng·η_gen·η_inv·η_mot の積になる点がパラレル方式との違い。"
+   },
+   "en": {
+    "title": "China-only 'AUDI' brand adds EREV version of E7X: 1.5L 105 kW engine used only as a generator, filed with MIIT",
+    "summary": "An EREV version of the AUDI E7X, built by SAIC Volkswagen, has been filed with MIIT. Instead of the BEV's 300 kW rear motor it uses a motor rated at 165 kW continuous and 244 kW peak, while a 1.5-liter gasoline engine (105 kW) does not drive the wheels and serves only as a generator. Top speed is 205 km/h. It is the first model with a combustion engine from the brand, which launched in 2024 as EV-only.",
+    "note": "In a series layout, sustained driving power is capped roughly by generator output. Road load P = (½ρC_dA·v² + m·g·C_rr)·v with ρ = 1.2, C_dA = 0.75 m², m = 2,400 kg, C_rr = 0.010 (all assumed values) gives about 83 kW aero + 13 kW rolling ≈ 96 kW at 205 km/h (56.9 m/s), close to the 105 kW generator output. Fuel-to-wheel efficiency is the product η = η_eng·η_gen·η_inv·η_mot, which differs from a parallel hybrid."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/27/audi-e7x-becomes-first-model-of-china-sub-brand-with-range-extender/"
+    },
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/816887/audi-e7x-range-extending-ev/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-28-gac-toyota-highlander-9x-erev",
+   "date": "2026-11-28",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "広汽トヨタ、トヨタ初のEREVを「ハイランダー9X」として2027年初めに発売へ　ファーウェイとCATLの技術を採用",
+    "summary": "広汽トヨタは11月27日の広州モーターショーで、トヨタ初のEREVの車名を旗艦SUV名「ハイランダー9X」とし、2027年初めに発売すると発表した。ファーウェイとCATLの技術を使う。記事によると、ヒョンデ・起亜・ジェネシス、フォード、VWなども2027年第1四半期のEREV投入を計画している。",
+    "note": "EREVの総航続は概算で R_total ≈ E_bat_usable/e_EV + V_fuel·(LHV·η_chain)/e_EV（e_EV＝車輪基準の電費[kWh/km]、η_chain＝エンジン→発電→インバーターの効率）。ハイランダー9Xの電池容量・エンジン仕様・航続は記事に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "GAC Toyota to launch Toyota's first EREV as the 'Highlander 9X' in early 2027, using Huawei and CATL technology",
+    "summary": "At the Guangzhou Auto Show on November 27, GAC Toyota announced that Toyota's first EREV will carry the flagship SUV name 'Highlander 9X' and go on sale in early 2027, using technology from Huawei and CATL. According to the article, Hyundai, Kia, Genesis, Ford, Volkswagen and others also plan to launch EREVs in Q1 2027.",
+    "note": "Approximate EREV total range: R_total ≈ E_bat_usable/e_EV + V_fuel·(LHV·η_chain)/e_EV (e_EV = wheel-based consumption in kWh/km, η_chain = engine→generator→inverter efficiency). The Highlander 9X's battery capacity, engine and range are not given (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/27/toyota-confirms-highlander-9x-first-erev-top-tier-tech/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-23-honda-next-hybrid-platform-targets",
+   "date": "2026-11-23",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "Global",
+   "tags": [
+    "PT",
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "ホンダ、2027年以降の次世代ハイブリッド群を予告　効率10%向上（2018年比）・電動化コスト30%減（2023年比）、2.0Lは全域ストイキ",
+    "summary": "Motor1によると、ホンダはアヴァンシアの公式動画で、2027年から複数の新型ハイブリッド車を投入することと新しいモジュラープラットフォームを示した。目標は効率10%向上とハイブリッド化コスト30%削減で、比較基準はそれぞれ2018年モデルと2023年。新しい2.0Lエンジンは全運転域で理論空燃比を保つ設計とされる。",
+    "note": "理論空燃比（ガソリンでAFR≈14.7、λ=1）を全域で保つと三元触媒の浄化率を高負荷でも維持できる。従来は高負荷で燃料を増量（λ<1）して排気温度を下げていたため、全域λ=1には排気温度対策（EGR、圧縮比・点火時期、エキマニ冷却など）が必要になる。ホンダがどの手段を使うかは記事の抜粋からは不明（推測を含む）。改善率は現行車比ではない点に注意。"
+   },
+   "en": {
+    "title": "Honda previews next-generation hybrids from 2027: 10% better efficiency (vs 2018) and 30% lower hybrid cost (vs 2023); 2.0L runs stoichiometric across the map",
+    "summary": "According to Motor1, Honda's official Avancier video showed that several new hybrids will arrive from 2027 along with a new modular platform. The targets are 10% better efficiency and a 30% cut in hybridization costs, measured against 2018 models and 2023 respectively. The new 2.0-liter engine is designed to stay at a stoichiometric air-fuel ratio across its entire operating range.",
+    "note": "Keeping stoichiometric mixture (AFR ≈ 14.7 for gasoline, λ = 1) everywhere maintains three-way catalyst efficiency even at high load. Engines traditionally enrich fuel (λ < 1) at high load to cool the exhaust, so full-range λ = 1 requires other exhaust-temperature measures (EGR, compression ratio/ignition timing, cooled exhaust manifold, etc.). Which measures Honda uses cannot be determined from the excerpt (includes speculation). Note the gains are not relative to current models."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/816386/honda-teases-new-hybrids-details-new-platform/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-lexus-nx-new-phev-147km",
+   "date": "2026-11-26",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "4WD"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "レクサス新型「NX」、12月7日発売　PHEV「NX450h+」はEV航続147km、HEV「NX350h」と合わせ700万〜860万円",
+    "summary": "レクサスは11月26日、新型NXを発表した。2.5L直4のPHEV「NX450h+」（4WD、830万・860万円）とHEV「NX350h」（2WD 700万・730万円、4WD 730万・760万円）の構成で、PHEVのEV航続は147km。全長4690mm（従来比+30mm）、ホイールベース2690mm。NXは2014年の初代から2026年10月末までに90以上の国・地域で約194万台を販売した。",
+    "note": "PHEVのEV航続と電池の関係は R_EV = E_usable/e_EV。仮に e_EV=0.17kWh/km（仮定値）とすると147kmには約25kWhの使用可能容量が必要になる。電池容量・4WD方式（従来NXは後輪をモーターで駆動するE-Four）は本記事の抜粋に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "New Lexus NX on sale December 7: NX450h+ PHEV with 147 km EV range; NX350h hybrid; JPY 7.0M–8.6M",
+    "summary": "Lexus announced the new NX on November 26. The lineup consists of the 2.5-liter inline-four NX450h+ PHEV (AWD, JPY 8.3M and 8.6M) and the NX350h hybrid (FWD JPY 7.0M/7.3M, AWD JPY 7.3M/7.6M); the PHEV's EV range is 147 km. Length is 4,690 mm (+30 mm) with a 2,690 mm wheelbase. Since its 2014 debut, the NX had sold about 1.94 million units in more than 90 countries and regions by the end of October 2026.",
+    "note": "PHEV EV range relates to the battery as R_EV = E_usable/e_EV. Assuming e_EV = 0.17 kWh/km (assumed value), 147 km needs about 25 kWh usable. Battery capacity and the AWD layout (the previous NX used E-Four with an electric rear motor) are not in the excerpt (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2159500.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-subaru-wrx-sti-sport-r-6mt",
+   "date": "2026-11-24",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "4WD"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "スバル「WRX STIスポーツR」、6速MTのカタログモデルが6年半ぶりに復活　受注は5日間で約2,000台、月販計画330台",
+    "summary": "WRX STIスポーツR（4WD/6MT）はWRX STIが2020年春に生産終了して以来の、MTのカタログモデルとなる。Motor1が伝える現地報道によると、11月19日の予約開始から初日600台、2日で1,000台、11月23日までに約2,000台を受注し、当初計画の月330台・2027年3月までの1,500台を上回った。変速機は高出力WRX STIで使われていた6速MT「TY85」。",
+    "note": "駆動力は F = T_e·i_g·i_f·η_t/r_w（i_g＝変速比、i_f＝最終減速比、η_t＝伝達効率、r_w＝タイヤ動半径）。CVTに比べMTは η_t が高い一方、変速中は駆動力が途切れるため、AWDのセンターデフ／カップリング制御の前提条件が変わる。本車のセンターデフ方式・ギヤ比は記事抜粋に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "Subaru WRX STI Sport R brings back a 6-speed manual catalog model after six and a half years; ~2,000 orders in five days vs. 330/month plan",
+    "summary": "The WRX STI Sport R (AWD/6MT) is the first manual catalog WRX since the WRX STI ended production in spring 2020. According to a Japanese outlet cited by Motor1, reservations opened on November 19, reaching 600 on the first day, 1,000 within two days and about 2,000 by November 23, exceeding the initial plan of 330 units per month and 1,500 through March 2027. The gearbox is the TY85 six-speed manual previously used in high-output WRX STI models.",
+    "note": "Tractive force F = T_e·i_g·i_f·η_t/r_w (i_g = gear ratio, i_f = final drive, η_t = driveline efficiency, r_w = dynamic tire radius). A manual has higher η_t than a CVT but interrupts drive during shifts, which changes the assumptions for AWD center-diff/coupling control. The car's center-diff type and ratios are not in the excerpt (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/24/419382.html"
+    },
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/816788/subaru-wrx-manual-popular-japan/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-mb-s580e-4matic-long-japan",
+   "date": "2026-11-27",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "メルセデス新型「Sクラス」にPHEV「S 580 e 4MATIC long」追加　システム585PS・EV走行106km、2330万円",
+    "summary": "メルセデス・ベンツ日本は11月27日、新型SクラスにPHEVを追加した。改良型直6 3.0L「M256M Evo」（330kW/560Nm）に永久磁石同期モーターと21.96kWhの電池を組み合わせ、システム出力585PS、EV走行換算距離106km。新型Sクラスの価格はS 450 d 4MATICの1598万円からV8のS 580 4MATIC longの2365万円まで。",
+    "note": "電池総容量と航続から見た上限電費：21.96kWh/106km ≈ 0.207kWh/km。実際の使用可能容量は総容量より小さいため、実電費はこれより小さい（良い）値になる（推測）。"
+   },
+   "en": {
+    "title": "Mercedes adds 'S 580 e 4MATIC long' PHEV to new S-Class in Japan: 585 PS system output, 106 km EV range, JPY 23.3M",
+    "summary": "On November 27 Mercedes-Benz Japan added a PHEV to the new S-Class. The updated 3.0-liter inline-six 'M256M Evo' (330 kW/560 Nm) is combined with a permanent-magnet synchronous motor and a 21.96 kWh battery for 585 PS system output and 106 km equivalent EV range. New S-Class prices range from JPY 15.98M for the S 450 d 4MATIC to JPY 23.65M for the V8 S 580 4MATIC long.",
+    "note": "Upper-bound consumption from gross capacity and range: 21.96 kWh/106 km ≈ 0.207 kWh/km. Usable capacity is smaller than gross, so actual consumption is lower (better) than this (speculation)."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2159877.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-macoho-wet-shot-peening-xev-gear",
+   "date": "2026-11-24",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "JP",
+   "tags": [
+    "PT"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "マコー、xEV用変速機ギヤ向け「ウェットショットピーニング」を名古屋オートモーティブワールドで展示　疲労強度約110%、摩耗約90%減（特定条件）",
+    "summary": "ウェットブラスト装置メーカーのマコーは、11月25〜27日の名古屋オートモーティブワールドで、xEVギヤ向けの表面改質技術と専用投射材「SUSTEAR-P」を出展した。粒径0.3〜1mmの投射材で圧縮残留応力を与える従来のショットピーニングで増える表面粗さを抑える狙い。同社の試験条件では疲労強度が従来比約110%、摩耗量が約90%減、焼付き耐荷重が約2倍で、ユーザー評価ではギヤ設計値の10倍以上の耐力を得た例もあるという。",
+    "note": "小モジュール化の影響：歯元曲げ応力（ルイス式）σ_b = F_t/(b·m·Y) で、モジュール m を小さくすると同じ接線力 F_t で σ_b が増える。圧縮残留応力 σ_res は平均応力を下げる働きがあり、修正グッドマン線図 σ_a/σ_w + (σ_m+σ_res)/σ_B = 1 で σ_res<0 なら許容振幅 σ_a が増える。表面粗さの低減は歯面のピッチング・焼付き（油膜厚さ比 λ=h_min/σ_粗さ）にも効く。"
+   },
+   "en": {
+    "title": "Macoho shows wet shot peening for xEV transmission gears at Nagoya Automotive World: ~110% fatigue strength, ~90% less wear (specific conditions)",
+    "summary": "Wet-blast equipment maker Macoho exhibited a surface-modification technique for xEV gears and a dedicated media 'SUSTEAR-P' at Nagoya Automotive World on November 25–27. The aim is to avoid the increased surface roughness of conventional shot peening, which uses 0.3–1 mm media to induce compressive residual stress. Under the company's test conditions, fatigue strength was about 110% of the conventional level, wear was about 90% lower and seizure load about twice as high; in one user evaluation, strength exceeded 10 times the gear design value.",
+    "note": "Effect of smaller modules: root bending stress (Lewis) σ_b = F_t/(b·m·Y) rises as module m shrinks for the same tangential force F_t. Compressive residual stress σ_res lowers the effective mean stress; in the modified Goodman relation σ_a/σ_w + (σ_m+σ_res)/σ_B = 1, σ_res < 0 raises the allowable amplitude σ_a. Lower roughness also helps against pitting and scuffing (film thickness ratio λ = h_min/σ_roughness)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/24/419371.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-dongfeng-nissan-nx7-phev",
+   "date": "2026-11-27",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "CN",
+   "tags": [
+    "PT"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "東風日産、PHEV SUV「NX7」を広州で発売　1.5L＋電池でシステム170kW、EV航続最大320km・総航続最大1,666km",
+    "summary": "東風日産は11月27日、広州モーターショーでNシリーズ4車種目のNX7を発売した。全グレードが1.5L直4（73kW）と電池のPHEVで、システム最高出力170kW、EV航続は最大320km、エンジン併用の総航続は最大1,666km。全長4785mm・ホイールベース2815mm、2000MPa級超ハイテン材を使い、車載OSは「Nissan OS 3.0」（スナップドラゴン8295P、メモリー24GB）。",
+    "note": "エンジン分の航続は 1,666−320 = 1,346km。仮にタンク容量を55L（仮定値）とすると、充電維持モードの燃費は約24.5km/Lに相当する。航続値の試験モード（CLTC等）は記事に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "Dongfeng Nissan launches NX7 PHEV SUV in Guangzhou: 170 kW system output, up to 320 km EV range and 1,666 km total",
+    "summary": "On November 27 at the Guangzhou Auto Show, Dongfeng Nissan launched the NX7, the fourth model in its N series. All trims use a plug-in hybrid system with a 1.5-liter four-cylinder engine (73 kW) and a battery, giving 170 kW system output, up to 320 km of EV range and up to 1,666 km total range. It is 4,785 mm long with a 2,815 mm wheelbase, uses 2,000 MPa-class ultra-high-strength steel, and runs 'Nissan OS 3.0' on a Snapdragon 8295P with 24 GB of memory.",
+    "note": "Engine-driven range is 1,666 − 320 = 1,346 km. Assuming a 55 L tank (assumed value), this equals about 24.5 km/L in charge-sustaining mode. The test cycle (e.g., CLTC) is not stated (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/27/419522.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-toyota-innova-hycross-flex-hybrid",
+   "date": "2026-11-27",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "IN",
+   "tags": [
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "トヨタ・キルロスカ、インド初のフレックス燃料ハイブリッド「イノーバ ハイクロス」を発売　E20〜E85対応の現地生産2.0L、199.9万ルピーから",
+    "summary": "トヨタ・キルロスカ・モーターは11月25日、新型イノーバ ハイクロスを発売し、インド初の「フレックスハイブリッド電動車」とした。現地生産の2.0Lハイブリッド用エンジンがE20〜E85のエタノール混合燃料に対応する。予約は11月26日開始、価格は199万9,000ルピー（約2万2,600ドル）からで、7人乗り・8人乗りを設定する。",
+    "note": "体積当たり発熱量の一般値はガソリン約32MJ/L、エタノール約21MJ/L。E85は 0.85×21+0.15×32 ≈ 22.7MJ/L で、ガソリンの約71%となり、同じ熱効率なら体積燃費は約1.4倍悪化する。理論空燃比もガソリン約14.7に対しエタノール約9.0と小さく、燃料噴射量の補正幅が大きくなる（いずれも一般値）。"
+   },
+   "en": {
+    "title": "Toyota Kirloskar launches India's first flex-fuel hybrid, the Innova HyCross: locally built 2.0L for E20–E85, from INR 1.999 million",
+    "summary": "Toyota Kirloskar Motor launched the new Innova HyCross on November 25, calling it India's first 'Flex Hybrid Electric Vehicle'. Its locally manufactured 2.0-liter hybrid engine runs on ethanol blends from E20 to E85. Bookings opened on November 26 with prices from INR 19,99,000 (about USD 22,600), in seven- and eight-seat layouts.",
+    "note": "Typical volumetric heating values: gasoline ~32 MJ/L, ethanol ~21 MJ/L. E85 ≈ 0.85×21 + 0.15×32 ≈ 22.7 MJ/L, about 71% of gasoline, so at equal thermal efficiency volumetric fuel consumption rises about 1.4×. The stoichiometric AFR is also smaller (~9.0 for ethanol vs ~14.7 for gasoline), widening the injection correction range (all typical values)."
+   },
+   "src": [
+    {
+     "name": "Motor1",
+     "url": "https://www.motor1.com/news/816967/toyota-innova-hycross-flex-hybrid/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-acura-integra-type-s-japan-250",
+   "date": "2026-11-26",
+   "kind": "weekly",
+   "cat": "new",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "規制"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "ホンダ、米国製「アキュラ インテグラ Type S」を250台限定で日本導入　左ハンドル6MT、899万8,000円、国交省の米国車認定制度を活用",
+    "summary": "ホンダは11月26日、北米のインテグラ Type Sを全国250台限定・899万8,000円で12月18日に発売すると発表した（220台は店頭、30台は公式サイトで抽選、申込は2027年1月8日まで）。2.0L VTECターボ（325PS/420Nm）に回転合わせ機構付き6速MTを組み合わせ、全長はシビック Type Rより150mm長い4745mm。Car Watchによると、日米関税交渉で設けられた米国製乗用車の認定制度を使った導入。",
+    "note": "関税の経緯（記事記載）：2025年4月に日本車・部品へ25%の追加関税、その後15%で合意。認定制度で排出ガス試験等の手続きが簡素化される点が要旨とみられるが、制度の詳細は記事抜粋になし（要確認）。北米価格5万3,900ドルに対し、記事は円換算約859万円としている。"
+   },
+   "en": {
+    "title": "Honda brings U.S.-built Acura Integra Type S to Japan, limited to 250 units: LHD 6MT, JPY 8.998M, using MLIT's new certification scheme for U.S. cars",
+    "summary": "On November 26 Honda announced that the North American Integra Type S will go on sale in Japan on December 18, limited to 250 units at JPY 8.998 million (220 through dealers, 30 by online lottery with applications until January 8, 2027). It pairs a 2.0-liter VTEC turbo (325 PS/420 Nm) with a rev-matching six-speed manual and is 4,745 mm long, 150 mm longer than the Civic Type R. According to Car Watch, it is imported under the certification scheme for U.S.-built cars created in the Japan–U.S. tariff negotiations.",
+    "note": "Tariff background (from the article): a 25% additional tariff on Japanese cars and parts in April 2025, later settled at 15%. The scheme appears to simplify procedures such as emissions testing, but details are not in the excerpt (to be confirmed). The article converts the U.S. price of USD 53,900 to about JPY 8.59 million."
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2158900.html"
+    },
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/impression/2159046.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-mb-s560-eco-stop-ecu-recall",
+   "date": "2026-11-26",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "JP",
+   "tags": [
+    "PT",
+    "品質"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "メルセデス「S560」系7車種389台リコール　ECOストップ中の特定操作でエンジンが速やかに再始動しないおそれ",
+    "summary": "メルセデス・ベンツ日本は11月18日、2018年6月18日〜2020年4月27日に輸入されたS560（4MATIC、クーペ、カブリオレ含む）とマイバッハS560/S560 4MATICの8型式・計389台のリコールを届け出た。エンジンコントロールユニットの制御プログラムが不適切で、ECOストップ中に特定の操作をすると再始動が遅れることがある。対策はECUの制御プログラム書き換え。",
+    "note": "アイドリングストップの再始動は、ブレーキ解除・ステア操作・負圧低下・電池SOCなどの条件で起動要求を出す状態遷移として実装されるのが一般的で、特定の操作順序で遷移条件が満たされない不具合はソフト修正で対処できる（一般論。本件の「特定の操作」の内容は記事抜粋に記載なし）。"
+   },
+   "en": {
+    "title": "Mercedes recalls 389 S560-family vehicles (7 models) in Japan: engine may not restart promptly from ECO stop after certain operations",
+    "summary": "On November 18, Mercedes-Benz Japan filed a recall of 389 vehicles (8 type designations) imported between June 18, 2018 and April 27, 2020: the S560 (including 4MATIC, coupe and cabriolet) and the Maybach S560/S560 4MATIC. Due to an improper engine control unit program, the engine may not restart promptly when certain operations are performed during ECO stop. The fix is reprogramming the ECU.",
+    "note": "Stop-start restart is generally implemented as a state machine that issues a start request based on conditions such as brake release, steering input, vacuum drop and battery SOC; a defect where a specific operation sequence fails to meet the transition conditions can be fixed in software (general point; the 'certain operations' are not described in the excerpt)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/26/419466.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-23-eu-china-hybrid-quota-excludes-erev",
+   "date": "2026-11-23",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "PT"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "EU・中国のハイブリッド輸入枠（年35万台）、EREVは対象外の見通し　BEV扱いで最大35.3%の補助金相殺関税が続く可能性",
+    "summary": "electriveによると、EUと中国が10月に合意した年35万台・年6%増のハイブリッド輸入枠（外部充電可能なPHEVを含む）に、レンジエクステンダー付きEVは含まれない見込み。EREVは引き続きBEVに分類され、輸入枠の制限は受けない一方、メーカーにより最大35.3%の中国製EVへの補助金相殺関税の対象であり続ける可能性がある。欧州委員会は2024年の調査時点で既にこの区別をしていた。",
+    "note": ""
+   },
+   "en": {
+    "title": "EU–China hybrid import quota (350,000/year) unlikely to cover EREVs; they may stay subject to anti-subsidy EV tariffs of up to 35.3%",
+    "summary": "According to electrive, the annual quota of 350,000 hybrid vehicles growing 6% per year agreed between the EU and China in October (including externally chargeable PHEVs) is unlikely to include range-extended EVs. EREVs would continue to be classified as battery-electric, so no quota would apply, but they could remain subject to the anti-subsidy tariffs on Chinese EVs of up to 35.3% depending on the manufacturer. The European Commission already made this distinction during its 2024 investigation.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/23/eu-china-hybrid-import-quota-does-not-apply-to-range-extenders/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-acea-eu-oct-bev-29-8pct",
+   "date": "2026-11-24",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "EU",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "EUの10月BEV登録は27万9,799台（前年比+61.4%）、シェア29.8%　ガソリン車とディーゼル車の合計を上回る",
+    "summary": "欧州自動車工業会（ACEA）の統計で、10月のEU新車BEV登録は27万9,799台、シェア29.8%。1〜10月累計は221万1,071台（前年比+50%）、シェア23.4%。同月のガソリン車は15万8,970台、ディーゼル車は5万1,177台で、InsideEVsによるとガソリン車は約30%、ディーゼル車は31%減少した。",
+    "note": "ガソリン＋ディーゼル＝158,970＋51,177＝210,147台。BEVとの差は 279,799−210,147 ≈ 69,650台。ハイブリッド系の台数は記事抜粋に記載なし。"
+   },
+   "en": {
+    "title": "EU October BEV registrations reach 279,799 (+61.4% YoY), 29.8% share — more than gasoline and diesel combined",
+    "summary": "ACEA statistics show 279,799 new battery-electric cars registered in the EU in October, a 29.8% share. January–October registrations totaled 2,211,071 (+50% YoY), a 23.4% share. In the same month gasoline cars accounted for 158,970 and diesels 51,177; according to InsideEVs, gasoline fell by nearly 30% and diesel by 31%.",
+    "note": "Gasoline + diesel = 158,970 + 51,177 = 210,147. The gap to BEVs is 279,799 − 210,147 ≈ 69,650 units. Hybrid figures are not in the excerpt."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/24/acea-battery-electric-cars-capture-30-per-cent-of-eu-passenger-car-market/"
+    },
+    {
+     "name": "InsideEVs",
+     "url": "https://insideevs.com/news/817061/eu-ev-sales-october-jump/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-eu-tcmv-tesla-tad-dec15",
+   "date": "2026-11-26",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "EU",
+   "tags": [
+    "規制",
+    "ADAS"
+   ],
+   "prio": 2,
+   "conf": "report",
+   "ja": {
+    "title": "EU、テスラ「FSD（監視付き）」のEU全域承認を審議する委員会を12月15日に再延期　採決には加盟国15か国・人口65%の特定多数が必要",
+    "summary": "EUの自動車技術委員会（TCMV）の会合は12月1日予定から12月15日に変更された。根拠はオランダRDWが4月10日にEU規則2018/858第39条で与えた暫定型式認可で、EU全域承認には27か国中15か国以上かつEU人口の65%以上の賛成が必要。TCMVは既に2回の会合で審議したが採決しておらず、判断が2027年にずれ込む可能性もある。",
+    "note": ""
+   },
+   "en": {
+    "title": "EU again postpones committee meeting on EU-wide approval of Tesla's supervised FSD to December 15; a qualified majority of 15 states and 65% of population is required",
+    "summary": "The meeting of the EU's Technical Committee on Motor Vehicles (TCMV), originally set for December 1, has been moved to December 15. The basis is the provisional type approval granted by the Dutch RDW on April 10 under Article 39 of EU Regulation 2018/858; EU-wide approval needs at least 15 of 27 member states representing at least 65% of the EU population. The TCMV has discussed the file at two meetings without a vote, and the decision could slip into 2027.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/26/eu-postpones-discussion-on-tesla-assisted-driving/"
+    },
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/25/eu-delays-tesla-fsd-vote-december-15-tcmv/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-jis-ev-battery-repurpose-iec63330",
+   "date": "2026-11-27",
+   "kind": "weekly",
+   "cat": "reg",
+   "region": "JP",
+   "tags": [
+    "規制",
+    "電池"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "EV使用済み電池のリパーパス（再利用）JISを発行　IEC 63330-1:2024と一致、安全・性能評価の基準を明確化",
+    "summary": "日本規格協会は、二次電池のリパーパスに関する国際規格IEC 63330-1:2024と一致したJISを発行した。使用済み電池は走行距離や使用環境で劣化状態が異なり、劣化を把握せずに定置用などへ転用すると電解液漏れや発煙・発火の危険がある。これまで客観的な評価基準がなく、二次利用事業者の安全担保・品質保証コストが参入の障壁になっていた。",
+    "note": "リパーパス可否の判定では一般に健全度 SOH = Q_now/Q_rated（容量基準）や内部抵抗の増加率 R_now/R_init が指標になる。JISで具体的にどの試験項目・閾値が規定されたかは記事抜粋に記載なし（要確認）。"
+   },
+   "en": {
+    "title": "Japan issues JIS for repurposing used EV batteries, identical to IEC 63330-1:2024, clarifying safety and performance evaluation",
+    "summary": "The Japanese Standards Association has issued a JIS identical to IEC 63330-1:2024 on repurposing secondary batteries. Used batteries vary in degradation depending on mileage and operating conditions, and reusing them for stationary storage without understanding their condition risks electrolyte leakage, smoke or fire. Without objective evaluation criteria, safety and quality-assurance costs had been a barrier for second-life businesses.",
+    "note": "Repurposing decisions generally use state of health SOH = Q_now/Q_rated (capacity-based) and internal resistance growth R_now/R_init. Which test items and thresholds the JIS specifies is not in the excerpt (to be confirmed)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/27/419499.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-hitachi-ssb-metal-contaminant",
+   "date": "2026-11-27",
+   "kind": "weekly",
+   "cat": "tech",
+   "region": "JP",
+   "tags": [
+    "電池",
+    "品質"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "日立と日立ハイテク、全固体電池の金属異物の影響を解析する技術を開発　正極内の一定サイズ以上の銅で内部短絡リスク",
+    "summary": "日立と日立ハイテクは、全固体電池の製造時に混入し得る銅・鉄・亜鉛などの金属異物について、種類・サイズ・混入位置が性能に与える影響を電子顕微鏡やX線分析で体系的に評価する技術を開発した。評価した電池は正極NMC、硫化物系固体電解質、リチウム合金負極の構成で、一定サイズ以上の銅が正極内にあると内部短絡リスクが高いことを確認した。",
+    "note": "銅は正極電位で溶出し、負極側で析出して導電パスを作る（液系電池で知られた内部短絡機構、一般論）。正極電位が銅の溶出電位（Li基準で約3.4〜3.5V、一般値）を上回るため正極内の銅が問題になるとみられる。固体電解質中での析出挙動の詳細は記事抜粋に記載なし（推測を含む）。"
+   },
+   "en": {
+    "title": "Hitachi and Hitachi High-Tech develop analysis of metal contaminants in all-solid-state batteries; copper above a certain size in the cathode raises internal short risk",
+    "summary": "Hitachi and Hitachi High-Tech have developed a technique using electron microscopes and X-ray analysis to systematically evaluate how metal contaminants that may enter during all-solid-state battery manufacturing — such as copper, iron and zinc — affect performance by type, size and location. The tested cells used an NMC cathode, a sulfide solid electrolyte and a lithium-alloy anode, and copper above a certain size in the cathode was confirmed to raise the risk of internal short circuits.",
+    "note": "Copper dissolves at cathode potential and redeposits on the anode side, forming a conductive path (a known short mechanism in liquid cells; general point). Since cathode potential exceeds copper's dissolution potential (~3.4–3.5 V vs Li, typical value), copper in the cathode is likely the issue. Deposition behavior inside the solid electrolyte is not detailed in the excerpt (includes speculation)."
+   },
+   "src": [
+    {
+     "name": "Response",
+     "url": "https://response.jp/article/2026/11/27/419525.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-catl-30-swap-block-100kwh",
+   "date": "2026-11-27",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "CN",
+   "tags": [
+    "電池"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "CATL、乗用車向け交換式電池「30#」を発表　容量100kWh、1分未満で交換、通常の急速充電にも対応",
+    "summary": "CATLは中国の電池交換網向けに新しい電池ブロック「30#」を発表した。容量100kWhで、交換は1分未満、通常の充電スタンドでの急速充電も可能。既存の20#はLFP 42kWh/NMC 52kWh、25#はLFP 56kWh/NMC 70kWhで、30#のセル化学は未公表。同社は2027年までに乗用車向け交換ステーションを6,000か所に増やす計画を11月中旬に示している。",
+    "note": "容量比：同じ化学系なら質量・体積はほぼ容量に比例する。25# NMC（70kWh）比で30#は約1.43倍、LFPなら25# LFP（56kWh）比で約1.79倍となり、どちらの化学系かでパック寸法が大きく変わる（30#の寸法・質量は未公表）。"
+   },
+   "en": {
+    "title": "CATL unveils '30#' swappable battery block for passenger cars: 100 kWh, swapped in under a minute, also fast-chargeable",
+    "summary": "CATL has introduced a new battery block, '30#', for its battery-swapping network in China. It has 100 kWh capacity, can be swapped in under a minute and can also be fast-charged at a regular charging station. The existing 20# block offers 42 kWh (LFP) or 52 kWh (NMC), and the 25# 56 kWh (LFP) or 70 kWh (NMC); the 30#'s cell chemistry has not been specified. In mid-November the company announced plans to expand to 6,000 passenger-car swap stations by 2027.",
+    "note": "Capacity ratio: for the same chemistry, mass and volume scale roughly with capacity. The 30# is about 1.43× the 25# NMC (70 kWh) or about 1.79× the 25# LFP (56 kWh), so pack size depends heavily on chemistry (30# dimensions and mass not disclosed)."
+   },
+   "src": [
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/27/catl-introduces-100kwh-30-swappable-battery-for-passenger-cars/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-28-saic-mg-ends-ice-china-2027",
+   "date": "2026-11-28",
+   "kind": "weekly",
+   "cat": "oem",
+   "region": "CN",
+   "tags": [
+    "戦略"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "上汽MG、2027年1月1日から中国本土向けの純エンジン車の生産を停止　新エネ車に集中",
+    "summary": "上汽集団のMGブランドは広州モーターショーで、現行の純ICE車の中国本土向け生産を2027年1月1日から止め、新エネルギー車に集中すると発表した。既存ICE車の整備と部品供給は継続する。乗用車協会（CPCA）の週報では、11月1〜22日の中国の乗用NEV小売は70万2,000台（前年比−13%、前月同期比+7%）、小売浸透率71.3%、卸売浸透率76.6%だった。",
+    "note": ""
+   },
+   "en": {
+    "title": "SAIC's MG to stop producing pure ICE vehicles for mainland China from January 1, 2027, focusing on NEVs",
+    "summary": "SAIC Motor's MG brand announced at the Guangzhou Auto Show that it will stop producing its current pure ICE models for the Chinese mainland market from January 1, 2027, and focus entirely on new energy vehicles, while continuing service and parts supply for existing ICE owners. According to the CPCA weekly report, China's passenger NEV retail sales were 702,000 units from November 1 to 22 (−13% YoY, +7% vs. the same period last month), with retail penetration of 71.3% and wholesale penetration of 76.6%.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/27/saic-mg-to-halt-ice-vehicle-production-chinese-mainland-2027/"
+    },
+    {
+     "name": "CnEVPost",
+     "url": "https://cnevpost.com/2026/11/25/china-passenger-nev-retail-sales-nov-1-22/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-koito-hd-adb-16000-segment",
+   "date": "2026-11-27",
+   "kind": "weekly",
+   "cat": "supplier",
+   "region": "JP",
+   "tags": [
+    "ADAS"
+   ],
+   "prio": 1,
+   "conf": "report",
+   "ja": {
+    "title": "小糸製作所、1万6,000分割マイクロLEDの「高精細ADB」で夜間試乗会　2030年にADB年230万台・高精細ADBは5車種へ",
+    "summary": "小糸製作所は11月25日、富士スピードウェイで、2026年5月に国内初の量産を始めた高精細ADBを搭載したレクサス新型「ES」と、12分割ADB車、オートハイビーム車の乗り比べを行った。同社は2030年にADBを年230万台、高精細ADBを5車種に広げる計画。夜間の歩行者死亡事故では約95%の車両がロービームで走行していたというデータを挙げている。",
+    "note": ""
+   },
+   "en": {
+    "title": "Koito holds night drive event for 16,000-segment micro-LED 'high-definition ADB'; targets 2.3M ADB units per year and five HD-ADB models by 2030",
+    "summary": "On November 25 at Fuji Speedway, Koito let participants compare a new Lexus ES with high-definition ADB — which Koito began mass-producing in May 2026 as a first in Japan — against a 12-segment ADB car and a car with auto high beam. Koito plans to expand ADB to 2.3 million units per year and high-definition ADB to five models by 2030. It cites data that about 95% of vehicles involved in fatal nighttime pedestrian accidents were on low beam.",
+    "note": ""
+   },
+   "src": [
+    {
+     "name": "Car Watch",
+     "url": "https://car.watch.impress.co.jp/docs/news/2159348.html"
     }
    ]
   }
